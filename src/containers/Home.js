@@ -4,13 +4,13 @@ import {About, Landing, MemberList, Photos, Recruitment, ContactUs} from '../com
 export default class Home extends Component {
   render() {
     return (
-      <div className="homepage container-fluid">
+      <div className="homepage">
         <Landing/>
-        <About/>
+        {/*<About/>*/}
         <MemberList/>
-        <Photos/>
+        {/*<Photos/>
         <Recruitment/>
-        <ContactUs/>
+        <ContactUs/>*/}
       </div>
     );
   }
