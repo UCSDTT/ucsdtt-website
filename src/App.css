@@ -24,8 +24,8 @@ body {
 }
 
 .picture {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 
 @keyframes App-logo-spin {
@@ -103,4 +103,20 @@ body {
   padding-top: 30px !important;
   margin-top: -15px !important;
   height: 80px !important;
+}
+
+.landing {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-image {
+  position: cover;
+  top: -9999px;
+  left: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  margin: auto;
 }
