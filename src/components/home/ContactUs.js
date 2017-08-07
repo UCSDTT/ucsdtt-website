@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import * as BS from 'react-bootstrap';
+import {PageHeader} from 'react-bootstrap';
 
 class ContactUs extends Component {
   render() {
     return (
       <div className="contact-us">
-        <BS.PageHeader className="title">This is the Contact Us Module</BS.PageHeader>
+        <PageHeader className="title">This is the Contact Us Module</PageHeader>
       </div>
     );
   }

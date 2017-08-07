@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import * as BS from 'react-bootstrap';
+import {PageHeader} from 'react-bootstrap';
 
 class WhyRush extends Component {
   render() {
     return (
       <div className="why-rush">
-        <BS.PageHeader className="title">This is the Why Rush Module</BS.PageHeader>
+        <PageHeader className="title">This is the Why Rush Module</PageHeader>
       </div>
     );
   }
