@@ -120,3 +120,7 @@ body {
   bottom: -9999px;
   margin: auto;
 }
+
+.big-cont {
+  height: 50vh;
+}

@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
-import * as BS from 'react-bootstrap';
+import {PageHeader} from 'react-bootstrap';
+import {Element} from 'react-scroll';
 
 class FAQ extends Component {
   render() {
     return (
-      <div className="faq">
-        <BS.PageHeader className="title">This is the FAQ Module</BS.PageHeader>
-      </div>
+      <Element name="faq" className="element">
+        <div className="faq big-cont">
+          <PageHeader className="title">This is the FAQ Module</PageHeader>
+        </div>
+      </Element>
     );
   }
 }
