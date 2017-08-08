@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import * as BS from 'react-bootstrap';
 import members from '../../db.js'
 
-const MemberList = React.createClass ({
+class MemberList extends Component {
 	getInitialState() {
     return {
       value: '',
       members: members.pictures
     }
-  },
+  }
 
   render() {
     return (
@@ -71,6 +71,6 @@ const MemberList = React.createClass ({
 			</BS.Grid>
     );
   }
-})
+}
 
 export {MemberList};
