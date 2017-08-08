@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
-import {Image, Navbar, MenuItem, NavDropdown, Nav} from 'react-bootstrap';
-import {animateScroll as scroll, Link} from 'react-scroll'; 
+import {Image, Navbar, MenuItem, NavDropdown, Nav, NavItem} from 'react-bootstrap';
+import {animateScroll as scroll, scroller} from 'react-scroll'; 
 
 class NavBar extends Component {
   scrollToTop() {
     scroll.scrollToTop();
+  }
+
+  scrollToComp(name) {
+    scroller.scrollTo(name, {offset: -120, smooth: true})
   }
 
   render() {
@@ -21,11 +25,11 @@ class NavBar extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <li role="presentation" class="nav-bar-link"><Link activeClass="active" to="who-we-are" offset={-120} smooth={true} href="#">About Us</Link></li>
-            <li role="presentation" class="nav-bar-link"><Link activeClass="active" to="brothers-are" offset={-120} smooth={true} href="#">Members</Link></li>
-            <li role="presentation" class="nav-bar-link"><Link activeClass="active" to="why-rush" offset={-120} smooth={true} href="#">Rush</Link></li>
-            <li role="presentation" class="nav-bar-link"><Link activeClass="active" to="faq" offset={-120} smooth={true} href="#">FAQ</Link></li>
-            <li role="presentation" class="nav-bar-link"><Link activeClass="active" to="contact-us" offset={-120} smooth={true} href="#">Contact Us</Link></li>
+            <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("who-we-are")}>About Us</NavItem>
+            <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("brothers-are")}>Members</NavItem>
+            <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("why-rush")}>Rush</NavItem>
+            <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("faq")}>FAQ</NavItem>
+            <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("contact-us")}>Contact Us</NavItem>
             <NavDropdown className="nav-bar-link" eventKey={6} title="Dropdown" id="basic-nav-dropdown">
               <MenuItem eventKey={3.1}>Action</MenuItem>
               <MenuItem eventKey={3.2}>Another action</MenuItem>
