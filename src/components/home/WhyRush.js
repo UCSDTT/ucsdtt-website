@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
-import * as BS from 'react-bootstrap';
+import {PageHeader} from 'react-bootstrap';
+import {Element} from 'react-scroll';
 
 class WhyRush extends Component {
   render() {
     return (
-      <div className="why-rush">
-        <BS.PageHeader className="title">This is the Why Rush Module</BS.PageHeader>
-      </div>
+      <Element name="why-rush" className="element">
+        <div className="why-rush big-cont">
+          <PageHeader className="title">This is the Why Rush Module</PageHeader>
+        </div>
+      </Element>
     );
   }
 }

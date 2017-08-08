@@ -1,3 +1,4 @@
+export * from './NavBar';
 export * from './Landing';
 export * from './WhoWeAre';
 export * from './BrothersAre';

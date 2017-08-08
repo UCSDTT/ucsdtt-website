@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
-import * as BS from 'react-bootstrap';
-
+import {Image} from 'react-bootstrap';
 
 class Landing extends Component {
   render() {
     return (
-      <div className="landing">
-        <BS.PageHeader className="title">WHO WE ARE</BS.PageHeader>
-	      <BS.Image className="picture" src={require('../../../public/images/BR.jpg')} thumbnail/>     
-      </div>
+    <div className="landing">
+        <Image className="landing-image" src={require('../../../public/images/BR.jpg')} responsive/>     
+    </div>
     );
   }
 }
