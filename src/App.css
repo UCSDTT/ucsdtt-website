@@ -45,6 +45,27 @@ body {
   border: none;
 }
 
+.schedule-title {
+  margin: 0;
+  font-size: 25px;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.schedule-subtitle{
+  margin: 0;
+  font-size: 20px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.schedule-details{
+  margin: 0;
+  font-size: 15px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
 .rush-container {
   position: relative;
   float: left;
@@ -59,7 +80,7 @@ body {
 
 .overlay-text {
   left: 0;
-  top: 20%;
+  top: 15%;
   position: absolute;
   text-align: center;
   width: 100%;

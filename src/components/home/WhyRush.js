@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import {PageHeader} from 'react-bootstrap';
 import {Element} from 'react-scroll';
 import {Image} from 'react-bootstrap';
-import {View} from 'react-bootstrap';
+import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 
 class WhyRush extends Component {
   render() {
@@ -15,11 +14,10 @@ class WhyRush extends Component {
             <h1 className="rush-title"> <strong> Rush Theta Tau </strong> </h1>
 
             <span className="rush-subtitle"> Learn about the fraternity and meet the active body </span>
-
-
             <div>
               <span className="rush-promo"> JOIN US FOR FALL 2017 RUSH</span>
-              <a className="no-padding" href="/">
+
+              <a href = "/rush">
                 <button className="rush-button" type = "button"> Learn More </button>
               </a>
             </div>
