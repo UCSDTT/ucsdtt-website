@@ -226,3 +226,32 @@ body {
 .big-cont {
   height: 50vh;
 }
+
+.dark-bg {
+  background: #111;
+}
+
+.footer-padding {
+  padding-bottom: 100px;
+}
+
+.widget {
+  color: #eee;
+  font-size: 15px;
+}
+
+.widget-header {
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.media-icons {
+  border-top: 1px solid #202020;
+  padding: 10px;
+}
+
+.fa {
+  color: #aaa;
+}
