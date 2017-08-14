@@ -7,7 +7,7 @@ export default class MoreRush extends Component {
     return (
       <div className="homepage">
         <Grid>
-          <Row className ="show-grid">
+          <Row className="show-grid">
 
             <Col md={3}>
               <Row>
