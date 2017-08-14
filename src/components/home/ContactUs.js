@@ -3,6 +3,21 @@ import {FormGroup, FormControl, Button, InputGroup, Glyphicon, Grid, Col, Row} f
 import {Element} from 'react-scroll';
 
 class ContactUs extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: ''};
+  }
+
+  getValidationState() {
+    const length = this.state.value.length;
+    if (length > 1) return 'success';
+    else if (length > 0) return 'error';
+  }
+
+  handleChange(e) {
+    this.setState({ value: e.target.value });
+  }
+
   render() {
     return (
       <Element name="contact-us" className="element">
@@ -14,6 +29,7 @@ class ContactUs extends Component {
                 <form>
                   <FormGroup 
                     controlId="formBasicName"
+                    validationState={this.getValidationState()}
                   >
                     <InputGroup>
                       <InputGroup.Addon>
@@ -21,7 +37,9 @@ class ContactUs extends Component {
                       </InputGroup.Addon>
                       <FormControl
                         type="text"
+                        value={this.state.value}
                         placeholder="Name*"
+                        onChange={(e) => this.handleChange(e)}
                       />
                       <FormControl.Feedback />
                     </InputGroup>
@@ -49,7 +67,7 @@ class ContactUs extends Component {
                     </InputGroup>
                   </FormGroup>
                   <Button className="contact-button" type="submit">
-                    Submit
+                    Send            <span><Glyphicon glyph="send"/></span>
                   </Button>
                 </form>
               </Col>
