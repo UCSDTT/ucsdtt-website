@@ -228,7 +228,7 @@ body {
 }
 
 .dark-bg {
-  background: #111;
+  background: rgba(10, 10, 10, .9);
 }
 
 .footer-padding {
@@ -242,16 +242,39 @@ body {
 
 .widget-header {
   font-size: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px dotted white;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
 .media-icons {
-  border-top: 1px solid #202020;
+  border-top: 1px solid #aaa;
   padding: 10px;
 }
 
 .fa {
   color: #aaa;
+}
+
+.contact-us {
+  padding: 15px;
+}
+
+.contact-button {
+  background-color: rgba(17, 17, 17, .8);
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  width: fill;
+}
+
+.contact-button:hover {
+  background: rgba(10, 10, 10, .9);
+  color: white;
+  text-decoration: none;
+}
+
+.form-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
