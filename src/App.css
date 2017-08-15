@@ -190,23 +190,24 @@ body {
 .nav-logo {
   height: 50px;
   width: 50px;
-  padding: 0;
 }
 
-.navbar {
+.navbar-fixed-top {
   height: 80px;
+}
+
+.navbar-nav li a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 80px;
+}
+
+.navbar-brand {
   padding-top: 15px;
-  background-color: rgba(10, 10, 10, .9);
 }
 
-.no-padding {
-  padding: 0;
-}
-
-.nav-bar-link > a {
-  padding-top: 30px !important;
-  margin-top: -15px !important;
-  height: 80px !important;
+.navbar-toggle {
+  margin-top: 23px;
 }
 
 /* Landing */

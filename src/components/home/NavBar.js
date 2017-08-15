@@ -13,11 +13,10 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div>
-        <Navbar inverse collapseOnSelect className="navbar-default navbar-fixed-top navbar">
+      <Navbar inverse collapseOnSelect className="navbar-fixed-top">
         <Navbar.Header>
           <Navbar.Brand>
-            <a className="no-padding" href="#" onClick={this.scrollToTop}>          
+            <a href="#" onClick={this.scrollToTop}>          
               <Image className="nav-logo" src={require('../../../public/images/tt_logo.png')} />
             </a>
           </Navbar.Brand>
@@ -25,18 +24,17 @@ class NavBar extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullLeft>
-            <NavItem className="nav-bar-link" onClick={this.scrollToTop}>Theta Tau @ UC San Diego</NavItem>
+            <NavItem onClick={this.scrollToTop}>Theta Tau @ UC San Diego</NavItem>
           </Nav>
           <Nav pullRight>
-            <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("who-we-are")}>About Us</NavItem>
-            <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("brothers-are")}>Members</NavItem>
-            <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("why-rush")}>Rush</NavItem>
-            <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("faq")}>FAQ</NavItem>
-            <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("messenger")}>Contact Us</NavItem>
+            <NavItem onClick={() => this.scrollToComp("who-we-are")}>About Us</NavItem>
+            <NavItem onClick={() => this.scrollToComp("brothers-are")}>Members</NavItem>
+            <NavItem onClick={() => this.scrollToComp("why-rush")}>Rush</NavItem>
+            <NavItem onClick={() => this.scrollToComp("faq")}>FAQ</NavItem>
+            <NavItem onClick={() => this.scrollToComp("messenger")}>Contact Us</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      </div>
     );
   }
 }
