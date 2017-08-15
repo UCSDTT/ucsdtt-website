@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
 .App {
   text-align: center;
 }
@@ -39,6 +43,104 @@ body {
   background-color: black;
   color: white;
   border: none;
+}
+
+.schedule-title {
+  margin: 0;
+  font-size: 25px;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.schedule-subtitle{
+  margin: 0;
+  font-size: 20px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.schedule-details{
+  margin: 0;
+  font-size: 15px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rush-container {
+  height: 70vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.rush-banner {
+  position: cover;
+  top: -9999px;
+  left: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  margin: auto;
+}
+
+.overlay-text {
+  left: 0;
+  top: 15%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 99;
+}
+
+.rush-title {
+  margin: 0;
+  color: white;
+  border: none;
+  font-size: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.rush-subtitle{
+  margin: 15px;
+  color: white;
+  border: none;
+  font-size: 30px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rush-promo {
+  margin-top: 60px;
+  margin-bottom: 25px;
+  padding: 20px;
+  color: white;
+  border: none;
+  font-size: 20px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.rush-button {
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  background-color: Transparent;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 2px;
+  text-decoration: none;
+}
+
+.rush-button:focus {
+  outline:0;
+}
+
+.rush-button:hover {
+  background: #ffffff;
+  color: black;
+  text-decoration: none;
 }
 
 .bob {
@@ -126,7 +228,7 @@ body {
 }
 
 .dark-bg {
-  background: #111;
+  background: rgba(10, 10, 10, .9);
 }
 
 .footer-padding {
@@ -140,13 +242,13 @@ body {
 
 .widget-header {
   font-size: 20px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px dotted white;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
 .media-icons {
-  border-top: 1px solid #202020;
+  border-top: 1px solid #aaa;
   padding: 10px;
 }
 
@@ -168,4 +270,26 @@ ul {
 a:hover, a:active {
   text-decoration: none;
   color: white;
+
+.contact-us {
+  padding: 15px;
+}
+
+.contact-button {
+  background-color: rgba(17, 17, 17, .8);
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  width: fill;
+}
+
+.contact-button:hover {
+  background: rgba(10, 10, 10, .9);
+  color: white;
+  text-decoration: none;
+}
+
+.form-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
