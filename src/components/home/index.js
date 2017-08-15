@@ -4,4 +4,6 @@ export * from './WhoWeAre';
 export * from './BrothersAre';
 export * from './WhyRush';
 export * from './FAQ';
+export * from './Messenger';
 export * from './ContactUs';
+export * from './Footer'

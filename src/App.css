@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
 .App {
   text-align: center;
 }
@@ -39,6 +43,104 @@ body {
   background-color: black;
   color: white;
   border: none;
+}
+
+.schedule-title {
+  margin: 0;
+  font-size: 25px;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.schedule-subtitle{
+  margin: 0;
+  font-size: 20px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.schedule-details{
+  margin: 0;
+  font-size: 15px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rush-container {
+  height: 70vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.rush-banner {
+  position: cover;
+  top: -9999px;
+  left: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  margin: auto;
+}
+
+.overlay-text {
+  left: 0;
+  top: 15%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 99;
+}
+
+.rush-title {
+  margin: 0;
+  color: white;
+  border: none;
+  font-size: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.rush-subtitle{
+  margin: 15px;
+  color: white;
+  border: none;
+  font-size: 30px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rush-promo {
+  margin-top: 60px;
+  margin-bottom: 25px;
+  padding: 20px;
+  color: white;
+  border: none;
+  font-size: 20px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.rush-button {
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  background-color: Transparent;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 2px;
+  text-decoration: none;
+}
+
+.rush-button:focus {
+  outline:0;
+}
+
+.rush-button:hover {
+  background: #ffffff;
+  color: black;
+  text-decoration: none;
 }
 
 .bob {
@@ -123,4 +225,98 @@ body {
 
 .big-cont {
   height: 50vh;
+}
+
+.dark-bg {
+  background: rgba(10, 10, 10, .9);
+}
+
+.footer-padding {
+  padding-bottom: 20px;
+}
+
+.widget {
+  color: white;
+  font-size: 12px;
+}
+
+.widget-header {
+  font-size: 20px;
+  border-bottom: 1px dotted white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.media-icons {
+  border-top: 1px solid #aaa;
+  padding: 10px;
+}
+
+.light-grey {
+  color: #aaa;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.standard-pad {
+  padding: 20px;
+}
+
+.contact-us {
+  padding: 20px;
+}
+
+.contact-title {
+  margin-top: 0px;
+}
+
+.contact-button {
+  background-color: rgba(17, 17, 17, .8);
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  width: fill;
+}
+
+.contact-button:hover {
+  background: rgba(10, 10, 10, .9);
+  color: white;
+  text-decoration: none;
+}
+
+.white-text {
+  color: white;
+}
+
+.form-border {
+  padding: 20px;
+  padding-bottom: 30px;
+  border: 1px solid black;
+}
+
+.messenger-image {
+  border: 1px solid black;
+  height: 50%;
+  width: 50%;
+}
+
+.contact-container {
+  height: 250px;
+  width: fill;
+  position: relative;
+  overflow: hidden;
 }

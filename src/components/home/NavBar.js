@@ -29,7 +29,7 @@ class NavBar extends Component {
             <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("brothers-are")}>Members</NavItem>
             <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("why-rush")}>Rush</NavItem>
             <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("faq")}>FAQ</NavItem>
-            <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("contact-us")}>Contact Us</NavItem>
+            <NavItem className="nav-bar-link" onClick={() => this.scrollToComp("messenger")}>Contact Us</NavItem>
             <NavDropdown className="nav-bar-link" eventKey={6} title="Dropdown" id="basic-nav-dropdown">
               <MenuItem eventKey={3.1}>Action</MenuItem>
               <MenuItem eventKey={3.2}>Another action</MenuItem>
