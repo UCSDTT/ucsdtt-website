@@ -130,17 +130,17 @@ body {
 }
 
 .footer-padding {
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 
 .widget {
-  color: #eee;
-  font-size: 15px;
+  color: white;
+  font-size: 12px;
 }
 
 .widget-header {
   font-size: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid white;
   padding-top: 20px;
   padding-bottom: 10px;
 }
@@ -150,6 +150,22 @@ body {
   padding: 10px;
 }
 
-.fa {
+.light-grey {
   color: #aaa;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  color: white;
 }
