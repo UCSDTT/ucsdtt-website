@@ -5,7 +5,7 @@ class Landing extends Component {
   render() {
     return (
     <div className="landing">
-      <Image className="landing-image" src={require('../../../public/images/BR.jpg')} responsive/>     
+      <Image className="landing-image" src={require('../../../public/images/BR.jpg')} responsive/>   
     </div>
     );
   }

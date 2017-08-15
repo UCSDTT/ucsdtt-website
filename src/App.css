@@ -185,6 +185,8 @@ body {
   font-weight: 600;
 }
 
+/* NavBar */
+
 .nav-logo {
   height: 50px;
   width: 50px;
@@ -207,11 +209,12 @@ body {
   height: 80px !important;
 }
 
+/* Landing */
+
 .landing {
-  height: 100vh;
-  width: 100vw;
   position: relative;
   overflow: hidden;
+  max-height: 100vh;
 }
 
 .landing-image {
@@ -223,13 +226,7 @@ body {
   margin: auto;
 }
 
-.big-cont {
-  height: 50vh;
-}
-
-.dark-bg {
-  background: rgba(10, 10, 10, .9);
-}
+/* Footer */
 
 .footer-padding {
   padding-bottom: 20px;
@@ -252,10 +249,7 @@ body {
   padding: 10px;
 }
 
-.light-grey {
-  color: #aaa;
-}
-
+/* Used for list in the footer TODO: assign names */
 li {
   padding-bottom: 10px;
 }
@@ -272,9 +266,15 @@ a:hover, a:active {
   color: white;
 }
 
-.standard-pad {
-  padding: 20px;
+/* Messenger */
+
+.messenger-image {
+  border: 1px solid black;
+  height: 50%;
+  width: 50%;
 }
+
+/* Contact Us */
 
 .contact-us {
   padding: 20px;
@@ -298,20 +298,10 @@ a:hover, a:active {
   text-decoration: none;
 }
 
-.white-text {
-  color: white;
-}
-
 .form-border {
   padding: 20px;
   padding-bottom: 30px;
   border: 1px solid black;
-}
-
-.messenger-image {
-  border: 1px solid black;
-  height: 50%;
-  width: 50%;
 }
 
 .contact-container {
@@ -319,4 +309,26 @@ a:hover, a:active {
   width: fill;
   position: relative;
   overflow: hidden;
+}
+
+/* General */
+
+.light-grey {
+  color: #aaa;
+}
+
+.big-cont {
+  height: 50vh;
+}
+
+.dark-bg {
+  background: rgba(10, 10, 10, .9);
+}
+
+.white-text {
+  color: white;
+}
+
+.standard-pad {
+  padding: 20px;
 }

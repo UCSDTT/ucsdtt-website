@@ -7,7 +7,9 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "express": "^4.15.4",
     "font-awesome": "^4.7.0",
+    "nodemailer": "^4.0.1",
     "prop-types": "^15.5.10",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.8",
