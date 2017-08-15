@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {FormGroup, FormControl, Button, InputGroup, Glyphicon, Grid, Col, Row} from 'react-bootstrap';
+import {FormGroup, FormControl, Button, InputGroup, Glyphicon, Grid, Col, Row, Image} from 'react-bootstrap';
 import {Element} from 'react-scroll';
 
 class ContactUs extends Component {
@@ -7,11 +7,11 @@ class ContactUs extends Component {
     super(props);
     this.state = {
       name: '',
-      namestate: '',
+      namestate: null,
       email:'',
-      emailstate: '',
+      emailstate: null,
       message: '',
-      messagestate: ''
+      messagestate: null
     };
   }
 
@@ -22,22 +22,24 @@ class ContactUs extends Component {
     let valid = true;
     if (length > 1) this.setState({ namestate: 'success' });
     else {
-      this.setState({ namestate: 'error' })
+      this.setState({ namestate: 'error' });
       valid = false;
     }
 
     if (emailpattern.test(this.state.email)) this.setState({ emailstate: 'success' });
     else {
-      this.setState({ emailstate: 'error' })
+      this.setState({ emailstate: 'error' });
       valid = false;
     }
 
     length = this.state.message.length;
     if (length > 1) this.setState({ messagestate: 'success' });
     else {
-      this.setState({ messagestate: 'error' })
+      this.setState({ messagestate: 'error' });
       valid = false;
     }
+
+    if (valid) console.log("valid");
   }
 
   handleChange(e, type) {
@@ -48,10 +50,22 @@ class ContactUs extends Component {
     return (
       <Element name="contact-us" className="element">
         <div className="contact-us">
-        <h1>Contact Us</h1>
-          <Grid className="form-padding">
+          <Grid className="form-border">
             <Row>
-              <Col md={8} mdPush={2}>
+              <Col md={8}>
+                <Row>
+                  <Col xs={8}>
+                    <h1 className="text-left contact-title">
+                      Contact Us!
+                    </h1>
+                  </Col>
+                  <Col xs={2}>
+                    <a href="https://www.facebook.com/thetatau.ucsd/"> <i className="fa fa-facebook fa-3x light-grey"></i></a>
+                  </Col>
+                  <Col xs={2}>
+                    <a href="https://instagram.com/thetatau_ucsd/"><i className="fa fa-instagram fa-3x light-grey"></i></a>
+                  </Col>
+                </Row>
                 <form>
                   <FormGroup 
                     controlId="formBasicName"
@@ -113,6 +127,12 @@ class ContactUs extends Component {
                     Send            <span><Glyphicon glyph="send"/></span>
                   </Button>
                 </form>
+              </Col>
+
+              <Col smHidden md={4}>
+                <div className="contact-container">
+                  <Image src={require("../../../public/images/rushflyer.jpg")} responsive/>
+                </div>
               </Col>
             </Row>
           </Grid>

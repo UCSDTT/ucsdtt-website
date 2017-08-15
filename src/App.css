@@ -272,8 +272,16 @@ a:hover, a:active {
   color: white;
 }
 
+.standard-pad {
+  padding: 20px;
+}
+
 .contact-us {
-  padding: 15px;
+  padding: 20px;
+}
+
+.contact-title {
+  margin-top: 0px;
 }
 
 .contact-button {
@@ -290,7 +298,25 @@ a:hover, a:active {
   text-decoration: none;
 }
 
-.form-padding {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.white-text {
+  color: white;
+}
+
+.form-border {
+  padding: 20px;
+  padding-bottom: 30px;
+  border: 1px solid black;
+}
+
+.messenger-image {
+  border: 1px solid black;
+  height: 50%;
+  width: 50%;
+}
+
+.contact-container {
+  height: 250px;
+  width: fill;
+  position: relative;
+  overflow: hidden;
 }
