@@ -5,6 +5,8 @@ const http = require('http');
 const path = require('path');
 const app = express();
 
+require('dotenv').config();
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../build')));
@@ -17,8 +19,8 @@ app.post('/contact', function(req, res){
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'ttsdwebmaster@gmail.com',
-      pass: 'ilovethetatau'
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS
     }
   });
 
