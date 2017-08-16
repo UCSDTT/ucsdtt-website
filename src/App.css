@@ -374,6 +374,13 @@ a:hover, a:active {
   overflow: hidden;
 }
 
+/* FAQ */
+
+.question-panel {
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
 /* Miscellaneous */
 
 .light-grey {
