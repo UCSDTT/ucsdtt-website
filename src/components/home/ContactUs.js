@@ -39,7 +39,23 @@ class ContactUs extends Component {
       valid = false;
     }
 
-    if (valid) console.log("valid");
+    if (valid) {
+      console.log("valid");
+
+      fetch('http://localhost:80/contact', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          from: this.state.email,
+          to: "ttsdwebmaster@gmail.com",
+          subject: "TT Website Contact Form - " + this.state.name + " ( " + this.state.email + " ) ",
+          text: this.state.message
+        })
+      }).then(function() {console.log("success")});
+    }
   }
 
   handleChange(e, type) {
