@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
-
 .App {
   text-align: center;
 }
@@ -262,6 +261,7 @@ body {
   position: relative;
   overflow: hidden;
   max-height: 100vh;
+  max-width: 100vw;
 }
 
 .landing-image {
@@ -271,6 +271,7 @@ body {
   right: -9999px;
   bottom: -9999px;
   margin: auto;
+  width: fill;
 }
 
 /* Footer */
@@ -296,9 +297,20 @@ body {
   padding: 10px;
 }
 
+.footer-p {
+  font-size: 15px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-ul {
+  font-size: 15px;
+}
+
 /* Used for list in the footer TODO: assign names */
 li {
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 ul {
@@ -306,6 +318,11 @@ ul {
   list-style-position: inside;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #aaa;
 }
 
 a:hover, a:active {
@@ -346,8 +363,7 @@ a:hover, a:active {
 }
 
 .form-border {
-  padding: 20px;
-  padding-bottom: 30px;
+  padding: 30px;
   border: 1px solid black;
 }
 
@@ -378,4 +394,17 @@ a:hover, a:active {
 
 .standard-pad {
   padding: 20px;
+}
+
+html, 
+body, 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+    height: 100%;
+}
+
+.carousel-caption {
+    top: 40%;
+    bottom: auto;
 }
