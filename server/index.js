@@ -35,7 +35,6 @@ app.post('/contact', function(req, res){
       return console.log(error);
     }
     console.log('Message %s sent: %s', info.messageId, info.response);
-    res.send("Sent mail");
     res.json({
         success: true,
         message: error

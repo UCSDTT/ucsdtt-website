@@ -54,7 +54,21 @@ class ContactUs extends Component {
           subject: "TT Website Contact Form - " + this.state.name + " ( " + this.state.email + " ) ",
           text: this.state.message
         })
-      }).then(function() {console.log("success")});
+      })
+        .then((response) => response.json())
+        .then((responseJson) => {
+          if (responseJson.success) {
+            console.log("Email sent!");
+            console.log(responseJson.error);
+          }
+          else {
+            console.log("Email failed to send.");
+            console.log(responseJson.error);
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+        });
     }
   }
 
