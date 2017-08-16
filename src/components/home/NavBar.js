@@ -23,8 +23,8 @@ class NavBar extends Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav pullLeft>
-            <NavItem onClick={this.scrollToTop}>Theta Tau @ UC San Diego</NavItem>
+          <Nav pullLeft className="hidden-sm">
+            <NavItem className="navbar-title" onClick={this.scrollToTop}>Theta Tau @ UC San Diego</NavItem>
           </Nav>
           <Nav pullRight>
             <NavItem onClick={() => this.scrollToComp("who-we-are")}>About Us</NavItem>

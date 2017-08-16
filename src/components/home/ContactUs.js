@@ -39,7 +39,37 @@ class ContactUs extends Component {
       valid = false;
     }
 
-    if (valid) console.log("valid");
+    if (valid) {
+      console.log("valid");
+
+      fetch('http://localhost:80/contact', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          from: this.state.email,
+          to: "ttsdwebmaster@gmail.com",
+          subject: "TT Website Contact Form - " + this.state.name + " ( " + this.state.email + " ) ",
+          text: this.state.message
+        })
+      })
+        .then((response) => response.json())
+        .then((responseJson) => {
+          if (responseJson.success) {
+            console.log("Email sent!");
+            console.log(responseJson.error);
+          }
+          else {
+            console.log("Email failed to send.");
+            console.log(responseJson.error);
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
   }
 
   handleChange(e, type) {
@@ -129,7 +159,7 @@ class ContactUs extends Component {
                 </form>
               </Col>
 
-              <Col smHidden md={4}>
+              <Col xsHidden smHidden md={4}>
                 <div className="contact-container">
                   <Image src={require("../../../public/images/rushflyer.jpg")} responsive/>
                 </div>
