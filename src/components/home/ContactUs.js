@@ -52,7 +52,7 @@ class ContactUs extends Component {
         <div className="contact-us">
           <Grid className="form-border">
             <Row>
-              <Col md={8}>
+              <Col md={7}>
                 <Row>
                   <Col xs={8}>
                     <h1 className="text-left contact-title">
