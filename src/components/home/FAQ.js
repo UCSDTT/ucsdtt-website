@@ -18,7 +18,7 @@ class FAQ extends Component {
   }
 
   handleClick(qNumber) {
-    this.setState({ [qNumber]: !this.state.qNumber });
+    this.setState({ [qNumber]: !this.state[qNumber] });
   }
 
   render() {
@@ -37,31 +37,46 @@ class FAQ extends Component {
                 <Panel collapsible expanded={this.state.q1}>
                   Answer
                 </Panel>
-                <Panel header={<h3>Question?</h3>}>
+              </Col>
+              <Col xs={6} md={3}>
+                <Panel className="question-panel" onClick={() => this.handleClick("q2")} header={<h3>Question?</h3>}></Panel>
+                <Panel collapsible expanded={this.state.q2}>
                   Answer
                 </Panel>
               </Col>
               <Col xs={6} md={3}>
-                <Panel header={<h3>Question?</h3>}>
-                  Answer
-                </Panel>
-                <Panel header={<h3>Question?</h3>}>
-                  Answer
-                </Panel>
-              </Col>
-              <Col xs={6} md={3}>
-                <Panel header={<h3>Question?</h3>}>
-                  Answer
-                </Panel>
-                <Panel header={<h3>Question?</h3>}>
+                <Panel className="question-panel" onClick={() => this.handleClick("q3")} header={<h3>Question?</h3>}></Panel>
+                <Panel collapsible expanded={this.state.q3}>
                   Answer
                 </Panel>
               </Col>
               <Col xs={6} md={3}>
-                <Panel header={<h3>Question?</h3>}>
+                <Panel className="question-panel" onClick={() => this.handleClick("q4")} header={<h3>Question?</h3>}></Panel>
+                <Panel collapsible expanded={this.state.q4}>
                   Answer
                 </Panel>
-                <Panel header={<h3>Question?</h3>}>
+              </Col>
+              <Col xs={6} md={3}>
+                <Panel className="question-panel" onClick={() => this.handleClick("q5")} header={<h3>Question?</h3>}></Panel>
+                <Panel collapsible expanded={this.state.q5}>
+                  Answer
+                </Panel>
+              </Col>
+              <Col xs={6} md={3}>
+                <Panel className="question-panel" onClick={() => this.handleClick("q6")} header={<h3>Question?</h3>}></Panel>
+                <Panel collapsible expanded={this.state.q6}>
+                  Answer
+                </Panel>
+              </Col>
+              <Col xs={6} md={3}>
+                <Panel className="question-panel" onClick={() => this.handleClick("q7")} header={<h3>Question?</h3>}></Panel>
+                <Panel collapsible expanded={this.state.q7}>
+                  Answer
+                </Panel>
+              </Col>
+              <Col xs={6} md={3}>
+                <Panel className="question-panel" onClick={() => this.handleClick("q8")} header={<h3>Question?</h3>}></Panel>
+                <Panel collapsible expanded={this.state.q8}>
                   Answer
                 </Panel>
               </Col>
