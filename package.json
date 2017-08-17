@@ -6,8 +6,12 @@
     "react-scripts": "0.8.5"
   },
   "dependencies": {
+    "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
     "font-awesome": "^4.7.0",
+    "nodemailer": "^4.0.1",
     "prop-types": "^15.5.10",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.8",
@@ -19,6 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "npm run build && node ./server/index.js"
   }
 }

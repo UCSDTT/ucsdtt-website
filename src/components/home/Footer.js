@@ -8,11 +8,20 @@ class Footer extends Component {
         <div className="footer dark-bg">
             <Grid className="footer-padding">
               <Row className="show-grid">
-                <Col xs={12} sm={6} md={4} className="widget"><div className="widget-header">Want to learn more?</div><br/>asdf</Col>
-                <Col xs={12} sm={6} md={4} className="widget">
-                  <div className="widget-header">Credits</div><br/>
-                      <ul>
-                        <li><a className="light-grey" href='http://www.thetatauuci.com/'> UC Irvine</a></li>
+                <Col xsOffset={2} xs={8} smOffset={0} sm={6} md={4} className="widget"><div className="widget-header">Want to learn more?</div><br/>
+                  <p className="footer-p"> Outside of the Epsilon Delta chapter at UCSD, Theta Tau is the oldest 
+                      and largest professional engineering fraternity in the United States, 
+                      with chapters everywhere from coast to coast!
+                  </p>
+                  <p className="footer-p">
+                    For more information, visit Theta Tau's national site: 
+                      <a className="light-grey" href="http://thetatau.org/"> thetatau.org</a>
+                  </p>
+                </Col>
+                <Col xsOffset={2} xs={8} smOffset={0} sm={6} md={4} className="widget">
+                  <div className="widget-header">Visit our Neighboring Chapters</div><br/>
+                      <ul className="footer-ul">
+                        <li><a className="light-grey" href='http://www.thetatauuci.com/'>UC Irvine</a></li>
                         <li><a className="light-grey" href='http://theta-tau-chi-chapter.herokuapp.com/'>University of Arizona</a></li>
                         <li><a className="light-grey" href='http://www.thetataubruins.org/'>UC Los Angeles</a></li>
                         <li><a className="light-grey" href='http://www.engr.ucr.edu/~thetatau/'>UC Riverside</a></li>
@@ -24,18 +33,26 @@ class Footer extends Component {
                         <li><a className="light-grey" href='http://www.thetatau-dg.org/'>Arizona State University</a></li>
                       </ul>
                 </Col>
-                <Col xs={12} sm={12} md={4} className="widget"><div className="widget-header">Credits</div><br/>asdf</Col>
+                <Col xsOffset={2} xs={8} smOffset={3} sm={6} mdOffset={0} md={4} className="widget"><div className="widget-header">Website Credits</div><br/>
+                  <ul className="footer-ul">
+                    <li><a className="light-grey" href='https://github.com/bchann/'>Brian Chan</a></li>
+                    <li><a className="light-grey">Hillary Fan</a></li>
+                    <li><a className="light-grey">Blake Huynh</a></li>
+                    <li><a className="light-grey">Kaiser Kim</a></li>
+                    <li><a className="light-grey">Jeffrey Lee</a></li>
+                  </ul>
+                </Col>
               </Row>
             </Grid>
             <div className="media-icons">
               <Grid>
                 <Row className="show-grid">
-                  <Col xs={6} md={3} mdPush={3}>
+                  <Col xs={6} xsOffset={0} md={3} mdOffset={3}>
                     <a href="https://www.facebook.com/thetatau.ucsd/">
                       <i className="fa fa-facebook fa-3x light-grey"></i>
                     </a>
                   </Col>
-                  <Col xs={6} md={3} mdPush={3}>
+                  <Col xs={6} xsOffset={0} md={3}>
                     <a href="https://instagram.com/thetatau_ucsd/">
                       <i className="fa fa-instagram fa-3x light-grey"></i>
                     </a>
