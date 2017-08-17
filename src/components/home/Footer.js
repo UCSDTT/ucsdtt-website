@@ -33,7 +33,7 @@ class Footer extends Component {
                         <li><a className="light-grey" href='http://www.thetatau-dg.org/'>Arizona State University</a></li>
                       </ul>
                 </Col>
-                <Col xsOffset={2} xs={8} smOffset={3} sm={6} mdOffset={0} md={4} className="widget"><div className="widget-header">Credits</div><br/>
+                <Col xsOffset={2} xs={8} smOffset={3} sm={6} mdOffset={0} md={4} className="widget"><div className="widget-header">Website Credits</div><br/>
                   <ul className="footer-ul">
                     <li><a className="light-grey" href='https://github.com/bchann/'>Brian Chan</a></li>
                     <li><a className="light-grey">Hillary Fan</a></li>

@@ -22,10 +22,10 @@ class NavBar extends Component {
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav pullLeft className="hidden-sm">
+        <Nav pullLeft className="hidden-sm hidden-xs">
             <NavItem className="navbar-title" onClick={this.scrollToTop}>Theta Tau @ UC San Diego</NavItem>
-          </Nav>
+        </Nav>
+        <Navbar.Collapse>
           <Nav pullRight>
             <NavItem onClick={() => this.scrollToComp("who-we-are")}>About Us</NavItem>
             <NavItem onClick={() => this.scrollToComp("brothers-are")}>Members</NavItem>

@@ -118,7 +118,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
 .rush-button {
   -webkit-box-shadow: 0px 1px 3px #666666;
   -moz-box-shadow: 0px 1px 3px #666666;
@@ -212,36 +211,38 @@ body {
   .navbar-header {
     float: none;
   }
-
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
   .navbar-toggle {
     display: block;
   }
-
-  .navbar-collapse.collapse {
-    display: none !important;
-  }
-
   .navbar-collapse {
     margin-top: 15px;
-    background-color:rgba(10, 10, 10, .9);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    background-color: rgba(10, 10, 10, .9);
+    overflow-x: hidden;
   }
-
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
   .navbar-collapse.collapse {
     display: none!important;
   }
-
   .navbar-nav {
     float: none!important;
-    margin: 7.5px -15px;
+    margin-top: 7.5px;
   }
-
   .navbar-nav>li {
     float: none;
+    padding-bottom: 5px;
   }
-
   .navbar-nav>li>a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    line-height: 40px;
+  }
+  .collapse.in{
+    display:block !important;
   }
 }
 
