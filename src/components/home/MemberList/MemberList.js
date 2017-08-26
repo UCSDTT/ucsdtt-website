@@ -24,7 +24,7 @@ class MemberList extends Component {
 				</BS.Row>
 				<BS.Row>
 					<BS.Col>
-						<BS.Image id="fam-pic" src={require('../../../public/images/WhoWeAre.jpg')} responsive/>
+						<BS.Image id="fam-pic" src={require('../../../../public/images/WhoWeAre.jpg')} responsive/>
 					</BS.Col>
 				</BS.Row>
 				<BS.Row className="search-margin">

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Image, Navbar, Nav, NavItem} from 'react-bootstrap';
 import {animateScroll as scroll, scroller} from 'react-scroll'; 
+import './NavBar.css';
 
 class NavBar extends Component {
   scrollToTop() {
@@ -8,7 +9,7 @@ class NavBar extends Component {
   }
 
   scrollToComp(name) {
-    scroller.scrollTo(name, {offset: -120, smooth: true})
+    scroller.scrollTo(name, {offset: -80, smooth: true})
   }
 
   render() {
@@ -17,7 +18,7 @@ class NavBar extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <a href="#" onClick={this.scrollToTop}>          
-              <Image className="nav-logo" src={require('../../../public/images/tt_logo.png')} />
+              <Image className="nav-logo" src={require('../../../../public/images/tt_logo.png')} />
             </a>
           </Navbar.Brand>
           <Navbar.Toggle />
