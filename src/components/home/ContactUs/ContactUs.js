@@ -189,7 +189,7 @@ class ContactUs extends Component {
               { contactForm }
               <Col xsHidden smHidden md={5}>
                 <div className="contact-container">
-                  <Image src={require("../../../public/images/rushflyer.jpg")} responsive/>
+                  <Image src={require("../../../../public/images/rushflyer.jpg")} responsive/>
                 </div>
               </Col>
             </Row>

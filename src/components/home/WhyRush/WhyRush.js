@@ -7,7 +7,7 @@ class WhyRush extends Component {
     return (
       <div className="rush-container">
         <Element name="why-rush" className="element">
-            <Image className="rush-banner" src={require('../../../public/images/rose.jpg')} responsive/>
+            <Image className="rush-banner" src={require('../../../../public/images/rose.jpg')} responsive/>
             <div className="overlay-text">
               <h1 className="rush-title"> <strong> Rush Theta Tau </strong> </h1>
               <span className="rush-subtitle"> Learn about the fraternity and meet the active body </span>
