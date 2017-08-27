@@ -10,6 +10,7 @@ import {FAQ} from '../components/home/FAQ/FAQ.js';
 import {Messenger} from '../components/home/Messenger/Messenger.js';
 import {ContactUs} from '../components/home/ContactUs/ContactUs.js';
 import {Footer} from '../components/home/Footer/Footer.js';
+import {Companies} from '../components/home/Companies/Companies.js';
 import {MobileNav} from '../components/home/MobileNav/MobileNav.js';
 
 const muiTheme = getMuiTheme({
@@ -34,6 +35,7 @@ export default class Home extends Component {
           <FAQ/>
           <Messenger/>
           <ContactUs/>
+          <Companies/>
           <Footer/>
           <MobileNav/>
         </div>

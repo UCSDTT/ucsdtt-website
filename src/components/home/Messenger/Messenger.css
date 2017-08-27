@@ -4,6 +4,11 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media(min-width: 992px) {
+  .messenger {
+    margin: 50px 0;
+  }
+}
 
 /* Messenger Card */
 .messenger-card {
@@ -11,12 +16,7 @@
   justify-content: space-around;
   width: 25%;
 }
-@media (min-width: 992px) {
-  .messenger {
-    margin: 50px 0;
-  }
-}
-@media (max-width: 992px) {
+@media(max-width: 992px) {
   .messenger-card {
     width: 90%;
     margin: 20px 0;

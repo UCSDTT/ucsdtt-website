@@ -37,7 +37,8 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
+  min-height: 500px;
 }
 
 .header {
