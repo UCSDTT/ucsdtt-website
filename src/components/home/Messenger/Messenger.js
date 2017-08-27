@@ -23,7 +23,7 @@ class Messenger extends Component {
                 >
                 </CardTitle>
                 <CardMedia className="card-media">
-                  <img src={require(active.image)} />
+                  <img role="presentation" src={require(active.image)} />
                 </CardMedia>
                 <CardTitle
                   title={active.name}

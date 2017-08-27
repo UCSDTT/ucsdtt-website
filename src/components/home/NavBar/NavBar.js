@@ -47,7 +47,7 @@ class NavBar extends Component {
         style={{"position": "fixed"}}
         iconElementLeft={
           <a id="nav-logo" href='#' onClick={this.scrollToTop}>
-            <img className="logo" src={require('../../../../public/images/tt_logo.png')} />
+            <img className="logo" role="presentation" src={require('../../../../public/images/tt_logo.png')} />
           </a>
         }
         iconElementRight={
