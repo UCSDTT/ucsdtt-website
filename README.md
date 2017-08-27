@@ -2,6 +2,12 @@
 
 Theta Tau, Epsilon Delta Chapter Website
 
+### Required Packages
+
+npm install <package>
+ - npm
+ -
+
 ### vars.env
 
 ```
@@ -20,4 +26,10 @@ It is very important to ensure that you have a package.json file in your develop
 },
 ```
 
-With that, run npm start to get the localhost address and paste it into a web browser to see what the website looks like so far.
+With that, run npm start and go to localhost:3000 on a web browser to see the site.
+
+### npm Errors
+
+Try any of these commands if you get any npm errors:
+ - npm install
+ - npm install react-scripts --save-dev
