@@ -7,15 +7,15 @@ class WhyRush extends Component {
     return (
         <Element name="why-rush" className="element">
           <div className="rush-container">
-            <Grid className = "rush-container">
-              <Row className = "rush-container">
-                <Col xs={12} md = {8} className="image-div padding-0">
+            <Grid className="rush-container">
+              <Row className="rush-container">
+                <Col xs={12} md={8} className="image-div padding-0">
                   <Image className="rush-image" src={require('../../../public/images/rose.jpg')} responsive/>
-=                </Col>
-                <Col xs={8} md = {4} className = "rush-blurb padding-0">
-                    <div className = "rush-text">
-                      <span className = "rush-bold"> Rush Theta Tau </span>
-                      <span className = "rush-details">  Learn about the fraternity and meet the active body </span>
+                </Col>
+                <Col xs={8} md={4} className="rush-blurb padding-0">
+                    <div className="rush-text">
+                      <span className="rush-bold"> Rush Theta Tau </span>
+                      <span className="rush-details">  Learn about the fraternity and meet the active body </span>
                     </div>
                     <div>
                       <span className="rush-promo"> JOIN US FOR FALL 2017 RUSH</span>
