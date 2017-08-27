@@ -1,0 +1,46 @@
+.pillars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0px;
+}
+
+.pillar-card {
+  justify-content: space-around;
+  width: 25%;
+}
+
+@media (max-width: 992px) {
+  .pillars {
+    margin: 50px 0;
+  }
+  .pillar-card {
+    width: 90%;
+    margin: 20px 0;
+  }
+}
+
+.pillar-card > div {
+  width: 100%;
+}
+
+/* Card Image */
+.card-media {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+/* Card Title */
+.pillar-position {
+  background-color: #eee;
+  margin-bottom: -30px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Card Body */
+.card-body {
+  font-size: 18px !important;
+  color: #999 !important;
+  margin-top: -30px;
+}
