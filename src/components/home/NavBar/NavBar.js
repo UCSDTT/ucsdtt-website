@@ -26,16 +26,37 @@ class NavBar extends Component {
   scrollToTop() {
     scroll.scrollToTop();
   }
+  openMenu() {
+    document.querySelector('#hamburger').classList.toggle('open');
+    if ( document.querySelector('#hamburger').classList.contains('open')) {
+      document.querySelector('#nav-logo').style.opacity = 0;
+      document.querySelector('#mobile-nav').style.opacity = 1;
+      document.querySelector('#mobile-nav').style.zIndex = 100;
+    }
+    else {
+      document.querySelector('#nav-logo').style.opacity = 1;
+      document.querySelector('#mobile-nav').style.opacity = 0;
+      document.querySelector('#mobile-nav').style.zIndex = -1;
+    }
+  }
 
   render() {
     return (
       <AppBar
-        children={NavBarTabs}
+        children={window.innerWidth > 992 && NavBarTabs}
         style={{"position": "fixed"}}
         iconElementLeft={
-          <a className="nav-logo" href='#' onClick={this.scrollToTop}>
+          <a id="nav-logo" href='#' onClick={this.scrollToTop}>
             <img className="logo" src={require('../../../../public/images/tt_logo.png')} />
           </a>
+        }
+        iconElementRight={
+          <div id="hamburger" onClick={this.openMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         }
         zDepth={2}
       />

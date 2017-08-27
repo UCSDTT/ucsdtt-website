@@ -41,8 +41,9 @@ body {
 }
 
 .header {
+  margin-top: 50px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
 }
 
 #title {

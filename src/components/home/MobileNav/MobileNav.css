@@ -1,0 +1,24 @@
+/* Mobiel Nav Container */
+#mobile-nav {
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  font-size: 50px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-top: 80px;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Mobile Nav List Margin */
+#mobile-nav ul li {
+  margin-bottom: 8%;
+}
+
+/* Mobile Nav List Color */
+#mobile-nav ul li a {
+  color: #fff;
+}

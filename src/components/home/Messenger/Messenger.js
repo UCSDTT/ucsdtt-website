@@ -10,7 +10,7 @@ class Messenger extends Component {
     return (
       <Element name="messenger" className="element">
         <div className="container">
-          <h1 className="header"> Ask our Actives! </h1>
+          <h1 className="header"> Ask a Brother! </h1>
           <div className="messenger">
             {data.map((active) => (
               <Card
