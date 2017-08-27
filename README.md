@@ -6,7 +6,6 @@ Theta Tau, Epsilon Delta Chapter Website
 
 npm install <package>
  - npm
- -
 
 ### vars.env
 
