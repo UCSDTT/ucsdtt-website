@@ -36,10 +36,6 @@ body {
   to { transform: rotate(360deg); }
 }
 
-.container {
-  width: 60%;
-}
-
 .header {
   margin-top: 50px;
   padding-bottom: 10px;
