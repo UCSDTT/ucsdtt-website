@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {PageHeader, Grid, Col, Row, Panel, Image, Button} from 'react-bootstrap';
+import {PageHeader, Grid, Col, Row, Panel, Image} from 'react-bootstrap';
 import {Element} from 'react-scroll';
 import data from './data.js';
 import './Messenger.css';
@@ -16,7 +16,7 @@ class Messenger extends Component {
                   <Panel className="messenger-card"
                     header={active.position} 
                   >
-                    <Image className="messenger-image" src={require(active.image)} role="presentation" circle />
+                    <Image className="messenger-image" src={require(`${active.image}`)} role="presentation" circle />
                     <h3> {active.name} </h3>
                     <p className="messenger-body">
                       {active.year}

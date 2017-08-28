@@ -44,20 +44,6 @@ body {
   margin: 0 10%;
 }
 
-.container {
-  min-height: 500px;
-}
-@media(min-width: 992px) {
-  .container {
-    width: 80%;
-  }
-}
-@media(max-width: 992px) {
-  .container {
-    width: 90%;
-  }
-}
-
 .header {
   margin-top: 50px;
   padding-bottom: 10px;
