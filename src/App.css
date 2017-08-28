@@ -36,6 +36,14 @@ body {
   to { transform: rotate(360deg); }
 }
 
+.element {
+  margin: 50px auto;
+}
+
+.title {
+  margin: 0 10%;
+}
+
 .header {
   margin-top: 50px;
   padding-bottom: 10px;
@@ -335,50 +343,6 @@ a {
 a:hover, a:active {
   text-decoration: none;
   color: white;
-}
-
-/* Messenger */
-
-.messenger-image {
-  border: 1px solid black;
-  height: 50%;
-  width: 50%;
-}
-
-/* Contact Us */
-
-.contact-us {
-  padding: 20px;
-}
-
-.contact-title {
-  margin-top: 0px;
-}
-
-.contact-button {
-  background-color: rgba(17, 17, 17, .8);
-  color: white;
-  font-size: 15px;
-  text-decoration: none;
-  width: fill;
-}
-
-.contact-button:hover {
-  background: rgba(10, 10, 10, .9);
-  color: white;
-  text-decoration: none;
-}
-
-.form-border {
-  padding: 30px;
-  border: 1px solid black;
-}
-
-.contact-container {
-  height: 250px;
-  width: fill;
-  position: relative;
-  overflow: hidden;
 }
 
 /* FAQ */

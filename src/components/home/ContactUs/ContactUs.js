@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {FormGroup, FormControl, Button, InputGroup, Glyphicon, Grid, Col, Row, Image, Alert} from 'react-bootstrap';
 import {Element} from 'react-scroll';
+import './ContactUs.css';
 
 class ContactUs extends Component {
   constructor(props) {
@@ -44,39 +45,22 @@ class ContactUs extends Component {
     if (valid) {
       console.log("valid");
 
-      fetch('http://localhost:80/contact', {
+      fetch('http://formspree.io/officialucsdtt@gmail.com', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          from: this.state.email,
-          to: "ttsdwebmaster@gmail.com",
-          subject: "TT Website Contact Form - " + this.state.name + " ( " + this.state.email + " ) ",
-          text: this.state.message
+          'Sender': this.state.name,
+          'Sender Email': this.state.email,
+          'Message': this.state.message
         })
       })
-        .then((response) => response.json())
-        .then((responseJson) => {
-          if (responseJson.success) {
-            this.setState( { alert: false } );
-            console.log("Email sent!");
-            console.log(responseJson.error);
-            this.setState({
-              sent: true,
-              alert: false
-            });
-          }
-          else {
-            console.log("Email failed to send.");
-            console.error(responseJson.error);
-          }
-        })
-        .catch((error) => {
-          this.setState({ alert: true });
-          console.error(error);
-        });
+      this.setState({
+        sent: true,
+        alert: false
+      });
     }
     else {
       this.setState( { alert: true } );
