@@ -12,16 +12,16 @@ class FAQ extends Component {
         <Grid>
           <Row className="faq-col">
             <Col md={6}>
-              {faqCol1.map((question) => (
-                <Panel className="faq-card">
+              {faqCol1.map((question, i) => (
+                <Panel className="faq-card" key={i}>
                   <h4 className="faq-title"> {question.title} </h4>
                   <p className="faq-body"> {question.body} </p>
                 </Panel>
               ))}
             </Col>
             <Col md={6}>
-              {faqCol2.map((question) => (
-                <Panel className="faq-card">
+              {faqCol2.map((question, i) => (
+                <Panel className="faq-card" key={i}>
                   <h4 className="faq-title"> {question.title} </h4>
                   <p className="faq-body"> {question.body} </p>
                 </Panel>
