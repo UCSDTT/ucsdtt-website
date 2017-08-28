@@ -4,7 +4,7 @@ import {Element} from 'react-scroll';
 class Companies extends Component {
   render() {
     return (
-      <Element name="brothers-are" className="element">
+      <Element name="companies" className="element">
         <div className="container">
           <h1 className="header"> Companies our Alumni work for </h1>
         

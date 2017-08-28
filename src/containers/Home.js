@@ -37,7 +37,6 @@ export default class Home extends Component {
           <ContactUs/>
           <Companies/>
           <Footer/>
-          <MobileNav/>
         </div>
       </MuiThemeProvider>
     );

@@ -1,11 +1,5 @@
 #nav-logo {
-  margin-left: 100px;
   transition: opacity 0.2s;
-}
-@media (max-width: 992px) {
-  #nav-logo {
-    margin-left: 50px;
-  }
 }
 
 .logo {
@@ -13,18 +7,24 @@
   height: 60px;
   width: 60px;
 }
-.tabs {
-  width: 50%;
-  margin: auto;
-}
 
-/* Hamburger Icon for  */
-@media (max-width: 992px) {
+@media(max-width: 992px) {
+  .navbar-toggle {
+    margin: auto;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: #fff;
+    border: none;
+  }
+  .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: transparent;
+  }
+
+  /* Hamburger Icon */
   #hamburger {
     width: 40px;
     height: 45px;
     position: relative;
-    right: 50%;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -90,5 +90,30 @@
     top: 20px;
     width: 0%;
     left: 50%;
+  }
+  
+  .navbar-collapse {
+    margin-top: 0;
+  }
+
+  .navbar-collapse .navbar-nav {
+    position: fixed;
+    background-color: #000;
+    color: #fff;
+    font-size: 50px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  /* Mobile Nav List Margin */
+  .navbar-collapse .navbar-nav li {
+    height: 17%;
+  }
+
+  /* Mobile Nav List Color */
+  .navbar-collapse .navbar-nav li a {
+    color: #fff;
   }
 }

@@ -10,7 +10,7 @@
 }
 @media(max-width: 992px) {
   .faq-card {
-    margin: 30px auto;
+    margin: 30px 10px;
   }
 } 
 

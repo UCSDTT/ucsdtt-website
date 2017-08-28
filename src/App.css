@@ -44,7 +44,7 @@ body {
   margin: 0 10%;
 }
 
-.container {
+/*.container {
   min-height: 500px;
 }
 @media(min-width: 992px) {
@@ -56,7 +56,7 @@ body {
   .container {
     width: 90%;
   }
-}
+}*/
 
 .header {
   margin-top: 50px;
