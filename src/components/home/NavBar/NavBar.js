@@ -5,7 +5,7 @@ import {animateScroll as scroll, scroller} from 'react-scroll';
 import './NavBar.css';
 
 const scrollToComp = (name) => {
-  scroller.scrollTo(name, {offset: -80, smooth: true})
+  scroller.scrollTo(name, {offset: -120, smooth: true})
 }
 
 const NavBarTabs = 
@@ -47,7 +47,7 @@ class NavBar extends Component {
         style={{"position": "fixed"}}
         iconElementLeft={
           <a id="nav-logo" href='#' onClick={this.scrollToTop}>
-            <img className="logo" role="presentation" src={require('../../../../public/images/tt_logo.png')} />
+            <img className="logo" src={require('../../../../public/images/tt_logo.png')} role="presentation" />
           </a>
         }
         iconElementRight={
