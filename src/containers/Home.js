@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {NavBar} from '../components/home/NavBar/NavBar.js';
