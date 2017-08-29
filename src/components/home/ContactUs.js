@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {FormGroup, FormControl, Button, InputGroup, Glyphicon, Grid, Col, Row, Image, Alert} from 'react-bootstrap';
 import {Element} from 'react-scroll';
-import './ContactUs.css';
 
 class ContactUs extends Component {
   constructor(props) {
@@ -45,22 +44,39 @@ class ContactUs extends Component {
     if (valid) {
       console.log("valid");
 
-      fetch('http://formspree.io/officialucsdtt@gmail.com', {
+      fetch('http://localhost:80/contact', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          'Sender': this.state.name,
-          'Sender Email': this.state.email,
-          'Message': this.state.message
+          from: this.state.email,
+          to: "ttsdwebmaster@gmail.com",
+          subject: "TT Website Contact Form - " + this.state.name + " ( " + this.state.email + " ) ",
+          text: this.state.message
         })
       })
-      this.setState({
-        sent: true,
-        alert: false
-      });
+        .then((response) => response.json())
+        .then((responseJson) => {
+          if (responseJson.success) {
+            this.setState( { alert: false } );
+            console.log("Email sent!");
+            console.log(responseJson.error);
+            this.setState({
+              sent: true,
+              alert: false
+            });
+          }
+          else {
+            console.log("Email failed to send.");
+            console.error(responseJson.error);
+          }
+        })
+        .catch((error) => {
+          this.setState({ alert: true });
+          console.error(error);
+        });
     }
     else {
       this.setState( { alert: true } );
@@ -173,7 +189,7 @@ class ContactUs extends Component {
               { contactForm }
               <Col xsHidden smHidden md={5}>
                 <div className="contact-container">
-                  <Image src={require("../../../../public/images/rushflyer.jpg")} responsive/>
+                  <Image src={require("../../../public/images/rushflyer.jpg")} responsive/>
                 </div>
               </Col>
             </Row>

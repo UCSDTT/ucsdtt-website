@@ -11,12 +11,10 @@ class Messenger extends Component {
         <PageHeader className="title"> Ask a Brother! </PageHeader>
           <Grid>
             <Row>
-              {data.map((active) => (
-                <Col md={4} key={active.name}>
-                  <Panel className="messenger-card"
-                    header={active.position} 
-                  >
-                    <Image className="messenger-image" src={require(active.image)} role="presentation" circle />
+              {data.map((active, i) => (
+                <Col md={4} key={i}>
+                  <Panel className="messenger-card" header={active.position}>
+                    <Image className="messenger-image" src={require(`${active.image}`)} role="presentation" circle />
                     <h3> {active.name} </h3>
                     <p className="messenger-body">
                       {active.year}
