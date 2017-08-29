@@ -4,7 +4,7 @@
 
 .navbar-fixed-top {
   height: 80px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .navbar-nav li a {
@@ -121,11 +121,14 @@
     position: fixed;
     background-color: #000;
     color: #fff;
-    font-size: 50px;
+    font-size: 45px;
     top: 0;
+    left: -1%;
     height: 100%;
-    width: 100%;
+    width: 105%;
     margin-top: 80px;
+    padding-left: 5%;
+    text-align: center;
   }
 
   /* Mobile Nav List Margin */

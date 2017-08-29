@@ -37,6 +37,7 @@ body {
 }
 
 .element {
+  text-align: center;
   margin: 50px auto;
 }
 
@@ -44,7 +45,6 @@ body {
   margin: 0 10%;
 }
 
-<<<<<<< HEAD
 /*.container {
   min-height: 500px;
 }
@@ -58,9 +58,6 @@ body {
     width: 90%;
   }
 }*/
-
-=======
->>>>>>> 8612a8cd7c81e715f50cccd1fedec8675fb478ae
 .header {
   margin-top: 50px;
   padding-bottom: 10px;
