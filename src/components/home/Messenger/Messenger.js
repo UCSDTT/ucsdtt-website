@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {PageHeader, Grid, Col, Row, Panel, Image, Button} from 'react-bootstrap';
+import {PageHeader, Grid, Col, Row, Panel, Image} from 'react-bootstrap';
 import {Element} from 'react-scroll';
 import data from './data.js';
 import './Messenger.css';
@@ -12,7 +12,7 @@ class Messenger extends Component {
           <Grid>
             <Row>
               {data.map((active) => (
-                <Col md={4}>
+                <Col md={4} key={active.name}>
                   <Panel className="messenger-card"
                     header={active.position} 
                   >

@@ -1,3 +1,18 @@
+.navbar {
+  background-color: rgba(10, 10, 10, .9);
+}
+
+.navbar-fixed-top {
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px
+}
+
+.navbar-nav li a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 80px;
+}
+
 #nav-logo {
   transition: opacity 0.2s;
 }
@@ -8,7 +23,13 @@
   width: 60px;
 }
 
-@media(max-width: 992px) {
+.navbar-title {
+  font-size: 20px;
+  width: 280px;
+}
+
+@media(max-width: 768px) {
+  /* Mobile nav hamburger*/
   .navbar-toggle {
     margin: auto;
     margin-top: 10px;
@@ -92,10 +113,10 @@
     left: 50%;
   }
   
+  /* Mobile Nav Hamburger Open */
   .navbar-collapse {
     margin-top: 0;
   }
-
   .navbar-collapse .navbar-nav {
     position: fixed;
     background-color: #000;
@@ -115,5 +136,13 @@
   /* Mobile Nav List Color */
   .navbar-collapse .navbar-nav li a {
     color: #fff;
+  }
+
+  /* Changes border color to black for mobile nav hamburger open */
+  .navbar {
+    border: 1px solid #000;
+  }
+  .navbar-inverse .navbar-collapse {
+    border-color: #000;
   }
 }

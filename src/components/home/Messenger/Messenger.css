@@ -1,16 +1,8 @@
 /* Messenger Card */
 .messenger-card {
+  width: 23em;
+  margin: 30px auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
-}
-@media(min-width: 992px) {
-  .messenger-card {
-    margin: 30px 20px;
-  }
-}
-@media(max-width: 992px) {
-  .messenger-card {
-    margin: 30px 40px;
-  }
 }
 
 /* Messenger Title */
