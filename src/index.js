@@ -10,15 +10,14 @@ import MoreRush from './containers/MoreRush';
 
 ReactDOM.render(
   <BrowserRouter>
-    <div>
-      <Route path='*' component={App}/>
+    <App>
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route exact path='/garnett' component={Garnett}/>
         <Route exact path='/rush' component={MoreRush}/>
         <Route path='*' component={Home}/>
       </Switch>
-    </div>
+    </App>
   </BrowserRouter>,
   document.getElementById('root')
 );

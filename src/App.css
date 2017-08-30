@@ -44,23 +44,6 @@ body {
   margin: 0 10%;
 }
 
-<<<<<<< HEAD
-/*.container {
-  min-height: 500px;
-}
-@media(min-width: 992px) {
-  .container {
-    width: 80%;
-  }
-}
-@media(max-width: 992px) {
-  .container {
-    width: 90%;
-  }
-}*/
-
-=======
->>>>>>> 8612a8cd7c81e715f50cccd1fedec8675fb478ae
 .header {
   margin-top: 50px;
   padding-bottom: 10px;
