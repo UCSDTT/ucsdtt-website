@@ -15,6 +15,7 @@ class NavBar extends Component {
       document.querySelector('.navbar-collapse .navbar-nav').style.opacity = 0;
       document.querySelector('.navbar-collapse .navbar-nav').style.zIndex = -1;
       document.querySelector('#nav-logo').style.opacity = 1;
+      document.body.style.overflow = 'visible';
     }
   }
 
@@ -24,11 +25,13 @@ class NavBar extends Component {
       document.querySelector('.navbar-fixed-top').style.backgroundColor = '#000';
       document.querySelector('#nav-logo').style.opacity = 0;
       document.querySelector('.navbar-collapse .navbar-nav').style.opacity = 1;
+      document.body.style.overflow = 'hidden';
     }
     else {
       document.querySelector('.navbar-fixed-top').style.backgroundColor = 'rgba(10, 10, 10, .9)';
       document.querySelector('#nav-logo').style.opacity = 1;
       document.querySelector('.navbar-collapse .navbar-nav').style.opacity = 0;
+      document.body.style.overflow = 'visible';
     }
   }
 

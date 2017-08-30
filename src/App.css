@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
+/* Not working after router change */
 .App {
   text-align: center;
 }
@@ -26,6 +27,10 @@ body {
   padding: 0;
 }
 
+.homepage {
+  text-align: center;
+}
+
 .picture {
   width: auto;
   height: auto;
@@ -37,7 +42,6 @@ body {
 }
 
 .element {
-  text-align: center;
   margin: 50px auto;
 }
 

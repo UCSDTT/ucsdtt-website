@@ -5,15 +5,15 @@
   max-width: 100vw;
 }
 
-/*.landing-image {
-  position: absolute;
+.landing-image {
+  position: cover;
   top: -9999px;
   bottom: -9999px;
   left: -9999px;
   right: -9999px;
   margin: auto;
   width: fill;
-}*/
+}
 
 .landing-gradient{
   position:relative;
@@ -34,7 +34,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
-@media(min-width: 992px) {
+/*@media(min-width: 992px) {
   .landing-image {
     height: 100vh;
     width: 100vw;
@@ -49,7 +49,7 @@
   .landing-image {
     height: 500px !important;
   }
-}
+}*/
 
 .brothers-are {
   position: absolute;
