@@ -11,7 +11,7 @@
   color: white;
   font-size: 15px;
   text-decoration: none;
-  width: fill;
+  width: stretch;
 }
 
 .contact-button:hover {
@@ -26,7 +26,7 @@
 
 .contact-container {
   height: 250px;
-  width: fill;
+  width: stretch;
   position: relative;
   overflow: hidden;
 }

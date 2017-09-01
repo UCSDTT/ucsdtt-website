@@ -30,7 +30,7 @@ class ContactUs extends Component {
   }
 
   getValidationState() {
-    const emailpattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    const emailpattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
     let length = this.state.name.length;
     let valid = true;
@@ -100,12 +100,12 @@ class ContactUs extends Component {
               </h1>
             </Col>
             <Col xs={2}>
-              <a href="https://www.facebook.com/thetatau.ucsd/" target="_blank">
+              <a href="https://www.facebook.com/thetatau.ucsd/" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-facebook fa-3x light-grey"></i>
               </a>
             </Col>
             <Col xs={2}>
-              <a href="https://instagram.com/thetatau_ucsd/" target="_blank">
+              <a href="https://instagram.com/thetatau_ucsd/" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-instagram fa-3x light-grey"></i>
               </a>
             </Col>
@@ -177,7 +177,7 @@ class ContactUs extends Component {
               {contactForm}
               <Col xsHidden smHidden md={5}>
                 <div className="contact-container">
-                  <Image src={require("../../../../public/images/rushflyer.jpg")} responsive/>
+                  <Image src={require("./images/rushflyer.jpg")} responsive/>
                 </div>
               </Col>
             </Row>

@@ -12,7 +12,7 @@ class FAQ extends Component {
         <PageHeader className="title"> FAQ </PageHeader>
         <Parallax strength={400}>
           <Background>
-          <img role="presentation" src={require("./images/parallax-test.jpg")} />
+            <img alt="" src={require("./images/parallax-test.jpg")} />
           </Background>
           <Grid>
             <Row className="faq-col">

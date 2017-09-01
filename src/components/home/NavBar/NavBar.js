@@ -75,8 +75,8 @@ class NavBar extends Component {
       <Navbar className="navbar-fixed-top" inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <a id="nav-logo" href="#" onClick={this.scrollToTop}>
-              <Image className="logo" src={require('../../../../public/images/tt_logo.png')}/>
+            <a role="button" id="nav-logo" onClick={this.scrollToTop}>
+              <Image className="logo" src={require('./images/tt_logo.png')}/>
             </a>
           </Navbar.Brand>
           <Navbar.Toggle

@@ -12,7 +12,7 @@
   left: -9999px;
   right: -9999px;
   margin: auto;
-  width: fill;
+  width: stretch;
 }
 
 .landing-gradient{
