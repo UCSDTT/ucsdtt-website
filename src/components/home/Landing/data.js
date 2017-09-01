@@ -20,6 +20,21 @@ const slideData = [
     'active': 'Rishi Dhanaraj',
     'activeImage': './images/bchan.jpg',
   },
-]
+];
 
-export default slideData;
+const brothersAre = [
+  {
+    'name': 'friends',
+    'color': 'red',
+  },
+  {
+    'name': 'buddies',
+    'color': 'blue',
+  },
+  {
+    'name': 'mates',
+    'color': 'green',
+  }
+];
+
+export {slideData, brothersAre};
