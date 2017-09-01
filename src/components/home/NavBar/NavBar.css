@@ -1,11 +1,20 @@
-#nav-logo {
-  margin-left: 100px;
-  transition: opacity 0.2s;
+.navbar {
+  background-color: rgba(10, 10, 10, .9);
 }
-@media (max-width: 992px) {
-  #nav-logo {
-    margin-left: 50px;
-  }
+
+.navbar-fixed-top {
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.navbar-nav li a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 80px;
+}
+
+#nav-logo {
+  transition: opacity 0.2s;
 }
 
 .logo {
@@ -13,18 +22,30 @@
   height: 60px;
   width: 60px;
 }
-.tabs {
-  width: 50%;
-  margin: auto;
+
+.navbar-title {
+  font-size: 20px;
+  width: 280px;
 }
 
-/* Hamburger Icon for  */
-@media (max-width: 992px) {
+@media(max-width: 768px) {
+  /* Mobile nav hamburger*/
+  .navbar-toggle {
+    margin: auto;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: #fff;
+    border: none;
+  }
+  .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: transparent;
+  }
+
+  /* Hamburger Icon */
   #hamburger {
     width: 40px;
     height: 45px;
     position: relative;
-    right: 50%;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -90,5 +111,41 @@
     top: 20px;
     width: 0%;
     left: 50%;
+  }
+  
+  /* Mobile Nav Hamburger Open */
+  .navbar-collapse {
+    margin-top: 0;
+  }
+  .navbar-collapse .navbar-nav {
+    position: fixed;
+    background-color: #000;
+    color: #fff;
+    font-size: 45px;
+    top: 0;
+    left: -1%;
+    height: 100%;
+    width: 105%;
+    margin-top: 80px;
+    padding-left: 5%;
+    text-align: center;
+  }
+
+  /* Mobile Nav List Margin */
+  .navbar-collapse .navbar-nav li {
+    height: 17%;
+  }
+
+  /* Mobile Nav List Color */
+  .navbar-collapse .navbar-nav li a {
+    color: #fff;
+  }
+
+  /* Changes border color to black for mobile nav hamburger open */
+  .navbar {
+    border: 1px solid #000;
+  }
+  .navbar-inverse .navbar-collapse {
+    border-color: #000;
   }
 }
