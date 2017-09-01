@@ -1,0 +1,125 @@
+/* Messenger Card */
+.messenger-card {
+  width: 23em;
+  margin: 30px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  border: none;
+}
+
+/* Messenger Title */
+.panel-heading {
+  font-size: 24px;
+}
+.active-position {
+  background-color: #eee;
+  margin-bottom: -30px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Messenger Image */
+.messenger-image {
+  height: 150px;
+  width: 150px;
+}
+
+/* Messenger Body */
+.messenger-body {
+  font-size: 18px;
+  color: #999;
+}
+
+/* Messenger Actions */
+.messenger-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+/* Messenger Button */
+.messenger-button {
+  height: 60px;
+  width: 60px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.messenger-button:hover {
+  opacity: 0.7;
+}
+.messenger-button i {
+  margin-top: 13px;
+}
+
+/* Material icon size */
+.material-icons.email { 
+  font-size: 32px;
+  color: white; 
+}
+
+i.fa.fa-temp-messenger::before {
+  content: "";
+  display: inline-block;
+  width: 3.0rem; /* Set to your font-size */
+  height: 3.0rem; /* Set to your font-size */
+  position: relative;
+  background: url('./images/facebook-messenger.svg') no-repeat scroll center center/100%;
+}
+
+/*.messenger {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+.messenger-card {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  height: 250px;
+}
+@media (max-width: 992px) {
+  .messenger-card {
+    width: 80%;
+    margin: 20px 0;
+  }
+}
+
+.card-title {
+  position: absolute !important;
+  top: 10%;
+  left: 10%;
+}
+
+.card-media {
+  position: absolute !important;
+  top: 15%;
+  right: 5%;
+  padding-left: 10px;
+  border-left: 1px solid #999;
+}
+.active-image {
+  border-radius: 50%;
+  height: 170px;
+  width: 170px !important;
+}
+
+.card-body {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 20px !important;
+}
+
+.card-actions {
+  position: absolute !important;
+  left: 5%;
+  bottom: 0;
+  width: 50%;
+}
+.card-button {
+  width: 80%;
+  margin-bottom: 10px;
+}*/

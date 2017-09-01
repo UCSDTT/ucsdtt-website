@@ -1,5 +1,6 @@
+import {Col, Grid, Image, Row} from 'react-bootstrap';
 import React, {Component} from 'react';
-import {Image, Grid, Row, Col} from 'react-bootstrap';
+
 // import RushSchedule from '../components/rush';
 
 export default class MoreRush extends Component {
@@ -27,7 +28,7 @@ export default class MoreRush extends Component {
             </Col>
 
             <Col md={6}>
-            <Image className="rush-banner" src={require('../../public/images/rushflyer.jpg')} responsive/>
+            <Image className="rush-banner" src={require('./temp-images/rushflyer.jpg')} responsive/>
             </Col>
 
 

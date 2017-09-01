@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {PageHeader} from 'react-bootstrap';
+
 import {Element} from 'react-scroll';
+import {PageHeader} from 'react-bootstrap';
 
 class RushSchedule extends Component {
   render() {

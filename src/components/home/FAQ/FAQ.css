@@ -1,0 +1,36 @@
+/* FAQ Cards */
+.faq-card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  text-align: left;
+  border: none;
+}
+@media(min-width: 992px) {
+  .faq-card {
+    margin: 30px 20px;
+  }
+}
+@media(max-width: 992px) {
+  .faq-card {
+    margin: 30px 10px;
+  }
+} 
+
+/* FAQ Title */
+.faq-title {
+  font-size: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* FAQ Body */
+.faq-body {
+  font-size: 18px;
+  color: #999;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Parallax height */
+.parallax-height {
+  height: 25vh;
+}
