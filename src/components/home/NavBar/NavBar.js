@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Image, Navbar, Nav, NavItem} from 'react-bootstrap';
-import {animateScroll as scroll, scroller} from 'react-scroll'; 
+import {animateScroll as scroll, scroller} from 'react-scroll';
 import './NavBar.css';
 
 class NavBar extends Component {
@@ -9,57 +9,88 @@ class NavBar extends Component {
   }
 
   scrollToComp(name) {
-    scroller.scrollTo(name, {offset: -80, smooth: true});
+    scroller.scrollTo(name, {
+      offset: -80,
+      smooth: true
+    });
     if (document.querySelector('#hamburger').classList.contains('open')) {
-      document.querySelector('#hamburger').classList.toggle('open');
-      document.querySelector('.navbar-collapse .navbar-nav').style.opacity = 0;
-      document.querySelector('.navbar-collapse .navbar-nav').style.zIndex = -1;
-      document.querySelector('#nav-logo').style.opacity = 1;
+      document
+        .querySelector('#hamburger')
+        .classList
+        .toggle('open');
+      document
+        .querySelector('.navbar-collapse .navbar-nav')
+        .style
+        .opacity = 0;
+      document
+        .querySelector('.navbar-collapse .navbar-nav')
+        .style
+        .zIndex = -1;
+      document
+        .querySelector('#nav-logo')
+        .style
+        .opacity = 1;
       document.body.style.overflow = 'visible';
     }
   }
 
   openMenu() {
-    document.querySelector('#hamburger').classList.toggle('open');
+    document
+      .querySelector('#hamburger')
+      .classList
+      .toggle('open');
     if (document.querySelector('#hamburger').classList.contains('open')) {
-      document.querySelector('.navbar-fixed-top').style.backgroundColor = '#000';
-      document.querySelector('#nav-logo').style.opacity = 0;
-      document.querySelector('.navbar-collapse .navbar-nav').style.opacity = 1;
+      document
+        .querySelector('.navbar-fixed-top')
+        .style
+        .backgroundColor = '#000';
+      document
+        .querySelector('#nav-logo')
+        .style
+        .opacity = 0;
+      document
+        .querySelector('.navbar-collapse .navbar-nav')
+        .style
+        .opacity = 1;
       document.body.style.overflow = 'hidden';
-    }
-    else {
-      document.querySelector('.navbar-fixed-top').style.backgroundColor = 'rgba(10, 10, 10, .9)';
-      document.querySelector('#nav-logo').style.opacity = 1;
-      document.querySelector('.navbar-collapse .navbar-nav').style.opacity = 0;
+    } else {
+      document
+        .querySelector('.navbar-fixed-top')
+        .style
+        .backgroundColor = 'rgba(10, 10, 10, .9)';
+      document
+        .querySelector('#nav-logo')
+        .style
+        .opacity = 1;
+      document
+        .querySelector('.navbar-collapse .navbar-nav')
+        .style
+        .opacity = 0;
       document.body.style.overflow = 'visible';
     }
   }
 
   render() {
     return (
-      <Navbar className="navbar-fixed-top"
-        inverse 
-        collapseOnSelect
-      >
+      <Navbar className="navbar-fixed-top" inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <a id="nav-logo" href="#" onClick={this.scrollToTop}>          
-              <Image className="logo" src={require('../../../../public/images/tt_logo.png')} />
+            <a id="nav-logo" href="#" onClick={this.scrollToTop}>
+              <Image className="logo" src={require('../../../../public/images/tt_logo.png')}/>
             </a>
           </Navbar.Brand>
-          <Navbar.Toggle children={
-            <div id="hamburger">
+          <Navbar.Toggle
+            children={<div id="hamburger">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-            </div>
-          }
-          onClick={this.openMenu}
-          />
+              </div>
+            }
+            onClick={this.openMenu}/>
         </Navbar.Header>
         <Nav pullLeft className="hidden-sm hidden-xs">
-            <NavItem className="navbar-title" onClick={this.scrollToTop}>Theta Tau @ UC San Diego</NavItem>
+          <NavItem className="navbar-title" onClick={this.scrollToTop}>Theta Tau @ UC San Diego</NavItem>
         </Nav>
         <Navbar.Collapse>
           <Nav pullRight>

@@ -17,9 +17,13 @@ class Landing extends Component {
             </Carousel.Caption>
             <Carousel.Caption className="quote-container">
               <div className="active-quote">
-                <p> "{slide.quote}" </p>
-                <Image className="active-image" src={require(`${slide.activeImage}`)} circle />
-                <h3> {slide.active} </h3>
+                <p>
+                  "{slide.quote}"
+                </p>
+                <Image className="active-image" src={require(`${slide.activeImage}`)} circle/>
+                <h3>
+                  {slide.active}
+                </h3>
               </div>
             </Carousel.Caption>
           </Carousel.Item>
