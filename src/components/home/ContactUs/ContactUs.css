@@ -22,7 +22,6 @@
 
 .form-border {
   padding: 30px;
-  border: 1px solid black;
 }
 
 .contact-container {
@@ -30,4 +29,14 @@
   width: fill;
   position: relative;
   overflow: hidden;
+}
+
+.sent-container {
+  height: 250px;
+}
+
+.sent-text {
+  vertical-align: middle;
+  line-height: 250px;
+  font-style: italic;
 }

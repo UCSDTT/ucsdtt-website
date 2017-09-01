@@ -78,16 +78,14 @@ class ContactUs extends Component {
   }
 
   render() {
-    let contactForm = <Col md={7}>
-      <h3>Thank you for contacting us, we will get back to you soon!</h3>
-    </Col>
+    let contactForm = <Col className="sent-container" md={7}><div className="sent-text">Thank you for contacting us, we will get back to you soon!</div></Col>
     let alert = ''
 
     if (this.state.alert) {
       alert = (
         <Alert bsStyle="warning">
           <strong>Email not sent!</strong>
-          Please completely fill out fields
+          &nbsp;Please completely fill out all fields.
         </Alert>
       )
     }
@@ -102,12 +100,12 @@ class ContactUs extends Component {
               </h1>
             </Col>
             <Col xs={2}>
-              <a href="https://www.facebook.com/thetatau.ucsd/">
+              <a href="https://www.facebook.com/thetatau.ucsd/" target="_blank">
                 <i className="fa fa-facebook fa-3x light-grey"></i>
               </a>
             </Col>
             <Col xs={2}>
-              <a href="https://instagram.com/thetatau_ucsd/">
+              <a href="https://instagram.com/thetatau_ucsd/" target="_blank">
                 <i className="fa fa-instagram fa-3x light-grey"></i>
               </a>
             </Col>
@@ -162,8 +160,8 @@ class ContactUs extends Component {
               this.getValidationState();
               e.preventDefault()
             }}>
-              Send
               <span><Glyphicon glyph="send"/></span>
+              &nbsp;&nbsp;Send
             </Button>
           </form>
         </Col>
