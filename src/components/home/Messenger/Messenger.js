@@ -1,15 +1,17 @@
-import React, {Component} from 'react';
+import './Messenger.css';
+
 import {
-  PageHeader,
-  Grid,
   Col,
-  Row,
+  Grid,
+  Image,
+  PageHeader,
   Panel,
-  Image
+  Row
 } from 'react-bootstrap';
+import React, {Component} from 'react';
+
 import {Element} from 'react-scroll';
 import data from './data';
-import './Messenger.css';
 
 class Messenger extends Component {
   render() {

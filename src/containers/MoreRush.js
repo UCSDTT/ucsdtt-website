@@ -1,5 +1,6 @@
+import {Col, Grid, Image, Row} from 'react-bootstrap';
 import React, {Component} from 'react';
-import {Image, Grid, Row, Col} from 'react-bootstrap';
+
 // import RushSchedule from '../components/rush';
 
 export default class MoreRush extends Component {

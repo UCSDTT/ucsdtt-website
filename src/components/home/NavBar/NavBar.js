@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
-import {Image, Navbar, Nav, NavItem} from 'react-bootstrap';
-import {animateScroll as scroll, scroller} from 'react-scroll';
 import './NavBar.css';
+
+import {Image, Nav, NavItem, Navbar} from 'react-bootstrap';
+import React, {Component} from 'react';
+import {animateScroll as scroll, scroller} from 'react-scroll';
 
 class NavBar extends Component {
   scrollToTop() {

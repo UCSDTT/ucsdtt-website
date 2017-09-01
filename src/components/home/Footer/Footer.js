@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
-import {Grid, Col, Row} from 'react-bootstrap';
 import '../../../../node_modules/font-awesome/css/font-awesome.min.css';
 import './Footer.css';
+
+import {Col, Grid, Row} from 'react-bootstrap';
+import React, {Component} from 'react';
 
 class Footer extends Component {
   render() {

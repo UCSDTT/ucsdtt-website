@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
-import {Image, Carousel} from 'react-bootstrap';
-import {slideData, brothersAre} from './data.js';
 import './Landing.css';
+
+import {Carousel, Image} from 'react-bootstrap';
+import React, {Component} from 'react';
+import {brothersAre, slideData} from './data.js';
 
 class Landing extends Component {
   constructor(props) {

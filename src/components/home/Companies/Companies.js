@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 import {Element} from 'react-scroll';
 
 class Companies extends Component {
