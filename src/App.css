@@ -58,6 +58,43 @@ body {
   color: white;
   border: none;
 }
+.padding-0{
+  padding-right:0;
+  padding-left:0;
+  margin: 0;
+}
+
+.max-size {
+  width: 100%;
+  height: 100%;
+}
+
+.rush-blurb {
+  background-color: black;
+  height: 50vh;
+  opacity: .9;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.rush-text {
+  margin: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.rush-bold {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4em;
+  display: block;
+  font-weight: bold;
+}
+
+.rush-details {
+  font-size: 1.2em;
+  padding-top: 10px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
 
 .schedule-title {
   margin: 0;
@@ -81,9 +118,10 @@ body {
 }
 
 .rush-container {
-  height: 70vh;
-  width: 100vw;
-  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 50vh;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -242,10 +280,10 @@ a:hover, a:active {
   padding: 20px;
 }
 
-html, 
-body, 
-.carousel, 
-.carousel-inner, 
+html,
+body,
+.carousel,
+.carousel-inner,
 .carousel-inner .item {
     height: 100%;
 }

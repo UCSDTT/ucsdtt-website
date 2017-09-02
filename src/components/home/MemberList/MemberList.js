@@ -1,5 +1,7 @@
-import React, {Component} from 'react';
 import * as BS from 'react-bootstrap';
+
+import React, {Component} from 'react';
+
 import members from '../../db.js'
 
 class MemberList extends Component {
