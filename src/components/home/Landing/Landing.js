@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-import React, {Component} from 'react';
-import {Image, Carousel} from 'react-bootstrap';
-// import ReactRotatingText from 'react-rotating-text';
-import {slideData, brothersAre, quoteData}  from './data.js';
-=======
->>>>>>> 3591eafa3b519c06dc4301b98adfe5a88f457055
 import './Landing.css';
-
-import {Carousel, Image} from 'react-bootstrap';
+import {Image, Carousel} from 'react-bootstrap';
 import React, {Component} from 'react';
-import {brothersAre, slideData} from './data.js';
+import {slideData, brothersAre, quoteData}  from './data.js';
 
 class Landing extends Component {
   constructor(props) {
@@ -17,13 +9,9 @@ class Landing extends Component {
     this.state = {
       words: [],
       wordArray: [],
-<<<<<<< HEAD
       currentWord: 0,
       quotes: [],
       currentQuote: 0
-=======
-      currentWord: 0
->>>>>>> 3591eafa3b519c06dc4301b98adfe5a88f457055
     };
   }
 
@@ -36,42 +24,26 @@ class Landing extends Component {
       this.splitLetters(words[i]);
     }
 
-<<<<<<< HEAD
     quotes[this.state.currentQuote].style.opacity = 1;
 
     this.setState({
       words: words,
       quotes: quotes,
     })
-=======
-    this.setState({words: words})
->>>>>>> 3591eafa3b519c06dc4301b98adfe5a88f457055
   }
 
   changeWord = (event) => {
     var cw = this.state.wordArray[this.state.currentWord];
-<<<<<<< HEAD
     var nw = this.state.wordArray[event];
     var cq = this.state.quotes[this.state.currentQuote];
     var nq = this.state.quotes[event];
-=======
-    var nw = this.state.currentWord === this.state.words.length - 1
-      ? this.state.wordArray[0]
-      : this.state.wordArray[this.state.currentWord + 1];
->>>>>>> 3591eafa3b519c06dc4301b98adfe5a88f457055
 
     for (var i = 0; i < cw.length; i++) {
       this.animateLetterOut(cw, i);
     }
-<<<<<<< HEAD
     
     for (var j = 0; j < nw.length; j++) {
       nw[j].className = 'letter behind';
-=======
-
-    for (i = 0; i < nw.length; i++) {
-      nw[i].className = 'letter behind';
->>>>>>> 3591eafa3b519c06dc4301b98adfe5a88f457055
       nw[0].parentElement.style.opacity = 1;
       this.animateLetterIn(nw, j);
     }
@@ -84,14 +56,8 @@ class Landing extends Component {
 
 
     this.setState({
-<<<<<<< HEAD
       currentWord: event,
       currentQuote: event,
-=======
-      currentWord: (this.state.currentWord === this.state.wordArray.length - 1)
-        ? 0
-        : this.state.currentWord + 1
->>>>>>> 3591eafa3b519c06dc4301b98adfe5a88f457055
     })
   }
 
@@ -118,7 +84,7 @@ class Landing extends Component {
       word.appendChild(letter);
       letters.push(letter);
     }
-
+    
     this
       .state
       .wordArray
@@ -135,43 +101,17 @@ class Landing extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
       <div className="landing">
-        <Carousel className="carousel-fade"
+        <Carousel 
+          className="carousel-fade"
           interval={3500}
-          onSelect={this.changeWord}
-        >
+          onSelect={this
+          .changeWord}>
           {slideData.map((slide, i) => (
             <Carousel.Item key={i}>
               <div className="landing-gradient">
                 <Image className="landing-image" src={require(`${slide.image}`)} responsive/>
               </div>
-=======
-      <div>
-        <Carousel
-          className="landing carousel-fade"
-          interval={3500}
-          pauseOnHover={false}
-          onSelect={this
-          .changeWord
-          .bind(this)}>
-          {slideData.map((slide, j) => (
-            <Carousel.Item key={j}>
-              <div className="landing-gradient">
-                <Image className="landing-image" src={require(`${slide.image}`)} responsive/>
-              </div>
-              <Carousel.Caption className="quote-container">
-                <div className="active-quote">
-                  <p>
-                    "{slide.quote}"
-                  </p>
-                  <Image className="active-image" src={require(`${slide.activeImage}`)} circle/>
-                  <h3>
-                    {slide.active}
-                  </h3>
-                </div>
-              </Carousel.Caption>
->>>>>>> 3591eafa3b519c06dc4301b98adfe5a88f457055
             </Carousel.Item>
           ))}
         </Carousel>
@@ -179,19 +119,13 @@ class Landing extends Component {
           <h1 className="brothers-are-text">
             Brothers are
           </h1>
-<<<<<<< HEAD
-          <h1 className="brothers-are-text" style={{marginLeft: '0.25em'}}>
-            {brothersAre.map((brother, i) => (
-              <span className={`word ${brother.color}`} key={i}>
-=======
-          <h1
-            className="brothers-are-text"
+          <h1 
+            className="brothers-are-text" 
             style={{
             marginLeft: '0.25em'
           }}>
-            {brothersAre.map((brother, j) => (
-              <span className={`word ${brother.color}`} key={j}>
->>>>>>> 3591eafa3b519c06dc4301b98adfe5a88f457055
+            {brothersAre.map((brother, i) => (
+              <span className={`word ${brother.color}`} key={i}>
                 {brother.name}
               </span>
             ))}
@@ -199,7 +133,9 @@ class Landing extends Component {
         </div>
         <div className="quote-container"> 
           {quoteData.map((quote, i) => (
-            <div className="quote" key={i}>
+            <div 
+              className="quote" 
+              key={i}>
               <p> <i>"{quote.text}"</i> </p>
               <div className="active-quote-group">
                 <Image className="active-image" src={require(`${quote.activeImage}`)} circle />
