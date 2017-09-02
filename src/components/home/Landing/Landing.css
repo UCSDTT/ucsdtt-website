@@ -51,36 +51,6 @@
   }
 }*/
 
-.quote-container {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.active-quote {
-  position: absolute;
-  right: 2em;
-  bottom: 2em;
-}
-
-.active-image {
-  height: 150px;
-  width: 150px;
-}
-
-.brothers-are {
-  position: absolute;
-  display: flex;
-  top: 10%;
-  left: 20%;
-  color: #fff;
-}
-
-.brothers-are-text {
-  display: inline-block;
-  font-size: 70px;
-  z-index: 10;
-}
 /* Rotating Text */
 /*.rotating-text {
   font-size: 70px;
@@ -118,16 +88,13 @@
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
 }
-
 .letter.out {
   transform: rotateX(90deg);
   transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
 .letter.behind {
   transform: rotateX(-90deg);
 }
-
 .letter.in {
   transform: rotateX(0deg);
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -143,6 +110,62 @@
 
 .green {
   color: #16a085;
+}
+
+/* Brothers Are */
+.brothers-are {
+  position: absolute;
+  display: flex;
+  top: 10%;
+  left: 20%;
+  color: #fff;
+  z-index: 10;
+}
+
+.brothers-are-text {
+  display: inline-block;
+  font-size: 70px;
+}
+
+/* Quote */
+.quote-container {
+  position: absolute;
+  right: 35%;
+  bottom: 35%;
+  color: #fff;
+  z-index: 1;
+}
+
+.quote {
+  position: absolute;
+  height: 300px;
+  width: 500px;
+  opacity: 0;
+}
+.quote p {
+  font-size: 20px;
+  text-align: left;
+}
+
+.active-quote-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+.active-quote-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  text-align: right;
+}
+.active-quote-labels h3 {
+  font-size: 30px;
+  margin: 0;
+}
+.active-image {
+  height: 120px;
+  width: 120px;
 }
 
 /* Carousel Fading slide */

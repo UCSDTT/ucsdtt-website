@@ -1,3 +1,10 @@
+/* FAQ Column */
+.faq-col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* FAQ Cards */
 .faq-card {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
@@ -7,11 +14,16 @@
 @media(min-width: 992px) {
   .faq-card {
     margin: 30px 20px;
+    max-width: 960px;
   }
 }
 @media(max-width: 992px) {
   .faq-card {
     margin: 30px 10px;
+    max-width: 540px;
+  }
+  .faq-card:last-child {
+    margin-bottom: 0;
   }
 } 
 
