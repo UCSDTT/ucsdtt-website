@@ -1,0 +1,40 @@
+/* FAQ Container */
+.faq-container {
+  display: flex;;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* FAQ Columns */
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 50%;
+}
+
+/* FAQ Cards */
+.faq-card {
+  width: 90%;
+  margin: 20px 0;
+}
+@media(min-width: 992px) {
+  .faq {
+    margin: 30px 0px;
+  }
+}
+@media (max-width: 992px) {
+  .faq {
+    width: 100%;
+  }
+}
+.faq-card > div {
+  width: 100%;
+}
+
+/* FAQ Body */
+.faq-body {
+  font-size: 18px !important;
+  color: #999 !important;
+  margin-top: -20px;
+}

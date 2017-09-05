@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import {Card, CardMedia, CardTitle, CardText, CardActions} from 'material-ui/Card';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import {Element} from 'react-scroll';
-import './Messenger.css';
 import data from './data.js';
+import './Messenger.css';
 
 class Messenger extends Component {
   render() {
@@ -16,6 +16,7 @@ class Messenger extends Component {
               <Card
                 className="messenger-card"
                 key={active.name}
+                zDepth={2}
               >
                 <CardTitle className="active-position"
                   title={active.position}
