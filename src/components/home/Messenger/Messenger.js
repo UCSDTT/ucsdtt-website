@@ -1,53 +1,54 @@
 import React, {Component} from 'react';
-import {Card, CardMedia, CardTitle, CardText, CardActions} from 'material-ui/Card';
-import FloatingActionButton from 'material-ui/FloatingActionButton';
+import {
+  PageHeader,
+  Grid,
+  Col,
+  Row,
+  Panel,
+  Image
+} from 'react-bootstrap';
 import {Element} from 'react-scroll';
-import data from './data.js';
+import data from './data';
 import './Messenger.css';
 
 class Messenger extends Component {
   render() {
     return (
       <Element name="messenger" className="element">
-        <div className="container">
-          <h1 className="header"> Ask our Actives! </h1>
-          <div className="messenger">
-            {data.map((active) => (
-              <Card
-                className="messenger-card"
-                key={active.name}
-                zDepth={2}
-              >
-                <CardTitle className="active-position"
-                  title={active.position}
-                >
-                </CardTitle>
-                <CardMedia className="card-media">
-                  <img src={require(active.image)} />
-                </CardMedia>
-                <CardTitle
-                  title={active.name}
-                >
-                </CardTitle>
-                <CardText className="card-body">
-                  {active.year}
-                  <br/>
-                  {active.major}
-                  <br/>
-                  {active.class}
-                </CardText>
-                <CardActions className="card-actions">
-                  <FloatingActionButton>
-                    <i className="material-icons">email</i>
-                  </FloatingActionButton>
-                  <FloatingActionButton>
-                    <i className="fa fa-temp-messenger"></i>
-                  </FloatingActionButton>
-                </CardActions>
-              </Card>
+        <PageHeader className="title">
+          Ask a Brother!
+        </PageHeader>
+        <Grid>
+          <Row>
+            {data.map((active, i) => (
+              <Col md={4} key={i}>
+                <Panel className="messenger-card" header={active.position}>
+                  <Image
+                    className="messenger-image"
+                    src={require(`${active.image}`)}
+                    role="presentation"
+                    circle/>
+                  <h3>
+                    {active.name}
+                  </h3>
+                  <p className="messenger-body">
+                    {active.year}
+                    <br/> {active.major}
+                    <br/> {active.class}
+                  </p>
+                  <div className="messenger-actions">
+                    <span className="messenger-button">
+                      <i className="material-icons email">email</i>
+                    </span>
+                    <span className="messenger-button">
+                      <i className="fa fa-temp-messenger"></i>
+                    </span>
+                  </div>
+                </Panel>
+              </Col>
             ))}
-          </div>
-        </div>
+          </Row>
+        </Grid>
       </Element>
     )
   }

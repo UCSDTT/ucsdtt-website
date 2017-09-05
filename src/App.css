@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
+/* Not working after router change */
 .App {
   text-align: center;
 }
@@ -36,13 +37,18 @@ body {
   to { transform: rotate(360deg); }
 }
 
-.container {
-  width: 90%;
+.element {
+  margin: 50px auto;
+}
+
+.title {
+  margin: 0 10%;
 }
 
 .header {
+  margin-top: 50px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
 }
 
 #title {
@@ -192,132 +198,6 @@ body {
   font-weight: 600;
 }
 
-/* NavBar */
-
-.navbar {
-  background-color: rgba(10, 10, 10, .9);
-}
-
-.navbar-fixed-top {
-  height: 80px;
-}
-
-.navbar-nav li a {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  line-height: 80px;
-}
-
-.navbar-brand {
-  padding-top: 15px;
-}
-
-.navbar-toggle {
-  margin-top: 23px;
-}
-
-@media (max-width: 992px) {
-  .navbar-header {
-    float: none;
-  }
-  .navbar-left,.navbar-right {
-    float: none !important;
-  }
-  .navbar-toggle {
-    display: block;
-  }
-  .navbar-collapse {
-    margin-top: 15px;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    background-color: rgba(10, 10, 10, .9);
-    overflow-x: hidden;
-  }
-  .navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px;
-  }
-  .navbar-collapse.collapse {
-    display: none!important;
-  }
-  .navbar-nav {
-    float: none!important;
-    margin-top: 7.5px;
-  }
-  .navbar-nav>li {
-    float: none;
-    padding-bottom: 5px;
-  }
-  .navbar-nav>li>a {
-    line-height: 40px;
-  }
-  .collapse.in{
-    display:block !important;
-  }
-}
-
-.nav-logo {
-  height: 50px;
-  width: 50px;
-}
-
-.navbar-title {
-  font-size: 20px;
-  width: 280px;
-}
-
-/* Landing */
-
-.landing {
-  position: relative;
-  overflow: hidden;
-  max-height: 100vh;
-  max-width: 100vw;
-}
-
-.landing-image {
-  position: cover;
-  top: -9999px;
-  left: -9999px;
-  right: -9999px;
-  bottom: -9999px;
-  margin: auto;
-  width: fill;
-}
-
-/* Footer */
-
-.footer-padding {
-  padding-bottom: 20px;
-}
-
-.widget {
-  color: white;
-  font-size: 12px;
-}
-
-.widget-header {
-  font-size: 20px;
-  border-bottom: 1px dotted white;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.media-icons {
-  border-top: 1px solid #aaa;
-  padding: 10px;
-}
-
-.footer-p {
-  font-size: 15px;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer-ul {
-  font-size: 15px;
-}
-
 /* Used for list in the footer TODO: assign names */
 li {
   padding-bottom: 0px;
@@ -338,57 +218,6 @@ a {
 a:hover, a:active {
   text-decoration: none;
   color: white;
-}
-
-/* Messenger */
-
-.messenger-image {
-  border: 1px solid black;
-  height: 50%;
-  width: 50%;
-}
-
-/* Contact Us */
-
-.contact-us {
-  padding: 20px;
-}
-
-.contact-title {
-  margin-top: 0px;
-}
-
-.contact-button {
-  background-color: rgba(17, 17, 17, .8);
-  color: white;
-  font-size: 15px;
-  text-decoration: none;
-  width: fill;
-}
-
-.contact-button:hover {
-  background: rgba(10, 10, 10, .9);
-  color: white;
-  text-decoration: none;
-}
-
-.form-border {
-  padding: 30px;
-  border: 1px solid black;
-}
-
-.contact-container {
-  height: 250px;
-  width: fill;
-  position: relative;
-  overflow: hidden;
-}
-
-/* FAQ */
-
-.question-panel {
-  margin-bottom: 0px;
-  cursor: pointer;
 }
 
 /* Miscellaneous */

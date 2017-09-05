@@ -1,72 +1,62 @@
-/* Messenger Container */
-.messenger {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 /* Messenger Card */
 .messenger-card {
-  display: flex;
-  justify-content: space-around;
-  width: 25%;
-}
-@media (min-width: 992px) {
-  .messenger {
-    margin: 50px 0;
-  }
-}
-@media (max-width: 992px) {
-  .messenger-card {
-    width: 90%;
-    margin: 20px 0;
-  }
-}
-.messenger-card > div {
-  width: 100%;
+  width: 23em;
+  margin: 30px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  border: none;
 }
 
-/* Card Image */
-.card-media {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
+/* Messenger Title */
+.panel-heading {
+  font-size: 24px;
 }
-.card-media img {
-  border-radius: 50%;
-  height: 150px;
-  width: 150px !important;
-}
-
-/* Card Title */
 .active-position {
   background-color: #eee;
   margin-bottom: -30px;
   border-bottom: 1px solid #ddd;
 }
 
-/* Card Body */
-.card-body {
-  font-size: 18px !important;
-  color: #999 !important;
-  margin-top: -30px;
+/* Messenger Image */
+.messenger-image {
+  height: 150px;
+  width: 150px;
 }
 
-/* Card Button */
-.card-button {
-  width: 80%;
-  margin-bottom: 10px;
+/* Messenger Body */
+.messenger-body {
+  font-size: 18px;
+  color: #999;
 }
 
-/* Card Actions */
-.card-actions {
+/* Messenger Actions */
+.messenger-actions {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 10%;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+/* Messenger Button */
+.messenger-button {
+  height: 60px;
+  width: 60px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.messenger-button:hover {
+  opacity: 0.7;
+}
+.messenger-button i {
+  margin-top: 13px;
 }
 
 /* Material icon size */
-.material-icons.md-48 { font-size: 48px; }
+.material-icons.email { 
+  font-size: 32px;
+  color: white; 
+}
 
 i.fa.fa-temp-messenger::before {
   content: "";
@@ -74,7 +64,6 @@ i.fa.fa-temp-messenger::before {
   width: 3.0rem; /* Set to your font-size */
   height: 3.0rem; /* Set to your font-size */
   position: relative;
-  top: 1rem;
   background: url('./images/facebook-messenger.svg') no-repeat scroll center center/100%;
 }
 

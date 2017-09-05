@@ -1,57 +1,40 @@
-import React, {Component} from 'react';
-import {Card, CardTitle, CardText} from 'material-ui/Card';
-import {Element} from 'react-scroll';
+import React, { Component } from 'react';
+import { PageHeader, Grid, Col, Row, Panel } from 'react-bootstrap';
+import { Element } from 'react-scroll';
+import { Parallax, Background } from 'react-parallax';
 import {faqCol1, faqCol2} from './data.js';
 import './FAQ.css';
 
-const style = {
-  title: {
-    lineHeight: '30px',
-  }
-}
 class FAQ extends Component {
   render() {
     return (
       <Element name="faq" className="element">
-        <div className="container">
-          <h1 className="header"> FAQ </h1>
-          <div className="faq-container">
-            <div className="faq">
-              {faqCol1.map((question) => (
-                <Card className="faq-card"
-                  key={question.title}
-                  zDepth={2}
-                >
-                  <CardTitle
-                    title={question.title}
-                    titleStyle={style.title}
-                  >
-                  </CardTitle>
-                  <CardText className="faq-body">
-                    {question.body}
-                  </CardText>
-                </Card>
-              ))}
-            </div>
-            <div className="faq">
-              {faqCol2.map((question) => (
-                <Card className="faq-card"
-                  key={question.title}
-                  zDepth={2}
-                >
-                  <CardTitle
-                    title={question.title}
-                    titleStyle={style.title}
-                  >
-                  </CardTitle>
-                  <CardText className="faq-body">
-                    {question.body}
-                  </CardText>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
+        <PageHeader className="title"> FAQ </PageHeader>
+        <Parallax strength={400}>
+          <Background>
+            <img alt="" src={require("./images/parallax-test.jpg")} />
+          </Background>
+          <Grid>
+            <Row className="faq-col">
+              <Col md={6}>
+                {faqCol1.map((question, i) => (
+                  <Panel className="faq-card" key={i}>
+                    <h4 className="faq-title"> {question.title} </h4>
+                    <p className="faq-body"> {question.body} </p>
+                  </Panel>
+                ))}
+              </Col>
+              <Col md={6}>
+                {faqCol2.map((question, i) => (
+                  <Panel className="faq-card" key={i}>
+                    <h4 className="faq-title"> {question.title} </h4>
+                    <p className="faq-body"> {question.body} </p>
+                  </Panel>
+                ))}
+              </Col>
+            </Row>
+          </Grid>
+        </Parallax>
       </Element>
     )
   }

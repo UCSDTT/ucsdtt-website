@@ -27,7 +27,7 @@ export default class MoreRush extends Component {
             </Col>
 
             <Col md={6}>
-            <Image className="rush-banner" src={require('../../public/images/rushflyer.jpg')} responsive/>
+            <Image className="rush-banner" src={require('./temp-images/rushflyer.jpg')} responsive/>
             </Col>
 
 
