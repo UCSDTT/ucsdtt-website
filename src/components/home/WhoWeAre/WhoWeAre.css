@@ -1,3 +1,10 @@
+.who-we-are-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0px;
+}
+
 .pillars {
   display: flex;
   flex-wrap: wrap;
@@ -8,6 +15,17 @@
 .pillar-card {
   justify-content: space-around;
   width: 25%;
+}
+
+.description {
+  width: 33%;
+  margin: auto;
+}
+
+.class-image {
+  height: 402px;
+  width: 600px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 992px) {
