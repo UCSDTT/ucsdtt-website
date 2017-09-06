@@ -1,5 +1,5 @@
 import './Landing.css';
-import {Image, Carousel} from 'react-bootstrap';
+import {Carousel, Image, Button, Glyphicon} from 'react-bootstrap';
 import React, {Component} from 'react';
 import {slideData, brothersAre, quoteData}  from './data.js';
 
@@ -11,7 +11,7 @@ class Landing extends Component {
       wordArray: [],
       currentWord: 0,
       quotes: [],
-      currentQuote: 0
+      currentQuote: 0,
     };
   }
 
@@ -51,7 +51,7 @@ class Landing extends Component {
     cq.style.opacity = 0;
     this.animateQuoteOut(cq)
     
-    cq.style.opacity = 1;
+    nq.style.opacity = 1;
     this.animateQuoteIn(nq)
 
 
@@ -92,11 +92,11 @@ class Landing extends Component {
   }
 
   animateQuoteOut(cq) {
-    cq.className = 'quote animated fadeOutDown';
+    cq.className = 'quote animated zoomOut';
   }
 
   animateQuoteIn(nq) {
-    nq.className = 'quote animated fadeInDown';
+    nq.className = 'quote animated zoomIn';
   }
 
   render() {
@@ -105,8 +105,7 @@ class Landing extends Component {
         <Carousel 
           className="carousel-fade"
           interval={3500}
-          onSelect={this
-          .changeWord}>
+          onSelect={this.changeWord}>
           {slideData.map((slide, i) => (
             <Carousel.Item key={i}>
               <div className="landing-gradient">
@@ -131,15 +130,24 @@ class Landing extends Component {
             ))}
           </h1>
         </div>
+        <div className="members-button-container">
+          <Button className="members-button" href="/brothers"> 
+            Meet the Brothers
+            <Glyphicon glyph="chevron-right" />
+          </Button>
+        </div>
         <div className="quote-container"> 
           {quoteData.map((quote, i) => (
             <div 
               className="quote" 
               key={i}>
-              <p> <i>"{quote.text}"</i> </p>
-              <div className="active-quote-group">
+              <div className="quote-text-group">
+                <span className="quote-quotes">❝</span>
+                <p> <i>{quote.text}</i> </p>
+              </div>
+              <div className="quote-active-group">
                 <Image className="active-image" src={require(`${quote.activeImage}`)} circle />
-                <div className="active-quote-labels">
+                <div className="quote-active-labels">
                   <h3> {quote.active} </h3>
                   <h3> {quote.major} </h3>
                   <h3> {quote.class} </h3>

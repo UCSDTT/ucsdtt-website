@@ -95,8 +95,28 @@ class NavBar extends Component {
         </Nav>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem onClick={() => this.scrollToComp("who-we-are")}>About Us</NavItem>
-            <NavItem onClick={() => this.scrollToComp("brothers-are")}>Members</NavItem>
+            {/*<li role="presentation">
+              <DropdownButton
+                title="About" 
+                noCaret 
+                id="about"
+                onClick={() => {
+                  this.scrollToComp("who-we-are");
+                  document.querySelector('.dropdown .dropdown-menu').style.display = 'none';
+                }}
+              >
+                <MenuItem eventKey="1" href="/history">History</MenuItem>
+                <MenuItem eventKey="2" href="/brotherhood">Brotherhood</MenuItem>
+                <MenuItem eventKey="3" href="/professionalism">Professionalism</MenuItem>
+                <MenuItem eventKey="4" href="/philanthropy">Philanthropy</MenuItem>
+              </DropdownButton>
+            </li>*/}
+            <NavItem onClick={() => this.scrollToComp("who-we-are")}>About</NavItem>
+            <li role="presentation">
+              <a href="/brothers">
+                Members
+              </a>
+            </li>
             <NavItem onClick={() => this.scrollToComp("why-rush")}>Rush</NavItem>
             <NavItem onClick={() => this.scrollToComp("faq")}>FAQ</NavItem>
             <NavItem onClick={() => this.scrollToComp("messenger")}>Contact Us</NavItem>
