@@ -98,6 +98,15 @@
   margin-bottom: 20px;
 }
 
+.option-label {
+  margin-top: 0;
+}
+
+.option-image {
+  height: 150px;
+  margin: auto;
+}
+
 .brother-image {
   height: 150px;
   margin: auto;

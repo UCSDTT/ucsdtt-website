@@ -14,6 +14,7 @@ class Brothers extends Component {
       value: '',
       brothers: brothers,
       alumni: alumni,
+      allBrothers: brothers.concat(alumni),
       updatedBrothers: brothers,
       filteredBrothers: brothers,
       dropdownValue: 'position',
@@ -40,6 +41,123 @@ class Brothers extends Component {
     this.setState({
       image: image,
     })
+  }
+
+  renderFilteredLabel(option) {
+    if (this.state.specificValue) {
+      if (option.value === this.state.specificValue) {
+        return (
+          <Col xs={12} md={2} className="brother-info">
+            <h3 className="option-label"> {option.label} </h3>
+            <Image className="option-image" src={option.image}></Image>
+          </Col>
+        );
+      }
+    }
+    else {
+      return (
+        <Col xs={12} md={2} className="brother-info">
+          <h3 className="option-label"> {option.label} </h3>
+          <Image className="option-image" src={option.image}></Image>
+        </Col>
+      );
+    }
+  }
+
+  renderFilteredList(option) {
+    if (this.state.dropdownValue === 'major') {
+      return (
+        <Col xs={12} md={10}>
+          {this.state.updatedBrothers.map((brother, i) => {                                  
+            if (brother['major'] === option.value) {
+              return (
+                <Col xs={6} sm={3} md={2} className="brother-info" key={i}>
+                  <div onClick={() => this.open(brother)}>
+                    <Image className="brother-image" src={brother.url} responsive rounded/>
+                    <p> {brother.name} </p>
+                    <p> {brother.position} </p>
+                    <p> {brother.class} </p>
+                  </div>
+                </Col>
+              );
+            }
+            else {
+              return;
+            }             
+          })}
+        </Col>
+      )
+    }
+    else {
+      return (
+        <Col xs={12} md={10}>
+          {this.state.allBrothers.map((brother, i) => {                                       
+            if (brother['class'] === option.value) {
+              return (
+                <Col xs={6} sm={3} md={2} className="brother-info" key={i}>
+                  <div onClick={() => this.open(brother)}>
+                    <Image className="brother-image" src={brother.url} responsive rounded/>
+                    <p> {brother.name} </p>
+                    <p> {brother.position} </p>
+                    <p> {brother.class} </p>
+                  </div>
+                </Col>
+              );
+            }
+            else {
+              return;
+            }             
+          })}
+        </Col>
+      )
+    }
+  }
+
+  renderBrothers() {
+    let options;
+
+    if (this.state.dropdownValue === 'major') {
+      options = majorOptions;
+    }
+    else {
+      options = classOptions;
+    }
+
+    if (this.state.specificValue) {
+      options = options.filter((option) => {
+        return (option.value.toLowerCase() ===
+          this.state.specificValue.toLowerCase()) !== false;
+      });
+    }
+
+    if (this.state.dropdownValue === 'major' || this.state.dropdownValue === 'class') {
+      return (
+        options.map((option, i) => {
+          return (
+            <div key={i}>
+              {this.renderFilteredLabel(option)}
+              {this.renderFilteredList(option)}
+            </div>
+          )
+        })
+      );
+    }
+    else {
+      return (
+        this.state.updatedBrothers.map((brother, i) => {                                        
+          return (
+            <Col xs={6} sm={3} md={2} className="brother-info" key={i}>
+              <div onClick={() => this.open(brother)}>
+                <Image className="brother-image" src={brother.url} responsive rounded/>
+                <p> {brother.name} </p>
+                <p> {brother.position} </p>
+                <p> {brother.class} </p>
+              </div>
+            </Col>
+          );                
+        })
+      )
+    }
   }
 
   close() {
@@ -70,7 +188,6 @@ class Brothers extends Component {
   filterDropdown(selected) {
     let updatedList = this.state.brothers;
     let options;
-    let value;
     let disabled;
     let image = this.state.image;
     let newImage = images.findIndex(function(image) {
@@ -87,28 +204,10 @@ class Brothers extends Component {
     }
     else if (selected.value === 'major') {
       options = this.state.majorOptions;
-      value = 'cs';
-      updatedList = updatedList.filter(function(brother){
-        return (brother.major.toLowerCase() ===
-          value.toLowerCase()) !== false;
-      });
-      newImage = images.findIndex(function(image) {
-        return (image.name.toLowerCase() ===
-          value.toLowerCase()) !== false;
-      });
       disabled = false;
     }
     else if (selected.value === 'class') {
       options = this.state.classOptions;
-      value = 'Charter Class';
-      updatedList = updatedList.filter(function(brother){
-        return (brother.class.toLowerCase() ===
-          value.toLowerCase()) !== false;
-      });
-      newImage = images.findIndex(function(image) {
-        return (image.name.toLowerCase() ===
-          value.toLowerCase()) !== false;
-      });
       disabled = false;
     }
     else {
@@ -122,7 +221,7 @@ class Brothers extends Component {
       dropdownValue: selected.value,
       updatedBrothers: updatedList,
       filteredBrothers: updatedList,
-      specificValue: value,
+      specificValue: null,
       specificOptions: options,
       specificDisabled: disabled,
     })
@@ -217,18 +316,7 @@ class Brothers extends Component {
                 <Modal.Body> {this.state.brotherModal.position} </Modal.Body>
               </Modal.Header>
             </Modal>
-            {this.state.updatedBrothers.map((brother, i) => {                                        
-              return (
-              	<Col xs={6} sm={3} md={2} className="brother-info" key={i}>
-                  <div onClick={() => this.open(brother)}>
-                  	<Image className="brother-image" src={brother.url} responsive rounded/>
-                  	<p> {brother.name} </p>
-                    <p> {brother.position} </p>
-                  	<p> {brother.class} </p>
-                  </div>
-                </Col>
-            	);                
-            })}
+            {this.renderBrothers()}
   				</Row>
   			</Grid>
       </div>
