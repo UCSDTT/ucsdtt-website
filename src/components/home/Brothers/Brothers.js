@@ -1,6 +1,6 @@
 import './Brothers.css';
 import 'react-select/dist/react-select.css';
-import {Grid, Row, Col, Image, FormGroup, FormControl, Modal} from 'react-bootstrap';
+import {Grid, Row, Col, Image, FormGroup, FormControl, Modal, Button} from 'react-bootstrap';
 import Select from 'react-select';
 import React, {Component} from 'react';
 import {brothers, alumni, options, majorOptions, classOptions, images} from './data.js'
@@ -65,52 +65,36 @@ class Brothers extends Component {
   }
 
   renderFilteredList(option) {
+    let brothers;
+
     if (this.state.dropdownValue === 'major') {
-      return (
-        <Col xs={12} md={10}>
-          {this.state.updatedBrothers.map((brother, i) => {                                  
-            if (brother['major'] === option.value) {
-              return (
-                <Col xs={6} sm={3} md={2} className="brother-info" key={i}>
-                  <div onClick={() => this.open(brother)}>
-                    <Image className="brother-image" src={brother.url} responsive rounded/>
-                    <p> {brother.name} </p>
-                    <p> {brother.position} </p>
-                    <p> {brother.class} </p>
-                  </div>
-                </Col>
-              );
-            }
-            else {
-              return;
-            }             
-          })}
-        </Col>
-      )
+      brothers = this.state.updatedBrothers;
     }
     else {
-      return (
-        <Col xs={12} md={10}>
-          {this.state.allBrothers.map((brother, i) => {                                       
-            if (brother['class'] === option.value) {
-              return (
-                <Col xs={6} sm={3} md={2} className="brother-info" key={i}>
-                  <div onClick={() => this.open(brother)}>
-                    <Image className="brother-image" src={brother.url} responsive rounded/>
-                    <p> {brother.name} </p>
-                    <p> {brother.position} </p>
-                    <p> {brother.class} </p>
-                  </div>
-                </Col>
-              );
-            }
-            else {
-              return;
-            }             
-          })}
-        </Col>
-      )
+      brothers = this.state.allBrothers;
     }
+
+    return (
+      <Col xs={12} md={10}>
+        {brothers.map((brother, i) => {                                  
+          if (brother[this.state.dropdownValue] === option.value) {
+            return (
+              <Col xs={6} sm={3} md={2} className="brother-info" key={i}>
+                <div onClick={() => this.open(brother)}>
+                  <Image className="brother-image" src={brother.url} responsive rounded/>
+                  <p> {brother.name} </p>
+                  <p> {brother.position} </p>
+                  <p> {brother.class} </p>
+                </div>
+              </Col>
+            );
+          }
+          else {
+            return false;
+          }             
+        })}
+      </Col>
+    )
   }
 
   renderBrothers() {
@@ -296,6 +280,7 @@ class Brothers extends Component {
                 options={this.state.options}
                 clearable={false}
                 onChange={this.filterDropdown}
+                backspaceRemoves={false}
               />
   					</Col>
             <Col xs={3} md={2}>
@@ -306,15 +291,26 @@ class Brothers extends Component {
                 clearable={false}
                 disabled={this.state.specificDisabled}
                 onChange={this.filterSpecific}
+                backspaceRemoves={false}
               />
             </Col>
   				</Row>
   				<Row className="brother-container">
             <Modal show={this.state.showModal} onHide={this.close}>
-              <Modal.Header closeButton>
+              <Modal.Header>
                 <Modal.Title> {this.state.brotherModal.name} </Modal.Title>
-                <Modal.Body> {this.state.brotherModal.position} </Modal.Body>
+                <Image className="modal-image" src={this.state.brotherModal.url} circle/>
               </Modal.Header>
+              <Modal.Body> 
+                <ul>
+                  <li> Position: {this.state.brotherModal.position} </li>
+                  <li> Class: {this.state.brotherModal.class} </li>
+                  <li> Major: {this.state.brotherModal.major} </li>
+                </ul>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button onClick={this.close}> Close </Button>
+              </Modal.Footer>
             </Modal>
             {this.renderBrothers()}
   				</Row>
