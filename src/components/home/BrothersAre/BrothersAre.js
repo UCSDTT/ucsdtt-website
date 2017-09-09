@@ -1,7 +1,9 @@
-import React, {Component} from 'react';
-import ReactRotatingText from 'react-rotating-text';
-import {Element} from 'react-scroll';
 import './BrothersAre.css';
+
+import React, {Component} from 'react';
+
+import {Element} from 'react-scroll';
+import ReactRotatingText from 'react-rotating-text';
 
 class BrothersAre extends Component {
   render() {

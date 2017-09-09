@@ -1,18 +1,20 @@
-import React, {Component} from 'react';
+import './ContactUs.css';
+
 import {
-  FormGroup,
-  FormControl,
+  Alert,
   Button,
-  InputGroup,
+  Col,
+  FormControl,
+  FormGroup,
   Glyphicon,
   Grid,
-  Col,
-  Row,
   Image,
-  Alert
+  InputGroup,
+  Row
 } from 'react-bootstrap';
+import React, {Component} from 'react';
+
 import {Element} from 'react-scroll';
-import './ContactUs.css';
 
 class ContactUs extends Component {
   constructor(props) {

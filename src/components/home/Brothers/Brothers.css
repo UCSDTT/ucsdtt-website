@@ -1,0 +1,167 @@
+/* Brothers Header */
+.brothers-header {
+  position: relative;
+  background-color: #191919;
+  color: #fff;
+  font-size: 45px;
+  padding: 40px 0;
+}
+@media(max-width: 768px) {
+  .brothers-header {
+    font-size: 25px;
+    padding: 30px 0;
+  }
+}
+.brothers-header:after {
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -80px;
+  width: 0;
+  height: 0;
+  border-top: solid 50px #191919;
+  border-left: solid 80px transparent;
+  border-right: solid 80px transparent;
+}
+
+.brothers-logo {
+  position: absolute;
+  left: 5%;
+  margin-top: -5px;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+/* Brothers Main Image */
+.brothers-image-container {
+  position: relative;
+}
+
+.brothers-image {
+  position: absolute;
+  top: 16%;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  z-index: -1;
+}
+.brothers-image.selected {
+  opacity: 1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+
+/* Brothers grid container */
+.brothers-grid {
+  margin-top: 41%;
+}
+
+/* Search Bar and Dropdown */
+.search-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-top: 15px;
+}
+
+.search-border {
+  border: solid;
+}
+
+.search-dropdown {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 13px;
+}
+
+/* Brothers List */
+.brother-container {
+  min-height: 500px;
+}
+@media(max-width: 768px) {
+  .brother-container {
+    margin: auto 10px;
+  }
+}
+
+.brother-info {
+  margin-bottom: 20px;
+}
+
+.option-label {
+  margin: 0;
+}
+
+.option-image {
+  height: 150px;
+  margin: auto;
+}
+
+.brother-image {
+  height: 150px;
+  margin: auto;
+}
+
+/* Modal */
+.modal-dialog {
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #800000;
+  color: #fff;
+  padding-top: 50px;
+}
+@media(max-width: 768px) {
+  .modal-header {
+    height: 130px;
+  }
+}
+
+.modal-title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.modal-image {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: -90px;
+  border: 7px solid #fff;
+}
+@media(max-width: 768px) {
+  .modal-image {
+    height: 120px;
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: -40px;
+  }
+}
+.modal-body {
+  font-size: 18px;
+  margin-top: 70px;
+}
+.modal-body > ul > li {
+  margin: 0;
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 30px;
+}
+@media(max-width: 768px) {
+  .modal-body {
+    margin-top: 50px;
+  }
+}

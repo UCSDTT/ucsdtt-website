@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import {Image, Carousel} from 'react-bootstrap';
-import {slideData, brothersAre} from './data.js';
 import './Landing.css';
+import {Carousel, Image, Button, Glyphicon} from 'react-bootstrap';
+import React, {Component} from 'react';
+import {slideData, brothersAre, quoteData}  from './data.js';
 
 class Landing extends Component {
   constructor(props) {
@@ -9,41 +9,55 @@ class Landing extends Component {
     this.state = {
       words: [],
       wordArray: [],
-      currentWord: 0
+      currentWord: 0,
+      quotes: [],
+      currentQuote: 0,
     };
   }
 
   componentDidMount() {
     let words = document.getElementsByClassName('word');
+    let quotes = document.getElementsByClassName('quote');
 
     words[this.state.currentWord].style.opacity = 1;
     for (var i = 0; i < words.length; i++) {
       this.splitLetters(words[i]);
     }
 
-    this.setState({words: words})
+    quotes[this.state.currentQuote].style.opacity = 1;
+
+    this.setState({
+      words: words,
+      quotes: quotes,
+    })
   }
 
-  changeWord() {
+  changeWord = (event) => {
     var cw = this.state.wordArray[this.state.currentWord];
-    var nw = this.state.currentWord === this.state.words.length - 1
-      ? this.state.wordArray[0]
-      : this.state.wordArray[this.state.currentWord + 1];
+    var nw = this.state.wordArray[event];
+    var cq = this.state.quotes[this.state.currentQuote];
+    var nq = this.state.quotes[event];
 
     for (var i = 0; i < cw.length; i++) {
       this.animateLetterOut(cw, i);
     }
-
-    for (i = 0; i < nw.length; i++) {
-      nw[i].className = 'letter behind';
+    
+    for (var j = 0; j < nw.length; j++) {
+      nw[j].className = 'letter behind';
       nw[0].parentElement.style.opacity = 1;
-      this.animateLetterIn(nw, i);
+      this.animateLetterIn(nw, j);
     }
 
+    cq.style.opacity = 0;
+    this.animateQuoteOut(cq)
+    
+    nq.style.opacity = 1;
+    this.animateQuoteIn(nq)
+
+
     this.setState({
-      currentWord: (this.state.currentWord === this.state.wordArray.length - 1)
-        ? 0
-        : this.state.currentWord + 1
+      currentWord: event,
+      currentQuote: event,
     })
   }
 
@@ -70,39 +84,33 @@ class Landing extends Component {
       word.appendChild(letter);
       letters.push(letter);
     }
-
+    
     this
       .state
       .wordArray
       .push(letters);
   }
 
+  animateQuoteOut(cq) {
+    cq.className = 'quote animated zoomOut';
+  }
+
+  animateQuoteIn(nq) {
+    nq.className = 'quote animated zoomIn';
+  }
+
   render() {
     return (
-      <div>
-        <Carousel
-          className="landing carousel-fade"
+      <div className="landing">
+        <Carousel 
+          className="carousel-fade"
           interval={3500}
-          pauseOnHover={false}
-          onSelect={this
-          .changeWord
-          .bind(this)}>
-          {slideData.map((slide, j) => (
-            <Carousel.Item key={j}>
+          onSelect={this.changeWord}>
+          {slideData.map((slide, i) => (
+            <Carousel.Item key={i}>
               <div className="landing-gradient">
                 <Image className="landing-image" src={require(`${slide.image}`)} responsive/>
               </div>
-              <Carousel.Caption className="quote-container">
-                <div className="active-quote">
-                  <p>
-                    "{slide.quote}"
-                  </p>
-                  <Image className="active-image" src={require(`${slide.activeImage}`)} circle/>
-                  <h3>
-                    {slide.active}
-                  </h3>
-                </div>
-              </Carousel.Caption>
             </Carousel.Item>
           ))}
         </Carousel>
@@ -110,17 +118,43 @@ class Landing extends Component {
           <h1 className="brothers-are-text">
             Brothers are
           </h1>
-          <h1
-            className="brothers-are-text"
+          <h1 
+            className="brothers-are-text" 
             style={{
             marginLeft: '0.25em'
           }}>
-            {brothersAre.map((brother, j) => (
-              <span className={`word ${brother.color}`} key={j}>
+            {brothersAre.map((brother, i) => (
+              <span className={`word ${brother.color}`} key={i}>
                 {brother.name}
               </span>
             ))}
           </h1>
+        </div>
+        <div className="members-button-container">
+          <Button className="members-button" href="/brothers"> 
+            Meet the Brothers
+            <Glyphicon glyph="chevron-right" />
+          </Button>
+        </div>
+        <div className="quote-container"> 
+          {quoteData.map((quote, i) => (
+            <div 
+              className="quote" 
+              key={i}>
+              <div className="quote-text-group">
+                <span className="quote-quotes">❝</span>
+                <p> <i>{quote.text}</i> </p>
+              </div>
+              <div className="quote-active-group">
+                <Image className="active-image" src={require(`${quote.activeImage}`)} circle />
+                <div className="quote-active-labels">
+                  <h3> {quote.active} </h3>
+                  <h3> {quote.major} </h3>
+                  <h3> {quote.class} </h3>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     );

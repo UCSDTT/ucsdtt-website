@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
-import { PageHeader, Grid, Col, Row, Panel } from 'react-bootstrap';
-import { Element } from 'react-scroll';
-import { Parallax, Background } from 'react-parallax';
-import {faqCol1, faqCol2} from './data.js';
 import './FAQ.css';
+
+import { Background, Parallax } from 'react-parallax';
+import { Col, Grid, PageHeader, Panel, Row } from 'react-bootstrap';
+import React, { Component } from 'react';
+import {faqCol1, faqCol2} from './data.js';
+
+import { Element } from 'react-scroll';
 
 class FAQ extends Component {
   render() {

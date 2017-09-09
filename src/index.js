@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import App from './App';
 import './index.css';
 
-import Home from './containers/Home';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+
+import App from './App';
 import Garnett from './containers/Garnett';
-import MoreRush from './containers/MoreRush';
+import Home from './containers/Home';
+import MemberPage from './containers/MemberPage';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -14,7 +15,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route exact path='/garnett' component={Garnett}/>
-        <Route exact path='/rush' component={MoreRush}/>
+        <Route exact path='/brothers' component={MemberPage}/>
         <Route path='*' component={Home}/>
       </Switch>
     </App>

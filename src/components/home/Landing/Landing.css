@@ -25,12 +25,12 @@
   left:0; top:0;
   width:100%; height:100%;
   display:inline-block;
-  background: -moz-linear-gradient(top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
@@ -51,36 +51,6 @@
   }
 }*/
 
-.quote-container {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.active-quote {
-  position: absolute;
-  right: 2em;
-  bottom: 2em;
-}
-
-.active-image {
-  height: 150px;
-  width: 150px;
-}
-
-.brothers-are {
-  position: absolute;
-  display: flex;
-  top: 10%;
-  left: 20%;
-  color: #fff;
-}
-
-.brothers-are-text {
-  display: inline-block;
-  font-size: 70px;
-  z-index: 10;
-}
 /* Rotating Text */
 /*.rotating-text {
   font-size: 70px;
@@ -118,16 +88,13 @@
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
 }
-
 .letter.out {
   transform: rotateX(90deg);
   transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
 .letter.behind {
   transform: rotateX(-90deg);
 }
-
 .letter.in {
   transform: rotateX(0deg);
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -143,6 +110,104 @@
 
 .green {
   color: #16a085;
+}
+
+/* Brothers Are */
+.brothers-are {
+  position: absolute;
+  display: flex;
+  top: 10%;
+  left: 20%;
+  color: #fff;
+  z-index: 10;
+}
+
+.brothers-are-text {
+  display: inline-block;
+  font-size: 70px;
+}
+
+/* Members Button */
+.members-button-container {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  z-index: 1;
+}
+
+.members-button {
+  background-color: #888;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-size: 22px;
+  font-weight: 900;
+  padding: 10px 10px;
+  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+}
+.members-button:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.members-button .glyphicon {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+/* Quote */
+.quote-container {
+  position: absolute;
+  right: 35%;
+  bottom: 35%;
+  color: #fff;
+  z-index: 1;
+}
+
+.quote {
+  position: absolute;
+  height: 300px;
+  width: 500px;
+  opacity: 0;
+}
+.quote p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 1em;
+  text-align: left;
+}
+
+.quote-text-group {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.quote-quotes {
+  font-size: 70px;
+  margin-top: -0.45em;
+}
+
+.quote-active-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+.quote-active-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  text-align: right;
+}
+.quote-active-labels h3 {
+  font-size: 30px;
+  margin: 0;
+}
+.active-image {
+  height: 120px;
+  width: 120px;
 }
 
 /* Carousel Fading slide */
