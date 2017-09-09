@@ -32,9 +32,7 @@
 .messenger-actions {
   display: flex;
   justify-content: space-around;
-  margin-left: 40px;
-  margin-bottom: 10px;
-  margin-right: 40px;
+  margin: 10px 40px;
 }
 
 /* Messenger Button */

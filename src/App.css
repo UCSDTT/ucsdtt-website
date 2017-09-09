@@ -51,6 +51,12 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
+@media(min-width: 992px) {
+  .col-md-5th {
+    width: 20%;
+  }
+}
+
 #title {
   margin: 0;
   line-height: 300%;

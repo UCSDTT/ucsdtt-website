@@ -1,9 +1,14 @@
 /* Brothers Header */
 .brothers-header {
   position: relative;
-  background-color: #191919;
+  background: #2f4f4f; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#24f4f4 , #000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#2f4f4f, #000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#2f4f4f, #000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#2f4f4f , #000); /* Standard syntax */
   color: #fff;
   font-size: 45px;
+  font-style: italic;
   padding: 40px 0;
 }
 @media(max-width: 768px) {
@@ -20,7 +25,7 @@
   margin-left: -80px;
   width: 0;
   height: 0;
-  border-top: solid 50px #191919;
+  border-top: solid 50px #000;
   border-left: solid 80px transparent;
   border-right: solid 80px transparent;
 }
@@ -65,17 +70,18 @@
 }
 
 /* Search Bar and Dropdown */
-.search-group {
+.search-bar-row {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.search-bar {
+.search-bar-col {
   margin-top: 15px;
 }
 
-.search-border {
-  border: solid;
+.search-bar {
+  border: 2px solid;
+  font-size: 20px;
 }
 
 .search-dropdown {
@@ -87,6 +93,7 @@
 /* Brothers List */
 .brother-container {
   min-height: 500px;
+  font-family: 'PT Sans Narrow';
 }
 @media(max-width: 768px) {
   .brother-container {
@@ -98,7 +105,34 @@
   margin-bottom: 20px;
 }
 
+.brother-info h4,p {
+  margin-bottom: 0;
+}
+
+.brother-info h4 {
+  font-size: 24px;
+}
+@media(max-width: 992px) {
+  .brother-info h4 {
+    font-size: 20px;
+  }
+}
+
+.brother-info p {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
+@media(max-width: 992px) {
+  .brother-info p {
+    font-size: 14px;
+  }
+}
+
 .option-label {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 28px;
   margin: 0;
 }
 
@@ -108,19 +142,24 @@
 }
 
 .brother-image {
-  height: 150px;
+  height: 200px;
+  width: 150px;
   margin: auto;
+}
+.brother-image:hover {
+  cursor: pointer;
 }
 
 /* Modal */
-.modal-dialog {
-}
-
 .modal-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #800000;
+  background: #610c05; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #610c05 , crimson); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #610c05, crimson); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #610c05, crimson); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #610c05 , crimson); /* Standard syntax */
   color: #fff;
   padding-top: 50px;
 }
@@ -136,6 +175,8 @@
 }
 
 .modal-image {
+  object-fit: cover;
+  object-position: 50% 0;
   height: 150px;
   width: 150px;
   margin: auto;
@@ -151,17 +192,32 @@
     margin-bottom: -40px;
   }
 }
+
 .modal-body {
   font-size: 18px;
   margin-top: 70px;
-}
-.modal-body > ul > li {
-  margin: 0;
-  border-top: 1px solid #e5e5e5;
-  padding: 20px 30px;
+  padding: 0;
+  padding-top: 15px;
 }
 @media(max-width: 768px) {
   .modal-body {
     margin-top: 50px;
   }
+}
+
+.modal-body > ul {
+  margin-bottom: 0;
+}
+
+.modal-body > ul > li {
+  color: #666;
+  margin: 0;
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 40px;
+}
+
+.modal-body > ul > li > h4 {
+  color: #000;
+  font-size: 15px;
+  font-weight: 900;
 }

@@ -1,6 +1,6 @@
 import './Brothers.css';
 import 'react-select/dist/react-select.css';
-import {Grid, Row, Col, Image, FormGroup, FormControl, Modal, Button} from 'react-bootstrap';
+import {Grid, Row, Col, Image, FormGroup, FormControl, Modal, ListGroup, ListGroupItem, Button,} from 'react-bootstrap';
 import Select from 'react-select';
 import React, {Component} from 'react';
 import {brothers, alumni, options, majorOptions, classOptions, images} from './data.js'
@@ -49,7 +49,7 @@ class Brothers extends Component {
         return (
           <Col xs={12} md={2} className="brother-info">
             <h3 className="option-label"> {option.label} </h3>
-            <Image className="option-image" src={option.image}></Image>
+            <Image className="option-image" src={option.image} circle></Image>
           </Col>
         );
       }
@@ -58,7 +58,7 @@ class Brothers extends Component {
       return (
         <Col xs={12} md={2} className="brother-info">
           <h3 className="option-label"> {option.label} </h3>
-          <Image className="option-image" src={option.image}></Image>
+          <Image className="option-image" src={option.image} circle></Image>
         </Col>
       );
     }
@@ -79,12 +79,12 @@ class Brothers extends Component {
         {brothers.map((brother, i) => {                                  
           if (brother[this.state.dropdownValue] === option.value) {
             return (
-              <Col xs={6} sm={3} md={2} className="brother-info" key={i}>
+              <Col xs={6} sm={4} md={3} className="brother-info" key={i}>
                 <div onClick={() => this.open(brother)}>
                   <Image className="brother-image" src={brother.url} responsive rounded/>
-                  <p> {brother.name} </p>
+                  <h4> {brother.name} </h4>
                   <p> {brother.position} </p>
-                  <p> {brother.class} </p>
+                  <p> {brother.className} </p>
                 </div>
               </Col>
             );
@@ -130,12 +130,12 @@ class Brothers extends Component {
       return (
         this.state.updatedBrothers.map((brother, i) => {                                        
           return (
-            <Col xs={6} sm={3} md={2} className="brother-info" key={i}>
+            <Col xs={6} sm={3} className="brother-info col-md-5th" key={i}>
               <div onClick={() => this.open(brother)}>
                 <Image className="brother-image" src={brother.url} responsive rounded/>
-                <p> {brother.name} </p>
-                <p> {brother.position} </p>
-                <p> {brother.class} </p>
+                <h4> {brother.name.toUpperCase()} </h4>
+                <p> {brother.position.toUpperCase()} </p>
+                <p> {brother.className.toUpperCase()} </p>
               </div>
             </Col>
           );                
@@ -257,23 +257,24 @@ class Brothers extends Component {
           ))}
         </div>
         <Grid className="brothers-grid">
-  				<Row className="search-group">
-  					<Col xsOffset={1} xs={10} md={4} className="search-bar">
+  				<Row className="search-bar-row">
+  					<Col xsOffset={1} xs={10} mdOffset={1} md={4} className="search-bar-col">
   						<form>
           			<FormGroup controlId="formBasicText">
             			<FormControl
-            				className="search-border"
+            				className="search-bar"
   			            type="text"
+                    placeholder="Search..."
   			            value={this.state.value}
   			            onChange={this.filterSearch}
            				 />
           			</FormGroup>
        			 	</form>
   					</Col>
-  					<Col xs={5} md={2}>
+  					<Col xs={12} md={2}>
   						<h3> SEARCH BY </h3>
   					</Col>
-  					<Col xs={4} md={2}>
+  					<Col xs={6} md={2}>
   						<Select
                 className="search-dropdown"
                 value={this.state.dropdownValue}
@@ -281,9 +282,10 @@ class Brothers extends Component {
                 clearable={false}
                 onChange={this.filterDropdown}
                 backspaceRemoves={false}
+                searchable={false}
               />
   					</Col>
-            <Col xs={3} md={2}>
+            <Col xs={6} md={3}>
               <Select
                 className="search-dropdown"
                 value={this.state.specificValue}
@@ -292,6 +294,7 @@ class Brothers extends Component {
                 disabled={this.state.specificDisabled}
                 onChange={this.filterSpecific}
                 backspaceRemoves={false}
+                searchable={false}
               />
             </Col>
   				</Row>
@@ -302,11 +305,11 @@ class Brothers extends Component {
                 <Image className="modal-image" src={this.state.brotherModal.url} circle/>
               </Modal.Header>
               <Modal.Body> 
-                <ul>
-                  <li> Position: {this.state.brotherModal.position} </li>
-                  <li> Class: {this.state.brotherModal.class} </li>
-                  <li> Major: {this.state.brotherModal.major} </li>
-                </ul>
+                <ListGroup>
+                  <ListGroupItem header="Position"> {this.state.brotherModal.position} </ListGroupItem>
+                  <ListGroupItem header="Class"> {this.state.brotherModal.className} </ListGroupItem>
+                  <ListGroupItem header="Major"> {this.state.brotherModal.majorName} </ListGroupItem>
+                </ListGroup>
               </Modal.Body>
               <Modal.Footer>
                 <Button onClick={this.close}> Close </Button>
