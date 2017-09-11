@@ -77,6 +77,11 @@ body {
    display: block;
 }
 
+.rush-step-icon {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
 .step-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -93,6 +98,18 @@ body {
   font-size: 15px;
   letter-spacing: 0.01em;
   display: block;
+}
+
+.step-break {
+  width: 40%;
+  color: black;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
 }
 
 .rush-header {
@@ -165,7 +182,7 @@ body {
   height: auto;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 80px;
+  margin-bottom: 20vh;
 }
 
 .bob {

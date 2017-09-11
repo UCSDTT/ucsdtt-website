@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import {Element} from 'react-scroll';
 import {Image, Grid, Row, Col} from 'react-bootstrap';
-import {MdWork, MdBuild, MdTextsms, MdInfo, MdLocationOn} from 'react-icons/lib/md';
+import {MdWork, MdBuild, MdTextsms, MdInfo, MdLocationOn, MdForum, MdFace, MdEmail, MdCheckCircle} from 'react-icons/lib/md';
 
 class WhyRush extends Component {
   render() {
@@ -11,10 +11,10 @@ class WhyRush extends Component {
           <div className="rush-container">
             <Grid className="rush-container">
               <Row className="rush-container">
-                <Col xs={12} md={6} lg={4}>
+                <Col xs={12} md={4} >
                   <Image className="" src={require('./images/rushflyer.jpg')} responsive/>
                 </Col>
-                <Col xs={12} md={6} lg={8}>
+                <Col xs={12} md={8}>
                   <Row>
                     <div className="rush-header">
                       <span className="rush-title"> Rush Fall 2017</span>
@@ -52,26 +52,34 @@ class WhyRush extends Component {
               <Row>
                 <Col xs={12} md={3}>
                   <div className="rush-steps">
+                    <MdForum className="rush-step-icon" />
                     <span className="step-title"> Rush </span>
-                    <span className="step-details"> Learn about what the fraternity is all about. Get to meet the members of Theta Tau are made of.</span>
+                    <hr className="step-break"/>
+                    <span className="step-details"> Join us for a whole week of rush events! Learn about the fraternity,  interact with other rushees, and mingle with the members of Theta Tau.</span>
                   </div>
                 </Col>
                 <Col xs={12} md={3}>
                   <div className="rush-steps">
+                    <MdFace className="rush-step-icon" />
                     <span className="step-title"> Interview </span>
-                    <span className="step-details"> Learn about what the fraternity is all about. Get to meet the members of Theta Tau are made of.</span>
+                    <hr className="step-break"/>
+                    <span className="step-details"> The Brothers of Theta Tau would like to find out more about you and hear about the reasons for your interest in Theta Tau through a formal interview. </span>
                   </div>
                 </Col>
                 <Col xs={12} md={3}>
                   <div className="rush-steps">
+                   <MdEmail className="rush-step-icon" />
                     <span className="step-title"> Bid </span>
-                    <span className="step-details"> Learn about what the fraternity is all about. Get to meet the members of Theta Tau are made of.</span>
+                    <hr className="step-break" />
+                    <span className="step-details"> If the Brothers of Theta Tau decide on you, an invitation will be sent to you. It is your choice to continue to the pledging process or decline the bid. </span>
                   </div>
                 </Col>
                 <Col xs={12} md={3}>
                   <div className="rush-steps">
+                    <MdCheckCircle className="rush-step-icon" />
                     <span className="step-title"> Pledge </span>
-                    <span className="step-details"> Learn about what the fraternity is all about. Get to meet the members of Theta Tau are made of.</span>
+                    <hr className="step-break"/>
+                    <span className="step-details"> Once you accept your bid, you will then begin pledging. Prepare to spend a large amount of time and effort. "Approach it as a four unit upper division engineering course." </span>
                   </div>
                 </Col>
               </Row>
