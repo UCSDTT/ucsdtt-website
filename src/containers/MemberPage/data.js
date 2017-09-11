@@ -3,6 +3,7 @@ const brothers = [
     'name': 'Rishi Dhanaraj',
     'url': require('./images/brothers/rishi.jpg'),
     'position': 'Regent',
+    'eboard': true,
     'class': 'charter',
     'className': 'Charter Class',
     'major': 'cs',
@@ -12,6 +13,7 @@ const brothers = [
     'name': 'Brian Chan',
     'url': require('./images/brothers/bchan.jpg'),
     'position': 'Chair',
+    'cabinet': true,
     'class': 'alpha',
     'className': 'Alpha Class',
     'major': 'bio',
@@ -39,6 +41,7 @@ const brothers = [
     'name': 'Kaiser Kim',
     'url': require('./images/brothers/bchan.jpg'),
     'position': 'Active',
+    'cabinet': true,
     'class': 'delta',
     'className': 'Delta Class',
     'major': 'aero',
@@ -237,157 +240,161 @@ const alumni = [
   },
 ]
 
-const options = [
-  { value: 'position', label: 'Position' },
-  { value: 'major', label: 'Major' },
-  { value: 'class', label: 'Class' },
-  { value: 'alumni', label: 'Alumni' },
-]
-
-const majorOptions = [
-  { 
-    value: 'aero', 
-    label: 'Aerospace Engineering',
-    image: require('./images/majors/logos/aero.png'),
-  },
-  { 
-    value: 'bio', 
-    label: 'Bioengineering',
-    image: require('./images/majors/logos/bio.png'), 
-  },
-  { 
-    value: 'chem', 
-    label: 'Chemical Engineering',
-    image: require('./images/majors/logos/chem.png'), 
-  },
-  { 
-    value: 'ce', 
-    label: 'Computer Engineering',
-    image: require('./images/majors/logos/ce.png'), 
-  },
-  { 
-    value: 'cs', 
-    label: 'Computer Science', 
-    image: require('./images/majors/logos/ce.png'),
-  },
-  { 
-    value: 'ee', 
-    label: 'Electrical Engineering',
-    image: require('./images/majors/logos/ee.png'), 
-  },
-  { 
-    value: 'env', 
-    label: 'Environmental Engineering',
-    image: require('./images/majors/logos/env.png'), 
-  },
-  { 
-    value: 'mech', 
-    label: 'Mechanical Engineering',
-    image: require('./images/majors/logos/mech.png'), 
-  },
-  { 
-    value: 'nano', 
-    label: 'Nanoengineering',
-    image: require('./images/majors/logos/nano.png'), 
-  },
-  { 
-    value: 'struct', 
-    label: 'Structural Engineering',
-    image: require('./images/majors/logos/struct.png'), 
-  },
-]
-
-const classOptions = [
-  { 
-    value: 'charter', 
-    label: 'Charter',
-    image: require('./images/classes/letters/charter.jpg'),
-  },
-  { 
-    value: 'alpha', 
-    label: 'Alpha',
-    image: require('./images/classes/letters/alpha.png'),
-  },
-  { 
-    value: 'beta', 
-    label: 'Beta',
-    image: require('./images/classes/letters/beta.png'),
-  },
-  { 
-    value: 'gamma', 
-    label: 'Gamma',
-    image: require('./images/classes/letters/gamma.png'), 
-  },
-  { 
-    value: 'delta', 
-    label: 'Delta',
-    image: require('./images/classes/letters/delta.png'), 
-  },
-  { 
-    value: 'epsilon', 
-    label: 'Epsilon',
-    image: require('./images/classes/letters/epsilon.png'), 
-  },
-  { 
-    value: 'zeta', 
-    label: 'Zeta',
-    image: require('./images/classes/letters/zeta.png'), 
-  },
-  { 
-    value: 'eta', 
-    label: 'Eta',
-    image: require('./images/classes/letters/eta.png'), 
-  },
-  { 
-    value: 'theta', 
-    label: 'Theta',
-    image: require('./images/classes/letters/theta.png'), 
-  },
-  { 
-    value: 'iota', 
-    label: 'Iota',
-    image: require('./images/classes/letters/iota.png'), 
-  },
-  { 
-    value: 'kappa', 
-    label: 'Kappa',
-    image: require('./images/classes/letters/kappa.png'), 
-  },
-  { 
-    value: 'lambda', 
-    label: 'Lambda',
-    image: require('./images/classes/letters/lambda.png'), 
-  },
-  { 
-    value: 'mu', 
-    label: 'Mu',
-    image: require('./images/classes/letters/mu.png'), 
-  },
-  { 
-    value: 'nu', 
-    label: 'Nu',
-    image: require('./images/classes/letters/nu.png'), 
-  },
-  { 
-    value: 'xi', 
-    label: 'Xi',
-    image: require('./images/classes/letters/xi.png'), 
-  },
-  { 
-    value: 'omicron', 
-    label: 'Omicron',
-    image: require('./images/classes/letters/omicron.png'), 
-  },
-  { 
-    value: 'pi', 
-    label: 'Pi',
-    image: require('./images/classes/letters/pi.png'), 
-  },
-]
+const options = {
+  general: [
+    { value: 'active', label: 'Active' },
+    { value: 'major', label: 'Major' },
+    { value: 'class', label: 'Class' },
+    { value: 'alumni', label: 'Alumni' },
+  ],
+  active: [
+    { value: 'eboard', label: 'Executive Board' },
+    { value: 'cabinet', label: 'Cabinet' },
+  ],
+  major: [
+    { 
+      value: 'aero', 
+      label: 'Aerospace Engineering',
+      image: require('./images/majors/logos/aero.png'),
+    },
+    { 
+      value: 'bio', 
+      label: 'Bioengineering',
+      image: require('./images/majors/logos/bio.png'), 
+    },
+    { 
+      value: 'chem', 
+      label: 'Chemical Engineering',
+      image: require('./images/majors/logos/chem.png'), 
+    },
+    { 
+      value: 'ce', 
+      label: 'Computer Engineering',
+      image: require('./images/majors/logos/ce.png'), 
+    },
+    { 
+      value: 'cs', 
+      label: 'Computer Science', 
+      image: require('./images/majors/logos/ce.png'),
+    },
+    { 
+      value: 'ee', 
+      label: 'Electrical Engineering',
+      image: require('./images/majors/logos/ee.png'), 
+    },
+    { 
+      value: 'env', 
+      label: 'Environmental Engineering',
+      image: require('./images/majors/logos/env.png'), 
+    },
+    { 
+      value: 'mech', 
+      label: 'Mechanical Engineering',
+      image: require('./images/majors/logos/mech.png'), 
+    },
+    { 
+      value: 'nano', 
+      label: 'Nanoengineering',
+      image: require('./images/majors/logos/nano.png'), 
+    },
+    { 
+      value: 'struct', 
+      label: 'Structural Engineering',
+      image: require('./images/majors/logos/struct.png'), 
+    },
+  ],
+  class: [
+    { 
+      value: 'charter', 
+      label: 'Charter',
+      image: require('./images/classes/letters/charter.jpg'),
+    },
+    { 
+      value: 'alpha', 
+      label: 'Alpha',
+      image: require('./images/classes/letters/alpha.png'),
+    },
+    { 
+      value: 'beta', 
+      label: 'Beta',
+      image: require('./images/classes/letters/beta.png'),
+    },
+    { 
+      value: 'gamma', 
+      label: 'Gamma',
+      image: require('./images/classes/letters/gamma.png'), 
+    },
+    { 
+      value: 'delta', 
+      label: 'Delta',
+      image: require('./images/classes/letters/delta.png'), 
+    },
+    { 
+      value: 'epsilon', 
+      label: 'Epsilon',
+      image: require('./images/classes/letters/epsilon.png'), 
+    },
+    { 
+      value: 'zeta', 
+      label: 'Zeta',
+      image: require('./images/classes/letters/zeta.png'), 
+    },
+    { 
+      value: 'eta', 
+      label: 'Eta',
+      image: require('./images/classes/letters/eta.png'), 
+    },
+    { 
+      value: 'theta', 
+      label: 'Theta',
+      image: require('./images/classes/letters/theta.png'), 
+    },
+    { 
+      value: 'iota', 
+      label: 'Iota',
+      image: require('./images/classes/letters/iota.png'), 
+    },
+    { 
+      value: 'kappa', 
+      label: 'Kappa',
+      image: require('./images/classes/letters/kappa.png'), 
+    },
+    { 
+      value: 'lambda', 
+      label: 'Lambda',
+      image: require('./images/classes/letters/lambda.png'), 
+    },
+    { 
+      value: 'mu', 
+      label: 'Mu',
+      image: require('./images/classes/letters/mu.png'), 
+    },
+    { 
+      value: 'nu', 
+      label: 'Nu',
+      image: require('./images/classes/letters/nu.png'), 
+    },
+    { 
+      value: 'xi', 
+      label: 'Xi',
+      image: require('./images/classes/letters/xi.png'), 
+    },
+    { 
+      value: 'omicron', 
+      label: 'Omicron',
+      image: require('./images/classes/letters/omicron.png'), 
+    },
+    { 
+      value: 'pi', 
+      label: 'Pi',
+      image: require('./images/classes/letters/pi.png'), 
+    },
+  ]
+}
 
 const images = [
   {
-    'name': 'position',
+    'name': 'active',
     'url': require('./images/general/active.jpg'),
   },
   {
@@ -401,6 +408,14 @@ const images = [
   {
     'name': 'alumni',
     'url': require('./images/general/alumni.jpg'),
+  },
+  {
+    'name': 'eboard',
+    'url': require('./images/general/active.jpg'),
+  },
+  {
+    'name': 'cabinet',
+    'url': require('./images/general/active.jpg'),
   },
   {
     'name': 'cs',
@@ -512,4 +527,4 @@ const images = [
   },
 ]
 
-export {brothers, alumni, options, majorOptions, classOptions, images};
+export {brothers, alumni, options, images};

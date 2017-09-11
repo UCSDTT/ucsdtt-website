@@ -5,7 +5,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import App from './App';
 import Garnett from './containers/Garnett';
 import Home from './containers/Home';
-import MemberPage from './containers/MemberPage';
+import MemberPage from './containers/MemberPage/MemberPage';
 import React from 'react';
 import ReactDOM from 'react-dom';
 

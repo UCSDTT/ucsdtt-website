@@ -1,29 +1,30 @@
-import './Brothers.css';
+import './MemberPage.css';
 import 'react-select/dist/react-select.css';
 import {Grid, Row, Col, Image, FormGroup, FormControl, Modal, ListGroup, ListGroupItem, Button,} from 'react-bootstrap';
 import Select from 'react-select';
 import React, {Component} from 'react';
-import {brothers, alumni, options, majorOptions, classOptions, images} from './data.js'
+import {brothers, alumni, options, images} from './data.js'
 
-class Brothers extends Component {
+export default class MemberPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
       image: {},
       imageIndex: 0,
-      value: '',
+      searchValue: '',
       brothers: brothers,
       alumni: alumni,
       allBrothers: brothers.concat(alumni),
       updatedBrothers: brothers,
       filteredBrothers: brothers,
-      dropdownValue: 'position',
-      options: options,
+      dropdownValue: 'active',
+      options: options.general,
       specificValue: '',
-      specificOptions: [],
-      majorOptions: majorOptions,
-      classOptions: classOptions,
-      specificDisabled: true,
+      specificOptions: options.active,
+      activeOptions: options.active,
+      majorOptions: options.major,
+      classOptions: options.class,
+      specificDisabled: false,
       showModal: false,
       brotherModal: {},
     };
@@ -65,46 +66,51 @@ class Brothers extends Component {
   }
 
   renderFilteredList(option) {
-    let brothers;
+    let brothers = this.state.updatedBrothers;
+    let showList = false;
+    
+    brothers.forEach((brother) => {
+      if (brother[this.state.dropdownValue] == option.value) {
+        showList = true;
+      }
+    })
 
-    if (this.state.dropdownValue === 'major') {
-      brothers = this.state.updatedBrothers;
+    if (showList) {
+      return (
+        <Col xs={12} md={10}>
+          {brothers.map((brother, i) => {                                  
+            if (brother[this.state.dropdownValue] === option.value) {
+              return (
+                <Col xs={6} sm={4} md={3} className="brother-info" key={i}>
+                  <div onClick={() => this.open(brother)}>
+                    <Image className="brother-image" src={brother.url} responsive rounded/>
+                    <h4> {brother.name} </h4>
+                    <p> {brother.position} </p>
+                    <p> {brother.className} </p>
+                  </div>
+                </Col>
+              );
+            }
+            else {
+              return false;
+            }             
+          })}
+        </Col>
+      )
     }
     else {
-      brothers = this.state.allBrothers;
+      return false;
     }
-
-    return (
-      <Col xs={12} md={10}>
-        {brothers.map((brother, i) => {                                  
-          if (brother[this.state.dropdownValue] === option.value) {
-            return (
-              <Col xs={6} sm={4} md={3} className="brother-info" key={i}>
-                <div onClick={() => this.open(brother)}>
-                  <Image className="brother-image" src={brother.url} responsive rounded/>
-                  <h4> {brother.name} </h4>
-                  <p> {brother.position} </p>
-                  <p> {brother.className} </p>
-                </div>
-              </Col>
-            );
-          }
-          else {
-            return false;
-          }             
-        })}
-      </Col>
-    )
   }
 
   renderBrothers() {
     let options;
 
     if (this.state.dropdownValue === 'major') {
-      options = majorOptions;
+      options = this.state.majorOptions;
     }
     else {
-      options = classOptions;
+      options = this.state.classOptions;
     }
 
     if (this.state.specificValue) {
@@ -117,30 +123,30 @@ class Brothers extends Component {
     if (this.state.dropdownValue === 'major' || this.state.dropdownValue === 'class') {
       return (
         options.map((option, i) => {
-          return (
-            <div key={i}>
-              {this.renderFilteredLabel(option)}
-              {this.renderFilteredList(option)}
-            </div>
-          )
+          if (this.renderFilteredList(option) !== false) {
+            return (
+              <div key={i}>
+                {this.renderFilteredLabel(option)}
+                {this.renderFilteredList(option)}
+              </div>
+            )
+          }
         })
       );
     }
     else {
       return (
-        this.state.updatedBrothers.map((brother, i) => {                                        
-          return (
-            <Col xs={6} sm={3} className="brother-info col-md-5th" key={i}>
-              <div onClick={() => this.open(brother)}>
-                <Image className="brother-image" src={brother.url} responsive rounded/>
-                <h4> {brother.name.toUpperCase()} </h4>
-                <p> {brother.position.toUpperCase()} </p>
-                <p> {brother.className.toUpperCase()} </p>
-              </div>
-            </Col>
-          );                
-        })
-      )
+        this.state.updatedBrothers.map((brother, i) => (
+          <Col xs={6} sm={3} className="brother-info col-md-5th" key={i}>
+            <div onClick={() => this.open(brother)}>
+              <Image className="brother-image" src={brother.url} responsive rounded/>
+              <h4> {brother.name.toUpperCase()} </h4>
+              <p> {brother.position.toUpperCase()} </p>
+              <p> {brother.className.toUpperCase()} </p>
+            </div>
+          </Col>
+        ))
+      );
     }
   }
 
@@ -164,7 +170,7 @@ class Brothers extends Component {
         event.target.value.toLowerCase()) !== false;
     });
     this.setState({
-      value: event.target.value,
+      searchValue: event.target.value,
       updatedBrothers: updatedList,
     });
   }
@@ -172,7 +178,7 @@ class Brothers extends Component {
   filterDropdown(selected) {
     let updatedList = this.state.brothers;
     let options;
-    let disabled;
+    let disabled = false;
     let image = this.state.image;
     let newImage = images.findIndex(function(image) {
       return (image.name.toLowerCase() ===
@@ -181,20 +187,18 @@ class Brothers extends Component {
 
     image[this.state.imageIndex].classList.remove('selected');
 
-    if (selected.value === 'alumni') {
-      updatedList = this.state.alumni;
-      images.indexOf(selected.value)
-      disabled = true;
+    if (selected.value === 'active') {
+      options = this.state.activeOptions;
     }
     else if (selected.value === 'major') {
       options = this.state.majorOptions;
-      disabled = false;
     }
     else if (selected.value === 'class') {
+      updatedList = this.state.allBrothers;
       options = this.state.classOptions;
-      disabled = false;
     }
     else {
+      updatedList = this.state.alumni;
       disabled = true;
     }
 
@@ -202,6 +206,7 @@ class Brothers extends Component {
 
     this.setState({
       imageIndex: newImage,
+      searchValue: '',
       dropdownValue: selected.value,
       updatedBrothers: updatedList,
       filteredBrothers: updatedList,
@@ -222,13 +227,19 @@ class Brothers extends Component {
     image[this.state.imageIndex].classList.remove('selected');
     image[newImage].classList.add('selected');
 
-    if (this.state.dropdownValue === 'major') {
+    if (this.state.dropdownValue === 'active') {
+      updatedList = updatedList.filter(function(brother){
+        return brother[selected.value.toLowerCase()] === true;
+      });
+    }
+    else if (this.state.dropdownValue === 'major') {
       updatedList = updatedList.filter(function(brother){
         return (brother.major.toLowerCase() ===
           selected.value.toLowerCase()) !== false;
       });
     }
     else {
+      updatedList = this.state.allBrothers;
       updatedList = updatedList.filter(function(brother){
         return (brother.class.toLowerCase() ===
           selected.value.toLowerCase()) !== false;
@@ -236,6 +247,7 @@ class Brothers extends Component {
     }
     this.setState({
       imageIndex: newImage,
+      searchValue: '',
       updatedBrothers: updatedList,
       filteredBrothers: updatedList,
       specificValue: selected.value,
@@ -247,7 +259,7 @@ class Brothers extends Component {
       <div>
         <div className="brothers-header">
           <a className="brothers-logo" role="button" href="/">
-            <Image className="logo" src={require('../NavBar/images/tt_logo.png')}/>
+            <Image className="logo" src={require('../../components/home/NavBar/images/tt_logo.png')}/>
           </a>
           OUR BROTHERS
         </div>
@@ -265,7 +277,7 @@ class Brothers extends Component {
             				className="search-bar"
   			            type="text"
                     placeholder="Search..."
-  			            value={this.state.value}
+  			            value={this.state.searchValue}
   			            onChange={this.filterSearch}
            				 />
           			</FormGroup>
@@ -322,5 +334,3 @@ class Brothers extends Component {
     );
   }
 }
-
-export {Brothers};

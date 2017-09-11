@@ -16,7 +16,7 @@ import data from './data';
 class Messenger extends Component {
   render() {
     return (
-      <Element name="messenger" className="element">
+      <Element name="messenger" className="element messenger">
         <PageHeader className="title">
           Ask a Brother!
         </PageHeader>

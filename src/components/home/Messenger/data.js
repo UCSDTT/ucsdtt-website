@@ -8,12 +8,12 @@ const activeData = [
     class: 'Pi Class',
   },
   {
-    image: './images/hillary.jpg',
+    image: './images/rishi.jpg',
     position: 'Regent',
-    name: 'Hillary Fan',
+    name: 'Rishi Dhanaraj',
     year: '3rd Year',
     major: 'Computer Science',
-    class: 'Pi Class',
+    class: 'Xi Class',
   },
   {
     image: './images/bchan.jpg',
