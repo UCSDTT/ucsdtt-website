@@ -70,7 +70,7 @@ export default class MemberPage extends Component {
     let showList = false;
     
     brothers.forEach((brother) => {
-      if (brother[this.state.dropdownValue] == option.value) {
+      if (brother[this.state.dropdownValue] === option.value) {
         showList = true;
       }
     })
@@ -130,6 +130,9 @@ export default class MemberPage extends Component {
                 {this.renderFilteredList(option)}
               </div>
             )
+          }
+          else {
+            return false;
           }
         })
       );
