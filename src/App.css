@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /* Not working after router change */
 .App {
@@ -69,31 +70,64 @@ body {
   height: 100%;
 }
 
-.rush-blurb {
-  background-color: black;
-  height: 50vh;
-  opacity: .9;
-  filter: alpha(opacity=90); /* For IE8 and earlier */
+.rush-steps {
+   display: block;
+   padding: 10px;
+   color: black;
 }
 
-.rush-text {
-  margin: 20px;
-  padding: 10px;
-  color: white;
+.step-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
-.rush-bold {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 4em;
+.rush-header {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 50px;
+  margin-left: 15px;
+}
+
+.rush-subheader {
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.rush-title {
   display: block;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .rush-details {
-  font-size: 1.2em;
+  font-size: 1.8em;
   padding-top: 10px;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  font-style: normal;
+  white-space: normal;
+  margin-bottom: 20px;
+}
+
+.rush-summary{
+  font-size: 1.5em;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.01em;
+  line-height: 25px;
+  font-style: normal;
+  white-space: normal;
+  padding-right: 15px;
 }
 
 .schedule-title {
@@ -117,10 +151,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.rush-image {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .rush-container {
   margin: 0;
   padding: 0;
-  height: 50vh;
+  height: 250vh;
   width: 100%;
   overflow: hidden;
 }
@@ -141,23 +181,6 @@ body {
   text-align: center;
   width: 100%;
   z-index: 99;
-}
-
-.rush-title {
-  margin: 0;
-  color: white;
-  border: none;
-  font-size: 100px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.rush-subtitle{
-  margin: 15px;
-  color: white;
-  border: none;
-  font-size: 30px;
-  display: block;
-  font-family: 'Roboto', sans-serif;
 }
 
 .rush-promo {
