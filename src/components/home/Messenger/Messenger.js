@@ -16,7 +16,7 @@ import data from './data';
 class Messenger extends Component {
   render() {
     return (
-      <Element name="messenger" className="element">
+      <Element name="messenger" className="element messenger">
         <PageHeader className="title">
           Ask a Brother!
         </PageHeader>
@@ -42,9 +42,9 @@ class Messenger extends Component {
                     <span className="messenger-button">
                       <i className="material-icons email">email</i>
                     </span>
-                    <span className="messenger-button">
+                    <a className="messenger-button" href={active.messenger} target="_blank">
                       <i className="fa fa-temp-messenger"></i>
-                    </span>
+                    </a>
                   </div>
                 </Panel>
               </Col>

@@ -5,6 +5,15 @@ import React, {Component} from 'react';
 import {animateScroll as scroll, scroller} from 'react-scroll';
 
 class NavBar extends Component {
+  underline = (event) => {
+    if (window.innerWidth > 768) {
+      event
+        .target
+        .classList
+        .toggle('underline');
+    }
+  }
+
   scrollToTop() {
     scroll.scrollToTop();
   }
@@ -111,15 +120,43 @@ class NavBar extends Component {
                 <MenuItem eventKey="4" href="/philanthropy">Philanthropy</MenuItem>
               </DropdownButton>
             </li>*/}
-            <NavItem onClick={() => this.scrollToComp("who-we-are")}>About</NavItem>
+            <NavItem 
+              onClick={() => this.scrollToComp("who-we-are")} 
+              onMouseOver={this.underline} 
+              onMouseOut={this.underline}
+            >
+              About
+            </NavItem>
             <li role="presentation">
-              <a href="/brothers">
+              <a 
+                href="/members"
+                onMouseOver={this.underline}
+                onMouseOut={this.underline}
+              >
                 Members
               </a>
             </li>
-            <NavItem onClick={() => this.scrollToComp("why-rush")}>Rush</NavItem>
-            <NavItem onClick={() => this.scrollToComp("faq")}>FAQ</NavItem>
-            <NavItem onClick={() => this.scrollToComp("messenger")}>Contact Us</NavItem>
+            <NavItem 
+              onClick={() => this.scrollToComp("why-rush")}
+              onMouseOver={this.underline} 
+              onMouseOut={this.underline}
+            >
+              Rush
+            </NavItem>
+            <NavItem 
+              onClick={() => this.scrollToComp("faq")}
+              onMouseOver={this.underline} 
+              onMouseOut={this.underline}
+            >
+              FAQ
+            </NavItem>
+            <NavItem 
+              onClick={() => this.scrollToComp("messenger")}
+              onMouseOver={this.underline} 
+              onMouseOut={this.underline}
+            >
+              Contact Us
+            </NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

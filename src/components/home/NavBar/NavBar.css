@@ -7,10 +7,13 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+.navbar-nav {
+  padding-top: 28.5px;
+}
+
 .navbar-nav li a {
   padding-top: 0px;
   padding-bottom: 0px;
-  line-height: 80px;
 }
 
 #nav-logo {
@@ -28,6 +31,28 @@
   width: 280px;
 }
 
+/* Navbar items */
+.navbar-collapse > .navbar-right > li {
+  text-transform: uppercase;
+}
+
+@media(min-width: 768px) {
+  .navbar-collapse > .navbar-right > li > a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: 0 0;
+    transition: width .5s ease,background-color .5s ease;
+  }
+  .navbar-collapse > .navbar-right > li > a.underline:after {
+    width: 100%;
+    background-color: #fff;
+  }
+}
+
+/* Mobile Nav */
 @media(max-width: 768px) {
   /* Mobile nav hamburger*/
   .navbar-toggle {

@@ -1,7 +1,7 @@
 import './Landing.css';
 import {Carousel, Image, Button, Glyphicon} from 'react-bootstrap';
 import React, {Component} from 'react';
-import {slideData, brothersAre, quoteData}  from './data.js';
+import {slideData, quoteData}  from './data.js';
 
 class Landing extends Component {
   constructor(props) {
@@ -104,57 +104,59 @@ class Landing extends Component {
       <div className="landing">
         <Carousel 
           className="carousel-fade"
-          interval={3500}
+          interval={7000}
           onSelect={this.changeWord}>
           {slideData.map((slide, i) => (
             <Carousel.Item key={i}>
               <div className="landing-gradient">
-                <Image className="landing-image" src={require(`${slide.image}`)} responsive/>
+                <Image className="landing-image" src={slide.image} responsive/>
               </div>
             </Carousel.Item>
           ))}
         </Carousel>
-        <div className="brothers-are">
-          <h1 className="brothers-are-text">
-            Brothers are
-          </h1>
-          <h1 
-            className="brothers-are-text" 
-            style={{
-            marginLeft: '0.25em'
-          }}>
-            {brothersAre.map((brother, i) => (
-              <span className={`word ${brother.color}`} key={i}>
-                {brother.name}
-              </span>
-            ))}
-          </h1>
-        </div>
-        <div className="members-button-container">
-          <Button className="members-button" href="/brothers"> 
-            Meet the Brothers
-            <Glyphicon glyph="chevron-right" />
-          </Button>
-        </div>
-        <div className="quote-container"> 
-          {quoteData.map((quote, i) => (
-            <div 
-              className="quote" 
-              key={i}>
-              <div className="quote-text-group">
-                <span className="quote-quotes">❝</span>
-                <p> <i>{quote.text}</i> </p>
-              </div>
-              <div className="quote-active-group">
-                <Image className="active-image" src={require(`${quote.activeImage}`)} circle />
-                <div className="quote-active-labels">
-                  <h3> {quote.active} </h3>
-                  <h3> {quote.major} </h3>
-                  <h3> {quote.class} </h3>
+        <div className="brothers-are-container">
+          <div className="brothers-are">
+            <h1 className="brothers-are-text">
+              Brothers are
+            </h1>
+            <h1 
+              className="brothers-are-text" 
+              style={{
+              marginLeft: '0.25em'
+            }}>
+              {slideData.map((slide, i) => (
+                <span className={`word ${slide.color}`} key={i}>
+                  {slide.name}
+                </span>
+              ))}
+            </h1>
+          </div>
+          <div className="members-button-container">
+            <Button className="members-button" href="/members"> 
+              Meet the Brothers
+              <Glyphicon glyph="chevron-right" />
+            </Button>
+          </div>
+          <div className="quote-container"> 
+            {quoteData.map((quote, i) => (
+              <div 
+                className="quote" 
+                key={i}>
+                <div className="quote-text-group">
+                  <span className="quote-quotes">❝</span>
+                  <p> <i>{quote.text}</i> </p>
+                </div>
+                <div className="quote-active-group">
+                  <Image className="active-image" src={require(`${quote.activeImage}`)} circle />
+                  <div className="quote-active-labels">
+                    <h3> {quote.active} </h3>
+                    <h3> {quote.major} </h3>
+                    <h3> {quote.class} </h3>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     );

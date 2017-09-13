@@ -1,8 +1,13 @@
-/* FAQ Column */
-.faq-col {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.element.faq {
+  background: #9a0000; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #9a0000, #800000, #670000, #561e18); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #9a0000, #800000, #670000, #561e18); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #9a0000, #800000, #670000, #561e18); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #9a0000, #800000, #670000, #561e18); /* Standard syntax */
+}
+
+.element.faq .title {
+  color: #fafafa;
 }
 
 /* FAQ Cards */

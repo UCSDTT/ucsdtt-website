@@ -6,3 +6,32 @@
 .northrop {
     margin-top: 20px;
 }
+
+.company-col.big {
+  margin: 60px 0;
+}
+.company-col.small {
+  margin: 30px 0;
+  height: 70px;
+}
+.big-company {
+  max-width: 450px;
+  max-height: 200px;
+}
+@media(max-width: 768px) {
+  .big-company {
+    max-height: 200px;
+    max-width: 375px;
+  }
+}
+
+.sm-company {
+  max-width: 400px;
+  max-height: 70px;
+}
+@media(max-width: 768px) {
+  .sm-company {
+    max-height: 70px;
+    max-width: 200px;
+  }
+}

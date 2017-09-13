@@ -1,0 +1,287 @@
+/* Brothers Header */
+.brothers-header {
+  position: relative;
+  background: #2f4f4f; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#24f4f4 , #000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#2f4f4f, #000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#2f4f4f, #000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#2f4f4f , #000); /* Standard syntax */
+  color: #fff;
+  font-size: 45px;
+  font-style: italic;
+  padding: 40px 0;
+}
+@media(max-width: 768px) {
+  .brothers-header {
+    font-size: 25px;
+    padding: 30px 0;
+  }
+}
+.brothers-header:after {
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -80px;
+  width: 0;
+  height: 0;
+  border-top: solid 50px #000;
+  border-left: solid 80px transparent;
+  border-right: solid 80px transparent;
+}
+
+.brothers-logo {
+  position: absolute;
+  left: 5%;
+  margin-top: -5px;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+/* Brothers Main Image */
+.brothers-image-container {
+  position: relative;
+  background-color: #000;
+  height: 41vw;
+  z-index: -1;
+}
+@media(max-width: 992px) {
+  .brothers-image-container {
+    height: 450px;
+  }
+}
+
+.brothers-image {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  z-index: -1;
+}
+@media(max-width: 992px) {
+  .brothers-image.img-responsive {
+    object-fit: cover;
+    height: 450px;
+  }
+}
+
+.brothers-image.selected {
+  opacity: 1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+
+/* Search Bar and Dropdown */
+.search-bar-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-bar-col {
+  margin-top: 15px;
+}
+
+.search-bar {
+  border: 2px solid;
+  font-size: 20px;
+}
+
+.search-dropdown {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 13px;
+}
+
+/* Brothers List */
+.brother-container {
+  min-height: 500px;
+  font-family: 'PT Sans Narrow';
+}
+@media(max-width: 768px) {
+  .brother-container {
+    margin: auto 10px;
+  }
+}
+
+.brother-info {
+  margin-bottom: 20px;
+}
+
+.brother-info h4, .brother-info p {
+  margin-bottom: 0;
+}
+
+.brother-info h4 {
+  font-size: 24px;
+}
+@media(max-width: 992px) {
+  .brother-info h4 {
+    font-size: 20px;
+  }
+}
+
+.brother-info p {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
+@media(max-width: 992px) {
+  .brother-info p {
+    font-size: 14px;
+  }
+}
+
+.option-label {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 28px;
+  margin: 0;
+}
+
+.option-image {
+  height: 150px;
+  margin: auto;
+}
+
+.brother-image {
+  object-fit: cover;
+  height: 200px;
+  width: 150px;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* Modal */
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #9a0000; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #9a0000, #800000, #670000, #561e18); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #9a0000, #800000, #670000, #561e18); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #9a0000, #800000, #670000, #561e18); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #561e18, #670000, #800000, #9a0000); /* Standard syntax */
+  color: #fff;
+  padding-top: 50px;
+  border-radius: 3px 3px 0 0;
+}
+@media(max-width: 768px) {
+  .modal-header {
+    height: 130px;
+  }
+}
+
+.modal-title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.modal-image {
+  object-fit: cover;
+  object-position: 50% 0;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: -95px;
+  border: 7px solid #fff;
+}
+@media(max-width: 768px) {
+  .modal-image {
+    height: 120px;
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: -40px;
+  }
+}
+
+/* Modal Body */
+.modal-body {
+  font-size: 18px;
+  margin-top: 70px;
+  padding: 0;
+  padding-top: 15px;
+}
+@media(max-width: 768px) {
+  .modal-body {
+    margin-top: 50px;
+  }
+}
+
+.modal-body > ul {
+  margin-bottom: 0;
+}
+
+.modal-body > ul > li {
+  color: #666;
+  margin: 0;
+  border-top: 1px solid #e5e5e5;
+  padding: 15px 40px;
+}
+
+.modal-body > ul > li > h4 {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* Modal Footer */
+.modal-footer {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-footer > div {
+  height: 70px;
+  width: 50%;
+  border-bottom-left-radius: 6px;
+}
+.modal-footer > div:hover {
+  background-color: #fafafa;
+}
+
+.modal-footer .close-footer {
+  color: #9a0000;
+  margin-top: 5px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  border-right: 2px solid #e5e5e5;
+}
+
+.modal-footer > .linkedin-footer {
+  color: #007bb6;
+  width: 50%;
+  padding: 15px;
+  border-bottom-right-radius: 6px;
+}
+.modal-footer > .linkedin-footer:hover {
+  background-color: #fafafa;
+}
+
+.modal-footer > .linkedin-footer > .fa-linkedin-square {
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+/* Bootstrap List Group Item */
+.list-group-item {
+  border: none;
+}
+.list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
