@@ -8,6 +8,8 @@ const brothers = [
     'className': 'Charter Class',
     'major': 'cs',
     'majorName': 'Computer Science',
+    'year': 'Class of 2019',
+    'linkedin': 'https://www.linkedin.com/in/kaiser-kim-8aa1b011b/',
   },
   {
     'name': 'Brian Chan',
@@ -18,6 +20,7 @@ const brothers = [
     'className': 'Alpha Class',
     'major': 'bio',
     'majorName': 'Bioengineering',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Jeffrey Lee',
@@ -27,6 +30,7 @@ const brothers = [
     'className': 'Beta Class',
     'major': 'env',
     'majorName': 'Environmental Engineering',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Hillary Fan',
@@ -36,6 +40,7 @@ const brothers = [
     'className': 'Gamma Class',
     'major': 'ee',
     'majorName': 'Electrical Engineering',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Kaiser Kim',
@@ -46,6 +51,7 @@ const brothers = [
     'className': 'Delta Class',
     'major': 'aero',
     'majorName': 'Aerospace Engineering',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Blake Huynh',
@@ -55,6 +61,7 @@ const brothers = [
     'className': 'Epsilon Class',
     'major': 'mech',
     'majorName': 'Mechanical Engineering',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Hodor',
@@ -64,6 +71,7 @@ const brothers = [
     'className': 'Zeta Class',
     'major': 'struct',
     'majorName': 'Structural Engineering',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Hodor',
@@ -73,6 +81,7 @@ const brothers = [
     'className': 'Eta Class',
     'major': 'ce',
     'majorName': 'Computer Engineering',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Hodor',
@@ -82,6 +91,7 @@ const brothers = [
     'className': 'Theta Class',
     'major': 'chem',
     'majorName': 'Chemical Engineering',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Hodor',
@@ -91,6 +101,7 @@ const brothers = [
     'className': 'Pi Class',
     'major': 'nano',
     'majorName': 'Nanoengineering',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Hodor',
@@ -100,6 +111,7 @@ const brothers = [
     'className': 'Kappa Class',
     'major': 'cs',
     'majorName': 'Computer Science',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Hodor',
@@ -109,6 +121,7 @@ const brothers = [
     'className': 'Lambda Class',
     'major': 'cs',
     'majorName': 'Computer Science',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Hodor',
@@ -118,6 +131,7 @@ const brothers = [
     'className': 'Mu Class',
     'major': 'cs',
     'majorName': 'Computer Science',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Fumika Takazawa',
@@ -127,6 +141,7 @@ const brothers = [
     'className': 'Nu Class',
     'major': 'cs',
     'majorName': 'Computer Science',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Hodor',
@@ -136,6 +151,7 @@ const brothers = [
     'className': 'Xi Class',
     'major': 'cs',
     'majorName': 'Computer Science',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Hodor',
@@ -145,6 +161,7 @@ const brothers = [
     'className': 'Omicron Class',
     'major': 'cs',
     'majorName': 'Computer Science',
+    'year': 'Class of 2019',
   },
   {
     'name': 'Hodor',
@@ -154,6 +171,7 @@ const brothers = [
     'className': 'Pi Class',
     'major': 'cs',
     'majorName': 'Computer Science',
+    'year': 'Class of 2019',
   },
 ]
 

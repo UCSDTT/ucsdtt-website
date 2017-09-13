@@ -1,11 +1,12 @@
 const activeData = [
   {
-    image: './images/jeffrey.jpg',
+    image: './images/momina.jpg',
     position: 'Rush Chair',
-    name: 'Jeffrey Lee',
+    name: 'Momina Mahmood',
     year: '3rd Year',
-    major: 'Computer Science',
-    class: 'Pi Class',
+    major: 'Chemical Engineering',
+    class: 'Xi Class',
+    messenger: 'https://www.facebook.com/messages/t/momina.mahmood.9/',
   },
   {
     image: './images/rishi.jpg',
@@ -14,14 +15,16 @@ const activeData = [
     year: '3rd Year',
     major: 'Computer Science',
     class: 'Xi Class',
+    messenger: 'https://www.facebook.com/messages/t/rishi.dhanaraj/',
   },
   {
     image: './images/bchan.jpg',
     position: 'Rush Chair',
-    name: 'Brian Chan',
-    year: '3rd Year',
-    major: 'Computer Science',
-    class: 'Omicron Class',
+    name: 'Ming Ming Liu',
+    year: '4th Year',
+    major: 'Mechanical Engineering',
+    class: 'Mu Class',
+    messenger: 'https://www.facebook.com/messages/t/mingming.liu.5283/',
   },
 ]
 

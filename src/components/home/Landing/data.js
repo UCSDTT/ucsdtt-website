@@ -1,30 +1,18 @@
 const slideData = [
   {
-    'title': 'STUDY BUDDIES',
-    'image': './images/BR.jpg',
-  },
-  {
-    'title': 'SOCCER BUDDIES',
-    'image': './images/BubbleSoccer.jpg',
-  },
-  {
-    'title': 'TACO BUDDIES',
-    'image': './images/OMICRONS.jpg',
-  },
-];
-
-const brothersAre = [
-  {
-    'name': 'friends',
+    'name': 'lifelong friends',
     'color': 'red',
+    'image': require('./images/alumni.jpg'),
   },
   {
-    'name': 'buddies',
+    'name': 'soccer buddies',
     'color': 'blue',
+    'image': require('./images/BubbleSoccer.jpg'),
   },
   {
-    'name': 'mates',
+    'name': 'cavemen',
     'color': 'green',
+    'image': require('./images/cave.jpg'),
   }
 ];
 
@@ -52,4 +40,4 @@ const quoteData = [
   },
 ];
 
-export {slideData, brothersAre, quoteData};
+export {slideData, quoteData};

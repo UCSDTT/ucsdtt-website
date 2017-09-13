@@ -1,6 +1,6 @@
 import './MemberPage.css';
 import 'react-select/dist/react-select.css';
-import {Grid, Row, Col, Image, FormGroup, FormControl, Modal, ListGroup, ListGroupItem, Button,} from 'react-bootstrap';
+import {Grid, Row, Col, Image, FormGroup, FormControl, Modal, ListGroup, ListGroupItem} from 'react-bootstrap';
 import Select from 'react-select';
 import React, {Component} from 'react';
 import {brothers, alumni, options, images} from './data.js'
@@ -141,12 +141,16 @@ export default class MemberPage extends Component {
       return (
         this.state.updatedBrothers.map((brother, i) => (
           <Col xs={6} sm={3} className="brother-info col-md-5th" key={i}>
-            <div onClick={() => this.open(brother)}>
-              <Image className="brother-image" src={brother.url} responsive rounded/>
-              <h4> {brother.name.toUpperCase()} </h4>
-              <p> {brother.position.toUpperCase()} </p>
-              <p> {brother.className.toUpperCase()} </p>
-            </div>
+            <Image 
+              className="brother-image" 
+              src={brother.url} 
+              onClick={() => this.open(brother)}
+              responsive 
+              rounded
+            />
+            <h4> {brother.name.toUpperCase()} </h4>
+            <p> {brother.position.toUpperCase()} </p>
+            <p> {brother.className.toUpperCase()} </p>
           </Col>
         ))
       );
@@ -324,10 +328,19 @@ export default class MemberPage extends Component {
                   <ListGroupItem header="Position"> {this.state.brotherModal.position} </ListGroupItem>
                   <ListGroupItem header="Class"> {this.state.brotherModal.className} </ListGroupItem>
                   <ListGroupItem header="Major"> {this.state.brotherModal.majorName} </ListGroupItem>
+                  <ListGroupItem header="Year"> {this.state.brotherModal.year} </ListGroupItem>
                 </ListGroup>
               </Modal.Body>
-              <Modal.Footer>
-                <Button onClick={this.close}> Close </Button>
+              <Modal.Footer className="modal-footer">
+                <div>
+                  <div className="close-footer" onClick={this.close}>
+                    Close
+                  </div>
+                </div>
+                <a className="linkedin-footer" href={this.state.brotherModal.linkedin} target="_blank">
+                  Connect
+                  <i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                </a>
               </Modal.Footer>
             </Modal>
             {this.renderBrothers()}

@@ -6,73 +6,34 @@
 }
 
 .landing-image {
-  position: cover;
-  top: -9999px;
-  bottom: -9999px;
-  left: -9999px;
-  right: -9999px;
-  margin: auto;
-  width: stretch;
-}
-
-.landing-gradient{
-  position:relative;
-  display:inline-block;
-}
-.landing-gradient:after {
-  content:'';
-  position:absolute;
-  left:0; top:0;
-  width:100%; height:100%;
-  display:inline-block;
-  background: -moz-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.35) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.35)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-}
-
-/*@media(min-width: 992px) {
-  .landing-image {
-    height: 100vh;
-    width: 100vw;
-  }
+  object-fit: cover;
 }
 @media(max-width: 992px) {
-  .landing-image {
-    height: 800px !important;
+  .landing-image.img-responsive {
+    height: 550px;
   }
 }
-@media(max-width: 768px) {
-  .landing-image {
-    height: 500px !important;
-  }
-}*/
 
-/* Rotating Text */
-/*.rotating-text {
-  font-size: 70px;
-  margin-left: 0.2em;
-  z-index: 10;
+@media(min-width: 992px) {
+  .landing-gradient{
+    position: relative;
+  }
+  .landing-gradient:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.35) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.35)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
 }
-
-.react-rotating-text-cursor {
-  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
-}
-
-@keyframes blinking-cursor {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}*/
 
 /* Rotating Text */
 .word {
@@ -87,6 +48,7 @@
   float: left;
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
+  white-space: pre;
 }
 .letter.out {
   transform: rotateX(90deg);
@@ -113,26 +75,44 @@
 }
 
 /* Brothers Are */
+@media(max-width: 992px) {
+  .brothers-are-container {
+    display: none;
+  }
+}
+
 .brothers-are {
   position: absolute;
   display: flex;
-  top: 10%;
+  top: 80px;
   left: 20%;
   color: #fff;
   z-index: 10;
 }
-
 .brothers-are-text {
-  display: inline-block;
   font-size: 70px;
+}
+@media(max-width: 1400px) {
+  .brothers-are {
+    left: 10%;
+  }
+  .brothers-are-text {
+    font-size: 60px;
+  }
 }
 
 /* Members Button */
 .members-button-container {
   position: absolute;
-  top: 25%;
+  top: 220px;
   left: 30%;
   z-index: 1;
+}
+@media(max-width: 1400px) {
+  .members-button-container {
+    top: 200px;
+    left: 20%;
+  }
 }
 
 .members-button {
@@ -159,18 +139,21 @@
 /* Quote */
 .quote-container {
   position: absolute;
-  right: 35%;
-  bottom: 35%;
+  height: 250px;
+  width: 500px;
+  right: 3%;
+  bottom: 10%;
   color: #fff;
   z-index: 1;
 }
 
 .quote {
   position: absolute;
-  height: 300px;
+  height: 250px;
   width: 500px;
   opacity: 0;
 }
+
 .quote p {
   font-size: 20px;
   font-weight: 300;
@@ -185,7 +168,7 @@
 }
 
 .quote-quotes {
-  font-size: 70px;
+  font-size: 60px;
   margin-top: -0.45em;
 }
 
@@ -194,6 +177,7 @@
   justify-content: space-around;
   margin-top: 1em;
 }
+
 .quote-active-labels {
   display: flex;
   flex-direction: column;
@@ -201,11 +185,14 @@
   align-items: start;
   text-align: right;
 }
+
 .quote-active-labels h3 {
   font-size: 30px;
   margin: 0;
 }
+
 .active-image {
+  object-fit: cover;
   height: 120px;
   width: 120px;
 }

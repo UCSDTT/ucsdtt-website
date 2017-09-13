@@ -44,11 +44,18 @@
 /* Brothers Main Image */
 .brothers-image-container {
   position: relative;
+  background-color: #000;
+  height: 41vw;
+  z-index: -1;
+}
+@media(max-width: 992px) {
+  .brothers-image-container {
+    height: 450px;
+  }
 }
 
 .brothers-image {
   position: absolute;
-  top: 16%;
   opacity: 0;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -58,15 +65,17 @@
   filter: alpha(opacity=0);
   z-index: -1;
 }
+@media(max-width: 992px) {
+  .brothers-image.img-responsive {
+    object-fit: cover;
+    height: 450px;
+  }
+}
+
 .brothers-image.selected {
   opacity: 1;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=1);
-}
-
-/* Brothers grid container */
-.brothers-grid {
-  margin-top: 41%;
 }
 
 /* Search Bar and Dropdown */
@@ -105,7 +114,7 @@
   margin-bottom: 20px;
 }
 
-.brother-info h4,p {
+.brother-info h4, .brother-info p {
   margin-bottom: 0;
 }
 
@@ -146,23 +155,24 @@
   height: 200px;
   width: 150px;
   margin: auto;
-}
-.brother-image:hover {
   cursor: pointer;
 }
 
 /* Modal */
+
+/* Modal Header */
 .modal-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #610c05; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #610c05 , crimson); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #610c05, crimson); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #610c05, crimson); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #610c05 , crimson); /* Standard syntax */
+  background: #9a0000; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #9a0000, #800000, #670000, #561e18); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #9a0000, #800000, #670000, #561e18); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #9a0000, #800000, #670000, #561e18); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #561e18, #670000, #800000, #9a0000); /* Standard syntax */
   color: #fff;
   padding-top: 50px;
+  border-radius: 3px 3px 0 0;
 }
 @media(max-width: 768px) {
   .modal-header {
@@ -181,8 +191,8 @@
   height: 150px;
   width: 150px;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: -90px;
+  margin-top: 30px;
+  margin-bottom: -95px;
   border: 7px solid #fff;
 }
 @media(max-width: 768px) {
@@ -194,6 +204,7 @@
   }
 }
 
+/* Modal Body */
 .modal-body {
   font-size: 18px;
   margin-top: 70px;
@@ -214,11 +225,63 @@
   color: #666;
   margin: 0;
   border-top: 1px solid #e5e5e5;
-  padding: 20px 40px;
+  padding: 15px 40px;
 }
 
 .modal-body > ul > li > h4 {
   color: #000;
   font-size: 15px;
-  font-weight: 900;
+  font-weight: 700;
+}
+
+/* Modal Footer */
+.modal-footer {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-footer > div {
+  height: 70px;
+  width: 50%;
+  border-bottom-left-radius: 6px;
+}
+.modal-footer > div:hover {
+  background-color: #fafafa;
+}
+
+.modal-footer .close-footer {
+  color: #9a0000;
+  margin-top: 5px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  border-right: 2px solid #e5e5e5;
+}
+
+.modal-footer > .linkedin-footer {
+  color: #007bb6;
+  width: 50%;
+  padding: 15px;
+  border-bottom-right-radius: 6px;
+}
+.modal-footer > .linkedin-footer:hover {
+  background-color: #fafafa;
+}
+
+.modal-footer > .linkedin-footer > .fa-linkedin-square {
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+/* Bootstrap List Group Item */
+.list-group-item {
+  border: none;
+}
+.list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
