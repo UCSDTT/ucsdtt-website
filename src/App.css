@@ -28,6 +28,12 @@ body {
   padding: 0;
 }
 
+@media(max-width: 410px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
 .picture {
   width: auto;
   height: auto;
@@ -39,7 +45,7 @@ body {
 }
 
 .element {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .title {
@@ -56,6 +62,11 @@ body {
   .col-md-5th {
     width: 20%;
   }
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
 }
 
 #title {

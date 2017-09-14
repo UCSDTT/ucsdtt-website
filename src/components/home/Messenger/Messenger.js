@@ -21,7 +21,7 @@ class Messenger extends Component {
           Ask a Brother!
         </PageHeader>
         <Grid>
-          <Row>
+          <Row className="messenger-row">
             {data.map((active, i) => (
               <Col md={4} key={i}>
                 <Panel className="messenger-card" header={active.position}>

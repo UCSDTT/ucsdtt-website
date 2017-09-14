@@ -6,7 +6,7 @@ const activeData = [
     year: '3rd Year',
     major: 'Chemical Engineering',
     class: 'Xi Class',
-    messenger: 'https://www.facebook.com/messages/t/momina.mahmood.9/',
+    messenger: 'https://m.me/momina.mahmood.9/',
   },
   {
     image: './images/rishi.jpg',
@@ -15,7 +15,7 @@ const activeData = [
     year: '3rd Year',
     major: 'Computer Science',
     class: 'Xi Class',
-    messenger: 'https://www.facebook.com/messages/t/rishi.dhanaraj/',
+    messenger: 'https://m.me/rishi.dhanaraj/',
   },
   {
     image: './images/bchan.jpg',
@@ -24,7 +24,7 @@ const activeData = [
     year: '4th Year',
     major: 'Mechanical Engineering',
     class: 'Mu Class',
-    messenger: 'https://www.facebook.com/messages/t/mingming.liu.5283/',
+    messenger: 'https://m.me/mingming.liu.5283/',
   },
 ]
 

@@ -19,12 +19,13 @@ class WhoWeAre extends Component {
             <Image
               className="class-image"
               src={require('./Images/pi-class.jpg')}
+              responsive
               />
             </div>
           </div>
           <div className="pillars">
-            {data.map((pillar) => (
-              <div className="pillar-card">
+            {data.map((pillar, i) => (
+              <div className="pillar-card" key={i}>
                 <h3 className="pillar-name">
                   {pillar.name}
                 </h3>
@@ -32,19 +33,6 @@ class WhoWeAre extends Component {
                   {pillar.content}
                 </p>
               </div>
-
-              // <Card
-              //   className="pillar-card"
-              //   key={pillar.name}
-              // >
-              //   <CardTitle className="pillar-name"
-              //     title={pillar.name}
-              //   >
-              //   </CardTitle>
-              //   <CardText className="pillar-content">
-              //     {pillar.content}
-              //   </CardText>
-              // </Card>
             ))}
           </div>
         </div>

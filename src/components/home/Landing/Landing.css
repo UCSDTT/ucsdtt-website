@@ -84,33 +84,33 @@
 .brothers-are {
   position: absolute;
   display: flex;
+  font-size: 60px;
   top: 80px;
   left: 20%;
   color: #fff;
   z-index: 10;
 }
-.brothers-are-text {
-  font-size: 70px;
-}
 @media(max-width: 1400px) {
   .brothers-are {
+    font-size: 50px;
     left: 10%;
   }
-  .brothers-are-text {
-    font-size: 60px;
-  }
+}
+
+.brothers-are-text {
+  font-size: inherit;
 }
 
 /* Members Button */
 .members-button-container {
   position: absolute;
-  top: 220px;
+  top: 210px;
   left: 30%;
   z-index: 1;
 }
 @media(max-width: 1400px) {
   .members-button-container {
-    top: 200px;
+    top: 190px;
     left: 20%;
   }
 }
@@ -120,7 +120,7 @@
   color: #fff;
   border: none;
   border-radius: 0;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 900;
   padding: 10px 10px;
   opacity: 0.8;
@@ -140,7 +140,7 @@
 .quote-container {
   position: absolute;
   height: 250px;
-  width: 500px;
+  width: 450px;
   right: 3%;
   bottom: 10%;
   color: #fff;
@@ -150,12 +150,12 @@
 .quote {
   position: absolute;
   height: 250px;
-  width: 500px;
+  width: 450px;
   opacity: 0;
 }
 
 .quote p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   margin-left: 1em;
   text-align: left;
@@ -168,26 +168,34 @@
 }
 
 .quote-quotes {
-  font-size: 60px;
+  font-size: 55px;
   margin-top: -0.45em;
 }
 
 .quote-active-group {
   display: flex;
   justify-content: space-around;
-  margin-top: 1em;
+  margin: 1em 2em 0;
 }
 
 .quote-active-labels {
+  font-family: 'PT Sans Narrow';
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: start;
+  align-items: flex-end;
   text-align: right;
 }
 
-.quote-active-labels h3 {
-  font-size: 30px;
+/* Quote Active Label */
+.quote-active-labels h1 {
+  margin: 0;
+}
+
+/* Quote Major and Class Labels */
+.quote-active-labels h2 {
+  font-style: italic;
+  font-weight: 700;
   margin: 0;
 }
 

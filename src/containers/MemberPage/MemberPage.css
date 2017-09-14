@@ -9,7 +9,7 @@
   color: #fff;
   font-size: 45px;
   font-style: italic;
-  padding: 40px 0;
+  padding: 25px 0;
 }
 @media(max-width: 768px) {
   .brothers-header {
@@ -34,11 +34,6 @@
   position: absolute;
   left: 5%;
   margin-top: -5px;
-}
-
-.logo {
-  height: 60px;
-  width: 60px;
 }
 
 /* Brothers Main Image */
@@ -106,12 +101,24 @@
 }
 @media(max-width: 768px) {
   .brother-container {
-    margin: auto 10px;
+    margin: 0 10px;
   }
 }
 
 .brother-info {
   margin-bottom: 20px;
+}
+@media(max-width: 768px) {
+  .brother-info {
+    width: 33.33%;
+  }
+}
+@media(max-width: 539px) {
+  .brother-info {
+    display: inline-block;
+    width: 50%;
+    float: none;
+  }
 }
 
 .brother-info h4, .brother-info p {
