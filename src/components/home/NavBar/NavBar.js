@@ -20,7 +20,7 @@ class NavBar extends Component {
 
   scrollToComp(name) {
     scroller.scrollTo(name, {
-      offset: -80,
+      offset: -20,
       smooth: true
     });
     if (document.querySelector('#hamburger').classList.contains('open')) {
@@ -127,15 +127,6 @@ class NavBar extends Component {
             >
               About
             </NavItem>
-            <li role="presentation">
-              <a 
-                href="/members"
-                onMouseOver={this.underline}
-                onMouseOut={this.underline}
-              >
-                Members
-              </a>
-            </li>
             <NavItem 
               onClick={() => this.scrollToComp("why-rush")}
               onMouseOver={this.underline} 
@@ -157,6 +148,22 @@ class NavBar extends Component {
             >
               Contact Us
             </NavItem>
+            <NavItem 
+              onClick={() => this.scrollToComp("companies")}
+              onMouseOver={this.underline} 
+              onMouseOut={this.underline}
+            >
+              Network
+            </NavItem>
+            <li role="presentation">
+              <a 
+                href="/members"
+                onMouseOver={this.underline}
+                onMouseOut={this.underline}
+              >
+                Members
+              </a>
+            </li>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

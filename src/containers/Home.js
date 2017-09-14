@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import {Companies} from '../components/home/Companies/Companies.js';
-import {ContactUs} from '../components/home/ContactUs/ContactUs.js';
+// import {ContactUs} from '../components/home/ContactUs/ContactUs.js';
 import {FAQ} from '../components/home/FAQ/FAQ.js';
 import {Footer} from '../components/home/Footer/Footer.js';
 import {Landing} from '../components/home/Landing/Landing.js';
@@ -20,7 +20,6 @@ export default class Home extends Component {
         <WhyRush/>
         <FAQ/>
         <Messenger/>
-        <ContactUs/>
         <Companies/>
         <Footer/>
       </div>

@@ -92,11 +92,11 @@ class Landing extends Component {
   }
 
   animateQuoteOut(cq) {
-    cq.className = 'quote animated zoomOut';
+    cq.className = 'quote animated fadeOutDown';
   }
 
   animateQuoteIn(nq) {
-    nq.className = 'quote animated zoomIn';
+    nq.className = 'quote animated fadeInDown';
   }
 
   render() {
@@ -149,9 +149,9 @@ class Landing extends Component {
                 <div className="quote-active-group">
                   <Image className="active-image" src={require(`${quote.activeImage}`)} circle />
                   <div className="quote-active-labels">
-                    <h3> {quote.active} </h3>
-                    <h3> {quote.major} </h3>
-                    <h3> {quote.class} </h3>
+                    <h1> {quote.active} </h1>
+                    <h2> {quote.major} </h2>
+                    <h2> {quote.class} </h2>
                   </div>
                 </div>
               </div>

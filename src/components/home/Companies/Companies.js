@@ -1,43 +1,41 @@
 import './Companies.css';
 import React, {Component} from 'react';
-import {Grid, Row, Col, Image, PageHeader} from 'react-bootstrap';
+import {Row, Image, PageHeader} from 'react-bootstrap';
 import {Element} from 'react-scroll';
 import {bigCompanies, smallCompanies} from './data.js';
 
 class Companies extends Component {
   render() {
     return (
-      <Element name="companies" className="element">
-        <Grid>
-          <PageHeader>Our Alumni Network </PageHeader>
+      <Element name="companies" className="element companies">
+        <PageHeader className="title companies">Our Alumni Network </PageHeader>
 
-          <Row>
+        <div className="companies-container">
+          <Row className="companies-row">
             {bigCompanies.map((company, i) => (
-              <Col 
-                className="company-col big" 
-                md={6} 
+              <div 
+                className="company-col big-logo"
                 key={i}
               >
                 <a href={company.href}>
-                  <Image className="big-company" src={company.image} href={company}/> 
+                  <Image className="company-logo" src={company.image} href={company}/> 
                 </a>
-              </Col>
+              </div>
             ))}
           </Row>
-          <Row>
+          <Row className="companies-row">
             {smallCompanies.map((company, i) => (
-              <Col 
-                className="company-col small" 
-                xs={6} md={4} 
+              <div 
+                className="company-col small-logo"
                 key={i}
               >
                 <a href={company.href}>
-                  <Image className="sm-company" src={company.image}/>
+                  <Image className="company-logo" src={company.image}/>
                 </a>
-              </Col>
+              </div>
             ))}
           </Row>
-        </Grid>
+        </div>
       </Element>
     );
   }

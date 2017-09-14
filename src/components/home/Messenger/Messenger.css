@@ -2,9 +2,16 @@
   background-color: #fafafa;
 }
 
+/* Messenger Row Margin */
+@media(min-width: 1200px) {
+  .messenger-row {
+    margin: auto 15px;
+  }
+}
+
 /* Messenger Card */
 .messenger-card {
-  width: 23em;
+  width: 22em;
   margin: 30px auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
   border: none;
@@ -44,8 +51,8 @@
 
 /* Messenger Button */
 .messenger-button {
-  height: 60px;
-  width: 60px;
+  height: 55px;
+  width: 55px;
   background-color: black;
   border-radius: 50%;
   cursor: pointer;
@@ -54,7 +61,7 @@
   opacity: 0.7;
 }
 .messenger-button i {
-  margin-top: 14px;
+  margin-top: 11.5px;
 }
 
 /* Material icon size */

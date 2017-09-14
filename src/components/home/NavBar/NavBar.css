@@ -20,12 +20,6 @@
   transition: opacity 0.2s;
 }
 
-.logo {
-  margin-top: -5px;
-  height: 60px;
-  width: 60px;
-}
-
 .navbar-title {
   font-size: 20px;
   width: 280px;
