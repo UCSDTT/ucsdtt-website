@@ -14,25 +14,23 @@
   }
 }
 
-@media(min-width: 992px) {
-  .landing-gradient{
-    position: relative;
-  }
-  .landing-gradient:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.35) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.35)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* IE10+ */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-  }
+.landing-gradient{
+  position: relative;
+}
+.landing-gradient:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.35) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.35)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 /* Rotating Text */
@@ -52,14 +50,14 @@
 }
 .letter.out {
   transform: rotateX(90deg);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.16s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .letter.behind {
   transform: rotateX(-90deg);
 }
 .letter.in {
   transform: rotateX(0deg);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.19s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .blue {
@@ -75,43 +73,52 @@
 }
 
 /* Brothers Are */
-@media(max-width: 992px) {
-  .brothers-are-container {
-    display: none;
-  }
-}
-
 .brothers-are {
   position: absolute;
   display: flex;
   font-size: 60px;
   top: 80px;
-  left: 20%;
+  left: 10%;
   color: #fff;
   z-index: 10;
 }
 @media(max-width: 1400px) {
   .brothers-are {
     font-size: 50px;
-    left: 10%;
+  }
+}
+@media(max-width: 768px) {
+  .brothers-are {
+    display: block;
   }
 }
 
 .brothers-are-text {
   font-size: inherit;
+  margin-left: 0.25em;
+}
+@media(max-width: 768px) {
+  .brothers-are-text {
+    margin-left: 0;
+  }
 }
 
 /* Members Button */
 .members-button-container {
   position: absolute;
   top: 210px;
-  left: 30%;
+  left: 20%;
   z-index: 1;
 }
 @media(max-width: 1400px) {
   .members-button-container {
     top: 190px;
-    left: 20%;
+  }
+}
+@media(max-width: 768px) {
+  .members-button-container {
+    top: 260px;
+    left: 30%;
   }
 }
 
@@ -125,6 +132,7 @@
   padding: 10px 10px;
   opacity: 0.8;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  text-transform: uppercase;
 }
 .members-button:hover {
   background-color: #666;
@@ -142,9 +150,14 @@
   height: 250px;
   width: 450px;
   right: 3%;
-  bottom: 10%;
+  bottom: 5%;
   color: #fff;
   z-index: 1;
+}
+@media(max-width: 992px) {
+  .quote-container {
+    display: none;
+  }
 }
 
 .quote {
