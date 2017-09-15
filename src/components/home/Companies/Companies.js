@@ -1,4 +1,5 @@
 import './Companies.css';
+
 import React, {Component} from 'react';
 import {Row, Image, PageHeader} from 'react-bootstrap';
 import {Element} from 'react-scroll';

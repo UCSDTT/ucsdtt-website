@@ -9,7 +9,6 @@ import {
   Row
 } from 'react-bootstrap';
 import React, {Component} from 'react';
-
 import {Element} from 'react-scroll';
 import data from './data';
 
@@ -40,10 +39,10 @@ class Messenger extends Component {
                   </p>
                   <div className="messenger-actions">
                     <span className="messenger-button">
-                      <i className="material-icons email">email</i>
+                      <i className="icon-mail-alt"></i>
                     </span>
                     <a className="messenger-button" href={active.messenger} target="_blank">
-                      <i className="fa fa-temp-messenger"></i>
+                      <i className="icon-temp-messenger"></i>
                     </a>
                   </div>
                 </Panel>

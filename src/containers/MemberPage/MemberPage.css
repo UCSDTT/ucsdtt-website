@@ -279,7 +279,8 @@
   background-color: #fafafa;
 }
 
-.modal-footer > .linkedin-footer > .fa-linkedin-square {
+.modal-footer > .linkedin-footer > .icon-linkedin-squared {
+  font-size: 2em;
   vertical-align: middle;
   margin-left: 15px;
 }
