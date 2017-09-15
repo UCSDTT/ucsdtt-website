@@ -19,6 +19,10 @@
   padding: 10px;
 }
 
+.media-icons i {
+  font-size: 3em;
+}
+
 .footer-p {
   font-size: 15px;
   width: 70%;

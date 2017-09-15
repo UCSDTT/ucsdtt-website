@@ -1,4 +1,3 @@
-import '../../../../node_modules/font-awesome/css/font-awesome.min.css';
 import './Footer.css';
 
 import {Col, Grid, Row} from 'react-bootstrap';
@@ -51,12 +50,12 @@ class Footer extends Component {
                 <Row className="show-grid">
                   <Col xs={6} xsOffset={0} md={3} mdOffset={3}>
                     <a href="https://www.facebook.com/thetatau.ucsd/" target="_blank" rel="noopener noreferrer">
-                      <i className="fa fa-facebook fa-3x light-grey"></i>
+                      <i className="icon-facebook light-grey"></i>
                     </a>
                   </Col>
                   <Col xs={6} xsOffset={0} md={3}>
                     <a href="https://instagram.com/thetatau_ucsd/" target="_blank" rel="noopener noreferrer">
-                      <i className="fa fa-instagram fa-3x light-grey"></i>
+                      <i className="icon-instagram light-grey"></i>
                     </a>
                   </Col>
                 </Row>
