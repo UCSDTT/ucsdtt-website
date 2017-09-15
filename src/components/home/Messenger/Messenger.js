@@ -1,5 +1,6 @@
 import './Messenger.css';
 
+import React, {Component} from 'react';
 import {
   Col,
   Grid,
@@ -8,7 +9,6 @@ import {
   Panel,
   Row
 } from 'react-bootstrap';
-import React, {Component} from 'react';
 import {Element} from 'react-scroll';
 import data from './data';
 

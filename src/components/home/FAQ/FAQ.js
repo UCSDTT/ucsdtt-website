@@ -1,7 +1,7 @@
 import './FAQ.css';
 
-import { Col, Grid, PageHeader, Panel, Row } from 'react-bootstrap';
 import React, { Component } from 'react';
+import { Col, Grid, PageHeader, Panel, Row } from 'react-bootstrap';
 import {faqCol1, faqCol2} from './data.js';
 
 import { Element } from 'react-scroll';
