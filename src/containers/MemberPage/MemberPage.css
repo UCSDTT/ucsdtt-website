@@ -253,7 +253,7 @@
 }
 
 .modal-footer > div {
-  height: 70px;
+  height: 60px;
   width: 50%;
   border-bottom-left-radius: 6px;
 }
@@ -264,15 +264,15 @@
 .modal-footer .close-footer {
   color: #9a0000;
   margin-top: 5px;
-  padding-top: 14px;
-  padding-bottom: 18px;
+  padding-top: 9px;
+  padding-bottom: 13px;
   border-right: 2px solid #e5e5e5;
 }
 
 .modal-footer > .linkedin-footer {
   color: #007bb6;
   width: 50%;
-  padding: 15px;
+  padding: 1.5px;
   border-bottom-right-radius: 6px;
 }
 .modal-footer > .linkedin-footer:hover {

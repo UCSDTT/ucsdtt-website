@@ -1,9 +1,9 @@
 .element.faq {
-  background: #de6262; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #de6262, #ffb88c, #de6262); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #de6262, #ffb88c, #de6262); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #de6262, #ffb88c, #de6262); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #de6262, #ffb88c, #de6262); /* Standard syntax */
+  background: crimson; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, crimson, #ffb88c, crimson); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, crimson, #ffb88c, crimson); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, crimson, #ffb88c, crimson); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, crimson, #ffb88c, crimson); /* Standard syntax */
 }
 
 .element.faq .title {
@@ -35,6 +35,7 @@
 /* FAQ Title */
 .faq-title {
   font-size: 24px;
+  color: #2f4f4f;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -42,7 +43,7 @@
 /* FAQ Body */
 .faq-body {
   font-size: 18px;
-  color: #999;
+  color: #587272;
   margin-left: 20px;
   margin-right: 20px;
 }

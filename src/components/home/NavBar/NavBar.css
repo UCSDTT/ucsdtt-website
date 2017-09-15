@@ -42,7 +42,10 @@
   }
   .navbar-collapse > .navbar-right > li > a.underline:after {
     width: 100%;
-    background-color: #fff;
+    background-color: crimson;
+  }
+  .navbar-collapse > .navbar-right > li > a:hover {
+    color: #ccc;
   }
 }
 
@@ -152,7 +155,7 @@
 
   /* Mobile Nav List Margin */
   .navbar-collapse .navbar-nav li {
-    height: 17%;
+    height: 14%;
   }
 
   /* Mobile Nav List Color */

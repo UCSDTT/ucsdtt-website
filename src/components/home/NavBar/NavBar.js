@@ -1,7 +1,7 @@
 import './NavBar.css';
 
-import {Image, Nav, NavItem, Navbar} from 'react-bootstrap';
 import React, {Component} from 'react';
+import {Image, Nav, NavItem, Navbar} from 'react-bootstrap';
 import {animateScroll as scroll, scroller} from 'react-scroll';
 
 class NavBar extends Component {
@@ -21,7 +21,7 @@ class NavBar extends Component {
   scrollToComp(name) {
     scroller.scrollTo(name, {
       offset: -20,
-      smooth: true
+      smooth: true,
     });
     if (document.querySelector('#hamburger').classList.contains('open')) {
       document

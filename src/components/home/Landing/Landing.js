@@ -1,6 +1,8 @@
 import './Landing.css';
-import {Carousel, Image, Button, Glyphicon} from 'react-bootstrap';
+
 import React, {Component} from 'react';
+import {Carousel, Image, Button, Glyphicon} from 'react-bootstrap';
+import {scroller} from 'react-scroll';
 import {slideData, quoteData}  from './data.js';
 
 class Landing extends Component {
@@ -13,6 +15,13 @@ class Landing extends Component {
       quotes: [],
       currentQuote: 0,
     };
+  }
+
+  scrollToComp(name) {
+    scroller.scrollTo(name, {
+      offset: -20,
+      smooth: true,
+    });
   }
 
   componentDidMount() {
@@ -64,13 +73,13 @@ class Landing extends Component {
   animateLetterOut(cw, i) {
     setTimeout(function () {
       cw[i].className = 'letter out';
-    }, i * 80);
+    }, i * 50);
   }
 
   animateLetterIn(nw, i) {
     setTimeout(function () {
       nw[i].className = 'letter in';
-    }, 340 + (i * 80));
+    }, 340 + (i * 50));
   }
 
   splitLetters(word) {
@@ -114,49 +123,46 @@ class Landing extends Component {
             </Carousel.Item>
           ))}
         </Carousel>
-        <div className="brothers-are-container">
-          <div className="brothers-are">
-            <h1 className="brothers-are-text">
-              Brothers are
-            </h1>
-            <h1 
-              className="brothers-are-text" 
-              style={{
-              marginLeft: '0.25em'
-            }}>
-              {slideData.map((slide, i) => (
-                <span className={`word ${slide.color}`} key={i}>
-                  {slide.name}
-                </span>
-              ))}
-            </h1>
-          </div>
-          <div className="members-button-container">
-            <Button className="members-button" href="/members"> 
-              Meet the Brothers
-              <Glyphicon glyph="chevron-right" />
-            </Button>
-          </div>
-          <div className="quote-container"> 
-            {quoteData.map((quote, i) => (
-              <div 
-                className="quote" 
-                key={i}>
-                <div className="quote-text-group">
-                  <span className="quote-quotes">❝</span>
-                  <p> <i>{quote.text}</i> </p>
-                </div>
-                <div className="quote-active-group">
-                  <Image className="active-image" src={require(`${quote.activeImage}`)} circle />
-                  <div className="quote-active-labels">
-                    <h1> {quote.active} </h1>
-                    <h2> {quote.major} </h2>
-                    <h2> {quote.class} </h2>
-                  </div>
+        <div className="brothers-are">
+          <h1 className="brothers-are-text">
+            Brothers are
+          </h1>
+          <h1 className="brothers-are-text">
+            {slideData.map((slide, i) => (
+              <span className={`word ${slide.color}`} key={i}>
+                {slide.name}
+              </span>
+            ))}
+          </h1>
+        </div>
+        <div className="members-button-container">
+          <Button 
+            className="members-button" 
+            onClick={() => this.scrollToComp("who-we-are")}
+          > 
+            Learn More
+            <Glyphicon glyph="chevron-right" />
+          </Button>
+        </div>
+        <div className="quote-container"> 
+          {quoteData.map((quote, i) => (
+            <div 
+              className="quote" 
+              key={i}>
+              <div className="quote-text-group">
+                <span className="quote-quotes">❝</span>
+                <p> <i>{quote.text}</i> </p>
+              </div>
+              <div className="quote-active-group">
+                <Image className="active-image" src={require(`${quote.activeImage}`)} circle />
+                <div className="quote-active-labels">
+                  <h1> {quote.active} </h1>
+                  <h2> {quote.major} </h2>
+                  <h2> {quote.class} </h2>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     );
