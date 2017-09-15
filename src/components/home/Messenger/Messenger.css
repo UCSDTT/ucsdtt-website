@@ -65,14 +65,13 @@
 }
 
 /* Material icon size */
-.material-icons.email { 
-  font-size: 32px;
-  color: white; 
+.messenger-button > i.icon-mail-alt:before {
+  font-size: 2em;
+  color: white;
 }
 
-i.fa.fa-temp-messenger::before {
+i.icon-temp-messenger:before {
   content: "";
-  display: inline-block;
   width: 3.0rem; /* Set to your font-size */
   height: 3.0rem; /* Set to your font-size */
   position: relative;

@@ -339,7 +339,7 @@ export default class MemberPage extends Component {
                 </div>
                 <a className="linkedin-footer" href={this.state.brotherModal.linkedin} target="_blank">
                   Connect
-                  <i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                  <i className="icon-linkedin-squared" aria-hidden="true"></i>
                 </a>
               </Modal.Footer>
             </Modal>
