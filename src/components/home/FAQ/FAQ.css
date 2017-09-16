@@ -1,9 +1,9 @@
 .element.faq {
-  background: crimson; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, crimson, #ffb88c, crimson); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, crimson, #ffb88c, crimson); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, crimson, #ffb88c, crimson); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, crimson, #ffb88c, crimson); /* Standard syntax */
+  background: #8d0000; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #8d0000, #ffb88c); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #8d0000, #ffb88c); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #8d0000, #ffb88c); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #8d0000, #ffb88c); /* Standard syntax */
 }
 
 .element.faq .title {

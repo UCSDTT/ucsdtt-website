@@ -1,5 +1,5 @@
 import './index.css';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker.js';
 
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
@@ -23,4 +23,4 @@ ReactDOM.render(
   </BrowserRouter>, 
   document.getElementById('root'));
 
-registerServiceWorker();
+// registerServiceWorker();

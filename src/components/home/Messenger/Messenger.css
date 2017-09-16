@@ -18,13 +18,11 @@
 }
 
 /* Messenger Title */
-.panel-heading {
+.messenger-card > .panel-heading {
+  background-color: #8d0000;
+  color: #fafafa;
+  font-style: italic;
   font-size: 24px;
-}
-.active-position {
-  background-color: #eee;
-  margin-bottom: -30px;
-  border-bottom: 1px solid #ddd;
 }
 
 /* Messenger Image */
@@ -38,7 +36,7 @@
 /* Messenger Body */
 .messenger-body {
   font-size: 18px;
-  color: #999;
+  color: #587272;
 }
 
 /* Messenger Actions */
@@ -60,77 +58,22 @@
 .messenger-button:hover {
   opacity: 0.7;
 }
-.messenger-button i {
-  margin-top: 11.5px;
-}
 
-/* Material icon size */
+.messenger-button > i.icon-mail-alt {
+  margin-top: 13px;
+}
 .messenger-button > i.icon-mail-alt:before {
-  font-size: 2em;
+  font-size: 1.8em;
   color: white;
 }
 
-i.icon-temp-messenger:before {
+.messenger-button > i.icon-temp-messenger {
+  margin-top: 11.5px;
+}
+.messenger-button > i.icon-temp-messenger:before {
   content: "";
   width: 3.0rem; /* Set to your font-size */
   height: 3.0rem; /* Set to your font-size */
   position: relative;
   background: url('./images/facebook-messenger.svg') no-repeat scroll center center/100%;
 }
-
-/*.messenger {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 50px 0;
-}
-.messenger-card {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
-  height: 250px;
-}
-@media (max-width: 992px) {
-  .messenger-card {
-    width: 80%;
-    margin: 20px 0;
-  }
-}
-
-.card-title {
-  position: absolute !important;
-  top: 10%;
-  left: 10%;
-}
-
-.card-media {
-  position: absolute !important;
-  top: 15%;
-  right: 5%;
-  padding-left: 10px;
-  border-left: 1px solid #999;
-}
-.active-image {
-  border-radius: 50%;
-  height: 170px;
-  width: 170px !important;
-}
-
-.card-body {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  font-size: 20px !important;
-}
-
-.card-actions {
-  position: absolute !important;
-  left: 5%;
-  bottom: 0;
-  width: 50%;
-}
-.card-button {
-  width: 80%;
-  margin-bottom: 10px;
-}*/

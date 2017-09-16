@@ -42,7 +42,7 @@
   }
   .navbar-collapse > .navbar-right > li > a.underline:after {
     width: 100%;
-    background-color: crimson;
+    background-color: #b22222;
   }
   .navbar-collapse > .navbar-right > li > a:hover {
     color: #ccc;
