@@ -17,18 +17,6 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Theta Tau @ UCSD</title>
-
-    <!-- Prevents FOUC -->
-    <script>
-      document.documentElement.style.display = "none";
-      // (no-jquery document.ready)
-      (function onReady(f) {
-        document.readyState === "complete"
-          ? f() : setTimeout(onReady, 10, f);
-      }(function() { 
-        document.documentElement.style.display = "";
-      }));
-    </script>
   </head>
   <body>
     <div id="root"></div>
