@@ -1,4 +1,5 @@
 import './index.css';
+import registerServiceWorker from './service-worker.js';
 
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
@@ -19,5 +20,7 @@ ReactDOM.render(
         <Route path='*' component={Home}/>
       </Switch>
     </App>
-  </BrowserRouter>
-  , document.getElementById('root'));
+  </BrowserRouter>, 
+  document.getElementById('root'));
+
+registerServiceWorker();
