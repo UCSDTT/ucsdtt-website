@@ -3,16 +3,22 @@ const slideData = [
     'name': 'lifelong friends',
     'color': 'red',
     'image': require('./images/alumni.jpg'),
+    'smImage': require('./images/alumni-sm.jpg'),
+    'xsImage': require('./images/alumni-xs.jpg'),
   },
   {
     'name': 'soccer buddies',
     'color': 'blue',
     'image': require('./images/BubbleSoccer.jpg'),
+    'smImage': require('./images/BubbleSoccer-sm.jpg'),
+    'xsImage': require('./images/BubbleSoccer-xs.jpg'),
   },
   {
     'name': 'cavemen',
     'color': 'green',
     'image': require('./images/cave.jpg'),
+    'smImage': require('./images/cave-sm.jpg'),
+    'xsImage': require('./images/cave-xs.jpg'),
   }
 ];
 

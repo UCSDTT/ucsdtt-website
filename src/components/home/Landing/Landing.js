@@ -118,7 +118,12 @@ class Landing extends Component {
           {slideData.map((slide, i) => (
             <Carousel.Item key={i}>
               <div className="landing-gradient">
-                <Image className="landing-image" src={slide.image} responsive/>
+                <Image 
+                  className="landing-image" 
+                  src={slide.xsImage} 
+                  srcSet={slide.smImage + ' 992w', slide.image + ' 1200w'} 
+                  responsive
+                />
               </div>
             </Carousel.Item>
           ))}
