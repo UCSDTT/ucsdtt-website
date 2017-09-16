@@ -77,6 +77,7 @@
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
+    z-index: 1;
   }
 
   #hamburger span {
@@ -143,9 +144,9 @@
     position: fixed;
     background-color: #000;
     color: #fff;
-    font-size: 45px;
-    top: 0;
+    font-size: 42px;
     left: -1%;
+    bottom: -10%;
     height: 100%;
     width: 105%;
     margin-top: 80px;
@@ -155,7 +156,7 @@
 
   /* Mobile Nav List Margin */
   .navbar-collapse .navbar-nav li {
-    height: 14%;
+    padding: 25px 0;
   }
 
   /* Mobile Nav List Color */
