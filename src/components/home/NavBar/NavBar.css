@@ -2,6 +2,7 @@
   background: transparent;
   font-family: 'PT Sans Narrow';
   border-color: #fff;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .navbar > div {
