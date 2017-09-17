@@ -100,7 +100,7 @@ class NavBar extends Component {
             onClick={this.openMenu}/>
         </Navbar.Header>
         <Nav pullLeft className="hidden-sm hidden-xs">
-          <NavItem className="navbar-title" onClick={this.scrollToTop}>Theta Tau @ UC San Diego</NavItem>
+          <NavItem className="navbar-title" onClick={this.scrollToTop}>Theta Tau, UCSD</NavItem>
         </Nav>
         <Navbar.Collapse>
           <Nav pullRight>
@@ -121,7 +121,14 @@ class NavBar extends Component {
               </DropdownButton>
             </li>*/}
             <NavItem 
-              onClick={() => this.scrollToComp("who-we-are")} 
+              onClick={this.scrollToTop}
+              onMouseOver={this.underline} 
+              onMouseOut={this.underline}
+            >
+              Home
+            </NavItem>
+            <NavItem 
+              onClick={() => this.scrollToComp("who-we-are")}
               onMouseOver={this.underline} 
               onMouseOut={this.underline}
             >
@@ -134,27 +141,6 @@ class NavBar extends Component {
             >
               Rush
             </NavItem>
-            <NavItem 
-              onClick={() => this.scrollToComp("faq")}
-              onMouseOver={this.underline} 
-              onMouseOut={this.underline}
-            >
-              FAQ
-            </NavItem>
-            <NavItem 
-              onClick={() => this.scrollToComp("messenger")}
-              onMouseOver={this.underline} 
-              onMouseOut={this.underline}
-            >
-              Contact Us
-            </NavItem>
-            <NavItem 
-              onClick={() => this.scrollToComp("companies")}
-              onMouseOver={this.underline} 
-              onMouseOut={this.underline}
-            >
-              Network
-            </NavItem>
             <li role="presentation">
               <a 
                 href="/members"
@@ -164,6 +150,13 @@ class NavBar extends Component {
                 Members
               </a>
             </li>
+            <NavItem 
+              onClick={() => this.scrollToComp("faq")}
+              onMouseOver={this.underline} 
+              onMouseOut={this.underline}
+            >
+              Questions?
+            </NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
