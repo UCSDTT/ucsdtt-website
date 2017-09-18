@@ -19,62 +19,30 @@ class NavBar extends Component {
       .querySelector('#hamburger')
       .classList
       .toggle('open');
-    if (document.querySelector('#hamburger').classList.contains('open')) {
-      document
-        .querySelector('.navbar-fixed-top')
-        .style
-        .backgroundColor = '#000';
-      document
-        .querySelector('#nav-logo')
-        .style
-        .opacity = 0;
-      document
-        .querySelector('.navbar-collapse .navbar-nav')
-        .style
-        .opacity = 1;
-      document.body.style.overflow = 'hidden';
-    } else {
-      document
-        .querySelector('.navbar-fixed-top')
-        .style
-        .backgroundColor = 'rgba(10, 10, 10, .5)';
-      document
-        .querySelector('#nav-logo')
-        .style
-        .opacity = 1;
-      document
-        .querySelector('.navbar-collapse .navbar-nav')
-        .style
-        .opacity = 0;
+    document
+      .querySelector('.navbar-fixed-top')
+      .classList
+      .toggle('open');
+    document
+      .querySelector('#nav-logo')
+      .classList
+      .toggle('open');
+    document
+      .querySelector('.navbar-collapse .navbar-nav')
+      .classList
+      .toggle('open');
+
+    if (document.body.style.overflow == 'hidden') {
       document.body.style.overflow = 'visible';
     }
-  }
-
-  closeMenu() {
-    if (document.querySelector('#hamburger').classList.contains('open')) {
-      document
-        .querySelector('#hamburger')
-        .classList
-        .toggle('open');
-      document
-        .querySelector('.navbar-fixed-top')
-        .style
-        .backgroundColor = 'rgba(10, 10, 10, .5)';
-      document
-        .querySelector('#nav-logo')
-        .style
-        .opacity = 1;
-      document
-        .querySelector('.navbar-collapse .navbar-nav')
-        .style
-        .opacity = 0;
-      document.body.style.overflow = 'visible';
+    else {
+      document.body.style.overflow = 'hidden';
     }
   }
 
   scrollToTop() {
     scroll.scrollToTop();
-    this.closeMenu();
+    this.openMenu();
   }
 
   scrollToComp(name) {
@@ -82,7 +50,7 @@ class NavBar extends Component {
       offset: -20,
       smooth: true,
     });
-    this.closeMenu();
+    this.openMenu();
   }
 
   render() {
