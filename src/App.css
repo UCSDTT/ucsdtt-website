@@ -131,6 +131,10 @@ a:hover, a:active {
   height: 50vh;
 }
 
+.maroon-bg {
+  background-color: #610301;
+}
+
 .dark-bg {
   background: rgba(10, 10, 10, .9);
 }

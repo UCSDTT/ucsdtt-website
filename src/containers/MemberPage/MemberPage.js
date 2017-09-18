@@ -321,9 +321,10 @@ export default class MemberPage extends Component {
             <Modal show={this.state.showModal} onHide={this.close}>
               <Modal.Header>
                 <Modal.Title> {this.state.brotherModal.name} </Modal.Title>
-                <Image className="modal-image" src={this.state.brotherModal.url} circle/>
+                <Image className="modal-image-mobile" src={this.state.brotherModal.url} circle/>
               </Modal.Header>
-              <Modal.Body> 
+              <Modal.Body>
+                <Image className="modal-image" src={this.state.brotherModal.url} rounded/>
                 <ListGroup>
                   <ListGroupItem header="Position"> {this.state.brotherModal.position} </ListGroupItem>
                   <ListGroupItem header="Class"> {this.state.brotherModal.className} </ListGroupItem>

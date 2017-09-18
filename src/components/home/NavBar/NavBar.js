@@ -14,36 +14,6 @@ class NavBar extends Component {
     }
   }
 
-  scrollToTop() {
-    scroll.scrollToTop();
-  }
-
-  scrollToComp(name) {
-    scroller.scrollTo(name, {
-      offset: -20,
-      smooth: true,
-    });
-    if (document.querySelector('#hamburger').classList.contains('open')) {
-      document
-        .querySelector('#hamburger')
-        .classList
-        .toggle('open');
-      document
-        .querySelector('.navbar-collapse .navbar-nav')
-        .style
-        .opacity = 0;
-      document
-        .querySelector('.navbar-collapse .navbar-nav')
-        .style
-        .zIndex = -1;
-      document
-        .querySelector('#nav-logo')
-        .style
-        .opacity = 1;
-      document.body.style.overflow = 'visible';
-    }
-  }
-
   openMenu() {
     document
       .querySelector('#hamburger')
@@ -67,7 +37,7 @@ class NavBar extends Component {
       document
         .querySelector('.navbar-fixed-top')
         .style
-        .backgroundColor = 'rgba(10, 10, 10, .9)';
+        .backgroundColor = 'rgba(10, 10, 10, .5)';
       document
         .querySelector('#nav-logo')
         .style
@@ -80,12 +50,25 @@ class NavBar extends Component {
     }
   }
 
+  scrollToTop() {
+    scroll.scrollToTop();
+    this.openMenu();
+  }
+
+  scrollToComp(name) {
+    scroller.scrollTo(name, {
+      offset: -20,
+      smooth: true,
+    });
+    this.openMenu();
+  }
+
   render() {
     return (
       <Navbar className="navbar-fixed-top" inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <a role="button" id="nav-logo" onClick={this.scrollToTop}>
+            <a role="button" id="nav-logo" href="/">
               <Image className="logo" src={require('./images/tt_logo.png')}/>
             </a>
           </Navbar.Brand>
@@ -121,7 +104,7 @@ class NavBar extends Component {
               </DropdownButton>
             </li>*/}
             <NavItem 
-              onClick={this.scrollToTop}
+              onClick={this.scrollToTop.bind(this)}
               onMouseOver={this.underline} 
               onMouseOut={this.underline}
             >

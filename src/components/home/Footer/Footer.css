@@ -22,6 +22,9 @@
 .media-icons i {
   font-size: 3em;
 }
+.media-icons i:hover {
+  color: #fff;
+}
 
 .footer-p {
   font-size: 15px;

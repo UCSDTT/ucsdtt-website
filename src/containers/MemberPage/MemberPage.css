@@ -169,76 +169,117 @@
 
 /* Modal Header */
 .modal-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background: #9a0000; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #9a0000, #800000, #670000, #561e18); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(bottom right, #9a0000, #800000, #670000, #561e18); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(bottom right, #9a0000, #800000, #670000, #561e18); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #561e18, #670000, #800000, #9a0000); /* Standard syntax */
   color: #fff;
-  padding-top: 50px;
+  padding: 25px 0;
   border-radius: 3px 3px 0 0;
 }
-@media(max-width: 768px) {
+@media(max-width: 539px) {
   .modal-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 130px;
+    padding-top: 50px;
   }
 }
 
 .modal-title {
-  font-size: 24px;
+  font-family: 'PT Sans Narrow';
   text-align: center;
+}
+@media(min-width: 539px) {
+  .modal-title {
+    font-size: 50px;
+  }
+}
+@media(max-width: 539px) {
+  .modal-title {
+    font-size: 30px;
+  }
+}
+
+/* Modal Image */
+.modal-image-mobile {
+  display: none;
+}
+@media(max-width: 539px) {
+  .modal-image-mobile {
+    display: block;
+    object-fit: cover;
+    object-position: 50% 0;
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    border: 7px solid #fff;
+  }
 }
 
 .modal-image {
-  object-fit: cover;
-  object-position: 50% 0;
-  height: 150px;
-  width: 150px;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: -95px;
-  border: 7px solid #fff;
+  display: inline-block;
+  vertical-align: baseline;
+  height: 400px;
+  margin-left: 20px;
 }
-@media(max-width: 768px) {
+@media(max-width: 539px) {
   .modal-image {
-    height: 120px;
-    width: 120px;
-    margin-top: 20px;
-    margin-bottom: -40px;
+    display: none;
   }
 }
 
 /* Modal Body */
 .modal-body {
-  font-size: 18px;
-  margin-top: 70px;
-  padding: 0;
-  padding-top: 15px;
+  font-family: 'PT Sans Narrow';
 }
-@media(max-width: 768px) {
+@media(min-width: 539px) {
   .modal-body {
+    margin: 20px auto;
+  }
+}
+@media(max-width: 539px) {
+  .modal-body {
+    font-size: 18px;
     margin-top: 50px;
+    padding: 0;
+    padding-top: 15px;
   }
 }
 
 .modal-body > ul {
   margin-bottom: 0;
 }
-
-.modal-body > ul > li {
-  color: #666;
-  margin: 0;
-  border-top: 1px solid #e5e5e5;
-  padding: 15px 40px;
+@media(min-width: 539px) {
+  .modal-body > ul {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .modal-body > ul > li {
+    color: #666;
+    font-size: 25px;
+  }
+  .modal-body > ul > li > h4 {
+    color: #610301;
+    font-size: 40px;
+    font-weight: 700;
+  }
 }
-
-.modal-body > ul > li > h4 {
-  color: #000;
-  font-size: 15px;
-  font-weight: 700;
+@media(max-width: 539px) {
+  .modal-body > ul > li {
+    color: #666;
+    border-top: 1px solid #e5e5e5;
+    padding: 15px 40px;
+  }
+  .modal-body > ul > li > h4 {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+  }
 }
 
 /* Modal Footer */

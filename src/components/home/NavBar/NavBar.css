@@ -1,7 +1,7 @@
 .navbar {
-  background: transparent;
+  background: rgba(10, 10, 10, 0.5);
   font-family: 'PT Sans Narrow';
-  border-color: #fff;
+  border-bottom: 2px solid #fff;
   text-shadow: 2px 2px 2px #000;
 }
 
@@ -169,21 +169,15 @@
   }
 
   /* Mobile Nav List Margin */
-  .navbar-collapse .navbar-nav li {
+  .navbar-collapse > .navbar-nav > li {
+    width: max-content;
+    margin: auto;
     padding: 25px 0;
   }
 
-  /* Mobile Nav List Color */
-  .navbar-collapse .navbar-nav li a {
-    color: #fff;
-  }
-
   /* Changes border color to black for mobile nav hamburger open */
-  .navbar {
-    border: 1px solid #000;
-  }
   .navbar-inverse .navbar-collapse {
-    border-color: #000;
+    border-color: transparent;
   }
 }
 
