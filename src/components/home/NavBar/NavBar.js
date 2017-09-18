@@ -5,6 +5,19 @@ import {Image, Nav, NavItem, Navbar} from 'react-bootstrap';
 import {animateScroll as scroll, scroller} from 'react-scroll';
 
 class NavBar extends Component {
+  componentDidMount() {
+    window.onscroll = function() {
+      let landingHeight = document.querySelector('.landing').clientHeight;
+
+      if (document.body.scrollTop >= landingHeight) {
+        document.querySelector('.navbar').style.background = 'rgba(10, 10, 10, 0.8)';
+      }
+      else {
+        document.querySelector('.navbar').style.background = 'transparent';
+      }
+    }
+  }
+
   underline = (event) => {
     if (window.innerWidth > 768) {
       event
@@ -32,7 +45,7 @@ class NavBar extends Component {
       .classList
       .toggle('open');
 
-    if (document.body.style.overflow == 'hidden') {
+    if (document.body.style.overflow === 'hidden') {
       document.body.style.overflow = 'visible';
     }
     else {
@@ -47,7 +60,7 @@ class NavBar extends Component {
 
   scrollToComp(name) {
     scroller.scrollTo(name, {
-      offset: -20,
+      offset: 0,
       smooth: true,
     });
     this.openMenu();

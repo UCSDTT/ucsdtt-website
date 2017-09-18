@@ -1,8 +1,9 @@
 .navbar {
-  background: rgba(10, 10, 10, 0.5);
+  background: transparent;
   font-family: 'PT Sans Narrow';
   border-bottom: 2px solid #fff;
   text-shadow: 2px 2px 2px #000;
+  transition: background 0.5s ease;
 }
 
 .navbar > div {
@@ -62,7 +63,7 @@
 /* Mobile Nav */
 @media(max-width: 768px) {
   .navbar-fixed-top.open {
-    background-color: #000;
+    background-color: #000 !important;
   }
 
   #nav-logo {
@@ -168,13 +169,14 @@
     color: #fff;
     font-size: 42px;
     top: 0;
-    left: -1%;
+    left: 0;
     height: 100%;
-    width: 105%;
-    margin-top: 80px;
-    padding-left: 5%;
+    width: 100%;
+    margin: 0;
+    padding-top: 80px;
     text-align: center;
     opacity: 0;
+    transition: opacity 0.5s ease;
   }
 
   .navbar-collapse .navbar-nav.open {
