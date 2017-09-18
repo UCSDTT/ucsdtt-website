@@ -50,9 +50,31 @@ class NavBar extends Component {
     }
   }
 
+  closeMenu() {
+    if (document.querySelector('#hamburger').classList.contains('open')) {
+      document
+        .querySelector('#hamburger')
+        .classList
+        .toggle('open');
+      document
+        .querySelector('.navbar-fixed-top')
+        .style
+        .backgroundColor = 'rgba(10, 10, 10, .5)';
+      document
+        .querySelector('#nav-logo')
+        .style
+        .opacity = 1;
+      document
+        .querySelector('.navbar-collapse .navbar-nav')
+        .style
+        .opacity = 0;
+      document.body.style.overflow = 'visible';
+    }
+  }
+
   scrollToTop() {
     scroll.scrollToTop();
-    this.openMenu();
+    this.closeMenu();
   }
 
   scrollToComp(name) {
@@ -60,7 +82,7 @@ class NavBar extends Component {
       offset: -20,
       smooth: true,
     });
-    this.openMenu();
+    this.closeMenu();
   }
 
   render() {
