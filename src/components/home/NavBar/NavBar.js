@@ -8,8 +8,9 @@ class NavBar extends Component {
   componentDidMount() {
     window.onscroll = function() {
       let landingHeight = document.querySelector('.landing').clientHeight;
+      let navbarHeight = document.querySelector('.navbar').clientHeight;
 
-      if (document.body.scrollTop >= landingHeight) {
+      if (document.body.scrollTop >= landingHeight - navbarHeight) {
         document.querySelector('.navbar').style.background = 'rgba(10, 10, 10, 0.8)';
       }
       else {
@@ -45,11 +46,13 @@ class NavBar extends Component {
       .classList
       .toggle('open');
 
-    if (document.body.style.overflow === 'hidden') {
-      document.body.style.overflow = 'visible';
-    }
-    else {
-      document.body.style.overflow = 'hidden';
+    if (window.innerWidth <= 768) {
+      if (document.body.style.overflow === 'hidden') {
+        document.body.style.overflow = 'visible';
+      }
+      else {
+        document.body.style.overflow = 'hidden';
+      }
     }
   }
 
@@ -68,7 +71,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Navbar className="navbar-fixed-top" inverse collapseOnSelect>
+      <Navbar className="navbar-fixed-top" collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
             <a role="button" id="nav-logo" href="/">
@@ -127,15 +130,6 @@ class NavBar extends Component {
             >
               Rush
             </NavItem>
-            <li role="presentation">
-              <a 
-                href="/members"
-                onMouseOver={this.underline}
-                onMouseOut={this.underline}
-              >
-                Members
-              </a>
-            </li>
             <NavItem 
               onClick={() => this.scrollToComp("faq")}
               onMouseOver={this.underline} 
@@ -143,6 +137,16 @@ class NavBar extends Component {
             >
               Questions?
             </NavItem>
+            <li role="presentation">
+              <a
+                style={{color: '#b22222'}} 
+                href="/members"
+                onMouseOver={this.underline}
+                onMouseOut={this.underline}
+              >
+                Members
+              </a>
+            </li>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

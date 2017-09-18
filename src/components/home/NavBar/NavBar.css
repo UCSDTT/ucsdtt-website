@@ -29,8 +29,8 @@
 }
 
 /* Navbar items */
-.navbar-nav > li > a {
-  color: #fff !important;
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
   padding-top: 0px;
   padding-bottom: 0px;
   text-transform: uppercase;
@@ -48,15 +48,18 @@
     margin-top: 10px;
     height: 3px;
     width: 0;
-    background: 0 0;
+    background: #b22222;
     transition: width .5s ease,background-color .5s ease;
+  }
+  .navbar-collapse > .navbar-right > li:last-child > a:after {
+    background: #fff;
   }
   .navbar-collapse > .navbar-right > li > a.underline:after {
     width: 100%;
-    background-color: #b22222;
   }
+  .navbar-collapse > .navbar-right > li > a:focus, 
   .navbar-collapse > .navbar-right > li > a:hover {
-    color: #ccc;
+    color: #fff;
   }
 }
 
@@ -81,7 +84,9 @@
     color: #fff;
     border: none;
   }
-  .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+
+  .navbar-default .navbar-toggle:focus, 
+  .navbar-default .navbar-toggle:hover {
     background-color: transparent;
   }
 
@@ -173,7 +178,7 @@
     height: 100%;
     width: 100%;
     margin: 0;
-    padding-top: 80px;
+    padding-top: 20vh;
     text-align: center;
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -190,8 +195,8 @@
     padding: 25px 0;
   }
 
-  /* Changes border color to black for mobile nav hamburger open */
-  .navbar-inverse .navbar-collapse {
+  /* Changes border color to transparent for mobile nav hamburger open */
+  .navbar-default .navbar-collapse {
     border-color: transparent;
   }
 }
