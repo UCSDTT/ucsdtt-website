@@ -1,6 +1,12 @@
 .element.about {
   position: relative;
+  overflow: hidden;
   padding-bottom: 300px;
+}
+@media(max-width: 992px) {
+  .element.about {
+    padding-bottom: 100px;
+  }
 }
 
 .who-we-are-content {
@@ -68,42 +74,45 @@
 }
 
 /* gears */
-.gears-top {
+.gears {
   position: absolute;
-  top: -2%;
-  left: -7%;
   width: 30%;
   z-index: -1;
 }
+@media(max-width: 539px) {
+  .gears {
+    width: 40%;
+  }
+}
 
-.gears-top svg {
+.gears.top {
+  top: -2%;
+  left: -7%;
+}
+
+.gears.top svg {
   float: left;
 }
-.gears-top svg:nth-child(2) {
+.gears.top svg:nth-child(2) {
   margin-left: 24%;
   margin-top: -26%;
 }
-.gears-top svg:nth-child(3) {
+.gears.top svg:nth-child(3) {
   margin-top: -26%;
 }
 
-.gears-bottom {
-  position: absolute;
+.gears.bottom {
   bottom: -2%;
   right: -7%;
-  width: 30%;
-  z-index: -1;
 }
 
-.gears-bottom svg {
+.gears.bottom svg {
   float: right;
 }
-
-.gears-bottom svg:nth-child(2) {
+.gears.bottom svg:nth-child(2) {
   margin-right: 24%;
   margin-top: -26%;
 }
-
-.gears-bottom svg:nth-child(3) {
+.gears.bottom svg:nth-child(3) {
   margin-top: -26%;
 }

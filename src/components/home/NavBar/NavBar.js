@@ -5,20 +5,6 @@ import {Image, Nav, NavItem, Navbar} from 'react-bootstrap';
 import {animateScroll as scroll, scroller} from 'react-scroll';
 
 class NavBar extends Component {
-  componentDidMount() {
-    window.onscroll = function() {
-      let landingHeight = document.querySelector('.landing').clientHeight;
-      let navbarHeight = document.querySelector('.navbar').clientHeight;
-
-      if (document.body.scrollTop >= landingHeight - navbarHeight) {
-        document.querySelector('.navbar').style.background = 'rgba(10, 10, 10, 0.8)';
-      }
-      else {
-        document.querySelector('.navbar').style.background = 'transparent';
-      }
-    }
-  }
-
   underline = (event) => {
     if (window.innerWidth > 768) {
       event
