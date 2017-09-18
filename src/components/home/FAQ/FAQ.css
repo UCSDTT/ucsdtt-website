@@ -24,7 +24,7 @@
 }
 @media(max-width: 992px) {
   .faq-card {
-    margin: 30px 10px;
+    margin: 30px auto;
     max-width: 540px;
   }
   .faq-card:last-child {

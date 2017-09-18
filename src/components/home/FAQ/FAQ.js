@@ -13,7 +13,7 @@ class FAQ extends Component {
         <PageHeader className="title"> FAQ </PageHeader>
         <Grid>
           <Row>
-            <Col md={6}>
+            <Col sm={6}>
               {faqCol1.map((question, i) => (
                 <Panel className="faq-card" key={i}>
                   <h4 className="faq-title"> {question.title} </h4>
@@ -21,7 +21,7 @@ class FAQ extends Component {
                 </Panel>
               ))}
             </Col>
-            <Col md={6}>
+            <Col sm={6}>
               {faqCol2.map((question, i) => (
                 <Panel className="faq-card" key={i}>
                   <h4 className="faq-title"> {question.title} </h4>

@@ -1,3 +1,8 @@
+.element.about {
+  position: relative;
+  padding-bottom: 300px;
+}
+
 .who-we-are-content {
   display: flex;
   flex-wrap: wrap;
@@ -60,4 +65,45 @@
   font-size: 18px !important;
   color: #999 !important;
   margin-top: -30px;
+}
+
+/* gears */
+.gears-top {
+  position: absolute;
+  top: -2%;
+  left: -7%;
+  width: 30%;
+  z-index: -1;
+}
+
+.gears-top svg {
+  float: left;
+}
+.gears-top svg:nth-child(2) {
+  margin-left: 24%;
+  margin-top: -26%;
+}
+.gears-top svg:nth-child(3) {
+  margin-top: -26%;
+}
+
+.gears-bottom {
+  position: absolute;
+  bottom: -2%;
+  right: -7%;
+  width: 30%;
+  z-index: -1;
+}
+
+.gears-bottom svg {
+  float: right;
+}
+
+.gears-bottom svg:nth-child(2) {
+  margin-right: 24%;
+  margin-top: -26%;
+}
+
+.gears-bottom svg:nth-child(3) {
+  margin-top: -26%;
 }

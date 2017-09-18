@@ -20,8 +20,12 @@
 }
 
 .navbar-header {
-  margin-left: 20px !important;
   padding-top: 5px;
+}
+@media(min-width: 1200px) {
+  .navbar-header {
+    margin-left: 20px !important;
+  } 
 }
 
 .navbar-title {

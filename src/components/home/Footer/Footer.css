@@ -14,25 +14,41 @@
   padding-bottom: 10px;
 }
 
-.media-icons {
+/*.media-icons {
   border-top: 1px solid #aaa;
   padding: 10px;
+}*/
+
+.media-icons {
+  padding-top: 10px;
 }
 
 .media-icons i {
+  color: #fff;
   font-size: 3em;
+  margin: 0 20px;
+  border: solid #fff;
+  border-radius: 50%;
+  transition: color 0.3s, background-color 0.3s;
 }
 .media-icons i:hover {
-  color: #fff;
+  background-color: #fff;
+  color: #610301;
+  border-color: #fff;
 }
 
-.footer-p {
+.footer p {
   font-size: 15px;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.footer-ul {
+.footer ul {
   font-size: 15px;
+}
+
+.footer-contact {
+  font-style: italic;
+  cursor: pointer;
 }

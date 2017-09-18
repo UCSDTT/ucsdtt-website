@@ -116,7 +116,7 @@ a {
   color: #aaa;
 }
 
-a:hover, a:active {
+a:hover, a:focus {
   text-decoration: none;
   color: white;
 }
