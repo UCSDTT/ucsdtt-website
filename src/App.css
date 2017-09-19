@@ -65,8 +65,10 @@ body {
 }
 
 .logo {
-  height: 60px;
-  width: 60px;
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 
 #title {

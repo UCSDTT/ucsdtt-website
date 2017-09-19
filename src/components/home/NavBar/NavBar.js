@@ -43,12 +43,15 @@ class NavBar extends Component {
   }
 
   scrollToTop() {
-    scroll.scrollToTop();
+    scroll.scrollToTop({
+      duration: 1000,
+    });
     this.openMenu();
   }
 
   scrollToComp(name) {
     scroller.scrollTo(name, {
+      duration: 1000,
       offset: 0,
       smooth: true,
     });
@@ -61,7 +64,7 @@ class NavBar extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <a role="button" id="nav-logo" href="/">
-              <Image className="logo" src={require('./images/tt_logo.png')}/>
+              <Image className="logo" src={require('./images/logo.png')}/>
             </a>
           </Navbar.Brand>
           <Navbar.Toggle
