@@ -120,7 +120,8 @@ class Landing extends Component {
               <div className="landing-gradient">
                 <Image 
                   className="landing-image" 
-                  src={slide.xsImage} 
+                  src={slide.xsImage}
+                  // eslint-disable-next-line
                   srcSet={slide.smImage + ' 992w', slide.image + ' 1200w'} 
                   responsive
                 />
