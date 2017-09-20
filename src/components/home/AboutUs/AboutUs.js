@@ -203,6 +203,7 @@ class AboutUs extends Component {
 
         <Grid>
           <Row>
+            <h1 className="about-section-title">The Origins of Theta Tau, UCSD</h1>
             <Col className="about-description">
               <div id="container">
                 <div id="content">
@@ -253,6 +254,7 @@ class AboutUs extends Component {
             </Col>
           </Row>
           <Row>
+            <h1 className="about-section-title">The Three Pillars</h1>
             {data.map((pillar, i) => (
               <Col className="pillar-container" md={4} key={i}>
                 <div 

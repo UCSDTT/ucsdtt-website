@@ -31,15 +31,15 @@
 
 /* Navbar items */
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: #fff !important;
   padding-top: 0px;
   padding-bottom: 0px;
   text-transform: uppercase;
 }
-.navbar-default .navbar-nav > li > a:focus, 
+/*.navbar-default .navbar-nav > li > a:focus, 
 .navbar-default .navbar-nav > li > a:hover {
   color: #fff;
-}
+}*/
 
 .navbar-right > li > a {
   font-size: 25px;
@@ -60,9 +60,9 @@
     background: #b22222;
     transition: width .5s ease,background-color .5s ease;
   }
-  .navbar-collapse > .navbar-right > li:last-child > a:after {
+  /*.navbar-collapse > .navbar-right > li:last-child > a:after {
     background: #fff;
-  }
+  }*/
   .navbar-collapse > .navbar-right > li > a.underline:after {
     width: 100%;
   }
