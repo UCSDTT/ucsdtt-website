@@ -1,7 +1,7 @@
 import './Companies.css';
 
 import React, {Component} from 'react';
-import {Row, Image, PageHeader} from 'react-bootstrap';
+import {Row, Image} from 'react-bootstrap';
 import {Element} from 'react-scroll';
 import {bigCompanies, smallCompanies} from './data.js';
 
@@ -9,7 +9,7 @@ class Companies extends Component {
   render() {
     return (
       <Element name="companies" className="element companies">
-        <PageHeader className="title companies">Our Alumni Network </PageHeader>
+        <h1 className="title companies">Our Alumni Network </h1>
 
         <div className="companies-container">
           <Row className="companies-row">

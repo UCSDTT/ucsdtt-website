@@ -7,7 +7,7 @@ import {Footer} from '../components/home/Footer/Footer.js';
 import {Landing} from '../components/home/Landing/Landing.js';
 import {Messenger} from '../components/home/Messenger/Messenger.js';
 import {NavBar} from '../components/home/NavBar/NavBar.js';
-import {WhoWeAre} from '../components/home/WhoWeAre/WhoWeAre.js';
+import {AboutUs} from '../components/home/AboutUs/AboutUs.js';
 import {WhyRush} from '../components/home/WhyRush/WhyRush.js';
 
 export default class Home extends Component {
@@ -16,7 +16,7 @@ export default class Home extends Component {
       <div className="homepage">
         <NavBar/>
         <Landing/>
-        <WhoWeAre/>
+        <AboutUs/>
         <WhyRush/>
         <FAQ/>
         <Messenger/>

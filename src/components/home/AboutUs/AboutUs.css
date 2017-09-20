@@ -1,0 +1,246 @@
+.element.about {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 400px;
+}
+@media(max-width: 992px) {
+  .element.about {
+    padding-bottom: 100px;
+  }
+}
+
+.about-description {
+  font-size: 30px;
+  text-align: left;
+}
+@media(min-width: 992px) {
+  .about-description {
+    height: 750px;
+  }
+}
+@media(max-width: 992px) {
+  .about-description {
+    font-size: 19px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media(min-width: 992px) {
+  .mobile-description {
+    display: none;
+  }
+}
+
+/* Pillar Info */
+.pillar-container {
+  margin-bottom: 50px;
+}
+
+.pillar-image-container {
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.pillar-image {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.pillar-image.zoom {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.pillar-info {
+  position: absolute;
+  color: #fff;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+.pillar-info.show {
+  opacity: 1;
+}
+
+.pillar-info h4 {
+  line-height: 1.5;
+}
+
+.pillar-name {
+  font-weight: 700;
+  font-size: 40px;
+  color: #610301;
+}
+
+.pillar-content {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Scroll */
+@media(max-width: 992px) {
+  #container {
+    display: none;
+  }
+}
+
+@media(min-width: 992px) {
+  .about-description div {
+    margin: 0;
+    padding: 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 0;
+  }
+
+  #container {
+    font-family: 'Merienda One';
+    width: 700px;
+    height: 525px;
+    top: 26%;
+    left: 50%;
+    -webkit-perspective: 5000px;
+    perspective: 5000px;
+    transform: translate(-50%, -50%) rotateY(20deg);
+  }
+
+  #container p {
+    padding: 30px 30px 0;
+  }
+
+  #container p:nth-last-child(2) {
+    padding-bottom: 30px;
+  }
+
+  #container hr {
+    margin: 0 20px 0 20px;
+  }
+
+  .panel-node {
+    width: 100%;
+  }
+
+  .panel-cutout {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #content {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  #content, .panel-content {
+    background: url('./images/scroll.jpg');
+  }
+
+  .panel-content {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .backface > * {
+    opacity: 0.25;
+  }
+
+  #lorem {
+    font-size: 7em;
+    float: left;
+    color: #b22222;
+    line-height: 1;
+    margin-right: 20px;
+  }
+
+  .scroll-title {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .scroll-title:first-child {
+    margin-top: 30px;
+  }
+
+  .scroll-title.big {
+    font-size: 45px;
+  }
+  .scroll-title.small {
+    font-size: 25px;
+  }
+
+  .founder {
+    font-style: italic;
+    color: #b22222;
+  }
+
+  .scroll-crest {
+    height: 300px;
+    margin-bottom: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Gears */
+.gears {
+  position: absolute;
+  width: 30%;
+  z-index: -1;
+}
+@media(max-width: 539px) {
+  .gears {
+    width: 40%;
+  }
+}
+
+.gears.top {
+  top: -2%;
+  left: -7%;
+}
+
+.gears.top svg {
+  float: left;
+}
+.gears.top svg:nth-child(2) {
+  margin-left: 24%;
+  margin-top: -26%;
+}
+.gears.top svg:nth-child(3) {
+  margin-top: -26%;
+}
+
+.gears.bottom {
+  bottom: -2%;
+  right: -7%;
+}
+
+.gears.bottom svg {
+  float: right;
+}
+.gears.bottom svg:nth-child(2) {
+  margin-right: 24%;
+  margin-top: -26%;
+}
+.gears.bottom svg:nth-child(3) {
+  margin-top: -26%;
+}

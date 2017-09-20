@@ -49,7 +49,11 @@ body {
 }
 
 .title {
+  color: #610301;
+  font-weight: 700;
+  font-size: 45px;
   margin: 0 10%;
+  margin-bottom: 30px;
 }
 
 .header {
@@ -160,4 +164,58 @@ body,
 .carousel-caption {
     top: 40%;
     bottom: auto;
+}
+
+/* Animations */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.fadeOutDown {
+  animation-name: fadeOutDown;
+}
+
+@keyframes slideInUp {
+  from {
+    /*transform: translate3d(0, 100%, 0);*/
+    transform: translate(-50%, -20%);
+    visibility: visible;
+  }
+
+  to {
+    /*transform: translate3d(0, 0, 0);*/
+    transform: translate(-50%, -50%);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
 }

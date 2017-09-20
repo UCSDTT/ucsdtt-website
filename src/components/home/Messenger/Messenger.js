@@ -5,7 +5,6 @@ import {
   Col,
   Grid,
   Image,
-  PageHeader,
   Panel,
   Row
 } from 'react-bootstrap';
@@ -16,9 +15,9 @@ class Messenger extends Component {
   render() {
     return (
       <Element name="messenger" className="element messenger">
-        <PageHeader className="title">
+        <h1 className="title">
           Ask a Brother!
-        </PageHeader>
+        </h1>
         <Grid>
           <Row className="messenger-row">
             {data.map((active, i) => (

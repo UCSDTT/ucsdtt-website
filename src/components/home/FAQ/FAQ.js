@@ -1,7 +1,7 @@
 import './FAQ.css';
 
 import React, { Component } from 'react';
-import { Col, Grid, PageHeader, Panel, Row } from 'react-bootstrap';
+import { Col, Grid, Panel, Row } from 'react-bootstrap';
 import {faqCol1, faqCol2} from './data.js';
 
 import { Element } from 'react-scroll';
@@ -10,7 +10,7 @@ class FAQ extends Component {
   render() {
     return (
       <Element name="faq" className="element faq">
-        <PageHeader className="title"> FAQ </PageHeader>
+        <h1 className="title"> FAQ </h1>
         <Grid>
           <Row>
             <Col sm={6}>

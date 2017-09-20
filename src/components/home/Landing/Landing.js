@@ -128,6 +128,7 @@ class Landing extends Component {
             </Carousel.Item>
           ))}
         </Carousel>
+        
         <div className="brothers-are">
           <h1 className="brothers-are-text">
             Brothers are
@@ -140,35 +141,33 @@ class Landing extends Component {
             ))}
           </h1>
         </div>
-        <div className="members-button-container">
-          <Button 
-            className="members-button" 
-            onClick={() => this.scrollToComp("who-we-are")}
-          > 
-            Learn More
-            <Glyphicon glyph="chevron-right" />
-          </Button>
-        </div>
-        <div className="quote-container"> 
-          {quoteData.map((quote, i) => (
-            <div 
-              className="quote" 
-              key={i}>
-              <div className="quote-text-group">
-                <span className="quote-quotes">❝</span>
-                <p> <i>{quote.text}</i> </p>
-              </div>
-              <div className="quote-active-group">
-                <Image className="active-image" src={require(`${quote.activeImage}`)} circle />
-                <div className="quote-active-labels">
-                  <h1> {quote.active} </h1>
-                  <h2> {quote.major} </h2>
-                  <h2> {quote.class} </h2>
-                </div>
+
+        <Button 
+          className="members-button" 
+          onClick={() => this.scrollToComp("about-us")}
+        > 
+          Learn More
+          <Glyphicon glyph="chevron-right" />
+        </Button>
+
+        {quoteData.map((quote, i) => (
+          <div 
+            className="quote" 
+            key={i}>
+            <div className="quote-text-group">
+              <span className="quote-quotes">❝</span>
+              <p> <i>{quote.text}</i> </p>
+            </div>
+            <div className="quote-active-group">
+              <Image className="active-image" src={require(`${quote.activeImage}`)} circle />
+              <div className="quote-active-labels">
+                <h1> {quote.active} </h1>
+                <h2> {quote.major} </h2>
+                <h2> {quote.class} </h2>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     );
   }

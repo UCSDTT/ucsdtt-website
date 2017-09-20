@@ -88,7 +88,7 @@ class NavBar extends Component {
                 noCaret 
                 id="about"
                 onClick={() => {
-                  this.scrollToComp("who-we-are");
+                  this.scrollToComp("about-us");
                   document.querySelector('.dropdown .dropdown-menu').style.display = 'none';
                 }}
               >
@@ -106,7 +106,7 @@ class NavBar extends Component {
               Home
             </NavItem>
             <NavItem 
-              onClick={() => this.scrollToComp("who-we-are")}
+              onClick={() => this.scrollToComp("about-us")}
               onMouseOver={this.underline} 
               onMouseOut={this.underline}
             >

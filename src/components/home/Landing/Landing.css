@@ -104,25 +104,10 @@
 }
 
 /* Members Button */
-.members-button-container {
+.members-button {
   position: absolute;
   top: 230px;
   left: 20%;
-  z-index: 1;
-}
-@media(max-width: 1400px) {
-  .members-button-container {
-    top: 210px;
-  }
-}
-@media(max-width: 768px) {
-  .members-button-container {
-    top: 280px;
-    left: 30%;
-  }
-}
-
-.members-button {
   background-color: #777;
   color: #fff;
   border: none;
@@ -133,10 +118,22 @@
   opacity: 0.8;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
   text-transform: uppercase;
+  z-index: 1;
 }
 .members-button:hover {
   background-color: #666;
   color: #fff;
+}
+@media(max-width: 1400px) {
+  .members-button {
+    top: 210px;
+  }
+}
+@media(max-width: 768px) {
+  .members-button {
+    top: 280px;
+    left: 30%;
+  }
 }
 
 .members-button .glyphicon {
@@ -145,26 +142,20 @@
 }
 
 /* Quote */
-.quote-container {
-  position: absolute;
-  height: 250px;
-  width: 450px;
-  right: 3%;
-  bottom: 5%;
-  color: #fff;
-  z-index: 1;
-}
-@media(max-width: 992px) {
-  .quote-container {
-    display: none;
-  }
-}
-
 .quote {
   position: absolute;
   height: 250px;
   width: 450px;
+  color: #fff;
+  right: 3%;
+  bottom: 5%;
   opacity: 0;
+  z-index: 1;
+}
+@media(max-width: 992px) {
+  .quote {
+    display: none;
+  }
 }
 
 .quote p {
