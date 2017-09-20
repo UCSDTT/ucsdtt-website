@@ -1,8 +1,19 @@
+.rush-header {
+  margin-bottom: 50px;
+}
+
+.step-col {
+  height: 270px;
+  margin-bottom: 30px;
+}
+
 .rush-steps {
    display: block;
    padding: 10px;
    color: black;
    display: block;
+   height: stretch;
+   border:2px solid #b22222;
 }
 
 .rush-step-icon {
@@ -29,7 +40,7 @@
 }
 
 .step-break {
-  width: 40%;
+  width: 50%;
   color: black;
   display: block;
   margin-top: 0.5em;
@@ -40,76 +51,21 @@
   border-width: 1px;
 }
 
-.rush-header {
-  font-size: 22px;
-  text-align: left;
-  margin-bottom: 50px;
-  margin-left: 15px;
+.rush-button {
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid #b22222;
 }
 
-.rush-subheader {
-  font-size: 1.4em;
-  padding-top: 10px;
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  font-style: normal;
-  white-space: normal;
-  margin-bottom: 20px;
-}
-
-.rush-subcontent {
-  font-size: 10px;
-  text-align: left;
-  margin-bottom: 40px;
-  height: 25vh;
-}
-
-.rush-title {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 3em;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-
-.rush-details {
-  font-size: 1.8em;
-  padding-top: 10px;
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.01em;
-  font-style: normal;
-  white-space: normal;
-  margin-bottom: 20px;
-}
-
-.rush-summary{
-  font-size: 1.5em;
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 200;
-  letter-spacing: 0.01em;
-  line-height: 25px;
-  font-style: normal;
-  white-space: normal;
-  width: auto;
-}
-
-.rush-image {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.rush-container {
-  margin: 0;
-  padding: 0;
-  height: auto;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 20vh;
+.rush-button:hover {
+  background-color: #b22222;
+  color: white;
 }
