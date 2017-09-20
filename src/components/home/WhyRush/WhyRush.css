@@ -2,22 +2,8 @@
   margin-bottom: 50px;
 }
 
-.step-col {
-  height: 270px;
-  margin-bottom: 30px;
-}
-
-.rush-steps {
-   display: block;
-   padding: 10px;
-   color: black;
-   display: block;
-   height: stretch;
-   border:2px solid #b22222;
-}
-
 .rush-step-icon {
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 5px;
 }
 
@@ -52,7 +38,7 @@
 }
 
 .rush-button {
-  background-color: white; /* Green */
+  background-color: white;
   border: none;
   color: black;
   padding: 15px 32px;
@@ -68,4 +54,29 @@
 .rush-button:hover {
   background-color: #b22222;
   color: white;
+}
+
+@media (min-width: 992px) {
+  .table-row {
+    display: table;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 20px;
+  }
+
+  .table-row > [class*="col-"] {
+    float: none;
+    display: table-cell;
+    border:2px solid #b22222;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .rush-steps {
+    padding: 10px;
+    color: black;
+    border:2px solid #b22222;
+    margin-bottom: 20px;
+ }
 }

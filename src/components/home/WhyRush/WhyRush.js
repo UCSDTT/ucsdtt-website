@@ -4,8 +4,6 @@ import React, {Component} from 'react';
 import {Element} from 'react-scroll';
 import {Grid, Row, Col} from 'react-bootstrap';
 
-//TODO: make rush steps all same height dynamically
-
 class WhyRush extends Component {
   render() {
     return (
@@ -15,8 +13,8 @@ class WhyRush extends Component {
             <Row>
               <h1 className="rush-header">Join Us!</h1>
             </Row>
-            <Row>
-              <Col className="step-col" xs={12} md={3}>
+            <Row className="table-row">
+              <Col xs={12} sm={6} md={3}>
                 <div className="rush-steps">
                   <i className="icon-chat rush-step-icon"></i>
                   <span className="step-title"> Rush </span>
@@ -24,7 +22,7 @@ class WhyRush extends Component {
                   <span className="step-details"> Join us for a whole week of rush events! Learn about the fraternity,  interact with other rushees, and mingle with the members of Theta Tau.</span>
                 </div>
               </Col>
-              <Col className="step-col" xs={12} md={3}>
+              <Col xs={12} sm={6} md={3}>
                 <div className="rush-steps">
                   <i className="icon-users rush-step-icon"></i>
                   <span className="step-title"> Interview </span>
@@ -32,7 +30,7 @@ class WhyRush extends Component {
                   <span className="step-details"> The Brothers of Theta Tau would like to find out more about you and hear about the reasons for your interest in Theta Tau through a formal interview. </span>
                 </div>
               </Col>
-              <Col className="step-col" xs={12} md={3}>
+              <Col xs={12} sm={6} md={3}>
                 <div className="rush-steps">
                  <i className="icon-mail-alt rush-step-icon"></i>
                   <span className="step-title"> Bid </span>
@@ -40,7 +38,7 @@ class WhyRush extends Component {
                   <span className="step-details"> If the Brothers of Theta Tau decide on you, an invitation will be sent to you. It is your choice to continue to the pledging process or decline the bid. </span>
                 </div>
               </Col>
-              <Col className="step-col" xs={12} md={3}>
+              <Col xs={12} sm={6} md={3}>
                 <div className="rush-steps">
                   <i className="icon-ok-circled rush-step-icon"></i>
                   <span className="step-title"> Pledge </span>
