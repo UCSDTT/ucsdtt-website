@@ -20,12 +20,14 @@ class AboutUs extends Component {
         document.querySelector('.navbar').style.background = 'transparent';
       }
       
-      Array.from(gears).forEach( gear => {
-        gear.style.transform = 'rotate(' + wScroll / 5 + 'deg)';
-      })
-      Array.from(gearsOpp).forEach( gear => {
-        gear.style.transform = 'rotate(' + wScroll / 5 + 'deg)';
-      })
+      if (window.innerWidth >= 768) {
+        Array.from(gears).forEach( gear => {
+          gear.style.transform = 'rotate(' + wScroll / 5 + 'deg)';
+        })
+        Array.from(gearsOpp).forEach( gear => {
+          gear.style.transform = 'rotate(' + wScroll / 5 + 'deg)';
+        })
+      }
     }
 
     var div = document.createElement('div');
