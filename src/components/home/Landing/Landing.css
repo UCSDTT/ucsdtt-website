@@ -39,6 +39,12 @@
   display: flex;
   opacity: 0;
 }
+@media(max-width: 768px) {
+  .word {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 .letter {
   display: inline-block;
@@ -80,6 +86,8 @@
   top: 100px;
   left: 10%;
   color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #000;
   z-index: 10;
 }
 @media(max-width: 1400px) {
@@ -90,15 +98,25 @@
 @media(max-width: 768px) {
   .brothers-are {
     display: block;
+    font-size: 37px;
+    left: 0;
+    right: 0;
   }
 }
 
 .brothers-are-text {
+  font-family: 'PT Sans Narrow';
   font-size: inherit;
+}
+
+.brothers-are-word {
+  font-family: 'Raleway';
+  font-size: inherit;
+  line-height: 1;
   margin-left: 0.25em;
 }
 @media(max-width: 768px) {
-  .brothers-are-text {
+  .brothers-are-word {
     margin-left: 0;
   }
 }
@@ -131,8 +149,9 @@
 }
 @media(max-width: 768px) {
   .members-button {
-    top: 280px;
-    left: 30%;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

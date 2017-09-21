@@ -134,7 +134,7 @@ class Landing extends Component {
           <h1 className="brothers-are-text">
             Brothers are
           </h1>
-          <h1 className="brothers-are-text">
+          <h1 className="brothers-are-word">
             {slideData.map((slide, i) => (
               <span className={`word ${slide.color}`} key={i}>
                 {slide.name}

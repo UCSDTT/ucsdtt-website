@@ -7,13 +7,12 @@ import data from './data.js';
 class AboutUs extends Component {
   componentDidMount() {
     window.onscroll = function() {
-      let landingHeight = document.querySelector('.landing').clientHeight;
       let navbarHeight = document.querySelector('.navbar').clientHeight;
       let gears = document.getElementsByClassName('gear');
       let gearsOpp = document.getElementsByClassName('gear-opp');
       let wScroll = document.body.scrollTop;
 
-      if (document.body.scrollTop >= landingHeight - navbarHeight) {
+      if (document.body.scrollTop >= navbarHeight) {
         document.querySelector('.navbar').style.background = 'rgba(10, 10, 10, 0.8)';
       }
       else {
