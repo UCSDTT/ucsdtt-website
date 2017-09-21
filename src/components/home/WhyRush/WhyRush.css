@@ -1,12 +1,9 @@
-.rush-steps {
-   display: block;
-   padding: 10px;
-   color: black;
-   display: block;
+.rush-header {
+  margin-bottom: 50px;
 }
 
 .rush-step-icon {
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 5px;
 }
 
@@ -29,7 +26,7 @@
 }
 
 .step-break {
-  width: 40%;
+  width: 50%;
   color: black;
   display: block;
   margin-top: 0.5em;
@@ -40,76 +37,46 @@
   border-width: 1px;
 }
 
-.rush-header {
-  font-size: 22px;
-  text-align: left;
-  margin-bottom: 50px;
-  margin-left: 15px;
+.rush-button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid #b22222;
 }
 
-.rush-subheader {
-  font-size: 1.4em;
-  padding-top: 10px;
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  font-style: normal;
-  white-space: normal;
-  margin-bottom: 20px;
+.rush-button:hover {
+  background-color: #b22222;
+  color: white;
 }
 
-.rush-subcontent {
-  font-size: 10px;
-  text-align: left;
-  margin-bottom: 40px;
-  height: 25vh;
+@media (min-width: 992px) {
+  .table-row {
+    display: table;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 20px;
+  }
+
+  .table-row > [class*="col-"] {
+    float: none;
+    display: table-cell;
+    border:2px solid #b22222;
+    padding: 10px;
+  }
 }
 
-.rush-title {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 3em;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-
-.rush-details {
-  font-size: 1.8em;
-  padding-top: 10px;
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.01em;
-  font-style: normal;
-  white-space: normal;
-  margin-bottom: 20px;
-}
-
-.rush-summary{
-  font-size: 1.5em;
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 200;
-  letter-spacing: 0.01em;
-  line-height: 25px;
-  font-style: normal;
-  white-space: normal;
-  width: auto;
-}
-
-.rush-image {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.rush-container {
-  margin: 0;
-  padding: 0;
-  height: auto;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 20vh;
+@media (max-width: 991px) {
+  .rush-steps {
+    padding: 10px;
+    color: black;
+    border:2px solid #b22222;
+    margin-bottom: 20px;
+ }
 }
