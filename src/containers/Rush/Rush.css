@@ -1,0 +1,102 @@
+.rush-header {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 15px;
+}
+
+.rush-subheader {
+  color: #2f4f4f;
+  font-size: 1.4em;
+  padding: 25px;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  font-style: normal;
+  white-space: normal;
+}
+
+.rush-quote {
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  color: #2f4f4f;
+  font-size: 2em;
+  display: block;
+  width: auto;
+  padding: 0px;
+  top: 10vh;
+  text-align: right;
+  font-weight: bold;
+}
+
+.rush-icons {
+  text-align: center;
+  font-size: 6em;
+}
+
+.rush-subcontent {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rush-title {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #610301;
+  white-space: nowrap;
+}
+
+.rush-details {
+  font-size: 1.8em;
+  padding-top: 10px;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  font-style: normal;
+  white-space: normal;
+  margin-bottom: 20px;
+}
+
+.rush-summary {
+  font-size: 1.5em;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.01em;
+  line-height: 25px;
+  font-style: normal;
+  white-space: normal;
+  width: auto;
+}
+
+.rush-image {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: #610301;
+}
+
+.rush-container {
+  padding: 40px;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.rush-divider {
+  margin-bottom: 15vh;
+}
+
+.carousel {
+  margin: 0px;
+  padding: 0px;
+}
