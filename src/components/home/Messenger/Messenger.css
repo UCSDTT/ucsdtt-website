@@ -33,6 +33,12 @@
   width: 150px;
 }
 
+/* Messenger Nam */
+.messenger-name {
+  font-weight: 700;
+  color: #2f4f4f;
+}
+
 /* Messenger Body */
 .messenger-body {
   font-size: 18px;

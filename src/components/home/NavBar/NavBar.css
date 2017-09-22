@@ -41,12 +41,9 @@
   color: #fff;
 }*/
 
-.navbar-right > li > a {
-  font-size: 25px;
-}
-
 @media(min-width: 768px) {
   .navbar-collapse > .navbar-right {
+    font-size: 25px;
     margin: auto;
   }
 

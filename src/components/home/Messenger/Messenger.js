@@ -28,7 +28,7 @@ class Messenger extends Component {
                     src={require(`${active.image}`)}
                     role="presentation"
                     circle/>
-                  <h3 style={{color: '#2f4f4f'}}>
+                  <h3 className="messenger-name">
                     {active.name}
                   </h3>
                   <p className="messenger-body">

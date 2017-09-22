@@ -105,14 +105,14 @@
 }
 
 .brothers-are-text {
-  font-family: 'PT Sans Narrow';
+  font-family: 'Open Sans Condensed';
   font-size: inherit;
 }
 
 .brothers-are-word {
-  font-family: 'Raleway';
+  font-family: 'Alegreya Sans SC';
   font-size: inherit;
-  line-height: 1;
+  line-height: 1.2;
   margin-left: 0.25em;
 }
 @media(max-width: 768px) {

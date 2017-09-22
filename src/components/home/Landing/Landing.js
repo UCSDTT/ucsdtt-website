@@ -19,7 +19,7 @@ class Landing extends Component {
 
   scrollToComp(name) {
     scroller.scrollTo(name, {
-      offset: -20,
+      offset: 0,
       smooth: true,
     });
   }

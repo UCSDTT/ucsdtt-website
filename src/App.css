@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merienda+One');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700i');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /* Not working after router change */
@@ -49,9 +52,9 @@ body {
 }
 
 .title {
-  color: #610301;
   font-weight: 700;
   font-size: 45px;
+  color: #610301;
   margin: 0 10%;
   margin-bottom: 30px;
   text-transform: uppercase;

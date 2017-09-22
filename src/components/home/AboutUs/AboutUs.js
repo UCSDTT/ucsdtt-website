@@ -24,7 +24,7 @@ class AboutUs extends Component {
           gear.style.transform = 'rotate(' + wScroll / 5 + 'deg)';
         })
         Array.from(gearsOpp).forEach( gear => {
-          gear.style.transform = 'rotate(' + wScroll / 5 + 'deg)';
+          gear.style.transform = 'rotate(-' + wScroll / 5 + 'deg)';
         })
       }
     }
@@ -217,7 +217,8 @@ class AboutUs extends Component {
                   <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     With the help of a Theta Tau alumni, 
-                    <span className="founder"> Jennifer Young</span>, thirteen founding fathers took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: 
+                    <span className="founder"> Jennifer Young</span>, thirteen founding fathers <Image className="scroll-crest" src={require('./images/crest.png')}></Image>
+                    took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: 
                     <span className="founder"> Ashay Verma</span>, 
                     <span className="founder"> Errynne Bell</span>, 
                     <span className="founder"> Takahiro Kuwayama</span>, 
@@ -236,7 +237,7 @@ class AboutUs extends Component {
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.                   
                   </p>
-                  <Image className="scroll-crest" src={require('./images/crest.png')}></Image>
+                  <Image className="founders" src={require('./images/founders.jpg')}></Image>
                 </div>
               </div>
 
@@ -256,6 +257,14 @@ class AboutUs extends Component {
           </Row>
           <Row>
             <h1 className="about-section-title">The Three Pillars</h1>
+            <div className="about-quote-container"> 
+              <span className="about-quotes">&#10077;</span>
+              <h3 className="about-quote-body">
+                We, as brothers of Theta Tau, strive to embody the three pillars of our fraternity.
+              </h3>
+              <span className="about-quotes">&#10078;</span>
+            </div>
+
             {data.map((pillar, i) => (
               <Col className="pillar-container" md={4} key={i}>
                 <div 
