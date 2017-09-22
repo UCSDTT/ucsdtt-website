@@ -8,12 +8,20 @@ const bigCompanies = [
     image: require('./images/microsoft.png'),
   },
   {
+    href: 'https://www.apple.com',
+    image: require('./images/apple.png')
+  },
+  {
+    href: 'https://www.amazon.com',
+    image: require('./images/amazon.png')
+  },
+  {
     href: 'www.northropgrumman.com',
     image: require('./images/northrop.png'),
   },
   {
-    href: 'https://www.amazon.com',
-    image: require('./images/amazon.png'),
+    href: 'https://www.qualcomm.com',
+    image: require('./images/qualcomm.png'),
   },
 ];
 
@@ -77,6 +85,26 @@ const smallCompanies = [
   {
     href: 'https://www.ultimatesoftware.com',
     image: require('./images/ultimate_software.png'),
+  },
+  {
+    href: 'https://www.visa.com',
+    image: require('./images/visa.png')
+  },
+  {
+    href: 'https://www.informatica.com',
+    image: require('./images/informatica.png')
+  },
+  {
+    href: 'https://www.arc-engines.com',
+    image: require('./images/arc.png')
+  },
+  {
+    href: 'https://www.laird.com',
+    image: require('./images/laird.jpg')
+  },
+  {
+    href: 'https://www.thermofisher.com',
+    image: require('./images/thermo_fisher.png')
   },
 ];
 

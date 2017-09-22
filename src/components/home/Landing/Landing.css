@@ -84,7 +84,7 @@
   display: flex;
   font-size: 60px;
   top: 100px;
-  left: 10%;
+  left: 25%;
   color: #fff;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px #000;
@@ -125,7 +125,7 @@
 .members-button {
   position: absolute;
   top: 230px;
-  left: 20%;
+  left: 50%;
   background-color: #777;
   color: #fff;
   border: none;
@@ -135,7 +135,9 @@
   padding: 10px 10px;
   opacity: 0.8;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  transform: translateX(-50%);
   text-transform: uppercase;
+  cursor: pointer;
   z-index: 1;
 }
 .members-button:hover {
