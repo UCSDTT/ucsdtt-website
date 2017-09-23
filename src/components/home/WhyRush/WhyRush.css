@@ -29,14 +29,12 @@
 }
 
 .rush-step-icon {
-  color: #610301;
   font-size: 30px;
   margin-bottom: 5px;
 }
 
 .step-title {
   display: block;
-  color: #2f4f4f;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -45,10 +43,7 @@
   text-transform: uppercase;
 }
 
-.step-details {
-  color: #587272;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+.step-description {
   font-size: 15px;
   letter-spacing: 0.01em;
   display: block;
@@ -73,7 +68,7 @@
   font-size: 20px;
   margin-top: 50px;
   padding: 15px 32px;
-  text-decoration: none;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -97,6 +92,15 @@
   .table-row > [class*="col-"]:first-child {
     border-left: none;
   }
+
+  .table-row > [class*="col-"].odd {
+    background-color: #eee;
+    color: #2f4f4f;;
+  }
+  .table-row > [class*="col-"].even {
+    background-color: #610301;
+    color: #fff;
+  }
 }
 
 @media (max-width: 991px) {
@@ -105,45 +109,69 @@
     color: black;
     border: 4px solid #610301;
     border-bottom: none;
- }
- .rush-steps:last-child {
+  }
+  .rush-steps:last-child {
     border-bottom: 4px solid #610301;
- }
+  }
+
+  .rush-steps.odd {
+    background-color: #eee;
+    color: #2f4f4f;;
+  }
+  .rush-steps.even {
+    background-color: #610301;
+    color: #fff;
+  }
 }
 
+.step-triangle:after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
 @media(min-width: 992px) {
   .step-triangle:after {
-    content: '';
-    display: block;
-    position: absolute;
     top: 50%;
-    right: -12.8%;
-    width: 40px;
-    height: 40px; 
-    background: #d8deba;
-    border-right: 4px solid #610301;
-    border-bottom: 4px solid #610301;
+    right: -12.2%;
+    width: 32px;
+    height: 32px;
+    border-right: 1px solid #610301;
+    border-bottom: 1px solid #610301;
     -moz-transform: rotate(-45deg) translateY(-50%);
     -webkit-transform: rotate(-45deg) translateY(-50%);
     transform: rotate(-45deg) translateY(-50%);
-    z-index: 1;
+  }
+}
+@media(min-width: 1200px) {
+  .step-triangle:after {
+    width: 40px;
+    height: 40px;
   }
 }
 @media(max-width: 992px) {
   .step-triangle:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -3.2%;
-    left: 48.5%;
+    bottom: -3%;
+    left: 49.2%;
     width: 40px;
     height: 40px; 
-    background: #d8deba;
-    border-left: 4px solid #610301;
-    border-bottom: 4px solid #610301;
+    border-left: 1px solid #610301;
+    border-bottom: 1px solid #610301;
     -moz-transform: rotate(-45deg) translateY(-50%);
     -webkit-transform: rotate(-45deg) translateY(-50%);
     transform: rotate(-45deg) translateX(-50%);
-    z-index: 1;
   }
+}
+@media(max-width: 768px) {
+  .step-triangle:after {
+    bottom: -2.5%;
+    left: 48.5%;
+  }
+}
+
+.step-triangle.odd:after {
+  background-color: #eee;
+}
+.step-triangle.even:after {
+  background-color: #610301;
 }

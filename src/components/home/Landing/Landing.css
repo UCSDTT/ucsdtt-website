@@ -95,6 +95,16 @@
     font-size: 50px;
   }
 }
+@media(max-width: 1200px) {
+  .brothers-are {
+    left: 20%;
+  }
+}
+@media(max-width: 992px) {
+  .brothers-are {
+    left: 10%;
+  }
+}
 @media(max-width: 768px) {
   .brothers-are {
     display: block;
