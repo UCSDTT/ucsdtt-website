@@ -1,5 +1,11 @@
 .element.messenger {
+  position: relative;
   background-color: #fafafa;
+}
+@media(min-width: 992px) {
+  .element.messenger {
+    padding-bottom: 200px;
+  }
 }
 
 /* Messenger Row Margin */
@@ -83,4 +89,53 @@
   height: 3.0rem; /* Set to your font-size */
   position: relative;
   background: url('./images/facebook-messenger.svg') no-repeat scroll center center/100%;
+}
+
+.rose {
+  position: absolute;
+  height: 250px;
+}
+@media(max-width: 1200px) {
+  .rose {
+    height: 200px;
+  }
+}
+@media(max-width: 992px) {
+  .rose {
+    height: 170px;
+  }
+}
+@media(max-width: 768px) {
+  .rose {
+    height: 130px;
+  }
+}
+
+.rose.top-left {
+  top: 0;
+  left: 0;
+  -moz-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  transform: scale(1, -1);
+}
+.rose.top-right {
+  top: 0;
+  right: 0;
+  -moz-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
+.rose.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+.rose.bottom-right {
+  bottom: 0;
+  right: 0;
+  -moz-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, 1);
 }

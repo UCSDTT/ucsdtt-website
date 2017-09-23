@@ -1,23 +1,52 @@
-.rush-header {
-  margin-bottom: 50px;
+.element.rush {
+  background-color: #d8deba;
+}
+
+.rush-tt {
+  color: #d16554;
+  font-family: 'Open Sans Condensed';
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.rush-slogan {
+  color: #fff;
+  font-weight: 700;
+  font-size: 55px;
+}
+
+.rush-process {
+  width: max-content;
+  color: #2f4f4f;
+  font-family: 'Open Sans Condensed';
+  font-size: 55px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 10px 40px;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
 }
 
 .rush-step-icon {
+  color: #610301;
   font-size: 30px;
   margin-bottom: 5px;
 }
 
 .step-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
   display: block;
+  color: #2f4f4f;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
   margin-bottom: 10px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .step-details {
+  color: #587272;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -38,17 +67,14 @@
 }
 
 .rush-button {
-  background-color: white;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  background-color: #610301;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 15px 32px;
+  text-decoration: none;
   cursor: pointer;
-  border: 2px solid #b22222;
 }
 
 .rush-button:hover {
@@ -59,24 +85,65 @@
 @media (min-width: 992px) {
   .table-row {
     display: table;
-    table-layout: fixed;
-    border-collapse: separate;
-    border-spacing: 20px;
+    border: 4px solid #610301;
   }
 
   .table-row > [class*="col-"] {
-    float: none;
     display: table-cell;
-    border:2px solid #b22222;
-    padding: 10px;
+    float: none;
+    padding: 10px 30px;
+    border-left: 4px solid #610301;
+  }
+  .table-row > [class*="col-"]:first-child {
+    border-left: none;
   }
 }
 
 @media (max-width: 991px) {
   .rush-steps {
-    padding: 10px;
+    padding: 40px 20px;
     color: black;
-    border:2px solid #b22222;
-    margin-bottom: 20px;
+    border: 4px solid #610301;
+    border-bottom: none;
  }
+ .rush-steps:last-child {
+    border-bottom: 4px solid #610301;
+ }
+}
+
+@media(min-width: 992px) {
+  .step-triangle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -12.8%;
+    width: 40px;
+    height: 40px; 
+    background: #d8deba;
+    border-right: 4px solid #610301;
+    border-bottom: 4px solid #610301;
+    -moz-transform: rotate(-45deg) translateY(-50%);
+    -webkit-transform: rotate(-45deg) translateY(-50%);
+    transform: rotate(-45deg) translateY(-50%);
+    z-index: 1;
+  }
+}
+@media(max-width: 992px) {
+  .step-triangle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3.2%;
+    left: 48.5%;
+    width: 40px;
+    height: 40px; 
+    background: #d8deba;
+    border-left: 4px solid #610301;
+    border-bottom: 4px solid #610301;
+    -moz-transform: rotate(-45deg) translateY(-50%);
+    -webkit-transform: rotate(-45deg) translateY(-50%);
+    transform: rotate(-45deg) translateX(-50%);
+    z-index: 1;
+  }
 }

@@ -8,6 +8,8 @@ class AboutUs extends Component {
   componentDidMount() {
     window.onscroll = function() {
       let navbarHeight = document.querySelector('.navbar').clientHeight;
+      let landingHeight = document.querySelector('.landing').clientHeight;
+      let aboutHeight = document.querySelector('.element.about').clientHeight;
       let gears = document.getElementsByClassName('gear');
       let gearsOpp = document.getElementsByClassName('gear-opp');
       let wScroll = document.body.scrollTop;
@@ -20,12 +22,14 @@ class AboutUs extends Component {
       }
       
       if (window.innerWidth >= 768) {
-        Array.from(gears).forEach( gear => {
-          gear.style.transform = 'rotate(' + wScroll / 5 + 'deg)';
-        })
-        Array.from(gearsOpp).forEach( gear => {
-          gear.style.transform = 'rotate(-' + wScroll / 5 + 'deg)';
-        })
+        if (wScroll <= landingHeight + aboutHeight) {
+          Array.from(gears).forEach( gear => {
+            gear.style.transform = 'rotate(' + wScroll / 5 + 'deg)';
+          })
+          Array.from(gearsOpp).forEach( gear => {
+            gear.style.transform = 'rotate(-' + wScroll / 5 + 'deg)';
+          })
+        }
       }
     }
 
@@ -226,7 +230,7 @@ class AboutUs extends Component {
                   </p>
                   <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    With the help of a Theta Tau alumni, 
+                    With the help of a Theta Tau alumnus, 
                     <span className="founder"> Jennifer Young</span>, thirteen founding fathers <Image className="scroll-crest" src={require('./images/crest.png')}></Image>
                     took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: 
                     <span className="founder"> Ashay Verma</span>, 

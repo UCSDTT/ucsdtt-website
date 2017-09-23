@@ -28,4 +28,6 @@ const activeData = [
   },
 ]
 
-export default activeData;
+const rosePosition = ['top-left', 'top-right', 'bottom-left', 'bottom-right'];
+
+export {activeData, rosePosition};
