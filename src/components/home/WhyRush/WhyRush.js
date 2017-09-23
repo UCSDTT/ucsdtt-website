@@ -10,7 +10,7 @@ class WhyRush extends Component {
     return (
       <Element name="why-rush" className="element rush">
         <h1 className="title">What is Rush?</h1>
-        <h1 className="rush-tt">Theta Tau</h1>
+        <h1 className="rush-tt">Fall Rush 2017</h1>
         <h2 className="rush-slogan">Reinvent.</h2>
         <h2 className="rush-process">The Process</h2>
 
@@ -22,7 +22,7 @@ class WhyRush extends Component {
             {stepData.map((step, i) => (
               <Col className={`${step.position}`} xs={12} md={3} key={i}>
                 <div className={`rush-steps ${step.position}`}>
-                  <i className="icon-chat rush-step-icon"></i>
+                  <i className={`${step.icon} rush-step-icon`}></i>
                   <span className="step-title"> {step.title} </span>
                   <hr className="step-break"/>
                   <span className="step-description"> {step.description} </span>
