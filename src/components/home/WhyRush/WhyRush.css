@@ -175,3 +175,7 @@
 .step-triangle.even:after {
   background-color: #610301;
 }
+
+.table-row > [class*="col-"]:last-child .step-triangle {
+  display: none;
+}

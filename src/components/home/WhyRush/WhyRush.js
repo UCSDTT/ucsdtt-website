@@ -17,7 +17,7 @@ class WhyRush extends Component {
         <Grid>
           <div className="table-row">
             {stepData.map((step, i) => (
-              <Col className={`${step.position}`} xs={12} md={3}>
+              <Col className={`${step.position}`} xs={12} md={3} key={i}>
                 <div className={`rush-steps ${step.position}`}>
                   <i className="icon-chat rush-step-icon"></i>
                   <span className="step-title"> {step.title} </span>
