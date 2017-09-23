@@ -2,7 +2,7 @@ import './WhyRush.css';
 
 import React, {Component} from 'react';
 import {Element} from 'react-scroll';
-import {Grid, Row, Col} from 'react-bootstrap';
+import {Grid, Row, Col, Image} from 'react-bootstrap';
 import stepData from './data.js';
 
 class WhyRush extends Component {
@@ -12,8 +12,11 @@ class WhyRush extends Component {
         <h1 className="title">What is Rush?</h1>
         <h1 className="rush-tt">Theta Tau</h1>
         <h2 className="rush-slogan">Reinvent.</h2>
-
         <h2 className="rush-process">The Process</h2>
+
+        <Image className="items1" src={require('./images/items1.png')} />
+        <Image className="items2" src={require('./images/items2.png')} />
+
         <Grid>
           <div className="table-row">
             {stepData.map((step, i) => (

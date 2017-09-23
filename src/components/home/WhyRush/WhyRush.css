@@ -1,5 +1,14 @@
 .element.rush {
+  position: relative;
   background-color: #d8deba;
+}
+
+.element.rush h1, .element.rush h2 {
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
 }
 
 .rush-tt {
@@ -28,11 +37,35 @@
   text-transform: uppercase;
 }
 
+@media(min-width: 1200px) {
+  .items1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .items2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@media(max-width: 1200px) {
+  .items1 {
+    display: none;
+  }
+
+  .items2 {
+    display: none;
+  }
+}
+
 .rush-step-icon {
   font-size: 30px;
   margin-bottom: 5px;
 }
 
+/* Step Info */
 .step-title {
   display: block;
   font-family: 'Montserrat', sans-serif;
@@ -61,6 +94,7 @@
   border-width: 1px;
 }
 
+/* Rush Button */
 .rush-button {
   display: inline-block;
   background-color: #610301;
@@ -77,6 +111,7 @@
   color: white;
 }
 
+/* Table Row */
 @media (min-width: 992px) {
   .table-row {
     display: table;
@@ -103,6 +138,7 @@
   }
 }
 
+/* Rush Steps */
 @media (max-width: 991px) {
   .rush-steps {
     padding: 40px 20px;
@@ -124,6 +160,7 @@
   }
 }
 
+/* Step Triangle Arrow */
 .step-triangle:after {
   content: '';
   display: block;
