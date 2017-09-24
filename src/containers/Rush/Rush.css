@@ -30,6 +30,20 @@
   font-weight: bold;
 }
 
+.rush-author{
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  color: #2f4f4f;
+  font-size: 2em;
+  display: block;
+  width: auto;
+  padding: 0px;
+  top: 20vh;
+  left: 60%;
+  text-align: right;
+  font-weight: bold;
+}
+
 .rush-icons {
   text-align: center;
   font-size: 6em;
@@ -100,3 +114,9 @@
   margin: 0px;
   padding: 0px;
 }
+
+/*.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 80%;
+}*/

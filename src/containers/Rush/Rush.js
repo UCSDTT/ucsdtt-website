@@ -1,11 +1,10 @@
 import './Rush.css';
 import React, {Component} from 'react';
 import {Grid, Row, Col, Carousel, Image} from 'react-bootstrap';
-var alumni = require('./images/alumni.jpg')
-var bubbleSoccer = require('./images/BubbleSoccer.jpg')
-var cave = require('./images/cave.jpg')
+import {carouselData}  from './data.js';
 
 export default class MemberPage extends Component {
+
   render() {
     return (
       <div>
@@ -56,34 +55,24 @@ export default class MemberPage extends Component {
             <span className="rush-subheader">  Rush is a week full of events to interact with the active body. Rush to meet cool people like me. text text text text text  text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</span>
           </div>
           <Grid>
+
             <Row className="carousel">
               <Col xs={12} md={8} >
-                <Carousel>
-                  <Carousel.Item>
-                    <img width={900} height={500} alt="900x500" src={alumni}/>
-                    <Carousel.Caption>
-                      <h3>First Rush Picture</h3>
-                      <p>blah blach blah blah</p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img width={900} height={500} alt="900x500" src={cave}/>
-                    <Carousel.Caption>
-                      <h3>Second Rush Picture</h3>
-                      <p>blah blach blah blah</p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img width={900} height={500} alt="900x500" src={bubbleSoccer}/>
-                    <Carousel.Caption>
-                      <h3>Third Rush Picture</h3>
-                      <p>blah blach blah blah</p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
+                <Carousel interval={7000}>
+                  {carouselData.map((slide) => (
+                    <Carousel.Item key={slide.id}>
+                      <Image width = {900} height ={500} src={slide.image} />
+                    </Carousel.Item>
+                  ))}
                 </Carousel>
               </Col>
               <Col xs={12} md={4}>
-                <span className="rush-quote">"I rushed because I wanted to make life long friends."</span>
+                {carouselData.map((slide) => (
+                  <div key={slide.id}>
+                    <span className='rush-quote' > {slide.quote} </span>
+                    <span className='rush-author' > --{slide.author} </span>
+                  </div>
+                ))}
               </Col>
             </Row>
           </Grid>
