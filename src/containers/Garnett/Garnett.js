@@ -7,7 +7,13 @@ export default class Garnett extends Component {
   render() {
     return (
       <div className="garnett">
-        <Image className="garnett-logo" src={require('./images/garnett.png')} />
+        <a className="tt-logo" role="button" href="/">
+          <Image className="logo" src={require('../../components/home/NavBar/images/logo.png')}/>
+        </a>
+        <div className="garnett-logo">
+          <Image src={require('./images/garnett.png')} />
+          <h1> Garne<span className="red">tt</span> </h1>
+        </div>
         <form className="garnett-form">
           <FormGroup controlId="formHorizontalEmail">
             <FormControl

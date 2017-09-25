@@ -64,6 +64,7 @@
 }
 @media(min-width: 992px) {
   .about-description {
+    position: relative;
     height: 720px;
   }
 }
@@ -166,11 +167,11 @@
     font-family: 'Merienda One';
     width: 750px;
     height: 525px;
-    top: 28.5%;
+    top: 60px;
     left: 50%;
     -webkit-perspective: 5000px;
     perspective: 5000px;
-    transform: translate(-50%, -50%) rotateY(20deg);
+    transform: translateX(-50%) rotateY(20deg);
   }
 
   #container p {
@@ -200,6 +201,9 @@
     overflow: -moz-scrollbars-none;
     overflow-y: scroll;
     height: 100%;
+  }
+  #content::-webkit-scrollbar {
+    display: none;
   }
 
   #content, .panel-content {

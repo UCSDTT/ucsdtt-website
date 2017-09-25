@@ -1,13 +1,49 @@
 .garnett {
   position: absolute;
   background-color: #2e2f33;
+  color: #fff;
   height: 100%;
   width: 100%;
 }
 
+.tt-logo {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
 .garnett-logo {
-  height: 100px;
-  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  margin: auto;
+  margin-top: 75px;
+}
+@media(max-width: 768px) {
+  .garnett-logo {
+    width: 280px;
+  }
+}
+
+.garnett-logo img {
+  height: 75px;
+  margin: auto 0;
+}
+@media(max-width: 768px) {
+  .garnett-logo img {
+    height: 50px;
+  }
+}
+
+.garnett-logo h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+@media(max-width: 768px) {
+  .garnett-logo h1 {
+    font-size: 45px;
+  }
 }
 
 .garnett-form {
@@ -37,7 +73,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: #b22222;
   color: #fff;
   height: 40px;
   width: 40%;
