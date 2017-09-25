@@ -37,6 +37,8 @@ export default class MemberPage extends Component {
   componentDidMount() {
     let image = document.getElementsByClassName('brothers-image');
 
+    document.querySelector('.search-bar').autofocus = true;
+    
     image[0].classList.add('selected');
 
     this.setState({

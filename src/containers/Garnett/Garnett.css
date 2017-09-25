@@ -1,0 +1,54 @@
+.garnett {
+  position: absolute;
+  background-color: #2e2f33;
+  height: 100%;
+  width: 100%;
+}
+
+.garnett-logo {
+  height: 100px;
+  margin-top: 100px;
+}
+
+.garnett-form {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+@media(max-width: 768px) {
+  .garnett-form {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.garnett-input {
+  height: 40px;
+  width: 40%;
+  margin: auto;
+  border-radius: 20px;
+}
+@media(max-width: 768px) {
+  .garnett-input {
+    width: 80%;
+  }
+}
+
+.garnett-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: #fff;
+  height: 40px;
+  width: 40%;
+  font-size: 14px;
+  margin: auto;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 8px 10px, rgba(0, 0, 0, 0.23) 0px 8px 10px;
+}
+@media(max-width: 768px) {
+  .garnett-login {
+    width: 80%;
+  }
+}

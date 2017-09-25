@@ -68,7 +68,7 @@ class NavBar extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <a role="button" id="nav-logo" href="/">
-              <Image className="logo" src={require('./images/logo.png')}/>
+              <Image className="logo" src={require('./images/logo.png')} />
             </a>
           </Navbar.Brand>
           <Navbar.Toggle
@@ -143,7 +143,7 @@ class NavBar extends Component {
               <a
                 href="/garnett"
               >
-                <Image className="logo garnett" src={require('./images/garnett.svg')}/>
+                <Image className="logo gem" src={require('./images/garnett.svg')} />
               </a>
             </li>
           </Nav>

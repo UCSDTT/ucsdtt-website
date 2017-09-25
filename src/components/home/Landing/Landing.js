@@ -1,7 +1,7 @@
 import './Landing.css';
 
 import React, {Component} from 'react';
-import {Carousel, Image, Button, Glyphicon} from 'react-bootstrap';
+import {Carousel, Image, Button} from 'react-bootstrap';
 import {scroller} from 'react-scroll';
 import {slideData, quoteData}  from './data.js';
 
@@ -148,7 +148,6 @@ class Landing extends Component {
           onClick={() => this.scrollToComp("about-us")}
         > 
           Learn More
-          <Glyphicon glyph="chevron-right" />
         </a>
 
         {/*{quoteData.map((quote, i) => (

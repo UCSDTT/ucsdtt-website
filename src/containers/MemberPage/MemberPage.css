@@ -299,7 +299,7 @@
   border-bottom-left-radius: 6px;
 }
 .modal-footer > div:hover {
-  background-color: #fafafa;
+  background-color: #eee;
 }
 
 .modal-footer .close-footer {
@@ -317,7 +317,7 @@
   border-bottom-right-radius: 6px;
 }
 .modal-footer > .linkedin-footer:hover {
-  background-color: #fafafa;
+  background-color: #eee;
 }
 
 .modal-footer > .linkedin-footer > .icon-linkedin-squared {

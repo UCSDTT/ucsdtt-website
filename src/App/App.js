@@ -1,5 +1,5 @@
 import './App.css';
-import './fontello/css/fontello.css';
+import '../fontello/css/fontello.css';
 
 import React, {Component} from 'react';
 

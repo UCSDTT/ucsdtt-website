@@ -219,7 +219,7 @@ class AboutUs extends Component {
                   <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     With the help of a Theta Tau alumnus, 
-                    <span className="founder"> Jennifer Young</span>, thirteen founding fathers <Image className="scroll-crest" src={require('./images/crest.png')}></Image>
+                    <span className="founder"> Jennifer Young</span>, thirteen founding fathers <Image className="scroll-crest" src={require('./images/crest.png')} />
                     took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: 
                     <span className="founder"> Ashay Verma</span>, 
                     <span className="founder"> Errynne Bell</span>, 
@@ -239,7 +239,7 @@ class AboutUs extends Component {
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.                   
                   </p>
-                  <Image className="founders" src={require('./images/founders.jpg')}></Image>
+                  <Image className="founders" src={require('./images/founders.jpg')} />
                 </div>
               </div>
 
@@ -278,8 +278,7 @@ class AboutUs extends Component {
                     className="pillar-image" 
                     src={pillar.image} 
                     responsive
-                  >
-                  </Image>
+                  />
                   <div className="pillar-info animated">
                     <h3> {pillar.info} </h3>
                     <h4> {pillar.description} </h4>

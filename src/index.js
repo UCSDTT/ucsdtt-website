@@ -3,8 +3,8 @@ import './index.css';
 
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-import App from './App';
-import Garnett from './containers/Garnett';
+import App from './App/App';
+import Garnett from './containers/Garnett/Garnett';
 import Home from './containers/Home';
 import MemberPage from './containers/MemberPage/MemberPage';
 import Rush from './containers/Rush/Rush'

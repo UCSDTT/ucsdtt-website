@@ -19,7 +19,7 @@ class Companies extends Component {
                 key={i}
               >
                 <a href={company.href}>
-                  <Image className="company-logo" src={company.image} href={company}/> 
+                  <Image className="company-logo" src={company.image} href={company} /> 
                 </a>
               </div>
             ))}
@@ -31,7 +31,7 @@ class Companies extends Component {
                 key={i}
               >
                 <a href={company.href}>
-                  <Image className="company-logo" src={company.image}/>
+                  <Image className="company-logo" src={company.image} />
                 </a>
               </div>
             ))}

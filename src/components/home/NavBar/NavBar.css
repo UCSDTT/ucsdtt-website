@@ -253,11 +253,11 @@
 }*/
 
 /* Garnett Logo */
-.logo.garnett {
+.logo.gem {
   margin-top: -15px;
 }
 @media(max-width: 768px) {
-  .logo.garnett {
+  .logo.gem {
     height: 75px;
     width: 75px;
   }
