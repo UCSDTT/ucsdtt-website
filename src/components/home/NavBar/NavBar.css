@@ -55,7 +55,7 @@
     height: 2px;
     width: 0;
     background: #b22222;
-    transition: width .5s ease,background-color .5s ease;
+    transition: width .5s ease, background-color .5s ease;
   }
   /*.navbar-collapse > .navbar-right > li:last-child > a:after {
     background: #fff;
