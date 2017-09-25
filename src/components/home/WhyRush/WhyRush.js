@@ -2,7 +2,7 @@ import './WhyRush.css';
 
 import React, {Component} from 'react';
 import {Element} from 'react-scroll';
-import {Grid, Row, Col, Image} from 'react-bootstrap';
+import {Grid, Col, Image} from 'react-bootstrap';
 import stepData from './data.js';
 
 class WhyRush extends Component {
@@ -24,7 +24,6 @@ class WhyRush extends Component {
                 <div className={`rush-steps ${step.position}`}>
                   <i className={`${step.icon} rush-step-icon`}></i>
                   <span className="step-title"> {step.title} </span>
-                  <hr className="step-break"/>
                   <span className="step-description"> {step.description} </span>
                 </div>
                 <div className={`step-triangle ${step.position}`}></div>

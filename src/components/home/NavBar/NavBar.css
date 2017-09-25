@@ -251,3 +251,14 @@
     margin: auto;
   }
 }*/
+
+/* Garnett Logo */
+.logo.garnett {
+  margin-top: -15px;
+}
+@media(max-width: 768px) {
+  .logo.garnett {
+    height: 75px;
+    width: 75px;
+  }
+}

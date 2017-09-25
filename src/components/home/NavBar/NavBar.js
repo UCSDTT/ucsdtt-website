@@ -31,14 +31,12 @@ class NavBar extends Component {
       .querySelector('.navbar-collapse .navbar-nav')
       .classList
       .toggle('open');
-
-    if (window.innerWidth <= 768) {
-      if (document.body.style.overflow === 'hidden') {
-        document.body.style.overflow = 'visible';
-      }
-      else {
-        document.body.style.overflow = 'hidden';
-      }
+      
+    if (document.body.style.overflow === 'hidden') {
+      document.body.style.overflow = 'visible';
+    }
+    else {
+      document.body.style.overflow = 'hidden';
     }
   }
 
@@ -46,7 +44,10 @@ class NavBar extends Component {
     scroll.scrollToTop({
       duration: 1000,
     });
-    this.openMenu();
+
+    if (window.innerWidth <= 768) {
+      this.openMenu();
+    }
   }
 
   scrollToComp(name) {
@@ -55,7 +56,10 @@ class NavBar extends Component {
       offset: 0,
       smooth: true,
     });
-    this.openMenu();
+
+    if (window.innerWidth <= 768) {
+      this.openMenu();
+    }
   }
 
   render() {
@@ -78,7 +82,7 @@ class NavBar extends Component {
             onClick={this.openMenu}/>
         </Navbar.Header>
         <Nav pullLeft className="hidden-sm hidden-xs">
-          <NavItem className="navbar-title" onClick={this.scrollToTop}>Theta Tau, UCSD</NavItem>
+          <NavItem className="navbar-title" onClick={this.scrollToTop.bind(this)}>Theta Tau, UCSD</NavItem>
         </Nav>
         <Navbar.Collapse>
           <Nav pullRight>
@@ -128,12 +132,18 @@ class NavBar extends Component {
             </NavItem>
             <li role="presentation">
               <a
-                style={{color: '#b22222'}} 
                 href="/members"
                 onMouseOver={this.underline}
                 onMouseOut={this.underline}
               >
                 Members
+              </a>
+            </li>
+            <li role="presentation">
+              <a
+                href="/garnett"
+              >
+                <Image className="logo garnett" src={require('./images/garnett.svg')}/>
               </a>
             </li>
           </Nav>

@@ -8,15 +8,15 @@ const bigCompanies = [
     image: require('./images/microsoft.png'),
   },
   {
-    href: 'https://www.apple.com',
-    image: require('./images/apple.png')
-  },
-  {
     href: 'https://www.amazon.com',
     image: require('./images/amazon.png')
   },
   {
-    href: 'www.northropgrumman.com',
+    href: 'https://www.apple.com',
+    image: require('./images/apple.png')
+  },
+  {
+    href: 'https://www.northropgrumman.com',
     image: require('./images/northrop.png'),
   },
   {

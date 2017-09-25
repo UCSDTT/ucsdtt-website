@@ -7,14 +7,14 @@ const slideData = [
     'xsImage': require('./images/alumni-xs.jpg'),
   },
   {
-    'name': 'soccer buddies',
+    'name': 'competitors',
     'color': 'blue',
     'image': require('./images/BubbleSoccer.jpg'),
     'smImage': require('./images/BubbleSoccer-sm.jpg'),
     'xsImage': require('./images/BubbleSoccer-xs.jpg'),
   },
   {
-    'name': 'cavemen',
+    'name': 'adventurers',
     'color': 'green',
     'image': require('./images/cave.jpg'),
     'smImage': require('./images/cave-sm.jpg'),

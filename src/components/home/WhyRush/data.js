@@ -2,7 +2,7 @@ const stepData = [
   {
     icon: 'icon-chat',
     position: 'odd',
-    title: 'Rush',
+    title: 'Explore',
     description: 'Join us for a whole week of rush events! Learn about the fraternity,  interact with other rushees, and mingle with the members of Theta Tau.',
   },
   {

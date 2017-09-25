@@ -1,3 +1,5 @@
+const gearPosition = ['top-left', 'top-right', 'bottom-left', 'bottom-right'];
+
 const pillarData = [
   {
     image: require('./images/brotherhood.jpg'),
@@ -14,12 +16,12 @@ const pillarData = [
     content: 'We also seek to shape up one’s professional interests to prepare them for their life ahead of college. We plan various networking opportunities as well as events that provide a sneak peek at different professional careers.'
   },
   {
-    image: require('./images/philanthropy.jpg'),
+    image: require('./images/service.jpg'),
     info: 'Charity',
     description: 'Collecting and donating toys to Syrian refugee families',
-    name: 'Philanthrophy',
+    name: 'Service',
     content: 'For the purpose of our members’ personal growth, as well as our community’s benefits, we are involved in projects that give back to the community around us. Serving alongside brothers will establish strong bonds and also guarantee a truly meaningful time through one’s college years.'
   },
 ]
 
-export default pillarData;
+export {gearPosition, pillarData};

@@ -68,10 +68,14 @@
 /* Step Info */
 .step-title {
   display: block;
+  width: 80%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 20px;
+  margin: auto;
   margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -80,18 +84,6 @@
   font-size: 15px;
   letter-spacing: 0.01em;
   display: block;
-}
-
-.step-break {
-  width: 50%;
-  color: black;
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
 }
 
 /* Rush Button */
@@ -169,7 +161,7 @@
 }
 @media(min-width: 992px) {
   .step-triangle:after {
-    top: 50%;
+    top: 48%;
     right: -12.2%;
     width: 32px;
     height: 32px;
