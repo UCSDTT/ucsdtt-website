@@ -1,9 +1,11 @@
+/* Garnett Container */
 .garnett {
   position: absolute;
   background-color: #2e2f33;
   color: #fff;
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
 }
 
 .tt-logo {
@@ -12,6 +14,7 @@
   left: 20px;
 }
 
+/* Logo and Title */
 .garnett-logo {
   display: flex;
   justify-content: space-around;
@@ -23,7 +26,7 @@
 @media(max-width: 768px) {
   .garnett-logo {
     width: 280px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -48,6 +51,7 @@
   }
 }
 
+/* Sign In and Sign Up Toggle Buttons */
 .sign-options {
   display: flex;
   justify-content: space-around;
@@ -78,20 +82,21 @@
   width: 100%;
 }
 
+/* Input Forms */
 .garnett-form {
   display: none;
-  margin-top: 50px;
+  margin: 50px auto;
 }
 @media(max-width: 768px) {
   .garnett-form {
-    margin-top: 30px;
+    margin: 30px auto;
   }
 }
 
 .garnett-form.active {
   display: block;
   opacity: 0;
-  animation: fadeIn .2s ease-in forwards;
+  animation: fadeIn .5s ease-in forwards;
 }
 @keyframes fadeIn {
   to {
@@ -112,6 +117,7 @@
   }
 }
 
+/* Login and Sign Up Buttons */
 .garnett-login {
   display: flex;
   justify-content: center;

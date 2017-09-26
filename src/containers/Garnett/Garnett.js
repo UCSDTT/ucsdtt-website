@@ -110,6 +110,20 @@ export default class Garnett extends Component {
               placeholder="Last Name"
              />
           </FormGroup>
+          <FormGroup controlId="formBasicText">
+            <FormControl
+              className="garnett-input"
+              type="text"
+              placeholder="Class"
+             />
+          </FormGroup>
+          <FormGroup controlId="formBasicText">
+            <FormControl
+              className="garnett-input"
+              type="text"
+              placeholder="Major"
+             />
+          </FormGroup>
           <FormGroup controlId="formHorizontalEmail">
             <FormControl
               className="garnett-input"
