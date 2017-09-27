@@ -14,7 +14,7 @@ class AboutUs extends Component {
       let gearsOpp = document.getElementsByClassName('gear-opp');
       let wScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
-      if (document.body.scrollTop >= navbarHeight) {
+      if (wScroll >= navbarHeight) {
         document.querySelector('.navbar').style.background = 'rgba(10, 10, 10, 0.8)';
       }
       else {
