@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "imagemin": "^5.3.1",
+    "imagemin-webp": "^4.0.0",
     "react-scripts": "^1.0.13"
   },
   "dependencies": {

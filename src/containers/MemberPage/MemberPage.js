@@ -268,7 +268,7 @@ export default class MemberPage extends Component {
       <div>
         <div className="brothers-header">
           <a className="brothers-logo" role="button" href="/">
-            <Image className="logo" src={require('../../components/home/NavBar/images/logo.png')}/>
+            <Image className="logo" src={require('../../components/home/NavBar/images/logo.webp')}/>
           </a>
           OUR BROTHERS
         </div>
