@@ -1,6 +1,6 @@
 const activeData = [
   {
-    image: './images/momina.jpg',
+    image: './images/momina.webp',
     position: 'Rush Chair',
     name: 'Momina Mahmood',
     year: '3rd Year',
@@ -9,7 +9,7 @@ const activeData = [
     messenger: 'https://m.me/momina.mahmood.9/',
   },
   {
-    image: './images/rishi.jpg',
+    image: './images/rishi.webp',
     position: 'Regent',
     name: 'Rishi Dhanaraj',
     year: '3rd Year',
@@ -18,7 +18,7 @@ const activeData = [
     messenger: 'https://m.me/rishi.dhanaraj/',
   },
   {
-    image: './images/bchan.jpg',
+    image: './images/bchan.webp',
     position: 'Rush Chair',
     name: 'Ming Ming Liu',
     year: '4th Year',

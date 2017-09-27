@@ -10,7 +10,7 @@
   max-width: 100%;
 }
 @media(max-width: 992px) {
-  .landing-image.img-responsive {
+  .landing-image {
     height: 550px;
   }
 }

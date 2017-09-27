@@ -219,7 +219,7 @@ class AboutUs extends Component {
                   <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     With the help of a Theta Tau alumnus, 
-                    <span className="founder"> Jennifer Young</span>, thirteen founding fathers <img className="lozad scroll-crest" data-src={require('./images/crest.png')} alt="Crest" />
+                    <span className="founder"> Jennifer Young</span>, thirteen founding fathers <img className="lozad scroll-crest" data-src={require('./images/crest.webp')} alt="Crest" />
                     took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: 
                     <span className="founder"> Ashay Verma</span>, 
                     <span className="founder"> Errynne Bell</span>, 
@@ -241,7 +241,7 @@ class AboutUs extends Component {
                   </p>
                   <img 
                     className="lozad founders" 
-                    data-src={require('./images/founders.jpg')} 
+                    data-src={require('./images/founders.webp')} 
                     alt="Founders"
                   />
                 </div>

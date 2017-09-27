@@ -16,12 +16,12 @@ class WhyRush extends Component {
 
         <img 
           className="lozad items1" 
-          data-src={require('./images/items1.png')} 
+          data-src={require('./images/items1.webp')} 
           alt="Items 1"
         />
         <img 
           className="lozad items2" 
-          data-src={require('./images/items2.png')} 
+          data-src={require('./images/items2.webp')} 
           alt="Items 2"
         />
 

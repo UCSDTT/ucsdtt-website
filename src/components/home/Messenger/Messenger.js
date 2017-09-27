@@ -21,7 +21,7 @@ class Messenger extends Component {
         {rosePosition.map((position, i) => (
           <img 
             className={`lozad rose ${position}`} 
-            data-src={require('./images/rose.png')}
+            data-src={require('./images/rose.webp')}
             key={i} 
             alt="Rose"
           />

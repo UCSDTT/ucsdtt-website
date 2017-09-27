@@ -68,7 +68,7 @@ class NavBar extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <a role="button" id="nav-logo" href="/">
-              <Image className="logo" src={require('./images/logo.png')} />
+              <Image className="logo" src={require('./images/logo.webp')} />
             </a>
           </Navbar.Brand>
           <Navbar.Toggle
