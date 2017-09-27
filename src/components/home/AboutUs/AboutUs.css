@@ -275,6 +275,11 @@
   width: 30%;
   z-index: -1;
 }
+@media(min-width: 1400px) {
+  .gears {
+    width: 432px;
+  }
+}
 @media(max-width: 539px) {
   .gears {
     width: 40%;

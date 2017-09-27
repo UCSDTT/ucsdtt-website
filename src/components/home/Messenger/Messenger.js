@@ -4,7 +4,6 @@ import React, {Component} from 'react';
 import {
   Col,
   Grid,
-  Image,
   Panel,
   Row
 } from 'react-bootstrap';
@@ -20,10 +19,11 @@ class Messenger extends Component {
         </h1>
 
         {rosePosition.map((position, i) => (
-          <Image 
-            className={`rose ${position}`} 
-            src={require('./images/rose.png')}
+          <img 
+            className={`lozad rose ${position}`} 
+            data-src={require('./images/rose.png')}
             key={i} 
+            alt="Rose"
           />
         ))}
 
@@ -32,11 +32,11 @@ class Messenger extends Component {
             {activeData.map((active, i) => (
               <Col md={4} key={i}>
                 <Panel className="messenger-card" header={active.position}>
-                  <Image
-                    className="messenger-image"
-                    src={require(`${active.image}`)}
+                  <img
+                    className="lozad messenger-image"
+                    data-src={require(`${active.image}`)}
                     role="presentation"
-                    circle
+                    alt="Messenger"
                   />
                   <h3 className="messenger-name">
                     {active.name}

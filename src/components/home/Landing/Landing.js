@@ -1,7 +1,7 @@
 import './Landing.css';
 
 import React, {Component} from 'react';
-import {Carousel, Image, Button} from 'react-bootstrap';
+import {Carousel, Button} from 'react-bootstrap';
 import {scroller} from 'react-scroll';
 import {slideData, quoteData}  from './data.js';
 
@@ -118,12 +118,12 @@ class Landing extends Component {
           {slideData.map((slide, i) => (
             <Carousel.Item key={i}>
               <div className="landing-gradient">
-                <Image 
-                  className="landing-image" 
-                  src={slide.xsImage}
+                <img 
+                  className="lozad landing-image" 
+                  data-src={slide.xsImage}
                   // eslint-disable-next-line
-                  srcSet={slide.smImage + ' 992w', slide.image + ' 1200w'} 
-                  responsive
+                  data-srcset={slide.smImage + ' 992w', slide.image + ' 1200w'} 
+                  alt="Landing"
                 />
               </div>
             </Carousel.Item>

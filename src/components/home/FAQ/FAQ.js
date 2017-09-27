@@ -9,7 +9,7 @@ import { Element } from 'react-scroll';
 class FAQ extends Component {
   render() {
     return (
-      <Element name="faq" className="element faq">
+      <Element name="faq" className="element faq" data-background-image={require('./images/faq-background.svg')}>
         <h1 className="title"> FAQ </h1>
         <Grid>
           <Row>

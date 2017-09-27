@@ -2,11 +2,22 @@ import './Garnett.css';
 
 import React, {Component} from 'react';
 import {Image, FormGroup, FormControl} from 'react-bootstrap';
+import formData from './data.js';
 
 export default class Garnett extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      signEmail: '',
+      signPassword: '',
+      firstname: '',
+      lastname: '',
+      class: '',
+      major: '',
+      email: '',
+      code: '',
+      password: '',
+      confirmation: '',
       staySigned: false,
     };
 
@@ -28,6 +39,13 @@ export default class Garnett extends Component {
         .classList
         .toggle('active');
     }
+    console.log(this.state.firstname)
+  }
+
+  handleChange(value, e) {
+    this.setState({
+      [value]: e.target.value
+    })
   }
 
   toggleSignState() {
@@ -67,6 +85,8 @@ export default class Garnett extends Component {
               className="garnett-input"
               type="email"
               placeholder="Email"
+              value={this.state.signEmail}
+              onChange={(e) => this.handleChange('signEmail', e)}
              />
           </FormGroup>
 
@@ -75,6 +95,8 @@ export default class Garnett extends Component {
               className="garnett-input"
               type="password"
               placeholder="Password"
+              value={this.state.signPassword}
+              onChange={(e) => this.handleChange('signPassword', e)}
              />
           </FormGroup>
 
@@ -96,63 +118,17 @@ export default class Garnett extends Component {
         </form>
 
         <form className="garnett-form sign-up">
-          <FormGroup controlId="formBasicText">
-            <FormControl
-              className="garnett-input"
-              type="text"
-              placeholder="First Name"
-             />
-          </FormGroup>
-          <FormGroup controlId="formBasicText">
-            <FormControl
-              className="garnett-input"
-              type="text"
-              placeholder="Last Name"
-             />
-          </FormGroup>
-          <FormGroup controlId="formBasicText">
-            <FormControl
-              className="garnett-input"
-              type="text"
-              placeholder="Class"
-             />
-          </FormGroup>
-          <FormGroup controlId="formBasicText">
-            <FormControl
-              className="garnett-input"
-              type="text"
-              placeholder="Major"
-             />
-          </FormGroup>
-          <FormGroup controlId="formHorizontalEmail">
-            <FormControl
-              className="garnett-input"
-              type="email"
-              placeholder="Email"
-             />
-          </FormGroup>
-          <FormGroup controlId="formBasicText">
-            <FormControl
-              className="garnett-input"
-              type="text"
-              placeholder="Authorization Code"
-             />
-          </FormGroup>
-          <FormGroup controlId="formHorizontalPassword">
-            <FormControl
-              className="garnett-input"
-              type="password"
-              placeholder="Password"
-             />
-          </FormGroup>
-          <FormGroup controlId="formHorizontalPassword">
-            <FormControl
-              className="garnett-input"
-              type="password"
-              placeholder="Password Confirmation"
-             />
-          </FormGroup>
-
+          {formData.map((form, i) => (
+            <FormGroup controlId="formBasicText">
+              <FormControl
+                className="garnett-input"
+                type="text"
+                placeholder={`${form.name}`}
+                value={this.state[`${form.value}`]}
+                onChange={(e) => this.handleChange(form.value, e)}
+               />
+            </FormGroup>
+          ))}
           <div className="garnett-login">
             Sign Up
           </div>

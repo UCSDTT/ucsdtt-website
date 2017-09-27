@@ -11,6 +11,11 @@ import {AboutUs} from '../components/home/AboutUs/AboutUs.js';
 import {WhyRush} from '../components/home/WhyRush/WhyRush.js';
 
 export default class Home extends Component {
+  componentDidMount() {
+    const observer = window.lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
+  }
+
   render() {
     return (
       <div className="homepage">
