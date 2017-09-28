@@ -25,12 +25,12 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: -moz-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.25)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%); /* W3C */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.6)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
@@ -63,23 +63,10 @@
   transition: transform 0.19s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.blue {
-  color: #2980b9;
-}
-
-.red {
-  color: #c0392b;
-}
-
-.green {
-  color: #16a085;
-}
-
 /* Brothers Are */
 .brothers-are {
   position: absolute;
   display: block;
-  font-size: 60px;
   top: 100px;
   left: 0;
   right: 0;
@@ -88,32 +75,44 @@
   text-shadow: 2px 2px 2px #000;
   z-index: 10;
 }
+
+.brothers-are-text {
+  font-family: 'Helvetica Neue Condensed';
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: -10px;
+}
 @media(max-width: 1400px) {
-  .brothers-are {
+  .brothers-are-text {
     font-size: 50px;
   }
 }
 @media(max-width: 768px) {
-  .brothers-are {
+  .brothers-are-text {
     font-size: 37px;
   }
 }
 
-.brothers-are-text {
-  font-family: 'Open Sans Condensed';
-  font-size: inherit;
-}
-
 .brothers-are-word {
-  font-family: 'Alegreya Sans SC';
-  font-size: inherit;
-  line-height: 1.2;
+  font-family: 'Helvetica Neue Condensed';
+  font-weight: 700;
+  font-size: 80px;
+}
+@media(max-width: 1400px) {
+  .brothers-are-word {
+    font-size: 70px;
+  }
+}
+@media(max-width: 768px) {
+  .brothers-are-word {
+    font-size: 47px;
+  }
 }
 
 /* Members Button */
 .members-button {
   position: absolute;
-  top: 300px;
+  top: 320px;
   left: 50%;
   background-color: #777;
   color: #fff;
@@ -123,7 +122,7 @@
   font-weight: 900;
   padding: 10px 20px;
   opacity: 0.8;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.253) 0px 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.63) 0px 3px 10px;
   transform: translateX(-50%);
   text-transform: uppercase;
   cursor: pointer;
@@ -135,7 +134,7 @@
 }
 @media(max-width: 1400px) {
   .members-button {
-    top: 280px;
+    top: 290px;
   }
 }
 @media(max-width: 768px) {
@@ -322,3 +321,8 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
   background: #fff;
   margin: 0 3px;
   }
+
+.landing .carousel-control.left,
+.landing .carousel-control.right {
+  display: none;
+}

@@ -1,21 +1,18 @@
 const slideData = [
   {
     'name': 'lifelong friends',
-    'color': 'red',
     'image': require('./images/alumni.webp'),
     'smImage': require('./images/alumni-sm.webp'),
     'xsImage': require('./images/alumni-xs.webp'),
   },
   {
     'name': 'competitors',
-    'color': 'blue',
     'image': require('./images/BubbleSoccer.webp'),
     'smImage': require('./images/BubbleSoccer-sm.webp'),
     'xsImage': require('./images/BubbleSoccer-xs.webp'),
   },
   {
     'name': 'adventurers',
-    'color': 'green',
     'image': require('./images/cave.webp'),
     'smImage': require('./images/cave-sm.webp'),
     'xsImage': require('./images/cave-xs.webp'),

@@ -13,7 +13,8 @@
 
 .rush-tt {
   color: #d16554;
-  font-family: 'Open Sans Condensed';
+  font-family: 'Helvetica Neue Condensed';
+  font-weight: 700;
   font-size: 80px;
   text-transform: uppercase;
 }
@@ -27,7 +28,7 @@
 .rush-process {
   width: max-content;
   color: #2f4f4f;
-  font-family: 'Open Sans Condensed';
+  font-family: 'Helvetica Neue Condensed';
   font-size: 55px;
   margin: auto;
   margin-top: 50px;
@@ -81,15 +82,16 @@
 }
 
 .step-description {
+  display: block;
   font-size: 15px;
   letter-spacing: 0.01em;
-  display: block;
+  margin: 0 15px;
 }
 
 /* Rush Button */
 .rush-button {
   display: inline-block;
-  background-color: #610301;
+  background-color: #960018;
   color: #fff;
   font-size: 20px;
   margin-top: 50px;
@@ -99,25 +101,20 @@
 }
 
 .rush-button:hover {
-  background-color: #b22222;
-  color: white;
+  background-color: #610301;
+  color: #fff;
 }
 
 /* Table Row */
 @media (min-width: 992px) {
   .table-row {
     display: table;
-    border: 4px solid #610301;
   }
 
   .table-row > [class*="col-"] {
     display: table-cell;
     float: none;
     padding: 10px 30px;
-    border-left: 4px solid #610301;
-  }
-  .table-row > [class*="col-"]:first-child {
-    border-left: none;
   }
 
   .table-row > [class*="col-"].odd {
@@ -125,8 +122,8 @@
     color: #2f4f4f;;
   }
   .table-row > [class*="col-"].even {
-    background-color: #610301;
-    color: #ccc;
+    background-color: #960018;
+    color: #eee;
   }
 }
 
@@ -134,12 +131,6 @@
 @media (max-width: 991px) {
   .rush-steps {
     padding: 40px 20px;
-    color: black;
-    border: 4px solid #610301;
-    border-bottom: none;
-  }
-  .rush-steps:last-child {
-    border-bottom: 4px solid #610301;
   }
 
   .rush-steps.odd {
@@ -147,8 +138,8 @@
     color: #2f4f4f;;
   }
   .rush-steps.even {
-    background-color: #610301;
-    color: #fff;
+    background-color: #960018;
+    color: #eee;
   }
 }
 
@@ -165,8 +156,8 @@
     right: -12.2%;
     width: 32px;
     height: 32px;
-    border-right: 1px solid #610301;
-    border-bottom: 1px solid #610301;
+    border-right: 1px solid #960018;
+    border-bottom: 1px solid #960018;
     -moz-transform: rotate(-45deg) translateY(-50%);
     -webkit-transform: rotate(-45deg) translateY(-50%);
     transform: rotate(-45deg) translateY(-50%);
@@ -184,8 +175,8 @@
     left: 49.2%;
     width: 40px;
     height: 40px; 
-    border-left: 1px solid #610301;
-    border-bottom: 1px solid #610301;
+    border-left: 1px solid #960018;
+    border-bottom: 1px solid #960018;
     -moz-transform: rotate(-45deg) translateY(-50%);
     -webkit-transform: rotate(-45deg) translateY(-50%);
     transform: rotate(-45deg) translateX(-50%);
@@ -202,7 +193,7 @@
   background-color: #eee;
 }
 .step-triangle.even:after {
-  background-color: #610301;
+  background-color: #960018;
 }
 
 .table-row > [class*="col-"]:last-child .step-triangle {

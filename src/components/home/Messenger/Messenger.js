@@ -8,24 +8,15 @@ import {
   Row
 } from 'react-bootstrap';
 import {Element} from 'react-scroll';
-import {activeData, rosePosition} from './data';
+import activeData from './data';
 
 class Messenger extends Component {
   render() {
     return (
       <Element name="messenger" className="element messenger">
-        <h1 className="title">
+        <h1 className="title red">
           Ask a Brother!
         </h1>
-
-        {rosePosition.map((position, i) => (
-          <img 
-            className={`lozad rose ${position}`} 
-            data-src={require('./images/rose.webp')}
-            key={i} 
-            alt="Rose"
-          />
-        ))}
 
         <Grid>
           <Row className="messenger-row">

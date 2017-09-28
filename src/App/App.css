@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merienda+One');
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700i');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@font-face {
+  font-family: 'Helvetica Neue Condensed';
+  src: url('../fonts/helvetica-neue-condensed.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue Condensed';
+  src: url('../fonts/HelveticaNeue-CondensedBold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
 
 /* Not working after router change */
 .App {
@@ -52,12 +60,19 @@ body {
 }
 
 .title {
+  width: 55%;
   font-weight: 700;
-  font-size: 45px;
-  color: #610301;
-  margin: 0 10%;
-  margin-bottom: 30px;
+  font-size: 50px;
+  margin: auto;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 4px solid;
   text-transform: uppercase;
+}
+@media(max-width: 768px) {
+  .title {
+    width: 80%;
+  }
 }
 
 .header {
@@ -131,6 +146,9 @@ a:hover, a:focus {
 }
 
 /* Miscellaneous */
+.red {
+  color: #960018;
+}
 
 .light-grey {
   color: #aaa;
@@ -140,8 +158,8 @@ a:hover, a:focus {
   height: 50vh;
 }
 
-.maroon-bg {
-  background-color: #610301;
+.red-bg {
+  background-color: #960018;
 }
 
 .dark-bg {

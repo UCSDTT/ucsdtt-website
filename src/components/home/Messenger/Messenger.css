@@ -2,11 +2,6 @@
   position: relative;
   background-color: #fafafa;
 }
-@media(min-width: 992px) {
-  .element.messenger {
-    padding-bottom: 200px;
-  }
-}
 
 /* Messenger Row Margin */
 @media(min-width: 1200px) {
@@ -19,13 +14,13 @@
 .messenger-card {
   width: 22em;
   margin: 30px auto;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  box-shadow: 0 2px 16px rgba(12,42,51,.3);
   border: none;
 }
 
 /* Messenger Title */
 .messenger-card > .panel-heading {
-  background-color: #610301;
+  background-color: #960018;
   color: #fafafa;
   font-style: italic;
   font-size: 24px;
@@ -90,53 +85,4 @@
   height: 3.0rem; /* Set to your font-size */
   position: relative;
   background: url('./images/facebook-messenger.svg') no-repeat scroll center center/100%;
-}
-
-.rose {
-  position: absolute;
-  height: 250px;
-}
-@media(max-width: 1200px) {
-  .rose {
-    height: 200px;
-  }
-}
-@media(max-width: 992px) {
-  .rose {
-    height: 170px;
-  }
-}
-@media(max-width: 768px) {
-  .rose {
-    height: 130px;
-  }
-}
-
-.rose.top-left {
-  top: 0;
-  left: 0;
-  -moz-transform: scale(1, -1);
-  -o-transform: scale(1, -1);
-  -webkit-transform: scale(1, -1);
-  transform: scale(1, -1);
-}
-.rose.top-right {
-  top: 0;
-  right: 0;
-  -moz-transform: scale(-1, -1);
-  -o-transform: scale(-1, -1);
-  -webkit-transform: scale(-1, -1);
-  transform: scale(-1, -1);
-}
-.rose.bottom-left {
-  bottom: 0;
-  left: 0;
-}
-.rose.bottom-right {
-  bottom: 0;
-  right: 0;
-  -moz-transform: scale(-1, 1);
-  -o-transform: scale(-1, 1);
-  -webkit-transform: scale(-1, 1);
-  transform: scale(-1, 1);
 }

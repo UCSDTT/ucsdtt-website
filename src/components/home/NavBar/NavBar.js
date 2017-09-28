@@ -82,7 +82,7 @@ class NavBar extends Component {
             onClick={this.openMenu}/>
         </Navbar.Header>
         <Nav pullLeft className="hidden-sm hidden-xs">
-          <NavItem className="navbar-title" onClick={this.scrollToTop.bind(this)}>Theta Tau, UCSD</NavItem>
+          <NavItem className="navbar-title" onClick={this.scrollToTop.bind(this)}>Theta Tau UCSD</NavItem>
         </Nav>
         <Navbar.Collapse>
           <Nav pullRight>

@@ -14,7 +14,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <div className="footer maroon-bg">
+      <div className="footer red-bg">
         <Grid className="footer-padding">
           <Row className="show-grid">
             <Col xsOffset={2} xs={8} smOffset={0} sm={6} md={4} className="widget">

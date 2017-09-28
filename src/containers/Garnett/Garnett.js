@@ -112,7 +112,7 @@ export default class Garnett extends Component {
             </label>
           </div>
 
-          <div className="garnett-login">
+          <div className="garnett-button">
             Login
           </div>
         </form>
@@ -129,7 +129,7 @@ export default class Garnett extends Component {
                />
             </FormGroup>
           ))}
-          <div className="garnett-login">
+          <div className="garnett-button">
             Sign Up
           </div>
         </form>
