@@ -150,6 +150,13 @@
   color: #d5e1b9;
   text-transform: uppercase;
 }
+.rush-chairs a {
+  color: #fff;
+}
+.rush-chairs a:hover, 
+.rush-chairs a:focus {
+  color: #aaa;
+}
 
 .rush-media {
   width: 30%;

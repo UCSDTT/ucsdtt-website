@@ -40,8 +40,8 @@ class Rush extends Component {
             ))}
             <div className="rush-row">
               <div className="rush-chairs">
-                <p><span>Ming Ming Liu</span> mingmingliu9@gmail.com (650)690-6361</p>
-                <p><span>Momina Mahmood</span> mominam96@gmail.com (510)676-2260</p>
+                <p><span>Ming Ming Liu</span> <a href="mailto:mingmingliu9@gmail.com">mingmingliu9@gmail.com</a> (650)690-6361</p>
+                <p><span>Momina Mahmood</span> <a href="mailto:mominam96@gmail.com">mominam96@gmail.com</a> (510)676-2260</p>
               </div>
               <div className="rush-media">
                 <a href="https://www.facebook.com/thetatau.ucsd/" target="_blank" rel="noopener noreferrer">
