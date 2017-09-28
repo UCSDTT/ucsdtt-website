@@ -145,7 +145,7 @@ class Landing extends Component {
 
         <a 
           className="members-button" 
-          onClick={() => this.scrollToComp("about-us")}
+          onClick={() => this.scrollToComp("rush")}
         > 
           Learn More
         </a>

@@ -110,18 +110,18 @@ class NavBar extends Component {
               Home
             </NavItem>
             <NavItem 
+              onClick={() => this.scrollToComp("rush")}
+              onMouseOver={this.underline} 
+              onMouseOut={this.underline}
+            >
+              Rush
+            </NavItem>
+            <NavItem 
               onClick={() => this.scrollToComp("about-us")}
               onMouseOver={this.underline} 
               onMouseOut={this.underline}
             >
               About
-            </NavItem>
-            <NavItem 
-              onClick={() => this.scrollToComp("why-rush")}
-              onMouseOver={this.underline} 
-              onMouseOut={this.underline}
-            >
-              Rush
             </NavItem>
             <NavItem 
               onClick={() => this.scrollToComp("faq")}

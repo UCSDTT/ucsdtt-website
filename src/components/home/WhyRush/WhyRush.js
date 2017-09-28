@@ -8,22 +8,9 @@ import stepData from './data.js';
 class WhyRush extends Component {
   render() {
     return (
-      <Element name="why-rush" className="element rush">
-        <h1 className="title">What is Rush?</h1>
-        <h1 className="rush-tt">Fall Rush 2017</h1>
-        <h2 className="rush-slogan">Reinvent.</h2>
+      <Element name="why-rush" className="element why-rush">
+        <h1 className="title red">What is Rush?</h1>
         <h2 className="rush-process">The Process</h2>
-
-        <img 
-          className="lozad items1" 
-          data-src={require('./images/items1.webp')} 
-          alt="Items 1"
-        />
-        <img 
-          className="lozad items2" 
-          data-src={require('./images/items2.webp')} 
-          alt="Items 2"
-        />
 
         <Grid>
           <div className="table-row">

@@ -9,7 +9,8 @@ class AboutUs extends Component {
     window.onscroll = function() {
       let navbarHeight = document.querySelector('.navbar').clientHeight;
       let landingHeight = document.querySelector('.landing').clientHeight;
-      let rushHeight = document.querySelector('.element.rush').clientHeight;
+      let rushHeight = document.querySelector('.rush').clientHeight;
+      let whyRushHeight = document.querySelector('.why-rush').clientHeight;
       let aboutHeight = document.querySelector('.element.about').clientHeight;
       let gears = document.getElementsByClassName('gear');
       let gearsOpp = document.getElementsByClassName('gear-opp');
@@ -25,7 +26,7 @@ class AboutUs extends Component {
       }
       
       if (window.innerWidth >= 768) {
-        if (wScroll <= landingHeight + aboutHeight + rushHeight &&
+        if (wScroll <= landingHeight + aboutHeight + rushHeight + whyRushHeight &&
             wScroll >= landingHeight) {
           Array.from(gears).forEach( gear => {
             gear.style.transform = 'rotate(' + wScroll / 5 + 'deg)';

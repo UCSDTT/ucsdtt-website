@@ -75,7 +75,7 @@
   margin-top: 5px;
   height: 2px;
   width: 0;
-  background: #b22222;
+  background: #960018;
   transition: width .5s ease, background-color .5s ease;
 }
 .sign-options span.underline:after {
@@ -123,7 +123,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #b22222;
   color: #fff;
   height: 40px;
   width: 40%;
@@ -176,12 +175,12 @@
 }
 
 input[type="checkbox"]:not(:checked) + label span.checkbox:after {
-  opacity   : 0;
+  opacity: 0;
   transform : scale(0);
 }
 
 input[type="checkbox"]:checked + label span.checkbox:after {
-  color: #b22222;
-  opacity   : 1;
+  color: #960018;
+  opacity: 1;
   transform : scale(1);
 }

@@ -9,7 +9,6 @@
   font-size: 35px;
   color: #2f4f4f;
   margin-bottom: 40px;
-  text-transform: uppercase;
 }
 
 /*.about-quote-container {
@@ -240,9 +239,7 @@
   .scroll-crest {
     float: right;
     height: 300px;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 20px 20px 0;
   }
 
   .founders {

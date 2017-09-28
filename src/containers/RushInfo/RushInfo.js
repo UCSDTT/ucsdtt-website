@@ -1,7 +1,7 @@
-import './Rush.css';
+import './RushInfo.css';
 import React, {Component} from 'react';
 
-export default class MemberPage extends Component {
+export default class RushInfo extends Component {
   render() {
     return (
       <div>
