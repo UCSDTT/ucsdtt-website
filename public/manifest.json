@@ -2,7 +2,7 @@
   "short_name": "Garnett",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "garnett.png",
       "sizes": "192x192",
       "type": "image/png"
     }
