@@ -97,7 +97,7 @@
 /* Brothers List */
 .brother-container {
   min-height: 500px;
-  font-family: 'PT Sans Narrow';
+  font-family: 'Helvetica Neue Condensed';
 }
 @media(max-width: 768px) {
   .brother-container {
@@ -189,7 +189,7 @@
 }
 
 .modal-title {
-  font-family: 'PT Sans Narrow';
+  font-family: 'Helvetica Neue Condensed';
   text-align: center;
 }
 @media(min-width: 539px) {
@@ -235,7 +235,7 @@
 
 /* Modal Body */
 .modal-body {
-  font-family: 'PT Sans Narrow';
+  font-family: 'Helvetica Neue Condensed';
 }
 @media(min-width: 539px) {
   .modal-body {
