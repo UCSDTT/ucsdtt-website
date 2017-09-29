@@ -10,10 +10,10 @@ class Flipper extends React.Component {
     return <div className="messenger-card">
       <div className={"flipper" + (this.props.flipped ? " flipped" : "")}>
         <Front>
-          <ActiveInfo active={this.props.active} />
+          <ActiveInfo active={this.props.frontActive} />
         </Front>
         <Back>
-          <ActiveInfo active={this.props.active} />
+          <ActiveInfo active={this.props.backActive} />
         </Back>
       </div>
     </div>;
@@ -69,10 +69,29 @@ class Messenger extends Component {
   }
 
   componentDidMount() {
+    let actives = [
+      {
+      'front': {},
+      'back': {},
+      },
+      {
+      'front': {},
+      'back': {},
+      },
+      {
+      'front': {},
+      'back': {},
+      },
+    ];
     let list = this.shuffle(brothers);
+
+    actives.forEach((active, i) => {
+      active.front = list[i];
+    });
+
     this.setState({
-      actives: list
-    })
+      actives: actives
+    });
   }
 
   shuffle(list) {
@@ -81,9 +100,22 @@ class Messenger extends Component {
   }
 
   flip() {
+    let actives = this.state.actives;
     let list = this.shuffle(brothers);
+
+    if (this.state.flipped) {
+      actives.forEach((active, i) => {
+        active.front = list[i];
+      });
+    }
+    else {
+      actives.forEach((active, i) => {
+        active.back = list[i];
+      });
+    }
+
     this.setState({
-      actives: list,
+      actives: actives,
       flipped: !this.state.flipped,
     });
   }
@@ -99,7 +131,7 @@ class Messenger extends Component {
           <Row className="messenger-row">
             {this.state.actives.map((active, i) => (
               <Col md={4} key={i}>
-                <Flipper flipped={this.state.flipped} active={active} />
+                <Flipper flipped={this.state.flipped} frontActive={active.front} backActive={active.back} />
               </Col>
             ))}
           </Row>

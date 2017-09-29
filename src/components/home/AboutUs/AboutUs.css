@@ -278,13 +278,13 @@
 }
 
 .gears.top svg:first-child {
-  fill: #222;
+  fill: #ccc;
 }
 .gears.top svg.gear-opp {
-  fill: #444;
+  fill: #ccc;
 }
 .gears.top svg:last-child {
-  fill: #777;
+  fill: #ccc;
 }
 
 .gears.left svg {
@@ -296,13 +296,13 @@
 }
 
 .gears.bottom svg:first-child {
-  fill: #777;
+  fill: #ccc;
 }
 .gears.bottom svg.gear-opp {
-  fill: #444;
+  fill: #ccc;
 }
 .gears.bottom svg:last-child {
-  fill: #222;
+  fill: #ccc;
 }
 
 .gears.right svg {
