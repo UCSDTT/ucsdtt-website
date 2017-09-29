@@ -46,8 +46,8 @@ class ActiveInfo extends React.Component {
       </h3>
       <p className="messenger-body">
         {this.props.active.year}
-        <br/> {this.props.active.major}
-        <br/> {this.props.active.class}
+        <br/> {this.props.active.majorName}
+        <br/> {this.props.active.className}
       </p>
       <a className="messenger-button" href={this.props.active.messenger} target="_blank">
         <i className="icon-temp-messenger"></i>
