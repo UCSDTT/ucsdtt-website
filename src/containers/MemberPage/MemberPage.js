@@ -70,7 +70,7 @@ export default class MemberPage extends Component {
   renderFilteredList(option) {
     let brothers = this.state.updatedBrothers;
     let showList = false;
-    
+
     brothers.forEach((brother) => {
       if (brother[this.state.dropdownValue] === option.value) {
         showList = true;
@@ -80,7 +80,7 @@ export default class MemberPage extends Component {
     if (showList) {
       return (
         <Col xs={12} md={10}>
-          {brothers.map((brother, i) => {                                  
+          {brothers.map((brother, i) => {
             if (brother[this.state.dropdownValue] === option.value) {
               return (
                 <Col xs={6} sm={4} md={3} className="brother-info" key={i}>
@@ -95,7 +95,7 @@ export default class MemberPage extends Component {
             }
             else {
               return false;
-            }             
+            }
           })}
         </Col>
       )
@@ -143,11 +143,11 @@ export default class MemberPage extends Component {
       return (
         this.state.updatedBrothers.map((brother, i) => (
           <Col xs={6} sm={3} className="brother-info col-md-5th" key={i}>
-            <Image 
-              className="brother-image" 
-              src={brother.url} 
+            <Image
+              className="brother-image"
+              src={brother.url}
               onClick={() => this.open(brother)}
-              responsive 
+              responsive
               rounded
             />
             <h4> {brother.name.toUpperCase()} </h4>
