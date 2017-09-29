@@ -74,10 +74,21 @@
   width: 50%;
   margin: auto;
 }
+@media(max-width: 1400px) {
+  .messenger-actions {
+    width: 80%;
+  }
+}
+@media(max-width: 768px) {
+  .messenger-actions {
+    flex-wrap: wrap;
+  }
+}
 
 .messenger-actions a {
   display: block;
-  width: 40%;
+  width: 45%;
+  max-width: 320px;
   color: #fff;
   font-size: 22px;
   margin: auto;
@@ -95,6 +106,11 @@
 }
 .messenger-actions .members-link:hover {
   background-color: #333;
+}
+@media(max-width: 768px) {
+  .messenger-actions a {
+    width: 100%;
+  }
 }
 
 /* Flipper */
