@@ -128,8 +128,16 @@ class NavBar extends Component {
               onMouseOver={this.underline} 
               onMouseOut={this.underline}
             >
-              Questions?
+              FAQ
             </NavItem>
+            <NavItem 
+              onClick={() => this.scrollToComp("messenger")}
+              onMouseOver={this.underline} 
+              onMouseOut={this.underline}
+            >
+              Members
+            </NavItem>
+            {/*
             <li role="presentation">
               <a
                 href="/members"
@@ -139,6 +147,7 @@ class NavBar extends Component {
                 Members
               </a>
             </li>
+            */}
             <li role="presentation">
               <a
                 href="/garnett"

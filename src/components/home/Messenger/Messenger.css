@@ -68,20 +68,33 @@
   background: url('./images/facebook-messenger.svg') no-repeat scroll center center/100%;
 }
 
-.flip-button {
+.messenger-actions {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+}
+
+.messenger-actions a {
   display: block;
-  width: 20%;
+  width: 40%;
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   margin: auto;
   margin-top: 30px;
-  padding: 5px 0;
+  padding: 10px 0;
   border-radius: 4px;
   cursor: pointer;
   text-transform: uppercase;
 }
-.flip-button:hover {
+.messenger-actions a:hover {
   background-color: #610301;
+}
+.messenger-actions .members-link {
+  background-color: #222;
+}
+.messenger-actions .members-link:hover {
+  background-color: #333;
 }
 
 /* Flipper */

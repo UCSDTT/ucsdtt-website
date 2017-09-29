@@ -136,7 +136,10 @@ class Messenger extends Component {
             ))}
           </Row>
         </Grid>
-        <a className="flip-button red-bg" onClick={this.flip}>Shuffle</a>
+        <div className="messenger-actions">
+          <a className="red-bg" onClick={this.flip}>Shuffle Actives</a>
+          <a className="members-link" href="/members">Meet the Fraternity</a>
+        </div>
       </Element>
     )
   }
