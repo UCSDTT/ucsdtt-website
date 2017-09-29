@@ -7,7 +7,7 @@ import {brothers} from '../../../activeData/data.js';
 
 class Flipper extends React.Component {
   render() {
-    return <div className="messenger-card">
+    return <div className={`messenger-card-${this.props.index}`}>
       <div className={"flipper" + (this.props.flipped ? " flipped" : "")}>
         <Front>
           <ActiveInfo active={this.props.frontActive} />
@@ -131,7 +131,12 @@ class Messenger extends Component {
           <Row className="messenger-row">
             {this.state.actives.map((active, i) => (
               <Col md={4} key={i}>
-                <Flipper flipped={this.state.flipped} frontActive={active.front} backActive={active.back} />
+                <Flipper 
+                  flipped={this.state.flipped} 
+                  frontActive={active.front} 
+                  backActive={active.back} 
+                  index={i}
+                />
               </Col>
             ))}
           </Row>

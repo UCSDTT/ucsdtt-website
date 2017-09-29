@@ -11,7 +11,7 @@
 }
 
 /* Messenger Card */
-.messenger-card {
+[class^="messenger-card-"] {
   height: 29.5em;
   width: 21em;
   margin: 30px auto;
@@ -114,7 +114,7 @@
 }
 
 /* Flipper */
-.messenger-card .flipper {
+[class^="messenger-card-"] .flipper {
   float:left;
   width:100%;
   height:100%;
@@ -122,7 +122,7 @@
   transform-style: preserve-3d;
 }
 
-.messenger-card .front, .messenger-card .back {
+[class^="messenger-card-"] .front, [class^="messenger-card-"] .back {
   float:left;
   display:block;  
   width:100%;
@@ -132,8 +132,6 @@
   top:0;
   left:0;
   transform-style:preserve-3d;
-  transition:-webkit-transform ease 500ms;
-  transition:transform ease 500ms;
   background-color: #fff;
   padding: 15px;
   border: none;
@@ -143,17 +141,30 @@
   border-radius: 13px;
 }
           
-.messenger-card .front {
+[class^="messenger-card-"] .front {
   transform:rotateY(0deg);
 }
       
-.messenger-card .back {
+[class^="messenger-card-"] .back {
   transform:rotateY(-180deg); 
 }
         
-.messenger-card .flipper.flipped .front { 
+[class^="messenger-card-"] .flipper.flipped .front { 
   transform:rotateY(180deg); 
 }
-.messenger-card .flipper.flipped .back { 
+[class^="messenger-card-"] .flipper.flipped .back { 
   transform:rotateY(0deg); 
+}
+
+.messenger-card-0 .front, .messenger-card-0 .back {
+  transition:-webkit-transform ease 600ms;
+  transition:transform ease 600ms;
+}
+.messenger-card-1 .front, .messenger-card-1 .back {
+  transition:-webkit-transform ease 1000ms;
+  transition:transform ease 1000ms;
+}
+.messenger-card-2 .front, .messenger-card-2 .back {
+  transition:-webkit-transform ease 1300ms;
+  transition:transform ease 1300ms;
 }
