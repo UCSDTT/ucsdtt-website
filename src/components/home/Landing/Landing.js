@@ -50,7 +50,7 @@ class Landing extends Component {
     for (var i = 0; i < cw.length; i++) {
       this.animateLetterOut(cw, i);
     }
-    
+
     for (var j = 0; j < nw.length; j++) {
       nw[j].className = 'letter behind';
       nw[0].parentElement.style.opacity = 1;
@@ -59,7 +59,7 @@ class Landing extends Component {
 
     cq.style.opacity = 0;
     this.animateQuoteOut(cq)
-    
+
     nq.style.opacity = 1;
     this.animateQuoteIn(nq)
 
@@ -93,7 +93,7 @@ class Landing extends Component {
       word.appendChild(letter);
       letters.push(letter);
     }
-    
+
     this
       .state
       .wordArray
@@ -111,25 +111,25 @@ class Landing extends Component {
   render() {
     return (
       <div className="landing">
-        <Carousel 
+        <Carousel
           className="carousel-fade"
           interval={7000}
           onSelect={this.changeWord}>
           {slideData.map((slide, i) => (
             <Carousel.Item key={i}>
               <div className="landing-gradient">
-                <Image 
-                  className="landing-image" 
+                <Image
+                  className="landing-image"
                   src={slide.xsImage}
                   // eslint-disable-next-line
-                  srcSet={slide.smImage + ' 992w', slide.image + ' 1200w'} 
+                  srcSet={slide.smImage + ' 992w', slide.image + ' 1200w'}
                   responsive
                 />
               </div>
             </Carousel.Item>
           ))}
         </Carousel>
-        
+
         <div className="brothers-are">
           <h1 className="brothers-are-text">
             Brothers are
@@ -143,17 +143,17 @@ class Landing extends Component {
           </h1>
         </div>
 
-        <Button 
-          className="members-button" 
+        <Button
+          className="members-button"
           onClick={() => this.scrollToComp("about-us")}
-        > 
+        >
           Learn More
           <Glyphicon glyph="chevron-right" />
         </Button>
 
         {quoteData.map((quote, i) => (
-          <div 
-            className="quote" 
+          <div
+            className="quote"
             key={i}>
             <div className="quote-text-group">
               <span className="quote-quotes">❝</span>

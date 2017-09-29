@@ -3,7 +3,47 @@ import React, {Component} from 'react';
 import {Grid, Row, Col, Carousel, Image} from 'react-bootstrap';
 import {carouselData, images}  from './data.js';
 
-export default class MemberPage extends Component {
+export default class RushPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      rushQuote: [],
+      currentRushQuote: 0,
+    };
+  }
+
+  componentDidMount() {
+    let rushQuote = document.getElementsByClassName('quote-appear');
+
+    rushQuote[0].style.opacity = 1;
+
+    this.setState({
+      rushQuote: rushQuote,
+    })
+  }
+
+  changeQuote = (event) => {
+    var cq = this.state.rushQuote[this.state.currentRushQuote];
+    var nq = this.state.rushQuote[event];
+
+    cq.style.opacity = 0;
+    this.animateQuoteOut(cq)
+
+    nq.style.opacity = 1;
+    this.animateQuoteIn(nq)
+
+    this.setState({
+      currentRushQuote: event,
+    })
+  }
+
+  animateQuoteOut(cq) {
+    cq.className = 'quote-appear animated fadeOutDown';
+  }
+
+  animateQuoteIn(nq) {
+    nq.className = 'quote-appear animated fadeInDown';
+  }
 
   render() {
     return (
@@ -66,11 +106,11 @@ export default class MemberPage extends Component {
               <span className="rush-title"> Why Rush?</span>
               <span className="rush-subheader">  Rush is a week full of events to interact with the active body. Rush to meet cool people like me. text text text text text  text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</span>
             </div>
-            <Grid>
+            <Grid className="carousel-container">
 
-              <Row className="carousel">
-                <Col xs={12} md={8} >
-                  <Carousel interval={7000}>
+              <Row>
+                <Col md={12} lg={8}>
+                  <Carousel interval={7000} onSelect={this.changeQuote}>
                     {carouselData.map((slide) => (
                       <Carousel.Item key={slide.id}>
                         <Image width = {900} height ={500} src={slide.image} />
@@ -78,11 +118,12 @@ export default class MemberPage extends Component {
                     ))}
                   </Carousel>
                 </Col>
-                <Col xs={12} md={4}>
-                  {carouselData.map((slide) => (
-                    <div key={slide.id}>
-                      <span className='rush-quote' > {slide.quote} </span>
-                      <span className='rush-author' > --{slide.author} </span>
+                <Col md={12} lg={4}
+               className="quote-container">
+                  {carouselData.map((slide, i) => (
+                    <div key={i} className="quote-appear">
+                      <span className="rush-quote" > "{slide.quote}" </span>
+                      <span className="rush-author" > - {slide.author} </span>
                     </div>
                   ))}
                 </Col>

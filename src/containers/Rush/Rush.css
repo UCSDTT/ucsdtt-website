@@ -18,30 +18,36 @@
 }
 
 .rush-quote {
-  position: absolute;
+  position: relative;
   font-family: 'Open Sans', sans-serif;
-  color: #2f4f4f;
   font-size: 2em;
   display: block;
-  width: auto;
+  width: 100%;
   padding: 0px;
-  top: 10vh;
-  text-align: right;
+  text-align: left;
   font-weight: bold;
 }
 
 .rush-author{
-  position: absolute;
+  position: relative;
   font-family: 'Open Sans', sans-serif;
-  color: #2f4f4f;
   font-size: 2em;
   display: block;
-  width: auto;
+  width: 100%;
   padding: 0px;
-  top: 20vh;
-  left: 60%;
   text-align: right;
   font-weight: bold;
+}
+
+
+.quote-appear {
+  color: #2f4f4f;
+  position: absolute;
+  top: 10vh;
+  width: 500px;
+  height: auto;
+  opacity: 0;
+  z-index: 1;
 }
 
 .rush-icons {
@@ -66,6 +72,11 @@
   text-transform: uppercase;
   color: #610301;
   white-space: nowrap;
+}
+@media(max-width: 1500px) {
+  .rush-title {
+    font-size: 2.5em;
+  }
 }
 
 .rush-details {
@@ -110,9 +121,13 @@
   margin-bottom: 15vh;
 }
 
-.carousel {
-  margin: 0px;
-  padding: 0px;
+.carousel-container {
+  text-align: center;
+  width: 80%;
+}
+
+.quote-container {
+  text-align: center;
 }
 
 /* Brothers Header */
