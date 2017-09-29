@@ -42,7 +42,8 @@ body {
   --secondary-color: #444;
   --secondary-light: #555;
   --secondary-dark: #222;
-  --accent-color: #eee;
+  --accent-color: #ccc;
+  --accent-light: #eee;
 }
 
 @media(max-width: 410px) {

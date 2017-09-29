@@ -281,13 +281,13 @@
 }
 
 .gears.top svg:first-child {
-  fill: #ccc;
+  fill: var(--accent-color);
 }
 .gears.top svg.gear-opp {
-  fill: #ccc;
+  fill: var(--accent-color);
 }
 .gears.top svg:last-child {
-  fill: #ccc;
+  fill: var(--accent-color);
 }
 
 .gears.left svg {
@@ -299,13 +299,13 @@
 }
 
 .gears.bottom svg:first-child {
-  fill: #ccc;
+  fill: var(--accent-color);
 }
 .gears.bottom svg.gear-opp {
-  fill: #ccc;
+  fill: var(--accent-color);
 }
 .gears.bottom svg:last-child {
-  fill: #ccc;
+  fill: var(--accent-color);
 }
 
 .gears.right svg {

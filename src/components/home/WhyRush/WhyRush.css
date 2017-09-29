@@ -79,12 +79,12 @@
   }
 
   .table-row > [class*="col-"].odd {
-    background-color: var(--accent-color);
+    background-color: var(--accent-light);
     color: var(--secondary-color);
   }
   .table-row > [class*="col-"].even {
     background-color: var(--primary-color);
-    color: var(--accent-color);
+    color: var(--accent-light);
   }
 }
 
@@ -104,12 +104,12 @@
   }
 
   .rush-steps.odd {
-    background-color: var(--accent-color);
+    background-color: var(--accent-light);
     color: var(--secondary-color);
   }
   .rush-steps.even {
     background-color: var(--primary-color);
-    color: var(--accent-color);
+    color: var(--accent-light);
   }
 }
 
@@ -156,7 +156,7 @@
 }
 
 .step-triangle.odd:after {
-  background-color: var(--accent-color);
+  background-color: var(--accent-light);
 }
 .step-triangle.even:after {
   background-color: var(--primary-color);
