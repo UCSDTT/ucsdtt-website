@@ -1,9 +1,5 @@
 .element.faq {
-  background: #8d0000; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #8d0000, #ffb88c); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #8d0000, #ffb88c); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #8d0000, #ffb88c); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #8d0000, #ffb88c); /* Standard syntax */
+  background: url('./images/faq-background.svg');
 }
 
 .element.faq .title {
@@ -12,7 +8,7 @@
 
 /* FAQ Cards */
 .faq-card {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  /*box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;*/
   text-align: left;
   border: none;
 }
@@ -34,6 +30,7 @@
 
 /* FAQ Title */
 .faq-title {
+  font-weight: 700;
   font-size: 24px;
   color: #2f4f4f;
   margin-left: 20px;

@@ -1,6 +1,5 @@
 {
-  "short_name": "UCSD Theta Tau",
-  "name": "UCSD Theta Tau Website",
+  "short_name": "Garnett",
   "icons": [
     {
       "src": "favicon.ico",
@@ -11,5 +10,5 @@
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#ffffff",
-  "background_color": "#800000"
+  "background_color": "#2e2f33"
 }

@@ -3,7 +3,7 @@ import 'react-select/dist/react-select.css';
 import {Grid, Row, Col, Image, FormGroup, FormControl, Modal, ListGroup, ListGroupItem} from 'react-bootstrap';
 import Select from 'react-select';
 import React, {Component} from 'react';
-import {brothers, alumni, options, images} from './data.js'
+import {brothers, alumni, options, images} from '../../activeData/data.js'
 
 export default class MemberPage extends Component {
   constructor(props) {
@@ -37,6 +37,8 @@ export default class MemberPage extends Component {
   componentDidMount() {
     let image = document.getElementsByClassName('brothers-image');
 
+    document.querySelector('.search-bar').autofocus = true;
+    
     image[0].classList.add('selected');
 
     this.setState({
@@ -266,7 +268,7 @@ export default class MemberPage extends Component {
       <div>
         <div className="brothers-header">
           <a className="brothers-logo" role="button" href="/">
-            <Image className="logo" src={require('../../components/home/NavBar/images/logo.png')}/>
+            <Image className="logo" src={require('../../components/home/NavBar/images/logo.webp')}/>
           </a>
           OUR BROTHERS
         </div>

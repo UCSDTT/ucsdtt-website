@@ -1,5 +1,14 @@
-.rush-header {
-  margin-bottom: 50px;
+.element.why-rush {
+  background-color: #fafafa;
+}
+
+.rush-process {
+  color: #2f4f4f;
+  font-family: 'Helvetica Neue Condensed';
+  font-weight: 700;
+  font-size: 40px;
+  margin: 40px auto;
+  text-transform: uppercase;
 }
 
 .rush-step-icon {
@@ -7,76 +16,136 @@
   margin-bottom: 5px;
 }
 
+/* Step Info */
 .step-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
   display: block;
+  width: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: auto;
   margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.step-details {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+.step-description {
+  display: block;
   font-size: 15px;
   letter-spacing: 0.01em;
-  display: block;
+  margin: 0 15px;
 }
 
-.step-break {
-  width: 50%;
-  color: black;
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-}
-
+/* Rush Button */
 .rush-button {
-  background-color: white;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  background-color: #960018;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 15px 32px;
+  text-transform: uppercase;
   cursor: pointer;
-  border: 2px solid #b22222;
 }
 
 .rush-button:hover {
-  background-color: #b22222;
-  color: white;
+  background-color: #610301;
+  color: #fff;
 }
 
+/* Table Row */
 @media (min-width: 992px) {
   .table-row {
     display: table;
-    table-layout: fixed;
-    border-collapse: separate;
-    border-spacing: 20px;
   }
 
   .table-row > [class*="col-"] {
-    float: none;
     display: table-cell;
-    border:2px solid #b22222;
-    padding: 10px;
+    float: none;
+    padding: 10px 30px;
+  }
+
+  .table-row > [class*="col-"].odd {
+    background-color: #eee;
+    color: #2f4f4f;;
+  }
+  .table-row > [class*="col-"].even {
+    background-color: #960018;
+    color: #eee;
   }
 }
 
+/* Rush Steps */
 @media (max-width: 991px) {
   .rush-steps {
-    padding: 10px;
-    color: black;
-    border:2px solid #b22222;
-    margin-bottom: 20px;
- }
+    padding: 40px 20px;
+  }
+
+  .rush-steps.odd {
+    background-color: #eee;
+    color: #2f4f4f;;
+  }
+  .rush-steps.even {
+    background-color: #960018;
+    color: #eee;
+  }
+}
+
+/* Step Triangle Arrow */
+.step-triangle:after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+@media(min-width: 992px) {
+  .step-triangle:after {
+    top: 48%;
+    right: -12.2%;
+    width: 32px;
+    height: 32px;
+    border-right: 1px solid #960018;
+    border-bottom: 1px solid #960018;
+    -moz-transform: rotate(-45deg) translateY(-50%);
+    -webkit-transform: rotate(-45deg) translateY(-50%);
+    transform: rotate(-45deg) translateY(-50%);
+  }
+}
+@media(min-width: 1200px) {
+  .step-triangle:after {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media(max-width: 992px) {
+  .step-triangle:after {
+    bottom: -3%;
+    left: 49.2%;
+    width: 40px;
+    height: 40px; 
+    border-left: 1px solid #960018;
+    border-bottom: 1px solid #960018;
+    -moz-transform: rotate(-45deg) translateY(-50%);
+    -webkit-transform: rotate(-45deg) translateY(-50%);
+    transform: rotate(-45deg) translateX(-50%);
+  }
+}
+@media(max-width: 768px) {
+  .step-triangle:after {
+    bottom: -2.5%;
+    left: 48.5%;
+  }
+}
+
+.step-triangle.odd:after {
+  background-color: #eee;
+}
+.step-triangle.even:after {
+  background-color: #960018;
+}
+
+.table-row > [class*="col-"]:last-child .step-triangle {
+  display: none;
 }

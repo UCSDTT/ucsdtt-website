@@ -1,7 +1,7 @@
 import './Landing.css';
 
 import React, {Component} from 'react';
-import {Carousel, Image, Button, Glyphicon} from 'react-bootstrap';
+import {Carousel} from 'react-bootstrap';
 import {scroller} from 'react-scroll';
 import {slideData, quoteData}  from './data.js';
 
@@ -19,25 +19,25 @@ class Landing extends Component {
 
   scrollToComp(name) {
     scroller.scrollTo(name, {
-      offset: -20,
+      offset: 0,
       smooth: true,
     });
   }
 
   componentDidMount() {
     let words = document.getElementsByClassName('word');
-    let quotes = document.getElementsByClassName('quote');
+    // let quotes = document.getElementsByClassName('quote');
 
     words[this.state.currentWord].style.opacity = 1;
     for (var i = 0; i < words.length; i++) {
       this.splitLetters(words[i]);
     }
 
-    quotes[this.state.currentQuote].style.opacity = 1;
+    // quotes[this.state.currentQuote].style.opacity = 1;
 
     this.setState({
       words: words,
-      quotes: quotes,
+      // quotes: quotes,
     })
   }
 
@@ -57,11 +57,11 @@ class Landing extends Component {
       this.animateLetterIn(nw, j);
     }
 
-    cq.style.opacity = 0;
-    this.animateQuoteOut(cq)
+    // cq.style.opacity = 0;
+    // this.animateQuoteOut(cq)
 
-    nq.style.opacity = 1;
-    this.animateQuoteIn(nq)
+    // nq.style.opacity = 1;
+    // this.animateQuoteIn(nq)
 
 
     this.setState({
@@ -113,17 +113,18 @@ class Landing extends Component {
       <div className="landing">
         <Carousel
           className="carousel-fade"
-          interval={7000}
-          onSelect={this.changeWord}>
+          interval={5000}
+          onSelect={this.changeWord}
+          pauseOnHover={false}>
           {slideData.map((slide, i) => (
             <Carousel.Item key={i}>
               <div className="landing-gradient">
-                <Image
+                <img
                   className="landing-image"
                   src={slide.xsImage}
                   // eslint-disable-next-line
                   srcSet={slide.smImage + ' 992w', slide.image + ' 1200w'}
-                  responsive
+                  alt="Landing"
                 />
               </div>
             </Carousel.Item>
@@ -134,24 +135,23 @@ class Landing extends Component {
           <h1 className="brothers-are-text">
             Brothers are
           </h1>
-          <h1 className="brothers-are-word">
+          <h1 className="brothers-are-word red">
             {slideData.map((slide, i) => (
-              <span className={`word ${slide.color}`} key={i}>
+              <span className="word" key={i}>
                 {slide.name}
               </span>
             ))}
           </h1>
         </div>
 
-        <Button
+        <a
           className="members-button"
-          onClick={() => this.scrollToComp("about-us")}
+          onClick={() => this.scrollToComp("rush")}
         >
           Learn More
-          <Glyphicon glyph="chevron-right" />
-        </Button>
+        </a>
 
-        {quoteData.map((quote, i) => (
+        {/*{quoteData.map((quote, i) => (
           <div
             className="quote"
             key={i}>
@@ -168,7 +168,7 @@ class Landing extends Component {
               </div>
             </div>
           </div>
-        ))}
+        ))}*/}
       </div>
     );
   }

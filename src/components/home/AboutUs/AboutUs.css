@@ -5,11 +5,48 @@
 }
 
 .about-section-title {
+  font-family: 'Helvetica Neue Condensed';
+  font-weight: 700;
   font-size: 40px;
   color: #2f4f4f;
-  margin-bottom: 30px;
-  text-transform: uppercase;
+  margin-bottom: 40px;
 }
+
+/*.about-quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-quote-body {
+  font-family: 'Merienda One';
+  font-style: italic;
+  margin: 0 20px;
+}
+@media(max-width: 768px) {
+  .about-quote-body {
+    margin: 0 10px;
+  }
+}
+
+.about-quotes {
+  font-size: 50px;
+}
+@media(max-width: 768px) {
+  .about-quotes {
+    font-size: 30px;
+    margin: 0;
+  }
+  .about-quotes:first-child {
+    margin-top: -20%;
+    margin-left: 15px;
+  }
+  .about-quotes:last-child {
+    margin-bottom: -25%;
+    margin-right: 15px;
+  }
+}*/
 
 .about-description {
   font-size: 30px;
@@ -17,7 +54,8 @@
 }
 @media(min-width: 992px) {
   .about-description {
-    height: 750px;
+    position: relative;
+    height: 720px;
   }
 }
 @media(max-width: 992px) {
@@ -77,14 +115,17 @@
   opacity: 1;
 }
 
+.pillar-info h3 {
+  font-weight: 700;
+}
+
 .pillar-info h4 {
   line-height: 1.5;
 }
 
 .pillar-name {
   font-weight: 700;
-  font-size: 40px;
-  color: #610301;
+  font-size: 35px;
 }
 
 .pillar-content {
@@ -110,14 +151,14 @@
   }
 
   #container {
-    font-family: 'Merienda One';
-    width: 700px;
+    font-family: 'Berkshire Swash';
+    width: 750px;
     height: 525px;
-    top: 30%;
+    top: 45px;
     left: 50%;
     -webkit-perspective: 5000px;
     perspective: 5000px;
-    transform: translate(-50%, -50%) rotateY(20deg);
+    transform: translateX(-50%) rotateY(20deg);
   }
 
   #container p {
@@ -148,9 +189,12 @@
     overflow-y: scroll;
     height: 100%;
   }
+  #content::-webkit-scrollbar {
+    display: none;
+  }
 
   #content, .panel-content {
-    background: url('./images/scroll.jpg');
+    background: url('./images/scroll.webp');
   }
 
   .panel-content {
@@ -169,7 +213,6 @@
   #lorem {
     font-size: 7em;
     float: left;
-    color: #b22222;
     line-height: 1;
     margin-right: 20px;
   }
@@ -192,14 +235,20 @@
 
   .founder {
     font-style: italic;
-    color: #b22222;
   }
 
   .scroll-crest {
+    float: right;
     height: 300px;
-    margin-bottom: 30px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin: 20px 20px 0;
+  }
+
+  .founders {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 180px;
+    margin-left: 10%;
+    filter: grayscale(80%);
   }
 }
 
@@ -217,32 +266,53 @@
 
 .gears.top {
   top: -2%;
+}
+.gears.left {
   left: -7%;
 }
-
-.gears.top svg {
-  float: left;
-}
-.gears.top svg:nth-child(2) {
-  margin-left: 24%;
-  margin-top: -26%;
-}
-.gears.top svg:nth-child(3) {
-  margin-top: -26%;
-}
-
 .gears.bottom {
   bottom: -3%;
+}
+.gears.right {
   right: -7%;
 }
 
-.gears.bottom svg {
+.gears.top svg:first-child {
+  fill: #ccc;
+}
+.gears.top svg.gear-opp {
+  fill: #ccc;
+}
+.gears.top svg:last-child {
+  fill: #ccc;
+}
+
+.gears.left svg {
+  float: left;
+}
+.gears.left svg:nth-child(2) {
+  margin-left: 24%;
+  margin-top: -26%;
+}
+
+.gears.bottom svg:first-child {
+  fill: #ccc;
+}
+.gears.bottom svg.gear-opp {
+  fill: #ccc;
+}
+.gears.bottom svg:last-child {
+  fill: #ccc;
+}
+
+.gears.right svg {
   float: right;
 }
-.gears.bottom svg:nth-child(2) {
+.gears.right svg:nth-child(2) {
   margin-right: 24%;
   margin-top: -26%;
 }
-.gears.bottom svg:nth-child(3) {
+
+.gears svg:nth-child(3) {
   margin-top: -26%;
 }

@@ -1,7 +1,7 @@
 .navbar {
   background: transparent;
-  font-family: 'PT Sans Narrow';
-  border-bottom: 2px solid #fff;
+  font-family: 'Helvetica Neue';
+  border: none;
   text-shadow: 2px 2px 2px #000;
   transition: background 0.5s ease;
 }
@@ -12,7 +12,6 @@
 
 .navbar-fixed-top {
   height: 80px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .navbar-nav {
@@ -41,12 +40,9 @@
   color: #fff;
 }*/
 
-.navbar-right > li > a {
-  font-size: 25px;
-}
-
 @media(min-width: 768px) {
   .navbar-collapse > .navbar-right {
+    font-size: 25px;
     margin: auto;
   }
 
@@ -57,8 +53,8 @@
     margin-top: 5px;
     height: 2px;
     width: 0;
-    background: #b22222;
-    transition: width .5s ease,background-color .5s ease;
+    background: #960018;
+    transition: width .5s ease, background-color .5s ease;
   }
   /*.navbar-collapse > .navbar-right > li:last-child > a:after {
     background: #fff;
@@ -254,3 +250,14 @@
     margin: auto;
   }
 }*/
+
+/* Garnett Logo */
+.logo.gem {
+  margin-top: -15px;
+}
+@media(max-width: 768px) {
+  .logo.gem {
+    height: 75px;
+    width: 75px;
+  }
+}

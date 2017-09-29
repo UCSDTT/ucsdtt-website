@@ -1,7 +1,7 @@
 import './Companies.css';
 
 import React, {Component} from 'react';
-import {Row, Image} from 'react-bootstrap';
+import {Row} from 'react-bootstrap';
 import {Element} from 'react-scroll';
 import {bigCompanies, smallCompanies} from './data.js';
 
@@ -9,7 +9,7 @@ class Companies extends Component {
   render() {
     return (
       <Element name="companies" className="element companies">
-        <h1 className="title companies">Our Alumni Network </h1>
+        <h1 className="title red">Our Alumni Network </h1>
 
         <div className="companies-container">
           <Row className="companies-row">
@@ -19,7 +19,12 @@ class Companies extends Component {
                 key={i}
               >
                 <a href={company.href}>
-                  <Image className="company-logo" src={company.image} href={company}/> 
+                  <img 
+                    className="lozad company-logo" 
+                    data-src={company.image} 
+                    href={company} 
+                    alt="Big Company"
+                  /> 
                 </a>
               </div>
             ))}
@@ -31,7 +36,11 @@ class Companies extends Component {
                 key={i}
               >
                 <a href={company.href}>
-                  <Image className="company-logo" src={company.image}/>
+                  <img 
+                    className="lozad company-logo" 
+                    data-src={company.image} 
+                    alt="Small Company"
+                  />
                 </a>
               </div>
             ))}

@@ -1,4 +1,5 @@
 .element.messenger {
+  position: relative;
   background-color: #fafafa;
 }
 
@@ -11,26 +12,24 @@
 
 /* Messenger Card */
 .messenger-card {
-  width: 22em;
+  height: 29.5em;
+  width: 21em;
   margin: 30px auto;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
-  border: none;
-}
-
-/* Messenger Title */
-.messenger-card > .panel-heading {
-  background-color: #610301;
-  color: #fafafa;
-  font-style: italic;
-  font-size: 24px;
 }
 
 /* Messenger Image */
 .messenger-image {
   object-fit: cover;
   object-position: 50% 35%;
-  height: 150px;
-  width: 150px;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+}
+
+/* Messenger Nam */
+.messenger-name {
+  font-weight: 700;
+  color: #2f4f4f;
 }
 
 /* Messenger Body */
@@ -39,36 +38,27 @@
   color: #587272;
 }
 
-/* Messenger Actions */
-.messenger-actions {
-  display: flex;
-  justify-content: space-around;
-  margin: 10px 40px;
-  margin-top: 20px;
-}
-
 /* Messenger Button */
 .messenger-button {
-  height: 55px;
-  width: 55px;
-  background-color: black;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: #960018;
+  color: #fff;
+  font-size: 18px;
+  margin: auto;
+  padding: 5px 0;
+  border-radius: 4px;
   cursor: pointer;
 }
 .messenger-button:hover {
-  opacity: 0.7;
+  background-color: #610301;
 }
 
-.messenger-button > i.icon-mail-alt {
-  margin-top: 13px;
-}
-.messenger-button > i.icon-mail-alt:before {
-  font-size: 1.8em;
-  color: white;
-}
-
+/* Messenger Icon */
 .messenger-button > i.icon-temp-messenger {
-  margin-top: 11.5px;
+  margin-top: 4px;
 }
 .messenger-button > i.icon-temp-messenger:before {
   content: "";
@@ -76,4 +66,94 @@
   height: 3.0rem; /* Set to your font-size */
   position: relative;
   background: url('./images/facebook-messenger.svg') no-repeat scroll center center/100%;
+}
+
+.messenger-actions {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+}
+@media(max-width: 1400px) {
+  .messenger-actions {
+    width: 80%;
+  }
+}
+@media(max-width: 768px) {
+  .messenger-actions {
+    flex-wrap: wrap;
+  }
+}
+
+.messenger-actions a {
+  display: block;
+  width: 45%;
+  max-width: 320px;
+  color: #fff;
+  font-size: 22px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.messenger-actions a:hover {
+  background-color: #610301;
+}
+.messenger-actions .members-link {
+  background-color: #222;
+}
+.messenger-actions .members-link:hover {
+  background-color: #333;
+}
+@media(max-width: 768px) {
+  .messenger-actions a {
+    width: 100%;
+  }
+}
+
+/* Flipper */
+.messenger-card .flipper {
+  float:left;
+  width:100%;
+  height:100%;
+  position:relative;
+  transform-style: preserve-3d;
+}
+
+.messenger-card .front, .messenger-card .back {
+  float:left;
+  display:block;  
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  position:absolute;
+  top:0;
+  left:0;
+  transform-style:preserve-3d;
+  transition:-webkit-transform ease 500ms;
+  transition:transform ease 500ms;
+  background-color: #fff;
+  padding: 15px;
+  border: none;
+  border-top: 4px solid;
+  border-bottom: 8px solid;
+  border-color: #222;
+  border-radius: 13px;
+}
+          
+.messenger-card .front {
+  transform:rotateY(0deg);
+}
+      
+.messenger-card .back {
+  transform:rotateY(-180deg); 
+}
+        
+.messenger-card .flipper.flipped .front { 
+  transform:rotateY(180deg); 
+}
+.messenger-card .flipper.flipped .back { 
+  transform:rotateY(0deg); 
 }

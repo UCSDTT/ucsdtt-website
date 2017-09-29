@@ -7,9 +7,10 @@
 
 .landing-image {
   object-fit: cover;
+  max-width: 100%;
 }
 @media(max-width: 992px) {
-  .landing-image.img-responsive {
+  .landing-image {
     height: 550px;
   }
 }
@@ -24,12 +25,12 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: -moz-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.35) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.35)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 100%); /* W3C */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.6)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
@@ -37,13 +38,9 @@
 .word {
   position: absolute;
   display: flex;
+  margin-left: 50%;
+  transform: translateX(-50%);
   opacity: 0;
-}
-@media(max-width: 768px) {
-  .word {
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
 .letter {
@@ -66,76 +63,69 @@
   transition: transform 0.19s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.blue {
-  color: #2980b9;
-}
-
-.red {
-  color: #c0392b;
-}
-
-.green {
-  color: #16a085;
-}
-
 /* Brothers Are */
 .brothers-are {
   position: absolute;
-  display: flex;
-  font-size: 60px;
+  display: block;
   top: 100px;
-  left: 10%;
+  left: 0;
+  right: 0;
   color: #fff;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px #000;
   z-index: 10;
 }
+
+.brothers-are-text {
+  font-family: 'Helvetica Neue Condensed';
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: -10px;
+}
 @media(max-width: 1400px) {
-  .brothers-are {
+  .brothers-are-text {
     font-size: 50px;
   }
 }
 @media(max-width: 768px) {
-  .brothers-are {
-    display: block;
+  .brothers-are-text {
     font-size: 37px;
-    left: 0;
-    right: 0;
   }
 }
 
-.brothers-are-text {
-  font-family: 'PT Sans Narrow';
-  font-size: inherit;
-}
-
 .brothers-are-word {
-  font-family: 'Raleway';
-  font-size: inherit;
-  line-height: 1;
-  margin-left: 0.25em;
+  font-family: 'Helvetica Neue Condensed';
+  font-weight: 700;
+  font-size: 80px;
+}
+@media(max-width: 1400px) {
+  .brothers-are-word {
+    font-size: 70px;
+  }
 }
 @media(max-width: 768px) {
   .brothers-are-word {
-    margin-left: 0;
+    font-size: 47px;
   }
 }
 
 /* Members Button */
 .members-button {
   position: absolute;
-  top: 230px;
-  left: 20%;
+  top: 320px;
+  left: 50%;
   background-color: #777;
   color: #fff;
   border: none;
   border-radius: 0;
   font-size: 20px;
   font-weight: 900;
-  padding: 10px 10px;
+  padding: 10px 20px;
   opacity: 0.8;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.63) 0px 3px 10px;
+  transform: translateX(-50%);
   text-transform: uppercase;
+  cursor: pointer;
   z-index: 1;
 }
 .members-button:hover {
@@ -144,7 +134,7 @@
 }
 @media(max-width: 1400px) {
   .members-button {
-    top: 210px;
+    top: 290px;
   }
 }
 @media(max-width: 768px) {
@@ -331,3 +321,8 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
   background: #fff;
   margin: 0 3px;
   }
+
+.landing .carousel-control.left,
+.landing .carousel-control.right {
+  display: none;
+}

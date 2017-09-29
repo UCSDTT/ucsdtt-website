@@ -31,14 +31,12 @@ class NavBar extends Component {
       .querySelector('.navbar-collapse .navbar-nav')
       .classList
       .toggle('open');
-
-    if (window.innerWidth <= 768) {
-      if (document.body.style.overflow === 'hidden') {
-        document.body.style.overflow = 'visible';
-      }
-      else {
-        document.body.style.overflow = 'hidden';
-      }
+      
+    if (document.body.style.overflow === 'hidden') {
+      document.body.style.overflow = 'visible';
+    }
+    else {
+      document.body.style.overflow = 'hidden';
     }
   }
 
@@ -46,7 +44,10 @@ class NavBar extends Component {
     scroll.scrollToTop({
       duration: 1000,
     });
-    this.openMenu();
+
+    if (window.innerWidth <= 768) {
+      this.openMenu();
+    }
   }
 
   scrollToComp(name) {
@@ -55,7 +56,10 @@ class NavBar extends Component {
       offset: 0,
       smooth: true,
     });
-    this.openMenu();
+
+    if (window.innerWidth <= 768) {
+      this.openMenu();
+    }
   }
 
   render() {
@@ -64,7 +68,7 @@ class NavBar extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <a role="button" id="nav-logo" href="/">
-              <Image className="logo" src={require('./images/logo.png')}/>
+              <Image className="logo" src={require('./images/logo.webp')} />
             </a>
           </Navbar.Brand>
           <Navbar.Toggle
@@ -78,7 +82,7 @@ class NavBar extends Component {
             onClick={this.openMenu}/>
         </Navbar.Header>
         <Nav pullLeft className="hidden-sm hidden-xs">
-          <NavItem className="navbar-title" onClick={this.scrollToTop}>Theta Tau, UCSD</NavItem>
+          <NavItem className="navbar-title" onClick={this.scrollToTop.bind(this)}>Theta Tau UCSD</NavItem>
         </Nav>
         <Navbar.Collapse>
           <Nav pullRight>
@@ -106,6 +110,13 @@ class NavBar extends Component {
               Home
             </NavItem>
             <NavItem 
+              onClick={() => this.scrollToComp("rush")}
+              onMouseOver={this.underline} 
+              onMouseOut={this.underline}
+            >
+              Rush
+            </NavItem>
+            <NavItem 
               onClick={() => this.scrollToComp("about-us")}
               onMouseOver={this.underline} 
               onMouseOut={this.underline}
@@ -113,27 +124,35 @@ class NavBar extends Component {
               About
             </NavItem>
             <NavItem 
-              onClick={() => this.scrollToComp("why-rush")}
-              onMouseOver={this.underline} 
-              onMouseOut={this.underline}
-            >
-              Rush
-            </NavItem>
-            <NavItem 
               onClick={() => this.scrollToComp("faq")}
               onMouseOver={this.underline} 
               onMouseOut={this.underline}
             >
-              Questions?
+              FAQ
             </NavItem>
+            <NavItem 
+              onClick={() => this.scrollToComp("messenger")}
+              onMouseOver={this.underline} 
+              onMouseOut={this.underline}
+            >
+              Members
+            </NavItem>
+            {/*
             <li role="presentation">
               <a
-                style={{color: '#b22222'}} 
                 href="/members"
                 onMouseOver={this.underline}
                 onMouseOut={this.underline}
               >
                 Members
+              </a>
+            </li>
+            */}
+            <li role="presentation">
+              <a
+                href="/garnett"
+              >
+                <Image className="logo gem" src={require('./images/garnett.svg')} />
               </a>
             </li>
           </Nav>
