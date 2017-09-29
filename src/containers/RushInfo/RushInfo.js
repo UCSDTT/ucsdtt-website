@@ -45,10 +45,6 @@ export default class RushPage extends Component {
     nq.className = 'quote-appear animated fadeInDown';
   }
 
-<<<<<<< HEAD:src/containers/Rush/Rush.js
-=======
-export default class RushInfo extends Component {
->>>>>>> master:src/containers/RushInfo/RushInfo.js
   render() {
     return (
       <div>

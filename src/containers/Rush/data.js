@@ -25,11 +25,4 @@ const carouselData = [
   }
 ];
 
-const images = [
-  {
-    'name': 'active',
-    'url': require('./images/rushflyer.jpg'),
-  },
-];
-
-export {carouselData, images};
+export {carouselData};
