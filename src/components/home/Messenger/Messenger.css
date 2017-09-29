@@ -44,15 +44,16 @@
   justify-content: center;
   align-items: center;
   width: 60%;
-  background-color: #0084ff;
+  background-color: #222;
   color: #fff;
   font-size: 18px;
   margin: auto;
   padding: 5px 0;
   border-radius: 4px;
+  cursor: pointer;
 }
 .messenger-button:hover {
-  background-color: #005cb3;
+  background-color: #333;
 }
 
 /* Messenger Icon */

@@ -9,7 +9,12 @@ class Rush extends Component {
     return (
       <Element name="rush" className="rush">
         <div className="rush-pic-container">
-          <img className="lozad rush-pic" data-src={require('./images/rush-pic.webp')}></img>
+          <img 
+            className="lozad rush-pic" 
+            data-src={require('./images/rush-pic.webp')}
+            alt="Rush"
+          >
+          </img>
         </div>
 
         <div className="rush-details-container">

@@ -26,7 +26,7 @@ const brothers = [
     'year': 'Class of 2019',
   },
   {
-    'image': require('./images/brothers/bchan.webp'),
+    'image': require('./images/brothers/jeffrey.webp'),
     'name': 'Jeffrey Lee',
     'url': require('./images/brothers/jeffrey.webp'),
     'position': 'Chair',
