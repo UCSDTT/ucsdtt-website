@@ -8,7 +8,7 @@
   font-family: 'Helvetica Neue Condensed';
   font-weight: 700;
   font-size: 40px;
-  color: #2f4f4f;
+  color: var(--secondary-color);
   margin-bottom: 40px;
 }
 
@@ -126,11 +126,12 @@
 .pillar-name {
   font-weight: 700;
   font-size: 35px;
+  color: var(--primary-color);
 }
 
 .pillar-content {
   font-size: 18px;
-  color: #555;
+  color: var(--secondary-light);
 }
 
 /* Scroll */
@@ -212,6 +213,7 @@
 
   #lorem {
     font-size: 7em;
+    color: var(--primary-color);
     float: left;
     line-height: 1;
     margin-right: 20px;
@@ -235,6 +237,7 @@
 
   .founder {
     font-style: italic;
+    color: var(--primary-color);
   }
 
   .scroll-crest {

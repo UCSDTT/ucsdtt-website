@@ -9,7 +9,7 @@ class Companies extends Component {
   render() {
     return (
       <Element name="companies" className="element companies">
-        <h1 className="title red">Our Alumni Network </h1>
+        <h1 className="title">Our Alumni Network </h1>
 
         <div className="companies-container">
           <Row className="companies-row">

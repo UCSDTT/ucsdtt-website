@@ -123,7 +123,7 @@ class Messenger extends Component {
   render() {
     return (
       <Element name="messenger" className="element messenger">
-        <h1 className="title red">
+        <h1 className="title">
           Get to know us!
         </h1>
 
@@ -142,7 +142,7 @@ class Messenger extends Component {
           </Row>
         </Grid>
         <div className="messenger-actions">
-          <a className="red-bg" onClick={this.flip}>Shuffle Actives</a>
+          <a onClick={this.flip}>Shuffle Actives</a>
           <a className="members-link" href="/members">Meet the Fraternity</a>
         </div>
       </Element>

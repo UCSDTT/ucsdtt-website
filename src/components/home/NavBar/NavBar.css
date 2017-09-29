@@ -53,7 +53,7 @@
     margin-top: 5px;
     height: 2px;
     width: 0;
-    background: #960018;
+    background-color: var(--primary-color);
     transition: width .5s ease, background-color .5s ease;
   }
   /*.navbar-collapse > .navbar-right > li:last-child > a:after {
@@ -67,7 +67,7 @@
 /* Mobile Nav */
 @media(max-width: 768px) {
   .navbar-fixed-top.open {
-    background-color: #000 !important;
+    background-color: var(--secondary-dark) !important;
   }
 
   #nav-logo {
@@ -171,7 +171,7 @@
 
   .navbar-collapse .navbar-nav {
     position: fixed;
-    background-color: #000;
+    background-color: var(--secondary-dark);
     color: #fff;
     font-size: 42px;
     top: 0;

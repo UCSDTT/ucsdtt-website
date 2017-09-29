@@ -32,7 +32,7 @@
 .faq-title {
   font-weight: 700;
   font-size: 24px;
-  color: #2f4f4f;
+  color: var(--secondary-color);
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -40,7 +40,7 @@
 /* FAQ Body */
 .faq-body {
   font-size: 18px;
-  color: #587272;
+  color: var(--secondary-light);
   margin-left: 20px;
   margin-right: 20px;
 }

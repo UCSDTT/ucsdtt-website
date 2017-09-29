@@ -3,7 +3,7 @@
 }
 
 .rush-process {
-  color: #2f4f4f;
+  color: var(--secondary-color);
   font-family: 'Helvetica Neue Condensed';
   font-weight: 700;
   font-size: 40px;
@@ -41,7 +41,7 @@
 /* Rush Button */
 .rush-button {
   display: inline-block;
-  background-color: #960018;
+  background-color: var(--primary-color);
   color: #fff;
   font-size: 20px;
   margin-top: 50px;
@@ -51,7 +51,7 @@
 }
 
 .rush-button:hover {
-  background-color: #610301;
+  background-color: var(--primary-dark);
   color: #fff;
 }
 
@@ -59,6 +59,9 @@
 @media (min-width: 992px) {
   .table-row {
     display: table;
+    border-top: 4px solid;
+    border-bottom: 8px solid;
+    border-radius: 13px;
   }
 
   .table-row > [class*="col-"] {
@@ -66,30 +69,47 @@
     float: none;
     padding: 10px 30px;
   }
+  .table-row > [class*="col-"]:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 6px;
+  }
+  .table-row > [class*="col-"]:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 6px;
+  }
 
   .table-row > [class*="col-"].odd {
-    background-color: #eee;
-    color: #2f4f4f;;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
   }
   .table-row > [class*="col-"].even {
-    background-color: #960018;
-    color: #eee;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
   }
 }
 
 /* Rush Steps */
 @media (max-width: 991px) {
+  .table-row > [class*="col-"]:first-child .rush-steps {
+    border-top: 4px solid var(--secondary-color);
+    border-radius: 13px 13px 0 0;
+  }
+  .table-row > [class*="col-"]:last-child .rush-steps {
+    border-bottom: 8px solid var(--secondary-color);
+    border-radius: 0 0 13px 13px;
+  }
+
   .rush-steps {
     padding: 40px 20px;
   }
 
   .rush-steps.odd {
-    background-color: #eee;
-    color: #2f4f4f;;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
   }
   .rush-steps.even {
-    background-color: #960018;
-    color: #eee;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
   }
 }
 
@@ -103,11 +123,9 @@
 @media(min-width: 992px) {
   .step-triangle:after {
     top: 48%;
-    right: -12.2%;
+    right: -11.5%;
     width: 32px;
     height: 32px;
-    border-right: 1px solid #960018;
-    border-bottom: 1px solid #960018;
     -moz-transform: rotate(-45deg) translateY(-50%);
     -webkit-transform: rotate(-45deg) translateY(-50%);
     transform: rotate(-45deg) translateY(-50%);
@@ -124,9 +142,7 @@
     bottom: -3%;
     left: 49.2%;
     width: 40px;
-    height: 40px; 
-    border-left: 1px solid #960018;
-    border-bottom: 1px solid #960018;
+    height: 40px;
     -moz-transform: rotate(-45deg) translateY(-50%);
     -webkit-transform: rotate(-45deg) translateY(-50%);
     transform: rotate(-45deg) translateX(-50%);
@@ -134,16 +150,16 @@
 }
 @media(max-width: 768px) {
   .step-triangle:after {
-    bottom: -2.5%;
+    bottom: -2%;
     left: 48.5%;
   }
 }
 
 .step-triangle.odd:after {
-  background-color: #eee;
+  background-color: var(--accent-color);
 }
 .step-triangle.even:after {
-  background-color: #960018;
+  background-color: var(--primary-color);
 }
 
 .table-row > [class*="col-"]:last-child .step-triangle {

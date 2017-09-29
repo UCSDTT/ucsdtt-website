@@ -37,6 +37,12 @@
 body {
   margin: 0;
   padding: 0;
+  --primary-color: #960018;
+  --primary-dark: #610301;
+  --secondary-color: #444;
+  --secondary-light: #555;
+  --secondary-dark: #222;
+  --accent-color: #eee;
 }
 
 @media(max-width: 410px) {
@@ -63,6 +69,7 @@ body {
   width: 55%;
   font-weight: 700;
   font-size: 50px;
+  color: var(--primary-color);
   margin: auto;
   margin-bottom: 0.5em;
   padding-bottom: 0.5em;

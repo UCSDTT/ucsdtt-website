@@ -17,7 +17,7 @@ class AboutUs extends Component {
       let wScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
       if (wScroll >= navbarHeight) {
-        document.querySelector('.navbar').style.background = '#222';
+        document.querySelector('.navbar').style.background = 'var(--secondary-dark)';
         document.querySelector('.navbar').style.boxShadow = '0 2px 16px rgba(12,42,51,.3)';
       }
       else {
@@ -207,7 +207,7 @@ class AboutUs extends Component {
           </div>
         ))}
 
-        <h1 className="title red"> About Us </h1>
+        <h1 className="title"> About Us </h1>
 
         <Grid>
           <Row>
@@ -219,26 +219,26 @@ class AboutUs extends Component {
                   <h1 className="scroll-title small">of</h1> 
                   <h1 className="scroll-title big">Epsilon Delta Chapter</h1>
                   <p>
-                    <span className="red" id="lorem">I</span>n the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity arose for them to change that.
+                    <span id="lorem">I</span>n the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity arose for them to change that.
                   </p>
                   <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     With the help of a Theta Tau alumnus, 
-                    <span className="founder red"> Jennifer Young</span>, thirteen founding fathers <img className="lozad scroll-crest" data-src={require('./images/crest.webp')} alt="Crest" />
+                    <span className="founder"> Jennifer Young</span>, thirteen founding fathers <img className="lozad scroll-crest" data-src={require('./images/crest.webp')} alt="Crest" />
                     took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: 
-                    <span className="founder red"> Ashay Verma</span>, 
-                    <span className="founder red"> Errynne Bell</span>, 
-                    <span className="founder red"> Takahiro Kuwayama</span>, 
-                    <span className="founder red"> Amelia Chu</span>, 
-                    <span className="founder red"> Xiumei Wu</span>, 
-                    <span className="founder red"> Chris Lam</span>, 
-                    <span className="founder red"> Chuong Do</span>, 
-                    <span className="founder red"> Joe Shao</span>, 
-                    <span className="founder red"> Michelle Mojica</span>, 
-                    <span className="founder red"> Tanakorn Best Techajongchareon</span>, 
-                    <span className="founder red"> Scott Louie</span>, 
-                    <span className="founder red"> Alan Leung</span>, and 
-                    <span className="founder red"> John Phu Nguyen</span>.
+                    <span className="founder"> Ashay Verma</span>, 
+                    <span className="founder"> Errynne Bell</span>, 
+                    <span className="founder"> Takahiro Kuwayama</span>, 
+                    <span className="founder"> Amelia Chu</span>, 
+                    <span className="founder"> Xiumei Wu</span>, 
+                    <span className="founder"> Chris Lam</span>, 
+                    <span className="founder"> Chuong Do</span>, 
+                    <span className="founder"> Joe Shao</span>, 
+                    <span className="founder"> Michelle Mojica</span>, 
+                    <span className="founder"> Tanakorn Best Techajongchareon</span>, 
+                    <span className="founder"> Scott Louie</span>, 
+                    <span className="founder"> Alan Leung</span>, and 
+                    <span className="founder"> John Phu Nguyen</span>.
                   </p>
                   <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;
@@ -295,7 +295,7 @@ class AboutUs extends Component {
                     <h4> {pillar.description} </h4>
                   </div>
                 </div>
-                <h3 className="pillar-name red">
+                <h3 className="pillar-name">
                   {pillar.name}
                 </h3>
                 <p className="pillar-content">

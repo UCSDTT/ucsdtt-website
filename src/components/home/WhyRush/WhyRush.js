@@ -9,7 +9,7 @@ class WhyRush extends Component {
   render() {
     return (
       <Element name="why-rush" className="element why-rush">
-        <h1 className="title red">What is Rush?</h1>
+        <h1 className="title">What is Rush?</h1>
         <h2 className="rush-process">The Process</h2>
 
         <Grid>
