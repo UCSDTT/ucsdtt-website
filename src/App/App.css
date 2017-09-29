@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
-@font-face {
+/*@font-face {
   font-family: 'Helvetica Neue Condensed';
   src: url('../fonts/helvetica-neue-condensed.otf');
   font-weight: normal;
@@ -11,7 +11,7 @@
   src: url('../fonts/HelveticaNeue-CondensedBold.otf');
   font-weight: bold;
   font-style: normal;
-}
+}*/
 
 /* Not working after router change */
 .App {
