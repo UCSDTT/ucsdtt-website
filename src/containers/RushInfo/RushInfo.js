@@ -51,9 +51,9 @@ export default class RushPage extends Component {
         <div>
           <div className="rush-landing-header">
             <a className="rush-logo" role="button" href="/">
-              <Image className="logo" src={require('../../components/home/NavBar/images/logo.png')}/>
+              <Image className="logo" src={require('../../components/home/NavBar/images/tt_logo.png')}/>
             </a>
-            RUSH WEEK
+            RUSH INFORMATION
           </div>
           <div className="rush-image-container">
             <Image className="rush-image" src={require('./images/rushflyer-withborder.png')} responsive/>
