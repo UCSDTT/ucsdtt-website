@@ -2,7 +2,6 @@ import './Rush.css';
 
 import React, {Component} from 'react';
 import {Element} from 'react-scroll';
-import {Row, Col} from 'react-bootstrap';
 import rushData from './data.js';
 
 class Rush extends Component {
@@ -21,7 +20,7 @@ class Rush extends Component {
 
           <div className="rush-details-body">
             <div className="rush-row">
-              <div className="check-us-out" xs={5}>
+              <div className="check-us-out">
                 <h3>Check us out on <span>Library Walk!</span></h3>
               </div>
             </div>

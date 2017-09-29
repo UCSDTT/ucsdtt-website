@@ -3,7 +3,7 @@ import 'react-select/dist/react-select.css';
 import {Grid, Row, Col, Image, FormGroup, FormControl, Modal, ListGroup, ListGroupItem} from 'react-bootstrap';
 import Select from 'react-select';
 import React, {Component} from 'react';
-import {brothers, alumni, options, images} from './data.js'
+import {brothers, alumni, options, images} from '../../activeData/data.js'
 
 export default class MemberPage extends Component {
   constructor(props) {

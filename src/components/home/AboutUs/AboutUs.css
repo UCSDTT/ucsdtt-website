@@ -5,8 +5,9 @@
 }
 
 .about-section-title {
+  font-family: 'Helvetica Neue Condensed';
   font-weight: 700;
-  font-size: 35px;
+  font-size: 40px;
   color: #2f4f4f;
   margin-bottom: 40px;
 }

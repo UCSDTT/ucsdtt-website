@@ -113,8 +113,9 @@ class Landing extends Component {
       <div className="landing">
         <Carousel 
           className="carousel-fade"
-          interval={7000}
-          onSelect={this.changeWord}>
+          interval={5000}
+          onSelect={this.changeWord}
+          pauseOnHover={false}>
           {slideData.map((slide, i) => (
             <Carousel.Item key={i}>
               <div className="landing-gradient">

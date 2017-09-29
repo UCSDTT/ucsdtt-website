@@ -5,7 +5,8 @@
 .rush-process {
   color: #2f4f4f;
   font-family: 'Helvetica Neue Condensed';
-  font-size: 55px;
+  font-weight: 700;
+  font-size: 40px;
   margin: 40px auto;
   text-transform: uppercase;
 }
