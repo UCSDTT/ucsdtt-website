@@ -11,6 +11,13 @@
   color: var(--secondary-color);
   margin-bottom: 40px;
 }
+@media(max-width: 768px) {
+  .about-section-title {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /*.about-quote-container {
   display: flex;
@@ -60,8 +67,9 @@
 }
 @media(max-width: 992px) {
   .about-description {
-    font-size: 19px;
     width: 90%;
+    color: var(--secondary-light);
+    font-size: 19px;
     margin: auto;
     margin-bottom: 50px;
   }
