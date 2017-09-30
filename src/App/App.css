@@ -52,14 +52,28 @@ body {
   }
 }
 
+#loading {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2e2f33;
+}
+
+#loading-image {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  animation: spin 2s linear infinite;
+}
+
 .picture {
   width: auto;
   height: auto;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
 
 .element {
@@ -261,4 +275,17 @@ body,
 .fadeIn {
   animation-name: fadeIn;
   animation-duration: 0.5s;
+}
+
+@keyframes spin {
+  from { 
+    transform: translate(-50%, -50%) rotate(0deg); 
+  }
+  to { 
+    transform: translate(-50%, -50%) rotate(360deg); 
+  }
+}
+
+.spin {
+  animation-name: spin;
 }
