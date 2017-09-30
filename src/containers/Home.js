@@ -15,12 +15,12 @@ export default class Home extends Component {
   componentDidMount() {
     const observer = window.lozad('.lozad', {
       load: function(el) {
-        el.srcset = el.dataset.srcset || el.dataset.src;
+        el.src = el.dataset.src;
         el.onload = function() {
             el.classList.add('fadeIn')
         }
       },
-      rootMargin: '100px 0px'
+      rootMargin: '200px 0px'
     }); // lazy loads elements with default selector as '.lozad'
     observer.observe();
   }
