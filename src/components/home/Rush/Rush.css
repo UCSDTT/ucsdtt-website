@@ -158,11 +158,11 @@
   text-transform: uppercase;
 }
 .rush-chairs a {
-  color: #fff;
+  color: var(--accent-color);
 }
 .rush-chairs a:hover, 
 .rush-chairs a:focus {
-  color: #aaa;
+  color: #fff;
 }
 
 .rush-media {

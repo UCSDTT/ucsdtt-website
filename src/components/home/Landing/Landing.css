@@ -117,8 +117,7 @@
   left: 50%;
   background-color: #777;
   color: #fff;
-  border: none;
-  border-radius: 0;
+  border-radius: 4px;
   font-size: 20px;
   font-weight: 900;
   padding: 10px 20px;

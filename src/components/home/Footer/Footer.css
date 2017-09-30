@@ -53,7 +53,7 @@
 }
 
 .footer-links {
-  color: #aaa;
+  color: var(--accent-color);
 }
 
 .footer-contact {
