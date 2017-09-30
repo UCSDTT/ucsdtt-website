@@ -13,10 +13,6 @@ import {Footer} from '../components/home/Footer/Footer.js';
 
 export default class Home extends Component {
   componentDidMount() {
-    window.onload = function() { 
-      document.getElementById("loading").style.display = "none";
-    }
-      
     const observer = window.lozad('.lozad', {
       load: function(el) {
         el.src = el.dataset.src;
@@ -32,9 +28,6 @@ export default class Home extends Component {
   render() {
     return (
       <div className="homepage">
-        <div id="loading">
-          <img id="loading-image" src="./gear.png" alt="Loading..." />
-        </div>
         <NavBar/>
         <Landing/>
         <Rush/>

@@ -65,11 +65,13 @@ body {
 
 #loading-image {
   position: absolute;
+  background-image: url('./gear.png');
   height: 300px;
   width: 300px;
   top: calc(50% - 150px);
   left: calc(50% - 150px);
-  animation: spin 2s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 5s linear infinite;
   z-index: 1100;
 }
 
