@@ -120,10 +120,10 @@ class Landing extends Component {
             <Carousel.Item key={i}>
               <div className="landing-gradient">
                 <img
-                  className="landing-image"
-                  src={slide.xsImage}
+                  className="lozad landing-image"
+                  data-src={slide.xsImage}
                   // eslint-disable-next-line
-                  srcSet={slide.smImage + ' 992w', slide.image + ' 1200w'}
+                  data-srcset={slide.smImage + ' 992w', slide.image + ' 1200w'}
                   alt="Landing"
                 />
               </div>
