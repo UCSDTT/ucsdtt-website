@@ -63,7 +63,7 @@ export default class Garnett extends Component {
 
         <div className="garnett-logo">
           <Image src={require('./images/garnett.svg')} />
-          <h1> Garne<span className="red">tt</span> </h1>
+          <h1> Garne<span className="tt">tt</span> </h1>
         </div>
 
         <div className="sign-options">
@@ -112,7 +112,7 @@ export default class Garnett extends Component {
             </label>
           </div>
 
-          <div className="garnett-button red-bg">
+          <div className="garnett-button">
             Login
           </div>
         </form>
@@ -129,7 +129,7 @@ export default class Garnett extends Component {
                />
             </FormGroup>
           ))}
-          <div className="garnett-button red-bg">
+          <div className="garnett-button">
             Sign Up
           </div>
         </form>
