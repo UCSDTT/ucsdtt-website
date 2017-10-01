@@ -66,13 +66,22 @@ body {
 #loading-image {
   position: absolute;
   background-image: url('./gear.png');
-  height: 300px;
-  width: 300px;
-  top: calc(50% - 150px);
-  left: calc(50% - 150px);
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
   -webkit-animation: spin 2s linear infinite;
-  animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite, fadeIn 0.5s ease-in;
   z-index: 1100;
+}
+@media(max-width: 768px) {
+  #loading-image {
+    height: 150px;
+    width: 150px;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+  }
 }
 
 .picture {
