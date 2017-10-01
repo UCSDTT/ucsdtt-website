@@ -10,6 +10,10 @@ import MemberPage from './containers/MemberPage/MemberPage';
 import RushInfo from './containers/RushInfo/RushInfo'
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-107328054-1');
+ReactGA.pageview(window.location.pathname);
 
 ReactDOM.render(
   <BrowserRouter>
