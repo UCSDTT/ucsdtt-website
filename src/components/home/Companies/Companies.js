@@ -7,6 +7,8 @@ import {bigCompanies, smallCompanies} from './data.js';
 
 class Companies extends Component {
   render() {
+    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
     return (
       <Element name="companies" className="element companies">
         <h1 className="title">Our Alumni Network </h1>
@@ -20,8 +22,8 @@ class Companies extends Component {
               >
                 <a href={company.href}>
                   <img 
-                    className="lozad company-logo" 
-                    data-src={company.image} 
+                    className="lozad company-logo"
+                    data-src={isSafari ? company.safari : company.image} 
                     href={company} 
                     alt="Big Company"
                   /> 
@@ -38,7 +40,7 @@ class Companies extends Component {
                 <a href={company.href}>
                   <img 
                     className="lozad company-logo" 
-                    data-src={company.image} 
+                    data-src={isSafari ? company.safari : company.image} 
                     alt="Small Company"
                   />
                 </a>

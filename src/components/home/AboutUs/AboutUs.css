@@ -78,6 +78,9 @@
 @media(min-width: 992px) {
   .mobile-description {
     display: none;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -140,6 +143,17 @@
 .pillar-content {
   font-size: 18px;
   color: var(--secondary-light);
+}
+
+/* Founder Text Color */
+.founder {
+  font-style: italic;
+  color: var(--primary-color);
+}
+@media(max-width: 768px) {
+  .founder {
+    font-weight: 700;
+  }
 }
 
 /* Scroll */
@@ -243,11 +257,6 @@
     font-size: 25px;
   }
 
-  .founder {
-    font-style: italic;
-    color: var(--primary-color);
-  }
-
   .scroll-crest {
     float: right;
     height: 300px;
@@ -259,6 +268,15 @@
     margin-top: 50px;
     margin-bottom: 180px;
     margin-left: 10%;
+    filter: grayscale(80%);
+  }
+}
+
+/* Founder Mobile Picture */
+@media(max-width: 992px) {
+  .founders {
+    width: 100%;
+    margin-top: 50px;
     filter: grayscale(80%);
   }
 }

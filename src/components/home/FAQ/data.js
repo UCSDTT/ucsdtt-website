@@ -9,7 +9,7 @@ const faqCol1 = [
   },
   {
     title: 'Who can rush?',
-    body: 'Students must be full-time students and be in good academic standing with the university (> 2.5 GPA).',
+    body: 'Any full-time students who are majoring in engineering, including Math - Computer Science, and in good academic standing with the university (> 2.5 GPA) may rush.',
   },
   {
     title: 'Why rush?',
@@ -24,7 +24,7 @@ const faqCol2 = [
   },
   {
     title: 'What is a bid?',
-    body: 'A bid is a formal invitation to begin pledging, the process of becoming a brother.',
+    body: 'A bid is a formal invitation to begin pledging, the process of becoming a brother. You will be notified if you have been given a bid at the end of Rush.',
   },
   {
     title: 'How do you choose who receives a bid?',

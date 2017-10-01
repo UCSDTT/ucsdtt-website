@@ -47,6 +47,10 @@ class Landing extends Component {
     var cq = this.state.quotes[this.state.currentQuote];
     var nq = this.state.quotes[event];
 
+    if (cw === nw) {
+      return;
+    }
+
     for (var i = 0; i < cw.length; i++) {
       this.animateLetterOut(cw, i);
     }
@@ -109,6 +113,8 @@ class Landing extends Component {
   }
 
   render() {
+    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
     return (
       <div className="landing">
         <Carousel
@@ -121,9 +127,10 @@ class Landing extends Component {
               <div className="landing-gradient">
                 <img
                   className="landing-image"
-                  src={slide.xsImage}
+                  src={isSafari ? slide.xsSafari : slide.xsImage}
                   // eslint-disable-next-line
-                  srcSet={slide.smImage + ' 992w', slide.image + ' 1200w'}
+                  srcSet={isSafari ? (slide.smSafari + ' 992w', slide.safari + ' 1200w') :
+                          (slide.smImage + ' 992w', slide.image + ' 1200w')}
                   alt="Landing"
                 />
               </div>

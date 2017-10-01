@@ -34,10 +34,12 @@ class Back extends React.Component {
 
 class ActiveInfo extends React.Component {
   render() {
+    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
     return <div>
       <img
         className="messenger-image"
-        src={this.props.active.image}
+        src={isSafari ? this.props.active.safari : this.props.active.image}
         role="presentation"
         alt="Messenger"
       />
@@ -62,6 +64,7 @@ class Messenger extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      activeList: brothers,
       actives: [],
       flipped: false,
     };
@@ -83,10 +86,10 @@ class Messenger extends Component {
       'back': {},
       },
     ];
-    let list = this.shuffle(brothers);
+    let shuffled = this.shuffle(brothers);
 
     actives.forEach((active, i) => {
-      active.front = list[i];
+      active.front = shuffled[i];
     });
 
     this.setState({
@@ -95,22 +98,32 @@ class Messenger extends Component {
   }
 
   shuffle(list) {
-    const shuffled = list.sort(() => .5 - Math.random());// shuffle  
-    return shuffled.slice(0,3) ; //get sub-array of first n elements AFTER shuffle
+    const shuffled = list.sort(() => .5 - Math.random());// shuffle
+    let activeList = shuffled.slice(3);
+
+    this.setState({
+      activeList: activeList
+    })
+
+    return shuffled.slice(0, 3) ; //get sub-array of first n elements AFTER shuffle
   }
 
   flip() {
     let actives = this.state.actives;
-    let list = this.shuffle(brothers);
+    let shuffled = this.shuffle(this.state.activeList);
+
+    if (shuffled.length !== 3) {
+      return;
+    }
 
     if (this.state.flipped) {
       actives.forEach((active, i) => {
-        active.front = list[i];
+        active.front = shuffled[i];
       });
     }
     else {
       actives.forEach((active, i) => {
-        active.back = list[i];
+        active.back = shuffled[i];
       });
     }
 

@@ -63,12 +63,17 @@ class NavBar extends Component {
   }
 
   render() {
+    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
     return (
       <Navbar className="navbar-fixed-top" collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
             <a role="button" id="nav-logo" href="/">
-              <Image className="logo" src={require('./images/logo.webp')} />
+              <Image 
+                className="logo" 
+                src={isSafari ? (require('./images/logo.png')) : (require('./images/logo.webp'))} 
+              />
             </a>
           </Navbar.Brand>
           <Navbar.Toggle

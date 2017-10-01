@@ -62,7 +62,7 @@ export default class Garnett extends Component {
         </a>
 
         <div className="garnett-logo">
-          <Image src={require('./images/garnett.webp')} />
+          <Image src={require('./images/garnett.svg')} />
           <h1> Garne<span className="red">tt</span> </h1>
         </div>
 

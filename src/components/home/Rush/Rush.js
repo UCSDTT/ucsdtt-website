@@ -6,12 +6,14 @@ import rushData from './data.js';
 
 class Rush extends Component {
   render() {
+    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
     return (
       <Element name="rush" className="rush">
         <div className="rush-pic-container">
           <img 
-            className="lozad rush-pic" 
-            data-src={require('./images/rush-pic.webp')}
+            className="lozad rush-pic"
+            data-src={isSafari ? (require('./images/rush-pic.png')) : (require('./images/rush-pic.webp'))}
             alt="Rush"
           >
           </img>

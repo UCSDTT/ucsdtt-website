@@ -2,9 +2,8 @@
   "short_name": "Garnett",
   "icons": [
     {
-      "src": "garnett.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "garnett.svg",
+      "sizes": "192x192"
     }
   ],
   "start_url": "./index.html",

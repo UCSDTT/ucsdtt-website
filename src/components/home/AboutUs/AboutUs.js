@@ -6,6 +6,19 @@ import {gearPosition, pillarData} from './data.js';
 
 class AboutUs extends Component {
   componentDidMount() {
+    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+    if (isSafari) {
+      if (window.innerWidth >= 992) {
+        document.querySelector('#container').style.display = 'none';
+        document.querySelector('.mobile-description').style.display = 'block';
+        document.querySelector('.about-description').style.height = '1050px';
+      }
+      if (window.innerWidth <= 1200 && window.innerWidth > 992) {
+        document.querySelector('.about-description').style.height = '1200px';   
+      }
+    }
+
     window.onscroll = function() {
       let navbarHeight = document.querySelector('.navbar').clientHeight;
       let landingHeight = document.querySelector('.landing').clientHeight;
@@ -197,6 +210,8 @@ class AboutUs extends Component {
   }
 
   render() {
+    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
     return (
       <Element name="about-us" className="element about">
         {gearPosition.map((position, i) => (
@@ -224,7 +239,7 @@ class AboutUs extends Component {
                   <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     With the help of a Theta Tau alumnus, 
-                    <span className="founder"> Jennifer Young</span>, thirteen founding fathers <img className="lozad scroll-crest" data-src={require('./images/crest.webp')} alt="Crest" />
+                    <span className="founder"> Jennifer Young</span>, thirteen founding fathers <img className="lozad scroll-crest" data-src={isSafari ? (require('./images/crest.png')) : (require('./images/crest.webp'))} alt="Crest" />
                     took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: 
                     <span className="founder"> Ashay Verma</span>, 
                     <span className="founder"> Errynne Bell</span>, 
@@ -245,8 +260,8 @@ class AboutUs extends Component {
                     On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.                   
                   </p>
                   <img 
-                    className="lozad founders" 
-                    data-src={require('./images/founders.webp')} 
+                    className="lozad founders"
+                    data-src={isSafari ? (require('./images/founders.jpg')) : (require('./images/founders.webp'))} 
                     alt="Founders"
                   />
                 </div>
@@ -254,15 +269,39 @@ class AboutUs extends Component {
 
               <div className="mobile-description">
                 <p>
-                In the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity arose for them to change that.
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  In the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity arose for them to change that.
                 </p>
                 <p> </p>
-                <p>With the help of a Theta Tau alumni, Jennifer Young, thirteen founding fathers took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: Ashay Verma, Errynne Bell, Takahiro Kuwayama, Amelia Chu, Xiumei Wu, Chris Lam, Chuong Do, Joe Shao, Michelle Mojica, Tanakorn Best Techajongchareon, Scott Louie, Alan Leung, and John Phu Nguyen.
+                <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  With the help of a Theta Tau alumnus, 
+                  <span className="founder"> Jennifer Young</span>, thirteen founding fathers took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: 
+                  <span className="founder"> Ashay Verma</span>, 
+                  <span className="founder"> Errynne Bell</span>, 
+                  <span className="founder"> Takahiro Kuwayama</span>, 
+                  <span className="founder"> Amelia Chu</span>, 
+                  <span className="founder"> Xiumei Wu</span>, 
+                  <span className="founder"> Chris Lam</span>, 
+                  <span className="founder"> Chuong Do</span>, 
+                  <span className="founder"> Joe Shao</span>, 
+                  <span className="founder"> Michelle Mojica</span>, 
+                  <span className="founder"> Tanakorn Best Techajongchareon</span>, 
+                  <span className="founder"> Scott Louie</span>, 
+                  <span className="founder"> Alan Leung</span>, and 
+                  <span className="founder"> John Phu Nguyen</span>.
                 </p>
                 <p> </p>
-                <p>  
+                <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
                   On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.
                 </p>
+
+                <img 
+                  className="lozad founders"
+                  data-src={isSafari ? (require('./images/founders.jpg')) : (require('./images/founders.webp'))} 
+                  alt="Founders"
+                />
               </div>
             </Col>
           </Row>
@@ -286,8 +325,8 @@ class AboutUs extends Component {
                   onMouseOut={() => this.showInfo(i)}
                 >
                   <img 
-                    className="lozad pillar-image" 
-                    data-src={pillar.image}
+                    className="lozad pillar-image"
+                    data-src={isSafari ? pillar.safari : pillar.image}
                     alt="Pillar"
                   />
                   <div className="pillar-info animated">
