@@ -2,7 +2,7 @@ import './App.css';
 import '../fontello/css/fontello.css';
 
 import React, {Component} from 'react';
-import ReactGa from 'react-ga';
+import ReactGA from 'react-ga';
 
 class App extends Component {
   constructor() {
