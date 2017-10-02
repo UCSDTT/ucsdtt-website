@@ -255,7 +255,9 @@
 /* Garnett Logo */
 .logo.gem {
   margin-top: -15px;
+  margin-right: 15px; 
 }
+
 @media(max-width: 768px) {
   .logo.gem {
     height: 75px;
