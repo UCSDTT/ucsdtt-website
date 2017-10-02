@@ -1,7 +1,9 @@
 import './RushInfo.css';
+
+import {Carousel, Col, Grid, Image, Row} from 'react-bootstrap';
 import React, {Component} from 'react';
-import {Grid, Row, Col, Carousel, Image} from 'react-bootstrap';
-import {carouselData, images}  from './data.js';
+
+import {carouselData} from './data.js';
 
 export default class RushPage extends Component {
   constructor(props) {
