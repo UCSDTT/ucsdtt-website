@@ -47,6 +47,12 @@
     margin: auto;
   }
 
+  /* Overrides bootstrap navbar brand css */
+  .navbar-collapse > .navbar-right > .navbar-brand {
+    margin-left: 0;
+    padding: 0;
+  }
+
   .navbar-collapse > .navbar-right > li > a:after {
     content: '';
     display: block;
@@ -194,6 +200,12 @@
   .navbar-collapse > .navbar-nav > li {
     width: max-content;
     margin: auto;
+    padding: 25px 0;
+  }
+
+  /* Overrides bootstrap navbar brand css */
+  .navbar-collapse > .navbar-right > .navbar-brand {
+    float: none;
     padding: 25px 0;
   }
 
