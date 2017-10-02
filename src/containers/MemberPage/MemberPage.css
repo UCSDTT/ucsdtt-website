@@ -1,11 +1,7 @@
 /* Brothers Header */
 .brothers-header {
   position: relative;
-  background: #2f4f4f; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#24f4f4 , #000); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#2f4f4f, #000); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#2f4f4f, #000); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#2f4f4f , #000); /* Standard syntax */
+  background-color: var(--secondary-dark);
   color: #fff;
   font-size: 45px;
   font-style: italic;
@@ -25,7 +21,7 @@
   margin-left: -80px;
   width: 0;
   height: 0;
-  border-top: solid 50px #000;
+  border-top: solid 50px var(--secondary-dark);
   border-left: solid 80px transparent;
   border-right: solid 80px transparent;
 }
@@ -126,11 +122,11 @@
 }
 
 .brother-info h4 {
-  font-size: 24px;
+  font-size: 23px;
 }
 @media(max-width: 992px) {
   .brother-info h4 {
-    font-size: 17.5px;
+    font-size: 16.5px;
   }
 }
 
@@ -141,7 +137,7 @@
 }
 @media(max-width: 992px) {
   .brother-info p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
