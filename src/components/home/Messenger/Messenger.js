@@ -64,7 +64,7 @@ class Messenger extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeList: brothers,
+      activeList: [],
       actives: [],
       flipped: false,
     };
@@ -86,7 +86,11 @@ class Messenger extends Component {
       'back': {},
       },
     ];
-    let shuffled = this.shuffle(brothers);
+    let activeList = brothers.filter(function(brother) {
+      return brother.messenger;
+    });
+
+    let shuffled = this.shuffle(activeList);
 
     actives.forEach((active, i) => {
       active.front = shuffled[i];
