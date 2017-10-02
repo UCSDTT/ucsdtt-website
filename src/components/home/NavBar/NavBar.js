@@ -1,7 +1,7 @@
 import './NavBar.css';
 
-import React, {Component} from 'react';
 import {Image, Nav, NavItem, Navbar} from 'react-bootstrap';
+import React, {Component} from 'react';
 import {animateScroll as scroll, scroller} from 'react-scroll';
 
 class NavBar extends Component {
@@ -153,13 +153,11 @@ class NavBar extends Component {
               </a>
             </li>
             */}
-            <li role="presentation">
-              <a
-                href="/garnett"
-              >
+            <Navbar.Brand className="logo gem">
+              <a href="/garnett">
                 <Image className="logo gem" src={require('./images/garnett.svg')} />
               </a>
-            </li>
+            </Navbar.Brand>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

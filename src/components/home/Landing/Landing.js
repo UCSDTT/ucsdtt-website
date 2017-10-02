@@ -1,9 +1,10 @@
 import './Landing.css';
 
 import React, {Component} from 'react';
+
 import {Carousel} from 'react-bootstrap';
 import {scroller} from 'react-scroll';
-import {slideData, quoteData}  from './data.js';
+import {slideData}  from './data.js';
 
 class Landing extends Component {
   constructor(props) {
@@ -44,8 +45,8 @@ class Landing extends Component {
   changeWord = (event) => {
     var cw = this.state.wordArray[this.state.currentWord];
     var nw = this.state.wordArray[event];
-    var cq = this.state.quotes[this.state.currentQuote];
-    var nq = this.state.quotes[event];
+    //var cq = this.state.quotes[this.state.currentQuote];
+    //var nq = this.state.quotes[event];
 
     if (cw === nw) {
       return;
