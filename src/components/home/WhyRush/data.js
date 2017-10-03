@@ -21,7 +21,7 @@ const stepData = [
     icon: 'icon-ok-circled',
     position: 'even',
     title: 'Pledge',
-    description: 'Once you accept your bid, you will then begin pledging. Prepare to spend a large amount of time and effort. "Approach it as a four unit upper division engineering course.',
+    description: 'Once you accept your bid, you will then begin pledging. Prepare to spend a large amount of time and effort. Approach it as a four unit upper division engineering course.',
   },
 ]
 
