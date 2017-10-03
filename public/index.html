@@ -20,29 +20,11 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107328054-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments)};
-      gtag('js', new Date());
-
-      gtag('config', 'UA-107328054-1');
-    </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-
-    <style>
-      body {
-        background-color: #2e2f33;
-      }
-    </style>
     
     <title>Theta Tau @ UCSD</title>
   </head>
   <body>
-    <div id="loading">
-      <div id="loading-image"></div>
-    </div>
 
     <div id="root"></div>
     <!--
@@ -57,25 +39,6 @@
       -->
 
     <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyAR48vz5fVRMkPE4R3jS-eI8JRnqEVlBNc",
-        authDomain: "garnett-42475.firebaseapp.com",
-        databaseURL: "https://garnett-42475.firebaseio.com",
-        projectId: "garnett-42475",
-        storageBucket: "garnett-42475.appspot.com",
-        messagingSenderId: "741733387760"
-      };
-      firebase.initializeApp(config);
-    </script>
-
-    <script>
-      window.onload = function() {
-        document.body.style.backgroundColor = "#fff";
-        document.getElementById("loading").style.display = "none";
-      }
-    </script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
   </body>
 </html>
