@@ -19,6 +19,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107328054-1"></script>
     <script>
@@ -29,10 +30,19 @@
       gtag('config', 'UA-107328054-1');
     </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+    <style>
+      body {
+        background-color: #2e2f33;
+      }
+    </style>
     
     <title>Theta Tau @ UCSD</title>
   </head>
   <body>
+    <div id="loading">
+      <div id="loading-image"></div>
+    </div>
 
     <div id="root"></div>
     <!--
@@ -58,6 +68,13 @@
         messagingSenderId: "741733387760"
       };
       firebase.initializeApp(config);
+    </script>
+
+    <script>
+      window.onload = function() {
+        document.body.style.backgroundColor = "#fff";
+        document.getElementById("loading").style.display = "none";
+      }
     </script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
   </body>
