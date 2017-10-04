@@ -23,7 +23,7 @@ class Companies extends Component {
                 <a href={company.href}>
                   <img 
                     className="lozad company-logo"
-                    data-src={isSafari ? company.safari : company.image} 
+                    data-src={isSafari ? company.safari : company.image}
                     href={company} 
                     alt="Big Company"
                   /> 

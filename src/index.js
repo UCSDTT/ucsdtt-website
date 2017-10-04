@@ -4,10 +4,11 @@ import './index.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import App from './App/App';
-import Garnett from './containers/Garnett/Garnett';
 import Home from './containers/Home';
 import MemberPage from './containers/MemberPage/MemberPage';
 import RushInfo from './containers/RushInfo/RushInfo'
+import Login from './containers/Login/Login';
+import Garnett from './containers/Garnett/Garnett';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -16,9 +17,10 @@ ReactDOM.render(
     <App>
       <Switch>
         <Route exact path='/' component={Home}/>
-        <Route exact path='/garnett' component={Garnett}/>
         <Route exact path='/rush' component={RushInfo}/>
         <Route exact path='/members' component={MemberPage}/>
+        <Route exact path='/login' component={Login}/>
+        <Route exact path='/garnett' component={Garnett}/>
         <Route path='*' component={Home}/>
       </Switch>
     </App>

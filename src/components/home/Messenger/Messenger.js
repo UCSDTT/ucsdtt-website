@@ -7,16 +7,18 @@ import {brothers} from '../../../activeData/data.js';
 
 class Flipper extends React.Component {
   render() {
-    return <div className={`messenger-card-${this.props.index}`}>
-      <div className={"flipper" + (this.props.flipped ? " flipped" : "")}>
-        <Front>
-          <ActiveInfo active={this.props.frontActive} />
-        </Front>
-        <Back>
-          <ActiveInfo active={this.props.backActive} />
-        </Back>
+    return (
+      <div className={`messenger-card-${this.props.index}`}>
+        <div className={"flipper" + (this.props.flipped ? " flipped" : "")}>
+          <Front>
+            <ActiveInfo active={this.props.frontActive} />
+          </Front>
+          <Back>
+            <ActiveInfo active={this.props.backActive} />
+          </Back>
+        </div>
       </div>
-    </div>;
+    )
   }
 }
 
@@ -36,26 +38,28 @@ class ActiveInfo extends React.Component {
   render() {
     let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-    return <div>
-      <img
-        className="messenger-image"
-        src={isSafari ? this.props.active.safari : this.props.active.image}
-        role="presentation"
-        alt="Messenger"
-      />
-      <h3 className="messenger-name">
-        {this.props.active.name}
-      </h3>
-      <p className="messenger-body">
-        {this.props.active.year}
-        <br/> {this.props.active.majorName}
-        <br/> {this.props.active.className}
-      </p>
-      <a className="messenger-button" href={this.props.active.messenger} target="_blank">
-        <i className="icon-temp-messenger"></i>
-        Message
-      </a>
-    </div>;
+    return (
+      <div>
+        <img
+          className="messenger-image"
+          src={isSafari ? this.props.active.safari : this.props.active.image}
+          role="presentation"
+          alt="Messenger"
+        />
+        <h3 className="messenger-name">
+          {this.props.active.name}
+        </h3>
+        <p className="messenger-body">
+          {this.props.active.year}
+          <br/> {this.props.active.majorName}
+          <br/> {this.props.active.className}
+        </p>
+        <a className="messenger-button" href={this.props.active.messenger} target="_blank">
+          <i className="icon-temp-messenger"></i>
+          Message
+        </a>
+      </div>
+    )
   }
 }
 

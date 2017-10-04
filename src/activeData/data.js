@@ -310,6 +310,19 @@ const brothers = [
     'safari': require('./images/brothers/casual/blyu.jpg'),
     'url': require('./images/brothers/professional/blyu.webp'),
   },
+  {
+    'name': 'Mayuki Sasagawa',
+    'position': 'Active',
+    'class': 'omicron',
+    'className': 'Omicron Class',
+    'major': 'env',
+    'majorName': 'Environmental Engineering',
+    'year': 'Class of 2019',
+    'messenger': 'https://m.me/myuki.sasagawa/',
+    'image': require('./images/brothers/casual/mayuki.webp'),
+    'safari': require('./images/brothers/casual/mayuki.jpg'),
+    'url': require('./images/brothers/professional/mayuki.webp'),
+  },
 ]
 
 const alumni = [

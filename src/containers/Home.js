@@ -29,6 +29,7 @@ export default class Home extends Component {
     return (
       <div className="homepage">
         <NavBar/>
+        <Landing/>
         <Rush/>
         <WhyRush/>
         <AboutUs/>

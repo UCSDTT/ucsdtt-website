@@ -155,7 +155,7 @@ class NavBar extends Component {
             */}
             <Navbar.Brand>
               <li>
-                <a href="/garnett">
+                <a href="/login">
                   <Image className="logo gem" src={require('./images/garnett.svg')} />
                 </a>
               </li>
