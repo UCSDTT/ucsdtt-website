@@ -57,22 +57,22 @@ export default class Login extends Component {
   }
 
   login() {
-    let email = this.state.signEmail;
-    let password = this.state.signPassword;
+    // let email = this.state.signEmail;
+    // let password = this.state.signPassword;
 
-    firebase.auth().signInWithEmailAndPassword(email, password)
-    .then(function() {
-      this.props.router.push('/garnett')
-    })
-    .catch(function(error) {
-      // Handle Errors here.
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      // ...
-      if (error) {
-        console.log('yo')
-      }
-    })
+    // firebase.auth().signInWithEmailAndPassword(email, password)
+    // .then(function() {
+    //   this.props.router.push('/garnett')
+    // })
+    // .catch(function(error) {
+    //   // Handle Errors here.
+    //   var errorCode = error.code;
+    //   var errorMessage = error.message;
+    //   // ...
+    //   if (error) {
+    //     console.log('yo')
+    //   }
+    // })
   }
 
   render() {
