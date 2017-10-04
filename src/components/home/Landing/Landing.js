@@ -18,6 +18,7 @@ class Landing extends Component {
     };
   }
 
+  /* Scrolls to selected section */
   scrollToComp(name) {
     scroller.scrollTo(name, {
       offset: 0,
@@ -25,11 +26,15 @@ class Landing extends Component {
     });
   }
 
+  /* Runs when component mounts */
   componentDidMount() {
     let words = document.getElementsByClassName('word');
     // let quotes = document.getElementsByClassName('quote');
 
+    /* Makes the first word visible */
     words[this.state.currentWord].style.opacity = 1;
+
+    /* Adds each letter of the word to an array */
     for (var i = 0; i < words.length; i++) {
       this.splitLetters(words[i]);
     }
@@ -42,20 +47,24 @@ class Landing extends Component {
     })
   }
 
+  /* Changes the current word to the new word */
   changeWord = (event) => {
-    var cw = this.state.wordArray[this.state.currentWord];
-    var nw = this.state.wordArray[event];
+    var cw = this.state.wordArray[this.state.currentWord];  // Current Word
+    var nw = this.state.wordArray[event]; // New Word
     //var cq = this.state.quotes[this.state.currentQuote];
     //var nq = this.state.quotes[event];
 
+    /* Prevents animation from occurring if you click on same slide */
     if (cw === nw) {
       return;
     }
 
+    /* Animates the current word out */
     for (var i = 0; i < cw.length; i++) {
       this.animateLetterOut(cw, i);
     }
 
+    /* Makes the new word visible and animates the letters in */
     for (var j = 0; j < nw.length; j++) {
       nw[j].className = 'letter behind';
       nw[0].parentElement.style.opacity = 1;
@@ -75,18 +84,21 @@ class Landing extends Component {
     })
   }
 
+  /* Animates each letter of the current word out */
   animateLetterOut(cw, i) {
     setTimeout(function () {
       cw[i].className = 'letter out';
     }, i * 50);
   }
 
+  /* Animates each letter of the new word in */
   animateLetterIn(nw, i) {
     setTimeout(function () {
       nw[i].className = 'letter in';
     }, 340 + (i * 50));
   }
 
+  /* Splits the letters of the word and adds them to an array */
   splitLetters(word) {
     var content = word.innerHTML;
     word.innerHTML = '';
@@ -114,6 +126,7 @@ class Landing extends Component {
   }
 
   render() {
+    /* Checks if browser is safari to determine which images to feed */
     let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
     return (

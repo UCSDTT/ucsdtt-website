@@ -7,6 +7,7 @@ import {bigCompanies, smallCompanies} from './data.js';
 
 class Companies extends Component {
   render() {
+    /* Checks if browser is safari to determine which images to feed */
     let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
     return (

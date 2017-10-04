@@ -6,6 +6,7 @@ import rushData from './data.js';
 
 class Rush extends Component {
   render() {
+    /* Checks if browser is safari to determine which images to feed */
     let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
     return (

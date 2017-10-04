@@ -34,11 +34,14 @@ export default class MemberPage extends Component {
     this.close = this.close.bind(this);
   }
 
+  /* Runs when component mounts */
   componentDidMount() {
     let image = document.getElementsByClassName('brothers-image');
 
+    /* Autofocuses the search bar */
     document.querySelector('.search-bar').autofocus = true;
     
+    /* Makes the first brothers header image visible */
     image[0].classList.add('selected');
 
     this.setState({
@@ -46,8 +49,11 @@ export default class MemberPage extends Component {
     })
   }
 
+  /* Renders the filtered label for major or class */
   renderFilteredLabel(option) {
+    /* Checks if specfic dropdown value is set */
     if (this.state.specificValue) {
+      /* If option is major or class, displays the labels */
       if (option.value === this.state.specificValue) {
         return (
           <Col xs={12} md={2} className="brother-info">
@@ -67,16 +73,22 @@ export default class MemberPage extends Component {
     }
   }
 
+  /* Renders the filtered list */
   renderFilteredList(option) {
     let brothers = this.state.updatedBrothers;
     let showList = false;
 
+    /* Checks if there exists a brother in the specified major or class */
     brothers.forEach((brother) => {
       if (brother[this.state.dropdownValue] === option.value) {
         showList = true;
       }
     })
 
+    /* 
+      If there exists a brother in the specific major or class, 
+      display the brothers of that specified major or class 
+    */
     if (showList) {
       return (
         <Col xs={12} md={10}>
@@ -105,9 +117,11 @@ export default class MemberPage extends Component {
     }
   }
 
+  /* Renders the brothers */
   renderBrothers() {
     let options;
 
+    /* Sets label to major or class depending on which one is selected */
     if (this.state.dropdownValue === 'major') {
       options = this.state.majorOptions;
     }
@@ -115,6 +129,7 @@ export default class MemberPage extends Component {
       options = this.state.classOptions;
     }
 
+    /* Sets the specific label based on which is selected */
     if (this.state.specificValue) {
       options = options.filter((option) => {
         return (option.value.toLowerCase() ===
@@ -122,6 +137,7 @@ export default class MemberPage extends Component {
       });
     }
 
+    /* Displays labels if the first dropdown value is major or class */
     if (this.state.dropdownValue === 'major' || this.state.dropdownValue === 'class') {
       return (
         options.map((option, i) => {
@@ -159,12 +175,14 @@ export default class MemberPage extends Component {
     }
   }
 
+  /* Closes the modal */
   close() {
     this.setState({
       showModal: false,
     })
   }
 
+  /* Opens the modal */
   open(brother) {
     this.setState({
       showModal: true,
@@ -172,30 +190,40 @@ export default class MemberPage extends Component {
     })
   }
 
+  /* Filters the list based on the search input */
   filterSearch(event) {
+    /* Sets the list to the filtered list of brothers */
     let updatedList = this.state.filteredBrothers;
+
+    /* Sets the displayed list to all actives whose names begin with the input value */
     updatedList = updatedList.filter(function(brother){
       return brother.name.toLowerCase().startsWith(
         event.target.value.toLowerCase()) !== false;
     });
+
     this.setState({
       searchValue: event.target.value,
       updatedBrothers: updatedList,
     });
   }
 
+  /* Filters the first dropdown based on the selected value */
   filterDropdown(selected) {
     let updatedList = this.state.brothers;
     let options;
     let disabled = false;
     let image = this.state.image;
+
+    /* Sets the new brothers header image */
     let newImage = images.findIndex(function(image) {
       return (image.name.toLowerCase() ===
         selected.value.toLowerCase()) !== false;
     });
 
+    /* Removes visibility of the old brothers header image */
     image[this.state.imageIndex].classList.remove('selected');
 
+    /* Sets the specific dropdown options based on the first selected dropdown value */
     if (selected.value === 'active') {
       options = this.state.activeOptions;
     }
@@ -203,14 +231,15 @@ export default class MemberPage extends Component {
       options = this.state.majorOptions;
     }
     else if (selected.value === 'class') {
-      updatedList = this.state.allBrothers;
+      updatedList = this.state.allBrothers;  // Sets brothers list to consist of actives and alumni
       options = this.state.classOptions;
     }
     else {
-      updatedList = this.state.alumni;
+      updatedList = this.state.alumni;  // Sets brothers list to consist of only alumni
       disabled = true;
     }
 
+    /* Makes the new brothers header image visible */
     image[newImage].classList.add('selected');
 
     this.setState({
@@ -225,28 +254,37 @@ export default class MemberPage extends Component {
     })
   }
 
+  /* Filters the specific dropdown based on the selected value */
   filterSpecific(selected) {
     let updatedList = this.state.brothers;
     let image = this.state.image;
+
+    /* Sets the new brothers header image */
     let newImage = images.findIndex(function(image) {
       return (image.name.toLowerCase() ===
         selected.value.toLowerCase()) !== false;
     });
 
+    /* Removes visibility of the old brothers header image */
     image[this.state.imageIndex].classList.remove('selected');
+
+    /* Makes the new brothers header image visible */
     image[newImage].classList.add('selected');
 
+    /* Filters the brothers list based on eboard or cabinet */
     if (this.state.dropdownValue === 'active') {
       updatedList = updatedList.filter(function(brother){
         return brother[selected.value.toLowerCase()] === true;
       });
     }
+    /* Filters brothers list based on selected major */
     else if (this.state.dropdownValue === 'major') {
       updatedList = updatedList.filter(function(brother){
         return (brother.major.toLowerCase() ===
           selected.value.toLowerCase()) !== false;
       });
     }
+    /* Filters brothers list based on class */
     else {
       updatedList = this.state.allBrothers;
       updatedList = updatedList.filter(function(brother){

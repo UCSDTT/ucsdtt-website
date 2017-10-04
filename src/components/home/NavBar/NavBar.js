@@ -5,6 +5,7 @@ import React, {Component} from 'react';
 import {animateScroll as scroll, scroller} from 'react-scroll';
 
 class NavBar extends Component {
+  /* Underlines the hovered element by adding the underline class */
   underline = (event) => {
     if (window.innerWidth > 768) {
       event
@@ -14,7 +15,9 @@ class NavBar extends Component {
     }
   }
 
+  /* Opens the menu for mobile */
   openMenu() {
+    /* Adds the open class to these elements */
     document
       .querySelector('#hamburger')
       .classList
@@ -31,7 +34,8 @@ class NavBar extends Component {
       .querySelector('.navbar-collapse .navbar-nav')
       .classList
       .toggle('open');
-      
+    
+    /* Prevents user from scrolling if menu is open on mobile */
     if (document.body.style.overflow === 'hidden') {
       document.body.style.overflow = 'visible';
     }
@@ -40,16 +44,19 @@ class NavBar extends Component {
     }
   }
 
+  /* Scrolls to the top */
   scrollToTop() {
     scroll.scrollToTop({
       duration: 1000,
     });
 
+    /* If window width is less than 768px, closes hamburger menu */
     if (window.innerWidth <= 768) {
       this.openMenu();
     }
   }
 
+  /* Scrolls to the selected section */
   scrollToComp(name) {
     scroller.scrollTo(name, {
       duration: 1000,
@@ -57,12 +64,14 @@ class NavBar extends Component {
       smooth: true,
     });
 
+    /* If window width is less than 768px, closes hamburger menu */
     if (window.innerWidth <= 768) {
       this.openMenu();
     }
   }
 
   render() {
+    /* Checks if browser is safari to determine which images to feed */
     let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
     return (

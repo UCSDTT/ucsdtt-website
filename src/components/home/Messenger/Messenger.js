@@ -5,6 +5,7 @@ import {Grid, Row, Col} from 'react-bootstrap';
 import {Element} from 'react-scroll';
 import {brothers} from '../../../activeData/data.js';
 
+/* Flipper component that consists of a front and back panel */
 class Flipper extends React.Component {
   render() {
     return (
@@ -22,18 +23,21 @@ class Flipper extends React.Component {
   }
 }
 
+/* The front panel of the card */
 class Front extends React.Component {
   render() {
     return <div className="front tile">{this.props.children}</div>;
   }
 }
-      
+ 
+ /* The back panel of the card */     
 class Back extends React.Component {
   render() {
     return <div className="back tile">{this.props.children}</div>;
   }
 }
 
+/* All the active information inside the messenger card */
 class ActiveInfo extends React.Component {
   render() {
     let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -63,7 +67,6 @@ class ActiveInfo extends React.Component {
   }
 }
 
-
 class Messenger extends Component {
   constructor(props) {
     super(props);
@@ -75,6 +78,7 @@ class Messenger extends Component {
     this.flip = this.flip.bind(this);
   }
 
+  /* Runs when the component mounts */
   componentDidMount() {
     let actives = [
       {
@@ -90,12 +94,15 @@ class Messenger extends Component {
       'back': {},
       },
     ];
+
+    /* Filters out active without a messenger link (those who don't want to be messaged) */
     let activeList = brothers.filter(function(brother) {
       return brother.messenger;
     });
 
     let shuffled = this.shuffle(activeList);
 
+    /* Sets the front panel to the shuffled actives */
     actives.forEach((active, i) => {
       active.front = shuffled[i];
     });
@@ -105,6 +112,7 @@ class Messenger extends Component {
     });
   }
 
+  /* Shuffles the actives and removes the 3 chosen from the total active list */
   shuffle(list) {
     const shuffled = list.sort(() => .5 - Math.random());// shuffle
     let activeList = shuffled.slice(3);
@@ -116,19 +124,23 @@ class Messenger extends Component {
     return shuffled.slice(0, 3) ; //get sub-array of first n elements AFTER shuffle
   }
 
+  /* Flips the messenger card */
   flip() {
     let actives = this.state.actives;
     let shuffled = this.shuffle(this.state.activeList);
 
+    /* Stops flipping if there are less than 3 actives left in the active list */
     if (shuffled.length !== 3) {
       return;
     }
 
+    /* Sets the front panel to the shuffled actives */
     if (this.state.flipped) {
       actives.forEach((active, i) => {
         active.front = shuffled[i];
       });
     }
+    /* Sets the back panel to the shuffled actives */
     else {
       actives.forEach((active, i) => {
         active.back = shuffled[i];
