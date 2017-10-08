@@ -166,12 +166,12 @@
 
 .rush-image {
   object-fit: cover;
-  height: 41vw;
+  height: calc(100vh - 229px);
   width: 100%;
 }
 @media(max-width: 992px) {
   .rush-image {
-    height: 450px;
+    height: calc(100vh - 210px);
   }
 }
 
