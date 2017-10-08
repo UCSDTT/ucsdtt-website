@@ -1,6 +1,6 @@
 import './MemberPage.css';
 import 'react-select/dist/react-select.css';
-import {Grid, Row, Col, Image, FormGroup, FormControl, Modal, ListGroup, ListGroupItem} from 'react-bootstrap';
+import {Grid, Row, Col, Image, FormGroup, FormControl} from 'react-bootstrap';
 import Select from 'react-select';
 import React, {Component} from 'react';
 import {BrothersList} from './BrothersList.js';
@@ -237,32 +237,11 @@ export default class MemberPage extends Component {
             </Col>
   				</Row>
   				<Row className="brother-container">
-            <Modal show={this.state.showModal} onHide={this.close}>
-        <Modal.Header>
-          <Modal.Title> {this.state.brotherModal.name} </Modal.Title>
-          <Image className="modal-image-mobile" src={this.state.brotherModal.url} circle/>
-        </Modal.Header>
-        <Modal.Body>
-          <Image className="modal-image" src={this.state.brotherModal.url} rounded/>
-          <ListGroup>
-            <ListGroupItem header="Position"> {this.state.brotherModal.position} </ListGroupItem>
-            <ListGroupItem header="Class"> {this.state.brotherModal.className} </ListGroupItem>
-            <ListGroupItem header="Major"> {this.state.brotherModal.majorName} </ListGroupItem>
-            <ListGroupItem header="Year"> {this.state.brotherModal.year} </ListGroupItem>
-          </ListGroup>
-        </Modal.Body>
-        <Modal.Footer className="modal-footer">
-          <div>
-            <div className="close-footer" onClick={this.close}>
-              Close
-            </div>
-          </div>
-          <a className="linkedin-footer" href={this.state.brotherModal.linkedin} target="_blank">
-            Connect
-            <i className="icon-linkedin-squared" aria-hidden="true"></i>
-          </a>
-        </Modal.Footer>
-      </Modal>
+            <BrotherModal 
+              show={this.state.showModal}
+              close={this.close}
+              brother={this.state.brotherModal} 
+            />
             <BrothersList 
               majorOptions={this.state.majorOptions}
               classOptions={this.state.classOptions}
