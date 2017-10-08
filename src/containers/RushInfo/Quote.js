@@ -69,7 +69,10 @@ class Quote extends React.Component {
                 <span className="quote-quotes">❝</span>
                 <span className="rush-quote">{slide.quote}</span>
               </div>
-              <span className="rush-author" > - {slide.author} </span>
+              <div className="rush-author">
+                - {slide.author}
+                <p> {slide.class} </p>
+              </div>
             </div>
           ))}
         </Col>
