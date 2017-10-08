@@ -1,9 +1,11 @@
 import './MemberPage.css';
 import 'react-select/dist/react-select.css';
-import {Grid, Row, Col, Image, FormGroup, FormControl, Modal, ListGroup, ListGroupItem} from 'react-bootstrap';
+import {Grid, Row, Col, Image, FormGroup, FormControl} from 'react-bootstrap';
 import Select from 'react-select';
 import React, {Component} from 'react';
-import {brothers, alumni, options, images} from '../../activeData/data.js'
+import {BrothersList} from './BrothersList.js';
+import {BrotherModal} from './BrotherModal.js';
+import {brothers, alumni, options, images} from '../../activeData/data.js';
 
 export default class MemberPage extends Component {
   constructor(props) {
@@ -27,11 +29,13 @@ export default class MemberPage extends Component {
       specificDisabled: false,
       showModal: false,
       brotherModal: {},
+      showList: false,
     };
     this.filterSearch = this.filterSearch.bind(this);
     this.filterDropdown = this.filterDropdown.bind(this);
     this.filterSpecific = this.filterSpecific.bind(this);
     this.close = this.close.bind(this);
+    this.open = this.open.bind(this);
   }
 
   /* Runs when component mounts */
@@ -47,132 +51,6 @@ export default class MemberPage extends Component {
     this.setState({
       image: image,
     })
-  }
-
-  /* Renders the filtered label for major or class */
-  renderFilteredLabel(option) {
-    /* Checks if specfic dropdown value is set */
-    if (this.state.specificValue) {
-      /* If option is major or class, displays the labels */
-      if (option.value === this.state.specificValue) {
-        return (
-          <Col xs={12} md={2} className="brother-info">
-            <h3 className="option-label"> {option.label} </h3>
-            <Image className="option-image" src={option.image} circle></Image>
-          </Col>
-        );
-      }
-    }
-    else {
-      return (
-        <Col xs={12} md={2} className="brother-info">
-          <h3 className="option-label"> {option.label} </h3>
-          <Image className="option-image" src={option.image} circle></Image>
-        </Col>
-      );
-    }
-  }
-
-  /* Renders the filtered list */
-  renderFilteredList(option) {
-    let brothers = this.state.updatedBrothers;
-    let showList = false;
-
-    /* Checks if there exists a brother in the specified major or class */
-    brothers.forEach((brother) => {
-      if (brother[this.state.dropdownValue] === option.value) {
-        showList = true;
-      }
-    })
-
-    /* 
-      If there exists a brother in the specific major or class, 
-      display the brothers of that specified major or class 
-    */
-    if (showList) {
-      return (
-        <Col xs={12} md={10}>
-          {brothers.map((brother, i) => {
-            if (brother[this.state.dropdownValue] === option.value) {
-              return (
-                <Col xs={6} sm={4} md={3} className="brother-info" key={i}>
-                  <div onClick={() => this.open(brother)}>
-                    <Image className="brother-image" src={brother.url} responsive rounded/>
-                    <h4> {brother.name} </h4>
-                    <p> {brother.position} </p>
-                    <p> {brother.className} </p>
-                  </div>
-                </Col>
-              );
-            }
-            else {
-              return false;
-            }
-          })}
-        </Col>
-      )
-    }
-    else {
-      return false;
-    }
-  }
-
-  /* Renders the brothers */
-  renderBrothers() {
-    let options;
-
-    /* Sets label to major or class depending on which one is selected */
-    if (this.state.dropdownValue === 'major') {
-      options = this.state.majorOptions;
-    }
-    else {
-      options = this.state.classOptions;
-    }
-
-    /* Sets the specific label based on which is selected */
-    if (this.state.specificValue) {
-      options = options.filter((option) => {
-        return (option.value.toLowerCase() ===
-          this.state.specificValue.toLowerCase()) !== false;
-      });
-    }
-
-    /* Displays labels if the first dropdown value is major or class */
-    if (this.state.dropdownValue === 'major' || this.state.dropdownValue === 'class') {
-      return (
-        options.map((option, i) => {
-          if (this.renderFilteredList(option) !== false) {
-            return (
-              <div key={i}>
-                {this.renderFilteredLabel(option)}
-                {this.renderFilteredList(option)}
-              </div>
-            )
-          }
-          else {
-            return false;
-          }
-        })
-      );
-    }
-    else {
-      return (
-        this.state.updatedBrothers.map((brother, i) => (
-          <Col xs={6} sm={3} className="brother-info col-md-5th" key={i}>
-            <Image
-              className="brother-image"
-              src={brother.url}
-              onClick={() => this.open(brother)}
-              responsive
-              rounded
-            />
-            <h4> {brother.name.toUpperCase()} </h4>
-            <p> {brother.position.toUpperCase()} </p>
-            <p> {brother.className.toUpperCase()} </p>
-          </Col>
-        ))
-      );
-    }
   }
 
   /* Closes the modal */
@@ -223,6 +101,9 @@ export default class MemberPage extends Component {
     /* Removes visibility of the old brothers header image */
     image[this.state.imageIndex].classList.remove('selected');
 
+    /* Makes the new brothers header image visible */
+    image[newImage].classList.add('selected');
+
     /* Sets the specific dropdown options based on the first selected dropdown value */
     if (selected.value === 'active') {
       options = this.state.activeOptions;
@@ -238,9 +119,6 @@ export default class MemberPage extends Component {
       updatedList = this.state.alumni;  // Sets brothers list to consist of only alumni
       disabled = true;
     }
-
-    /* Makes the new brothers header image visible */
-    image[newImage].classList.add('selected');
 
     this.setState({
       imageIndex: newImage,
@@ -292,6 +170,7 @@ export default class MemberPage extends Component {
           selected.value.toLowerCase()) !== false;
       });
     }
+
     this.setState({
       imageIndex: newImage,
       searchValue: '',
@@ -358,33 +237,19 @@ export default class MemberPage extends Component {
             </Col>
   				</Row>
   				<Row className="brother-container">
-            <Modal show={this.state.showModal} onHide={this.close}>
-              <Modal.Header>
-                <Modal.Title> {this.state.brotherModal.name} </Modal.Title>
-                <Image className="modal-image-mobile" src={this.state.brotherModal.url} circle/>
-              </Modal.Header>
-              <Modal.Body>
-                <Image className="modal-image" src={this.state.brotherModal.url} rounded/>
-                <ListGroup>
-                  <ListGroupItem header="Position"> {this.state.brotherModal.position} </ListGroupItem>
-                  <ListGroupItem header="Class"> {this.state.brotherModal.className} </ListGroupItem>
-                  <ListGroupItem header="Major"> {this.state.brotherModal.majorName} </ListGroupItem>
-                  <ListGroupItem header="Year"> {this.state.brotherModal.year} </ListGroupItem>
-                </ListGroup>
-              </Modal.Body>
-              <Modal.Footer className="modal-footer">
-                <div>
-                  <div className="close-footer" onClick={this.close}>
-                    Close
-                  </div>
-                </div>
-                <a className="linkedin-footer" href={this.state.brotherModal.linkedin} target="_blank">
-                  Connect
-                  <i className="icon-linkedin-squared" aria-hidden="true"></i>
-                </a>
-              </Modal.Footer>
-            </Modal>
-            {this.renderBrothers()}
+            <BrotherModal 
+              show={this.state.showModal}
+              close={this.close}
+              brother={this.state.brotherModal} 
+            />
+            <BrothersList 
+              majorOptions={this.state.majorOptions}
+              classOptions={this.state.classOptions}
+              dropdownValue={this.state.dropdownValue}
+              specificValue={this.state.specificValue}
+              updatedBrothers={this.state.updatedBrothers}
+              open={this.open}
+            />
   				</Row>
   			</Grid>
       </div>

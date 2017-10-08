@@ -3,69 +3,8 @@ import './Messenger.css';
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Element} from 'react-scroll';
+import {Flipper} from './Flipper.js';
 import {brothers} from '../../../activeData/data.js';
-
-/* Flipper component that consists of a front and back panel */
-class Flipper extends React.Component {
-  render() {
-    return (
-      <div className={`messenger-card-${this.props.index}`}>
-        <div className={"flipper" + (this.props.flipped ? " flipped" : "")}>
-          <Front>
-            <ActiveInfo active={this.props.frontActive} />
-          </Front>
-          <Back>
-            <ActiveInfo active={this.props.backActive} />
-          </Back>
-        </div>
-      </div>
-    )
-  }
-}
-
-/* The front panel of the card */
-class Front extends React.Component {
-  render() {
-    return <div className="front tile">{this.props.children}</div>;
-  }
-}
- 
- /* The back panel of the card */     
-class Back extends React.Component {
-  render() {
-    return <div className="back tile">{this.props.children}</div>;
-  }
-}
-
-/* All the active information inside the messenger card */
-class ActiveInfo extends React.Component {
-  render() {
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-    return (
-      <div>
-        <img
-          className="messenger-image"
-          src={isSafari ? this.props.active.safari : this.props.active.image}
-          role="presentation"
-          alt="Messenger"
-        />
-        <h3 className="messenger-name">
-          {this.props.active.name}
-        </h3>
-        <p className="messenger-body">
-          {this.props.active.year}
-          <br/> {this.props.active.majorName}
-          <br/> {this.props.active.className}
-        </p>
-        <a className="messenger-button" href={this.props.active.messenger} target="_blank">
-          <i className="icon-temp-messenger"></i>
-          Message
-        </a>
-      </div>
-    )
-  }
-}
 
 class Messenger extends Component {
   constructor(props) {

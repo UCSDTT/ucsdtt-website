@@ -76,7 +76,7 @@
 }
 
 @media(min-width: 992px) {
-  .mobile-description {
+  .mobile-origins {
     display: none;
     width: 60%;
     left: 50%;

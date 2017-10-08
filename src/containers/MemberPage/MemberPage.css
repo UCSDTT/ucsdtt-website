@@ -155,10 +155,16 @@
 
 .brother-image {
   object-fit: cover;
-  height: 200px;
-  width: 150px;
+  height: 250px;
+  width: 190px;
   margin: auto;
   cursor: pointer;
+}
+@media(max-width: 768px) {
+  .brother-image {
+    height: 200px;
+    width: 150px;
+  }
 }
 
 /* Modal */
@@ -219,9 +225,11 @@
 
 .modal-image {
   display: inline-block;
+  object-fit: cover;
   vertical-align: baseline;
   height: 400px;
-  margin-left: 20px;
+  width: 50%;
+  margin-left: 10px;
 }
 @media(max-width: 539px) {
   .modal-image {
@@ -235,6 +243,7 @@
 }
 @media(min-width: 539px) {
   .modal-body {
+    display: flex;
     margin: 20px auto;
   }
 }
@@ -254,6 +263,7 @@
   .modal-body > ul {
     display: inline-block;
     vertical-align: top;
+    width: 50%;
   }
   .modal-body > ul > li {
     color: #666;
