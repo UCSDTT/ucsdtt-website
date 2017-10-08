@@ -1,54 +1,66 @@
+.rush-info {
+  padding-bottom: 100px;
+  overflow: hidden;
+}
 .rush-header {
   font-size: 22px;
   text-align: center;
-  margin-bottom: 50px;
-  margin-left: 15px;
+  margin: 20px auto;
 }
 
 .rush-subheader {
-  color: #2f4f4f;
-  font-size: 1.4em;
-  padding: 25px;
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
+  width: 75%;
+  color: var(--secondary-color);
   letter-spacing: 0.01em;
-  font-style: normal;
-  white-space: normal;
+  margin: 20px auto 50px;
+  text-align: left;
 }
 
 .rush-quote {
   position: relative;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
+  font-style: italic;
+  font-size: 22px;
   display: block;
   width: 100%;
-  padding: 0px;
-  text-align: center;
-  font-weight: bold;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.quote-quotes {
+  font-size: 55px;
 }
 
 .rush-author{
   position: relative;
-  font-family: 'Open Sans', sans-serif;
   font-size: 2em;
   display: block;
   width: 100%;
-  padding: 0px;
-  text-align: center;
+  margin-top: 10px;
+  text-align: right;
   font-weight: bold;
 }
 
+.carousel-inner > .item > .quote-image {
+  object-fit: cover;
+  height: 500px;
+  width: 900px;
+}
+@media(max-width: 768px) {
+  .carousel-inner > .item > .quote-image {
+    height: 300px;
+    width: 450px;
+    margin: auto;
+  }
+}
 
 .quote-appear {
-  color: #2f4f4f;
-  position: absolute;
-  top: 20vh;
-  width: 500px;
+  width: 100%;
   height: auto;
+  color: var(--secondary-color);
+  position: absolute;
+  top: 5vh;
   opacity: 0;
   z-index: 1;
-  width: 100%;
 }
 @media(max-width: 1200px) {
   .quote-appear {
@@ -58,7 +70,7 @@
 
 .quote-container {
   text-align: center;
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .rush-icons {
@@ -66,27 +78,21 @@
   font-size: 6em;
 }
 
-.rush-subcontent {
-  font-size: 10px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .rush-title {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Helvetica Neue Condensed', sans-serif;
   font-weight: bold;
   font-size: 3em;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: #610301;
+  color: var(--primary-color);
   white-space: nowrap;
 }
 @media(max-width: 1500px) {
   .rush-title {
-    font-size: 2.5em;
+    font-size: 2.4em;
   }
 }
 
@@ -94,7 +100,6 @@
   font-size: 1.8em;
   padding-top: 10px;
   display: block;
-  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   letter-spacing: 0.01em;
   font-style: normal;
@@ -105,20 +110,12 @@
 .rush-summary {
   font-size: 1.5em;
   display: block;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   letter-spacing: 0.01em;
   line-height: 25px;
   font-style: normal;
   white-space: normal;
   width: auto;
-}
-
-.rush-image {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  color: #610301;
 }
 
 .rush-container {
@@ -128,24 +125,11 @@
   overflow: hidden;
 }
 
-.rush-divider {
-  margin-bottom: 15vh;
-}
-
-.carousel-container {
-  text-align: center;
-  width: 80%;
-}
-
 
 /* Brothers Header */
 .rush-landing-header {
   position: relative;
-  background: #2f4f4f; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#24f4f4 , #000); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#2f4f4f, #000); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#2f4f4f, #000); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#2f4f4f , #000); /* Standard syntax */
+  background-color: var(--secondary-dark);
   color: #fff;
   font-size: 45px;
   font-style: italic;
@@ -157,6 +141,18 @@
     padding: 30px 0;
   }
 }
+.rush-landing-header:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -80px;
+  width: 0;
+  height: 0;
+  border-top: solid 50px var(--secondary-dark);
+  border-left: solid 80px transparent;
+  border-right: solid 80px transparent;
+}
 
 .rush-logo {
   position: absolute;
@@ -164,19 +160,71 @@
   margin-top: -5px;
 }
 
-/* Brothers Main Image */
-.rush-image-container {
-  position: relative;
-  background-color: #000;
-  height: 800px;
-  z-index: -1;
-  margin-bottom: 30px;
+.rush-image {
+  object-fit: cover;
+  height: 41vw;
+  width: 100%;
+}
+@media(max-width: 992px) {
+  .rush-image {
+    height: 450px;
+  }
 }
 
-.rush-image {
+.event-container {
+  margin-bottom: 50px;
+}
+
+.event-image-container {
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.event-image {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.event-image.zoom {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.event-info {
   position: absolute;
+  color: #fff;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+.event-info.show {
   opacity: 1;
-  object-fit: fill;
-  height: 800px;
-  z-index: -1;
+}
+
+.event-info h4 {
+  width: max-content;
+  margin: auto;
+}
+
+.event-name {
+  font-weight: 700;
+  font-size: 35px;
+  color: var(--primary-color);
+}
+
+.event-content {
+  font-size: 18px;
+  color: var(--secondary-light);
 }
