@@ -50,13 +50,19 @@ class Quote extends React.Component {
   }
   
   render() {
+    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    
     return (
       <Row style={{overflow: "hidden"}}>
         <Col md={12} lg={8}>
           <Carousel interval={7000} onSelect={this.changeQuote}>
             {activeList.map((slide, i) => (
               <Carousel.Item key={i}>
-                <img className="quote-image" src={slide.image} alt="Active" />
+                <img 
+                  className="quote-image"
+                  src={isSafari ? slide.safari : slide.image}
+                  alt="Active" 
+                />
               </Carousel.Item>
             ))}
           </Carousel>

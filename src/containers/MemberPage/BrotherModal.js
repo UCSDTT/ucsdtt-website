@@ -10,10 +10,10 @@ class BrotherModal extends React.Component {
       <Modal show={this.props.show} onHide={this.props.close}>
         <Modal.Header>
           <Modal.Title> {this.props.brother.name} </Modal.Title>
-          <Image className="modal-image-mobile" src={this.props.brother.url} circle/>
+          <Image className="modal-image-mobile" src={this.props.brother.professional} circle/>
         </Modal.Header>
         <Modal.Body>
-          <Image className="modal-image" src={this.props.brother.url} rounded/>
+          <Image className="modal-image" src={this.props.brother.professional} rounded/>
           <ListGroup>
             <ListGroupItem header="Position"> {this.props.brother.position} </ListGroupItem>
             <ListGroupItem header="Class"> {this.props.brother.className} </ListGroupItem>

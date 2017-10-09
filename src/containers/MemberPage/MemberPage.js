@@ -14,11 +14,12 @@ export default class MemberPage extends Component {
       image: {},
       imageIndex: 0,
       searchValue: '',
-      brothers: brothers,
+      brothers: [],
       alumni: alumni,
-      allBrothers: brothers.concat(alumni),
-      updatedBrothers: brothers,
-      filteredBrothers: brothers,
+      // allBrothers: brothers.concat(alumni),
+      allBrothers: [],
+      updatedBrothers: [],
+      filteredBrothers: [],
       dropdownValue: 'active',
       options: options.general,
       specificValue: '',
@@ -40,6 +41,8 @@ export default class MemberPage extends Component {
 
   /* Runs when component mounts */
   componentDidMount() {
+    let actives = [];
+    let chairs = [];
     let image = document.getElementsByClassName('brothers-image');
 
     /* Autofocuses the search bar */
@@ -48,8 +51,21 @@ export default class MemberPage extends Component {
     /* Makes the first brothers header image visible */
     image[0].classList.add('selected');
 
+    brothers.forEach((brother) => {
+      if (brother.position === 'Active') {
+        actives.push(brother);
+      }
+      else {
+        chairs.push(brother);
+      }
+    })
+
+    this.sort(actives);
+
     this.setState({
       image: image,
+      brothers: chairs.concat(actives),
+      updatedBrothers: chairs.concat(actives),
     })
   }
 
@@ -68,13 +84,21 @@ export default class MemberPage extends Component {
     })
   }
 
+  sort(brothers) {
+    brothers.sort(function(a, b){
+      if (a.name < b.name) return -1;
+      if (a.name > b.name) return 1;
+      return 0;
+    });
+  }
+
   /* Filters the list based on the search input */
   filterSearch(event) {
     /* Sets the list to the filtered list of brothers */
     let updatedList = this.state.filteredBrothers;
 
     /* Sets the displayed list to all actives whose names begin with the input value */
-    updatedList = updatedList.filter(function(brother){
+    updatedList = updatedList.filter(function(brother) {
       return brother.name.toLowerCase().startsWith(
         event.target.value.toLowerCase()) !== false;
     });
@@ -87,7 +111,7 @@ export default class MemberPage extends Component {
 
   /* Filters the first dropdown based on the selected value */
   filterDropdown(selected) {
-    let updatedList = this.state.brothers;
+    let updatedList = brothers;
     let options;
     let disabled = false;
     let image = this.state.image;
@@ -106,17 +130,21 @@ export default class MemberPage extends Component {
 
     /* Sets the specific dropdown options based on the first selected dropdown value */
     if (selected.value === 'active') {
+      updatedList = this.state.brothers;
       options = this.state.activeOptions;
     }
     else if (selected.value === 'major') {
       options = this.state.majorOptions;
+      this.sort(updatedList);
     }
     else if (selected.value === 'class') {
       updatedList = this.state.allBrothers;  // Sets brothers list to consist of actives and alumni
+      this.sort(updatedList);
       options = this.state.classOptions;
     }
     else {
       updatedList = this.state.alumni;  // Sets brothers list to consist of only alumni
+      this.sort(updatedList);
       disabled = true;
     }
 
@@ -134,7 +162,7 @@ export default class MemberPage extends Component {
 
   /* Filters the specific dropdown based on the selected value */
   filterSpecific(selected) {
-    let updatedList = this.state.brothers;
+    let updatedList = brothers;
     let image = this.state.image;
 
     /* Sets the new brothers header image */

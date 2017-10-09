@@ -9,7 +9,7 @@ class MemberInfo extends React.Component {
       <div>
         <Image
           className="brother-image"
-          src={this.props.brother.url}
+          src={this.props.brother.professional}
           onClick={() => this.props.open(this.props.brother)}
           responsive
           rounded

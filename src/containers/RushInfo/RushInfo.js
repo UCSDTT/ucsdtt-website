@@ -32,7 +32,10 @@ export default class RushPage extends Component {
           </a>
           RUSH INFORMATION
         </div>
-        <Image className="rush-image" src={require('./images/rush_header.jpg')} responsive/>
+        <Image 
+          className="rush-image" 
+          src={isSafari ? require('./images/rush_header.jpg') : require('./images/rush_header.webp')}
+        />
         <div className="rush-header">
           <span className="rush-title"> Rush Fall 2017</span>
         </div>
