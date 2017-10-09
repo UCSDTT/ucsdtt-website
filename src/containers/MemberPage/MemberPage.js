@@ -1,6 +1,6 @@
 import './MemberPage.css';
 import 'react-select/dist/react-select.css';
-import {Grid, Row, Col, Image, FormGroup, FormControl} from 'react-bootstrap';
+import {Grid, Row, Col, FormGroup, FormControl} from 'react-bootstrap';
 import Select from 'react-select';
 import React, {Component} from 'react';
 import {BrothersList} from './BrothersList.js';
@@ -17,7 +17,7 @@ export default class MemberPage extends Component {
       brothers: [],
       alumni: alumni,
       // allBrothers: brothers.concat(alumni),
-      allBrothers: [],
+      allBrothers: brothers,
       updatedBrothers: [],
       filteredBrothers: [],
       dropdownValue: 'active',
@@ -213,13 +213,18 @@ export default class MemberPage extends Component {
       <div>
         <div className="brothers-header">
           <a className="brothers-logo" role="button" href="/">
-            <Image className="logo" src={require('../../components/home/NavBar/images/logo.webp')}/>
+            <img className="logo" src={require('../../components/home/NavBar/images/logo.webp')} />
           </a>
           OUR BROTHERS
         </div>
         <div className="brothers-image-container">
           {images.map((image, i) => (
-            <Image className="brothers-image" src={image.url} key={i} responsive/>
+            <img 
+              className="brothers-image" 
+              src={image.url} 
+              alt="Brothers"
+              key={i}
+            />
           ))}
         </div>
         <Grid className="brothers-grid">

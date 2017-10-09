@@ -1,18 +1,16 @@
 import './MemberPage.css';
 
 import React from 'react';
-import {Image} from 'react-bootstrap';
 
 class MemberInfo extends React.Component {
   render() {
     return (
       <div>
-        <Image
+        <img
           className="brother-image"
           src={this.props.brother.professional}
           onClick={() => this.props.open(this.props.brother)}
-          responsive
-          rounded
+          alt="Active"
         />
         <h4> {this.props.brother.name.toUpperCase()} </h4>
         <p> {this.props.brother.position.toUpperCase()} </p>

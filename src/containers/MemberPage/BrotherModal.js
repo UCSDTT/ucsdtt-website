@@ -1,19 +1,40 @@
 import './MemberPage.css';
 
 import React from 'react';
-import {Modal, ListGroup, ListGroupItem, Image} from 'react-bootstrap';
+import {Modal, ListGroup, ListGroupItem} from 'react-bootstrap';
 
 
 class BrotherModal extends React.Component {
+  componentDidUpdate() {
+    const observer = window.lozad('.lozad', {
+      load: function(el) {
+        el.src = el.dataset.src;
+        el.onload = function() {
+            el.classList.add('fadeIn')
+        }
+      },
+      rootMargin: '200px 0px'
+    }); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
+  }
+
   render() {
     return (
       <Modal show={this.props.show} onHide={this.props.close}>
         <Modal.Header>
           <Modal.Title> {this.props.brother.name} </Modal.Title>
-          <Image className="modal-image-mobile" src={this.props.brother.professional} circle/>
+          <img
+            className="lozad modal-image-mobile" 
+            data-src={this.props.brother.professional}
+            alt="Active"
+          />
         </Modal.Header>
         <Modal.Body>
-          <Image className="modal-image" src={this.props.brother.professional} rounded/>
+          <img 
+            className="lozad modal-image" 
+            data-src={this.props.brother.professional}
+            alt="Active"
+          />
           <ListGroup>
             <ListGroupItem header="Position"> {this.props.brother.position} </ListGroupItem>
             <ListGroupItem header="Class"> {this.props.brother.className} </ListGroupItem>
