@@ -42,6 +42,10 @@
 }*/
 
 @media(min-width: 768px) {
+  .navbar-header > .navbar-brand {
+    margin-top: -5px;
+  }
+
   .navbar-collapse > .navbar-right {
     font-size: 25px;
     margin: auto;
@@ -265,13 +269,15 @@
 }*/
 
 /* Garnett Logo */
-.logo.gem {
+.gem {
+  height: 50px;
+  width: 50px;
   margin-top: -15px;
   margin-right: 15px; 
 }
 
 @media(max-width: 768px) {
-  .logo.gem {
+  .gem {
     height: 75px;
     width: 75px;
   }

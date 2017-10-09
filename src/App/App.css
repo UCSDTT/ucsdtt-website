@@ -123,8 +123,14 @@ body {
 }
 
 .logo {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
+}
+@media(max-width: 768px) {
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 #title {

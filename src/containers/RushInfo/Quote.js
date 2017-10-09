@@ -5,6 +5,8 @@ import React from 'react';
 
 import {carouselData} from './data.js'
 
+const activeList = carouselData.sort(() => .5 - Math.random());
+
 class Quote extends React.Component {
   constructor(props) {
     super(props);
@@ -49,10 +51,10 @@ class Quote extends React.Component {
   
   render() {
     return (
-      <Row>
+      <Row style={{overflow: "hidden"}}>
         <Col md={12} lg={8}>
           <Carousel interval={7000} onSelect={this.changeQuote}>
-            {carouselData.map((slide, i) => (
+            {activeList.map((slide, i) => (
               <Carousel.Item key={i}>
                 <img className="quote-image" src={slide.image} alt="Active" />
               </Carousel.Item>
@@ -61,9 +63,8 @@ class Quote extends React.Component {
         </Col>
         <Col 
           md={12} lg={4}
-          className="quote-container"
         >
-          {carouselData.map((slide, i) => (
+          {activeList.map((slide, i) => (
             <div key={i} className="quote-appear">
               <div style={{display: "flex"}}>
                 <span className="quote-quotes">❝</span>

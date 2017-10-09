@@ -15,6 +15,11 @@
   margin: 20px auto 50px;
   text-align: left;
 }
+@media(max-width: 768px) {
+  .rush-subheader {
+    width: 90%;
+  }
+}
 
 .rush-quote {
   position: relative;
@@ -58,11 +63,9 @@
 }
 
 .quote-appear {
-  width: 100%;
-  height: auto;
   color: var(--secondary-color);
   position: absolute;
-  top: 5vh;
+  top: 3vh;
   opacity: 0;
   z-index: 1;
 }
@@ -70,11 +73,6 @@
   .quote-appear {
     display: none;
   }
-}
-
-.quote-container {
-  text-align: center;
-  padding-left: 30px;
 }
 
 .rush-icons {
@@ -141,27 +139,31 @@
 }
 @media(max-width: 768px) {
   .rush-landing-header {
-    font-size: 25px;
+    font-size: 23px;
     padding: 30px 0;
   }
 }
 .rush-landing-header:after {
   content: '';
   position: absolute;
-  top: 100%;
+  top: 98%;
   left: 50%;
-  margin-left: -80px;
-  width: 0;
-  height: 0;
   border-top: solid 50px var(--secondary-dark);
   border-left: solid 80px transparent;
   border-right: solid 80px transparent;
+  transform: translateX(-50%);
 }
 
 .rush-logo {
   position: absolute;
-  left: 5%;
-  margin-top: -5px;
+  top: 10px;
+  left: 30px;
+}
+@media(max-width: 768px) {
+  .rush-logo {
+    top: 15px;
+    left: 15px;
+  }
 }
 
 .rush-image {
