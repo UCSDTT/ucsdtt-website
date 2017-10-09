@@ -65,7 +65,7 @@
   z-index: -1;
 }
 @media(max-width: 992px) {
-  .brothers-image.img-responsive {
+  .brothers-image {
     height: calc(100vh - 199px);
   }
 }
