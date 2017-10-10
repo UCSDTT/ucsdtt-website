@@ -162,7 +162,7 @@ const brothers = [
     'className': 'Omicron Class',
     'major': 'chem',
     'majorName': 'Chemical Engineering',
-    'year': 'Class of 2018',
+    'year': 'Class of 2020',
     'linkedin': 'https://www.linkedin.com/in/david-lin-a7612073/',
     'image': require('./images/brothers/casual/mayuki.webp'),
     'safari': require('./images/brothers/casual/mayuki.jpg'),
