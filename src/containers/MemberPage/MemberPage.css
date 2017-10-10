@@ -110,6 +110,7 @@
 
 .brother-info {
   margin-bottom: 20px;
+  padding: 0;
 }
 @media(max-width: 768px) {
   .brother-info {
@@ -133,7 +134,7 @@
 }
 @media(max-width: 992px) {
   .brother-info h4 {
-    font-size: 16.5px;
+    font-size: 17px;
   }
 }
 
@@ -144,7 +145,7 @@
 }
 @media(max-width: 992px) {
   .brother-info p {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
@@ -158,6 +159,7 @@
 .option-image {
   height: 150px;
   margin: auto;
+  border-radius: 50%;
 }
 
 .brother-image {

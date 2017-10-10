@@ -19,20 +19,22 @@ class BrotherModal extends React.Component {
   }
 
   render() {
+    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
     return (
       <Modal show={this.props.show} onHide={this.props.close}>
         <Modal.Header>
           <Modal.Title> {this.props.brother.name} </Modal.Title>
           <img
             className="lozad modal-image-mobile" 
-            data-src={this.props.brother.professional}
+            data-src={isSafari ? this.props.brother.professional_jpg : this.props.brother.professional_webp}
             alt="Active"
           />
         </Modal.Header>
         <Modal.Body>
           <img 
             className="lozad modal-image" 
-            data-src={this.props.brother.professional}
+            data-src={isSafari ? this.props.brother.professional_jpg : this.props.brother.professional_webp}
             alt="Active"
           />
           <ListGroup>

@@ -189,8 +189,8 @@ class Scroll extends React.Component {
             On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.                   
           </p>
           <img 
-            className="lozad founders"
-            data-src={isSafari ? (require('./images/founders.jpg')) : (require('./images/founders.webp'))} 
+            className="founders"
+            src={isSafari ? (require('./images/founders.jpg')) : (require('./images/founders.webp'))} 
             alt="Founders"
           />
         </div>

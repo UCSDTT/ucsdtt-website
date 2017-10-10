@@ -209,11 +209,18 @@ export default class MemberPage extends Component {
   }
 
   render() {
+    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
     return (
       <div>
         <div className="brothers-header">
           <a className="brothers-logo" role="button" href="/">
-            <img className="logo" src={require('../../components/home/NavBar/images/logo.webp')} />
+            <img 
+              className="logo" 
+              src={isSafari ? (require('../../components/home/NavBar/images/logo.webp')) :
+              (require('../../components/home/NavBar/images/logo.png'))}
+              alt="Logo"
+            />
           </a>
           OUR BROTHERS
         </div>
@@ -221,7 +228,7 @@ export default class MemberPage extends Component {
           {images.map((image, i) => (
             <img 
               className="brothers-image" 
-              src={image.url} 
+              src={isSafari ? image.jpg : image.webp} 
               alt="Brothers"
               key={i}
             />
