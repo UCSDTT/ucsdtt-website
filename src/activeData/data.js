@@ -724,6 +724,19 @@ const brothers = [
     'professional_webp': require('./images/brothers/professional/meghna.webp'),
     'professional_jpg': require('./images/brothers/professional/meghna.jpg'),
   },
+  {
+    'name': 'Jaehee Jung',
+    'position': 'Active',
+    'class': 'kappa',
+    'className': 'Kappa Class',
+    'major': 'ee',
+    'majorName': 'Electrical Engineering',
+    'year': 'Class of 2018',
+    'image': require('./images/brothers/casual/jaehee.webp'),
+    'safari': require('./images/brothers/casual/jaehee.jpg'),
+    'professional_webp': require('./images/brothers/professional/jaehee.webp'),
+    'professional_jpg': require('./images/brothers/professional/jaehee.jpg'),
+  },
 ]
 
 const alumni = [
