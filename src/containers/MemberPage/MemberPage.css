@@ -167,7 +167,9 @@
   width: 190px;
   background-color: #000;
   margin: auto;
-  border-radius: 6px;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
   cursor: pointer;
 }
 
@@ -177,6 +179,7 @@
   width: 190px;
   margin: auto;
   border-radius: 6px;
+  transition: opacity 0.5s;
 }
 .brother-image:hover {
   opacity: 0.6;
