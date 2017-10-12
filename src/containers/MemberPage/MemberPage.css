@@ -162,13 +162,24 @@
   border-radius: 50%;
 }
 
+.brother-image-container {
+  height: 250px;
+  width: 190px;
+  background-color: #000;
+  margin: auto;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .brother-image {
   object-fit: cover;
   height: 250px;
   width: 190px;
   margin: auto;
-  cursor: pointer;
   border-radius: 6px;
+}
+.brother-image:hover {
+  opacity: 0.6;
 }
 @media(max-width: 768px) {
   .brother-image {
@@ -279,7 +290,7 @@
   }
   .modal-body > ul > li {
     color: #666;
-    font-size: 25px;
+    font-size: 24px;
   }
   .modal-body > ul > li > h4 {
     color: #610301;
