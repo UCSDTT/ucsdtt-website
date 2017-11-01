@@ -164,7 +164,7 @@ class NavBar extends Component {
             */}
             <Navbar.Brand>
               <li>
-                <a href="/login">
+                <a href="http://garnett-app.herokuapp.com">
                   <Image className="gem" src={require('./images/garnett.svg')} />
                 </a>
               </li>
