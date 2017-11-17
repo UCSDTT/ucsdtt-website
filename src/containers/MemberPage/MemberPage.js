@@ -66,6 +66,7 @@ export default class MemberPage extends Component {
       image: image,
       brothers: chairs.concat(actives),
       updatedBrothers: chairs.concat(actives),
+      filteredBrothers: chairs.concat(actives)
     })
   }
 
