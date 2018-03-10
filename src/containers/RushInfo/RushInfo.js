@@ -37,7 +37,7 @@ export default class RushPage extends Component {
           src={isSafari ? require('./images/rush_header.jpg') : require('./images/rush_header.webp')}
         />
         <div className="rush-header">
-          <span className="rush-title"> Rush Fall 2017</span>
+          <span className="rush-title">Rush Spring 2018</span>
         </div>
         <Grid className="rush-container">
           <Row>
