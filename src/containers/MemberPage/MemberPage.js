@@ -42,7 +42,8 @@ export default class MemberPage extends Component {
   /* Runs when component mounts */
   componentDidMount() {
     let actives = [];
-    let chairs = [];
+    let eboard = [];
+    let cabinet = [];
     let image = document.getElementsByClassName('brothers-image');
 
     /* Autofocuses the search bar */
@@ -52,21 +53,26 @@ export default class MemberPage extends Component {
     image[0].classList.add('selected');
 
     brothers.forEach((brother) => {
-      if (brother.position === 'Active') {
-        actives.push(brother);
+      if (brother.eboard === true) {
+        eboard.push(brother);
+      }
+      else if (brother.cabinet === true) {
+        cabinet.push(brother);
       }
       else {
-        chairs.push(brother);
+        actives.push(brother);
       }
-    })
+    });
 
     this.sort(actives);
 
+    let members = eboard.concat(cabinet).concat(actives);
+
     this.setState({
       image: image,
-      brothers: chairs.concat(actives),
-      updatedBrothers: chairs.concat(actives),
-      filteredBrothers: chairs.concat(actives)
+      brothers: members,
+      updatedBrothers: members,
+      filteredBrothers: members
     })
   }
 

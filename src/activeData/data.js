@@ -33,8 +33,7 @@ const brothers = [
   },
   {
     'name': 'Daviid Perez',
-    'position': 'Corresponding Secretary',
-    'eboard': true,
+    'position': 'Active',
     'class': 'mu',
     'className': 'Mu Class',
     'major': 'chem',
@@ -49,8 +48,7 @@ const brothers = [
   },
   {
     'name': 'Tyler Ly',
-    'position': 'Treasurer',
-    'eboard': true,
+    'position': 'Active',
     'class': 'xi',
     'className': 'Xi Class',
     'major': 'cs',
@@ -65,8 +63,7 @@ const brothers = [
   },
   {
     'name': 'Jennie Nguyen',
-    'position': 'Scribe',
-    'eboard': true,
+    'position': 'Active',
     'class': 'xi',
     'className': 'Xi Class',
     'major': 'env',
@@ -141,7 +138,7 @@ const brothers = [
   },
   {
     'name': 'Rachael Wong',
-    'position': 'Fundraising Chair',
+    'position': 'Fundraising/Rush Chair',
     'cabinet': true,
     'class': 'omicron',
     'className': 'Omicron Class',
@@ -156,8 +153,7 @@ const brothers = [
   },
   {
     'name': 'David Lin',
-    'position': 'Historian',
-    'cabinet': true,
+    'position': 'Active',
     'class': 'omicron',
     'className': 'Omicron Class',
     'major': 'chem',
@@ -201,8 +197,8 @@ const brothers = [
   },
   {
     'name': 'Fumika Takazawa',
-    'position': 'Professionalism Chair',
-    'cabinet': true,
+    'position': 'Corresponding Secretary',
+    'eboard': true,
     'class': 'omicron',
     'className': 'Omicron Class',
     'major': 'env',
@@ -216,8 +212,7 @@ const brothers = [
   },
   {
     'name': 'Ming Ming Liu',
-    'position': 'Rush Chair',
-    'cabinet': true,
+    'position': 'Active',
     'class': 'mu',
     'className': 'Mu Class',
     'major': 'mech',
@@ -232,8 +227,7 @@ const brothers = [
   },
   {
     'name': 'Momina Mahmood',
-    'position': 'Rush Chair',
-    'cabinet': true,
+    'position': 'Active',
     'class': 'xi',
     'className': 'Xi Class',
     'major': 'chem',
@@ -355,7 +349,8 @@ const brothers = [
   },
   {
     'name': 'Jason Li',
-    'position': 'Active',
+    'position': 'External Events Chair',
+    'cabinet': true,
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'env',
@@ -385,7 +380,8 @@ const brothers = [
   },
   {
     'name': 'Adam Lin',
-    'position': 'Active',
+    'position': 'Academics Chair',
+    'cabinet': true,
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'me',
@@ -589,7 +585,8 @@ const brothers = [
   },
   {
     'name': 'Goutham Marimuthu',
-    'position': 'Active',
+    'position': 'Rush Chair',
+    'cabinet': true,
     'class': 'omicron',
     'className': 'Omicron Class',
     'major': 'aero',
@@ -631,7 +628,8 @@ const brothers = [
   },
   {
     'name': 'Wonjae Lee',
-    'position': 'Active',
+    'position': 'Treasurer',
+    'eboard': true,
     'class': 'omicron',
     'className': 'Omicron Class',
     'major': 'chem',
@@ -659,7 +657,8 @@ const brothers = [
   },
   {
     'name': 'Allen Gao',
-    'position': 'Active',
+    'position': 'External Events Chair',
+    'cabinet': true,
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'cs',
@@ -673,7 +672,8 @@ const brothers = [
   },
   {
     'name': 'Ana Dasgupta',
-    'position': 'Active',
+    'position': 'Historian',
+    'cabinet': true,
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'env',
@@ -687,7 +687,8 @@ const brothers = [
   },
   {
     'name': 'Stephanie Zhu',
-    'position': 'Active',
+    'position': 'Scribe',
+    'eboard': true,
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'cs',
