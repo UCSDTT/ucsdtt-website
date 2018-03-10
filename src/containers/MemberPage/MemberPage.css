@@ -186,6 +186,9 @@
   width: 190px;
   margin: auto;
   border-radius: 6px;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 .brother-image:hover {

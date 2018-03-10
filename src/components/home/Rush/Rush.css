@@ -175,6 +175,9 @@
   margin: 0 15px;
   border: solid #fff;
   border-radius: 50%;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  -moz-transition: color 0.3s, background-color 0.3s;
+  -o-transition: color 0.3s, background-color 0.3s;
   transition: color 0.3s, background-color 0.3s;
 }
 .rush-media i:hover {

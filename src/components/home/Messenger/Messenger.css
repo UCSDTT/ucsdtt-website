@@ -142,29 +142,32 @@
 }
           
 [class^="messenger-card-"] .front {
-  transform:rotateY(0deg);
+  transform: rotateY(0deg);
 }
       
 [class^="messenger-card-"] .back {
-  transform:rotateY(-180deg); 
+  transform: rotateY(-180deg); 
 }
         
 [class^="messenger-card-"] .flipper.flipped .front { 
-  transform:rotateY(180deg); 
+  transform: rotateY(180deg); 
 }
 [class^="messenger-card-"] .flipper.flipped .back { 
-  transform:rotateY(0deg); 
+  transform: rotateY(0deg); 
 }
 
 .messenger-card-0 .front, .messenger-card-0 .back {
-  transition:-webkit-transform ease 0.6s;
-  transition:transform ease 0.6s;
+  transition: -webkit-transform ease 0.6s;
+  transition: -moz-transform ease 0.6s;
+  transition: transform ease 0.6s;
 }
 .messenger-card-1 .front, .messenger-card-1 .back {
-  transition:-webkit-transform ease 1.1s;
-  transition:transform ease 1.1s;
+  transition: -webkit-transform ease 1.1s;
+  transition: -moz-transform ease 0.6s;
+  transition: transform ease 1.1s;
 }
 .messenger-card-2 .front, .messenger-card-2 .back {
-  transition:-webkit-transform ease 1.4s;
-  transition:transform ease 1.4s;
+  transition: -webkit-transform ease 1.4s;
+  transition: -moz-transform ease 0.6s;
+  transition: transform ease 1.4s;
 }
