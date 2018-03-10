@@ -42,7 +42,7 @@ const carouselData = [
     'safari': require('./images/ddeng_rush.jpg'),
   },
   {
-    'quote': 'Theta Tau helped me realized some time near the end of my Sophomore year and beginning of my Junior year that I no longer wanted to program as a career, so I took the initiative to try other options. Program management is a common path off of engineering so it piqued my interest and I am now pursuing it as a career.',
+    'quote': 'Theta Tau helped me realize some time near the end of my Sophomore year and beginning of my Junior year that I no longer wanted to program as a career, so I took the initiative to try other options. Program management is a common path off of engineering so it piqued my interest and I am now pursuing it as a career.',
     'author': 'Judy Ho',
     'class': 'Nu Class',
     'image': require('./images/judy_rush.webp'),
