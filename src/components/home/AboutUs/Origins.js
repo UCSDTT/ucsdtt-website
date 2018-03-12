@@ -122,12 +122,12 @@ class Scroll extends React.Component {
         bottomParent = bottomPanel;
       }
 
-      let container = document.querySelector('#container');
+      let container = document.getElementById('container');
 
       syncPanelContent(tops, bottoms, 0, container.clientHeight, panelHeight);
 
       function update() {
-        let container = document.querySelector('#container');
+        let container = document.getElementById('container');
         var scrollTop = el.scrollTop;
         var containerHeight = container.clientHeight;
         requestAnimationFrame(function() {

@@ -4,72 +4,72 @@ import {Image, Nav, NavItem, Navbar} from 'react-bootstrap';
 import React, {Component} from 'react';
 import {animateScroll as scroll, scroller} from 'react-scroll';
 
+/* Underlines the hovered element by adding the underline class */
+function underline(event) {
+  if (window.innerWidth > 768) {
+    event
+      .target
+      .classList
+      .toggle('underline');
+  }
+}
+
+/* Opens the menu for mobile */
+function openMenu() {
+  /* Adds the open class to these elements */
+  document
+    .querySelector('#hamburger')
+    .classList
+    .toggle('open');
+  document
+    .querySelector('.navbar-fixed-top')
+    .classList
+    .toggle('open');
+  document
+    .querySelector('#nav-logo')
+    .classList
+    .toggle('open');
+  document
+    .querySelector('.navbar-collapse .navbar-nav')
+    .classList
+    .toggle('open');
+  
+  /* Prevents user from scrolling if menu is open on mobile */
+  if (document.body.style.overflow === 'hidden') {
+    document.body.style.overflow = 'visible';
+  }
+  else {
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+/* Scrolls to the top */
+function scrollToTop() {
+  scroll.scrollToTop({
+    duration: 1000,
+  });
+
+  /* If window width is less than 768px, closes hamburger menu */
+  if (window.innerWidth <= 768) {
+    openMenu();
+  }
+}
+
+/* Scrolls to the selected section */
+function scrollToComp(name) {
+  scroller.scrollTo(name, {
+    duration: 1000,
+    offset: 0,
+    smooth: true,
+  });
+
+  /* If window width is less than 768px, closes hamburger menu */
+  if (window.innerWidth <= 768) {
+    openMenu();
+  }
+}
+
 class NavBar extends Component {
-  /* Underlines the hovered element by adding the underline class */
-  underline = (event) => {
-    if (window.innerWidth > 768) {
-      event
-        .target
-        .classList
-        .toggle('underline');
-    }
-  }
-
-  /* Opens the menu for mobile */
-  openMenu() {
-    /* Adds the open class to these elements */
-    document
-      .querySelector('#hamburger')
-      .classList
-      .toggle('open');
-    document
-      .querySelector('.navbar-fixed-top')
-      .classList
-      .toggle('open');
-    document
-      .querySelector('#nav-logo')
-      .classList
-      .toggle('open');
-    document
-      .querySelector('.navbar-collapse .navbar-nav')
-      .classList
-      .toggle('open');
-    
-    /* Prevents user from scrolling if menu is open on mobile */
-    if (document.body.style.overflow === 'hidden') {
-      document.body.style.overflow = 'visible';
-    }
-    else {
-      document.body.style.overflow = 'hidden';
-    }
-  }
-
-  /* Scrolls to the top */
-  scrollToTop() {
-    scroll.scrollToTop({
-      duration: 1000,
-    });
-
-    /* If window width is less than 768px, closes hamburger menu */
-    if (window.innerWidth <= 768) {
-      this.openMenu();
-    }
-  }
-
-  /* Scrolls to the selected section */
-  scrollToComp(name) {
-    scroller.scrollTo(name, {
-      duration: 1000,
-      offset: 0,
-      smooth: true,
-    });
-
-    /* If window width is less than 768px, closes hamburger menu */
-    if (window.innerWidth <= 768) {
-      this.openMenu();
-    }
-  }
-
   render() {
     /* Checks if browser is safari to determine which images to feed */
     let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -93,10 +93,10 @@ class NavBar extends Component {
               <span></span>
               </div>
             }
-            onClick={this.openMenu}/>
+            onClick={openMenu}/>
         </Navbar.Header>
         <Nav pullLeft className="hidden-sm hidden-xs">
-          <NavItem className="navbar-title" onClick={this.scrollToTop.bind(this)}>Theta Tau UCSD</NavItem>
+          <NavItem className="navbar-title" onClick={scrollToTop}>Theta Tau UCSD</NavItem>
         </Nav>
         <Navbar.Collapse>
           <Nav pullRight>
@@ -117,51 +117,40 @@ class NavBar extends Component {
               </DropdownButton>
             </li>*/}
             <NavItem 
-              onClick={this.scrollToTop.bind(this)}
-              onMouseOver={this.underline} 
-              onMouseOut={this.underline}
+              onClick={scrollToTop}
+              onMouseOver={underline} 
+              onMouseOut={underline}
             >
               Home
             </NavItem>
             <NavItem 
-              onClick={() => this.scrollToComp("rush")}
-              onMouseOver={this.underline} 
-              onMouseOut={this.underline}
+              onClick={() => scrollToComp("rush")}
+              onMouseOver={underline} 
+              onMouseOut={underline}
             >
               Rush
             </NavItem>
             <NavItem 
-              onClick={() => this.scrollToComp("about-us")}
-              onMouseOver={this.underline} 
-              onMouseOut={this.underline}
+              onClick={() => scrollToComp("about-us")}
+              onMouseOver={underline} 
+              onMouseOut={underline}
             >
               About
             </NavItem>
             <NavItem 
-              onClick={() => this.scrollToComp("faq")}
-              onMouseOver={this.underline} 
-              onMouseOut={this.underline}
+              onClick={() => scrollToComp("faq")}
+              onMouseOver={underline} 
+              onMouseOut={underline}
             >
               FAQ
             </NavItem>
             <NavItem 
-              onClick={() => this.scrollToComp("messenger")}
-              onMouseOver={this.underline} 
-              onMouseOut={this.underline}
+              onClick={() => scrollToComp("messenger")}
+              onMouseOver={underline} 
+              onMouseOut={underline}
             >
               Members
             </NavItem>
-            {/*
-            <li role="presentation">
-              <a
-                href="/members"
-                onMouseOver={this.underline}
-                onMouseOut={this.underline}
-              >
-                Members
-              </a>
-            </li>
-            */}
             <Navbar.Brand>
               <li>
                 <a href="http://garnett-app.herokuapp.com">

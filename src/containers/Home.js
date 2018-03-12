@@ -10,7 +10,6 @@ import {Messenger} from '../components/home/Messenger/Messenger.js';
 import {Companies} from '../components/home/Companies/Companies.js';
 import {Footer} from '../components/home/Footer/Footer.js';
 
-
 export default class Home extends Component {
   componentDidMount() {
     const observer = window.lozad('.lozad', {
