@@ -58,7 +58,7 @@ class Messenger extends Component {
 
     this.setState({
       activeList: activeList
-    })
+    });
 
     return shuffled.slice(0, 3) ; //get sub-array of first n elements AFTER shuffle
   }

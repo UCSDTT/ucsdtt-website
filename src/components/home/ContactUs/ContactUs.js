@@ -13,7 +13,6 @@ import {
   Row
 } from 'react-bootstrap';
 import React, {Component} from 'react';
-
 import {Element} from 'react-scroll';
 
 class ContactUs extends Component {
