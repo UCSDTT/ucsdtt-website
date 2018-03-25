@@ -1000,7 +1000,7 @@ const options = {
     { value: 'active', label: 'Active' },
     { value: 'major', label: 'Major' },
     { value: 'class', label: 'Class' },
-    // { value: 'alumni', label: 'Alumni' },
+    { value: 'alumni', label: 'Alumni' },
   ],
   active: [
     { value: 'eboard', label: 'Executive Board' },

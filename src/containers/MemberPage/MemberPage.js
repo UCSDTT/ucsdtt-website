@@ -16,7 +16,7 @@ export default class MemberPage extends Component {
       searchValue: '',
       brothers: [],
       alumni: alumni,
-      // allBrothers: brothers.concat(alumni),
+      //allBrothers: brothers.concat(alumni),
       allBrothers: brothers,
       updatedBrothers: [],
       filteredBrothers: [],
