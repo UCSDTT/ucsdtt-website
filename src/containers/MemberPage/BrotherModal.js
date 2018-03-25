@@ -3,6 +3,7 @@ import './MemberPage.css';
 import React from 'react';
 import {Modal, ListGroup, ListGroupItem} from 'react-bootstrap';
 
+//window.onscroll = null;
 
 class BrotherModal extends React.Component {
   componentDidUpdate() {
