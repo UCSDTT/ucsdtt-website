@@ -331,8 +331,8 @@ const brothers = [
     'majorName': 'Environmental Engineering',
     'year': 'Class of 2018',
     'linkedin': 'https://www.linkedin.com/in/marilyn-sun-3677494a/',
-    'image': require('./images/brothers/portraits/marilyn.webp'),
-    'safari': require('./images/brothers/portraits/marilyn.jpg'),
+    'image': require('./images/brothers/portraits/166_msun.webp'),
+    'safari': require('./images/brothers/portraits/166_msun.jpg'),
   },
   {
     'name': 'Shawn Macasieb',
