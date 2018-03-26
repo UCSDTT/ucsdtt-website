@@ -16,9 +16,9 @@ class MemberInfo extends React.Component {
             alt="Active"
           />
         </div>
-        <h4> {this.props.brother.name.toUpperCase()} </h4>
-        <p> {this.props.brother.position.toUpperCase()} </p>
-        <p> {this.props.brother.className.toUpperCase()} </p>
+        <h4> {this.props.brother.name} </h4>
+        <p> {this.props.brother.position} </p>
+        <p> {this.props.brother.className} </p>
       </div>
     )
   }

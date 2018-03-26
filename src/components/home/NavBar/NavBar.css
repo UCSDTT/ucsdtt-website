@@ -1,6 +1,6 @@
 .navbar {
   background: transparent;
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue Condensed';
   border: none;
   text-shadow: 2px 2px 2px #000;
   -webkit-transition: background 0.5s ease;
@@ -37,7 +37,6 @@
   color: #fff !important;
   padding-top: 0px;
   padding-bottom: 0px;
-  text-transform: uppercase;
 }
 /*.navbar-default .navbar-nav > li > a:focus, 
 .navbar-default .navbar-nav > li > a:hover {

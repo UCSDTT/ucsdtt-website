@@ -30,7 +30,7 @@ export default class RushPage extends Component {
           <a className="rush-logo" role="button" href="/">
             <Image className="logo" src={require('../../components/home/NavBar/images/logo.png')}/>
           </a>
-          RUSH INFORMATION
+          Rush Information
         </div>
         <Image 
           className="rush-image" 

@@ -8,7 +8,7 @@ class ChapterInfo extends React.Component {
   render() {
     return (
       <Col xsOffset={2} xs={8} smOffset={0} sm={6} md={4} className="widget">
-        <div className="widget-header">Want to learn more?</div><br/>
+        <div className="widget-header">Want to Learn More?</div><br/>
         <p> 
           Outside of the Epsilon Delta chapter at UCSD, Theta Tau is the oldest 
           and largest professional engineering fraternity in the United States, 

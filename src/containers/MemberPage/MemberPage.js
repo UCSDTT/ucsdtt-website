@@ -245,7 +245,7 @@ export default class MemberPage extends Component {
               alt="Logo"
             />
           </a>
-          OUR BROTHERS
+          Our Brothers
         </div>
         <div className="brothers-image-container">
           {images.map((image, i) => (
@@ -273,7 +273,7 @@ export default class MemberPage extends Component {
        			 	</form>
   					</Col>
   					<Col xs={12} md={2}>
-  						<h3> SEARCH BY </h3>
+  						<h3> Search By: </h3>
   					</Col>
   					<Col xs={6} md={2}>
   						<Select
