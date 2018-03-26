@@ -8,8 +8,8 @@ const brothers = [
     'major': 'ee',
     'majorName': 'Electrical Engineering',
     'year': 'Class of 2018',
-    'image': require('./images/brothers/portraits/jaehee.webp'),
-    'safari': require('./images/brothers/portraits/jaehee.jpg'),
+    'image': require('./images/brothers/portraits/118_jjung.webp'),
+    'safari': require('./images/brothers/portraits/118_jjung.jpg'),
   },
   //Lambda
   {
@@ -357,8 +357,8 @@ const brothers = [
     'majorName': 'Computer Engineering',
     'year': 'Class of 2018',
     'linkedin': 'https://www.linkedin.com/in/aamir1rasheed/',
-    'image': require('./images/brothers/portraits/aamir.webp'),
-    'safari': require('./images/brothers/portraits/aamir.jpg'),
+    'image': require('./images/brothers/portraits/175_arasheed.webp'),
+    'safari': require('./images/brothers/portraits/175_arasheed.jpg'),
   },
   {
     'name': 'Rachael Wong',
@@ -370,8 +370,8 @@ const brothers = [
     'majorName': 'Bioengineering',
     'year': 'Class of 2019',
     'linkedin': 'https://www.linkedin.com/in/rachael-sze-nga-wong-9b0100129/',
-    'image': require('./images/brothers/portraits/rachael.webp'),
-    'safari': require('./images/brothers/portraits/rachael.jpg'),
+    'image': require('./images/brothers/portraits/179_rwong.webp'),
+    'safari': require('./images/brothers/portraits/179_rwong.jpg'),
   },
   {
     'name': 'David Lin',
@@ -382,8 +382,8 @@ const brothers = [
     'majorName': 'Chemical Engineering',
     'year': 'Class of 2020',
     'linkedin': 'https://www.linkedin.com/in/david-lin-a7612073/',
-    'image': require('./images/brothers/portraits/dlin.webp'),
-    'safari': require('./images/brothers/portraits/dlin.jpg'),
+    'image': require('./images/brothers/portraits/173_dlin.webp'),
+    'safari': require('./images/brothers/portraits/173_dlin.jpg'),
   },
   {
     'name': 'Mayuki Sasagawa',
@@ -395,8 +395,8 @@ const brothers = [
     'majorName': 'Environmental Engineering',
     'year': 'Class of 2019',
     'linkedin': 'https://www.linkedin.com/in/mayuki-a-sasagawa-a09623103/',
-    'image': require('./images/brothers/portraits/mayuki.webp'),
-    'safari': require('./images/brothers/portraits/mayuki.jpg'),
+    'image': require('./images/brothers/portraits/176_msasagawa.webp'),
+    'safari': require('./images/brothers/portraits/176_msasagawa.jpg'),
   },
   {
     'name': 'Fumika Takazawa',
@@ -408,8 +408,8 @@ const brothers = [
     'majorName': 'Environmental Engineering',
     'year': 'Class of 2018',
     'linkedin': 'https://www.linkedin.com/in/ftakazawa/',
-    'image': require('./images/brothers/portraits/fumika.webp'),
-    'safari': require('./images/brothers/portraits/fumika.jpg'),
+    'image': require('./images/brothers/portraits/177_ftakazawa.webp'),
+    'safari': require('./images/brothers/portraits/177_ftakazawa.jpg'),
   },
   {
     'name': 'Brian Chan',
@@ -421,8 +421,8 @@ const brothers = [
     'majorName': 'Computer Science',
     'year': 'Class of 2019',
     'linkedin': 'https://www.linkedin.com/in/brian-chan-1020/',
-    'image': require('./images/brothers/portraits/bchan.webp'),
-    'safari': require('./images/brothers/portraits/bchan.jpg'),
+    'image': require('./images/brothers/portraits/168_bchan.webp'),
+    'safari': require('./images/brothers/portraits/168_bchan.jpg'),
   },
   {
     'name': 'Michelle Lu Galgana',
@@ -433,8 +433,8 @@ const brothers = [
     'majorName': 'Electrical Engineering',
     'year': 'Class of 2017',
     'linkedin': 'https://www.linkedin.com/in/michelle-galgana/',
-    'image': require('./images/brothers/portraits/michelle.webp'),
-    'safari': require('./images/brothers/portraits/michelle.jpg'),
+    'image': require('./images/brothers/portraits/170_mgalgana.webp'),
+    'safari': require('./images/brothers/portraits/170_mgalgana.jpg'),
   },
   {
     'name': 'Justin Dulay',
@@ -445,8 +445,8 @@ const brothers = [
     'majorName': 'Structural Engineering',
     'year': 'Class of 2019',
     'linkedin': 'https://www.linkedin.com/in/justin-dulay-9a7b74123/',
-    'image': require('./images/brothers/portraits/jdulay.webp'),
-    'safari': require('./images/brothers/portraits/jdulay.jpg'),
+    'image': require('./images/brothers/portraits/169_jdulay.webp'),
+    'safari': require('./images/brothers/portraits/169_jdulay.jpg'),
   },
   {
     'name': 'Wonjae Lee',
@@ -458,8 +458,8 @@ const brothers = [
     'majorName': 'Chemical Engineering',
     'year': 'Class of 2018',
     'linkedin': 'https://www.linkedin.com/in/wonjae-lee-b017b7132/',
-    'image': require('./images/brothers/portraits/wonjae.webp'),
-    'safari': require('./images/brothers/portraits/wonjae.jpg'),
+    'image': require('./images/brothers/portraits/172_wlee.webp'),
+    'safari': require('./images/brothers/portraits/172_wlee.jpg'),
   },
   {
     'name': 'Leng Kouv',
@@ -471,8 +471,8 @@ const brothers = [
     'year': 'Class of 2019',
     'linkedin': 'https://www.linkedin.com/in/sivleng-kouv-6510b8129/',
     'messenger': 'https://m.me/leng.kouv/',
-    'image': require('./images/brothers/portraits/leng.webp'),
-    'safari': require('./images/brothers/portraits/leng.jpg'),
+    'image': require('./images/brothers/portraits/171_lkouv.webp'),
+    'safari': require('./images/brothers/portraits/171_lkouv.jpg'),
   },
   {
     'name': 'Goutham Marimuthu',
@@ -484,8 +484,8 @@ const brothers = [
     'majorName': 'Aerospace Engineering',
     'year': 'Class of 2019',
     'linkedin': 'https://www.linkedin.com/in/goutham-marimuthu-3393b3120/',
-    'image': require('./images/brothers/portraits/goutham.webp'),
-    'safari': require('./images/brothers/portraits/goutham.jpg'),
+    'image': require('./images/brothers/portraits/174_gmarimuthu.webp'),
+    'safari': require('./images/brothers/portraits/174_gmarimuthu.jpg'),
   },
   {
     'name': 'Manwinder Uppal',
@@ -496,8 +496,8 @@ const brothers = [
     'majorName': 'Environmental Engineering',
     'year': 'Class of 2018',
     'linkedin': 'https://www.linkedin.com/in/manwinder-uppal-311861109/',
-    'image': require('./images/brothers/portraits/money.webp'),
-    'safari': require('./images/brothers/portraits/money.jpg'),
+    'image': require('./images/brothers/portraits/178_muppal.webp'),
+    'safari': require('./images/brothers/portraits/178_muppal.jpg'),
   },
   //Pi
   {
