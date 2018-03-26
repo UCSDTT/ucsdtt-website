@@ -789,8 +789,20 @@ const brothers = [
     'image': require('./images/brothers/portraits/194_shuynh.webp'),
     'safari': require('./images/brothers/portraits/194_shuynh.jpg'),
   },
+  {
+    'name': 'Jun Yin',
+    'position': 'Active',
+    'class': 'rho',
+    'className': 'Rho Class',
+    'major': 'cs',
+    'majorName': 'Computer Science',
+    'year': 'Class of 2019',
+    'image': require('./images/brothers/portraits/MD152_jyin.webp'),
+    'safari': require('./images/brothers/portraits/MD152_jyin.jpg'),
+  },
 ]
 
+/* Depreceated */
 const alumni = [
   {
     'name': 'Aeri Iamsirithaworn',
