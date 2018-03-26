@@ -5,7 +5,7 @@ import Select from 'react-select';
 import React, {Component} from 'react';
 import {BrothersList} from './BrothersList.js';
 import {BrotherModal} from './BrotherModal.js';
-import {brothers, alumni, options, images} from '../../activeData/data.js';
+import {brothers, options, images} from '../../activeData/data.js';
 
 export default class MemberPage extends Component {
   constructor(props) {
@@ -15,9 +15,8 @@ export default class MemberPage extends Component {
       imageIndex: 0,
       searchValue: '',
       brothers: [],
-      alumni: alumni,
-      // allBrothers: brothers.concat(alumni),
-      allBrothers: brothers,
+      alumni: [],
+      allBrothers: [],
       updatedBrothers: [],
       filteredBrothers: [],
       dropdownValue: 'active',
@@ -44,6 +43,8 @@ export default class MemberPage extends Component {
     let actives = [];
     let eboard = [];
     let cabinet = [];
+    let alumni = [];
+    let allBrothers = [];
     let image = document.getElementsByClassName('brothers-image');
 
     /* Autofocuses the search bar */
@@ -59,18 +60,27 @@ export default class MemberPage extends Component {
       else if (brother.cabinet === true) {
         cabinet.push(brother);
       }
+      else if (brother.position === 'Alumni') {
+        alumni.push(brother);
+      }
       else {
         actives.push(brother);
       }
+      allBrothers.push(brother);
     });
 
     this.sort(actives);
+    this.sort(alumni);
+    this.sort(cabinet);
+    this.sort(allBrothers);
 
     let members = eboard.concat(cabinet).concat(actives);
 
     this.setState({
       image: image,
       brothers: members,
+      alumni: alumni,
+      allBrothers: allBrothers,
       updatedBrothers: members,
       filteredBrothers: members
     })
@@ -140,17 +150,23 @@ export default class MemberPage extends Component {
       updatedList = this.state.brothers;
       options = this.state.activeOptions;
     }
-    else if (selected.value === 'major') {
-      options = this.state.majorOptions;
+    else if (selected.value === 'major') { //should be actives and alumni
+      updatedList = this.state.allBrothers;
       this.sort(updatedList);
+      options = this.state.majorOptions;
     }
     else if (selected.value === 'class') {
       updatedList = this.state.allBrothers;  // Sets brothers list to consist of actives and alumni
       this.sort(updatedList);
       options = this.state.classOptions;
     }
-    else {
+    else if (selected.value === 'alumni') {
       updatedList = this.state.alumni;  // Sets brothers list to consist of only alumni
+      this.sort(updatedList);
+      disabled = true;
+    }
+    else { //Shows all brothers actives and alumni
+      updatedList = this.state.allBrothers;
       this.sort(updatedList);
       disabled = true;
     }
