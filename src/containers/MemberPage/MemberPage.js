@@ -224,8 +224,8 @@ export default class MemberPage extends Component {
           <a className="brothers-logo" role="button" href="/">
             <img 
               className="logo" 
-              src={isSafari ? (require('../../components/home/NavBar/images/logo.webp')) :
-              (require('../../components/home/NavBar/images/logo.png'))}
+              src={isSafari ? (require('../../components/home/NavBar/images/logo.jpg')) :
+              (require('../../components/home/NavBar/images/logo.webp'))}
               alt="Logo"
             />
           </a>
