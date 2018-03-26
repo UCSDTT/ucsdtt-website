@@ -11,7 +11,7 @@ class MemberInfo extends React.Component {
         <div className="brother-image-container">
           <img
             className="brother-image"
-            src={isSafari ? this.props.brother.safari : this.props.brother.image}
+            src={isSafari ? this.props.brother.safari : this.props.brother.safari}
             onClick={() => this.props.open(this.props.brother)}
             alt="Active"
           />
