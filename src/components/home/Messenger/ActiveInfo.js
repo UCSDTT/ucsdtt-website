@@ -11,7 +11,7 @@ class ActiveInfo extends React.Component {
       <div>
         <img
           className="messenger-image"
-          src={isSafari ? this.props.active.image : this.props.active.safari}
+          src={isSafari ? this.props.active.safari : this.props.active.image}
           role="presentation"
           alt="Messenger"
         />
