@@ -28,14 +28,14 @@ class BrotherModal extends React.Component {
           <Modal.Title> {this.props.brother.name} </Modal.Title>
           <img
             className="lozad modal-image-mobile" 
-            src={isSafari ? this.props.brother.professional_jpg : this.props.brother.professional_webp}
+            src={isSafari ? this.props.brother.safari : this.props.brother.image}
             alt="Active"
           />
         </Modal.Header>
         <Modal.Body>
           <img 
             className="lozad modal-image" 
-            src={isSafari ? this.props.brother.professional_jpg : this.props.brother.professional_webp}
+            src={isSafari ? this.props.brother.safari : this.props.brother.image}
             alt="Active"
           />
           <ListGroup>
