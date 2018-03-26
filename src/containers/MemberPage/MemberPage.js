@@ -71,6 +71,7 @@ export default class MemberPage extends Component {
 
     this.sort(actives);
     this.sort(alumni);
+    this.sort(cabinet);
     this.sort(allBrothers);
 
     let members = eboard.concat(cabinet).concat(actives);
