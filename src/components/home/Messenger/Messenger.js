@@ -96,7 +96,7 @@ class Messenger extends Component {
     return (
       <Element name="messenger" className="element messenger">
         <h1 className="title">
-          Get to know us!
+          Get to Know Us!
         </h1>
 
         <Grid>

@@ -102,7 +102,6 @@ body {
   margin-bottom: 0.5em;
   padding-bottom: 0.5em;
   border-bottom: 4px solid;
-  text-transform: uppercase;
 }
 @media(max-width: 768px) {
   .title {
