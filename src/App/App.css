@@ -42,6 +42,7 @@ body {
   --secondary-color: #444;
   --secondary-light: #555;
   --secondary-dark: #2e2f33;
+  --secondary-dark-opaque: rgba(46, 47, 51, 0.9);
   --accent-color: #ccc;
   --accent-light: #eee;
 }
@@ -102,7 +103,6 @@ body {
   margin-bottom: 0.5em;
   padding-bottom: 0.5em;
   border-bottom: 4px solid;
-  text-transform: uppercase;
 }
 @media(max-width: 768px) {
   .title {

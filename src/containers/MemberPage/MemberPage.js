@@ -5,7 +5,7 @@ import Select from 'react-select';
 import React, {Component} from 'react';
 import {BrothersList} from './BrothersList.js';
 import {BrotherModal} from './BrotherModal.js';
-import {brothers, alumni, options, images} from '../../activeData/data.js';
+import {brothers, options, images} from '../../activeData/data.js';
 
 export default class MemberPage extends Component {
   constructor(props) {
@@ -15,9 +15,8 @@ export default class MemberPage extends Component {
       imageIndex: 0,
       searchValue: '',
       brothers: [],
-      alumni: alumni,
-      // allBrothers: brothers.concat(alumni),
-      allBrothers: brothers,
+      alumni: [],
+      allBrothers: [],
       updatedBrothers: [],
       filteredBrothers: [],
       dropdownValue: 'active',
@@ -44,6 +43,8 @@ export default class MemberPage extends Component {
     let actives = [];
     let eboard = [];
     let cabinet = [];
+    let alumni = [];
+    let allBrothers = [];
     let image = document.getElementsByClassName('brothers-image');
 
     /* Autofocuses the search bar */
@@ -59,18 +60,24 @@ export default class MemberPage extends Component {
       else if (brother.cabinet === true) {
         cabinet.push(brother);
       }
+      else if (brother.position === 'Alumni') {
+        alumni.push(brother);
+      }
       else {
         actives.push(brother);
       }
+      allBrothers.push(brother);
     });
 
-    this.sort(actives);
+    this.sort(cabinet);
 
     let members = eboard.concat(cabinet).concat(actives);
 
     this.setState({
       image: image,
       brothers: members,
+      alumni: alumni,
+      allBrothers: allBrothers,
       updatedBrothers: members,
       filteredBrothers: members
     })
@@ -137,20 +144,24 @@ export default class MemberPage extends Component {
 
     /* Sets the specific dropdown options based on the first selected dropdown value */
     if (selected.value === 'active') {
-      updatedList = this.state.brothers;
+      updatedList = this.state.brothers.slice();
       options = this.state.activeOptions;
     }
-    else if (selected.value === 'major') {
-      options = this.state.majorOptions;
+    else if (selected.value === 'major') { //should be actives only
+      updatedList = this.state.brothers.slice();
       this.sort(updatedList);
+      options = this.state.majorOptions;
     }
     else if (selected.value === 'class') {
-      updatedList = this.state.allBrothers;  // Sets brothers list to consist of actives and alumni
-      this.sort(updatedList);
+      updatedList = this.state.allBrothers.slice();  // Sets brothers list to consist of actives and alumni
       options = this.state.classOptions;
     }
-    else {
-      updatedList = this.state.alumni;  // Sets brothers list to consist of only alumni
+    else if (selected.value === 'alumni') {
+      updatedList = this.state.alumni.slice();  // Sets brothers list to consist of only alumni
+      disabled = true;
+    }
+    else { //Shows all brothers actives and alumni
+      updatedList = this.state.allBrothers.slice();
       this.sort(updatedList);
       disabled = true;
     }
@@ -224,12 +235,12 @@ export default class MemberPage extends Component {
           <a className="brothers-logo" role="button" href="/">
             <img 
               className="logo" 
-              src={isSafari ? (require('../../components/home/NavBar/images/logo.webp')) :
-              (require('../../components/home/NavBar/images/logo.png'))}
+              src={isSafari ? (require('../../components/home/NavBar/images/logo.png')) :
+              (require('../../components/home/NavBar/images/logo.webp'))}
               alt="Logo"
             />
           </a>
-          OUR BROTHERS
+          Our Brothers
         </div>
         <div className="brothers-image-container">
           {images.map((image, i) => (
@@ -257,7 +268,7 @@ export default class MemberPage extends Component {
        			 	</form>
   					</Col>
   					<Col xs={12} md={2}>
-  						<h3> SEARCH BY </h3>
+  						<h3> Search By: </h3>
   					</Col>
   					<Col xs={6} md={2}>
   						<Select

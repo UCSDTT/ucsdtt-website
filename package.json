@@ -5,15 +5,15 @@
   "devDependencies": {
     "imagemin": "^5.3.1",
     "imagemin-webp": "^4.1.0",
-    "react-scripts": "^1.1.0"
+    "react-scripts": "^1.1.1"
   },
   "dependencies": {
-    "npm": "^5.7.1",
-    "react": "^15.6.2",
-    "react-bootstrap": "^0.31.5",
-    "react-dom": "^15.6.2",
+    "npm": "^5.8.0",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scroll": "^1.7.6",
+    "react-scroll": "^1.7.7",
     "react-select": "^1.2.1"
   },
   "scripts": {

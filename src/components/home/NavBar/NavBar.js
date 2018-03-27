@@ -97,7 +97,7 @@ class NavBar extends Component {
           />
         </Navbar.Header>
         <Nav pullLeft className="hidden-sm hidden-xs">
-          <NavItem className="navbar-title" onClick={scrollToTop}> Theta Tau UCSD </NavItem>
+          <NavItem className="navbar-title" onClick={scrollToTop}>Theta Tau @ UCSD</NavItem>
         </Nav>
         <Navbar.Collapse>
           <Nav pullRight>

@@ -30,6 +30,12 @@
 .navbar-title {
   font-family: 'Helvetica Neue Condensed';
   font-size: 40px;
+  text-transform: uppercase;
+}
+@media(max-width: 1080px) {
+  .navbar-title {
+    display: none !important;
+  }
 }
 
 /* Navbar items */
@@ -37,7 +43,6 @@
   color: #fff !important;
   padding-top: 0px;
   padding-bottom: 0px;
-  text-transform: uppercase;
 }
 /*.navbar-default .navbar-nav > li > a:focus, 
 .navbar-default .navbar-nav > li > a:hover {

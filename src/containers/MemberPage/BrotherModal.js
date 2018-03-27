@@ -3,6 +3,7 @@ import './MemberPage.css';
 import React from 'react';
 import {Modal, ListGroup, ListGroupItem} from 'react-bootstrap';
 
+//window.onscroll = null;
 
 class BrotherModal extends React.Component {
   componentDidUpdate() {
@@ -27,14 +28,14 @@ class BrotherModal extends React.Component {
           <Modal.Title> {this.props.brother.name} </Modal.Title>
           <img
             className="lozad modal-image-mobile" 
-            data-src={isSafari ? this.props.brother.professional_jpg : this.props.brother.professional_webp}
+            src={isSafari ? this.props.brother.safari : this.props.brother.image}
             alt="Active"
           />
         </Modal.Header>
         <Modal.Body>
           <img 
             className="lozad modal-image" 
-            data-src={isSafari ? this.props.brother.professional_jpg : this.props.brother.professional_webp}
+            src={isSafari ? this.props.brother.safari : this.props.brother.image}
             alt="Active"
           />
           <ListGroup>

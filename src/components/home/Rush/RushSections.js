@@ -1,7 +1,7 @@
 import './Rush.css';
 
 import React from 'react';
-import rushData from './data.js';
+//import rushData from './data.js';
 
 class RushLeft extends React.Component {
   render() {

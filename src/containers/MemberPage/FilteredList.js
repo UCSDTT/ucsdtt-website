@@ -9,7 +9,7 @@ class FilteredList extends React.Component {
     let brothers = this.props.updatedBrothers;
     
     return (
-      <Col xs={12} md={10}>
+      <Col xs={12} md={10} style={{padding:0}}>
         {brothers.map((brother, i) => {
           if (brother[this.props.dropdownValue] === this.props.option.value) {
             return (
