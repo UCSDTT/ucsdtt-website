@@ -70,9 +70,7 @@ export default class MemberPage extends Component {
     });
 
     this.sort(actives);
-    this.sort(alumni);
     this.sort(cabinet);
-    this.sort(allBrothers);
 
     let members = eboard.concat(cabinet).concat(actives);
 
@@ -157,12 +155,10 @@ export default class MemberPage extends Component {
     }
     else if (selected.value === 'class') {
       updatedList = this.state.allBrothers;  // Sets brothers list to consist of actives and alumni
-      this.sort(updatedList);
       options = this.state.classOptions;
     }
     else if (selected.value === 'alumni') {
       updatedList = this.state.alumni;  // Sets brothers list to consist of only alumni
-      this.sort(updatedList);
       disabled = true;
     }
     else { //Shows all brothers actives and alumni
