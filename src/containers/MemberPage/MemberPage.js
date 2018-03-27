@@ -69,7 +69,6 @@ export default class MemberPage extends Component {
       allBrothers.push(brother);
     });
 
-    this.sort(actives);
     this.sort(cabinet);
 
     let members = eboard.concat(cabinet).concat(actives);
@@ -145,24 +144,24 @@ export default class MemberPage extends Component {
 
     /* Sets the specific dropdown options based on the first selected dropdown value */
     if (selected.value === 'active') {
-      updatedList = this.state.brothers;
+      updatedList = this.state.brothers.slice();
       options = this.state.activeOptions;
     }
     else if (selected.value === 'major') { //should be actives only
-      updatedList = this.state.brothers;
+      updatedList = this.state.brothers.slice();
       this.sort(updatedList);
       options = this.state.majorOptions;
     }
     else if (selected.value === 'class') {
-      updatedList = this.state.allBrothers;  // Sets brothers list to consist of actives and alumni
+      updatedList = this.state.allBrothers.slice();  // Sets brothers list to consist of actives and alumni
       options = this.state.classOptions;
     }
     else if (selected.value === 'alumni') {
-      updatedList = this.state.alumni;  // Sets brothers list to consist of only alumni
+      updatedList = this.state.alumni.slice();  // Sets brothers list to consist of only alumni
       disabled = true;
     }
     else { //Shows all brothers actives and alumni
-      updatedList = this.state.allBrothers;
+      updatedList = this.state.allBrothers.slice();
       this.sort(updatedList);
       disabled = true;
     }
