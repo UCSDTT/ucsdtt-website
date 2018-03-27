@@ -34,9 +34,9 @@ class Messenger extends Component {
       },
     ];
 
-    /* Filters out active without a messenger link (those who don't want to be messaged) */
+    /* Filters out active without a messenger link (those who don't want to be messaged) and alumni */
     let activeList = brothers.filter(function(brother) {
-      return brother.messenger;
+      return brother.messenger && brother.position !== 'Alumni';
     });
 
     let shuffled = this.shuffle(activeList);
