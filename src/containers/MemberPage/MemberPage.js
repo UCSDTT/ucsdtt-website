@@ -148,8 +148,8 @@ export default class MemberPage extends Component {
       updatedList = this.state.brothers;
       options = this.state.activeOptions;
     }
-    else if (selected.value === 'major') { //should be actives and alumni
-      updatedList = this.state.allBrothers;
+    else if (selected.value === 'major') { //should be actives only
+      updatedList = this.state.brothers;
       this.sort(updatedList);
       options = this.state.majorOptions;
     }
