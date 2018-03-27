@@ -846,7 +846,7 @@ const brothers = [
     'className': 'Pi Class',
     'major': 'env',
     'majorName': 'Environmental Engineering',
-    'year': 'Class of 2018',
+    'year': 'Class of 2019',
     'linkedin': 'https://www.linkedin.com/in/kevin--huo/',
     'image': require('./images/brothers/portraits/184_khuo.webp'),
     'safari': require('./images/brothers/portraits/184_khuo.jpg'),

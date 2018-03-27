@@ -3,14 +3,15 @@
   position: relative;
   background-color: var(--secondary-dark);
   color: #fff;
-  font-size: 45px;
+  font-size: 40px;
   font-style: italic;
-  padding: 25px 0;
+  padding: 10px 0;
+  opacity: 0.9;
 }
 @media(max-width: 768px) {
   .brothers-header {
     font-size: 25px;
-    padding: 30px 0;
+    padding: 15px 0;
   }
 }
 .brothers-header:after {
@@ -18,20 +19,20 @@
   position: absolute;
   top: 98%;
   left: 50%;
-  border-top: solid 50px var(--secondary-dark);
-  border-left: solid 80px transparent;
-  border-right: solid 80px transparent;
+  border-top: solid 40px var(--secondary-dark);
+  border-left: solid 60px transparent;
+  border-right: solid 60px transparent;
   transform: translateX(-50%);
 }
 
 .brothers-logo {
   position: absolute;
-  top: 10px;
+  top: 7px;
   left: 30px;
 }
 @media(max-width: 768px) {
   .brothers-logo {
-    top: 15px;
+    top: 7px;
     left: 15px;
   }
 }
@@ -42,10 +43,12 @@
   background-color: #000;
   height: calc(100vh - 218px);
   z-index: -1;
+  margin-top: -75px;
 }
 @media(max-width: 992px) {
   .brothers-image-container {
     height: calc(100vh - 199px);
+    margin-top: -100px;
   }
 }
 
