@@ -126,8 +126,8 @@
   opacity: 0.8;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.63) 0px 3px 10px;
   transform: translateX(-50%);
-  text-transform: uppercase;
   cursor: pointer;
+  white-space: nowrap;
   z-index: 1;
 }
 .learn-more:hover {
