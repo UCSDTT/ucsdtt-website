@@ -112,8 +112,8 @@
   }
 }
 
-/* Members Button */
-.members-button {
+/* Learn More Button */
+.learn-more {
   position: absolute;
   top: 320px;
   left: 50%;
@@ -130,26 +130,21 @@
   cursor: pointer;
   z-index: 1;
 }
-.members-button:hover {
+.learn-more:hover {
   background-color: #666;
   color: #fff;
 }
 @media(max-width: 1400px) {
-  .members-button {
+  .learn-more {
     top: 290px;
   }
 }
 @media(max-width: 768px) {
-  .members-button {
+  .learn-more {
     top: 250px;
     left: 50%;
     transform: translateX(-50%);
   }
-}
-
-.members-button .glyphicon {
-  font-size: 15px;
-  margin-left: 5px;
 }
 
 /* Quote */

@@ -8,58 +8,60 @@ import {Scroll, MobileOrigins} from './Origins.js';
 import {Pillars} from './Pillars.js';
 import {gearPosition, pillarData} from './data.js';
 
-/* Runs when you scroll */
-window.onscroll = function() {
-  let navbarHeight = document.querySelector('.navbar').clientHeight;
-  let landingHeight = document.querySelector('.landing').clientHeight;
-  let rushHeight = document.querySelector('.rush').clientHeight;
-  let whyRushHeight = document.querySelector('.why-rush').clientHeight;
-  let aboutHeight = document.querySelector('.element.about').clientHeight;
-  let gears = document.getElementsByClassName('gear');
-  let gearsOpp = document.getElementsByClassName('gear-opp');
-  let wScroll = document.body.scrollTop || document.documentElement.scrollTop;
+class AboutUs extends Component {
+  componentDidMount() {
+    /* Runs when you scroll */
+    window.onscroll = function() {
+      let navbarHeight = document.querySelector('.navbar').clientHeight;
+      let landingHeight = document.querySelector('.landing').clientHeight;
+      let rushHeight = document.querySelector('.rush').clientHeight;
+      let whyRushHeight = document.querySelector('.why-rush').clientHeight;
+      let aboutHeight = document.querySelector('.element.about').clientHeight;
+      let gears = document.getElementsByClassName('gear');
+      let gearsOpp = document.getElementsByClassName('gear-opp');
+      let wScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
-  /* Checks if browser is Safari */
-  let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+      /* Checks if browser is Safari */
+      let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-  /* If browser is safari, hide scroll and display text instead */
-  if (isSafari) {
-    if (window.innerWidth >= 992) {
-      document.getElementById('container').style.display = 'none';
-      document.querySelector('.mobile-origins').style.display = 'block';
-      document.querySelector('.about-description').style.height = '1050px';
+      /* If browser is safari, hide scroll and display text instead */
+      if (isSafari) {
+        if (window.innerWidth >= 992) {
+          document.getElementById('container').style.display = 'none';
+          document.querySelector('.mobile-origins').style.display = 'block';
+          document.querySelector('.about-description').style.height = '1050px';
+        }
+        if (window.innerWidth <= 1200 && window.innerWidth > 992) {
+          document.querySelector('.about-description').style.height = '1200px';   
+        }
+      }
+
+      /* Changes the navbar color when you scroll past the navbar height */
+      if (wScroll >= navbarHeight) {
+        document.querySelector('.navbar').style.background = 'var(--secondary-dark)';
+        document.querySelector('.navbar').style.boxShadow = '0 2px 16px rgba(12,42,51,.3)';
+      }
+      else {
+        document.querySelector('.navbar').style.background = 'transparent';
+        document.querySelector('.navbar').style.boxShadow = 'none';
+      }
+      
+      /* Displays gears if window width is greater than 768px */
+      if (window.innerWidth >= 768) {
+        /* Rotate gears if it you scroll between landing and faqs */
+        if (wScroll <= landingHeight + aboutHeight + rushHeight + whyRushHeight &&
+            wScroll >= landingHeight) {
+          Array.from(gears).forEach( gear => {
+            gear.style.transform = 'rotate(' + wScroll / 5 + 'deg)';
+          })
+          Array.from(gearsOpp).forEach( gear => {
+            gear.style.transform = 'rotate(-' + wScroll / 5 + 'deg)';
+          })
+        }
+      }
     }
-    if (window.innerWidth <= 1200 && window.innerWidth > 992) {
-      document.querySelector('.about-description').style.height = '1200px';   
-    }
-  }
-
-  /* Changes the navbar color when you scroll past the navbar height */
-  if (wScroll >= navbarHeight) {
-    document.querySelector('.navbar').style.background = 'var(--secondary-dark)';
-    document.querySelector('.navbar').style.boxShadow = '0 2px 16px rgba(12,42,51,.3)';
-  }
-  else {
-    document.querySelector('.navbar').style.background = 'transparent';
-    document.querySelector('.navbar').style.boxShadow = 'none';
   }
   
-  /* Displays gears if window width is greater than 768px */
-  if (window.innerWidth >= 768) {
-    /* Rotate gears if it you scroll between landing and faqs */
-    if (wScroll <= landingHeight + aboutHeight + rushHeight + whyRushHeight &&
-        wScroll >= landingHeight) {
-      Array.from(gears).forEach( gear => {
-        gear.style.transform = 'rotate(' + wScroll / 5 + 'deg)';
-      })
-      Array.from(gearsOpp).forEach( gear => {
-        gear.style.transform = 'rotate(-' + wScroll / 5 + 'deg)';
-      })
-    }
-  }
-}
-
-class AboutUs extends Component {
   render() {
     return (
       <Element name="about-us" className="element about">

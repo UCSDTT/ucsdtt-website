@@ -93,10 +93,11 @@ class NavBar extends Component {
               <span></span>
               </div>
             }
-            onClick={openMenu}/>
+            onClick={openMenu}
+          />
         </Navbar.Header>
         <Nav pullLeft className="hidden-sm hidden-xs">
-          <NavItem className="navbar-title" onClick={scrollToTop}>Theta Tau UCSD</NavItem>
+          <NavItem className="navbar-title" onClick={scrollToTop}> Theta Tau UCSD </NavItem>
         </Nav>
         <Navbar.Collapse>
           <Nav pullRight>
