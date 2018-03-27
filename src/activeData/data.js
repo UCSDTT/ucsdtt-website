@@ -891,7 +891,7 @@ const brothers = [
   },
 ]
 
-/* Depreceated */
+/* Deprecated */
 const alumni = [
   {
     'name': 'Aeri Iamsirithaworn',
