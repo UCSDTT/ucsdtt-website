@@ -1,4 +1,5 @@
 import './RushInfo.css';
+import {isChrome} from '../../helpers/helpers.js';
 
 import {Col, Grid, Image, Row} from 'react-bootstrap';
 import React, {Component} from 'react';
@@ -22,8 +23,6 @@ export default class RushPage extends Component {
   }
 
   render() {
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
     return (
       <div className="rush-info">
         <div className="rush-landing-header">
@@ -34,7 +33,7 @@ export default class RushPage extends Component {
         </div>
         <Image 
           className="rush-image" 
-          src={isSafari ? require('./images/rush_header.jpg') : require('./images/rush_header.webp')}
+          src={isChrome ? require('./images/rush_header.webp') : require('./images/rush_header.jpg')}
         />
         <div className="rush-header">
           <span className="rush-title">Rush Spring 2018</span>
@@ -54,7 +53,7 @@ export default class RushPage extends Component {
                 >
                   <img 
                     className="event-image"
-                    src={isSafari ? event.safari : event.image}
+                    src={isChrome ? event.image : event.safari}
                     alt="Event"
                   />
                   <div className="event-info animated">

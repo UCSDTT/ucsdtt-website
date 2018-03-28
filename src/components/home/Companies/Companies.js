@@ -1,4 +1,5 @@
 import './Companies.css';
+import {isChrome} from '../../../helpers/helpers.js';
 
 import React, {Component} from 'react';
 import {Row} from 'react-bootstrap';
@@ -7,9 +8,6 @@ import {bigCompanies, smallCompanies} from './data.js';
 
 class Companies extends Component {
   render() {
-    /* Checks if browser is safari to determine which images to feed */
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
     return (
       <Element name="companies" className="element companies">
         <h1 className="title">Our Alumni Network </h1>
@@ -24,7 +22,7 @@ class Companies extends Component {
                 <a href={company.href}>
                   <img 
                     className="lozad company-logo"
-                    data-src={isSafari ? company.safari : company.image}
+                    data-src={isChrome ? company.image : company.safari}
                     href={company} 
                     alt="Big Company"
                   /> 
@@ -41,7 +39,7 @@ class Companies extends Component {
                 <a href={company.href}>
                   <img 
                     className="lozad company-logo" 
-                    data-src={isSafari ? company.safari : company.image} 
+                    data-src={isChrome ? company.image : company.safari} 
                     alt="Small Company"
                   />
                 </a>

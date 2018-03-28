@@ -1,17 +1,16 @@
 import './MemberPage.css';
+import {isChrome} from '../../helpers/helpers.js';
 
 import React from 'react';
 
 class MemberInfo extends React.Component {
   render() {
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
     return (
       <div>
         <div className="brother-image-container">
           <img
             className="brother-image"
-            src={isSafari ? this.props.brother.safari : this.props.brother.image}
+            src={isChrome ? this.props.brother.image : this.props.brother.safari}
             onClick={() => this.props.open(this.props.brother)}
             alt="Active"
           />

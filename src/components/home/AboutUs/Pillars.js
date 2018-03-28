@@ -1,4 +1,5 @@
 import './AboutUs.css';
+import {isChrome} from '../../../helpers/helpers.js';
 
 import React from 'react';
 
@@ -18,9 +19,6 @@ class Pillars extends React.Component {
   }
   
   render() {
-    /* Checks if browser is safari to determine which images to feed */
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
     return (
       <div>
         <div 
@@ -30,7 +28,7 @@ class Pillars extends React.Component {
         >
           <img 
             className="lozad pillar-image"
-            data-src={isSafari ? this.props.pillar.safari : this.props.pillar.image}
+            data-src={isChrome ? this.props.pillar.image : this.props.pillar.safari}
             alt="Pillar"
           />
           <div className="pillar-info animated">

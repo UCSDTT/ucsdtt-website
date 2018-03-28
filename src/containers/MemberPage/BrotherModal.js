@@ -1,4 +1,5 @@
 import './MemberPage.css';
+import {isChrome} from '../../helpers/helpers.js';
 
 import React from 'react';
 import {Modal, ListGroup, ListGroupItem} from 'react-bootstrap';
@@ -20,22 +21,20 @@ class BrotherModal extends React.Component {
   }
 
   render() {
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
     return (
       <Modal show={this.props.show} onHide={this.props.close}>
         <Modal.Header>
           <Modal.Title> {this.props.brother.name} </Modal.Title>
           <img
             className="lozad modal-image-mobile" 
-            src={isSafari ? this.props.brother.safari : this.props.brother.image}
+            src={isChrome ? this.props.brother.image : this.props.brother.safari}
             alt="Active"
           />
         </Modal.Header>
         <Modal.Body>
           <img 
             className="lozad modal-image" 
-            src={isSafari ? this.props.brother.safari : this.props.brother.image}
+            src={isChrome ? this.props.brother.image : this.props.brother.safari}
             alt="Active"
           />
           <ListGroup>

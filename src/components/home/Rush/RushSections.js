@@ -1,18 +1,16 @@
 import './Rush.css';
+import {isChrome} from '../../../helpers/helpers.js';
 
 import React from 'react';
 //import rushData from './data.js';
 
 class RushLeft extends React.Component {
   render() {
-    /* Checks if browser is safari to determine which images to feed */
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    
     return (
       <div className="rush-pic-container">
         <img 
           className="lozad rush-pic"
-          data-src={isSafari ? (require('./images/rush-pic1.jpg')) : (require('./images/rush-pic1.webp'))}
+          data-src={isChrome ? (require('./images/rush-pic1.webp')) : (require('./images/rush-pic1.jpg'))}
           alt="Rush"
         >
         </img>

@@ -1,4 +1,5 @@
 import './NavBar.css';
+import {isChrome} from '../../../helpers/helpers.js';
 
 import {Image, Nav, NavItem, Navbar} from 'react-bootstrap';
 import React, {Component} from 'react';
@@ -71,9 +72,6 @@ function scrollToComp(name) {
 
 class NavBar extends Component {
   render() {
-    /* Checks if browser is safari to determine which images to feed */
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
     return (
       <Navbar className="navbar-fixed-top" collapseOnSelect>
         <Navbar.Header>
@@ -81,7 +79,7 @@ class NavBar extends Component {
             <a role="button" id="nav-logo" href="/">
               <Image 
                 className="logo" 
-                src={isSafari ? (require('./images/logo.png')) : (require('./images/logo.webp'))} 
+                src={isChrome ? (require('./images/logo.webp')) : (require('./images/logo.png'))} 
               />
             </a>
           </Navbar.Brand>

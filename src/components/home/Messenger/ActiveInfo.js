@@ -1,17 +1,16 @@
 import './Messenger.css';
+import {isChrome} from '../../../helpers/helpers.js';
 
 import React from 'react';
 
 /* All the active information inside the messenger card */
 class ActiveInfo extends React.Component {
   render() {
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
     return (
       <div>
         <img
           className="messenger-image"
-          src={isSafari ? this.props.active.safari : this.props.active.image}
+          src={isChrome ? this.props.active.image : this.props.active.safari}
           role="presentation"
           alt="Messenger"
         />

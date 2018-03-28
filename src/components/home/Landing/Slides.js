@@ -1,4 +1,5 @@
 import './Landing.css';
+import {isChrome} from '../../../helpers/helpers.js';
 
 import React from 'react';
 import {Carousel} from 'react-bootstrap';
@@ -116,9 +117,6 @@ class Slides extends React.Component {
   }
 
   render() {
-    /* Checks if browser is safari to determine which images to feed */
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
     return (
       <Carousel
         className="carousel-fade"
@@ -130,10 +128,10 @@ class Slides extends React.Component {
             <div className="landing-gradient">
               <img
                 className="landing-image"
-                src={isSafari ? slide.xsSafari : slide.xsImage}
+                src={isChrome ? slide.xsImage : slide.xsSafari}
                 // eslint-disable-next-line
-                srcSet={isSafari ? (slide.smSafari + ' 992w', slide.safari + ' 1200w') :
-                        (slide.smImage + ' 992w', slide.image + ' 1200w')}
+                srcSet={isChrome ? (slide.smImage + ' 992w', slide.image + ' 1200w') :
+                        (slide.smSafari + ' 992w', slide.safari + ' 1200w')}
                 alt="Landing"
               />
             </div>

@@ -21,16 +21,16 @@ class Messenger extends Component {
   componentDidMount() {
     let actives = [
       {
-      'front': {},
-      'back': {},
+        'front': {},
+        'back': {},
       },
       {
-      'front': {},
-      'back': {},
+        'front': {},
+        'back': {},
       },
       {
-      'front': {},
-      'back': {},
+        'front': {},
+        'back': {},
       },
     ];
 

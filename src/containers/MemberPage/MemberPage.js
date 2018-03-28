@@ -1,5 +1,7 @@
 import './MemberPage.css';
+import {isChrome} from '../../helpers/helpers.js';
 import 'react-select/dist/react-select.css';
+
 import {Grid, Row, Col, FormGroup, FormControl} from 'react-bootstrap';
 import Select from 'react-select';
 import React, {Component} from 'react';
@@ -227,16 +229,14 @@ export default class MemberPage extends Component {
   }
 
   render() {
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
     return (
       <div>
         <div className="brothers-header">
           <a className="brothers-logo" role="button" href="/">
             <img 
               className="logo" 
-              src={isSafari ? (require('../../components/home/NavBar/images/logo.png')) :
-              (require('../../components/home/NavBar/images/logo.webp'))}
+              src={isChrome ? (require('../../components/home/NavBar/images/logo.webp')) :
+              (require('../../components/home/NavBar/images/logo.png'))}
               alt="Logo"
             />
           </a>
@@ -246,7 +246,7 @@ export default class MemberPage extends Component {
           {images.map((image, i) => (
             <img 
               className="brothers-image" 
-              src={isSafari ? image.jpg : image.webp} 
+              src={isChrome ? image.webp : image.jpg} 
               alt="Brothers"
               key={i}
             />

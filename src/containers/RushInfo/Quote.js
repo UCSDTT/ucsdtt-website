@@ -1,4 +1,5 @@
 import './RushInfo.css';
+import {isChrome} from '../../helpers/helpers.js';
 
 import {Carousel, Row, Col} from 'react-bootstrap';
 import React from 'react';
@@ -50,8 +51,6 @@ class Quote extends React.Component {
   }
   
   render() {
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    
     return (
       <Row style={{overflow: "hidden"}}>
         <Col md={12} lg={8}>
@@ -60,7 +59,7 @@ class Quote extends React.Component {
               <Carousel.Item key={i}>
                 <img 
                   className="quote-image"
-                  src={isSafari ? slide.safari : slide.image}
+                  src={isChrome ? slide.image : slide.safari}
                   alt="Active" 
                 />
               </Carousel.Item>

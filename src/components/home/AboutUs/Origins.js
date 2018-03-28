@@ -1,4 +1,5 @@
 import './AboutUs.css';
+import {isChrome} from '../../../helpers/helpers.js';
 
 import React from 'react';
 
@@ -153,9 +154,6 @@ class Scroll extends React.Component {
   }
   
   render() {
-    /* Checks if browser is safari to determine which images to feed */
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
     return (
       <div id="container">
         <div id="content">
@@ -168,7 +166,7 @@ class Scroll extends React.Component {
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;
             With the help of a Theta Tau alumnus, 
-            <span className="founder"> Jennifer Young</span>, thirteen founding fathers <img className="lozad scroll-crest" data-src={isSafari ? (require('./images/crest.png')) : (require('./images/crest.webp'))} alt="Crest" />
+            <span className="founder"> Jennifer Young</span>, thirteen founding fathers <img className="lozad scroll-crest" data-src={isChrome ? (require('./images/crest.webp')) : (require('./images/crest.png'))} alt="Crest" />
             took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: 
             <span className="founder"> Ashay Verma</span>, 
             <span className="founder"> Errynne Bell</span>, 
@@ -190,7 +188,7 @@ class Scroll extends React.Component {
           </p>
           <img 
             className="founders"
-            src={isSafari ? (require('./images/founders.jpg')) : (require('./images/founders.webp'))} 
+            src={isChrome ? (require('./images/founders.webp')) : (require('./images/founders.jpg'))} 
             alt="Founders"
           />
         </div>
@@ -201,9 +199,6 @@ class Scroll extends React.Component {
 
 class MobileOrigins extends React.Component {
   render() {
-    /* Checks if browser is safari to determine which images to feed */
-    let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
     return (
       <div className="mobile-origins">
         <p>
@@ -237,7 +232,7 @@ class MobileOrigins extends React.Component {
 
         <img 
           className="lozad founders"
-          data-src={isSafari ? (require('./images/founders.jpg')) : (require('./images/founders.webp'))} 
+          data-src={isChrome ? (require('./images/founders.webp')) : (require('./images/founders.jpg'))} 
           alt="Founders"
         />
       </div>
