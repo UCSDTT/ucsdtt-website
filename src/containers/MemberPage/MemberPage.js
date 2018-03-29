@@ -24,6 +24,7 @@ export default class MemberPage extends Component {
       dropdownValue: 'active',
       options: options.general,
       specificValue: '',
+      specificLabel: '',
       specificOptions: options.active,
       activeOptions: options.active,
       majorOptions: options.major,
@@ -175,6 +176,7 @@ export default class MemberPage extends Component {
       updatedBrothers: updatedList,
       filteredBrothers: updatedList,
       specificValue: null,
+      specificLabel: null,
       specificOptions: options,
       specificDisabled: disabled,
     })
@@ -225,6 +227,7 @@ export default class MemberPage extends Component {
       updatedBrothers: updatedList,
       filteredBrothers: updatedList,
       specificValue: selected.value,
+      specificLabel: selected.label
     });
   }
 
@@ -240,7 +243,11 @@ export default class MemberPage extends Component {
               alt="Logo"
             />
           </a>
-          Our Brothers
+          {this.state.specificLabel ? (
+            this.state.specificLabel
+          ) : (
+            'Our Brothers'
+          )}
         </div>
         <div className="brothers-image-container">
           {images.map((image, i) => (
