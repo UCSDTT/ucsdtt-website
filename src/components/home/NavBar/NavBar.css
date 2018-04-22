@@ -195,7 +195,7 @@
   }
 
   .navbar-collapse .navbar-nav {
-    position: fixed;
+    position: absolute;
     background-color: var(--secondary-dark);
     color: #fff;
     font-size: 42px;
