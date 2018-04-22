@@ -194,7 +194,7 @@
     margin-top: 0;
   }
 
-  /*.navbar-collapse .navbar-nav {
+  .navbar-collapse .navbar-nav {
     position: fixed;
     background-color: var(--secondary-dark);
     color: #fff;
@@ -207,15 +207,16 @@
     padding-top: 20vh;
     text-align: center;
     opacity: 0;
+    visibility: hidden;
     -webkit-transition: opacity 0.5s ease;
     -moz-transition: opacity 0.5s ease;
     -o-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
-  }*/
+  }
 
   .navbar-collapse .navbar-nav.open {
-    background-color: #000;
     opacity: 1;
+    visibility: visible;
   }
 
   /* Mobile Nav List Margin */
