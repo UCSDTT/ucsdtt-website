@@ -207,8 +207,7 @@
     padding-top: 20vh;
     text-align: center;
     opacity: 0;
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch;
+    transform: translate3d(0,0,0);
     -webkit-transition: opacity 0.5s ease;
     -moz-transition: opacity 0.5s ease;
     -o-transition: opacity 0.5s ease;
