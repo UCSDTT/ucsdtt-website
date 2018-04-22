@@ -36,13 +36,11 @@ function openMenu() {
     .toggle('open');
   
   /* Prevents user from scrolling if menu is open on mobile */
-  if (!(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream)) {
-    if (document.body.style.overflow === 'hidden') {
-      document.body.style.overflow = 'visible';
-    }
-    else {
-      document.body.style.overflow = 'hidden';
-    }
+  if (document.body.style.overflow === 'hidden') {
+    document.body.style.overflow = 'visible';
+  }
+  else {
+    document.body.style.overflow = 'hidden';
   }
 }
 

@@ -215,6 +215,7 @@
 
   .navbar-collapse .navbar-nav.open {
     opacity: 1;
+    visibility: visible;
   }
 
   /* Mobile Nav List Margin */
