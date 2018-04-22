@@ -90,6 +90,14 @@
 @media(max-width: 768px) {
   .navbar-fixed-top.open {
     background-color: var(--secondary-dark) !important;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+
+  .navbar-header {
+    height: 80px;
   }
 
   #nav-logo {
@@ -192,16 +200,23 @@
   /* Mobile Nav Hamburger Open */
   .navbar-collapse {
     margin-top: 0;
+    padding: 0;
+    border: none;
+  }
+  .navbar-collapse.collapsing {
+    min-height: 100vh !important;
+  }
+  .navbar-collapse.in {
+    max-height: calc(100vh - 80px);
   }
 
   .navbar-collapse .navbar-nav {
     background-color: var(--secondary-dark);
     color: #fff;
     font-size: 42px;
-    height: 100%;
-    width: 100%;
+    height: calc(100vh - 80px);
+    width: 100vw;
     margin: 0;
-    padding-top: 20vh;
     text-align: center;
     opacity: 0;
     -webkit-transition: opacity 0.5s ease;
