@@ -195,19 +195,15 @@
   }
 
   .navbar-collapse .navbar-nav {
-    position: fixed;
     background-color: var(--secondary-dark);
     color: #fff;
     font-size: 42px;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 100%;
     margin: 0;
     padding-top: 20vh;
     text-align: center;
     opacity: 0;
-    overflow: hidden;
     -webkit-transition: opacity 0.5s ease;
     -moz-transition: opacity 0.5s ease;
     -o-transition: opacity 0.5s ease;
