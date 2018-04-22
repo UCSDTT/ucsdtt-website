@@ -201,14 +201,14 @@
     font-size: 42px;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
     height: 100%;
     width: 100%;
     margin: 0;
     padding-top: 20vh;
     text-align: center;
     opacity: 0;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
     -webkit-transition: opacity 0.5s ease;
     -moz-transition: opacity 0.5s ease;
     -o-transition: opacity 0.5s ease;
