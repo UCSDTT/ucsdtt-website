@@ -14,7 +14,7 @@
 }
 
 .navbar-fixed-top {
-  height: 80px;
+  height: 81px;
 }
 
 .navbar-nav {
@@ -97,7 +97,7 @@
   }
 
   .navbar-header {
-    height: 80px;
+    height: 75px;
   }
 
   #nav-logo {
@@ -207,14 +207,14 @@
     min-height: 100vh !important;
   }
   .navbar-collapse.in {
-    max-height: calc(100vh - 80px);
+    max-height: calc(100vh - 70px);
   }
 
   .navbar-collapse .navbar-nav {
     background-color: var(--secondary-dark);
     color: #fff;
     font-size: 42px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     width: 100vw;
     margin: 0;
     text-align: center;
