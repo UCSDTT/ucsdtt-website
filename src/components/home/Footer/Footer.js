@@ -59,6 +59,8 @@ class WebsiteCredits extends React.Component {
           <li><a className="footer-links" href='https://github.com/3605031/' target="_blank" rel="noopener noreferrer">Blake Huynh</a></li>
           <li><a className="footer-links" href='https://github.com/kaiserpk/' target="_blank" rel="noopener noreferrer">Kaiser Kim</a></li>
           <li><a className="footer-links" href='https://github.com/jeffreyzlee/' target="_blank" rel="noopener noreferrer">Jeffrey Lee</a></li>
+          <li><a className="footer-links" href='https://joshchao.herokuapp.com' target="_blank" rel="noopener noreferrer">Joshua Chao</a></li>
+          <li><a className="footer-links" href='http://clarkphan.com/' target="_blank" rel="noopener noreferrer">Clark Phan</a></li>
         </ul>
       </Col>
     )

@@ -41,6 +41,8 @@ class Footer extends Component {
                   <li><a className="light-grey">Blake Huynh</a></li>
                   <li><a className="light-grey">Kaiser Kim</a></li>
                   <li><a className="light-grey">Jeffrey Lee</a></li>
+                  <li><a className="light-grey">Joshua Chao</a></li>
+                  <li><a className="light-grey">Clark Phan</a></li>
                 </ul>
               </Col>
             </Row>
