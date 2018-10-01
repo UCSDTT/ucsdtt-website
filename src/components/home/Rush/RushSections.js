@@ -10,7 +10,7 @@ class RushLeft extends React.Component {
       <div className="rush-pic-container">
         <img
           className="lozad rush-pic"
-          data-src={isChrome ? (require('./images/rush-pic2.webp')) : (require('./images/rush-pic2.jpg'))}
+          data-src={isChrome ? (require('./images/rush-pic2.webp')) : (require('./images/rush-pic2.png'))}
           alt="Rush"
         >
         </img>
