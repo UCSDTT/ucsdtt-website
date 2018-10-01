@@ -832,8 +832,8 @@ const brothers = [
   },
   {
     'name': 'Kevin Huo',
-    'position': 'Special Events Chair',
-    'cabinet': true,
+    'position': 'Corresponding Secretary',
+    'eboard': true,
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'env',
@@ -857,7 +857,8 @@ const brothers = [
   },
   {
     'name': 'Jeffrey Lee',
-    'position': 'Active',
+    'position': 'Vice Regent',
+    'eboard': true,
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'cs',
@@ -1065,7 +1066,8 @@ const brothers = [
   },
   {
     'name': 'Erick Wilson',
-    'position': 'Active',
+    'position': 'Treasurer',
+    'eboard': true,
     'class': 'rho',
     'className': 'Rho Class',
     'major': 'cs',
