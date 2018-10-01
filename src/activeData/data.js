@@ -160,8 +160,7 @@ const brothers = [
   },
   {
     'name': 'Kaiser Kim',
-    'position': 'Webmaster',
-    'cabinet': true,
+    'position': 'Alumni',
     'class': 'lambda',
     'className': 'Lambda Class',
     'major': 'ce',
@@ -504,8 +503,7 @@ const brothers = [
   },
   {
     'name': 'Daniel Zhang',
-    'position': 'Brotherhood Chair',
-    'cabinet': true,
+    'position': 'Alumni',
     'class': 'nu',
     'className': 'Nu Class',
     'major': 'cs',
@@ -518,8 +516,7 @@ const brothers = [
   //Xi
   {
     'name': 'Rishi Dhanaraj',
-    'position': 'Regent',
-    'eboard': true,
+    'position': 'Active',
     'class': 'xi',
     'className': 'Xi Class',
     'major': 'cs',
@@ -570,7 +567,8 @@ const brothers = [
   },
   {
     'name': 'Momina Mahmood',
-    'position': 'Active',
+    'position': 'External Events Chair',
+    'cabinet': true,
     'class': 'xi',
     'className': 'Xi Class',
     'major': 'chem',
@@ -596,8 +594,7 @@ const brothers = [
   },
   {
     'name': 'Esther Park',
-    'position': 'Philanthropy Chair',
-    'cabinet': true,
+    'position': 'Active',
     'class': 'xi',
     'className': 'Xi Class',
     'major': 'env',
@@ -621,8 +618,7 @@ const brothers = [
   },
   {
     'name': 'Sherman Yip',
-    'position': 'Vice Regent',
-    'eboard': true,
+    'position': 'Active',
     'class': 'xi',
     'className': 'Xi Class',
     'major': 'mech',
@@ -636,8 +632,7 @@ const brothers = [
   //Omicron
   {
     'name': 'Brian Chan',
-    'position': 'Webmaster',
-    'cabinet': true,
+    'position': 'Active',
     'class': 'omicron',
     'className': 'Omicron Class',
     'major': 'cs',
@@ -686,8 +681,7 @@ const brothers = [
   },
   {
     'name': 'Wonjae Lee',
-    'position': 'Treasurer',
-    'eboard': true,
+    'position': 'Alumni',
     'class': 'omicron',
     'className': 'Omicron Class',
     'major': 'chem',
@@ -711,8 +705,8 @@ const brothers = [
   },
   {
     'name': 'Goutham Marimuthu',
-    'position': 'Rush Chair',
-    'cabinet': true,
+    'position': 'Regent',
+    'eboard': true,
     'class': 'omicron',
     'className': 'Omicron Class',
     'major': 'aero',
@@ -724,8 +718,7 @@ const brothers = [
   },
   {
     'name': 'Aamir Rasheed',
-    'position': 'Fundraising Chair',
-    'cabinet': true,
+    'position': 'Alumni',
     'class': 'omicron',
     'className': 'Omicron Class',
     'major': 'ce',
@@ -737,8 +730,7 @@ const brothers = [
   },
   {
     'name': 'Mayuki Sasagawa',
-    'position': 'Brotherhood Chair',
-    'cabinet': true,
+    'position': 'Active',
     'class': 'omicron',
     'className': 'Omicron Class',
     'major': 'env',
@@ -750,8 +742,7 @@ const brothers = [
   },
   {
     'name': 'Fumika Takazawa',
-    'position': 'Corresponding Secretary',
-    'eboard': true,
+    'position': 'Alumni',
     'class': 'omicron',
     'className': 'Omicron Class',
     'major': 'env',
@@ -775,8 +766,7 @@ const brothers = [
   },
   {
     'name': 'Rachael Wong',
-    'position': 'Fundraising/Rush Chair',
-    'cabinet': true,
+    'position': 'Active',
     'class': 'omicron',
     'className': 'Omicron Class',
     'major': 'bio',
@@ -802,7 +792,8 @@ const brothers = [
   },
   {
     'name': 'Hillary Fan',
-    'position': 'Active',
+    'position': 'Fundraising Chair',
+    'cabinet': true,
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'cs',
@@ -815,7 +806,7 @@ const brothers = [
   },
   {
     'name': 'Allen Gao',
-    'position': 'External Events Chair',
+    'position': 'Rush Chair',
     'cabinet': true,
     'class': 'pi',
     'className': 'Pi Class',
@@ -841,7 +832,8 @@ const brothers = [
   },
   {
     'name': 'Kevin Huo',
-    'position': 'Active',
+    'position': 'Special Events Chair',
+    'cabinet': true,
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'env',
@@ -853,8 +845,7 @@ const brothers = [
   },
   {
     'name': 'Aston Khor',
-    'position': 'Professional Chair',
-    'cabinet': true,
+    'position': 'Alumni',
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'chem',
@@ -879,8 +870,7 @@ const brothers = [
   },
   {
     'name': 'Jason Li',
-    'position': 'External Events Chair',
-    'cabinet': true,
+    'position': 'Active',
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'env',
@@ -893,7 +883,7 @@ const brothers = [
   },
   {
     'name': 'Adam Lin',
-    'position': 'Academics Chair',
+    'position': 'Historian',
     'cabinet': true,
     'class': 'pi',
     'className': 'Pi Class',
@@ -918,7 +908,8 @@ const brothers = [
   },
   {
     'name': 'Meghna Satish',
-    'position': 'Active',
+    'position': 'Professional Chair',
+    'cabinet': true,
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'cs',
@@ -929,7 +920,8 @@ const brothers = [
   },
   {
     'name': 'Victoria Tam',
-    'position': 'Active',
+    'position': 'Special Events Chair',
+    'cabinet': true,
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'bio',
@@ -968,7 +960,8 @@ const brothers = [
   //Rho
   {
     'name': 'Sydney Huynh',
-    'position': 'Active',
+    'position': 'Academics Chair',
+    'cabinet': true,
     'class': 'rho',
     'className': 'Rho Class',
     'major': 'struct',
@@ -990,7 +983,8 @@ const brothers = [
   },
   {
     'name': 'Angie Joung',
-    'position': 'Active',
+    'position': 'Brotherhood Chair',
+    'cabinet': true,
     'class': 'rho',
     'className': 'Rho Class',
     'major': 'bio',
@@ -1001,7 +995,8 @@ const brothers = [
   },
   {
     'name': 'Stacy Kim',
-    'position': 'Active',
+    'position': 'Fundraising Chair',
+    'cabinet': true,
     'class': 'rho',
     'className': 'Rho Class',
     'major': 'struct',
@@ -1034,7 +1029,8 @@ const brothers = [
   },
   {
     'name': 'Soyoun Park',
-    'position': 'Active',
+    'position': 'Philantrophy Chair',
+    'cabinet': true,
     'class': 'rho',
     'className': 'Rho Class',
     'major': 'nano',
@@ -1045,7 +1041,8 @@ const brothers = [
   },
   {
     'name': 'Jerry Qing',
-    'position': 'Active',
+    'position': 'Rush Chair',
+    'cabinet': true,
     'class': 'rho',
     'className': 'Rho Class',
     'major': 'cs',
@@ -1056,7 +1053,8 @@ const brothers = [
   },
   {
     'name': 'Huy Tran',
-    'position': 'Active',
+    'position': 'Brotherhood/Improvments Chair',
+    'cabinet': true,
     'class': 'rho',
     'className': 'Rho Class',
     'major': 'mech',
