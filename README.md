@@ -1,5 +1,7 @@
 # UCSDTT-Websitev2
 
+## Please install ESLint if contributing code. 
+
 ## Available Commands
 
 In the project directory, you can run:
