@@ -25,12 +25,20 @@ const rushEventData = [
   },
   {
     location: 'Triton Statue',
-    date: '10/11 Thrusday 7:00PM',
+    date: '10/11 Thursday 7:00PM',
     name: 'Engineer Night',
     content: 'Interact with other rushees and put your skills to the test with engineering-related challenges! Be prepared to get hands on with the Brothers!',
     image: require('./images/engineer_night.webp'),
     safari: require('./images/engineer_night.jpg'),
   },
+  {
+    location: 'TBA',
+    date: '10/12 Friday',
+    name: 'Invite Only',
+    content: 'To be announced...',
+    image: require('./images/invite_only.webp'),
+    safari: require('./images/invite_only.jpg')
+  }
 ];
 
 const carouselData = [

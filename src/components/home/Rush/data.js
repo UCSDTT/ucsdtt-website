@@ -27,6 +27,13 @@ const rushData = [
     time: 'Triton Statue @ 7pm',
     description: 'Enjoy dinner and play games with the brothers!',
   },
+  {
+    date:'10/12',
+    day: 'Fri',
+    name: 'Invite Only',
+    time: 'TBA',
+    description:'To be announced...'
+  }
 ]
 
 export default rushData;
