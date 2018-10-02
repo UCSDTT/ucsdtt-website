@@ -409,7 +409,7 @@ const brothers = [
   // },
   {
     'name': 'Adrian Gutierrez',
-    'position': 'Active',
+    'position': 'Alumni',
     'class': 'nu',
     'className': 'Nu Class',
     'major': 'env',
@@ -432,7 +432,7 @@ const brothers = [
   // },
   {
     'name': 'Judy Ho',
-    'position': 'Active',
+    'position': 'Alumni',
     'class': 'nu',
     'className': 'Nu Class',
     'major': 'cs',
@@ -542,7 +542,7 @@ const brothers = [
   },
   {
     'name': 'Brian Lyu',
-    'position': 'Active',
+    'position': 'Alumni',
     'class': 'xi',
     'className': 'Xi Class',
     'major': 'ce',
@@ -581,7 +581,7 @@ const brothers = [
   },
   {
     'name': 'Jennie Nguyen',
-    'position': 'Active',
+    'position': 'Alumni',
     'class': 'xi',
     'className': 'Xi Class',
     'major': 'env',
@@ -606,7 +606,7 @@ const brothers = [
   },
   {
     'name': 'Marilyn Sun',
-    'position': 'Active',
+    'position': 'Alumni',
     'class': 'xi',
     'className': 'Xi Class',
     'major': 'env',
@@ -819,7 +819,7 @@ const brothers = [
   },
   {
     'name': 'Shangway Hsu',
-    'position': 'Active',
+    'position': 'Alumni',
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'cs',
@@ -935,7 +935,7 @@ const brothers = [
   },
   {
     'name': 'John Tayag',
-    'position': 'Active',
+    'position': 'Alumni',
     'class': 'pi',
     'className': 'Pi Class',
     'major': 'me',
