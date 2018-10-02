@@ -1,15 +1,15 @@
 import './MemberPage.css';
 
 import React from 'react';
-import {Col} from 'react-bootstrap';
-import {MemberInfo} from './MemberInfo.js';
+import { Col } from 'react-bootstrap';
+import { MemberInfo } from './MemberInfo.js';
 
 class FilteredList extends React.Component {
   render() {
     let brothers = this.props.updatedBrothers;
     
     return (
-      <Col xs={12} md={10} style={{padding:0}}>
+      <Col xs={12} md={10} style={{ padding:0 }}>
         {brothers.map((brother, i) => {
           if (brother[this.props.dropdownValue] === this.props.option.value) {
             return (
@@ -27,4 +27,4 @@ class FilteredList extends React.Component {
   }
 }
 
-export {FilteredList};
+export { FilteredList };

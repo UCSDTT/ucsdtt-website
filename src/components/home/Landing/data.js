@@ -52,4 +52,4 @@ const quoteData = [
   },
 ];
 
-export {slideData, quoteData};
+export { slideData, quoteData };

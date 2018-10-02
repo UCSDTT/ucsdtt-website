@@ -1,7 +1,7 @@
 import './index.css';
 // import registerServiceWorker from './registerServiceWorker.js';
 
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import App from './App/App';
 import Home from './containers/Home';

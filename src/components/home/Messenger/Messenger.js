@@ -1,10 +1,10 @@
 import './Messenger.css';
 
-import React, {Component} from 'react';
-import {Grid, Row, Col,} from 'react-bootstrap';
-import {Element} from 'react-scroll';
-import {Flipper} from './Flipper.js';
-import {brothers} from '../../../activeData/data.js';
+import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
+import { Element } from 'react-scroll';
+import { Flipper } from './Flipper.js';
+import { brothers } from '../../../activeData/data.js';
 
 class Messenger extends Component {
   constructor(props) {
@@ -122,4 +122,4 @@ class Messenger extends Component {
   }
 }
 
-export {Messenger}
+export { Messenger }

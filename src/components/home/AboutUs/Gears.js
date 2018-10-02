@@ -14,4 +14,4 @@ class Gears extends React.Component {
   }
 }
 
-export {Gears}
+export { Gears }

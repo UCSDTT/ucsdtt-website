@@ -1,7 +1,7 @@
 import './Landing.css';
 
 import React from 'react';
-import {slideData}  from './data.js';
+import { slideData }  from './data.js';
 
 class BrothersAre extends React.Component {
   render() {
@@ -22,4 +22,4 @@ class BrothersAre extends React.Component {
   }
 }
 
-export {BrothersAre};
+export { BrothersAre };

@@ -1,9 +1,9 @@
 import './NavBar.css';
-import {isChrome} from '../../../helpers/helpers.js';
+import { isChrome } from '../../../helpers/helpers.js';
 
-import {Image, Nav, NavItem, Navbar} from 'react-bootstrap';
-import React, {Component} from 'react';
-import {animateScroll as scroll, scroller} from 'react-scroll';
+import { Image, Nav, NavItem, Navbar } from 'react-bootstrap';
+import React, { Component } from 'react';
+import { animateScroll as scroll, scroller } from 'react-scroll';
 
 /* Underlines the hovered element by adding the underline class */
 function underline(event) {
@@ -89,7 +89,7 @@ class NavBar extends Component {
               <span></span>
               <span></span>
               <span></span>
-              </div>
+            </div>
             }
             onClick={openMenu}
           />
@@ -164,4 +164,4 @@ class NavBar extends Component {
   }
 }
 
-export {NavBar};
+export { NavBar };

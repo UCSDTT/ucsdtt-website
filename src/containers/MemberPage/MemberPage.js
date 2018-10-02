@@ -1,12 +1,12 @@
 import './MemberPage.css';
-import {isChrome} from '../../helpers/helpers.js';
+import { isChrome } from '../../helpers/helpers.js';
 
-import {Grid, Row, Col, FormGroup, FormControl} from 'react-bootstrap';
+import { Grid, Row, Col, FormGroup, FormControl } from 'react-bootstrap';
 import Select from 'react-select';
-import React, {Component} from 'react';
-import {BrothersList} from './BrothersList.js';
-import {BrotherModal} from './BrotherModal.js';
-import {brothers, options, images} from '../../activeData/data.js';
+import React, { Component } from 'react';
+import { BrothersList } from './BrothersList.js';
+import { BrotherModal } from './BrotherModal.js';
+import { brothers, options, images } from '../../activeData/data.js';
 
 export default class MemberPage extends Component {
   constructor(props) {
@@ -51,7 +51,7 @@ export default class MemberPage extends Component {
 
     /* Autofocuses the search bar */
     document.querySelector('.search-bar').autofocus = true;
-    
+
     /* Makes the first brothers header image visible */
     image[0].classList.add('selected');
 
@@ -101,7 +101,7 @@ export default class MemberPage extends Component {
   }
 
   sort(brothers) {
-    brothers.sort(function(a, b){
+    brothers.sort(function(a, b) {
       if (a.name < b.name) return -1;
       if (a.name > b.name) return 1;
       return 0;
@@ -135,7 +135,7 @@ export default class MemberPage extends Component {
     /* Sets the new brothers header image */
     let newImage = images.findIndex(function(image) {
       return (image.name.toLowerCase() ===
-        selected.value.toLowerCase()) !== false;
+                selected.value.toLowerCase()) !== false;
     });
 
     /* Removes visibility of the old brothers header image */
@@ -189,7 +189,7 @@ export default class MemberPage extends Component {
     /* Sets the new brothers header image */
     let newImage = images.findIndex(function(image) {
       return (image.name.toLowerCase() ===
-        selected.value.toLowerCase()) !== false;
+                selected.value.toLowerCase()) !== false;
     });
 
     /* Removes visibility of the old brothers header image */
@@ -200,23 +200,23 @@ export default class MemberPage extends Component {
 
     /* Filters the brothers list based on eboard or cabinet */
     if (this.state.dropdownValue === 'active') {
-      updatedList = updatedList.filter(function(brother){
+      updatedList = updatedList.filter(function(brother) {
         return brother[selected.value.toLowerCase()] === true;
       });
     }
     /* Filters brothers list based on selected major */
     else if (this.state.dropdownValue === 'major') {
-      updatedList = updatedList.filter(function(brother){
+      updatedList = updatedList.filter(function(brother) {
         return (brother.major.toLowerCase() ===
-          selected.value.toLowerCase()) !== false;
+                    selected.value.toLowerCase()) !== false;
       });
     }
     /* Filters brothers list based on class */
     else {
       updatedList = this.state.allBrothers;
-      updatedList = updatedList.filter(function(brother){
+      updatedList = updatedList.filter(function(brother) {
         return (brother.class.toLowerCase() ===
-          selected.value.toLowerCase()) !== false;
+                    selected.value.toLowerCase()) !== false;
       });
     }
 
@@ -235,10 +235,10 @@ export default class MemberPage extends Component {
       <div>
         <div className="brothers-header">
           <a className="brothers-logo" role="button" href="/">
-            <img 
-              className="logo" 
+            <img
+              className="logo"
               src={isChrome ? (require('../../components/home/NavBar/images/logo.webp')) :
-              (require('../../components/home/NavBar/images/logo.png'))}
+                (require('../../components/home/NavBar/images/logo.png'))}
               alt="Logo"
             />
           </a>
@@ -250,34 +250,34 @@ export default class MemberPage extends Component {
         </div>
         <div className="brothers-image-container">
           {images.map((image, i) => (
-            <img 
-              className="brothers-image" 
-              src={isChrome ? image.webp : image.jpg} 
+            <img
+              className="brothers-image"
+              src={isChrome ? image.webp : image.jpg}
               alt="Brothers"
               key={i}
             />
           ))}
         </div>
         <Grid className="brothers-grid">
-  				<Row className="search-bar-row">
-  					<Col xsOffset={1} xs={10} mdOffset={1} md={4} className="search-bar-col">
-  						<form>
-          			<FormGroup controlId="formBasicText">
-            			<FormControl
-            				className="search-bar"
-  			            type="text"
+          <Row className="search-bar-row">
+            <Col xsOffset={1} xs={10} mdOffset={1} md={4} className="search-bar-col">
+              <form>
+                <FormGroup controlId="formBasicText">
+                  <FormControl
+                    className="search-bar"
+                    type="text"
                     placeholder="Search..."
-  			            value={this.state.searchValue}
-  			            onChange={this.filterSearch}
-           				 />
-          			</FormGroup>
-       			 	</form>
-  					</Col>
-  					<Col xs={12} md={2}>
-  						<h3> Search By: </h3>
-  					</Col>
-  					<Col xs={6} md={2}>
-  						<Select
+                    value={this.state.searchValue}
+                    onChange={this.filterSearch}
+                  />
+                </FormGroup>
+              </form>
+            </Col>
+            <Col xs={12} md={2}>
+              <h3> Search By: </h3>
+            </Col>
+            <Col xs={6} md={2}>
+              <Select
                 className="search-dropdown"
                 value={this.state.dropdownValue}
                 options={this.state.options}
@@ -286,7 +286,7 @@ export default class MemberPage extends Component {
                 backspaceRemoves={false}
                 searchable={false}
               />
-  					</Col>
+            </Col>
             <Col xs={6} md={3}>
               <Select
                 className="search-dropdown"
@@ -299,14 +299,14 @@ export default class MemberPage extends Component {
                 searchable={false}
               />
             </Col>
-  				</Row>
-  				<Row className="brother-container">
-            <BrotherModal 
+          </Row>
+          <Row className="brother-container">
+            <BrotherModal
               show={this.state.showModal}
               close={this.close}
-              brother={this.state.brotherModal} 
+              brother={this.state.brotherModal}
             />
-            <BrothersList 
+            <BrothersList
               majorOptions={this.state.majorOptions}
               classOptions={this.state.classOptions}
               dropdownValue={this.state.dropdownValue}
@@ -314,8 +314,8 @@ export default class MemberPage extends Component {
               updatedBrothers={this.state.updatedBrothers}
               open={this.open}
             />
-  				</Row>
-  			</Grid>
+          </Row>
+        </Grid>
       </div>
     );
   }

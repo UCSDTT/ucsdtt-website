@@ -1,5 +1,5 @@
 import './Messenger.css';
-import {isChrome} from '../../../helpers/helpers.js';
+import { isChrome } from '../../../helpers/helpers.js';
 
 import React from 'react';
 
@@ -31,4 +31,4 @@ class ActiveInfo extends React.Component {
   }
 }
 
-export {ActiveInfo}
+export { ActiveInfo }

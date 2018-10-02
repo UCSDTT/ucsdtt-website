@@ -1523,4 +1523,4 @@ const images = [
   },
 ]
 
-export {brothers, alumni, options, images};
+export { brothers, alumni, options, images };

@@ -1,5 +1,5 @@
 import './MemberPage.css';
-import {isChrome} from '../../helpers/helpers.js';
+import { isChrome } from '../../helpers/helpers.js';
 
 import React from 'react';
 
@@ -23,4 +23,4 @@ class MemberInfo extends React.Component {
   }
 }
 
-export {MemberInfo};
+export { MemberInfo };

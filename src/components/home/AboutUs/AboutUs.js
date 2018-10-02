@@ -1,12 +1,12 @@
 import './AboutUs.css';
 
-import React, {Component} from 'react';
-import {Grid, Row, Col} from 'react-bootstrap';
-import {Element} from 'react-scroll';
-import {Gears} from './Gears.js';
-import {Scroll, MobileOrigins} from './Origins.js';
-import {Pillars} from './Pillars.js';
-import {gearPosition, pillarData} from './data.js';
+import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
+import { Element } from 'react-scroll';
+import { Gears } from './Gears.js';
+import { Scroll, MobileOrigins } from './Origins.js';
+import { Pillars } from './Pillars.js';
+import { gearPosition, pillarData } from './data.js';
 
 class AboutUs extends Component {
   render() {
@@ -51,4 +51,4 @@ class AboutUs extends Component {
   }
 }
 
-export {AboutUs}
+export { AboutUs }

@@ -1,8 +1,8 @@
 import './Footer.css';
 
-import React, {Component} from 'react';
-import {Col, Grid, Row} from 'react-bootstrap';
-import {scroller} from 'react-scroll';
+import React, { Component } from 'react';
+import { Col, Grid, Row } from 'react-bootstrap';
+import { scroller } from 'react-scroll';
 
 class ChapterInfo extends React.Component {
   render() {
@@ -16,7 +16,7 @@ class ChapterInfo extends React.Component {
         </p>
         <p>
           For more information, visit Theta Tau's national site:
-            <a className="footer-links" href="http://thetatau.org/"> thetatau.org</a>
+          <a className="footer-links" href="http://thetatau.org/"> thetatau.org</a>
         </p>
       </Col>
     )
@@ -90,4 +90,4 @@ class Footer extends Component {
   }
 }
 
-export {Footer};
+export { Footer };

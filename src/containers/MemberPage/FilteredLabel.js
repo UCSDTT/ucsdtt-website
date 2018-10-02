@@ -1,6 +1,6 @@
 import './MemberPage.css';
 
-import {Col} from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import React from 'react';
 
 class FilteredLabel extends React.Component {
@@ -27,4 +27,4 @@ class FilteredLabel extends React.Component {
   }
 }
 
-export {FilteredLabel};
+export { FilteredLabel };

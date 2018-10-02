@@ -1,13 +1,13 @@
 import './MemberPage.css';
 
 import React from 'react';
-import {Col} from 'react-bootstrap';
-import {FilteredLabel} from './FilteredLabel.js';
-import {FilteredList} from './FilteredList.js';
-import {MemberInfo} from './MemberInfo.js';
+import { Col } from 'react-bootstrap';
+import { FilteredLabel } from './FilteredLabel.js';
+import { FilteredList } from './FilteredList.js';
+import { MemberInfo } from './MemberInfo.js';
 
 class BrothersList extends React.Component {
-   renderFilteredList(option) {
+  renderFilteredList(option) {
     let brothers = this.props.updatedBrothers;
     let showList = false;
 
@@ -85,4 +85,4 @@ class BrothersList extends React.Component {
   }
 }
 
-export {BrothersList};
+export { BrothersList };

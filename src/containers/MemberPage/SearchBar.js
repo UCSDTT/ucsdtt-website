@@ -1,6 +1,6 @@
 import './MemberPage.css';
 
-import {FormGroup, FormControl} from 'react-bootstrap';
+import { FormGroup, FormControl } from 'react-bootstrap';
 import React from 'react';
 
 class SearchBar extends React.Component {
@@ -31,11 +31,11 @@ class SearchBar extends React.Component {
             placeholder="Search..."
             value={this.props.searchValue}
             onChange={this.filterSearch}
-           />
+          />
         </FormGroup>
       </form>
     )
   }
 }
 
-export {SearchBar};
+export { SearchBar };

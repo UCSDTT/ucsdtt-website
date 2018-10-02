@@ -1,10 +1,10 @@
 import './RushInfo.css';
-import {isChrome} from '../../helpers/helpers.js';
+import { isChrome } from '../../helpers/helpers.js';
 
-import {Carousel, Row, Col} from 'react-bootstrap';
+import { Carousel, Row, Col } from 'react-bootstrap';
 import React from 'react';
 
-import {carouselData} from './data.js'
+import { carouselData } from './data.js'
 
 const activeList = carouselData.sort(() => .5 - Math.random());
 
@@ -52,7 +52,7 @@ class Quote extends React.Component {
   
   render() {
     return (
-      <Row style={{overflow: "hidden"}}>
+      <Row style={{ overflow: "hidden" }}>
         <Col md={12} lg={8}>
           <Carousel interval={7000} onSelect={this.changeQuote}>
             {activeList.map((slide, i) => (
@@ -71,7 +71,7 @@ class Quote extends React.Component {
         >
           {activeList.map((slide, i) => (
             <div key={i} className="quote-appear">
-              <div style={{display: "flex"}}>
+              <div style={{ display: "flex" }}>
                 <span className="quote-quotes">❝</span>
                 <span className="rush-quote">{slide.quote}</span>
               </div>
@@ -87,4 +87,4 @@ class Quote extends React.Component {
   }
 }
 
-export {Quote}
+export { Quote }

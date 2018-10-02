@@ -93,4 +93,4 @@ const carouselData = [
   },
 ];
 
-export {rushEventData, carouselData};
+export { rushEventData, carouselData };

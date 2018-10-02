@@ -1,8 +1,8 @@
 import './MemberPage.css';
-import {isChrome} from '../../helpers/helpers.js';
+import { isChrome } from '../../helpers/helpers.js';
 
 import React from 'react';
-import {Modal, ListGroup, ListGroupItem} from 'react-bootstrap';
+import { Modal, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 //window.onscroll = null;
 
@@ -12,7 +12,7 @@ class BrotherModal extends React.Component {
       load: function(el) {
         el.src = el.dataset.src;
         el.onload = function() {
-            el.classList.add('fadeIn')
+          el.classList.add('fadeIn')
         }
       },
       rootMargin: '200px 0px'
@@ -60,4 +60,4 @@ class BrotherModal extends React.Component {
   }
 }
 
-export {BrotherModal};
+export { BrotherModal };

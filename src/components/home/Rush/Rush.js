@@ -1,9 +1,9 @@
 import './Rush.css';
 
-import React, {Component} from 'react';
-import {Element} from 'react-scroll';
+import React, { Component } from 'react';
+import { Element } from 'react-scroll';
 // import {RushLeft, RushRight} from './RushSections.js';
-import {RushLeft} from './RushSections.js';
+import { RushLeft } from './RushSections.js';
 
 class Rush extends Component {
   render() {
@@ -16,4 +16,4 @@ class Rush extends Component {
   }
 }
 
-export {Rush};
+export { Rush };
