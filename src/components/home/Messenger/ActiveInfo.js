@@ -22,7 +22,7 @@ class ActiveInfo extends React.Component {
           <br/> {this.props.active.majorName}
           <br/> {this.props.active.className}
         </p>
-        <a className="messenger-button" href={this.props.active.messenger} target="_blank">
+        <a className="messenger-button" href={this.props.active.messenger} target="_blank" rel="noopener noreferrer">
           <i className="icon-temp-messenger"></i>
           Message
         </a>

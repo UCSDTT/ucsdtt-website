@@ -30,7 +30,7 @@ class ContactInfo extends React.Component {
         <div className="widget-header">Contact Us</div><br/>
         <p>
           For any questions or queries, you can find our FAQS and contact details
-          <a className="footer-links footer-contact" onClick={() => this.scrollToComp("faq")}> here</a>
+          <div className="footer-links footer-contact" onClick={() => scroller.scrollTo("faq", { smooth: true })}> here</div>
         </p>
         <p>
           And you can find our social media links here:

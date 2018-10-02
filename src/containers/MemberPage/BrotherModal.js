@@ -50,7 +50,7 @@ class BrotherModal extends React.Component {
               Close
             </div>
           </div>
-          <a className="linkedin-footer" href={this.props.brother.linkedin} target="_blank">
+          <a className="linkedin-footer" href={this.props.brother.linkedin} target="_blank" rel="noopener noreferrer">
             Connect
             <i className="icon-linkedin-squared" aria-hidden="true"></i>
           </a>

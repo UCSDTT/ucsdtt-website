@@ -215,6 +215,11 @@ a:hover, a:focus {
   padding: 20px;
 }
 
+.anchor-button {
+  text-decoration: none;
+  color: #aaa;
+}
+
 html,
 body,
 .carousel,

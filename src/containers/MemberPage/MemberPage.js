@@ -1,6 +1,5 @@
 import './MemberPage.css';
 import {isChrome} from '../../helpers/helpers.js';
-import 'react-select/dist/react-select.css';
 
 import {Grid, Row, Col, FormGroup, FormControl} from 'react-bootstrap';
 import Select from 'react-select';

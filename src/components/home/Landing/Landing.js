@@ -20,12 +20,9 @@ class Landing extends Component {
         <Slides />
         <BrothersAre />
 
-        <a
-          className="learn-more"
-          onClick={() => this.scrollToComp("rush")}
-        >
+        <div className="learn-more" onClick={() => this.scrollToComp("rush")}>
           Learn More
-        </a>
+        </div>
       </div>
     );
   }
