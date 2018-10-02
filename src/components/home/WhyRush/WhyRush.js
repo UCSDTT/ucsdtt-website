@@ -26,7 +26,7 @@ class WhyRush extends Component {
             ))}
           </div>
           
-          <a className="rush-button" href="/rush"> Explore New Horizons </a>
+          <a className="rush-button" href="/rush"> Discover Possibility </a>
         </Grid>
       </Element>
     );
