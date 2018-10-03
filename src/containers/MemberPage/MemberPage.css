@@ -7,7 +7,7 @@
   font-style: italic;
   padding: 25px 0;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .brothers-header {
     font-size: 25px;
     padding: 30px 0;
@@ -29,7 +29,7 @@
   top: 10px;
   left: 30px;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .brothers-logo {
     top: 15px;
     left: 15px;
@@ -43,7 +43,7 @@
   height: calc(100vh - 218px);
   z-index: -1;
 }
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .brothers-image-container {
     height: calc(100vh - 199px);
   }
@@ -60,11 +60,11 @@
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
   filter: alpha(opacity=0);
   z-index: -1;
 }
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .brothers-image {
     height: calc(100vh - 199px);
   }
@@ -72,7 +72,7 @@
 
 .brothers-image.selected {
   opacity: 1;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
   filter: alpha(opacity=1);
 }
 
@@ -103,7 +103,7 @@
   min-height: 500px;
   font-family: 'Helvetica Neue Condensed';
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .brother-container {
     margin: 0 10px;
   }
@@ -113,12 +113,12 @@
   margin-bottom: 20px;
   padding: 0;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .brother-info {
     width: 33.33%;
   }
 }
-@media(max-width: 539px) {
+@media (max-width: 539px) {
   .brother-info {
     display: inline-block;
     width: 50%;
@@ -126,7 +126,8 @@
   }
 }
 
-.brother-info h4, .brother-info p {
+.brother-info h4,
+.brother-info p {
   margin-bottom: 0;
 }
 
@@ -134,7 +135,7 @@
   font-weight: 700;
   font-size: 20px;
 }
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .brother-info h4 {
     font-size: 16px;
   }
@@ -143,7 +144,7 @@
 .brother-info p {
   font-size: 18px;
 }
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .brother-info p {
     font-size: 14px;
   }
@@ -161,7 +162,7 @@
   margin: auto;
   border-radius: 50%;
 }
-@media(max-width: 350px) {
+@media (max-width: 350px) {
   .option-image {
     height: 130px;
   }
@@ -173,17 +174,18 @@
   background-color: #000;
   margin: auto;
   border-radius: 8px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px,
+    rgba(0, 0, 0, 0.23) 0px 3px 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
   cursor: pointer;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .brother-image-container {
     height: 200px;
     width: 150px;
   }
 }
-@media(max-width: 350px) {
+@media (max-width: 350px) {
   .brother-image-container {
     height: 180px;
     width: 130px;
@@ -204,13 +206,13 @@
 .brother-image:hover {
   opacity: 0.6;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .brother-image {
     height: 200px;
     width: 150px;
   }
 }
-@media(max-width: 350px) {
+@media (max-width: 350px) {
   .brother-image {
     height: 180px;
     width: 130px;
@@ -235,7 +237,7 @@
   text-align: left;
   vertical-align: middle;
 }
-@media(max-width: 539px) {
+@media (max-width: 539px) {
   .modal-dialog {
     width: 93vw;
   }
@@ -244,15 +246,39 @@
 /* Modal Header */
 .modal-header {
   background: #9a0000; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #9a0000, #800000, #670000, #561e18); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #9a0000, #800000, #670000, #561e18); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #9a0000, #800000, #670000, #561e18); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #561e18, #670000, #800000, #9a0000); /* Standard syntax */
+  background: -webkit-linear-gradient(
+    left top,
+    #9a0000,
+    #800000,
+    #670000,
+    #561e18
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    bottom right,
+    #9a0000,
+    #800000,
+    #670000,
+    #561e18
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    bottom right,
+    #9a0000,
+    #800000,
+    #670000,
+    #561e18
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(
+    to bottom right,
+    #561e18,
+    #670000,
+    #800000,
+    #9a0000
+  ); /* Standard syntax */
   color: #fff;
   padding: 25px 0;
   border-radius: 3px 3px 0 0;
 }
-@media(max-width: 539px) {
+@media (max-width: 539px) {
   .modal-header {
     display: flex;
     flex-direction: column;
@@ -266,12 +292,12 @@
   font-family: 'Helvetica Neue Condensed';
   text-align: center;
 }
-@media(min-width: 539px) {
+@media (min-width: 539px) {
   .modal-title {
     font-size: 50px;
   }
 }
-@media(max-width: 539px) {
+@media (max-width: 539px) {
   .modal-title {
     font-size: 30px;
   }
@@ -281,7 +307,7 @@
 .modal-image-mobile {
   display: none;
 }
-@media(max-width: 539px) {
+@media (max-width: 539px) {
   .modal-image-mobile {
     display: block;
     object-fit: cover;
@@ -304,7 +330,7 @@
   margin-left: 10px;
   border-radius: 6px;
 }
-@media(max-width: 539px) {
+@media (max-width: 539px) {
   .modal-image {
     display: none;
   }
@@ -314,13 +340,13 @@
 .modal-body {
   font-family: 'Helvetica Neue Condensed';
 }
-@media(min-width: 539px) {
+@media (min-width: 539px) {
   .modal-body {
     display: flex;
     margin: 20px auto;
   }
 }
-@media(max-width: 539px) {
+@media (max-width: 539px) {
   .modal-body {
     font-size: 18px;
     margin-top: 50px;
@@ -332,7 +358,7 @@
 .modal-body > ul {
   margin-bottom: 0;
 }
-@media(min-width: 539px) {
+@media (min-width: 539px) {
   .modal-body > ul {
     display: inline-block;
     vertical-align: top;
@@ -348,7 +374,7 @@
     font-weight: 700;
   }
 }
-@media(max-width: 539px) {
+@media (max-width: 539px) {
   .modal-body > ul > li {
     color: #666;
     border-top: 1px solid #e5e5e5;
@@ -371,7 +397,7 @@
   padding: 0;
   cursor: pointer;
 }
-@media(max-width: 320px) {
+@media (max-width: 320px) {
   .modal-footer {
     font-size: 18px;
   }

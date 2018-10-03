@@ -14,12 +14,12 @@ ReactDOM.render(
   <BrowserRouter>
     <App>
       <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route exact path='/rush' component={RushInfo}/>
-        <Route exact path='/members' component={MemberPage}/>
-        <Route path='*' component={Home}/>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/rush" component={RushInfo} />
+        <Route exact path="/members" component={MemberPage} />
+        <Route path="*" component={Home} />
       </Switch>
     </App>
-  </BrowserRouter>, 
-  document.getElementById('root'));
-  
+  </BrowserRouter>,
+  document.getElementById('root')
+);

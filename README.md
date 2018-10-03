@@ -1,6 +1,13 @@
 # UCSDTT-Websitev2
 
-## Please install ESLint if contributing code. 
+## Developer Extensions
+
+The following extensions are mandatory to contribute to this repo:
+
+1. ESLint
+2. Prettier
+
+It is recommended that you set `"editor.formatOnSave": true` (VSCode) so that Prettier will automatically style your code.
 
 ## Available Commands
 

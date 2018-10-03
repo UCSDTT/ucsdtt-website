@@ -10,17 +10,20 @@ class SearchBar extends React.Component {
     let updatedList = this.state.filteredBrothers;
 
     /* Sets the displayed list to all actives whose names begin with the input value */
-    updatedList = updatedList.filter(function(brother){
-      return brother.name.toLowerCase().startsWith(
-        event.target.value.toLowerCase()) !== false;
+    updatedList = updatedList.filter(function(brother) {
+      return (
+        brother.name
+          .toLowerCase()
+          .startsWith(event.target.value.toLowerCase()) !== false
+      );
     });
 
     this.setState({
       searchValue: event.target.value,
-      updatedBrothers: updatedList,
+      updatedBrothers: updatedList
     });
   }
-  
+
   render() {
     return (
       <form>
@@ -34,7 +37,7 @@ class SearchBar extends React.Component {
           />
         </FormGroup>
       </form>
-    )
+    );
   }
 }
 

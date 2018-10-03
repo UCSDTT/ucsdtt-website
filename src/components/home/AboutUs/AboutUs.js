@@ -13,14 +13,16 @@ class AboutUs extends Component {
     return (
       <Element name="about-us" className="element about">
         {gearPosition.map((position, i) => (
-          <Gears position={position} key={i}/>
+          <Gears position={position} key={i} />
         ))}
 
         <h1 className="title"> About Us </h1>
 
         <Grid>
           <Row>
-            <h1 className="about-section-title">The Origins of Theta Tau UCSD</h1>
+            <h1 className="about-section-title">
+              The Origins of Theta Tau UCSD
+            </h1>
             <Col className="about-description">
               <Scroll />
 
@@ -51,4 +53,4 @@ class AboutUs extends Component {
   }
 }
 
-export { AboutUs }
+export { AboutUs };
