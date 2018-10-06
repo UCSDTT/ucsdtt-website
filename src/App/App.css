@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @font-face {
   font-family: 'Helvetica Neue Condensed';
   src: url('../fonts/helvetica-neue-condensed.otf');
@@ -47,7 +48,7 @@ body {
   --accent-light: #eee;
 }
 
-@media(max-width: 410px) {
+@media (max-width: 410px) {
   h1 {
     font-size: 32px;
   }
@@ -76,7 +77,7 @@ body {
   animation: spin 5s linear infinite, fadeIn 0.5s ease-in;
   z-index: 1100;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   #loading-image {
     height: 150px;
     width: 150px;
@@ -104,7 +105,7 @@ body {
   padding-bottom: 0.5em;
   border-bottom: 4px solid;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .title {
     width: 80%;
   }
@@ -116,7 +117,7 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .col-md-5th {
     width: 20%;
   }
@@ -126,7 +127,7 @@ body {
   height: 60px;
   width: 60px;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .logo {
     height: 50px;
     width: 50px;
@@ -141,9 +142,9 @@ body {
   border: none;
 }
 
-.padding-0{
-  padding-right:0;
-  padding-left:0;
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -181,7 +182,8 @@ a {
   color: #aaa;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
   color: white;
 }
@@ -204,7 +206,7 @@ a:hover, a:focus {
 }
 
 .dark-bg {
-  background: rgba(10, 10, 10, .9);
+  background: rgba(10, 10, 10, 0.9);
 }
 
 .white-text {
@@ -220,12 +222,12 @@ body,
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
-    height: 100%;
+  height: 100%;
 }
 
 .carousel-caption {
-    top: 40%;
-    bottom: auto;
+  top: 40%;
+  bottom: auto;
 }
 
 /* Animations */
@@ -297,11 +299,11 @@ body,
 }
 
 @keyframes spin {
-  from { 
-    transform: rotate(0deg); 
+  from {
+    transform: rotate(0deg);
   }
-  to { 
-    transform: rotate(360deg); 
+  to {
+    transform: rotate(360deg);
   }
 }
 
