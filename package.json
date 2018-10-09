@@ -24,12 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-<<<<<<< HEAD
-    "eject": "react-scripts eject"
-  }
-=======
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
   },
   "browserslist": [
     ">0.2%",
@@ -37,5 +32,4 @@
     "not ie <= 11",
     "not op_mini all"
   ]
->>>>>>> 17218d8a784febbc788ed7c89dcca2b419b93e92
 }
