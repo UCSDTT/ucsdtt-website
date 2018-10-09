@@ -1,7 +1,7 @@
 import './App.css';
 import '../fontello/css/fontello.css';
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class App extends Component {
   render() {

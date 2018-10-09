@@ -1,5 +1,5 @@
 import './Rush.css';
-import {isChrome} from '../../../helpers/helpers.js';
+import { isChrome } from '../../../helpers/helpers.js';
 
 import React from 'react';
 //import rushData from './data.js';
@@ -70,4 +70,4 @@ class RushLeft extends React.Component {
 // }
 
 // export {RushLeft, RushRight};
-export {RushLeft};
+export { RushLeft };

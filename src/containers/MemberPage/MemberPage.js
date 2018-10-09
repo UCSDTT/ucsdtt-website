@@ -1,13 +1,12 @@
 import './MemberPage.css';
-import {isChrome} from '../../helpers/helpers.js';
-import 'react-select/dist/react-select.css';
+import { isChrome } from '../../helpers/helpers.js';
 
-import {Grid, Row, Col, FormGroup, FormControl} from 'react-bootstrap';
+import { Grid, Row, Col, FormGroup, FormControl } from 'react-bootstrap';
 import Select from 'react-select';
-import React, {Component} from 'react';
-import {BrothersList} from './BrothersList.js';
-import {BrotherModal} from './BrotherModal.js';
-import {brothers, options, images} from '../../activeData/data.js';
+import React, { Component } from 'react';
+import { BrothersList } from './BrothersList.js';
+import { BrotherModal } from './BrotherModal.js';
+import { brothers, options, images } from '../../activeData/data.js';
 
 export default class MemberPage extends Component {
   constructor(props) {
@@ -22,6 +21,8 @@ export default class MemberPage extends Component {
       updatedBrothers: [],
       filteredBrothers: [],
       dropdownValue: 'active',
+      firstSelected: { value: 'active', label: 'Active' },
+      secondSelected: '',
       options: options.general,
       specificValue: '',
       specificLabel: '',
@@ -32,7 +33,7 @@ export default class MemberPage extends Component {
       specificDisabled: false,
       showModal: false,
       brotherModal: {},
-      showList: false,
+      showList: false
     };
     this.filterSearch = this.filterSearch.bind(this);
     this.filterDropdown = this.filterDropdown.bind(this);
@@ -52,21 +53,18 @@ export default class MemberPage extends Component {
 
     /* Autofocuses the search bar */
     document.querySelector('.search-bar').autofocus = true;
-    
+
     /* Makes the first brothers header image visible */
     image[0].classList.add('selected');
 
-    brothers.forEach((brother) => {
+    brothers.forEach(brother => {
       if (brother.eboard === true) {
         eboard.push(brother);
-      }
-      else if (brother.cabinet === true) {
+      } else if (brother.cabinet === true) {
         cabinet.push(brother);
-      }
-      else if (brother.position === 'Alumni') {
+      } else if (brother.position === 'Alumni') {
         alumni.push(brother);
-      }
-      else {
+      } else {
         actives.push(brother);
       }
       allBrothers.push(brother);
@@ -83,26 +81,26 @@ export default class MemberPage extends Component {
       allBrothers: allBrothers,
       updatedBrothers: members,
       filteredBrothers: members
-    })
+    });
   }
 
   /* Closes the modal */
   close() {
     this.setState({
-      showModal: false,
-    })
+      showModal: false
+    });
   }
 
   /* Opens the modal */
   open(brother) {
     this.setState({
       showModal: true,
-      brotherModal: brother,
-    })
+      brotherModal: brother
+    });
   }
 
   sort(brothers) {
-    brothers.sort(function(a, b){
+    brothers.sort(function(a, b) {
       if (a.name < b.name) return -1;
       if (a.name > b.name) return 1;
       return 0;
@@ -116,13 +114,16 @@ export default class MemberPage extends Component {
 
     /* Sets the displayed list to all actives whose names begin with the input value */
     updatedList = updatedList.filter(function(brother) {
-      return brother.name.toLowerCase().startsWith(
-        event.target.value.toLowerCase()) !== false;
+      return (
+        brother.name
+          .toLowerCase()
+          .startsWith(event.target.value.toLowerCase()) !== false
+      );
     });
 
     this.setState({
       searchValue: event.target.value,
-      updatedBrothers: updatedList,
+      updatedBrothers: updatedList
     });
   }
 
@@ -135,8 +136,9 @@ export default class MemberPage extends Component {
 
     /* Sets the new brothers header image */
     let newImage = images.findIndex(function(image) {
-      return (image.name.toLowerCase() ===
-        selected.value.toLowerCase()) !== false;
+      return (
+        (image.name.toLowerCase() === selected.value.toLowerCase()) !== false
+      );
     });
 
     /* Removes visibility of the old brothers header image */
@@ -149,21 +151,19 @@ export default class MemberPage extends Component {
     if (selected.value === 'active') {
       updatedList = this.state.brothers.slice();
       options = this.state.activeOptions;
-    }
-    else if (selected.value === 'major') { //should be actives only
+    } else if (selected.value === 'major') {
+      //should be actives only
       updatedList = this.state.brothers.slice();
       this.sort(updatedList);
       options = this.state.majorOptions;
-    }
-    else if (selected.value === 'class') {
-      updatedList = this.state.allBrothers.slice();  // Sets brothers list to consist of actives and alumni
+    } else if (selected.value === 'class') {
+      updatedList = this.state.allBrothers.slice(); // Sets brothers list to consist of actives and alumni
       options = this.state.classOptions;
-    }
-    else if (selected.value === 'alumni') {
-      updatedList = this.state.alumni.slice();  // Sets brothers list to consist of only alumni
+    } else if (selected.value === 'alumni') {
+      updatedList = this.state.alumni.slice(); // Sets brothers list to consist of only alumni
       disabled = true;
-    }
-    else { //Shows all brothers actives and alumni
+    } else {
+      //Shows all brothers actives and alumni
       updatedList = this.state.allBrothers.slice();
       this.sort(updatedList);
       disabled = true;
@@ -179,7 +179,9 @@ export default class MemberPage extends Component {
       specificLabel: null,
       specificOptions: options,
       specificDisabled: disabled,
-    })
+      firstSelected: selected,
+      secondSelected: ''
+    });
   }
 
   /* Filters the specific dropdown based on the selected value */
@@ -189,8 +191,9 @@ export default class MemberPage extends Component {
 
     /* Sets the new brothers header image */
     let newImage = images.findIndex(function(image) {
-      return (image.name.toLowerCase() ===
-        selected.value.toLowerCase()) !== false;
+      return (
+        (image.name.toLowerCase() === selected.value.toLowerCase()) !== false
+      );
     });
 
     /* Removes visibility of the old brothers header image */
@@ -201,23 +204,25 @@ export default class MemberPage extends Component {
 
     /* Filters the brothers list based on eboard or cabinet */
     if (this.state.dropdownValue === 'active') {
-      updatedList = updatedList.filter(function(brother){
+      updatedList = updatedList.filter(function(brother) {
         return brother[selected.value.toLowerCase()] === true;
       });
-    }
-    /* Filters brothers list based on selected major */
-    else if (this.state.dropdownValue === 'major') {
-      updatedList = updatedList.filter(function(brother){
-        return (brother.major.toLowerCase() ===
-          selected.value.toLowerCase()) !== false;
+    } else if (this.state.dropdownValue === 'major') {
+      /* Filters brothers list based on selected major */
+      updatedList = updatedList.filter(function(brother) {
+        return (
+          (brother.major.toLowerCase() === selected.value.toLowerCase()) !==
+          false
+        );
       });
-    }
-    /* Filters brothers list based on class */
-    else {
+    } else {
+      /* Filters brothers list based on class */
       updatedList = this.state.allBrothers;
-      updatedList = updatedList.filter(function(brother){
-        return (brother.class.toLowerCase() ===
-          selected.value.toLowerCase()) !== false;
+      updatedList = updatedList.filter(function(brother) {
+        return (
+          (brother.class.toLowerCase() === selected.value.toLowerCase()) !==
+          false
+        );
       });
     }
 
@@ -227,7 +232,8 @@ export default class MemberPage extends Component {
       updatedBrothers: updatedList,
       filteredBrothers: updatedList,
       specificValue: selected.value,
-      specificLabel: selected.label
+      specificLabel: selected.label,
+      secondSelected: selected
     });
   }
 
@@ -236,87 +242,95 @@ export default class MemberPage extends Component {
       <div>
         <div className="brothers-header">
           <a className="brothers-logo" role="button" href="/">
-            <img 
-              className="logo" 
-              src={isChrome ? (require('../../components/home/NavBar/images/logo.webp')) :
-              (require('../../components/home/NavBar/images/logo.png'))}
+            <img
+              className="logo"
+              src={
+                isChrome
+                  ? require('../../components/home/NavBar/images/logo.webp')
+                  : require('../../components/home/NavBar/images/logo.png')
+              }
               alt="Logo"
             />
           </a>
-          {this.state.specificLabel ? (
-            this.state.specificLabel
-          ) : (
-            'Our Brothers'
-          )}
+          {this.state.specificLabel ? this.state.specificLabel : 'Our Brothers'}
         </div>
         <div className="brothers-image-container">
           {images.map((image, i) => (
-            <img 
-              className="brothers-image" 
-              src={isChrome ? image.webp : image.jpg} 
+            <img
+              className="brothers-image"
+              src={isChrome ? image.webp : image.jpg}
               alt="Brothers"
               key={i}
             />
           ))}
         </div>
-        <Grid className="brothers-grid">
-  				<Row className="search-bar-row">
-  					<Col xsOffset={1} xs={10} mdOffset={1} md={4} className="search-bar-col">
-  						<form>
-          			<FormGroup controlId="formBasicText">
-            			<FormControl
-            				className="search-bar"
-  			            type="text"
-                    placeholder="Search..."
-  			            value={this.state.searchValue}
-  			            onChange={this.filterSearch}
-           				 />
-          			</FormGroup>
-       			 	</form>
-  					</Col>
-  					<Col xs={12} md={2}>
-  						<h3> Search By: </h3>
-  					</Col>
-  					<Col xs={6} md={2}>
-  						<Select
-                className="search-dropdown"
-                value={this.state.dropdownValue}
-                options={this.state.options}
-                clearable={false}
-                onChange={this.filterDropdown}
-                backspaceRemoves={false}
-                searchable={false}
+        <div className="scroll-down" />
+        <div id="members" className="scrolling-grid">
+          <Grid className="brothers-grid">
+            <Row className="search-bar-row">
+              <Col
+                xsOffset={1}
+                xs={10}
+                mdOffset={1}
+                md={4}
+                className="search-bar-col"
+              >
+                <form>
+                  <FormGroup controlId="formBasicText">
+                    <FormControl
+                      className="search-bar"
+                      type="text"
+                      placeholder="Search..."
+                      value={this.state.searchValue}
+                      onChange={this.filterSearch}
+                    />
+                  </FormGroup>
+                </form>
+              </Col>
+              <Col xs={12} md={2}>
+                <h3> Search By: </h3>
+              </Col>
+              <Col xs={6} md={2}>
+                <Select
+                  className="search-dropdown"
+                  value={this.state.firstSelected}
+                  options={this.state.options}
+                  clearable={false}
+                  onChange={this.filterDropdown}
+                  backspaceRemoves={false}
+                  searchable={false}
+                />
+              </Col>
+              <Col xs={6} md={3}>
+                <Select
+                  className="search-dropdown"
+                  value={this.state.secondSelected}
+                  options={this.state.specificOptions}
+                  clearable={false}
+                  disabled={this.state.specificDisabled}
+                  onChange={this.filterSpecific}
+                  backspaceRemoves={false}
+                  searchable={false}
+                />
+              </Col>
+            </Row>
+            <Row className="brother-container">
+              <BrotherModal
+                show={this.state.showModal}
+                close={this.close}
+                brother={this.state.brotherModal}
               />
-  					</Col>
-            <Col xs={6} md={3}>
-              <Select
-                className="search-dropdown"
-                value={this.state.specificValue}
-                options={this.state.specificOptions}
-                clearable={false}
-                disabled={this.state.specificDisabled}
-                onChange={this.filterSpecific}
-                backspaceRemoves={false}
-                searchable={false}
+              <BrothersList
+                majorOptions={this.state.majorOptions}
+                classOptions={this.state.classOptions}
+                dropdownValue={this.state.dropdownValue}
+                specificValue={this.state.specificValue}
+                updatedBrothers={this.state.updatedBrothers}
+                open={this.open}
               />
-            </Col>
-  				</Row>
-  				<Row className="brother-container">
-            <BrotherModal 
-              show={this.state.showModal}
-              close={this.close}
-              brother={this.state.brotherModal} 
-            />
-            <BrothersList 
-              majorOptions={this.state.majorOptions}
-              classOptions={this.state.classOptions}
-              dropdownValue={this.state.dropdownValue}
-              specificValue={this.state.specificValue}
-              updatedBrothers={this.state.updatedBrothers}
-              open={this.open}
-            />
-  				</Row>
-  			</Grid>
+            </Row>
+          </Grid>
+        </div>
       </div>
     );
   }

@@ -27,4 +27,4 @@ const pillarData = [
   },
 ]
 
-export {gearPosition, pillarData};
+export { gearPosition, pillarData };

@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
-import {Tabs, Tab} from 'material-ui/Tabs';
-import {animateScroll as scroll, scroller} from 'react-scroll'; 
+import { Tabs, Tab } from 'material-ui/Tabs';
+import { animateScroll as scroll, scroller } from 'react-scroll'; 
 import './NavBar.css';
 
 const scrollToComp = (name) => {
-  scroller.scrollTo(name, {offset: -120, smooth: true})
+  scroller.scrollTo(name, { offset: -120, smooth: true })
 }
 
 const NavBarTabs = 
@@ -44,7 +44,7 @@ class NavBar extends Component {
     return (
       <AppBar
         children={window.innerWidth > 992 && NavBarTabs}
-        style={{"position": "fixed"}}
+        style={{ "position": "fixed" }}
         iconElementLeft={
           <a id="nav-logo" href='#' onClick={this.scrollToTop}>
             <img className="logo" src={require('../../../../public/images/tt_logo.png')} role="presentation" />
@@ -64,4 +64,4 @@ class NavBar extends Component {
   }
 }
 
-export {NavBar};
+export { NavBar };

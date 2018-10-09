@@ -1,10 +1,10 @@
 import './Companies.css';
-import {isChrome} from '../../../helpers/helpers.js';
+import { isChrome } from '../../../helpers/helpers.js';
 
-import React, {Component} from 'react';
-import {Row} from 'react-bootstrap';
-import {Element} from 'react-scroll';
-import {bigCompanies, smallCompanies} from './data.js';
+import React, { Component } from 'react';
+import { Row } from 'react-bootstrap';
+import { Element } from 'react-scroll';
+import { bigCompanies, smallCompanies } from './data.js';
 
 class Companies extends Component {
   render() {
@@ -52,4 +52,4 @@ class Companies extends Component {
   }
 }
 
-export {Companies};
+export { Companies };

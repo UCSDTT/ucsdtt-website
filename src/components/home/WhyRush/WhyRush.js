@@ -1,8 +1,8 @@
 import './WhyRush.css';
 
-import React, {Component} from 'react';
-import {Element} from 'react-scroll';
-import {Grid, Col} from 'react-bootstrap';
+import React, { Component } from 'react';
+import { Element } from 'react-scroll';
+import { Grid, Col } from 'react-bootstrap';
 import stepData from './data.js';
 
 class WhyRush extends Component {
@@ -33,4 +33,4 @@ class WhyRush extends Component {
   }
 }
 
-export {WhyRush};
+export { WhyRush };
