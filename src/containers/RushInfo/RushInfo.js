@@ -37,6 +37,7 @@ export default class RushPage extends Component {
         />
         <div className="rush-header">
           <span className="rush-title">Rush Fall 2018</span>
+          <iframe title="rush2018video" width="894" height="503" src="https://www.youtube.com/embed/JBx8XL5ZkBU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <Grid className="rush-container">
           <Row>
