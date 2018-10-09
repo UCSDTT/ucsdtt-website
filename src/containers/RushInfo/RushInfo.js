@@ -1,11 +1,11 @@
 import './RushInfo.css';
-import {isChrome} from '../../helpers/helpers.js';
+import { isChrome } from '../../helpers/helpers.js';
 
-import {Col, Grid, Image, Row} from 'react-bootstrap';
-import React, {Component} from 'react';
-import {Quote} from './Quote.js';
+import { Col, Grid, Image, Row } from 'react-bootstrap';
+import React, { Component } from 'react';
+import { Quote } from './Quote.js';
 
-import {rushEventData} from './data.js';
+import { rushEventData } from './data.js';
 
 export default class RushPage extends Component {
   /* Shows info for pillars on mouse hover */

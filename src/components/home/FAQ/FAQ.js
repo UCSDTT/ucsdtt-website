@@ -2,7 +2,7 @@ import './FAQ.css';
 
 import React, { Component } from 'react';
 import { Col, Grid, Panel, Row } from 'react-bootstrap';
-import {faqCol1, faqCol2} from './data.js';
+import { faqCol1, faqCol2 } from './data.js';
 
 import { Element } from 'react-scroll';
 
@@ -36,4 +36,4 @@ class FAQ extends Component {
   }
 }
 
-export {FAQ};
+export { FAQ };

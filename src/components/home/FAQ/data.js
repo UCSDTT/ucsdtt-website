@@ -36,4 +36,4 @@ const faqCol2 = [
   }
 ]
 
-export {faqCol1, faqCol2};
+export { faqCol1, faqCol2 };

@@ -1,8 +1,8 @@
 import './Messenger.css';
 
 import React from 'react';
-import {Front, Back} from './Panels.js';
-import {ActiveInfo} from './ActiveInfo.js';
+import { Front, Back } from './Panels.js';
+import { ActiveInfo } from './ActiveInfo.js';
 
 /* Flipper component that consists of a front and back panel */
 class Flipper extends React.Component {
@@ -22,4 +22,4 @@ class Flipper extends React.Component {
   }
 }
 
-export {Flipper}
+export { Flipper }

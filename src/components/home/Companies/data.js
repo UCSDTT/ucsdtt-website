@@ -134,4 +134,4 @@ const smallCompanies = [
   },
 ];
 
-export {bigCompanies, smallCompanies};
+export { bigCompanies, smallCompanies };

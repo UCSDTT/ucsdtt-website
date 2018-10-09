@@ -1,7 +1,7 @@
 import './index.css';
 // import registerServiceWorker from './registerServiceWorker.js';
 
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import App from './App/App';
 import Home from './containers/Home';
@@ -14,12 +14,12 @@ ReactDOM.render(
   <BrowserRouter>
     <App>
       <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route exact path='/rush' component={RushInfo}/>
-        <Route exact path='/members' component={MemberPage}/>
-        <Route path='*' component={Home}/>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/rush" component={RushInfo} />
+        <Route exact path="/members" component={MemberPage} />
+        <Route path="*" component={Home} />
       </Switch>
     </App>
-  </BrowserRouter>, 
-  document.getElementById('root'));
-  
+  </BrowserRouter>,
+  document.getElementById('root')
+);

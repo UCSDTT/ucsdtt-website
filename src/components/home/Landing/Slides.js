@@ -1,9 +1,9 @@
 import './Landing.css';
-import {isChrome} from '../../../helpers/helpers.js';
+import { isChrome } from '../../../helpers/helpers.js';
 
 import React from 'react';
-import {Carousel} from 'react-bootstrap';
-import {slideData}  from './data.js';
+import { Carousel } from 'react-bootstrap';
+import { slideData }  from './data.js';
 
 class Slides extends React.Component {
   constructor(props) {
@@ -131,7 +131,7 @@ class Slides extends React.Component {
                 src={isChrome ? slide.xsImage : slide.xsSafari}
                 // eslint-disable-next-line
                 srcSet={isChrome ? (slide.smImage + ' 992w', slide.image + ' 1200w') :
-                        (slide.smSafari + ' 992w', slide.safari + ' 1200w')}
+                  (slide.smSafari + ' 992w', slide.safari + ' 1200w')}
                 alt="Landing"
               />
             </div>
@@ -142,4 +142,4 @@ class Slides extends React.Component {
   }
 }
 
-export {Slides};
+export { Slides };

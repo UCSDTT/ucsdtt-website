@@ -12,8 +12,8 @@ import {
   InputGroup,
   Row
 } from 'react-bootstrap';
-import React, {Component} from 'react';
-import {Element} from 'react-scroll';
+import React, { Component } from 'react';
+import { Element } from 'react-scroll';
 
 class ContactUs extends Component {
   constructor(props) {
@@ -36,46 +36,44 @@ class ContactUs extends Component {
     let length = this.state.name.length;
     let valid = true;
     if (length > 1) 
-      this.setState({namestate: 'success'});
+      this.setState({ namestate: 'success' });
     else {
-      this.setState({namestate: 'error'});
+      this.setState({ namestate: 'error' });
       valid = false;
     }
 
     if (emailpattern.test(this.state.email)) 
-      this.setState({emailstate: 'success'});
+      this.setState({ emailstate: 'success' });
     else {
-      this.setState({emailstate: 'error'});
+      this.setState({ emailstate: 'error' });
       valid = false;
     }
 
     length = this.state.message.length;
     if (length > 1) 
-      this.setState({messagestate: 'success'});
+      this.setState({ messagestate: 'success' });
     else {
-      this.setState({messagestate: 'error'});
+      this.setState({ messagestate: 'error' });
       valid = false;
     }
 
     if (valid) {
-      console.log("valid");
-
       fetch('http://formspree.io/officialucsdtt@gmail.com', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({'Sender': this.state.name, 'Sender Email': this.state.email, 'Message': this.state.message})
+        body: JSON.stringify({ 'Sender': this.state.name, 'Sender Email': this.state.email, 'Message': this.state.message })
       })
-      this.setState({sent: true, alert: false});
+      this.setState({ sent: true, alert: false });
     } else {
-      this.setState({alert: true});
+      this.setState({ alert: true });
     }
   }
 
   handleChange(e, type) {
-    this.setState({[type]: e.target.value});
+    this.setState({ [type]: e.target.value });
   }
 
   render() {
@@ -158,9 +156,9 @@ class ContactUs extends Component {
               className="contact-button"
               type="submit"
               onClick={(e) => {
-              this.getValidationState();
-              e.preventDefault()
-            }}>
+                this.getValidationState();
+                e.preventDefault()
+              }}>
               <span><Glyphicon glyph="send"/></span>
               &nbsp;&nbsp;Send
             </Button>
@@ -189,4 +187,4 @@ class ContactUs extends Component {
   }
 }
 
-export {ContactUs};
+export { ContactUs };

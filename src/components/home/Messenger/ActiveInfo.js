@@ -1,5 +1,5 @@
 import './Messenger.css';
-import {isChrome} from '../../../helpers/helpers.js';
+import { isChrome } from '../../../helpers/helpers.js';
 
 import React from 'react';
 
@@ -22,7 +22,7 @@ class ActiveInfo extends React.Component {
           <br/> {this.props.active.majorName}
           <br/> {this.props.active.className}
         </p>
-        <a className="messenger-button" href={this.props.active.messenger} target="_blank">
+        <a className="messenger-button" href={this.props.active.messenger} target="_blank" rel="noopener noreferrer">
           <i className="icon-temp-messenger"></i>
           Message
         </a>
@@ -31,4 +31,4 @@ class ActiveInfo extends React.Component {
   }
 }
 
-export {ActiveInfo}
+export { ActiveInfo }

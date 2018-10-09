@@ -1,5 +1,5 @@
 import './MemberPage.css';
-import {isChrome} from '../../helpers/helpers.js';
+import { isChrome } from '../../helpers/helpers.js';
 
 import React from 'react';
 
@@ -10,7 +10,9 @@ class MemberInfo extends React.Component {
         <div className="brother-image-container">
           <img
             className="brother-image"
-            src={isChrome ? this.props.brother.image : this.props.brother.safari}
+            src={
+              isChrome ? this.props.brother.image : this.props.brother.safari
+            }
             onClick={() => this.props.open(this.props.brother)}
             alt="Active"
           />
@@ -19,8 +21,8 @@ class MemberInfo extends React.Component {
         <p> {this.props.brother.position} </p>
         <p> {this.props.brother.className} </p>
       </div>
-    )
+    );
   }
 }
 
-export {MemberInfo};
+export { MemberInfo };

@@ -1,6 +1,6 @@
 import './MemberPage.css';
 
-import {Col} from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import React from 'react';
 
 class FilteredLabel extends React.Component {
@@ -11,20 +11,27 @@ class FilteredLabel extends React.Component {
         return (
           <Col xs={12} md={2} className="brother-info">
             <h3 className="option-label"> {this.props.option.label} </h3>
-            <img className="option-image" src={this.props.option.image} alt="Label" />
+            <img
+              className="option-image"
+              src={this.props.option.image}
+              alt="Label"
+            />
           </Col>
         );
       }
-    }
-    else {
+    } else {
       return (
         <Col xs={12} md={2} className="brother-info">
           <h3 className="option-label"> {this.props.option.label} </h3>
-          <img className="option-image" src={this.props.option.image} alt="Label" />
+          <img
+            className="option-image"
+            src={this.props.option.image}
+            alt="Label"
+          />
         </Col>
       );
     }
   }
 }
 
-export {FilteredLabel};
+export { FilteredLabel };
