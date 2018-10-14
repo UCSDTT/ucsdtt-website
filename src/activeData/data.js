@@ -1086,7 +1086,152 @@ const brothers = [
     year: 'Class of 2019',
     image: require('./images/brothers/portraits/MD152_jyin.webp'),
     safari: require('./images/brothers/portraits/MD152_jyin.jpg')
-  }
+  },
+  {
+    name: 'Joshua Chao',
+    position: 'Webmaster Chair',
+    cabinet: true,
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2019',
+    image: require('./images/brothers/portraits/204_jchao.webp'),
+    safari: require('./images/brothers/portraits/204_jchao.jpg')
+  },
+  {
+    name: 'Christopher Diep',
+    position: 'Active',
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'chem',
+    majorName: 'Chemical Engineering',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/205_cdiep.webp'),
+    safari: require('./images/brothers/portraits/205_cdiep.jpg')
+  },
+  {
+    name: 'Eric Huynh',
+    position: 'Active',
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/206_ehuynh.webp'),
+    safari: require('./images/brothers/portraits/206_ehuynh.jpg')
+  },
+  {
+    name: 'Simon Kim',
+    position: 'Active',
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'mech',
+    majorName: 'Mechanical Engineering',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/207_skim.webp'),
+    safari: require('./images/brothers/portraits/207_skim.jpg')
+  },
+  {
+    name: 'Sho Kondo',
+    position: 'Active',
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'mech',
+    majorName: 'Mechanical Engineering',
+    year: 'Class of 2021',
+    image: require('./images/brothers/portraits/208_skondo.webp'),
+    safari: require('./images/brothers/portraits/208_skondo.jpg')
+  },
+  {
+    name: 'Clark Phan',
+    position: 'Webmaster Chair',
+    cabinet: true,
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'cs',
+    majorName: 'Math - Computer Science',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/209_cphan.webp'),
+    safari: require('./images/brothers/portraits/209_cphan.jpg')
+  },
+  {
+    name: 'Justin Shieh',
+    position: 'Active',
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'bio',
+    majorName: 'Bioengineering',
+    year: 'Class of 2019',
+    image: require('./images/brothers/portraits/210_jshieh.webp'),
+    safari: require('./images/brothers/portraits/210_jshieh.jpg')
+  },
+  {
+    name: 'Erin Songwang',
+    position: 'Active',
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'bio',
+    majorName: 'Bioengineering',
+    year: 'Class of 2021',
+    image: require('./images/brothers/portraits/211_esongwang.webp'),
+    safari: require('./images/brothers/portraits/211_esongwang.jpg')
+  },
+  {
+    name: 'Olivia Thai',
+    position: 'Active',
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'cs',
+    majorName: 'Math - Computer Science',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/212_othai.webp'),
+    safari: require('./images/brothers/portraits/212_othai.jpg')
+  },
+  {
+    name: 'Peggy Tran',
+    position: 'Active',
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'env',
+    majorName: 'Environmental Engineering',
+    year: 'Class of 2021',
+    image: require('./images/brothers/portraits/213_ptran.webp'),
+    safari: require('./images/brothers/portraits/213_ptran.jpg')
+  },
+  {
+    name: 'Scott Tran',
+    position: 'Active',
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'chem',
+    majorName: 'Chemical Engineering',
+    year: 'Class of 2019',
+    image: require('./images/brothers/portraits/214_stran.webp'),
+    safari: require('./images/brothers/portraits/214_stran.jpg')
+  },
+  {
+    name: 'William Tzou',
+    position: 'Active',
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'nano',
+    majorName: 'Nanoengineering',
+    year: 'Class of 2021',
+    image: require('./images/brothers/portraits/215_wtzou.webp'),
+    safari: require('./images/brothers/portraits/215_wtzou.jpg')
+  },
+  {
+    name: 'Jocelyn Wei',
+    position: 'Active',
+    class: 'sigma',
+    className: 'Sigma Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/216_jwei.webp'),
+    safari: require('./images/brothers/portraits/216_jwei.jpg')
+  },
 ];
 
 /* Deprecated */
@@ -1336,6 +1481,11 @@ const options = {
       value: 'rho',
       label: 'Rho',
       image: require('./images/classes/letters/rho.png')
+    },
+    {
+      value: 'sigma',
+      label: 'Sigma',
+      image: require('./images/classes/letters/sigma.png')
     }
   ]
 };
