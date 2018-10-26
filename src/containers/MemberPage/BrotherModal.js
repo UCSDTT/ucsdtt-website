@@ -4,8 +4,6 @@ import { isChrome } from '../../helpers/helpers.js';
 import React from 'react';
 import { Modal, ListGroup, ListGroupItem } from 'react-bootstrap';
 
-//window.onscroll = null;
-
 class BrotherModal extends React.Component {
   componentDidUpdate() {
     const observer = window.lozad('.lozad', {

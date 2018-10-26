@@ -43,11 +43,8 @@
   color: #fff !important;
   padding-top: 0px;
   padding-bottom: 0px;
+  letter-spacing: 0.7px;
 }
-/*.navbar-default .navbar-nav > li > a:focus, 
-.navbar-default .navbar-nav > li > a:hover {
-  color: #fff;
-}*/
 
 @media(min-width: 768px) {
   .navbar-header > .navbar-brand {
@@ -78,9 +75,6 @@
     -o-transition: width .5s ease, background-color .5s ease;
     transition: width .5s ease, background-color .5s ease;
   }
-  /*.navbar-collapse > .navbar-right > li:last-child > a:after {
-    background: #fff;
-  }*/
   .navbar-collapse > .navbar-right > li > a.underline:after {
     width: 100%;
   }

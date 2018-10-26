@@ -205,7 +205,6 @@ class MobileOrigins extends React.Component {
           &nbsp;&nbsp;&nbsp;&nbsp;
           In the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity arose for them to change that.
         </p>
-        <p> </p>
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;
           With the help of a Theta Tau alumnus, 
@@ -224,12 +223,10 @@ class MobileOrigins extends React.Component {
           <span className="founder"> Alan Leung</span>, and 
           <span className="founder"> John Phu Nguyen</span>.
         </p>
-        <p> </p>
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;
           On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.
         </p>
-
         <img 
           className="lozad founders"
           data-src={isChrome ? (require('./images/founders.webp')) : (require('./images/founders.jpg'))} 

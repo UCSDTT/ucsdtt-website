@@ -11,6 +11,11 @@ import { Companies } from '../components/home/Companies/Companies.js';
 import { Footer } from '../components/home/Footer/Footer.js';
 
 export default class Home extends Component {
+  /* 
+   * Initializes lozad for lazy loading images and onscroll watcher to 
+   * handle Safari differences, the navbar color, and the rotating gears 
+   * in the AboutUs section
+   */
   componentDidMount() {
     const observer = window.lozad('.lozad', {
       load: function(el) {

@@ -17,6 +17,7 @@ class Quote extends React.Component {
     };
   }
 
+  // Sets the first quote to appear
   componentDidMount() {
     let rushQuote = document.getElementsByClassName('quote-appear');
 
@@ -27,6 +28,7 @@ class Quote extends React.Component {
     })
   }
 
+  // Changes the current quote out and new quote in
   changeQuote = (event) => {
     var cq = this.state.rushQuote[this.state.currentRushQuote];
     var nq = this.state.rushQuote[event];

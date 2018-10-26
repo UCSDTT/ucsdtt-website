@@ -5,22 +5,22 @@ import { scroller } from 'react-scroll';
 import { Slides } from './Slides.js';
 import { BrothersAre } from './BrothersAre.js';
 
-class Landing extends Component {
-  /* Scrolls to selected section */
-  scrollToComp(name) {
-    scroller.scrollTo(name, {
-      offset: 0,
-      smooth: true,
-    });
-  }
+/* Scrolls to selected section */
+function scrollToComp(name) {
+  scroller.scrollTo(name, {
+    offset: 0,
+    smooth: true,
+  });
+}
 
+class Landing extends Component {
   render() {
     return (
       <div className="landing">
         <Slides />
         <BrothersAre />
-
-        <div className="learn-more" onClick={() => this.scrollToComp("rush")}>
+        
+        <div className="learn-more" onClick={() => scrollToComp("rush")}>
           Learn More
         </div>
       </div>
