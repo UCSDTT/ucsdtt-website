@@ -1,42 +1,65 @@
 import './MemberPage.css';
 
-import { FormGroup, FormControl } from 'react-bootstrap';
 import React from 'react';
+import { FormGroup, FormControl } from 'react-bootstrap';
+import Select from 'react-select';
 
 class SearchBar extends React.Component {
-  /* Filters the list based on the search input */
-  filterSearch(event) {
-    /* Sets the list to the filtered list of brothers */
-    let updatedList = this.state.filteredBrothers;
-
-    /* Sets the displayed list to all actives whose names begin with the input value */
-    updatedList = updatedList.filter(function(brother) {
-      return (
-        brother.name
-          .toLowerCase()
-          .startsWith(event.target.value.toLowerCase()) !== false
-      );
-    });
-
-    this.setState({
-      searchValue: event.target.value,
-      updatedBrothers: updatedList
-    });
+  componentDidUpdate(prevProps, prevState) {
+    const input = document.querySelector('.search-input');
+    input.focus();
   }
 
   render() {
+    const {
+      searchValue,
+      filterSearch,
+      firstSelected,
+      options,
+      filterDropdown,
+      secondSelected,
+      specificOptions,
+      specificDisabled,
+      filterSpecific
+    } = this.props;
+
     return (
-      <form>
-        <FormGroup controlId="formBasicText">
-          <FormControl
-            className="search-bar"
-            type="text"
-            placeholder="Search..."
-            value={this.props.searchValue}
-            onChange={this.filterSearch}
+      <div className="search-bar-container">
+        <div className="search-bar-flex">
+          <form className="search-input-container">
+            <FormGroup controlId="formBasicText">
+              <FormControl
+                className="search-input"
+                type="text"
+                placeholder="Search..."
+                value={searchValue}
+                onChange={filterSearch}
+                autoFocus
+              />
+            </FormGroup>
+          </form>
+          <h3> Filters: </h3>
+          <Select
+            className="search-dropdown"
+            value={firstSelected}
+            options={options}
+            clearable={false}
+            onChange={filterDropdown}
+            backspaceRemoves={false}
+            searchable={false}
           />
-        </FormGroup>
-      </form>
+          <Select
+            className="search-dropdown"
+            value={secondSelected}
+            options={specificOptions}
+            clearable={false}
+            disabled={specificDisabled}
+            onChange={filterSpecific}
+            backspaceRemoves={false}
+            searchable={false}
+          />
+        </div>
+      </div>
     );
   }
 }

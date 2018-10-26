@@ -1054,7 +1054,7 @@ const brothers = [
   },
   {
     name: 'Huy Tran',
-    position: 'Brotherhood/Improvments Chair',
+    position: 'Brotherhood Chair',
     cabinet: true,
     class: 'rho',
     className: 'Rho Class',

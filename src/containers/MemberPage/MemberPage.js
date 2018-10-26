@@ -1,12 +1,12 @@
 import './MemberPage.css';
-import { isChrome } from '../../helpers/helpers.js';
+import { isChrome, sort } from '../../helpers/helpers.js';
+import { brothers, options, images } from '../../activeData/data.js';
 
-import { Grid, Row, Col, FormGroup, FormControl } from 'react-bootstrap';
-import Select from 'react-select';
 import React, { Component } from 'react';
+import { Grid, Row } from 'react-bootstrap';
 import { BrothersList } from './BrothersList.js';
 import { BrotherModal } from './BrotherModal.js';
-import { brothers, options, images } from '../../activeData/data.js';
+import { SearchBar } from './SearchBar.js';
 
 export default class MemberPage extends Component {
   constructor(props) {
@@ -35,11 +35,6 @@ export default class MemberPage extends Component {
       brotherModal: {},
       showList: false
     };
-    this.filterSearch = this.filterSearch.bind(this);
-    this.filterDropdown = this.filterDropdown.bind(this);
-    this.filterSpecific = this.filterSpecific.bind(this);
-    this.close = this.close.bind(this);
-    this.open = this.open.bind(this);
   }
 
   /* Runs when component mounts */
@@ -50,9 +45,6 @@ export default class MemberPage extends Component {
     let alumni = [];
     let allBrothers = [];
     let image = document.getElementsByClassName('brothers-image');
-
-    /* Autofocuses the search bar */
-    document.querySelector('.search-bar').autofocus = true;
 
     /* Makes the first brothers header image visible */
     image[0].classList.add('selected');
@@ -70,7 +62,7 @@ export default class MemberPage extends Component {
       allBrothers.push(brother);
     });
 
-    this.sort(cabinet);
+    sort(cabinet);
 
     let members = eboard.concat(cabinet).concat(actives);
 
@@ -85,30 +77,22 @@ export default class MemberPage extends Component {
   }
 
   /* Closes the modal */
-  close() {
+  close = () => {
     this.setState({
       showModal: false
     });
   }
 
   /* Opens the modal */
-  open(brother) {
+  open = (brother) => {
     this.setState({
       showModal: true,
       brotherModal: brother
     });
   }
 
-  sort(brothers) {
-    brothers.sort(function(a, b) {
-      if (a.name < b.name) return -1;
-      if (a.name > b.name) return 1;
-      return 0;
-    });
-  }
-
   /* Filters the list based on the search input */
-  filterSearch(event) {
+  filterSearch = (event) => {
     /* Sets the list to the filtered list of brothers */
     let updatedList = this.state.filteredBrothers;
 
@@ -128,7 +112,7 @@ export default class MemberPage extends Component {
   }
 
   /* Filters the first dropdown based on the selected value */
-  filterDropdown(selected) {
+  filterDropdown = (selected) => {
     let updatedList = brothers;
     let options;
     let disabled = false;
@@ -154,7 +138,7 @@ export default class MemberPage extends Component {
     } else if (selected.value === 'major') {
       //should be actives only
       updatedList = this.state.brothers.slice();
-      this.sort(updatedList);
+      sort(updatedList);
       options = this.state.majorOptions;
     } else if (selected.value === 'class') {
       updatedList = this.state.allBrothers.slice(); // Sets brothers list to consist of actives and alumni
@@ -165,7 +149,7 @@ export default class MemberPage extends Component {
     } else {
       //Shows all brothers actives and alumni
       updatedList = this.state.allBrothers.slice();
-      this.sort(updatedList);
+      sort(updatedList);
       disabled = true;
     }
 
@@ -185,7 +169,7 @@ export default class MemberPage extends Component {
   }
 
   /* Filters the specific dropdown based on the selected value */
-  filterSpecific(selected) {
+  filterSpecific = (selected) => {
     let updatedList = brothers;
     let image = this.state.image;
 
@@ -266,60 +250,19 @@ export default class MemberPage extends Component {
         </div>
         <div className="scroll-down" />
         <div id="members" className="scrolling-grid">
+          <SearchBar
+            searchValue={this.state.searchValue}
+            firstSelected={this.state.firstSelected}
+            options={this.state.options}
+            secondSelected={this.state.secondSelected}
+            specificOptions={this.state.specificOptions}
+            specificDisabled={this.state.specificDisabled}
+            filterSearch={this.filterSearch}
+            filterDropdown={this.filterDropdown}
+            filterSpecific={this.filterSpecific}
+          />
           <Grid className="brothers-grid">
-            <Row className="search-bar-row">
-              <Col
-                xsOffset={1}
-                xs={10}
-                mdOffset={1}
-                md={4}
-                className="search-bar-col"
-              >
-                <form>
-                  <FormGroup controlId="formBasicText">
-                    <FormControl
-                      className="search-bar"
-                      type="text"
-                      placeholder="Search..."
-                      value={this.state.searchValue}
-                      onChange={this.filterSearch}
-                    />
-                  </FormGroup>
-                </form>
-              </Col>
-              <Col xs={12} md={2}>
-                <h3> Search By: </h3>
-              </Col>
-              <Col xs={6} md={2}>
-                <Select
-                  className="search-dropdown"
-                  value={this.state.firstSelected}
-                  options={this.state.options}
-                  clearable={false}
-                  onChange={this.filterDropdown}
-                  backspaceRemoves={false}
-                  searchable={false}
-                />
-              </Col>
-              <Col xs={6} md={3}>
-                <Select
-                  className="search-dropdown"
-                  value={this.state.secondSelected}
-                  options={this.state.specificOptions}
-                  clearable={false}
-                  disabled={this.state.specificDisabled}
-                  onChange={this.filterSpecific}
-                  backspaceRemoves={false}
-                  searchable={false}
-                />
-              </Col>
-            </Row>
             <Row className="brother-container">
-              <BrotherModal
-                show={this.state.showModal}
-                close={this.close}
-                brother={this.state.brotherModal}
-              />
               <BrothersList
                 majorOptions={this.state.majorOptions}
                 classOptions={this.state.classOptions}
@@ -331,6 +274,11 @@ export default class MemberPage extends Component {
             </Row>
           </Grid>
         </div>
+        <BrotherModal
+          show={this.state.showModal}
+          close={this.close}
+          brother={this.state.brotherModal}
+        />
       </div>
     );
   }
