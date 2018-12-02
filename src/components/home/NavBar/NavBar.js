@@ -123,7 +123,7 @@ class NavBar extends Component {
               Home
             </NavItem>
             <NavItem 
-              onClick={() => scrollToComp("rush")}
+              href="rush"
               onMouseOver={underline} 
               onMouseOut={underline}
             >
@@ -144,7 +144,7 @@ class NavBar extends Component {
               FAQ
             </NavItem>
             <NavItem 
-              onClick={() => scrollToComp("messenger")}
+              href="members"
               onMouseOver={underline} 
               onMouseOut={underline}
             >

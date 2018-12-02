@@ -164,21 +164,15 @@
   top: 10px;
   left: 30px;
 }
-@media(max-width: 768px) {
-  .rush-logo {
-    top: 15px;
-    left: 15px;
-  }
-}
 
 .rush-image {
   object-fit: cover;
-  height: calc(100vh - 229px);
+  height: calc(100vh - 105px);
   width: 100%;
 }
-@media(max-width: 992px) {
+@media(max-width: 500px) {
   .rush-image {
-    height: calc(100vh - 210px);
+    height: calc(100vh - 95px);
   }
 }
 
