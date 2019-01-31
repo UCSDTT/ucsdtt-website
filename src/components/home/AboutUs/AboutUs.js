@@ -1,7 +1,7 @@
 import './AboutUs.css';
 
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Element } from 'react-scroll';
 import { Gears } from './Gears.js';
 import { Scroll, MobileOrigins } from './Origins.js';
@@ -18,7 +18,7 @@ class AboutUs extends Component {
 
         <h1 className="title"> About Us </h1>
 
-        <Grid>
+        <Container>
           <Row>
             <h1 className="about-section-title">
               The Origins of Theta Tau UCSD
@@ -32,13 +32,13 @@ class AboutUs extends Component {
           <Row>
             <h1 className="about-section-title">The Three Pillars</h1>
             {/*
-            <div className="about-quote-container"> 
+            <div className="about-quote-container">
               <span className="about-quotes">&#10077;</span>
               <h3 className="about-quote-body">
                 We, as brothers of Theta Tau, strive to embody the three pillars of our fraternity.
               </h3>
               <span className="about-quotes">&#10078;</span>
-            </div> 
+            </div>
             */}
 
             {pillarData.map((pillar, i) => (
@@ -47,7 +47,7 @@ class AboutUs extends Component {
               </Col>
             ))}
           </Row>
-        </Grid>
+        </Container>
       </Element>
     );
   }

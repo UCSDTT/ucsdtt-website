@@ -1,7 +1,7 @@
 import './RushInfo.css';
 import { isChrome } from '../../helpers/helpers.js';
 
-import { Col, Grid, Image, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import React, { Component } from 'react';
 import { Quote } from './Quote.js';
 
@@ -31,28 +31,28 @@ export default class RushPage extends Component {
           </a>
           Rush Information
         </div>
-        <Image 
-          className="rush-image" 
+        <Image
+          className="rush-image"
           src={isChrome ? require('./images/rush_header.webp') : require('./images/rush_header.jpg')}
         />
         <div className="rush-header">
           <span className="rush-title">Rush Fall 2018</span>
           <iframe title="rush2018video" width="894" height="503" src="https://www.youtube.com/embed/JBx8XL5ZkBU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-        <Grid className="rush-container">
+        <Container className="rush-container">
           <Row>
             {rushEventData.map((event, i) => (
-              <Col 
-                className="event-container" 
-                xs={12} sm={6} md={6} lg={3} 
+              <Col
+                className="event-container"
+                xs={12} sm={6} md={6} lg={3}
                 key={i}
               >
-                <div 
+                <div
                   className="event-image-container"
                   onMouseOver={() => this.showInfo(i)}
                   onMouseOut={() => this.showInfo(i)}
                 >
-                  <img 
+                  <img
                     className="event-image"
                     src={isChrome ? event.image : event.safari}
                     alt="Event"
@@ -67,14 +67,14 @@ export default class RushPage extends Component {
               </Col>
             ))}
           </Row>
-        </Grid>
+        </Container>
         <div className="rush-header">
           <span className="rush-title"> Why Rush?</span>
           <div className="rush-subheader">Rush is an opportunity for you to learn more about Theta Tau. It consists of multiple events that will give you a taste of what our fraternity stands for, whether you are a good fit for us, and whether we are a good fit for you. At the end of rush, we extend a limited number of interviews and bids. Those who receive bids can then decide whether or not they would like to pledge. Rushing is completely free of charge and there are no obligations.</div>
         </div>
-        <Grid className="carousel-container">
+        <Container className="carousel-container">
           <Quote />
-        </Grid>
+        </Container>
       </div>
     );
   }

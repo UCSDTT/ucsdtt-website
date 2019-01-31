@@ -1,7 +1,7 @@
 import './Footer.css';
 
 import React, { Component } from 'react';
-import { Col, Grid, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { scroller } from 'react-scroll';
 
 class ChapterInfo extends React.Component {
@@ -168,13 +168,13 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <Grid className="footer-padding">
+        <Container className="footer-padding">
           <Row className="show-grid">
             <ChapterInfo />
             <ContactInfo />
             <WebsiteCredits />
           </Row>
-        </Grid>
+        </Container>
       </div>
     );
   }

@@ -34,7 +34,7 @@ function openMenu() {
     .querySelector('.navbar-collapse .navbar-nav')
     .classList
     .toggle('open');
-  
+
   /* Prevents user from scrolling if menu is open on mobile */
   if (document.body.style.overflow === 'hidden') {
     document.body.style.overflow = 'visible';
@@ -74,26 +74,24 @@ class NavBar extends Component {
   render() {
     return (
       <Navbar className="navbar-fixed-top" collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <a role="button" id="nav-logo" href="/">
-              <Image 
-                className="logo" 
-                src={isChrome ? (require('./images/logo.webp')) : (require('./images/logo.png'))} 
-              />
-            </a>
-          </Navbar.Brand>
-          <Navbar.Toggle
-            children={<div id="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            }
-            onClick={openMenu}
-          />
-        </Navbar.Header>
+        <Navbar.Brand>
+          <a role="button" id="nav-logo" href="/">
+            <Image
+              className="logo"
+              src={isChrome ? (require('./images/logo.webp')) : (require('./images/logo.png'))}
+            />
+          </a>
+        </Navbar.Brand>
+        <Navbar.Toggle
+          children={<div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          }
+          onClick={openMenu}
+        />
         <Nav pullLeft className="hidden-sm hidden-xs">
           <NavItem className="navbar-title" onClick={scrollToTop}>Theta Tau @ UCSD</NavItem>
         </Nav>
@@ -101,8 +99,8 @@ class NavBar extends Component {
           <Nav pullRight>
             {/*<li role="presentation">
               <DropdownButton
-                title="About" 
-                noCaret 
+                title="About"
+                noCaret
                 id="about"
                 onClick={() => {
                   this.scrollToComp("about-us");
@@ -115,37 +113,37 @@ class NavBar extends Component {
                 <MenuItem eventKey="4" href="/philanthropy">Philanthropy</MenuItem>
               </DropdownButton>
             </li>*/}
-            <NavItem 
+            <NavItem
               onClick={scrollToTop}
-              onMouseOver={underline} 
+              onMouseOver={underline}
               onMouseOut={underline}
             >
               Home
             </NavItem>
-            <NavItem 
+            <NavItem
               href="rush"
-              onMouseOver={underline} 
+              onMouseOver={underline}
               onMouseOut={underline}
             >
               Rush
             </NavItem>
-            <NavItem 
+            <NavItem
               onClick={() => scrollToComp("about-us")}
-              onMouseOver={underline} 
+              onMouseOver={underline}
               onMouseOut={underline}
             >
               About
             </NavItem>
-            <NavItem 
+            <NavItem
               onClick={() => scrollToComp("faq")}
-              onMouseOver={underline} 
+              onMouseOver={underline}
               onMouseOut={underline}
             >
               FAQ
             </NavItem>
-            <NavItem 
+            <NavItem
               href="members"
-              onMouseOver={underline} 
+              onMouseOver={underline}
               onMouseOut={underline}
             >
               Members

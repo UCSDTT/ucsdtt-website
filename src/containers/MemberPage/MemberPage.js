@@ -3,7 +3,7 @@ import { isChrome, sort } from '../../helpers/helpers.js';
 import { brothers, options, images } from '../../activeData/data.js';
 
 import React, { Component } from 'react';
-import { Grid, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import { BrothersList } from './BrothersList.js';
 import { BrotherModal } from './BrotherModal.js';
 import { SearchBar } from './SearchBar.js';
@@ -261,7 +261,7 @@ export default class MemberPage extends Component {
             filterDropdown={this.filterDropdown}
             filterSpecific={this.filterSpecific}
           />
-          <Grid className="brothers-grid">
+          <Container className="brothers-grid">
             <Row className="brother-container">
               <BrothersList
                 majorOptions={this.state.majorOptions}
@@ -272,7 +272,7 @@ export default class MemberPage extends Component {
                 open={this.open}
               />
             </Row>
-          </Grid>
+          </Container>
         </div>
         <BrotherModal
           show={this.state.showModal}
