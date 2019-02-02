@@ -1,0 +1,257 @@
+.navbar {
+    background: transparent;
+    font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    border: none;
+    text-shadow: 2px 2px 2px #000;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+  }
+
+  .navbar > div {
+    width: 100%;
+  }
+
+  .navbar-fixed-top {
+    height: 81px;
+  }
+
+  .navbar-nav {
+    padding-top: 31px;
+  }
+
+  @media(min-width: 1200px) {
+    .navbar-header {
+      margin-left: 20px !important;
+    }
+  }
+
+  .navbar-title {
+    font-family: 'Helvetica Neue Condensed';
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  @media(max-width: 1080px) {
+    .navbar-title {
+      display: none !important;
+    }
+  }
+
+  /* Navbar items */
+  .navbar-default .navbar-nav > li > a {
+    color: #fff !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    letter-spacing: 0.7px;
+  }
+
+  @media(min-width: 768px) {
+    .navbar-header > .navbar-brand {
+      margin-top: -5px;
+    }
+
+    .navbar-collapse > .navbar-right {
+      font-size: 25px;
+      margin: auto;
+    }
+
+    /* Overrides bootstrap navbar brand css */
+    .navbar-collapse > .navbar-right > .navbar-brand {
+      margin-left: 0;
+      padding: 0;
+    }
+
+    .navbar-collapse > .navbar-right > li > a:after {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-top: 7px;
+      height: 2px;
+      width: 0;
+      background-color: var(--primary-color);
+      -webkit-transition: width .5s ease, background-color .5s ease;
+      -moz-transition: width .5s ease, background-color .5s ease;
+      -o-transition: width .5s ease, background-color .5s ease;
+      transition: width .5s ease, background-color .5s ease;
+    }
+    .navbar-collapse > .navbar-right > li > a.underline:after {
+      width: 100%;
+    }
+  }
+
+  /* Mobile Nav */
+  @media(max-width: 768px) {
+    .navbar-fixed-top.open {
+      background-color: var(--secondary-dark) !important;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -o-transition: none;
+      transition: none;
+    }
+
+    .navbar-header {
+      height: 75px;
+    }
+
+    #nav-logo {
+      -webkit-transition: opacity 0.2s;
+      -moz-transition: opacity 0.5s ease;
+      -o-transition: opacity 0.5s ease;
+      transition: opacity 0.2s;
+    }
+    #nav-logo.open {
+      opacity: 0;
+    }
+
+    /* Mobile nav hamburger*/
+    .navbar-toggle {
+      margin: auto;
+      margin-top: 10px;
+      margin-right: 20px;
+      color: #fff;
+      border: none;
+    }
+
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+      background-color: transparent;
+    }
+
+    /* Hamburger Icon */
+    #hamburger {
+      width: 40px;
+      height: 45px;
+      position: relative;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    #hamburger span {
+      display: block;
+      position: absolute;
+      height: 6px;
+      width: 100%;
+      background: #fff;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+    }
+    #hamburger span:nth-child(1) {
+      top: 7px;
+    }
+
+    #hamburger span:nth-child(2),#hamburger span:nth-child(3) {
+      top: 20px;
+    }
+
+    #hamburger span:nth-child(4) {
+      top: 33px;
+    }
+
+    #hamburger.open span:nth-child(1) {
+      top: 20px;
+      width: 0%;
+      left: 50%;
+    }
+
+    #hamburger.open span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    #hamburger.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+
+    #hamburger.open span:nth-child(4) {
+      top: 20px;
+      width: 0%;
+      left: 50%;
+    }
+
+    /* Mobile Nav Hamburger Open */
+    .navbar-collapse {
+      margin-top: 0;
+      padding: 0;
+      border: none;
+    }
+    .navbar-collapse.collapsing {
+      min-height: 100vh !important;
+    }
+    .navbar-collapse.in {
+      max-height: calc(100vh - 70px);
+    }
+
+    .navbar-collapse .navbar-nav {
+      background-color: var(--secondary-dark);
+      color: #fff;
+      font-size: 42px;
+      height: calc(100vh - 70px);
+      width: 100vw;
+      margin: 0;
+      text-align: center;
+      opacity: 0;
+      -webkit-transition: opacity 0.5s ease;
+      -moz-transition: opacity 0.5s ease;
+      -o-transition: opacity 0.5s ease;
+      transition: opacity 0.5s ease;
+    }
+
+    .navbar-collapse .navbar-nav.open {
+      opacity: 1;
+    }
+
+    /* Mobile Nav List Margin */
+    .navbar-collapse > .navbar-nav > li {
+      width: max-content;
+      margin: auto;
+      padding: 25px 0;
+    }
+
+    /* Overrides bootstrap navbar brand css */
+    .navbar-collapse > .navbar-right > .navbar-brand {
+      float: none;
+      padding: 25px 0;
+    }
+
+    /* Changes border color to transparent for mobile nav hamburger open */
+    .navbar-default .navbar-collapse {
+      border-color: transparent;
+    }
+  }
+
+  /* Garnett Logo */
+  .gem {
+    height: 50px;
+    width: 50px;
+    margin-top: -15px;
+  }
+
+  @media(max-width: 768px) {
+    .gem {
+      height: 75px;
+      width: 75px;
+    }
+  }
