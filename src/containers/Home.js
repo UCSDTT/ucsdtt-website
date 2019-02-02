@@ -11,9 +11,9 @@ import { Companies } from '../components/home/Companies/Companies.js';
 import { Footer } from '../components/home/Footer/Footer.js';
 
 export default class Home extends Component {
-  /* 
-   * Initializes lozad for lazy loading images and onscroll watcher to 
-   * handle Safari differences, the navbar color, and the rotating gears 
+  /*
+   * Initializes lozad for lazy loading images and onscroll watcher to
+   * handle Safari differences, the navbar color, and the rotating gears
    * in the AboutUs section
    */
   componentDidMount() {
@@ -37,8 +37,7 @@ export default class Home extends Component {
       let aboutHeight = document.querySelector('.element.about').clientHeight;
       let gears = document.getElementsByClassName('gear');
       let gearsOpp = document.getElementsByClassName('gear-opp');
-      let wScroll =
-        document.body.scrollTop || document.documentElement.scrollTop;
+      let wScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
       /* Checks if browser is Safari */
       let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -57,10 +56,8 @@ export default class Home extends Component {
 
       /* Changes the navbar color when you scroll past the navbar height */
       if (wScroll >= navbarHeight) {
-        document.querySelector('.navbar').style.background =
-          'rgba(46, 47, 51, 0.9)';
-        document.querySelector('.navbar').style.boxShadow =
-          '0 2px 16px rgba(12,42,51,.3)';
+        document.querySelector('.navbar').style.background = 'rgba(46, 47, 51, 0.9)';
+        document.querySelector('.navbar').style.boxShadow = '0 2px 16px rgba(12,42,51,.3)';
       } else {
         document.querySelector('.navbar').style.background = 'transparent';
         document.querySelector('.navbar').style.boxShadow = 'none';
@@ -69,10 +66,7 @@ export default class Home extends Component {
       /* Displays gears if window width is greater than 768px */
       if (window.innerWidth >= 768) {
         /* Rotate gears if it you scroll between landing and faqs */
-        if (
-          wScroll <= landingHeight + aboutHeight + rushHeight + whyRushHeight &&
-          wScroll >= landingHeight
-        ) {
+        if (wScroll <= landingHeight + aboutHeight + rushHeight + whyRushHeight && wScroll >= landingHeight) {
           Array.from(gears).forEach(gear => {
             gear.style.transform = 'rotate(' + wScroll / 5 + 'deg)';
           });

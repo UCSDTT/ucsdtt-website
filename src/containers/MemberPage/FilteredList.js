@@ -9,13 +9,13 @@ class FilteredList extends React.Component {
     let brothers = this.props.updatedBrothers;
 
     return (
-      <Col xs={12} md={10} style={{ padding: 0 }}>
+      <Col xs={6} sm={3} style={{ padding: 0 }}>
         {brothers.map((brother, i) => {
           if (brother[this.props.dropdownValue] === this.props.option.value) {
             return (
-              <Col xs={6} sm={4} md={3} className="brother-info" key={i}>
+              <div className="brother-info" key={i}>
                 <MemberInfo brother={brother} open={this.props.open} />
-              </Col>
+              </div>
             );
           } else {
             return false;

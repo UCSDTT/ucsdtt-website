@@ -40,10 +40,10 @@ function scrollToTop() {
 }
 
 /* Scrolls to the selected section */
-function scrollToComp(name) {
+function scrollToComp(name, offset = 0) {
   scroller.scrollTo(name, {
     duration: 1000,
-    offset: 0,
+    offset: offset,
     smooth: true
   });
 
@@ -147,10 +147,10 @@ class NavBar extends Component {
           <Navbar.Toggle className="ml-auto" aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <Nav.Link onClick={() => scrollToComp('rush')}>Rush</Nav.Link>
+              <Nav.Link href="rush">Rush</Nav.Link>
               <Nav.Link onClick={() => scrollToComp('about-us')}>About</Nav.Link>
               <Nav.Link onClick={() => scrollToComp('faq')}>FAQ</Nav.Link>
-              <Nav.Link onClick={() => scrollToComp('messenger')}>Members</Nav.Link>
+              <Nav.Link href="members">Members</Nav.Link>
             </Nav>
             <Navbar.Brand href="http://garnett-app.herokuapp.com">
               <img className="gem" src={require('./images/garnett.svg')} alt="Garnett Logo" />

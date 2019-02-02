@@ -81,38 +81,34 @@ export default class MemberPage extends Component {
     this.setState({
       showModal: false
     });
-  }
+  };
 
   /* Opens the modal */
-  open = (brother) => {
+  open = brother => {
     this.setState({
       showModal: true,
       brotherModal: brother
     });
-  }
+  };
 
   /* Filters the list based on the search input */
-  filterSearch = (event) => {
+  filterSearch = event => {
     /* Sets the list to the filtered list of brothers */
     let updatedList = this.state.filteredBrothers;
 
     /* Sets the displayed list to all actives whose names begin with the input value */
     updatedList = updatedList.filter(function(brother) {
-      return (
-        brother.name
-          .toLowerCase()
-          .startsWith(event.target.value.toLowerCase()) !== false
-      );
+      return brother.name.toLowerCase().startsWith(event.target.value.toLowerCase()) !== false;
     });
 
     this.setState({
       searchValue: event.target.value,
       updatedBrothers: updatedList
     });
-  }
+  };
 
   /* Filters the first dropdown based on the selected value */
-  filterDropdown = (selected) => {
+  filterDropdown = selected => {
     let updatedList = brothers;
     let options;
     let disabled = false;
@@ -120,9 +116,7 @@ export default class MemberPage extends Component {
 
     /* Sets the new brothers header image */
     let newImage = images.findIndex(function(image) {
-      return (
-        (image.name.toLowerCase() === selected.value.toLowerCase()) !== false
-      );
+      return (image.name.toLowerCase() === selected.value.toLowerCase()) !== false;
     });
 
     /* Removes visibility of the old brothers header image */
@@ -166,18 +160,16 @@ export default class MemberPage extends Component {
       firstSelected: selected,
       secondSelected: ''
     });
-  }
+  };
 
   /* Filters the specific dropdown based on the selected value */
-  filterSpecific = (selected) => {
+  filterSpecific = selected => {
     let updatedList = brothers;
     let image = this.state.image;
 
     /* Sets the new brothers header image */
     let newImage = images.findIndex(function(image) {
-      return (
-        (image.name.toLowerCase() === selected.value.toLowerCase()) !== false
-      );
+      return (image.name.toLowerCase() === selected.value.toLowerCase()) !== false;
     });
 
     /* Removes visibility of the old brothers header image */
@@ -194,19 +186,13 @@ export default class MemberPage extends Component {
     } else if (this.state.dropdownValue === 'major') {
       /* Filters brothers list based on selected major */
       updatedList = updatedList.filter(function(brother) {
-        return (
-          (brother.major.toLowerCase() === selected.value.toLowerCase()) !==
-          false
-        );
+        return (brother.major.toLowerCase() === selected.value.toLowerCase()) !== false;
       });
     } else {
       /* Filters brothers list based on class */
       updatedList = this.state.allBrothers;
       updatedList = updatedList.filter(function(brother) {
-        return (
-          (brother.class.toLowerCase() === selected.value.toLowerCase()) !==
-          false
-        );
+        return (brother.class.toLowerCase() === selected.value.toLowerCase()) !== false;
       });
     }
 
@@ -219,7 +205,7 @@ export default class MemberPage extends Component {
       specificLabel: selected.label,
       secondSelected: selected
     });
-  }
+  };
 
   render() {
     return (
@@ -240,12 +226,7 @@ export default class MemberPage extends Component {
         </div>
         <div className="brothers-image-container">
           {images.map((image, i) => (
-            <img
-              className="brothers-image"
-              src={isChrome ? image.webp : image.jpg}
-              alt="Brothers"
-              key={i}
-            />
+            <img className="brothers-image" src={isChrome ? image.webp : image.jpg} alt="Brothers" key={i} />
           ))}
         </div>
         <div className="scroll-down" />
@@ -274,11 +255,7 @@ export default class MemberPage extends Component {
             </Row>
           </Container>
         </div>
-        <BrotherModal
-          show={this.state.showModal}
-          close={this.close}
-          brother={this.state.brotherModal}
-        />
+        <BrotherModal show={this.state.showModal} close={this.close} brother={this.state.brotherModal} />
       </div>
     );
   }

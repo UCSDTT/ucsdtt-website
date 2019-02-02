@@ -42,7 +42,7 @@
   font-size: 45px;
   padding: 10px 0;
   text-align: initial;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica Neue Condensed' !important;
   z-index: 3;
 }
 @media (max-width: 768px) {
@@ -105,7 +105,7 @@
   border-bottom: 1px solid #ddd;
   z-index: 10;
 }
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .search-bar-container {
     position: sticky;
     top: 85.3px;
@@ -134,7 +134,7 @@
   width: 10%;
   margin: 0;
 }
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .search-bar-flex > h3 {
     width: 100%;
     margin: 10px 30px;
@@ -149,7 +149,7 @@
 .search-input-container {
   width: 33%;
 }
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .search-input-container {
     max-width: 500px;
     width: 80%;
@@ -170,7 +170,7 @@
   font-weight: 700;
   text-align: left;
 }
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .search-dropdown {
     min-width: 180px;
     width: 35%;
@@ -261,6 +261,7 @@
   margin: auto;
   border-radius: 8px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 @media (max-width: 768px) {
   .brother-image-container {
@@ -330,34 +331,10 @@
 /* Modal Header */
 .modal-header {
   background: #9a0000; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(
-    left top,
-    #9a0000,
-    #800000,
-    #670000,
-    #561e18
-  ); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(
-    bottom right,
-    #9a0000,
-    #800000,
-    #670000,
-    #561e18
-  ); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(
-    bottom right,
-    #9a0000,
-    #800000,
-    #670000,
-    #561e18
-  ); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(
-    to bottom right,
-    #561e18,
-    #670000,
-    #800000,
-    #9a0000
-  );
+  background: -webkit-linear-gradient(left top, #9a0000, #800000, #670000, #561e18); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #9a0000, #800000, #670000, #561e18); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #9a0000, #800000, #670000, #561e18); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #561e18, #670000, #800000, #9a0000);
   /* Standard syntax */
   color: #fff;
   padding: 25px 0;

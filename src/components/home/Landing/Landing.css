@@ -11,7 +11,7 @@
   width: 100vw;
 }
 
-.landing-gradient{
+.landing-gradient {
   position: relative;
 }
 .landing-gradient:after {
@@ -21,12 +21,18 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.6)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* W3C */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 0.6)),
+    color-stop(100%, rgba(0, 0, 0, 0))
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
@@ -84,12 +90,12 @@
   font-weight: 400;
   margin-bottom: -10px;
 }
-@media(max-width: 1400px) {
+@media (max-width: 1400px) {
   .brothers-are-text {
     font-size: 50px;
   }
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .brothers-are-text {
     font-size: 37px;
   }
@@ -101,12 +107,12 @@
   font-size: 80px;
   color: var(--primary-color);
 }
-@media(max-width: 1400px) {
+@media (max-width: 1400px) {
   .brothers-are-word {
     font-size: 70px;
   }
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .brothers-are-word {
     font-size: 47px;
   }
@@ -134,12 +140,12 @@
   background-color: #666;
   color: #fff;
 }
-@media(max-width: 1400px) {
+@media (max-width: 1400px) {
   .learn-more {
     top: 290px;
   }
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .learn-more {
     top: 250px;
     left: 50%;
@@ -158,7 +164,7 @@
   opacity: 0;
   z-index: 1;
 }
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .quote {
     display: none;
   }
@@ -174,7 +180,7 @@
 .quote-text-group {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .quote-quotes {
@@ -216,53 +222,55 @@
 }
 
 /* Carousel Fading slide */
-.carousel-fade .carousel-inner { background: #000; }
-.carousel-fade .carousel-control { z-index: 2; }  
+.carousel-fade .carousel-inner {
+  background: #000;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
 .carousel-fade .item {
   opacity: 0;
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
-  }
+}
 
-  .carousel-fade .next.left,
-  .carousel-fade .prev.right,
-  .carousel-fade .item.active { opacity: 1; }
+.carousel-fade .next.left,
+.carousel-fade .prev.right,
+.carousel-fade .item.active {
+  opacity: 1;
+}
 
-  .carousel-fade .active.left,
-  .carousel-fade .active.right {
-    left: 0;
-    opacity: 0;
-    z-index: 1;
-    }
-
+.carousel-fade .active.left,
+.carousel-fade .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
 
 /* Safari Fix */
 @media all and (transform-3d), (-webkit-transform-3d) {
-    .carousel-fade .carousel-inner > .item.next,
-    .carousel-fade .carousel-inner > .item.active.right {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-    }
-    .carousel-fade .carousel-inner > .item.prev,
-    .carousel-fade .carousel-inner > .item.active.left {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-    }
-    .carousel-fade .carousel-inner > .item.next.left,
-    .carousel-fade .carousel-inner > .item.prev.right,
-    .carousel-fade .carousel-inner > .item.active {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-    }
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
-
-
-
 
 /* Carousel Control custom */
 .carousel-control .control-icon {
@@ -274,50 +282,72 @@
   position: absolute;
   top: 50%;
   z-index: 5;
-  }
-  .carousel-control .prev { margin-left:  -15px;  left: 50%; } /* Prev */
-  .carousel-control .next { margin-right: -15px; right: 50%; } /* Next */
-
+}
+.carousel-control .prev {
+  margin-left: -15px;
+  left: 50%;
+} /* Prev */
+.carousel-control .next {
+  margin-right: -15px;
+  right: 50%;
+} /* Next */
 
 /* Removing BS background */
-.carousel .control-box { opacity: 0; }
-a.carousel-control.left  { left: 0; background: none; border: 0;}
-a.carousel-control.right { right: 0; background: none; border: 0;}
-
+.carousel .control-box {
+  opacity: 0;
+}
+a.carousel-control.left {
+  left: 0;
+  background: none;
+  border: 0;
+}
+a.carousel-control.right {
+  right: 0;
+  background: none;
+  border: 0;
+}
 
 /* Animation */
-.control-box, a.carousel-control, .carousel-indicators li {
+.control-box,
+a.carousel-control,
+.carousel-indicators li {
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
   -ms-transition: all 250ms ease;
   -o-transition: all 250ms ease;
-  transition: all 250ms ease;   
+  transition: all 250ms ease;
   /* hardware acceleration causes Bootstrap carousel controlbox margin error in webkit */
   /* Assigning animation to indicator li will make slides flicker */
-  } 
-
+}
 
 /* Hover animation */
-.carousel:hover .control-box { opacity: 1; }
-.carousel:hover a.carousel-control.left { left: 15px; }
-.carousel:hover a.carousel-control.right { right: 15px; }  
-
+.carousel:hover .control-box {
+  opacity: 1;
+}
+.carousel:hover a.carousel-control.left {
+  left: 15px;
+}
+.carousel:hover a.carousel-control.right {
+  right: 15px;
+}
 
 /* Carouse Indicator */
 .carousel-indicators li.active,
-.carousel-indicators li { border: 0; }
+.carousel-indicators li {
+  border: 0;
+}
 
 .carousel-indicators li {
   background: #666;
   margin: 0 3px;
   width: 12px;
   height: 12px;
-  }
+}
 
 .carousel-indicators li.active {
   background: #fff;
   margin: 0 3px;
-  }
+}
 
 .landing .carousel-control.left,
 .landing .carousel-control.right {

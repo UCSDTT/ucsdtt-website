@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "imagemin": "^6.0.0",
-    "imagemin-webp": "^4.1.0",
+    "imagemin-webp": "^5.0.0",
     "react-scripts": "^2.1.3"
   },
   "dependencies": {

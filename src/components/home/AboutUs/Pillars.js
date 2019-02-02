@@ -17,16 +17,16 @@ class Pillars extends React.Component {
       imageInfoGroup[target].classList.toggle('slideInUp');
     }
   }
-  
+
   render() {
     return (
       <div>
-        <div 
+        <div
           className="pillar-image-container"
           onMouseOver={() => this.showInfo(this.props.index)}
           onMouseOut={() => this.showInfo(this.props.index)}
         >
-          <img 
+          <img
             className="lozad pillar-image"
             data-src={isChrome ? this.props.pillar.image : this.props.pillar.safari}
             alt="Pillar"
@@ -36,15 +36,11 @@ class Pillars extends React.Component {
             <h4> {this.props.pillar.description} </h4>
           </div>
         </div>
-        <h3 className="pillar-name">
-          {this.props.pillar.name}
-        </h3>
-        <p className="pillar-content">
-          {this.props.pillar.content}
-        </p>
+        <h3 className="pillar-name">{this.props.pillar.name}</h3>
+        <p className="pillar-content">{this.props.pillar.content}</p>
       </div>
-    )
+    );
   }
 }
 
-export { Pillars }
+export { Pillars };
