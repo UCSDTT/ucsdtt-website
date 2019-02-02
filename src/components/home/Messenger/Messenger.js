@@ -1,7 +1,7 @@
 import './Messenger.css';
 
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Element } from 'react-scroll';
 import { Flipper } from './Flipper.js';
 import { brothers } from '../../../activeData/data.js';
@@ -99,20 +99,20 @@ class Messenger extends Component {
           Get to Know Us!
         </h1>
 
-        <Grid>
+        <Container>
           <Row className="messenger-row">
             {this.state.actives.map((active, i) => (
               <Col md={4} key={i}>
-                <Flipper 
-                  flipped={this.state.flipped} 
-                  frontActive={active.front} 
-                  backActive={active.back} 
+                <Flipper
+                  flipped={this.state.flipped}
+                  frontActive={active.front}
+                  backActive={active.back}
                   index={i}
                 />
               </Col>
             ))}
           </Row>
-        </Grid>
+        </Container>
         <div className="messenger-actions">
           <a href="#null" onClick={this.flip}>Shuffle Actives</a>
           <a className="members-link" href="/members">Meet the Fraternity</a>

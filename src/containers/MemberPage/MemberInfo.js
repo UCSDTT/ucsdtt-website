@@ -6,13 +6,11 @@ import React from 'react';
 class MemberInfo extends React.Component {
   render() {
     return (
-      <div>
+      <div className="brother-info">
         <div className="brother-image-container">
           <img
             className="brother-image"
-            src={
-              isChrome ? this.props.brother.image : this.props.brother.safari
-            }
+            src={isChrome ? this.props.brother.image : this.props.brother.safari}
             onClick={() => this.props.open(this.props.brother)}
             alt="Active"
           />

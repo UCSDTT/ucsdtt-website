@@ -25,37 +25,21 @@ class BrotherModal extends React.Component {
           <Modal.Title> {this.props.brother.name} </Modal.Title>
           <img
             className="lozad modal-image-mobile"
-            src={
-              isChrome ? this.props.brother.image : this.props.brother.safari
-            }
+            src={isChrome ? this.props.brother.image : this.props.brother.safari}
             alt="Active"
           />
         </Modal.Header>
         <Modal.Body>
           <img
             className="lozad modal-image"
-            src={
-              isChrome ? this.props.brother.image : this.props.brother.safari
-            }
+            src={isChrome ? this.props.brother.image : this.props.brother.safari}
             alt="Active"
           />
           <ListGroup>
-            <ListGroupItem header="Position">
-              {' '}
-              {this.props.brother.position}{' '}
-            </ListGroupItem>
-            <ListGroupItem header="Class">
-              {' '}
-              {this.props.brother.className}{' '}
-            </ListGroupItem>
-            <ListGroupItem header="Major">
-              {' '}
-              {this.props.brother.majorName}{' '}
-            </ListGroupItem>
-            <ListGroupItem header="Year">
-              {' '}
-              {this.props.brother.year}{' '}
-            </ListGroupItem>
+            <ListGroupItem header="Position"> {this.props.brother.position} </ListGroupItem>
+            <ListGroupItem header="Class"> {this.props.brother.className} </ListGroupItem>
+            <ListGroupItem header="Major"> {this.props.brother.majorName} </ListGroupItem>
+            <ListGroupItem header="Year"> {this.props.brother.year} </ListGroupItem>
           </ListGroup>
         </Modal.Body>
         <Modal.Footer className="modal-footer">
@@ -64,12 +48,7 @@ class BrotherModal extends React.Component {
               Close
             </div>
           </div>
-          <a
-            className="linkedin-footer"
-            href={this.props.brother.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a className="linkedin-footer" href={this.props.brother.linkedin} target="_blank" rel="noopener noreferrer">
             Connect
             <i className="icon-linkedin-squared" aria-hidden="true" />
           </a>

@@ -15,7 +15,7 @@
   margin: 20px auto 50px;
   text-align: left;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .rush-subheader {
     width: 90%;
   }
@@ -35,7 +35,7 @@
   font-size: 55px;
 }
 
-.rush-author{
+.rush-author {
   display: block;
   position: relative;
   width: 100%;
@@ -54,7 +54,7 @@
   height: 500px;
   width: 900px;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .carousel-inner > .item > .quote-image {
     height: 300px;
     width: 450px;
@@ -69,7 +69,7 @@
   opacity: 0;
   z-index: 1;
 }
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
   .quote-appear {
     display: none;
   }
@@ -92,12 +92,12 @@
   color: var(--primary-color);
   white-space: nowrap;
 }
-@media(max-width: 1500px) {
+@media (max-width: 1500px) {
   .rush-title {
     font-size: 2.4em;
   }
 }
-@media(max-width: 575px) {
+@media (max-width: 575px) {
   .rush-title {
     font-size: 11vw;
   }
@@ -132,20 +132,18 @@
   overflow: hidden;
 }
 
-
 /* Brothers Header */
 .rush-landing-header {
   position: relative;
   background-color: var(--secondary-dark);
   color: #fff;
   font-size: 45px;
-  font-style: italic;
-  padding: 25px 0;
+  padding: 13px 0;
+  font-family: 'Helvetica Neue Condensed' !important;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .rush-landing-header {
     font-size: 23px;
-    padding: 30px 0;
   }
 }
 .rush-landing-header:after {
@@ -170,7 +168,7 @@
   height: calc(100vh - 105px);
   width: 100%;
 }
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .rush-image {
     height: calc(100vh - 95px);
   }

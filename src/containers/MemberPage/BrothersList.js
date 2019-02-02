@@ -1,7 +1,7 @@
 import './MemberPage.css';
 
 import React from 'react';
-import { Col } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { FilteredLabel } from './FilteredLabel.js';
 import { FilteredList } from './FilteredList.js';
 import { MemberInfo } from './MemberInfo.js';
@@ -40,36 +40,37 @@ class BrothersList extends React.Component {
     /* Sets the specific label based on which is selected */
     if (this.props.specificValue) {
       options = options.filter(option => {
-        return (
-          (option.value.toLowerCase() ===
-            this.props.specificValue.toLowerCase()) !==
-          false
-        );
+        return (option.value.toLowerCase() === this.props.specificValue.toLowerCase()) !== false;
       });
     }
 
     /* Displays labels if the first dropdown value is major or class */
-    if (
-      this.props.dropdownValue === 'major' ||
-      this.props.dropdownValue === 'class'
-    ) {
+    if (this.props.dropdownValue === 'major' || this.props.dropdownValue === 'class') {
       return (
-        <div>
+        <div style={{ width: 100 + '%' }}>
           {options.map((option, i) => {
             if (this.renderFilteredList(option) !== false) {
               return (
-                <div key={i}>
-                  <FilteredLabel
-                    option={option}
-                    specificValue={this.props.specificValue}
-                  />
-                  <FilteredList
+                <Row key={i}>
+                  <FilteredLabel option={option} specificValue={this.props.specificValue} />
+                  {/* <FilteredList
                     option={option}
                     updatedBrothers={this.props.updatedBrothers}
                     dropdownValue={this.props.dropdownValue}
                     open={this.props.open}
-                  />
-                </div>
+                  /> */}
+                  {this.props.updatedBrothers.map((brother, i) => {
+                    if (brother[this.props.dropdownValue] === option.value) {
+                      return (
+                        <Col xs={6} sm={3} style={{ padding: 0 }}>
+                          <MemberInfo brother={brother} open={this.props.open} />
+                        </Col>
+                      );
+                    } else {
+                      return false;
+                    }
+                  })}
+                </Row>
               );
             } else {
               return false;
@@ -79,13 +80,13 @@ class BrothersList extends React.Component {
       );
     } else {
       return (
-        <div>
+        <Row style={{ width: 100 + '%' }}>
           {this.props.updatedBrothers.map((brother, i) => (
             <Col xs={6} sm={3} className="brother-info col-md-5th" key={i}>
               <MemberInfo brother={brother} open={this.props.open} />
             </Col>
           ))}
-        </div>
+        </Row>
       );
     }
   }

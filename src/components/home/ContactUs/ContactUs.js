@@ -7,7 +7,7 @@ import {
   FormControl,
   FormGroup,
   Glyphicon,
-  Grid,
+  Container,
   Image,
   InputGroup,
   Row
@@ -35,14 +35,14 @@ class ContactUs extends Component {
 
     let length = this.state.name.length;
     let valid = true;
-    if (length > 1) 
+    if (length > 1)
       this.setState({ namestate: 'success' });
     else {
       this.setState({ namestate: 'error' });
       valid = false;
     }
 
-    if (emailpattern.test(this.state.email)) 
+    if (emailpattern.test(this.state.email))
       this.setState({ emailstate: 'success' });
     else {
       this.setState({ emailstate: 'error' });
@@ -50,7 +50,7 @@ class ContactUs extends Component {
     }
 
     length = this.state.message.length;
-    if (length > 1) 
+    if (length > 1)
       this.setState({ messagestate: 'success' });
     else {
       this.setState({ messagestate: 'error' });
@@ -170,7 +170,7 @@ class ContactUs extends Component {
     return (
       <Element name="contact-us" className="element">
         <div className="contact-us">
-          <Grid className="form-border">
+          <Container className="form-border">
             {alert}
             <Row>
               {contactForm}
@@ -180,7 +180,7 @@ class ContactUs extends Component {
                 </div>
               </Col>
             </Row>
-          </Grid>
+          </Container>
         </div>
       </Element>
     );

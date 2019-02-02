@@ -1,21 +1,21 @@
 import './Footer.css';
 
-import { Col, Grid, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import React, { Component } from 'react';
 
 class Footer extends Component {
   render() {
     return (
       <div className="footer maroon-bg">
-        <Grid className="footer-padding">
+        <Container className="footer-padding">
           <Row className="show-grid">
             <Col xsOffset={2} xs={8} smOffset={0} sm={6} md={4} className="widget"><div className="widget-header">Want to learn more?</div><br/>
-              <p className="footer-p"> Outside of the Epsilon Delta chapter at UCSD, Theta Tau is the oldest 
-                    and largest professional engineering fraternity in the United States, 
+              <p className="footer-p"> Outside of the Epsilon Delta chapter at UCSD, Theta Tau is the oldest
+                    and largest professional engineering fraternity in the United States,
                     with chapters everywhere from coast to coast!
               </p>
               <p className="footer-p">
-                  For more information, visit Theta Tau's national site: 
+                  For more information, visit Theta Tau's national site:
                 <a className="light-grey" href="http://thetatau.org/"> thetatau.org</a>
               </p>
             </Col>
@@ -46,9 +46,9 @@ class Footer extends Component {
               </ul>
             </Col>
           </Row>
-        </Grid>
+        </Container>
         <div className="media-icons">
-          <Grid>
+          <Container>
             <Row className="show-grid">
               <Col xs={6} xsOffset={0} md={3} mdOffset={3}>
                 <a href="https://www.facebook.com/thetatau.ucsd/" target="_blank" rel="noopener noreferrer">
@@ -61,7 +61,7 @@ class Footer extends Component {
                 </a>
               </Col>
             </Row>
-          </Grid>
+          </Container>
         </div>
       </div>
     );
