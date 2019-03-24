@@ -3,7 +3,6 @@ import './MemberPage.css';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { FilteredLabel } from './FilteredLabel.js';
-import { FilteredList } from './FilteredList.js';
 import { MemberInfo } from './MemberInfo.js';
 
 class BrothersList extends React.Component {
@@ -18,9 +17,9 @@ class BrothersList extends React.Component {
       }
     });
 
-    /* 
-      If there exists a brother in the specific major or class, 
-      display the brothers of that specified major or class 
+    /*
+      If there exists a brother in the specific major or class,
+      display the brothers of that specified major or class
     */
     if (!showList) {
       return false;

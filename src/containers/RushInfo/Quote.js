@@ -1,19 +1,17 @@
-import './RushInfo.css';
-import { isChrome } from '../../helpers/helpers.js';
-
-import { Carousel, Row, Col } from 'react-bootstrap';
 import React from 'react';
+import { Carousel, Col, Row } from 'react-bootstrap';
+import { isChrome } from '../../helpers/helpers.js';
+import { carouselData } from './data.js';
+import './RushInfo.css';
 
-import { carouselData } from './data.js'
-
-const activeList = carouselData.sort(() => .5 - Math.random());
+const activeList = carouselData.sort(() => 0.5 - Math.random());
 
 class Quote extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       rushQuote: [],
-      currentRushQuote: 0,
+      currentRushQuote: 0
     };
   }
 
@@ -24,25 +22,25 @@ class Quote extends React.Component {
     rushQuote[0].style.opacity = 1;
 
     this.setState({
-      rushQuote: rushQuote,
-    })
+      rushQuote: rushQuote
+    });
   }
 
   // Changes the current quote out and new quote in
-  changeQuote = (event) => {
+  changeQuote = event => {
     var cq = this.state.rushQuote[this.state.currentRushQuote];
     var nq = this.state.rushQuote[event];
 
     cq.style.opacity = 0;
-    this.animateQuoteOut(cq)
+    this.animateQuoteOut(cq);
 
     nq.style.opacity = 1;
-    this.animateQuoteIn(nq)
+    this.animateQuoteIn(nq);
 
     this.setState({
-      currentRushQuote: event,
-    })
-  }
+      currentRushQuote: event
+    });
+  };
 
   animateQuoteOut(cq) {
     cq.className = 'quote-appear animated fadeOutDown';
@@ -51,29 +49,23 @@ class Quote extends React.Component {
   animateQuoteIn(nq) {
     nq.className = 'quote-appear animated fadeInDown';
   }
-  
+
   render() {
     return (
-      <Row style={{ overflow: "hidden" }}>
+      <Row style={{ overflow: 'hidden' }}>
         <Col md={12} lg={8}>
           <Carousel interval={7000} onSelect={this.changeQuote}>
             {activeList.map((slide, i) => (
               <Carousel.Item key={i}>
-                <img 
-                  className="quote-image"
-                  src={isChrome ? slide.image : slide.safari}
-                  alt="Active" 
-                />
+                <img className="quote-image" src={isChrome ? slide.image : slide.safari} alt="Active" />
               </Carousel.Item>
             ))}
           </Carousel>
         </Col>
-        <Col 
-          md={12} lg={4}
-        >
+        <Col md={12} lg={4}>
           {activeList.map((slide, i) => (
             <div key={i} className="quote-appear">
-              <div style={{ display: "flex" }}>
+              <div style={{ display: 'flex' }}>
                 <span className="quote-quotes">❝</span>
                 <span className="rush-quote">{slide.quote}</span>
               </div>
@@ -85,8 +77,8 @@ class Quote extends React.Component {
           ))}
         </Col>
       </Row>
-    )
+    );
   }
 }
 
-export { Quote }
+export { Quote };

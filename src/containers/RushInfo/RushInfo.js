@@ -36,7 +36,7 @@ export default class RushPage extends Component {
           src={isChrome ? require('./images/rush_header.webp') : require('./images/rush_header.jpg')}
         />
         <div className="rush-header">
-          <span className="rush-title">Rush Fall 2018</span>
+          <span className="rush-title">Rush Spring 2019</span>
           <iframe
             title="rush2018video"
             width="894"
