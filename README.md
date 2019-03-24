@@ -18,8 +18,14 @@ The following extensions are required to contribute to this repo:
 
 It is recommended that you set `"editor.formatOnSave": true` (VSCode) so that Prettier will automatically style your code.
 
-## Quickstart Commands
+## Commands
+
+### Quickstart
 
 `npm install`
 
 `npm start`
+
+### Convert Images to .webp
+
+`npm run webp` - Convert .png and .jpg images inside ./img (create yourself) to .webp.
