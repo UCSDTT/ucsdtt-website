@@ -6,8 +6,8 @@ const slideData = [
   },
   {
     name: 'competitors',
-    image: require('./images/bubblesoccer.webp'),
-    safari: require('./images/bubblesoccer.jpg')
+    image: require('./images/bubble_soccer.webp'),
+    safari: require('./images/bubble_soccer.jpg')
   },
   {
     name: 'adventurers',
