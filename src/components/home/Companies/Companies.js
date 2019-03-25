@@ -1,5 +1,5 @@
 import './Companies.css';
-import { isChrome } from '../../../helpers/helpers.js';
+import { isChrome } from '../../../shared/helpers.js';
 
 import React, { Component } from 'react';
 import { Row } from 'react-bootstrap';
@@ -15,31 +15,25 @@ class Companies extends Component {
         <div className="companies-container">
           <Row className="companies-row">
             {bigCompanies.map((company, i) => (
-              <div 
-                className="company-col big-logo"
-                key={i}
-              >
+              <div className="company-col big-logo" key={i}>
                 <a href={company.href}>
-                  <img 
+                  <img
                     className="lozad company-logo"
                     data-src={isChrome ? company.image : company.safari}
-                    href={company} 
+                    href={company}
                     alt="Big Company"
-                  /> 
+                  />
                 </a>
               </div>
             ))}
           </Row>
           <Row className="companies-row">
             {smallCompanies.map((company, i) => (
-              <div 
-                className="company-col small-logo"
-                key={i}
-              >
+              <div className="company-col small-logo" key={i}>
                 <a href={company.href}>
-                  <img 
-                    className="lozad company-logo" 
-                    data-src={isChrome ? company.image : company.safari} 
+                  <img
+                    className="lozad company-logo"
+                    data-src={isChrome ? company.image : company.safari}
                     alt="Small Company"
                   />
                 </a>

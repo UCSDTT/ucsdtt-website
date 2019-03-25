@@ -17,4 +17,4 @@ npm-debug.log
 .project
 
 # webp converter files
-img
+tools/webp_converter/img

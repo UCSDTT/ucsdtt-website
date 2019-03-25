@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-import { NavBar } from '../components/home/NavBar/NavBar.js';
-import { Landing } from '../components/home/Landing/Landing.js';
-import { Rush } from '../components/home/Rush/Rush.js';
-import { WhyRush } from '../components/home/WhyRush/WhyRush.js';
-import { AboutUs } from '../components/home/AboutUs/AboutUs.js';
-import { FAQ } from '../components/home/FAQ/FAQ.js';
-import { Messenger } from '../components/home/Messenger/Messenger.js';
-import { Companies } from '../components/home/Companies/Companies.js';
-import { Footer } from '../components/home/Footer/Footer.js';
+import { NavBar } from 'components/Home/NavBar/NavBar.js';
+import { Landing } from 'components/Home/Landing/Landing.js';
+import { Rush } from 'components/Home/Rush/Rush.js';
+import { WhyRush } from 'components/Home/WhyRush/WhyRush.js';
+import { AboutUs } from 'components/Home/AboutUs/AboutUs.js';
+import { FAQ } from 'components/Home/FAQ/FAQ.js';
+import { Messenger } from 'components/Home/Messenger/Messenger.js';
+import { Companies } from 'components/Home/Companies/Companies.js';
+import { Footer } from 'components/Home/Footer/Footer.js';
 
 export default class Home extends Component {
   /*

@@ -1,8 +1,8 @@
 import React from 'react';
 import { ListGroup, ListGroupItem, Modal } from 'react-bootstrap';
 import { FaLinkedin } from 'react-icons/fa';
-import { isChrome } from '../../helpers/helpers.js';
-import './MemberPage.css';
+import { isChrome } from 'shared/helpers.js';
+import './Members.css';
 
 class BrotherModal extends React.Component {
   render() {

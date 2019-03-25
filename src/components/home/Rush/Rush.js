@@ -2,7 +2,7 @@ import './Rush.css';
 
 import React, { Component } from 'react';
 import { Element } from 'react-scroll';
-import { isChrome } from '../../../helpers/helpers.js';
+import { isChrome } from '../../../shared/helpers.js';
 
 class Rush extends Component {
   render() {

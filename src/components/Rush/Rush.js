@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
-import { isChrome } from '../../helpers/helpers.js';
+import { isChrome } from '../../shared/helpers.js';
 import { rushEventData } from './data.js';
 import { Quote } from './Quote.js';
 import { FaMapMarkerAlt, FaClock } from 'react-icons/fa';
-import './RushInfo.css';
+import './Rush.css';
 
-export default class RushPage extends Component {
+export default class Rush extends Component {
   /* Shows info for pillars on mouse hover */
   showInfo(target) {
     /* Only runs when window width is greater than 768px */
@@ -26,7 +26,7 @@ export default class RushPage extends Component {
       <div className="rush-info">
         <div className="rush-landing-header">
           <a className="rush-logo" role="button" href="/">
-            <Image className="logo" src={require('../../components/home/NavBar/images/logo.png')} />
+            <Image className="logo" src={isChrome ? require('shared/logo.webp') : require('shared/logo.png')} />
           </a>
           Rush Information
         </div>
