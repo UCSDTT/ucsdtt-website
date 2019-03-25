@@ -147,7 +147,7 @@ class NavBar extends Component {
           <Navbar.Toggle className="ml-auto" aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <Nav.Link href="rush">Rush</Nav.Link>
+              <Nav.Link onClick={() => scrollToComp('why-rush')}>Rush</Nav.Link>
               <Nav.Link onClick={() => scrollToComp('about-us')}>About</Nav.Link>
               <Nav.Link onClick={() => scrollToComp('faq')}>FAQ</Nav.Link>
               <Nav.Link href="members">Members</Nav.Link>

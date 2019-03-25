@@ -9,7 +9,7 @@ class Flipper extends React.Component {
   render() {
     return (
       <div className={`messenger-card-${this.props.index}`}>
-        <div className={"flipper" + (this.props.flipped ? " flipped" : "")}>
+        <div className={'flipper' + (this.props.flipped ? ' flipped' : '')}>
           <Front>
             <ActiveInfo active={this.props.frontActive} />
           </Front>
@@ -18,8 +18,8 @@ class Flipper extends React.Component {
           </Back>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export { Flipper }
+export { Flipper };

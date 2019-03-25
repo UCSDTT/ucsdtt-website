@@ -1,11 +1,10 @@
-import './RushInfo.css';
-import { isChrome } from '../../helpers/helpers.js';
-
-import { Col, Container, Image, Row } from 'react-bootstrap';
 import React, { Component } from 'react';
-import { Quote } from './Quote.js';
-
+import { Col, Container, Image, Row } from 'react-bootstrap';
+import { isChrome } from '../../helpers/helpers.js';
 import { rushEventData } from './data.js';
+import { Quote } from './Quote.js';
+import { FaMapMarkerAlt, FaClock } from 'react-icons/fa';
+import './RushInfo.css';
 
 export default class RushPage extends Component {
   /* Shows info for pillars on mouse hover */
@@ -58,11 +57,11 @@ export default class RushPage extends Component {
                 >
                   <img className="event-image" src={isChrome ? event.image : event.safari} alt="Event" />
                   <div className="event-info animated">
-                    <h3>
-                      <i className="icon-location" /> {event.location}{' '}
-                    </h3>
                     <h4>
-                      <i className="icon-clock" /> {event.date}{' '}
+                      <FaMapMarkerAlt /> {event.location}{' '}
+                    </h4>
+                    <h4>
+                      <FaClock /> {event.date}{' '}
                     </h4>
                   </div>
                 </div>
