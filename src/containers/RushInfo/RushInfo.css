@@ -209,16 +209,10 @@
   top: 50%;
   left: 50%;
   opacity: 0;
-  text-transform: uppercase;
 }
 
 .event-info.show {
   opacity: 1;
-}
-
-.event-info h4 {
-  width: max-content;
-  margin: auto;
 }
 
 .event-name {

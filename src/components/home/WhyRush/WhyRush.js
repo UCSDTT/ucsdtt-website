@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { Element } from 'react-scroll';
 import { Container, Col, Row } from 'react-bootstrap';
 import stepData from './data.js';
+import { FaComments, FaUsers, FaEnvelope, FaCheckCircle } from 'react-icons/fa';
 
 class WhyRush extends Component {
   render() {
@@ -17,7 +18,10 @@ class WhyRush extends Component {
             {stepData.map((step, i) => (
               <Col className={`${step.position}`} sm={12} lg={3} key={i}>
                 <div className={`rush-steps ${step.position}`}>
-                  <i className={`${step.icon} rush-step-icon`} />
+                  {step.icon === 'FaComments' ? <FaComments size="2em" className="rush-step-icon" /> : null}
+                  {step.icon === 'FaUsers' ? <FaUsers size="2em" className="rush-step-icon" /> : null}
+                  {step.icon === 'FaEnvelope' ? <FaEnvelope size="2em" className="rush-step-icon" /> : null}
+                  {step.icon === 'FaCheckCircle' ? <FaCheckCircle size="2em" className="rush-step-icon" /> : null}
                   <span className="step-title"> {step.title} </span>
                   <span className="step-description"> {step.description} </span>
                 </div>
@@ -28,7 +32,7 @@ class WhyRush extends Component {
 
           <a className="rush-button" href="/rush">
             {' '}
-            Discover Possibility{' '}
+            Inspire Innovation{' '}
           </a>
         </Container>
       </Element>

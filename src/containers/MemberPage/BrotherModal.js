@@ -1,23 +1,10 @@
-import './MemberPage.css';
-import { isChrome } from '../../helpers/helpers.js';
-
 import React from 'react';
-import { Modal, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { ListGroup, ListGroupItem, Modal } from 'react-bootstrap';
+import { FaLinkedin } from 'react-icons/fa';
+import { isChrome } from '../../helpers/helpers.js';
+import './MemberPage.css';
 
 class BrotherModal extends React.Component {
-  componentDidUpdate() {
-    const observer = window.lozad('.lozad', {
-      load: function(el) {
-        el.src = el.dataset.src;
-        el.onload = function() {
-          el.classList.add('fadeIn');
-        };
-      },
-      rootMargin: '200px 0px'
-    }); // lazy loads elements with default selector as '.lozad'
-    observer.observe();
-  }
-
   render() {
     return (
       <Modal show={this.props.show} onHide={this.props.close}>
@@ -49,8 +36,8 @@ class BrotherModal extends React.Component {
             </div>
           </div>
           <a className="linkedin-footer" href={this.props.brother.linkedin} target="_blank" rel="noopener noreferrer">
-            Connect
-            <i className="icon-linkedin-squared" aria-hidden="true" />
+            <FaLinkedin size="1.5em" />
+            &nbsp;Connect
           </a>
         </Modal.Footer>
       </Modal>

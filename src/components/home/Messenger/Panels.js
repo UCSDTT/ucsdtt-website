@@ -9,11 +9,11 @@ class Front extends React.Component {
   }
 }
 
-/* The back panel of the card */     
+/* The back panel of the card */
 class Back extends React.Component {
   render() {
     return <div className="back tile">{this.props.children}</div>;
   }
 }
 
-export { Front, Back }
+export { Front, Back };

@@ -1,8 +1,8 @@
-import './Footer.css';
-
 import React, { Component } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { scroller } from 'react-scroll';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import './Footer.css';
 
 class ChapterInfo extends React.Component {
   render() {
@@ -15,9 +15,8 @@ class ChapterInfo extends React.Component {
           fraternity in the United States, with chapters everywhere from coast to coast!
         </p>
         <p>
-          For more information, visit Theta Tau's national site:
-          <a className="footer-links" href="http://thetatau.org/">
-            {' '}
+          For more information, visit Theta Tau&apos;s national site:{' '}
+          <a className="footer-links" href="http://thetatau.org/" target="_blank" rel="noopener noreferrer">
             thetatau.org
           </a>
         </p>
@@ -32,20 +31,23 @@ class ContactInfo extends React.Component {
       <Col xs={{ span: 8, offset: 2 }} sm={{ span: 6, offset: 0 }} md={4} className="widget">
         <div className="widget-header">Contact Us</div>
         <br />
-        {/* <div>
+        <p>
           For any questions or queries, you can find our FAQS and contact details
-          <p className="footer-links footer-contact" onClick={() => scroller.scrollTo('faq', { smooth: true })}>
+          <a
+            className="footer-links footer-contact"
+            href="#null"
+            onClick={() => scroller.scrollTo('faq', { smooth: true })}
+          >
             {' '}
             here
-          </p>
-        </div> */}
-        <p>And you can find our social media links here:</p>
-        <div className="media-icons">
+          </a>
+        </p>
+        <div>
           <a href="https://www.facebook.com/thetatau.ucsd/" target="_blank" rel="noopener noreferrer">
-            <i className="icon-facebook" />
+            <FaFacebook className="media-icon" />
           </a>
           <a href="https://instagram.com/thetatau_ucsd/" target="_blank" rel="noopener noreferrer">
-            <i className="icon-instagram" />
+            <FaInstagram className="media-icon" />
           </a>
         </div>
       </Col>

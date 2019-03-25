@@ -12,7 +12,7 @@ class Messenger extends Component {
     this.state = {
       activeList: [],
       actives: [],
-      flipped: false,
+      flipped: false
     };
     this.flip = this.flip.bind(this);
   }
@@ -21,17 +21,17 @@ class Messenger extends Component {
   componentDidMount() {
     let actives = [
       {
-        'front': {},
-        'back': {},
+        front: {},
+        back: {}
       },
       {
-        'front': {},
-        'back': {},
+        front: {},
+        back: {}
       },
       {
-        'front': {},
-        'back': {},
-      },
+        front: {},
+        back: {}
+      }
     ];
 
     /* Filters out active without a messenger link (those who don't want to be messaged) and alumni */
@@ -53,14 +53,14 @@ class Messenger extends Component {
 
   /* Shuffles the actives and removes the 3 chosen from the total active list */
   shuffle(list) {
-    const shuffled = list.sort(() => .5 - Math.random());// shuffle
+    const shuffled = list.sort(() => 0.5 - Math.random()); // shuffle
     let activeList = shuffled.slice(3);
 
     this.setState({
       activeList: activeList
     });
 
-    return shuffled.slice(0, 3) ; //get sub-array of first n elements AFTER shuffle
+    return shuffled.slice(0, 3); //get sub-array of first n elements AFTER shuffle
   }
 
   /* Flips the messenger card */
@@ -78,9 +78,8 @@ class Messenger extends Component {
       actives.forEach((active, i) => {
         active.front = shuffled[i];
       });
-    }
-    /* Sets the back panel to the shuffled actives */
-    else {
+    } else {
+      /* Sets the back panel to the shuffled actives */
       actives.forEach((active, i) => {
         active.back = shuffled[i];
       });
@@ -88,38 +87,42 @@ class Messenger extends Component {
 
     this.setState({
       actives: actives,
-      flipped: !this.state.flipped,
+      flipped: !this.state.flipped
     });
   }
 
   render() {
     return (
       <Element name="messenger" className="element messenger">
-        <h1 className="title">
-          Get to Know Us!
-        </h1>
-
         <Container>
-          <Row className="messenger-row">
+          <Row>
+            <Col>
+              <h1 className="title">Get to Know Us!</h1>
+            </Col>
+          </Row>
+          <Row>
             {this.state.actives.map((active, i) => (
-              <Col md={4} key={i}>
-                <Flipper
-                  flipped={this.state.flipped}
-                  frontActive={active.front}
-                  backActive={active.back}
-                  index={i}
-                />
+              <Col md={12} lg={4} key={i}>
+                <Flipper flipped={this.state.flipped} frontActive={active.front} backActive={active.back} index={i} />
               </Col>
             ))}
           </Row>
+          <Row>
+            <Col className="d-flex justify-content-center" md={12} lg>
+              <a className="messenger-actions shuffle-button" href="#null" onClick={this.flip}>
+                Shuffle Actives
+              </a>
+            </Col>
+            <Col className="d-flex justify-content-center" md={12} lg>
+              <a className="messenger-actions members-link" href="/members">
+                Meet the Fraternity
+              </a>
+            </Col>
+          </Row>
         </Container>
-        <div className="messenger-actions">
-          <a href="#null" onClick={this.flip}>Shuffle Actives</a>
-          <a className="members-link" href="/members">Meet the Fraternity</a>
-        </div>
       </Element>
-    )
+    );
   }
 }
 
-export { Messenger }
+export { Messenger };

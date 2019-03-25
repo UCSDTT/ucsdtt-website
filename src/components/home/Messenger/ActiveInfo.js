@@ -1,7 +1,7 @@
 import './Messenger.css';
 import { isChrome } from '../../../helpers/helpers.js';
-
 import React from 'react';
+import { FaFacebookMessenger } from 'react-icons/fa';
 
 /* All the active information inside the messenger card */
 class ActiveInfo extends React.Component {
@@ -14,21 +14,19 @@ class ActiveInfo extends React.Component {
           role="presentation"
           alt="Messenger"
         />
-        <h3 className="messenger-name">
-          {this.props.active.name}
-        </h3>
+        <h3 className="messenger-name">{this.props.active.name}</h3>
         <p className="messenger-body">
           {this.props.active.year}
-          <br/> {this.props.active.majorName}
-          <br/> {this.props.active.className}
+          <br /> {this.props.active.majorName}
+          <br /> {this.props.active.className}
         </p>
         <a className="messenger-button" href={this.props.active.messenger} target="_blank" rel="noopener noreferrer">
-          <i className="icon-temp-messenger"></i>
-          Message
+          <FaFacebookMessenger className="messenger-icon" />
+          &nbsp;Message
         </a>
       </div>
-    )
+    );
   }
 }
 
-export { ActiveInfo }
+export { ActiveInfo };

@@ -337,7 +337,7 @@
   background: linear-gradient(to bottom right, #561e18, #670000, #800000, #9a0000);
   /* Standard syntax */
   color: #fff;
-  padding: 25px 0;
+  padding: 25px 25px;
   border-radius: 3px 3px 0 0;
 }
 @media (max-width: 539px) {
@@ -485,10 +485,8 @@
 .modal-footer > .linkedin-footer:hover {
   background-color: #eee;
 }
-.modal-footer > .linkedin-footer > .icon-linkedin-squared {
-  font-size: 2em;
+.linkedin-icon {
   vertical-align: middle;
-  margin-left: 15px;
 }
 /* Bootstrap List Group Item */
 .list-group-item {

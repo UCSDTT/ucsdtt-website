@@ -1,5 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-// import registerServiceWorker from './registerServiceWorker.js';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 

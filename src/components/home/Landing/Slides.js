@@ -3,7 +3,7 @@ import { isChrome } from '../../../helpers/helpers.js';
 
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import { slideData }  from './data.js';
+import { slideData } from './data.js';
 
 class Slides extends React.Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class Slides extends React.Component {
       wordArray: [],
       currentWord: 0,
       quotes: [],
-      currentQuote: 0,
+      currentQuote: 0
     };
   }
 
@@ -33,14 +33,14 @@ class Slides extends React.Component {
     // quotes[this.state.currentQuote].style.opacity = 1;
 
     this.setState({
-      words: words,
+      words: words
       // quotes: quotes,
-    })
+    });
   }
 
   /* Changes the current word to the new word */
-  changeWord = (event) => {
-    var cw = this.state.wordArray[this.state.currentWord];  // Current Word
+  changeWord = event => {
+    var cw = this.state.wordArray[this.state.currentWord]; // Current Word
     var nw = this.state.wordArray[event]; // New Word
     //var cq = this.state.quotes[this.state.currentQuote];
     //var nq = this.state.quotes[event];
@@ -68,25 +68,24 @@ class Slides extends React.Component {
     // nq.style.opacity = 1;
     // this.animateQuoteIn(nq)
 
-
     this.setState({
       currentWord: event,
-      currentQuote: event,
-    })
-  }
+      currentQuote: event
+    });
+  };
 
   /* Animates each letter of the current word out */
   animateLetterOut(cw, i) {
-    setTimeout(function () {
+    setTimeout(function() {
       cw[i].className = 'letter out';
     }, i * 50);
   }
 
   /* Animates each letter of the new word in */
   animateLetterIn(nw, i) {
-    setTimeout(function () {
+    setTimeout(function() {
       nw[i].className = 'letter in';
-    }, 340 + (i * 50));
+    }, 340 + i * 50);
   }
 
   /* Splits the letters of the word and adds them to an array */
@@ -102,10 +101,7 @@ class Slides extends React.Component {
       letters.push(letter);
     }
 
-    this
-      .state
-      .wordArray
-      .push(letters);
+    this.state.wordArray.push(letters);
   }
 
   animateQuoteOut(cq) {
@@ -118,27 +114,16 @@ class Slides extends React.Component {
 
   render() {
     return (
-      <Carousel
-        className="carousel-fade"
-        interval={5000}
-        onSelect={this.changeWord}
-        pauseOnHover={false}>
+      <Carousel className="carousel-fade" interval={5000} onSelect={this.changeWord} pauseOnHover={false}>
         {slideData.map((slide, i) => (
           <Carousel.Item key={i}>
             <div className="landing-gradient">
-              <img
-                className="landing-image"
-                src={isChrome ? slide.xsImage : slide.xsSafari}
-                // eslint-disable-next-line
-                srcSet={isChrome ? (slide.smImage + ' 992w', slide.image + ' 1200w') :
-                  (slide.smSafari + ' 992w', slide.safari + ' 1200w')}
-                alt="Landing"
-              />
+              <img className="landing-image" src={isChrome ? slide.image : slide.safari} alt="Landing" />
             </div>
           </Carousel.Item>
         ))}
       </Carousel>
-    )
+    );
   }
 }
 

@@ -19,7 +19,6 @@ class Landing extends Component {
       <div className="landing">
         <Slides />
         <BrothersAre />
-
         <div className="learn-more" onClick={() => scrollToComp('rush')}>
           Learn More
         </div>
