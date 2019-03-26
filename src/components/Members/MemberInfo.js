@@ -1,5 +1,5 @@
 import './Members.css';
-import { isChrome } from 'shared/helpers.js';
+import { isChrome } from '../../shared/helpers.js';
 
 import React from 'react';
 
