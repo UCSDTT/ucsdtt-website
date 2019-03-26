@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { animateScroll as scroll, scroller } from 'react-scroll';
-import { isChrome } from 'shared/helpers.js';
+import { isChrome } from '../../../shared/helpers.js';
 import './NavBar.css';
 
 /* Underlines the hovered element by adding the underline class */
@@ -141,7 +141,7 @@ class NavBar extends Component {
           <Navbar.Brand onClick={scrollToTop}>
             <img
               className="logo nav-logo"
-              src={isChrome ? require('shared/logo.webp') : require('shared/logo.png')}
+              src={isChrome ? require('../../../shared/logo.webp') : require('../../../shared/logo.png')}
               alt="TT Logo"
             />
           </Navbar.Brand>
@@ -157,7 +157,7 @@ class NavBar extends Component {
               <Nav.Link href="members">Members</Nav.Link>
             </Nav>
             <Navbar.Brand href="http://garnett-app.herokuapp.com">
-              <img className="gem" src={require('shared/garnett.svg')} alt="Garnett Logo" />
+              <img className="gem" src={require('../../../shared/garnett.svg')} alt="Garnett Logo" />
             </Navbar.Brand>
           </Navbar.Collapse>
         </Navbar>

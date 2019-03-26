@@ -26,7 +26,10 @@ export default class Rush extends Component {
       <div className="rush-info">
         <div className="rush-landing-header">
           <a className="rush-logo" role="button" href="/">
-            <Image className="logo" src={isChrome ? require('shared/logo.webp') : require('shared/logo.png')} />
+            <Image
+              className="logo"
+              src={isChrome ? require('../../shared/logo.webp') : require('../../shared/logo.png')}
+            />
           </a>
           Rush Information
         </div>

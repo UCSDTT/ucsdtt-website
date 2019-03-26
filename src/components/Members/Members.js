@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import { isChrome, sort } from 'shared/helpers.js';
+import { isChrome, sort } from '../../shared/helpers.js';
 import { brothers, images, options } from '../../activeData/data.js';
 import { BrotherModal } from './BrotherModal.js';
 import { BrothersList } from './BrothersList.js';
@@ -213,7 +213,7 @@ export default class Members extends Component {
           <a className="brothers-logo" role="button" href="/">
             <img
               className="logo"
-              src={isChrome ? require('shared/logo.webp') : require('shared/logo.png')}
+              src={isChrome ? require('../../shared/logo.webp') : require('../../shared/logo.png')}
               alt="Logo"
             />
           </a>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row } from 'react-bootstrap';
 import { Element } from 'react-scroll';
-import { isChrome } from 'shared/helpers.js';
+import { isChrome } from '../../../shared/helpers.js';
 import './Companies.css';
 import { bigCompanies, smallCompanies } from './data.js';
 
