@@ -1,9 +1,8 @@
-import './Companies.css';
-import { isChrome } from '../../../shared/helpers.js';
-
 import React, { Component } from 'react';
 import { Row } from 'react-bootstrap';
 import { Element } from 'react-scroll';
+import { isChrome } from 'shared/helpers.js';
+import './Companies.css';
 import { bigCompanies, smallCompanies } from './data.js';
 
 class Companies extends Component {
@@ -16,7 +15,7 @@ class Companies extends Component {
           <Row className="companies-row">
             {bigCompanies.map((company, i) => (
               <div className="company-col big-logo" key={i}>
-                <a href={company.href}>
+                <a href={company.href} target="_blank" rel="noopener noreferrer">
                   <img
                     className="lozad company-logo"
                     data-src={isChrome ? company.image : company.safari}
@@ -30,7 +29,7 @@ class Companies extends Component {
           <Row className="companies-row">
             {smallCompanies.map((company, i) => (
               <div className="company-col small-logo" key={i}>
-                <a href={company.href}>
+                <a href={company.href} target="_blank" rel="noopener noreferrer">
                   <img
                     className="lozad company-logo"
                     data-src={isChrome ? company.image : company.safari}

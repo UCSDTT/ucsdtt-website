@@ -30,10 +30,10 @@ class WhyRush extends Component {
             ))}
           </Row>
 
-          <a className="rush-button" href="/rush">
+          {/* <a className="rush-button" href="/rush">
             {' '}
             Inspire Innovation{' '}
-          </a>
+          </a> */}
         </Container>
       </Element>
     );

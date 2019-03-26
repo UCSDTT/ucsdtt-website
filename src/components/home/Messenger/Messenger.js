@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Element } from 'react-scroll';
 import { Flipper } from './Flipper.js';
-import { brothers } from '../../../activeData/data.js';
+import { brothers } from 'activeData/data.js';
 
 class Messenger extends Component {
   constructor(props) {

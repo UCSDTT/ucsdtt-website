@@ -49,14 +49,14 @@
   font-style: italic;
 }
 
-.carousel-inner > .item > .quote-image {
+.quote-image {
   object-fit: cover;
-  height: 500px;
-  width: 900px;
+  height: 800px;
+  width: 800px;
 }
 @media (max-width: 768px) {
-  .carousel-inner > .item > .quote-image {
-    height: 300px;
+  .quote-image {
+    height: 450px;
     width: 450px;
     margin: auto;
   }

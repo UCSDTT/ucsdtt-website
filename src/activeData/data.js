@@ -154,7 +154,6 @@ const brothers = [
     majorName: 'Electrical Engineering',
     year: 'Class of 2017',
     linkedin: 'https://www.linkedin.com/in/bhhuynh/',
-    messenger: 'https://m.me/blake.huynh.1/',
     image: require('./images/brothers/portraits/127_bhuynh.webp'),
     safari: require('./images/brothers/portraits/127_bhuynh.jpg')
   },
@@ -167,7 +166,6 @@ const brothers = [
     majorName: 'Computer Engineering',
     year: 'Class of 2017',
     linkedin: 'www.linkedin.com/in/kaiserkim/',
-    messenger: 'https://m.me/kaiser.b.kim/',
     image: require('./images/brothers/portraits/128_kkim.webp'),
     safari: require('./images/brothers/portraits/128_kkim.jpg')
   },
@@ -294,7 +292,6 @@ const brothers = [
     majorName: 'Bioengineering',
     year: 'Class of 2017',
     linkedin: 'https://www.linkedin.com/in/chelseajan/',
-    messenger: 'https://m.me/chelsea.jan.58/',
     image: require('./images/brothers/portraits/139_cjan.webp'),
     safari: require('./images/brothers/portraits/139_cjan.jpg')
   },
@@ -307,7 +304,6 @@ const brothers = [
     majorName: 'Mechanical Engineering',
     year: 'Class of 2018',
     linkedin: 'https://www.linkedin.com/in/kellieliu/',
-    messenger: 'https://m.me/mingming.liu.5283/',
     image: require('./images/brothers/portraits/140_mliu.webp'),
     safari: require('./images/brothers/portraits/140_mliu.jpg')
   },
@@ -343,7 +339,6 @@ const brothers = [
     majorName: 'Chemical Engineering',
     year: 'Class of 2018',
     linkedin: 'https://www.linkedin.com/in/david-perez-aguilar-01400aba/',
-    messenger: 'https://m.me/daviiid.prz/',
     image: require('./images/brothers/portraits/143_dperez.webp'),
     safari: require('./images/brothers/portraits/143_dperez.jpg')
   },
@@ -380,7 +375,6 @@ const brothers = [
     majorName: 'Environmental Engineering',
     year: 'Class of 2018',
     linkedin: 'https://www.linkedin.com/in/michael-wang-99428147/',
-    messenger: 'https://m.me/swagmasterchewy/',
     image: require('./images/brothers/portraits/146_mwang.webp'),
     safari: require('./images/brothers/portraits/146_mwang.jpg')
   },
@@ -451,7 +445,6 @@ const brothers = [
     majorName: 'Nanoengineering',
     year: 'Class of 2019',
     linkedin: 'https://www.linkedin.com/in/jennie-nguyen-82a78294/',
-    messenger: 'https://m.me/100009619688323/',
     image: require('./images/brothers/portraits/152_ckhandavilli.webp'),
     safari: require('./images/brothers/portraits/152_ckhandavilli.jpg')
   },
@@ -486,7 +479,6 @@ const brothers = [
     majorName: 'Computer Science',
     year: 'Class of 2018',
     linkedin: 'https://www.linkedin.com/in/audreyolson/',
-    messenger: 'https://m.me/audols/',
     image: require('./images/brothers/portraits/156_aolson.webp'),
     safari: require('./images/brothers/portraits/156_aolson.jpg')
   },
@@ -536,7 +528,6 @@ const brothers = [
     majorName: 'Computer Science',
     year: 'Class of 2018',
     linkedin: 'https://www.linkedin.com/in/tylerly/',
-    messenger: 'https://m.me/tylerly96/',
     image: require('./images/brothers/portraits/160_tly.webp'),
     safari: require('./images/brothers/portraits/160_tly.jpg')
   },
@@ -549,7 +540,6 @@ const brothers = [
     majorName: 'Computer Engineering',
     year: 'Class of 2018',
     linkedin: 'https://www.linkedin.com/in/brian-lyu/',
-    messenger: 'https://m.me/brian.lyu1/',
     image: require('./images/brothers/portraits/161_blyu.webp'),
     safari: require('./images/brothers/portraits/161_blyu.jpg')
   },
@@ -567,15 +557,13 @@ const brothers = [
   },
   {
     name: 'Momina Mahmood',
-    position: 'External Events Chair',
-    cabinet: true,
+    position: 'Alumni',
     class: 'xi',
     className: 'Xi Class',
     major: 'chem',
     majorName: 'Chemical Engineering',
     year: 'Class of 2019',
     linkedin: 'https://www.linkedin.com/in/mominamahmood/',
-    messenger: 'https://m.me/momina.mahmood.9/',
     image: require('./images/brothers/portraits/163_mmahmood.webp'),
     safari: require('./images/brothers/portraits/163_mmahmood.jpg')
   },
@@ -588,7 +576,6 @@ const brothers = [
     majorName: 'Environmental Engineering',
     year: 'Class of 2018',
     linkedin: 'https://www.linkedin.com/in/jennie-nguyen-82a78294/',
-    messenger: 'https://m.me/jerbss/',
     image: require('./images/brothers/portraits/164_jnguyen.webp'),
     safari: require('./images/brothers/portraits/164_jnguyen.jpg')
   },
@@ -618,14 +605,13 @@ const brothers = [
   },
   {
     name: 'Sherman Yip',
-    position: 'Active',
+    position: 'Alumni',
     class: 'xi',
     className: 'Xi Class',
     major: 'mech',
     majorName: 'Mechanical Engineering',
     year: 'Class of 2018',
     linkedin: 'https://www.linkedin.com/in/sherman-yip-8a40b47a/',
-    messenger: 'https://m.me/ayyeHOMES/',
     image: require('./images/brothers/portraits/167_syip.webp'),
     safari: require('./images/brothers/portraits/167_syip.jpg')
   },
@@ -687,7 +673,6 @@ const brothers = [
     major: 'chem',
     majorName: 'Chemical Engineering',
     year: 'Class of 2018',
-    linkedin: 'https://www.linkedin.com/in/wonjae-lee-b017b7132/',
     image: require('./images/brothers/portraits/172_wlee.webp'),
     safari: require('./images/brothers/portraits/172_wlee.jpg')
   },
@@ -713,6 +698,7 @@ const brothers = [
     majorName: 'Aerospace Engineering',
     year: 'Class of 2019',
     linkedin: 'https://www.linkedin.com/in/goutham-marimuthu-3393b3120/',
+    messenger: 'https://m.me/goutham.marimuthu/',
     image: require('./images/brothers/portraits/174_gmarimuthu.webp'),
     safari: require('./images/brothers/portraits/174_gmarimuthu.jpg')
   },
@@ -737,6 +723,7 @@ const brothers = [
     majorName: 'Environmental Engineering',
     year: 'Class of 2019',
     linkedin: 'https://www.linkedin.com/in/mayuki-a-sasagawa-a09623103/',
+    messenger: 'https://m.me/myuki.sasagawa/',
     image: require('./images/brothers/portraits/176_msasagawa.webp'),
     safari: require('./images/brothers/portraits/176_msasagawa.jpg')
   },
@@ -773,6 +760,7 @@ const brothers = [
     majorName: 'Bioengineering',
     year: 'Class of 2019',
     linkedin: 'https://www.linkedin.com/in/rachael-sze-nga-wong-9b0100129/',
+    messenger: 'https://m.me/rachaelw096/',
     image: require('./images/brothers/portraits/179_rwong.webp'),
     safari: require('./images/brothers/portraits/179_rwong.jpg')
   },
@@ -806,7 +794,7 @@ const brothers = [
   },
   {
     name: 'Allen Gao',
-    position: 'Rush Chair',
+    position: 'Active',
     cabinet: true,
     class: 'pi',
     className: 'Pi Class',
@@ -826,7 +814,6 @@ const brothers = [
     majorName: 'Computer Science',
     year: 'Class of 2018',
     linkedin: 'https://www.linkedin.com/in/shangwayhsu/',
-    messenger: 'https://m.me/shangway/',
     image: require('./images/brothers/portraits/183_shsu.webp'),
     safari: require('./images/brothers/portraits/183_shsu.jpg')
   },
@@ -871,20 +858,19 @@ const brothers = [
   },
   {
     name: 'Jason Li',
-    position: 'Active',
+    position: 'Alumni',
     class: 'pi',
     className: 'Pi Class',
     major: 'env',
     majorName: 'Environmental Engineering',
     year: 'Class of 2018',
     linkedin: 'https://www.linkedin.com/in/jason-li-7b946746/',
-    messenger: 'https://m.me/jasonjava/',
     image: require('./images/brothers/portraits/187_jli.webp'),
     safari: require('./images/brothers/portraits/187_jli.jpg')
   },
   {
     name: 'Adam Lin',
-    position: 'Historian',
+    position: 'Rush Chair',
     cabinet: true,
     class: 'pi',
     className: 'Pi Class',
@@ -942,7 +928,6 @@ const brothers = [
     majorName: 'Mechanical Engineering',
     year: 'Class of 2018',
     linkedin: 'https://www.linkedin.com/in/john-tayag-325a05133/',
-    messenger: 'https://m.me/Jaunty.JohnT/',
     image: require('./images/brothers/portraits/192_jtayag.webp'),
     safari: require('./images/brothers/portraits/192_jtayag.jpg')
   },
@@ -955,13 +940,14 @@ const brothers = [
     major: 'cs',
     majorName: 'Computer Science - Bioinformatics',
     year: 'Class of 2020',
+    messenger: 'https://m.me/stephanie.zhu.31/',
     image: require('./images/brothers/portraits/193_szhu.webp'),
     safari: require('./images/brothers/portraits/193_szhu.jpg')
   },
   //Rho
   {
     name: 'Sydney Huynh',
-    position: 'Academics Chair',
+    position: 'Rush Chair',
     cabinet: true,
     class: 'rho',
     className: 'Rho Class',
@@ -1042,7 +1028,7 @@ const brothers = [
   },
   {
     name: 'Jerry Qing',
-    position: 'Rush Chair',
+    position: 'Active',
     cabinet: true,
     class: 'rho',
     className: 'Rho Class',
@@ -1073,6 +1059,7 @@ const brothers = [
     major: 'cs',
     majorName: 'Computer Science',
     year: 'Class of 2020',
+    messenger: 'https://m.me/erick.wilson.526/',
     image: require('./images/brothers/portraits/203_ewilson.webp'),
     safari: require('./images/brothers/portraits/203_ewilson.jpg')
   },
@@ -1134,7 +1121,7 @@ const brothers = [
   },
   {
     name: 'Sho Kondo',
-    position: 'Active',
+    position: 'Academics',
     class: 'sigma',
     className: 'Sigma Class',
     major: 'mech',
@@ -1231,7 +1218,7 @@ const brothers = [
     year: 'Class of 2020',
     image: require('./images/brothers/portraits/216_jwei.webp'),
     safari: require('./images/brothers/portraits/216_jwei.jpg')
-  },
+  }
 ];
 
 /* Deprecated */
@@ -1330,10 +1317,7 @@ const options = {
     { value: 'class', label: 'Class' },
     { value: 'major', label: 'Major' }
   ],
-  active: [
-    { value: 'eboard', label: 'Executive Board' },
-    { value: 'cabinet', label: 'Cabinet' }
-  ],
+  active: [{ value: 'eboard', label: 'Executive Board' }, { value: 'cabinet', label: 'Cabinet' }],
   major: [
     {
       value: 'aero',
