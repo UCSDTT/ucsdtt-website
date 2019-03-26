@@ -7,7 +7,7 @@ View available commands [here](https://github.com/facebook/create-react-app/blob
 
 ## Website
 
-www.ucsdthetatau.org
+https://www.ucsdthetatau.org
 
 ## Developer Extensions
 
@@ -28,4 +28,5 @@ It is recommended that you set `"editor.formatOnSave": true` (VSCode) so that Pr
 
 ### Convert Images to .webp
 
-`npm run webp` - Convert .png and .jpg images inside ./img (create yourself) to .webp.
+Navigate to `tools/webp_converter` and run `node webp.js` to convert all .png and .jpg images inside the
+`tools/webp_converter/img` folder (create yourself) to .webp images.

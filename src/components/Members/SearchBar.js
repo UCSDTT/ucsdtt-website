@@ -1,4 +1,4 @@
-import './MemberPage.css';
+import './Members.css';
 
 import React from 'react';
 import { FormGroup, FormControl } from 'react-bootstrap';

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Carousel, Col, Row } from 'react-bootstrap';
-import { isChrome } from '../../helpers/helpers.js';
+import { isChrome } from '../../shared/helpers.js';
 import { carouselData } from './data.js';
-import './RushInfo.css';
+import './Rush.css';
 
 const activeList = carouselData.sort(() => 0.5 - Math.random());
 

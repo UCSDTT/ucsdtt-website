@@ -1,4 +1,4 @@
-import './MemberPage.css';
+import './Members.css';
 
 import { Col } from 'react-bootstrap';
 import React from 'react';

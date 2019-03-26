@@ -1,14 +1,13 @@
-import './MemberPage.css';
-import { isChrome, sort } from '../../helpers/helpers.js';
-import { brothers, options, images } from '../../activeData/data.js';
-
 import React, { Component } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import { BrothersList } from './BrothersList.js';
+import { isChrome, sort } from 'shared/helpers.js';
+import { brothers, images, options } from '../../activeData/data.js';
 import { BrotherModal } from './BrotherModal.js';
+import { BrothersList } from './BrothersList.js';
+import './Members.css';
 import { SearchBar } from './SearchBar.js';
 
-export default class MemberPage extends Component {
+export default class Members extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -214,11 +213,7 @@ export default class MemberPage extends Component {
           <a className="brothers-logo" role="button" href="/">
             <img
               className="logo"
-              src={
-                isChrome
-                  ? require('../../components/home/NavBar/images/logo.webp')
-                  : require('../../components/home/NavBar/images/logo.png')
-              }
+              src={isChrome ? require('shared/logo.webp') : require('shared/logo.png')}
               alt="Logo"
             />
           </a>

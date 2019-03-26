@@ -3,10 +3,10 @@ import './index.css';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import App from './App/App';
-import Home from './containers/Home';
-import MemberPage from './containers/MemberPage/MemberPage';
-import RushInfo from './containers/RushInfo/RushInfo';
+import App from 'components/App';
+import Home from 'components/Home/Home';
+import Members from 'components/Members/Members';
+import Rush from 'components/Rush/Rush';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -14,9 +14,8 @@ ReactDOM.render(
   <BrowserRouter>
     <App>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/rush" component={RushInfo} />
-        <Route exact path="/members" component={MemberPage} />
+        <Route exact path="/rush" component={Rush} />
+        <Route exact path="/members" component={Members} />
         <Route path="*" component={Home} />
       </Switch>
     </App>

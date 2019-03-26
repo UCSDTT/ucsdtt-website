@@ -1,5 +1,5 @@
 import './AboutUs.css';
-import { isChrome } from '../../../helpers/helpers.js';
+import { isChrome } from '../../../shared/helpers.js';
 
 import React from 'react';
 
@@ -27,8 +27,7 @@ class Scroll extends React.Component {
     if (style.sheet) {
       if (style.sheet.insertRule) style.sheet.insertRule(`${selector} {${rule}}`, 0);
       else style.sheet.addRule(selector, rule);
-    }
-    else if (style.styleSheet) style.styleSheet.addRule(selector, rule);
+    } else if (style.styleSheet) style.styleSheet.addRule(selector, rule);
 
     // Each articulation panel consists of three DOM elements
     //  - a grandparent for 3d positioning
@@ -38,17 +37,17 @@ class Scroll extends React.Component {
       var panelNode = document.createElement('div');
       var panelCutoutNode = document.createElement('div');
       var panelContentNode = document.createElement('div');
-        
+
       panelNode.classList.add('panel-node');
-      
+
       panelCutoutNode.classList.add('panel-cutout');
-      
+
       panelContentNode.innerHTML = html;
       panelContentNode.classList.add('panel-content');
-      
+
       panelCutoutNode.appendChild(panelContentNode);
       panelNode.appendChild(panelCutoutNode);
-      
+
       return panelNode;
     }
 
@@ -64,7 +63,7 @@ class Scroll extends React.Component {
       }
     }
 
-    function transYrotX(y,x) {
+    function transYrotX(y, x) {
       return `translate3d(0,${y}px,0) rotateX(${x}rad)`;
     }
 
@@ -79,9 +78,9 @@ class Scroll extends React.Component {
       var bottomParent = el.parentNode;
 
       var html = el.innerHTML;
-      
+
       var totalTheta = 0;
-      
+
       for (var i = 0; i < num; i++) {
         var topPanel = panel(html);
         var bottomPanel = panel(html);
@@ -90,7 +89,7 @@ class Scroll extends React.Component {
         bottomPanel.style.height = `${panelHeight}px`;
         topPanel.style.transformOrigin = '50% 100% 0';
         bottomPanel.style.transformOrigin = '50% 0% 0';
-        
+
         var topPanelContent = topPanel.querySelector('.panel-content');
         var bottomPanelContent = bottomPanel.querySelector('.panel-content');
 
@@ -98,8 +97,7 @@ class Scroll extends React.Component {
           topPanel.style.transform = transYrotX(-panelHeight, 0);
           bottomPanel.style.top = '100%';
           bottomPanel.style.transform = transYrotX(0, 0);
-        }
-        else {
+        } else {
           topPanel.style.transform = transYrotX(-panelHeight + 0.25, angle);
           bottomPanel.style.transform = transYrotX(panelHeight - 0.25, angle);
 
@@ -138,7 +136,7 @@ class Scroll extends React.Component {
 
       el.onscroll = update;
       window.onresize = update;
-      
+
       // setInterval(function() {el.scrollTop++}, 32)
     }
 
@@ -152,48 +150,50 @@ class Scroll extends React.Component {
     var $ = document.querySelector.bind(document);
     createScrollOverlay($('#content'), 20, num, theta);
   }
-  
+
   render() {
     return (
       <div id="container">
         <div id="content">
           <h1 className="scroll-title big">The Founding</h1>
-          <h1 className="scroll-title small">of</h1> 
+          <h1 className="scroll-title small">of</h1>
           <h1 className="scroll-title big">Epsilon Delta Chapter</h1>
           <p>
-            <span id="lorem">I</span>n the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity arose for them to change that.
+            <span id="lorem">I</span>n the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt
+            that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity
+            arose for them to change that.
           </p>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            With the help of a Theta Tau alumnus, 
-            <span className="founder"> Jennifer Young</span>, thirteen founding fathers <img className="lozad scroll-crest" data-src={isChrome ? (require('./images/crest.webp')) : (require('./images/crest.png'))} alt="Crest" />
-            took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: 
-            <span className="founder"> Ashay Verma</span>, 
-            <span className="founder"> Errynne Bell</span>, 
-            <span className="founder"> Takahiro Kuwayama</span>, 
-            <span className="founder"> Amelia Chu</span>, 
-            <span className="founder"> Xiumei Wu</span>, 
-            <span className="founder"> Chris Lam</span>, 
-            <span className="founder"> Chuong Do</span>, 
-            <span className="founder"> Joe Shao</span>, 
-            <span className="founder"> Michelle Mojica</span>, 
-            <span className="founder"> Tanakorn Best Techajongchareon</span>, 
-            <span className="founder"> Scott Louie</span>, 
-            <span className="founder"> Alan Leung</span>, and 
+            &nbsp;&nbsp;&nbsp;&nbsp; With the help of a Theta Tau alumnus,
+            <span className="founder"> Jennifer Young</span>, thirteen founding fathers{' '}
+            <img
+              className="lozad scroll-crest"
+              data-src={isChrome ? require('./images/crest.webp') : require('./images/crest.png')}
+              alt="Crest"
+            />
+            took the first step towards establishing a chapter of the nation's oldest and largest professional
+            engineering fraternity on the UCSD campus:
+            <span className="founder"> Ashay Verma</span>,<span className="founder"> Errynne Bell</span>,
+            <span className="founder"> Takahiro Kuwayama</span>,<span className="founder"> Amelia Chu</span>,
+            <span className="founder"> Xiumei Wu</span>,<span className="founder"> Chris Lam</span>,
+            <span className="founder"> Chuong Do</span>,<span className="founder"> Joe Shao</span>,
+            <span className="founder"> Michelle Mojica</span>,
+            <span className="founder"> Tanakorn Best Techajongchareon</span>,
+            <span className="founder"> Scott Louie</span>,<span className="founder"> Alan Leung</span>, and
             <span className="founder"> John Phu Nguyen</span>.
           </p>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.                   
+            &nbsp;&nbsp;&nbsp;&nbsp; On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta
+            Tau.
           </p>
-          <img 
+          <img
             className="founders"
-            src={isChrome ? (require('./images/founders.webp')) : (require('./images/founders.jpg'))} 
+            src={isChrome ? require('./images/founders.webp') : require('./images/founders.jpg')}
             alt="Founders"
           />
         </div>
       </div>
-    )
+    );
   }
 }
 
@@ -202,39 +202,35 @@ class MobileOrigins extends React.Component {
     return (
       <div className="mobile-origins">
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          In the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity arose for them to change that.
+          &nbsp;&nbsp;&nbsp;&nbsp; In the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt
+          that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity
+          arose for them to change that.
         </p>
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          With the help of a Theta Tau alumnus, 
-          <span className="founder"> Jennifer Young</span>, thirteen founding fathers took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: 
-          <span className="founder"> Ashay Verma</span>, 
-          <span className="founder"> Errynne Bell</span>, 
-          <span className="founder"> Takahiro Kuwayama</span>, 
-          <span className="founder"> Amelia Chu</span>, 
-          <span className="founder"> Xiumei Wu</span>, 
-          <span className="founder"> Chris Lam</span>, 
-          <span className="founder"> Chuong Do</span>, 
-          <span className="founder"> Joe Shao</span>, 
-          <span className="founder"> Michelle Mojica</span>, 
-          <span className="founder"> Tanakorn Best Techajongchareon</span>, 
-          <span className="founder"> Scott Louie</span>, 
-          <span className="founder"> Alan Leung</span>, and 
+          &nbsp;&nbsp;&nbsp;&nbsp; With the help of a Theta Tau alumnus,
+          <span className="founder"> Jennifer Young</span>, thirteen founding fathers took the first step towards
+          establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD
+          campus:
+          <span className="founder"> Ashay Verma</span>,<span className="founder"> Errynne Bell</span>,
+          <span className="founder"> Takahiro Kuwayama</span>,<span className="founder"> Amelia Chu</span>,
+          <span className="founder"> Xiumei Wu</span>,<span className="founder"> Chris Lam</span>,
+          <span className="founder"> Chuong Do</span>,<span className="founder"> Joe Shao</span>,
+          <span className="founder"> Michelle Mojica</span>,
+          <span className="founder"> Tanakorn Best Techajongchareon</span>,<span className="founder"> Scott Louie</span>
+          ,<span className="founder"> Alan Leung</span>, and
           <span className="founder"> John Phu Nguyen</span>.
         </p>
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.
+          &nbsp;&nbsp;&nbsp;&nbsp; On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.
         </p>
-        <img 
+        <img
           className="lozad founders"
-          data-src={isChrome ? (require('./images/founders.webp')) : (require('./images/founders.jpg'))} 
+          data-src={isChrome ? require('./images/founders.webp') : require('./images/founders.jpg')}
           alt="Founders"
         />
       </div>
-    )
+    );
   }
 }
 
-export { Scroll, MobileOrigins }
+export { Scroll, MobileOrigins };

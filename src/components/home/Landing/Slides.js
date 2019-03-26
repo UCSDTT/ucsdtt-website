@@ -1,5 +1,5 @@
 import './Landing.css';
-import { isChrome } from '../../../helpers/helpers.js';
+import { isChrome } from '../../../shared/helpers.js';
 
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
