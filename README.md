@@ -2,12 +2,10 @@
 
 The Official Website of Theta Tau @ UCSD.
 
+https://www.ucsdthetatau.org
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 View available commands [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md).
-
-## Website
-
-https://www.ucsdthetatau.org
 
 ## Developer Extensions
 
@@ -28,5 +26,7 @@ It is recommended that you set `"editor.formatOnSave": true` (VSCode) so that Pr
 
 ### Convert Images to .webp
 
-Navigate to `tools/webp_converter` and run `node webp.js` to convert all .png and .jpg images inside the
-`tools/webp_converter/img` folder (create yourself) to .webp images.
+1. Navigate to `tools`.
+2. Create directory `img`.
+3. Place `.png` and `.jpg` images inside `tools/img`.
+4. Run `node webp.js` to generate a `.webp` image for all images inside `tools/img`.
