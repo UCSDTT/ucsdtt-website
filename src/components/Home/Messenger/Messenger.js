@@ -3,6 +3,7 @@ import './Messenger.css';
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Element } from 'react-scroll';
+import styled from 'styled-components';
 import { Flipper } from './Flipper.js';
 import { brothers } from '../../../activeData/data.js';
 
@@ -100,13 +101,17 @@ class Messenger extends Component {
               <h1 className="title">Get to Know Us!</h1>
             </Col>
           </Row>
-          <Row>
+          <FlipperContainer>
             {this.state.actives.map((active, i) => (
-              <Col md={12} lg={4} key={i}>
-                <Flipper flipped={this.state.flipped} frontActive={active.front} backActive={active.back} index={i} />
-              </Col>
+              <Flipper
+                flipped={this.state.flipped}
+                frontActive={active.front}
+                backActive={active.back}
+                index={i}
+                key={i}
+              />
             ))}
-          </Row>
+          </FlipperContainer>
           <Row>
             <Col className="d-flex justify-content-center" md={12} lg>
               <a className="messenger-actions shuffle-button" href="#null" onClick={this.flip}>
@@ -126,3 +131,12 @@ class Messenger extends Component {
 }
 
 export { Messenger };
+
+const FlipperContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 334px);
+  grid-gap: 30px;
+  justify-content: center;
+  justify-items: center;
+  margin: 30px auto;
+`;
