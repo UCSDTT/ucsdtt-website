@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import { Gears } from './Gears.js';
 import { Scroll, MobileOrigins } from './Origins.js';
 import { Pillar } from './Pillar.js';
+import { Grid } from '../../../shared/components';
 import { gearPosition, pillarData } from './data.js';
 
 class AboutUs extends Component {
@@ -32,11 +33,11 @@ class AboutUs extends Component {
           </Row>
           <Row>
             <Header>The Three Pillars</Header>
-            <PillarContainer>
-            {pillarData.map((pillar, i) => (
-              <Pillar pillar={pillar} key={i} />
-            ))}
-            </PillarContainer>
+            <Grid cw={320} gap={30} w={1} justify>
+              {pillarData.map((pillar, i) => (
+                <Pillar pillar={pillar} key={i} />
+              ))}
+            </Grid>
           </Row>
         </Container>
       </Section>
@@ -58,13 +59,5 @@ const Header = styled.h1`
   font-size: 40px;
   color: var(--secondary-color);
   margin-bottom: 40px;
-  width: 100%;
-`;
-
-const PillarContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 320px);
-  grid-gap: 30px;
-  justify-content: center;
   width: 100%;
 `;

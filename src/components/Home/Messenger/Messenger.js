@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Element } from 'react-scroll';
 import styled from 'styled-components';
 import { Flipper } from './Flipper.js';
+import { Grid } from '../../../shared/components';
 import { brothers } from '../../../activeData/data.js';
 
 class Messenger extends Component {
@@ -101,7 +102,7 @@ class Messenger extends Component {
               <h1 className="title">Get to Know Us!</h1>
             </Col>
           </Row>
-          <FlipperContainer>
+          <FlipperContainer cw={334} gap={30} justify>
             {this.state.actives.map((active, i) => (
               <Flipper
                 flipped={this.state.flipped}
@@ -132,11 +133,6 @@ class Messenger extends Component {
 
 export { Messenger };
 
-const FlipperContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 334px);
-  grid-gap: 30px;
-  justify-content: center;
-  justify-items: center;
+const FlipperContainer = styled(Grid)`
   margin: 30px auto;
 `;
