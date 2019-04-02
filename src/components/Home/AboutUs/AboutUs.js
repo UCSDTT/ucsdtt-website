@@ -6,7 +6,7 @@ import { Element } from 'react-scroll';
 import styled from 'styled-components';
 import { Gears } from './Gears.js';
 import { Scroll, MobileOrigins } from './Origins.js';
-import { Pillars } from './Pillars.js';
+import { Pillar } from './Pillar.js';
 import { gearPosition, pillarData } from './data.js';
 
 class AboutUs extends Component {
@@ -32,11 +32,11 @@ class AboutUs extends Component {
           </Row>
           <Row>
             <Header>The Three Pillars</Header>
+            <PillarContainer>
             {pillarData.map((pillar, i) => (
-              <PillarContainer key={i}>
-                <Pillars pillar={pillar} index={i} />
-              </PillarContainer>
+              <Pillar pillar={pillar} key={i} />
             ))}
+            </PillarContainer>
           </Row>
         </Container>
       </Section>
@@ -61,8 +61,10 @@ const Header = styled.h1`
   width: 100%;
 `;
 
-const PillarContainer = styled(props =>
-  <Col md={4} {...props} />
-)`
-  margin-bottom: 50px;
+const PillarContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-gap: 30px;
+  justify-content: center;
+  width: 100%;
 `;

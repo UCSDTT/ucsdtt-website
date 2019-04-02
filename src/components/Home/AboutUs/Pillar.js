@@ -4,7 +4,7 @@ import { isChrome } from '../../../shared/helpers.js';
 import React from 'react';
 import styled from 'styled-components';
 
-class Pillars extends React.Component {
+class Pillar extends React.Component {
   state = { zoom: false }
 
   showInfo = () => {
@@ -46,7 +46,7 @@ class Pillars extends React.Component {
   }
 }
 
-export { Pillars };
+export { Pillar };
 
 const ImageContainer = styled.div`
   position: relative;
