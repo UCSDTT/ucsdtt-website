@@ -3,10 +3,5 @@
   "routes": {
     "/**": "index.html"
   },
-  "https_only": true,
-  "headers": {
-    "/**": {
-      "Strict-Transport-Security": "max-age=31557600"
-    }
-  }
+  "https_only": true
 }
