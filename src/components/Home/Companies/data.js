@@ -1,4 +1,4 @@
-const bigCompanies = [
+const largeCompanies = [
   {
     href: 'https://www.facebook.com',
     image: require('./images/facebook.webp'),
@@ -134,4 +134,4 @@ const smallCompanies = [
   }
 ];
 
-export { bigCompanies, smallCompanies };
+export { largeCompanies, smallCompanies };

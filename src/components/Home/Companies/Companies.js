@@ -1,48 +1,106 @@
 import React, { Component } from 'react';
-import { Row } from 'react-bootstrap';
 import { Element } from 'react-scroll';
+import styled from 'styled-components';
 import { isChrome } from '../../../shared/helpers.js';
-import './Companies.css';
-import { bigCompanies, smallCompanies } from './data.js';
+import { largeCompanies, smallCompanies } from './data.js';
 
 class Companies extends Component {
   render() {
     return (
-      <Element name="companies" className="element companies">
+      <Section name="companies" className="element companies">
         <h1 className="title">Our Alumni Network </h1>
 
-        <div className="companies-container">
-          <Row className="companies-row">
-            {bigCompanies.map((company, i) => (
-              <div className="company-col big-logo" key={i}>
+        <Container>
+          <LargeCompanies>
+            {largeCompanies.map((company, i) => (
+              <LargeCompany key={i}>
                 <a href={company.href} target="_blank" rel="noopener noreferrer">
-                  <img
-                    className="lozad company-logo"
+                  <CompanyImage
+                    className="lozad"
                     data-src={isChrome ? company.image : company.safari}
                     href={company}
-                    alt="Big Company"
+                    alt="Large Company"
                   />
                 </a>
-              </div>
+              </LargeCompany>
             ))}
-          </Row>
-          <Row className="companies-row">
+          </LargeCompanies>
+          <SmallCompanies>
             {smallCompanies.map((company, i) => (
-              <div className="company-col small-logo" key={i}>
+              <SmallCompany key={i}>
                 <a href={company.href} target="_blank" rel="noopener noreferrer">
-                  <img
-                    className="lozad company-logo"
+                  <CompanyImage
+                    className="lozad"
                     data-src={isChrome ? company.image : company.safari}
                     alt="Small Company"
                   />
                 </a>
-              </div>
+              </SmallCompany>
             ))}
-          </Row>
-        </div>
-      </Element>
+          </SmallCompanies>
+        </Container>
+      </Section>
     );
   }
 }
 
 export { Companies };
+
+const Section = styled(Element)`
+  padding-left: 10%;
+  padding-right: 10%;
+`;
+
+const Container = styled.div`
+  max-width: 850px;
+  margin: 0 auto;
+`;
+
+const LargeCompanies = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  max-width: 880px;
+  margin: 20px 0 50px;
+`;
+
+const SmallCompanies = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 120px);
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  max-width: 880px;
+`;
+
+const LargeCompany = styled.div`
+  width: 320px;
+
+  @media(max-width: 992px) {
+    width: 300px;
+  }
+  @media(max-width: 768px) {
+    width: 220px;
+  }
+`;
+
+const SmallCompany = styled.div`
+  width: 120px;
+
+  @media(max-width: 992px) {
+    width: 110px;
+  }
+  @media(max-width: 768px) {
+    width: 100px;
+  }
+`;
+
+const CompanyImage = styled.img`
+  width: 100%;
+`;
