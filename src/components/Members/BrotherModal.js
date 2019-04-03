@@ -6,41 +6,31 @@ import { isChrome } from '../../shared/helpers.js';
 import './Members.css';
 
 function BrotherModal({ show, close, brother }) {
-  const {
-    name,
-    image,
-    safari,
-    position,
-    className,
-    majorName,
-    year,
-    linkedin
-  } = brother;
   return (
     <Modal show={show} onHide={close}>
       <Modal.Header>
-        <Modal.Title>{ name }</Modal.Title>
+        <Modal.Title>{ brother.name }</Modal.Title>
         <img
           className="lozad modal-image-mobile"
-          src={isChrome ? image : safari}
+          src={isChrome ? brother.image : brother.safari}
           alt="Active"
         />
       </Modal.Header>
       <Modal.Body>
         <img
           className="lozad modal-image"
-          src={isChrome ? image : safari}
+          src={isChrome ? brother.image : brother.safari}
           alt="Active"
         />
         <BrotherInfo>
           <Title>Position</Title>
-          <Info>{ position } </Info>
+          <Info>{ brother.position }</Info>
           <Title>Class</Title>
-          <Info>{ className } </Info>
+          <Info>{ brother.className }</Info>
           <Title>Major</Title>
-          <Info>{ majorName } </Info>
+          <Info>{ brother.majorName }</Info>
           <Title>Year</Title>
-          <Info>{ year } </Info>
+          <Info>{ brother.year }</Info>
         </BrotherInfo>
       </Modal.Body>
       <Modal.Footer className="modal-footer">
@@ -49,7 +39,7 @@ function BrotherModal({ show, close, brother }) {
             Close
           </div>
         </div>
-        <a className="linkedin-footer" href={linkedin} target="_blank" rel="noopener noreferrer">
+        <a className="linkedin-footer" href={brother.linkedin} target="_blank" rel="noopener noreferrer">
           <FaLinkedin size="1.5em" />
           &nbsp;Connect
         </a>

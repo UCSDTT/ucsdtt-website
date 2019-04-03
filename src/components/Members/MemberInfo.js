@@ -3,24 +3,22 @@ import { isChrome } from '../../shared/helpers.js';
 
 import React from 'react';
 
-class MemberInfo extends React.Component {
-  render() {
-    return (
-      <div className="brother-info">
-        <div className="brother-image-container">
-          <img
-            className="brother-image"
-            src={isChrome ? this.props.brother.image : this.props.brother.safari}
-            onClick={() => this.props.open(this.props.brother)}
-            alt="Active"
-          />
-        </div>
-        <h4> {this.props.brother.name} </h4>
-        <p> {this.props.brother.position} </p>
-        <p> {this.props.brother.className} </p>
+function MemberInfo({ brother, open }) {
+  return (
+    <div className="brother-info">
+      <div className="brother-image-container">
+        <img
+          className="brother-image"
+          src={isChrome ? brother.image : brother.safari}
+          onClick={() => open(brother)}
+          alt="Active"
+        />
       </div>
-    );
-  }
+      <h4>{ brother.name }</h4>
+      <p>{ brother.position }</p>
+      <p>{ brother.className }</p>
+    </div>
+  );
 }
 
 export { MemberInfo };
