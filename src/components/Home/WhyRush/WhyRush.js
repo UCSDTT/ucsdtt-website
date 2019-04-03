@@ -18,12 +18,12 @@ class WhyRush extends Component {
             {stepData.map((step, i) => (
               <Col className={`${step.position}`} sm={12} lg={3} key={i}>
                 <div className={`rush-steps ${step.position}`}>
-                  {step.icon === 'FaComments' ? <FaComments size="2em" className="rush-step-icon" /> : null}
-                  {step.icon === 'FaUsers' ? <FaUsers size="2em" className="rush-step-icon" /> : null}
-                  {step.icon === 'FaEnvelope' ? <FaEnvelope size="2em" className="rush-step-icon" /> : null}
-                  {step.icon === 'FaCheckCircle' ? <FaCheckCircle size="2em" className="rush-step-icon" /> : null}
-                  <span className="step-title"> {step.title} </span>
-                  <span className="step-description"> {step.description} </span>
+                  { step.icon === 'FaComments' && <FaComments size="2em" className="rush-step-icon" /> }
+                  { step.icon === 'FaUsers' && <FaUsers size="2em" className="rush-step-icon" /> }
+                  { step.icon === 'FaEnvelope' && <FaEnvelope size="2em" className="rush-step-icon" /> }
+                  { step.icon === 'FaCheckCircle' && <FaCheckCircle size="2em" className="rush-step-icon" /> }
+                  <span className="step-title">{ step.title }</span>
+                  <span className="step-description">{ step.description }</span>
                 </div>
                 <div className={`step-triangle ${step.position}`} />
               </Col>

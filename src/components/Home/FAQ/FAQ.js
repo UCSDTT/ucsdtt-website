@@ -54,15 +54,16 @@ const Column = styled.div`
 const Card = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 370px;
+  max-width: 500px;
   background-color: #fff;
-  padding: 10px 0;
+  padding: 20px;
   margin: 15px auto;
   border: none;
   border-radius: 0.25rem;
   text-align: left;
 
   @media(max-width: 992px) {
+    max-width: 370px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -73,13 +74,11 @@ const FaqTitle = styled.h4`
   font-weight: 700;
   font-size: 24px;
   color: var(--secondary-color);
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 0 10px;
 `;
 
 const FaqBody = styled.p`
   font-size: 18px;
   color: var(--secondary-light);
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0;
 `;

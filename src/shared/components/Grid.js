@@ -2,11 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 export const Grid = styled(({
+  autofit,
   cw,
   gap,
   cg,
   rg,
   justify,
+  justifyCenter,
   align,
   w,
   maxWidth,
@@ -17,8 +19,8 @@ export const Grid = styled(({
 }) => <div {...rest} />)`
   display: grid;
 
-  ${props => props.cw && `
-    grid-template-columns: repeat(auto-fill, ${props.cw}px);
+  ${({ cw, autofit }) => cw && `
+    grid-template-columns: repeat(${autofit ? 'auto-fit' : 'auto-fill'}, ${cw}px);
   `}
 
   ${props => props.gap && `
@@ -36,6 +38,10 @@ export const Grid = styled(({
   ${props => props.justify && `
     justify-content: center;
     justify-items: center;
+  `}
+
+  ${props => props.justifyCenter && `
+    justify-content: center;
   `}
 
   ${props => props.align && `

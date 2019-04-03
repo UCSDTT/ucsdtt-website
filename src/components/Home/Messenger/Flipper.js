@@ -1,25 +1,35 @@
-import './Messenger.css';
-
 import React from 'react';
+import styled from 'styled-components';
 import { Front, Back } from './Panels.js';
 import { ActiveInfo } from './ActiveInfo.js';
 
 /* Flipper component that consists of a front and back panel */
-class Flipper extends React.Component {
-  render() {
-    return (
-      <div className={`messenger-card-${this.props.index}`}>
-        <div className={'flipper' + (this.props.flipped ? ' flipped' : '')}>
-          <Front>
-            <ActiveInfo active={this.props.frontActive} />
-          </Front>
-          <Back>
-            <ActiveInfo active={this.props.backActive} />
-          </Back>
-        </div>
-      </div>
-    );
-  }
+function Flipper({ index, flipped, frontActive, backActive }) {
+  return (
+    <Card index={index}>
+      <FlipperContainer>
+        <Front index={index} flipped={flipped}>
+          <ActiveInfo active={frontActive} />
+        </Front>
+        <Back index={index} flipped={flipped}>
+          <ActiveInfo active={backActive} />
+        </Back>
+      </FlipperContainer>
+    </Card>
+  );
 }
 
 export { Flipper };
+
+const Card = styled.div`
+  width: 100%;
+  height: 463px;
+`;
+
+const FlipperContainer = styled.div`
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+`;
