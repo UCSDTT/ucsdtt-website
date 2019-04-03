@@ -54,7 +54,7 @@ const Section = styled(Element)`
 
 const Container = styled.div`
   max-width: 850px;
-  margin: 0 auto;
+  margin: 60px auto 0;
 `;
 
 const LargeCompanies = styled(Grid)`

@@ -1,45 +1,4 @@
-.footer {
-  background-color: var(--primary-color);
-}
-
-.footer-padding {
-  padding-bottom: 20px;
-}
-
 .widget {
   color: white;
   font-size: 12px;
-}
-
-.widget-header {
-  font-size: 20px;
-  border-bottom: 1px dotted white;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.media-icon {
-  color: #fff;
-  font-size: 3em;
-  margin: 0 20px;
-  transition: color 0.3s, background-color 0.3s;
-}
-
-.footer p {
-  font-size: 15px;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer ul {
-  font-size: 15px;
-}
-
-.footer-links {
-  color: var(--accent-color);
-}
-
-.footer-contact {
-  cursor: pointer;
 }
