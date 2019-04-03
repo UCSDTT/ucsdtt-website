@@ -46,7 +46,7 @@ class BrothersList extends React.Component {
     /* Displays labels if the first dropdown value is major or class */
     if (this.props.dropdownValue === 'major' || this.props.dropdownValue === 'class') {
       return (
-        <div style={{ width: 100 + '%' }}>
+        <div>
           {options.map((option, i) => {
             if (this.renderFilteredList(option) !== false) {
               return (
@@ -79,7 +79,7 @@ class BrothersList extends React.Component {
       );
     } else {
       return (
-        <Row style={{ width: 100 + '%' }}>
+        <Row>
           {this.props.updatedBrothers.map((brother, i) => (
             <Col xs={6} sm={3} className="brother-info col-md-5th" key={i}>
               <MemberInfo brother={brother} open={this.props.open} />

@@ -197,18 +197,6 @@
   margin-bottom: 20px;
   padding: 0;
 }
-@media (max-width: 768px) {
-  .brother-info {
-    width: 33.33%;
-  }
-}
-@media (max-width: 539px) {
-  .brother-info {
-    display: inline-block;
-    width: 50%;
-    float: none;
-  }
-}
 
 .brother-info h4,
 .brother-info p {
@@ -350,6 +338,7 @@
   }
 }
 .modal-title {
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
@@ -372,7 +361,7 @@
   .modal-image-mobile {
     display: block;
     object-fit: cover;
-    height: 120px;
+    min-height: 120px;
     width: 120px;
     margin: auto;
     margin-top: 20px;

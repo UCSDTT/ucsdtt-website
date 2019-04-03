@@ -70,7 +70,7 @@ const Title = styled.h2`
   font-size: 30px;
   color: var(--secondary-color);
 
-  @media (max-width: 410px) {
+  @media (max-width: 539px) {
     font-size: 20px;
     margin: 0 0 5px;
   }
@@ -80,7 +80,7 @@ const Info = styled.p`
   color: #666;
   font-size: 20px;
 
-  @media (max-width: 410px) {
+  @media (max-width: 539px) {
     font-size: 16px;
   }
 `;

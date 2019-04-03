@@ -115,6 +115,10 @@ export { Messenger };
 const Section = styled(Element)`
   position: relative;
   background-color: #fafafa;
+
+  & button {
+    transition: background-color 0.2s ease-in-out;
+  }
 `;
 
 const FlipperContainer = styled(Grid)`
