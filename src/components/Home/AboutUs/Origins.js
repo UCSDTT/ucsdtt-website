@@ -1,7 +1,8 @@
 import './AboutUs.css';
-import { isChrome } from '../../../shared/helpers.js';
+import { isChrome, isMobile } from '../../../shared/helpers.js';
 
-import React from 'react';
+import React, { Fragment } from 'react';
+import styled from 'styled-components';
 
 class Scroll extends React.Component {
   componentDidMount() {
@@ -151,46 +152,60 @@ class Scroll extends React.Component {
     createScrollOverlay($('#content'), 20, num, theta);
   }
 
+  get body() {
+    return (
+      <Fragment>
+        <p>
+          <Lorem>I</Lorem>n the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt
+          that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity
+          arose for them to change that.
+        </p>
+        <FoundersList>
+          &nbsp;&nbsp;&nbsp;&nbsp;With the help of a Theta Tau alumnus,
+          <i>&nbsp;Jennifer Young</i>,&nbsp;thirteen founding fathers
+          {isMobile() ? (
+            ' '
+          ) : (
+            <ScrollCrest
+              className="lozad"
+              data-src={isChrome ? require('./images/crest.webp') : require('./images/crest.png')}
+              alt="Crest"
+            />
+          )}
+          took the first step towards
+          establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD
+          campus:
+          <i>&nbsp;Ashay Verma</i>,<i>&nbsp;Errynne Bell</i>,
+          <i>&nbsp;Takahiro Kuwayama</i>,<i>&nbsp;Amelia Chu</i>,
+          <i>&nbsp;Xiumei Wu</i>,<i>&nbsp;Chris Lam</i>,
+          <i>&nbsp;Chuong Do</i>,<i>&nbsp;Joe Shao</i>,
+          <i>&nbsp;Michelle Mojica</i>,
+          <i>&nbsp;Tanakorn Best Techajongchareon</i>,<i>&nbsp;Scott Louie</i>
+          ,<i>&nbsp;Alan Leung</i>,&nbsp;and
+          <i>&nbsp;John Phu Nguyen</i>.
+        </FoundersList>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp; On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.
+        </p>
+        <FoundersImage
+          className="lozad"
+          data-src={isChrome ? require('./images/founders.webp') : require('./images/founders.jpg')}
+          alt="Founders"
+        />
+      </Fragment>
+    )
+  }
+
   render() {
     return (
       <div id="container">
         <div id="content">
-          <h1 className="scroll-title big">The Founding</h1>
-          <h1 className="scroll-title small">of</h1>
-          <h1 className="scroll-title big">Epsilon Delta Chapter</h1>
-          <p>
-            <span id="lorem">I</span>n the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt
-            that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity
-            arose for them to change that.
-          </p>
-          <p>
-            &nbsp;&nbsp;&nbsp;&nbsp; With the help of a Theta Tau alumnus,
-            <span className="founder"> Jennifer Young</span>, thirteen founding fathers{' '}
-            <img
-              className="lozad scroll-crest"
-              data-src={isChrome ? require('./images/crest.webp') : require('./images/crest.png')}
-              alt="Crest"
-            />
-            took the first step towards establishing a chapter of the nation's oldest and largest professional
-            engineering fraternity on the UCSD campus:
-            <span className="founder"> Ashay Verma</span>,<span className="founder"> Errynne Bell</span>,
-            <span className="founder"> Takahiro Kuwayama</span>,<span className="founder"> Amelia Chu</span>,
-            <span className="founder"> Xiumei Wu</span>,<span className="founder"> Chris Lam</span>,
-            <span className="founder"> Chuong Do</span>,<span className="founder"> Joe Shao</span>,
-            <span className="founder"> Michelle Mojica</span>,
-            <span className="founder"> Tanakorn Best Techajongchareon</span>,
-            <span className="founder"> Scott Louie</span>,<span className="founder"> Alan Leung</span>, and
-            <span className="founder"> John Phu Nguyen</span>.
-          </p>
-          <p>
-            &nbsp;&nbsp;&nbsp;&nbsp; On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta
-            Tau.
-          </p>
-          <img
-            className="founders"
-            src={isChrome ? require('./images/founders.webp') : require('./images/founders.jpg')}
-            alt="Founders"
-          />
+          <ScrollTitle>
+            <h1>The Founding</h1>
+            <h2>of</h2>
+            <h1>Epsilon Delta Chapter</h1>
+          </ScrollTitle>
+          { this.body }
         </div>
       </div>
     );
@@ -200,37 +215,78 @@ class Scroll extends React.Component {
 class MobileOrigins extends React.Component {
   render() {
     return (
-      <div className="mobile-origins">
-        <p>
-          &nbsp;&nbsp;&nbsp;&nbsp; In the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt
-          that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity
-          arose for them to change that.
-        </p>
-        <p>
-          &nbsp;&nbsp;&nbsp;&nbsp; With the help of a Theta Tau alumnus,
-          <span className="founder"> Jennifer Young</span>, thirteen founding fathers took the first step towards
-          establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD
-          campus:
-          <span className="founder"> Ashay Verma</span>,<span className="founder"> Errynne Bell</span>,
-          <span className="founder"> Takahiro Kuwayama</span>,<span className="founder"> Amelia Chu</span>,
-          <span className="founder"> Xiumei Wu</span>,<span className="founder"> Chris Lam</span>,
-          <span className="founder"> Chuong Do</span>,<span className="founder"> Joe Shao</span>,
-          <span className="founder"> Michelle Mojica</span>,
-          <span className="founder"> Tanakorn Best Techajongchareon</span>,<span className="founder"> Scott Louie</span>
-          ,<span className="founder"> Alan Leung</span>, and
-          <span className="founder"> John Phu Nguyen</span>.
-        </p>
-        <p>
-          &nbsp;&nbsp;&nbsp;&nbsp; On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.
-        </p>
-        <img
-          className="lozad founders"
-          data-src={isChrome ? require('./images/founders.webp') : require('./images/founders.jpg')}
-          alt="Founders"
-        />
-      </div>
+      <MobileContainer>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        { this.body }
+      </MobileContainer>
     );
   }
 }
 
 export { Scroll, MobileOrigins };
+
+const MobileContainer = styled.div`
+  @media (min-width: 992px) {
+    display: none;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+`;
+
+const ScrollTitle = styled.header`
+  margin-top: 30px;
+  text-align: center;
+
+  > {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  & h1 {
+    font-size: 45px;
+  }
+
+  & h2 {
+    font-size: 25px;
+  }
+`;
+
+const Lorem = styled.span`
+  @media (min-width: 992px) {
+    font-size: 7em;
+    color: var(--primary-color);
+    float: left;
+    line-height: 1;
+    margin-right: 20px;
+  }
+`;
+
+const FoundersList = styled.p`
+  & i {
+    color: var(--primary-color);
+
+    @media (max-width: 768px) {
+      font-weight: 700;
+    }
+  }
+`;
+
+const ScrollCrest = styled.img`
+  float: right;
+  height: 300px;
+  margin: 20px 20px 0;
+`;
+
+const FoundersImage = styled.img`
+  width: 80%;
+  margin: 50px 75px 180px;
+  filter: grayscale(80%);
+
+  @media (max-width: 992px) {
+    width: 100%;
+    margin-top: 50px;
+    filter: grayscale(80%);
+  }
+`;

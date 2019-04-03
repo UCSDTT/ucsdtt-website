@@ -1,25 +1,20 @@
-import './Messenger.css';
-
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import { Element } from 'react-scroll';
+import styled from 'styled-components';
 import { Flipper } from './Flipper.js';
+import { Grid } from '../../../shared/components';
 import { brothers } from '../../../activeData/data.js';
 
 class Messenger extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeList: [],
-      actives: [],
-      flipped: false
-    };
-    this.flip = this.flip.bind(this);
-  }
+  state = {
+    activeList: [],
+    actives: [],
+    flipped: false
+  };
 
   /* Runs when the component mounts */
   componentDidMount() {
-    let actives = [
+    const actives = [
       {
         front: {},
         back: {}
@@ -35,38 +30,33 @@ class Messenger extends Component {
     ];
 
     /* Filters out active without a messenger link (those who don't want to be messaged) and alumni */
-    let activeList = brothers.filter(function(brother) {
+    const activeList = brothers.filter(function(brother) {
       return brother.messenger && brother.position !== 'Alumni';
     });
 
-    let shuffled = this.shuffle(activeList);
+    const shuffled = this.shuffle(activeList);
 
     /* Sets the front panel to the shuffled actives */
     actives.forEach((active, i) => {
       active.front = shuffled[i];
     });
 
-    this.setState({
-      actives: actives
-    });
+    this.setState({ actives });
   }
 
   /* Shuffles the actives and removes the 3 chosen from the total active list */
-  shuffle(list) {
+  shuffle = (list) => {
     const shuffled = list.sort(() => 0.5 - Math.random()); // shuffle
-    let activeList = shuffled.slice(3);
+    const activeList = shuffled.slice(3);
 
-    this.setState({
-      activeList: activeList
-    });
-
+    this.setState({ activeList });
     return shuffled.slice(0, 3); //get sub-array of first n elements AFTER shuffle
   }
 
   /* Flips the messenger card */
-  flip() {
-    let actives = this.state.actives;
-    let shuffled = this.shuffle(this.state.activeList);
+  flip = () => {
+    const { actives, activeList, flipped } = this.state;
+    const shuffled = this.shuffle(activeList);
 
     /* Stops flipping if there are less than 3 actives left in the active list */
     if (shuffled.length !== 3) {
@@ -74,7 +64,7 @@ class Messenger extends Component {
     }
 
     /* Sets the front panel to the shuffled actives */
-    if (this.state.flipped) {
+    if (flipped) {
       actives.forEach((active, i) => {
         active.front = shuffled[i];
       });
@@ -85,44 +75,78 @@ class Messenger extends Component {
       });
     }
 
-    this.setState({
-      actives: actives,
-      flipped: !this.state.flipped
-    });
+    this.setState({ actives, flipped: !flipped });
   }
 
   render() {
     return (
-      <Element name="messenger" className="element messenger">
-        <Container>
-          <Row>
-            <Col>
-              <h1 className="title">Get to Know Us!</h1>
-            </Col>
-          </Row>
-          <Row>
+      <Section name="messenger" className="element messenger">
+
+          <h1 className="title">Get to Know Us!</h1>
+          <FlipperContainer cw={300} gap={30} justify autofit>
             {this.state.actives.map((active, i) => (
-              <Col md={12} lg={4} key={i}>
-                <Flipper flipped={this.state.flipped} frontActive={active.front} backActive={active.back} index={i} />
-              </Col>
+              <Flipper
+                flipped={this.state.flipped}
+                frontActive={active.front}
+                backActive={active.back}
+                index={i}
+                key={i}
+              />
             ))}
-          </Row>
-          <Row>
-            <Col className="d-flex justify-content-center" md={12} lg>
-              <a className="messenger-actions shuffle-button" href="#null" onClick={this.flip}>
-                Shuffle Actives
-              </a>
-            </Col>
-            <Col className="d-flex justify-content-center" md={12} lg>
-              <a className="messenger-actions members-link" href="/members">
+          </FlipperContainer>
+          <ButtonsContainer cw={260} gap={20} justifyCenter autofit>
+            <ShuffleButton onClick={this.flip}>
+              Shuffle Actives
+            </ShuffleButton>
+            <a href="/members">
+              <MembersButton>
                 Meet the Fraternity
-              </a>
-            </Col>
-          </Row>
-        </Container>
-      </Element>
+              </MembersButton>
+            </a>
+          </ButtonsContainer>
+
+      </Section>
     );
   }
 }
 
 export { Messenger };
+
+const Section = styled(Element)`
+  position: relative;
+  background-color: #fafafa;
+`;
+
+const FlipperContainer = styled(Grid)`
+  margin: 60px auto;
+`;
+
+const ButtonsContainer = styled(Grid)`
+  margin: 30px 0 0;
+`;
+
+const MessengerAction = styled.button`
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0;
+  border-radius: 4px;
+  cursor: pointer;
+`;
+
+const ShuffleButton = styled(MessengerAction)`
+  background-color: var(--primary-color);
+
+  &:hover {
+    background-color: var(--primary-dark);
+  }
+`;
+
+const MembersButton = styled(MessengerAction)`
+  width: 100%;
+  background-color: var(--secondary-color);
+
+  &:hover {
+    background-color: var(--secondary-dark);
+  }
+`;
