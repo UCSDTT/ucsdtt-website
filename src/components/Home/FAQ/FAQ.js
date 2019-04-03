@@ -43,12 +43,17 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 15px 0;
+
+  @media(max-width: 992px) {
+    margin-bottom: 0;
+  }
 `;
 
 const Column = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 15px;
+  margin: 0 15px;
 `;
 
 const Card = styled.div`
@@ -64,9 +69,6 @@ const Card = styled.div`
 
   @media(max-width: 992px) {
     max-width: 370px;
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 `;
 
