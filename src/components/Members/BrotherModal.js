@@ -1,9 +1,10 @@
+import './Members.css';
+
 import React from 'react';
 import { Modal } from 'react-bootstrap';
 import { FaLinkedin } from 'react-icons/fa';
 import styled from 'styled-components';
 import { isChrome } from '../../shared/helpers.js';
-import './Members.css';
 
 function BrotherModal({ show, close, brother }) {
   return (
