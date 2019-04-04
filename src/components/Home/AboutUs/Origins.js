@@ -5,18 +5,24 @@ import { isChrome, isMobile } from '../../../shared/helpers.js';
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 
-class Scroll extends React.Component {
+const isDesktop = window.innerWidth > 992
+
+class Origins extends React.Component {
   componentDidMount() {
-    createScroll();
+    if (isDesktop) {
+      createScroll();
+    }
   }
 
   get body() {
     return (
       <Fragment>
         <p>
-          <Lorem>I</Lorem>n the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt
-          that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity
-          arose for them to change that.
+          { isDesktop ? <Lorem>I</Lorem> : <span>&nbsp;&nbsp;&nbsp;&nbsp;I</span> }
+          n the Spring of 2009, several students of UCSD&rsquo;s Jacobs School
+          of Engineering felt that there was a lack of engineering
+          representation in the Greek community on campus. Luckily an
+          opportunity arose for them to change that.
         </p>
         <FoundersList>
           &nbsp;&nbsp;&nbsp;&nbsp;With the help of a Theta Tau alumnus,
@@ -30,8 +36,8 @@ class Scroll extends React.Component {
               alt="Crest"
             />
           )}
-          took the first step towards
-          establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD
+          took the first step towards establishing a chapter of the nation&rsquo;s
+          oldest and largest professional engineering fraternity on the UCSD
           campus:
           <i>&nbsp;Ashay Verma</i>,<i>&nbsp;Errynne Bell</i>,
           <i>&nbsp;Takahiro Kuwayama</i>,<i>&nbsp;Amelia Chu</i>,
@@ -43,7 +49,8 @@ class Scroll extends React.Component {
           <i>&nbsp;John Phu Nguyen</i>.
         </FoundersList>
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp; On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.
+          &nbsp;&nbsp;&nbsp;&nbsp;On November 20th, 2010, UCSD was installed as
+          the Epsilon Delta Chapter of Theta Tau.
         </p>
         <FoundersImage
           className="lozad"
@@ -55,42 +62,29 @@ class Scroll extends React.Component {
   }
 
   render() {
-    return (
-      <div id="container">
-        <div id="content">
-          <ScrollTitle>
-            <h1>The Founding</h1>
-            <h2>of</h2>
-            <h1>Epsilon Delta Chapter</h1>
-          </ScrollTitle>
-          { this.body }
+    if (isDesktop) {
+      return (
+        <div id="container">
+          <div id="content">
+            <ScrollTitle>
+              <h1>The Founding</h1>
+              <h2>of</h2>
+              <h1>Epsilon Delta Chapter</h1>
+            </ScrollTitle>
+            { this.body }
+          </div>
         </div>
+      );
+    }
+    return (
+      <div>
+        { this.body }
       </div>
     );
   }
 }
 
-class MobileOrigins extends React.Component {
-  render() {
-    return (
-      <MobileContainer>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        { this.body }
-      </MobileContainer>
-    );
-  }
-}
-
-export { Scroll, MobileOrigins };
-
-const MobileContainer = styled.div`
-  @media (min-width: 992px) {
-    display: none;
-    width: 60%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-`;
+export { Origins };
 
 const ScrollTitle = styled.header`
   margin-top: 30px;
@@ -144,7 +138,7 @@ const FoundersImage = styled.img`
 
   @media (max-width: 992px) {
     width: 100%;
-    margin-top: 50px;
+    margin: 50px 0 0;
     filter: grayscale(80%);
   }
 `;

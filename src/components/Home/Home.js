@@ -30,17 +30,17 @@ export default class Home extends Component {
 
     /* Runs when you scroll */
     window.onscroll = function() {
-      let navbarHeight = document.querySelector('.navbar').clientHeight;
-      let landingHeight = document.querySelector('.landing').clientHeight;
-      let rushHeight = document.querySelector('.rush').clientHeight;
-      let whyRushHeight = document.querySelector('.why-rush').clientHeight;
-      let aboutHeight = document.querySelector('.element.about').clientHeight;
-      let gears = document.getElementsByClassName('gear');
-      let gearsOpp = document.getElementsByClassName('gear-opp');
-      let wScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const navbarHeight = document.querySelector('.navbar').clientHeight;
+      const landingHeight = document.querySelector('.landing').clientHeight;
+      const rushHeight = document.querySelector('.rush').clientHeight;
+      const whyRushHeight = document.querySelector('.why-rush').clientHeight;
+      const aboutHeight = document.querySelector('.element.about').clientHeight;
+      const gears = document.getElementsByClassName('gear');
+      const gearsOpp = document.getElementsByClassName('gear-opp');
+      const wScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
       /* Checks if browser is Safari */
-      let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
       /* If browser is safari, hide scroll and display text instead */
       if (isSafari) {

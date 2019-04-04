@@ -1,4 +1,4 @@
-const gearPosition = ['top left', 'top right', 'bottom left', 'bottom right'];
+const gearPosition = ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'];
 
 const pillarData = [
   {

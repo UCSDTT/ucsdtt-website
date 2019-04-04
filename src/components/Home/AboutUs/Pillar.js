@@ -99,11 +99,15 @@ const InfoContainer = styled.div`
 `;
 
 const Info = styled.h3`
-  font-weight: 700;
+  font-size: 2rem;
+  margin: 0 0 1rem;
 `;
 
 const Description = styled.h4`
+  font-size: 1.4rem;
+  font-weight: 400;
   line-height: 1.5;
+  padding: 0 5px;
 `;
 
 const Name = styled.h3`

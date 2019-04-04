@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Element } from 'react-scroll';
 import styled from 'styled-components';
-import { Grid } from '../../../shared/components';
 import { isChrome } from '../../../shared/helpers.js';
 import { largeCompanies, smallCompanies } from './data.js';
 
@@ -12,7 +11,7 @@ class Companies extends Component {
         <h1 className="title">Our Alumni Network </h1>
 
         <Container>
-          <LargeCompanies cw={320} cg={50} rg={30} justify align>
+          <LargeCompanies>
             {largeCompanies.map((company, i) => (
               <LargeCompany key={i}>
                 <a href={company.href} target="_blank" rel="noopener noreferrer">
@@ -26,7 +25,7 @@ class Companies extends Component {
               </LargeCompany>
             ))}
           </LargeCompanies>
-          <SmallCompanies cw={120} cg={50} rg={30} justify align>
+          <SmallCompanies>
             {smallCompanies.map((company, i) => (
               <SmallCompany key={i}>
                 <a href={company.href} target="_blank" rel="noopener noreferrer">
@@ -57,12 +56,22 @@ const Container = styled.div`
   margin: 60px auto 0;
 `;
 
+const Grid = styled.div`
+  display: grid;
+  grid-gap: 30px 50px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+`;
+
 const LargeCompanies = styled(Grid)`
+  grid-template-columns: repeat(auto-fill, 320px);
   max-width: 880px;
   margin: 20px 0 50px;
 `;
 
 const SmallCompanies = styled(Grid)`
+  grid-template-columns: repeat(auto-fill, 120px);
   max-width: 880px;
 `;
 

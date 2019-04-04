@@ -1,13 +1,11 @@
 import './AboutUs.css';
 
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import { Element } from 'react-scroll';
 import styled from 'styled-components';
 import { Gears } from './Gears.js';
-import { Scroll, MobileOrigins } from './Origins.js';
+import { Origins } from './Origins.js';
 import { Pillar } from './Pillar.js';
-import { Grid } from '../../../shared/components';
 import { gearPosition, pillarData } from './data.js';
 
 class AboutUs extends Component {
@@ -20,26 +18,16 @@ class AboutUs extends Component {
 
         <h1 className="title"> About Us </h1>
 
-        <Container>
-          <Row>
-            <Header>The Origins of Theta Tau UCSD</Header>
-          </Row>
-          <Row>
-            <Col className="about-description">
-              <Scroll />
-
-              <MobileOrigins />
-            </Col>
-          </Row>
-          <Row>
-            <Header>The Three Pillars</Header>
-            <Grid cw={320} gap={30} w={1} justify>
-              {pillarData.map((pillar, i) => (
-                <Pillar pillar={pillar} key={i} />
-              ))}
-            </Grid>
-          </Row>
-        </Container>
+        <Header>The Origins of Theta Tau UCSD</Header>
+        <div className="about-description">
+          <Origins />
+        </div>
+        <Header>The Three Pillars</Header>
+        <Pillars>
+          {pillarData.map((pillar, i) => (
+            <Pillar pillar={pillar} key={i} />
+          ))}
+        </Pillars>
       </Section>
     );
   }
@@ -50,7 +38,7 @@ export { AboutUs };
 const Section = styled(Element)`
   position: relative;
   overflow: hidden;
-  padding-bottom: 20vw;
+  padding-bottom: 25vw;
 `;
 
 const Header = styled.h1`
@@ -59,5 +47,12 @@ const Header = styled.h1`
   font-size: 40px;
   color: var(--secondary-color);
   margin-bottom: 40px;
-  width: 100%;
+`;
+
+const Pillars = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  grid-gap: 30px;
+  justify-content: center;
+  justify-items: center;
 `;
