@@ -299,7 +299,7 @@ const BrothersHeader = styled.div`
 
   @media (max-width: 768px) {
     font-size: 25px;
-    padding: 5px 0;
+    padding: 10px 0;
   }
 `;
 
