@@ -1,7 +1,5 @@
-import './Members.css';
-
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import styled from 'styled-components';
 import { FilteredLabel } from './FilteredLabel.js';
 import { MemberInfo } from './MemberInfo.js';
 
@@ -9,18 +7,16 @@ class BrothersList extends React.Component {
   get brothersList() {
     const { updatedBrothers } = this.props;
     return (
-      <Row>
+      <BrothersGrid>
         {updatedBrothers.map((brother, i) => (
-          <Col xs={6} sm={3} className="brother-info col-md-5th" key={i}>
-            <MemberInfo brother={brother} open={this.props.open} />
-          </Col>
+          <MemberInfo brother={brother} open={this.props.open} key={i} />
         ))}
-      </Row>
+      </BrothersGrid>
     );
   }
 
   /* Displays labels if the selected filter is major or class */
-  get filteredBrothersList() {
+  get brothersListWithLabels() {
     const {
       dropdownValue,
       majorOptions,
@@ -38,34 +34,26 @@ class BrothersList extends React.Component {
       });
     }
     return (
-      <div>
-        {options.map((option, i) => {
-          if (!this.showFilteredList(option)) {
-            return null
-          }
-          return (
-            <Row key={i}>
-              <FilteredLabel option={option} specificValue={specificValue} />
-              {/* <FilteredList
-                option={option}
-                updatedBrothers={this.props.updatedBrothers}
-                dropdownValue={this.props.dropdownValue}
-                open={this.props.open}
-              /> */}
-              {updatedBrothers.map((brother, i) => {
+      options.map((option, i) => {
+        if (!this.showLabelsList(option)) {
+          return null
+        }
+        return (
+          <Flex>
+            <FilteredLabel option={option} specificValue={specificValue} />
+            <BrothersWithLabelsGrid>
+              {updatedBrothers.map((brother, j) => {
                 if (brother[dropdownValue] !== option.value) {
                   return null
                 }
                 return (
-                  <Col xs={6} sm={3} style={{ padding: 0 }} key={i}>
-                    <MemberInfo brother={brother} open={this.props.open} />
-                  </Col>
-                );
+                  <MemberInfo brother={brother} open={this.props.open} key={j} />
+                )
               })}
-            </Row>
-          );
-        })}
-      </div>
+            </BrothersWithLabelsGrid>
+          </Flex>
+        );
+      })
     );
   }
 
@@ -73,7 +61,7 @@ class BrothersList extends React.Component {
     If there exists a brother in the specific major or class,
     display the brothers of that specified major or class
   */
-  showFilteredList(option) {
+  showLabelsList(option) {
     const { dropdownValue, updatedBrothers } = this.props;
     let showList = false;
     /* Checks if there exists a brother in the specified major or class */
@@ -88,10 +76,69 @@ class BrothersList extends React.Component {
   render() {
     const { dropdownValue } = this.props;
     if (dropdownValue === 'major' || dropdownValue === 'class') {
-      return this.filteredBrothersList
+      return this.brothersListWithLabels
     }
     return this.brothersList
   }
 }
 
 export { BrothersList };
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 190px);
+  grid-gap: 20px;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, 150px);
+  }
+`;
+
+const BrothersGrid = styled(Grid)`
+  margin: 50px auto;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+`;
+
+const Flex = styled.div`
+  display: flex;
+  margin: 50px auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+`;
+
+const BrothersWithLabelsGrid = styled(Grid)`
+  width: calc(100% - 190px);
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
