@@ -48,13 +48,14 @@ const Image = styled.img`
 `;
 
 const Name = styled.h3`
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--secondary-color);
 `;
 
 const Body = styled.p`
-  font-size: 18px;
   color: var(--secondary-light);
+  line-height: 1.8;
 `;
 
 const Link = styled.a`
@@ -71,6 +72,7 @@ const Button = styled.button`
   color: #fff;
   font-size: 18px;
   padding: 5px 0;
+  border: 0;
   border-radius: 4px;
   cursor: pointer;
 

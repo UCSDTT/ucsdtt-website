@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Element } from 'react-scroll';
 import styled from 'styled-components';
 import { Flipper } from './Flipper.js';
-import { Grid } from '../../../shared/components';
 import { brothers } from '../../../activeData/data.js';
 
 class Messenger extends Component {
@@ -81,30 +80,28 @@ class Messenger extends Component {
   render() {
     return (
       <Section name="messenger" className="element messenger">
-
-          <h1 className="title">Get to Know Us!</h1>
-          <FlipperContainer cw={300} gap={30} justify autofit>
-            {this.state.actives.map((active, i) => (
-              <Flipper
-                flipped={this.state.flipped}
-                frontActive={active.front}
-                backActive={active.back}
-                index={i}
-                key={i}
-              />
-            ))}
-          </FlipperContainer>
-          <ButtonsContainer cw={260} gap={20} justifyCenter autofit>
-            <ShuffleButton onClick={this.flip}>
-              Shuffle Actives
-            </ShuffleButton>
-            <a href="/members">
-              <MembersButton>
-                Meet the Fraternity
-              </MembersButton>
-            </a>
-          </ButtonsContainer>
-
+        <h1 className="title">Get to Know Us!</h1>
+        <FlipperContainer>
+          {this.state.actives.map((active, i) => (
+            <Flipper
+              flipped={this.state.flipped}
+              frontActive={active.front}
+              backActive={active.back}
+              index={i}
+              key={i}
+            />
+          ))}
+        </FlipperContainer>
+        <ButtonsContainer>
+          <ShuffleButton onClick={this.flip}>
+            Shuffle Actives
+          </ShuffleButton>
+          <a href="/members">
+            <MembersButton>
+              Meet the Fraternity
+            </MembersButton>
+          </a>
+        </ButtonsContainer>
       </Section>
     );
   }
@@ -121,11 +118,21 @@ const Section = styled(Element)`
   }
 `;
 
+const Grid = styled.div`
+  display: grid;
+  justify-content: center;
+`;
+
 const FlipperContainer = styled(Grid)`
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-gap: 30px;
+  justify-items: center;
   margin: 60px auto;
 `;
 
 const ButtonsContainer = styled(Grid)`
+  grid-template-columns: repeat(auto-fit, 260px);
+  grid-gap: 20px;
   margin: 30px 0 0;
 `;
 

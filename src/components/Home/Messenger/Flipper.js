@@ -23,7 +23,7 @@ export { Flipper };
 
 const Card = styled.div`
   width: 100%;
-  height: 463px;
+  height: 430px;
 `;
 
 const FlipperContainer = styled.div`
