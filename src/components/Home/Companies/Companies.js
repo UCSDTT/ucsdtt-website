@@ -5,6 +5,15 @@ import { isChrome } from '../../../shared/helpers.js';
 import { largeCompanies, smallCompanies } from './data.js';
 
 function Companies() {
+  const sortedSmallCompanies = smallCompanies.sort((a, b) => {
+    if (a.name < b.name) {
+      return -1;
+    } else if (a.name > b.name) {
+      return 1;
+    }
+    return 0;
+  });
+
   return (
     <Element name="companies" className="element">
       <h1 className="title">Our Alumni Network </h1>
@@ -24,7 +33,7 @@ function Companies() {
           ))}
         </LargeCompanies>
         <SmallCompanies>
-          {smallCompanies.map((company, i) => (
+          {sortedSmallCompanies.map((company, i) => (
             <SmallCompany key={i}>
               <a href={company.href} target="_blank" rel="noopener noreferrer">
                 <CompanyImage
@@ -50,6 +59,7 @@ const Container = styled.div`
 
 const Grid = styled.div`
   display: grid;
+  grid-auto-rows: 1fr;
   grid-gap: 30px 50px;
   justify-content: center;
   justify-items: center;
