@@ -27,16 +27,14 @@ class Origins extends React.Component {
         <FoundersList>
           &nbsp;&nbsp;&nbsp;&nbsp;With the help of a Theta Tau alumnus,
           <i>&nbsp;Jennifer Young</i>,&nbsp;thirteen founding fathers
-          {isMobile() ? (
-            ' '
-          ) : (
+          {!isMobile() && (
             <ScrollCrest
               className="lozad"
               data-src={isChrome ? require('./images/crest.webp') : require('./images/crest.png')}
               alt="Crest"
             />
           )}
-          took the first step towards establishing a chapter of the nation&rsquo;s
+          &nbsp;took the first step towards establishing a chapter of the nation&rsquo;s
           oldest and largest professional engineering fraternity on the UCSD
           campus:
           <i>&nbsp;Ashay Verma</i>,<i>&nbsp;Errynne Bell</i>,
