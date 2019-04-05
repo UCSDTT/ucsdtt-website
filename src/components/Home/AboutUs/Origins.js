@@ -119,7 +119,8 @@ const FoundersList = styled.p`
   & i {
     color: var(--primary-color);
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
+      display: inline-block;
       font-weight: 700;
     }
   }
