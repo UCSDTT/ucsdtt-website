@@ -1,36 +1,34 @@
 import './FAQ.css';
 
-import React, { Component } from 'react';
+import React from 'react';
 import { Element } from 'react-scroll';
 import styled from 'styled-components';
 import { faqCol1, faqCol2 } from './data.js';
 
-class FAQ extends Component {
-  render() {
-    return (
-      <Element name="faq" className="element faq" data-background-image={require('./images/faq-background.svg')}>
-        <Title className="title"> FAQ </Title>
-        <Container>
-          <Column>
-            {faqCol1.map((question, i) => (
-              <Card key={i}>
-                <FaqTitle> {question.title} </FaqTitle>
-                <FaqBody> {question.body} </FaqBody>
-              </Card>
-            ))}
-          </Column>
-          <Column>
-            {faqCol2.map((question, i) => (
-              <Card key={i}>
-                <FaqTitle> {question.title} </FaqTitle>
-                <FaqBody> {question.body} </FaqBody>
-              </Card>
-            ))}
-          </Column>
-        </Container>
-      </Element>
-    )
-  }
+function FAQ() {
+  return (
+    <Element name="faq" className="element faq" data-background-image={require('./images/faq-background.svg')}>
+      <Title className="title"> FAQ </Title>
+      <Container>
+        <Column>
+          {faqCol1.map((question, i) => (
+            <Card key={i}>
+              <FaqTitle> {question.title} </FaqTitle>
+              <FaqBody> {question.body} </FaqBody>
+            </Card>
+          ))}
+        </Column>
+        <Column>
+          {faqCol2.map((question, i) => (
+            <Card key={i}>
+              <FaqTitle> {question.title} </FaqTitle>
+              <FaqBody> {question.body} </FaqBody>
+            </Card>
+          ))}
+        </Column>
+      </Container>
+    </Element>
+  )
 }
 
 export { FAQ };

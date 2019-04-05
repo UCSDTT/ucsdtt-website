@@ -1,55 +1,47 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Element } from 'react-scroll';
 import styled from 'styled-components';
 import { isChrome } from '../../../shared/helpers.js';
 import { largeCompanies, smallCompanies } from './data.js';
 
-class Companies extends Component {
-  render() {
-    return (
-      <Section name="companies" className="element companies">
-        <h1 className="title">Our Alumni Network </h1>
-
-        <Container>
-          <LargeCompanies>
-            {largeCompanies.map((company, i) => (
-              <LargeCompany key={i}>
-                <a href={company.href} target="_blank" rel="noopener noreferrer">
-                  <CompanyImage
-                    className="lozad"
-                    data-src={isChrome ? company.image : company.safari}
-                    href={company}
-                    alt="Large Company"
-                  />
-                </a>
-              </LargeCompany>
-            ))}
-          </LargeCompanies>
-          <SmallCompanies>
-            {smallCompanies.map((company, i) => (
-              <SmallCompany key={i}>
-                <a href={company.href} target="_blank" rel="noopener noreferrer">
-                  <CompanyImage
-                    className="lozad"
-                    data-src={isChrome ? company.image : company.safari}
-                    alt="Small Company"
-                  />
-                </a>
-              </SmallCompany>
-            ))}
-          </SmallCompanies>
-        </Container>
-      </Section>
-    );
-  }
+function Companies() {
+  return (
+    <Element name="companies" className="element">
+      <h1 className="title">Our Alumni Network </h1>
+      <Container>
+        <LargeCompanies>
+          {largeCompanies.map((company, i) => (
+            <LargeCompany key={i}>
+              <a href={company.href} target="_blank" rel="noopener noreferrer">
+                <CompanyImage
+                  className="lozad"
+                  data-src={isChrome ? company.image : company.safari}
+                  href={company}
+                  alt="Large Company"
+                />
+              </a>
+            </LargeCompany>
+          ))}
+        </LargeCompanies>
+        <SmallCompanies>
+          {smallCompanies.map((company, i) => (
+            <SmallCompany key={i}>
+              <a href={company.href} target="_blank" rel="noopener noreferrer">
+                <CompanyImage
+                  className="lozad"
+                  data-src={isChrome ? company.image : company.safari}
+                  alt="Small Company"
+                />
+              </a>
+            </SmallCompany>
+          ))}
+        </SmallCompanies>
+      </Container>
+    </Element>
+  );
 }
 
 export { Companies };
-
-const Section = styled(Element)`
-  padding-left: 10%;
-  padding-right: 10%;
-`;
 
 const Container = styled.div`
   max-width: 850px;

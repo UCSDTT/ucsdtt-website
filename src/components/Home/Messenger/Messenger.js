@@ -141,6 +141,7 @@ const MessengerAction = styled.button`
   color: #fff;
   font-size: 20px;
   padding: 10px 0;
+  border: 0;
   border-radius: 4px;
   cursor: pointer;
 `;
