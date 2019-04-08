@@ -17,13 +17,7 @@ class BrothersList extends React.Component {
 
   /* Displays labels if the selected filter is major or class */
   get brothersListWithLabels() {
-    const {
-      dropdownValue,
-      majorOptions,
-      classOptions,
-      specificValue,
-      updatedBrothers
-    } = this.props;
+    const { dropdownValue, majorOptions, classOptions, specificValue, updatedBrothers } = this.props;
     /* Sets label to major or class depending on which one is selected */
     let options = dropdownValue === 'major' ? majorOptions : classOptions;
 
@@ -33,28 +27,24 @@ class BrothersList extends React.Component {
         return (option.value.toLowerCase() === specificValue.toLowerCase()) !== false;
       });
     }
-    return (
-      options.map((option, i) => {
-        if (!this.showLabelsList(option)) {
-          return null
-        }
-        return (
-          <Flex>
-            <FilteredLabel option={option} specificValue={specificValue} />
-            <BrothersWithLabelsGrid>
-              {updatedBrothers.map((brother, j) => {
-                if (brother[dropdownValue] !== option.value) {
-                  return null
-                }
-                return (
-                  <MemberInfo brother={brother} open={this.props.open} key={j} />
-                )
-              })}
-            </BrothersWithLabelsGrid>
-          </Flex>
-        );
-      })
-    );
+    return options.map((option, i) => {
+      if (!this.showLabelsList(option)) {
+        return null;
+      }
+      return (
+        <Flex key={option}>
+          <FilteredLabel option={option} specificValue={specificValue} />
+          <BrothersWithLabelsGrid>
+            {updatedBrothers.map((brother, j) => {
+              if (brother[dropdownValue] !== option.value) {
+                return null;
+              }
+              return <MemberInfo brother={brother} open={this.props.open} key={j} />;
+            })}
+          </BrothersWithLabelsGrid>
+        </Flex>
+      );
+    });
   }
 
   /*
@@ -67,7 +57,7 @@ class BrothersList extends React.Component {
     /* Checks if there exists a brother in the specified major or class */
     updatedBrothers.forEach(brother => {
       if (brother[dropdownValue] === option.value) {
-        showList = true
+        showList = true;
       }
     });
     return showList;
@@ -76,9 +66,9 @@ class BrothersList extends React.Component {
   render() {
     const { dropdownValue } = this.props;
     if (dropdownValue === 'major' || dropdownValue === 'class') {
-      return this.brothersListWithLabels
+      return this.brothersListWithLabels;
     }
-    return this.brothersList
+    return this.brothersList;
   }
 }
 

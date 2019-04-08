@@ -70,14 +70,8 @@ export default class Members extends Component {
   }
 
   get brotherModal() {
-    const brother = this.state.selectedBrother || {}
-    return (
-      <BrotherModal
-        show={this.state.showModal}
-        close={this.close}
-        brother={brother}
-      />
-    )
+    const brother = this.state.selectedBrother || {};
+    return <BrotherModal show={this.state.showModal} close={this.close} brother={brother} />;
   }
 
   /* Closes the modal */
@@ -107,14 +101,7 @@ export default class Members extends Component {
 
   /* Filters the first dropdown based on the selected value */
   filterDropdown = selected => {
-    const {
-      brothers,
-      allBrothers,
-      alumni,
-      activeOptions,
-      majorOptions,
-      classOptions
-    } = this.state;
+    const { brothers, allBrothers, alumni, activeOptions, majorOptions, classOptions } = this.state;
     let updatedList = brothers;
     let options;
     let disabled = false;
@@ -240,22 +227,13 @@ export default class Members extends Component {
       <div>
         <BrothersHeader>
           <LogoAnchor role="button" href="/">
-            <img
-              className="logo"
-              src={isChrome ? logoWebp : logoPng}
-              alt="Logo"
-            />
+            <img className="logo" src={isChrome ? logoWebp : logoPng} alt="Logo" />
           </LogoAnchor>
           {specificLabel || 'Our Brothers'}
         </BrothersHeader>
         <MainImageContainer>
           {images.map((image, i) => (
-            <MainImage
-              src={isChrome ? image.webp : image.jpg}
-              alt="Brothers"
-              selected={imageIndex === i}
-              key={i}
-            />
+            <MainImage src={isChrome ? image.webp : image.jpg} alt="Brothers" selected={imageIndex === i} key={i} />
           ))}
         </MainImageContainer>
         <ScrollDown />
@@ -280,7 +258,7 @@ export default class Members extends Component {
             open={this.open}
           />
         </ScrollingGrid>
-        { this.brotherModal }
+        {this.brotherModal}
       </div>
     );
   }
@@ -334,7 +312,9 @@ const MainImage = styled.img`
   filter: alpha(opacity=0);
   z-index: -1;
 
-  ${props => props.selected && `
+  ${props =>
+    props.selected &&
+    `
     opacity: 1;
     -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
     filter: alpha(opacity=1);

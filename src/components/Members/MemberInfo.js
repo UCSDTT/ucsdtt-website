@@ -8,15 +8,11 @@ function MemberInfo({ brother, open }) {
   return (
     <div>
       <ImageContainer>
-        <Image
-          src={isChrome ? brother.image : brother.safari}
-          onClick={() => open(brother)}
-          alt="Active"
-        />
+        <Image src={isChrome ? brother.image : brother.safari} onClick={() => open(brother)} alt="Active" />
       </ImageContainer>
-      <Name>{ brother.name }</Name>
-      <Position>{ brother.position }</Position>
-      <Class>{ brother.className }</Class>
+      <Name>{brother.name}</Name>
+      <Position>{brother.position}</Position>
+      <Class>{brother.className}</Class>
     </div>
   );
 }

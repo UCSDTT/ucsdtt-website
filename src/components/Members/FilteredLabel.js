@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 function FilteredLabel({ specificValue, option }) {
-  if (specificValue && (option.value !== specificValue)) {
-    return null
+  if (specificValue && option.value !== specificValue) {
+    return null;
   }
   return (
     <Container>
-      <Label>{ option.label }</Label>
+      <Label>{option.label}</Label>
       <Image src={option.image} alt="Label" />
     </Container>
   );

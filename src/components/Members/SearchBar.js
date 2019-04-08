@@ -113,7 +113,7 @@ const SearchInputContainer = styled.form`
 const SearchInput = styled.input`
   width: 100%;
   height: 42px;
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
@@ -121,8 +121,8 @@ const SearchInput = styled.input`
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid hsl(0, 0%, 70%);
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 `;
 
 const Dropdown = styled(Select)`
