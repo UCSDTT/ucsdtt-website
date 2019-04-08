@@ -160,12 +160,13 @@ export default class Members extends Component {
   /* Filters the specific dropdown based on the selected value */
   filterSpecific = selected => {
     const { dropdownValue, allBrothers } = this.state;
+    const { value, label } = selected;
+    const specificLabel = dropdownValue === 'class' ? `${label} Class` : label;
     let updatedList = brothers;
 
     /* Sets the new brothers header image */
     const newImage = images.findIndex(function(currentImage) {
       const { name } = currentImage;
-      const { value } = selected;
       return (name.toLowerCase() === value.toLowerCase()) !== false;
     });
 
@@ -180,7 +181,6 @@ export default class Members extends Component {
         /* Filters brothers list based on selected major */
         updatedList = updatedList.filter(function(brother) {
           const { major } = brother;
-          const { value } = selected;
           return (major.toLowerCase() === value.toLowerCase()) !== false;
         });
         break;
@@ -189,7 +189,6 @@ export default class Members extends Component {
         updatedList = allBrothers;
         updatedList = updatedList.filter(function(brother) {
           const { class: className } = brother;
-          const { value } = selected;
           return (className.toLowerCase() === value.toLowerCase()) !== false;
         });
     }
@@ -199,8 +198,8 @@ export default class Members extends Component {
       searchValue: '',
       updatedBrothers: updatedList,
       filteredBrothers: updatedList,
-      specificValue: selected.value,
-      specificLabel: selected.label,
+      specificValue: value,
+      specificLabel,
       secondSelected: selected
     });
   };
@@ -231,11 +230,11 @@ export default class Members extends Component {
           </LogoAnchor>
           {specificLabel || 'Our Brothers'}
         </BrothersHeader>
-        <MainImageContainer>
+        <HeroImageContainer>
           {images.map((image, i) => (
-            <MainImage src={isChrome ? image.webp : image.jpg} alt="Brothers" selected={imageIndex === i} key={i} />
+            <HeroImage src={isChrome ? image.webp : image.jpg} alt="Brothers" selected={imageIndex === i} key={i} />
           ))}
-        </MainImageContainer>
+        </HeroImageContainer>
         <ScrollDown />
         <ScrollingGrid>
           <SearchBar
@@ -285,22 +284,20 @@ const LogoAnchor = styled.a`
   margin: 0 25px;
 `;
 
-const MainImageContainer = styled.div`
+const HeroImageContainer = styled.div`
   position: relative;
+  top: 60px;
   background-color: #000;
   height: 100vh;
   min-height: 100vh;
   z-index: -1;
-
-  @media (max-width: 992px) {
-    height: calc(100vh - 199px);
-  }
 `;
 
-const MainImage = styled.img`
+const HeroImage = styled.img`
   display: block;
   position: fixed;
-  height: 100%;
+  top: 87px; /* height of the header */
+  height: calc(100% - 87px);
   width: 100%;
   object-fit: cover;
   opacity: 0;
@@ -319,6 +316,11 @@ const MainImage = styled.img`
     -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
     filter: alpha(opacity=1);
   `}
+
+  @media (max-width: 768px) {
+    top: 60px; /* height of the header */
+    height: calc(100% - 60px);
+  }
 `;
 
 const ScrollDown = styled.div`

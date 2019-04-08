@@ -32,7 +32,7 @@ class BrothersList extends React.Component {
         return null;
       }
       return (
-        <Flex key={option}>
+        <Flex key={i}>
           <FilteredLabel option={option} specificValue={specificValue} />
           <BrothersWithLabelsGrid>
             {updatedBrothers.map((brother, j) => {
