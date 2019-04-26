@@ -1218,6 +1218,149 @@ const brothers = [
     year: 'Class of 2020',
     image: require('./images/brothers/portraits/216_jwei.webp'),
     safari: require('./images/brothers/portraits/216_jwei.jpg')
+  },
+  {
+    name: 'Heather Gan',
+    position: 'Active',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'cs',
+    majorName: 'Math - Computer Science',
+    year: 'Class of 2022',
+    image: require('./images/brothers/portraits/217_hgan.webp'),
+    safari: require('./images/brothers/portraits/217_hgan.jpg')
+  },
+  {
+    name: 'Kyle Gillaspy',
+    position: 'Active',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2021',
+    image: require('./images/brothers/portraits/218_kgillaspy.webp'),
+    safari: require('./images/brothers/portraits/218_kgillaspy.jpg')
+  },
+  {
+    name: 'Rick Huynh',
+    position: 'Active',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'cs',
+    majorName: 'Math - Computer Science',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/219_rhuynh.webp'),
+    safari: require('./images/brothers/portraits/219_rhuynh.jpg')
+  },
+  {
+    name: 'Kamran Jahadi',
+    position: 'External Events Chair',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'cs',
+    majorName: 'Cognitive Science - Machine Learning',
+    year: 'Class of 2021',
+    image: require('./images/brothers/portraits/220_kjahadi.webp'),
+    safari: require('./images/brothers/portraits/220_kjahadi.jpg')
+  },
+  {
+    name: 'Darren Jian',
+    position: 'Active',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'cs',
+    majorName: 'Cognitive Science',
+    year: 'Class of 2021',
+    image: require('./images/brothers/portraits/221_djian.webp'),
+    safari: require('./images/brothers/portraits/221_djian.jpg')
+  },
+  {
+    name: 'Everett Lin',
+    position: 'Active',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'ee',
+    majorName: 'Electrical Engineering',
+    year: 'Class of 2022',
+    image: require('./images/brothers/portraits/222_elin.webp'),
+    safari: require('./images/brothers/portraits/222_elin.jpg')
+  },
+  {
+    name: 'Neha Pusarla',
+    position: 'Active',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'cs',
+    majorName: 'Computer Science - Bioinformatics',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/223_npusarla.webp'),
+    safari: require('./images/brothers/portraits/223_npusarla.jpg')
+  },
+  {
+    name: 'Raeek Rahman',
+    position: 'External Events Chair',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'bio',
+    majorName: 'Bioengineering',
+    year: 'Class of 2022',
+    image: require('./images/brothers/portraits/224_rrahman.webp'),
+    safari: require('./images/brothers/portraits/224_rrahman.jpg')
+  },
+  {
+    name: 'Jonathan Song',
+    position: 'Active',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'env',
+    majorName: 'Environmental Engineering',
+    year: 'Class of 2021',
+    image: require('./images/brothers/portraits/225_jsong.webp'),
+    safari: require('./images/brothers/portraits/225_jsong.jpg')
+  },
+  {
+    name: 'Angelica Jane Tan',
+    position: 'Active',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'aero',
+    majorName: 'Aerospace Engineering',
+    year: 'Class of 2021',
+    image: require('./images/brothers/portraits/226_atan.webp'),
+    safari: require('./images/brothers/portraits/226_atan.jpg')
+  },
+  {
+    name: 'Britney Tran',
+    position: 'Active',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'env',
+    majorName: 'Environmental Engineering',
+    year: 'Class of 2022',
+    image: require('./images/brothers/portraits/227_btran.webp'),
+    safari: require('./images/brothers/portraits/227_btran.jpg')
+  },
+  {
+    name: 'Will Xu',
+    position: 'Active',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/228_wxu.webp'),
+    safari: require('./images/brothers/portraits/228_wxu.jpg')
+  },
+  {
+    name: 'Esther Zhao',
+    position: 'Active',
+    class: 'tau',
+    className: 'Tau Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/229_ezhao.webp'),
+    safari: require('./images/brothers/portraits/229_ezhao.jpg')
   }
 ];
 
@@ -1470,6 +1613,11 @@ const options = {
       value: 'sigma',
       label: 'Sigma',
       image: require('./images/classes/letters/sigma.png')
+    },
+    {
+      value: 'tau',
+      label: 'Tau',
+      image: require('./images/classes/letters/tau.png')
     }
   ]
 };
