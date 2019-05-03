@@ -1016,7 +1016,7 @@ const brothers = [
   },
   {
     name: 'Soyoun Park',
-    position: 'Philanthrophy Chair',
+    position: 'Philanthropy Chair',
     cabinet: true,
     class: 'rho',
     className: 'Rho Class',
