@@ -1257,8 +1257,8 @@ const brothers = [
     position: 'External Events Chair',
     class: 'tau',
     className: 'Tau Class',
-    major: 'cs',
-    majorName: 'Cognitive Science - Machine Learning',
+    major: 'chem',
+    majorName: 'Chemistry',
     year: 'Class of 2021',
     image: require('./images/brothers/portraits/220_kjahadi.webp'),
     safari: require('./images/brothers/portraits/220_kjahadi.jpg')
