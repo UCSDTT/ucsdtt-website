@@ -1,0 +1,15 @@
+{
+  "short_name": "UCSD TT Website",
+  "name": "UCSD Theta Tau's Official Website",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#2e2f33"
+}
