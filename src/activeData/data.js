@@ -1616,7 +1616,7 @@ const options = {
     {
       value: 'ds',
       label: 'Data Science',
-      image: require('./images/majors/logos/ce.png')
+      image: require('./images/majors/logos/ds.png')
     },
     {
       value: 'ee',
