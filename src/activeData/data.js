@@ -1062,6 +1062,7 @@ const brothers = [
     image: require('./images/brothers/portraits/MD152_jyin.webp'),
     safari: require('./images/brothers/portraits/MD152_jyin.jpg')
   },
+  //Sigma
   {
     name: 'Joshua Chao',
     position: 'Alumni',
@@ -1213,6 +1214,7 @@ const brothers = [
     image: require('./images/brothers/portraits/216_jwei.webp'),
     safari: require('./images/brothers/portraits/216_jwei.jpg')
   },
+  //Tau
   {
     name: 'Heather Gan',
     position: 'Active',
@@ -1364,6 +1366,128 @@ const brothers = [
     year: 'Class of 2020',
     image: require('./images/brothers/portraits/229_ezhao.webp'),
     safari: require('./images/brothers/portraits/229_ezhao.jpg')
+  },
+  //Upsilon
+  {
+    name: 'Barry Cheung',
+    position: 'Active',
+    class: 'upsilon',
+    className: 'Upsilon Class',
+    major: 'mech',
+    majorName: 'Mechanical Engineering',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/230_bcheung.webp'),
+    safari: require('./images/brothers/portraits/230_bcheung.jpg')
+  },
+  {
+    name: 'BaoBao Laosirihongthong',
+    position: 'Active',
+    class: 'upsilon',
+    className: 'Upsilon Class',
+    major: 'chem',
+    majorName: 'Chemical Engineering',
+    year: 'Class of 2021',
+    image: require('./images/brothers/portraits/231_blaosirihongthong.webp'),
+    safari: require('./images/brothers/portraits/231_blaosirihongthong.jpg')
+  },
+  {
+    name: 'Austin Le',
+    position: 'Active',
+    class: 'upsilon',
+    className: 'Upsilon Class',
+    major: 'ds',
+    majorName: 'Data Science',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/232_ale.webp'),
+    safari: require('./images/brothers/portraits/232_ale.jpg')
+  },
+  {
+    name: 'Amy Li',
+    position: 'Active',
+    class: 'upsilon',
+    className: 'Upsilon Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2022',
+    image: require('./images/brothers/portraits/233_ali.webp'),
+    safari: require('./images/brothers/portraits/233_ali.jpg')
+  },
+  {
+    name: 'Jack Lin',
+    position: 'Active',
+    class: 'upsilon',
+    className: 'Upsilon Class',
+    major: 'ds',
+    majorName: 'Data Science',
+    year: 'Class of 2021',
+    image: require('./images/brothers/portraits/234_jlin.webp'),
+    safari: require('./images/brothers/portraits/234_jlin.jpg')
+  },
+  {
+    name: 'Jordan Luk',
+    position: 'Active',
+    class: 'upsilon',
+    className: 'Upsilon Class',
+    major: 'mech',
+    majorName: 'Mechanical Engineering',
+    year: 'Class of 2022',
+    image: require('./images/brothers/portraits/235_jluk.webp'),
+    safari: require('./images/brothers/portraits/235_jluk.jpg')
+  },
+  {
+    name: 'Ryan Murase',
+    position: 'Active',
+    class: 'upsilon',
+    className: 'Upsilon Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/236_rmurase.webp'),
+    safari: require('./images/brothers/portraits/236_rmurase.jpg')
+  },
+  {
+    name: 'Brent Neldner',
+    position: 'Active',
+    class: 'upsilon',
+    className: 'Upsilon Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2020',
+    image: require('./images/brothers/portraits/237_bneldner.webp'),
+    safari: require('./images/brothers/portraits/237_bneldner.jpg')
+  },
+  {
+    name: 'Jade Tran',
+    position: 'Active',
+    class: 'upsilon',
+    className: 'Upsilon Class',
+    major: 'chem',
+    majorName: 'Chemical Engineering',
+    year: 'Class of 2021',
+    image: require('./images/brothers/portraits/238_jtran.webp'),
+    safari: require('./images/brothers/portraits/238_jtran.jpg')
+  },
+  {
+    name: 'Claire Zhang',
+    position: 'Active',
+    class: 'upsilon',
+    className: 'Upsilon Class',
+    major: 'bio',
+    majorName: 'Bioengineering',
+    year: 'Class of 2022',
+    image: require('./images/brothers/portraits/239_czhang.webp'),
+    safari: require('./images/brothers/portraits/239_czhang.jpg')
+  },
+  {
+    name: 'Lulu Zhu',
+    position: 'Active',
+    class: 'upsilon',
+    className: 'Upsilon Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2022',
+    image: require('./images/brothers/portraits/240_lzhu.webp'),
+    safari: require('./images/brothers/portraits/240_lzhu.jpg')
   }
 ];
 
@@ -1489,6 +1613,11 @@ const options = {
       value: 'cs',
       label: 'Computer Science',
       image: require('./images/majors/logos/ce.png')
+    },
+    {
+      value: 'ds',
+      label: 'Data Science',
+      image: require('./images/majors/logos/ds.png')
     },
     {
       value: 'ee',

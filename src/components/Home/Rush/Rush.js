@@ -10,7 +10,7 @@ function Rush() {
       <div className="rush-pic-container">
         <img
           className="lozad rush-pic"
-          data-src={isChrome ? require('./images/rush-cover.webp') : require('./images/rush-cover.png')}
+          data-src={isChrome ? require('./images/rush-cover.webp') : require('./images/rush-cover.jpg')}
           alt="Rush"
         />
       </div>
