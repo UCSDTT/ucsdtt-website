@@ -1278,6 +1278,7 @@ const brothers = [
     major: 'ee',
     majorName: 'Electrical Engineering',
     year: 'Class of 2022',
+    linkedin: 'https://www.linkedin.com/in/everettlin/',
     image: require('./images/brothers/portraits/222_elin.webp'),
     safari: require('./images/brothers/portraits/222_elin.jpg')
   },
