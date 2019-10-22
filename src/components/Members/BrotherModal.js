@@ -36,7 +36,7 @@ function BrotherModal({ show, close, brother }) {
       </Modal.Body>
       <Footer>
         <CloseButton onClick={close}>Close</CloseButton>
-        <LinkedinButton href={brother.linkedin} target="_blank" rel="noopener noreferrer">
+        <LinkedinButton as="a" href={brother.linkedin} target="_blank" rel="noopener noreferrer">
           <LinkedinIcon />
           Connect
         </LinkedinButton>
