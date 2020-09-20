@@ -1048,7 +1048,7 @@ const brothers = [
   },
   {
     name: 'Jun Yin',
-    position: 'Active',
+    position: 'Alumni',
     class: 'rho',
     className: 'Rho Class',
     major: 'cs',
