@@ -1482,7 +1482,7 @@ const brothers = [
     class: 'phi',
     className: 'Phi Class',
     major: 'struct',
-    majorName: 'Strutural Engineering',
+    majorName: 'Structural Engineering',
     year: 'Class of 2022',
     linkedin: 'https://www.linkedin.com/in/adrianamora00/',
     messenger: 'https://m.me/adrian.amora.581', 
