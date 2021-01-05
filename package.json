@@ -8,6 +8,7 @@
     "react-scripts": "^3.4.3"
   },
   "dependencies": {
+    "autoprefixer": "^9.8.0",
     "bootstrap": "^4.3.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",

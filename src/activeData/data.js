@@ -943,6 +943,7 @@ const brothers = [
     major: 'struct',
     majorName: 'Structural Engineering',
     year: 'Class of 2020',
+    linkedin: 'https://www.linkedin.com/in/sydahuynh/',
     image: require('./images/brothers/portraits/194_shuynh.webp'),
     safari: require('./images/brothers/portraits/194_shuynh.jpg')
   },
@@ -976,6 +977,7 @@ const brothers = [
     major: 'cs',
     majorName: 'Cognitive Science',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/stacypkim/',
     image: require('./images/brothers/portraits/197_skim.webp'),
     safari: require('./images/brothers/portraits/197_skim.jpg')
   },
@@ -1006,9 +1008,10 @@ const brothers = [
     position: 'Active',
     class: 'rho',
     className: 'Rho Class',
-    major: 'nano',
-    majorName: 'Nanoengineering',
+    major: 'cs',
+    majorName: 'Cognitive Science',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/soyoun-park-517577152/',
     image: require('./images/brothers/portraits/200_spark.webp'),
     safari: require('./images/brothers/portraits/200_spark.jpg')
   },
@@ -1020,6 +1023,7 @@ const brothers = [
     major: 'cs',
     majorName: 'Computer Science',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/jerry-qing/',
     image: require('./images/brothers/portraits/201_jqing.webp'),
     safari: require('./images/brothers/portraits/201_jqing.jpg')
   },
@@ -1031,6 +1035,7 @@ const brothers = [
     major: 'mech',
     majorName: 'Mechanical Engineering',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/huytran21/',
     image: require('./images/brothers/portraits/202_htran.webp'),
     safari: require('./images/brothers/portraits/202_htran.jpg')
   },
@@ -1110,6 +1115,7 @@ const brothers = [
     major: 'mech',
     majorName: 'Mechanical Engineering',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/sho-kondo-30b722163/',
     image: require('./images/brothers/portraits/208_skondo.webp'),
     safari: require('./images/brothers/portraits/208_skondo.jpg')
   },
@@ -1143,6 +1149,7 @@ const brothers = [
     major: 'bio',
     majorName: 'Bioengineering',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/erin-songwang/',
     image: require('./images/brothers/portraits/211_esongwang.webp'),
     safari: require('./images/brothers/portraits/211_esongwang.jpg')
   },
@@ -1162,9 +1169,10 @@ const brothers = [
     position: 'Active',
     class: 'sigma',
     className: 'Sigma Class',
-    major: 'env',
-    majorName: 'Environmental Engineering',
+    major: 'mech',
+    majorName: 'Mechanical Engineering',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/peggy-tran-079020164/',
     image: require('./images/brothers/portraits/213_ptran.webp'),
     safari: require('./images/brothers/portraits/213_ptran.jpg')
   },
@@ -1187,6 +1195,7 @@ const brothers = [
     major: 'nano',
     majorName: 'Nanoengineering',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/william-tzou-b0960b160/',
     image: require('./images/brothers/portraits/215_wtzou.webp'),
     safari: require('./images/brothers/portraits/215_wtzou.jpg')
   },
@@ -1210,6 +1219,7 @@ const brothers = [
     major: 'cs',
     majorName: 'Math - Computer Science',
     year: 'Class of 2022',
+    linkedin: 'https://www.linkedin.com/in/heather-gan/',
     image: require('./images/brothers/portraits/217_hgan.webp'),
     safari: require('./images/brothers/portraits/217_hgan.jpg')
   },
@@ -1222,6 +1232,7 @@ const brothers = [
     major: 'cs',
     majorName: 'Computer Science',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/kylegillaspy/',
     image: require('./images/brothers/portraits/218_kgillaspy.webp'),
     safari: require('./images/brothers/portraits/218_kgillaspy.jpg')
   },
@@ -1244,6 +1255,7 @@ const brothers = [
     major: 'cs',
     majorName: 'Cognitive Science',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/kamran-jahadi-2547b1172/',
     image: require('./images/brothers/portraits/220_kjahadi.webp'),
     safari: require('./images/brothers/portraits/220_kjahadi.jpg')
   },
@@ -1253,8 +1265,9 @@ const brothers = [
     class: 'tau',
     className: 'Tau Class',
     major: 'cs',
-    majorName: 'Cognitive Science',
+    majorName: 'Math - Computer Science',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/djianucsd/',
     image: require('./images/brothers/portraits/221_djian.webp'),
     safari: require('./images/brothers/portraits/221_djian.jpg')
   },
@@ -1300,6 +1313,7 @@ const brothers = [
     major: 'env',
     majorName: 'Environmental Engineering',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/jonathanjsong/',
     image: require('./images/brothers/portraits/225_jsong.webp'),
     safari: require('./images/brothers/portraits/225_jsong.jpg')
   },
@@ -1311,6 +1325,7 @@ const brothers = [
     major: 'aero',
     majorName: 'Aerospace Engineering',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/angelicajanetan/',
     image: require('./images/brothers/portraits/226_atan.webp'),
     safari: require('./images/brothers/portraits/226_atan.jpg')
   },
@@ -1319,9 +1334,10 @@ const brothers = [
     position: 'Active',
     class: 'tau',
     className: 'Tau Class',
-    major: 'env',
-    majorName: 'Environmental Engineering',
+    major: 'cs',
+    majorName: 'Math - Computer Science',
     year: 'Class of 2022',
+    linkedin: 'https://www.linkedin.com/in/mnbtran/',
     image: require('./images/brothers/portraits/227_btran.webp'),
     safari: require('./images/brothers/portraits/227_btran.jpg')
   },
@@ -1368,6 +1384,7 @@ const brothers = [
     major: 'chem',
     majorName: 'Chemical Engineering',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/pornruthai-laosirihongthong-8b99a7180/',
     image: require('./images/brothers/portraits/231_blaosirihongthong.webp'),
     safari: require('./images/brothers/portraits/231_blaosirihongthong.jpg')
   },
@@ -1379,6 +1396,7 @@ const brothers = [
     major: 'ds',
     majorName: 'Data Science',
     year: 'Class of 2020',
+    linkedin: 'https://www.linkedin.com/in/austinle/',
     image: require('./images/brothers/portraits/232_ale.webp'),
     safari: require('./images/brothers/portraits/232_ale.jpg')
   },
@@ -1391,6 +1409,7 @@ const brothers = [
     major: 'cs',
     majorName: 'Computer Science',
     year: 'Class of 2022',
+    linkedin: 'https://www.linkedin.com/in/amyyli302/',
     image: require('./images/brothers/portraits/233_ali.webp'),
     safari: require('./images/brothers/portraits/233_ali.jpg')
   },
@@ -1403,6 +1422,7 @@ const brothers = [
     major: 'ds',
     majorName: 'Data Science',
     year: 'Class of 2021',
+    linkedin: 'https://www.linkedin.com/in/okminz/',
     image: require('./images/brothers/portraits/234_jlin.webp'),
     safari: require('./images/brothers/portraits/234_jlin.jpg')
   },
@@ -1414,6 +1434,7 @@ const brothers = [
     major: 'mech',
     majorName: 'Mechanical Engineering',
     year: 'Class of 2022',
+    linkedin: 'https://www.linkedin.com/in/jordanluk/',
     image: require('./images/brothers/portraits/235_jluk.webp'),
     safari: require('./images/brothers/portraits/235_jluk.jpg')
   },
@@ -1471,6 +1492,7 @@ const brothers = [
     major: 'cs',
     majorName: 'Computer Science',
     year: 'Class of 2022',
+    linkedin: 'https://www.linkedin.com/in/lulu-zhu/',
     image: require('./images/brothers/portraits/240_lzhu.webp'),
     safari: require('./images/brothers/portraits/240_lzhu.jpg')
   },
