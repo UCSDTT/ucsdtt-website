@@ -678,7 +678,7 @@ const brothers = [
   },
   {
     name: 'David Lin',
-    position: 'Active',
+    position: 'Alumni',
     class: 'omicron',
     className: 'Omicron Class',
     major: 'chem',
@@ -766,7 +766,7 @@ const brothers = [
   //Pi
   {
     name: 'Ana Dasgupta',
-    position: 'Active',
+    position: 'Alumni',
     class: 'pi',
     className: 'Pi Class',
     major: 'env',
@@ -924,7 +924,7 @@ const brothers = [
   },
   {
     name: 'Stephanie Zhu',
-    position: 'Active',
+    position: 'Alumni',
     class: 'pi',
     className: 'Pi Class',
     major: 'cs',
@@ -937,7 +937,7 @@ const brothers = [
   //Rho
   {
     name: 'Sydney Huynh',
-    position: 'Active',
+    position: 'Alumni',
     class: 'rho',
     className: 'Rho Class',
     major: 'struct',
@@ -1800,7 +1800,7 @@ const brothers = [
     className: 'Chi Class',
     major: 'aero',
     majorName: 'Aerospace Engineering',
-    year: 'Class of ',
+    year: 'Class of 2024',
     linkedin: 'https://www.linkedin.com/in/megan-ma-b42433168/',
     messenger: 'https://www.facebook.com/profile.php?id=100017050904768', 
     image: require('./images/brothers/portraits/263_mma.webp'),
@@ -1841,7 +1841,7 @@ const brothers = [
     className: 'Chi Class',
     major: 'cs',
     majorName: 'Math – Computer Science',
-    year: 'Class of ',
+    year: 'Class of 2022',
     linkedin: 'https://www.linkedin.com/in/julianyan/',
     messenger: 'https://www.facebook.com/julian.yan1117', 
     image: require('./images/brothers/portraits/266_jyan.webp'),
