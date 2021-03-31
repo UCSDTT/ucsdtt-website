@@ -35,7 +35,7 @@ const faqCol2 = [
   {
     title: 'How do you choose who receives a bid?',
     body:
-      'Theta Tau searches for engineers who have a strong foundation in its three pillars: Brotherhood, Professionalism, and Service. We review each applicant as a whole (grades, personality, professionalism, resume, etc.) to determine whether we are the right fit for you.'
+      'Theta Tau searches for engineers who have a strong foundation in its three pillars: Brotherhood, Professionalism, and Philanthropy. We review each applicant as a whole (grades, personality, professionalism, resume, etc.) to determine whether we are the right fit for you.'
   },
   {
     title: 'What is pledging?',

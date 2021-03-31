@@ -22,7 +22,7 @@ const pillarData = [
   {
     info: 'Charity',
     description: 'Collecting and donating toys to Syrian refugee families',
-    name: 'Service',
+    name: 'Philanthropy',
     content:
       'For the purpose of our members’ personal growth, as well as our community’s benefits, we are involved in projects that give back to the community around us. Serving alongside brothers will establish strong bonds and also guarantee a truly meaningful time through one’s college years.',
     image: require('./images/service.webp'),
