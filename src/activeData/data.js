@@ -1807,7 +1807,7 @@ const brothers = [
     safari: require('./images/brothers/portraits/263_mma.jpg')
   },
   {
-    name: 'Marie Shimuzu',
+    name: 'Marie Shimizu',
     position: 'Active',
     cabinet: false, 
     class: 'chi',
