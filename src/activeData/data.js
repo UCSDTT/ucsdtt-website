@@ -1460,17 +1460,17 @@ const brothers = [
     image: require('./images/brothers/portraits/237_bneldner.webp'),
     safari: require('./images/brothers/portraits/237_bneldner.jpg')
   },
-  {
-    name: 'Jade Tran',
-    position: 'Active',
-    class: 'upsilon',
-    className: 'Upsilon Class',
-    major: 'chem',
-    majorName: 'Chemical Engineering',
-    year: 'Class of 2021',
-    image: require('./images/brothers/portraits/238_jtran.webp'),
-    safari: require('./images/brothers/portraits/238_jtran.jpg')
-  },
+  // {
+  //   name: 'Jade Tran',
+  //   position: 'Active',
+  //   class: 'upsilon',
+  //   className: 'Upsilon Class',
+  //   major: 'chem',
+  //   majorName: 'Chemical Engineering',
+  //   year: 'Class of 2021',
+  //   image: require('./images/brothers/portraits/238_jtran.webp'),
+  //   safari: require('./images/brothers/portraits/238_jtran.jpg')
+  // },
   {
     name: 'Claire Zhang',
     position: 'Special Events Chair',
