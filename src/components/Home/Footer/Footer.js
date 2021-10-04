@@ -40,7 +40,7 @@ function ContactInfo() {
         <a href="https://www.facebook.com/thetatau.ucsd/" target="_blank" rel="noopener noreferrer">
           <FaFacebook />
         </a>
-        <a href="https://instagram.com/thetatau_ucsd/" target="_blank" rel="noopener noreferrer">
+        <a href="https://instagram.com/ucsdthetatau/" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </a>
       </Icons>
