@@ -43,7 +43,7 @@ function ContactInfo() {
         <a href="https://instagram.com/ucsdthetatau/" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </a>
-        <a href="https://discord.gg/EDGtDeQFZu/" target="_blank" rel="noopener noreferrer">
+        <a href="https://discord.com/invite/bZk68uXVJx/" target="_blank" rel="noopener noreferrer">
           <FaDiscord />
         </a>
       </Icons>
