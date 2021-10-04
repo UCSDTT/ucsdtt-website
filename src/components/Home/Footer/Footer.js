@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import { scroller } from 'react-scroll';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaDiscord } from 'react-icons/fa';
 import styled from 'styled-components';
 import './Footer.css';
 
@@ -42,6 +42,9 @@ function ContactInfo() {
         </a>
         <a href="https://instagram.com/ucsdthetatau/" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
+        </a>
+        <a href="https://discord.gg/EDGtDeQFZu/" target="_blank" rel="noopener noreferrer">
+          <FaDiscord />
         </a>
       </Icons>
     </Col>
