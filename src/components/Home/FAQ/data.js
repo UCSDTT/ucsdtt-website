@@ -12,7 +12,7 @@ const faqCol1 = [
   {
     title: 'Who can rush?',
     body:
-      'Any full-time students who are majoring in engineering or Math-Computer Science, and are in good academic standing with the university (> 2.5 GPA) may rush. There are no exceptions to this rule.'
+      'Any full-time students who are majoring in engineering, Math-Computer Science or Data Science and are in good academic standing with the university (> 2.5 GPA) may rush. There are no exceptions to this rule.'
   },
   {
     title: 'Why rush?',
