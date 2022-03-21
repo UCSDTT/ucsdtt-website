@@ -1403,7 +1403,6 @@ const brothers = [
   {
     name: 'Amy Li',
     position: 'Active',
-    eboard: true, 
     class: 'upsilon',
     className: 'Upsilon Class',
     major: 'cs',
@@ -2466,7 +2465,7 @@ const images = [
     webp: require('./images/general/active.webp'),
     jpg: require('./images/general/active.jpg')
   },
-  {
+  /*{
     name: 'cs',
     webp: require('./images/majors/images/cs.webp'),
     jpg: require('./images/majors/images/cs.jpg')
@@ -2520,7 +2519,7 @@ const images = [
     name: 'nano',
     webp: require('./images/majors/images/chem.webp'),
     jpg: require('./images/majors/images/chem.jpg')
-  },
+  },*/
   {
     name: 'charter',
     webp: require('./images/classes/images/charter.webp'),
