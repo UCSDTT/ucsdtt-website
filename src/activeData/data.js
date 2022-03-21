@@ -1399,9 +1399,9 @@ const brothers = [
     image: require('./images/brothers/portraits/232_ale.webp'),
     safari: require('./images/brothers/portraits/232_ale.jpg')
   },
-  /*{
+  {
     name: 'Amy Li',
-    position: 'Vice Regent',
+    position: 'Active',
     eboard: true, 
     class: 'upsilon',
     className: 'Upsilon Class',
@@ -1411,7 +1411,7 @@ const brothers = [
     linkedin: 'https://www.linkedin.com/in/amyyli302/',
     image: require('./images/brothers/portraits/233_ali.webp'),
     safari: require('./images/brothers/portraits/233_ali.jpg')
-  },*/
+  },
   {
     name: 'Jack Lin',
     position: 'Alumni',
@@ -1482,7 +1482,7 @@ const brothers = [
   },
   {
     name: 'Lulu Zhu',
-    position: 'Special Events Chair',
+    position: 'Active',
     cabinet: true, 
     class: 'upsilon',
     className: 'Upsilon Class',
@@ -1496,7 +1496,7 @@ const brothers = [
   // Phi
   {
     name: 'Adrian Amora',
-    position: 'Vice Regent',
+    position: 'Regent',
     eboard: true, 
     class: 'phi',
     className: 'Phi Class',
@@ -1510,7 +1510,7 @@ const brothers = [
   },
   {
     name: 'Vicki Chen',
-    position: 'Rush Chair',
+    position: 'Active',
     cabinet: true, 
     class: 'phi',
     className: 'Phi Class',
@@ -1575,7 +1575,7 @@ const brothers = [
   },
   {
     name: 'Carleen Li',
-    position: 'Rush Chair',
+    position: 'Active',
     cabinet: true, 
     class: 'phi',
     className: 'Phi Class',
@@ -1614,9 +1614,9 @@ const brothers = [
     image: require('./images/brothers/portraits/249_jly.webp'),
     safari: require('./images/brothers/portraits/249_jly.jpg')
   },
-  {
+  /*{
     name: 'Justin Phan',
-    position: 'Regent',
+    position: 'Active',
     eboard: true,     
     class: 'phi',
     className: 'Phi Class',
@@ -1627,7 +1627,7 @@ const brothers = [
     messenger: 'https://m.me/justinphan69420', 
     image: require('./images/brothers/portraits/250_jphan.webp'),
     safari: require('./images/brothers/portraits/250_jphan.jpg')
-  },
+  },*/
   {
     name: 'Timothy Tran',
     position: 'Active',
@@ -1726,7 +1726,7 @@ const brothers = [
   },
   {
     name: 'Angelina Law',
-    position: 'Academics Chair',
+    position: 'Active',
     cabinet: true, 
     class: 'chi',
     className: 'Chi Class',
@@ -1793,7 +1793,7 @@ const brothers = [
   },
   {
     name: 'Megan Ma',
-    position: 'External Events Chair',
+    position: 'Rush Chair \n External Events Chair',
     cabinet: true, 
     class: 'chi',
     className: 'Chi Class',
@@ -1862,7 +1862,7 @@ const brothers = [
   },
   {
     name: 'Tharun Elenchezhean',
-    position: 'Active',
+    position: 'Rush Chair',
     class: 'psi',
     className: 'Psi Class',
     major: 'struct',
@@ -1888,7 +1888,7 @@ const brothers = [
   },
   {
     name: 'Vincent Liang',
-    position: 'Active',
+    position: 'Academics Chair',
     class: 'psi',
     className: 'Psi Class',
     major: 'mcs',
@@ -1901,7 +1901,7 @@ const brothers = [
   },
   {
     name: 'Rohan Sreedhar',
-    position: 'Active',
+    position: 'Special Events Chair',
     class: 'psi',
     className: 'Psi Class',
     major: 'ce',
@@ -1927,7 +1927,7 @@ const brothers = [
   },
   {
     name: 'Gwendolyn Wong',
-    position: 'Active',
+    position: 'Special Events Chair',
     class: 'psi',
     className: 'Psi Class',
     major: 'ee',
@@ -1976,7 +1976,164 @@ const brothers = [
     messenger: 'https://www.facebook.com/profile.php?id=100050071440469', 
     image: require('./images/brothers/portraits/276_ayu.webp'),
     safari: require('./images/brothers/portraits/276_ayu.jpg')
-  }
+  }/*,
+  {
+    name: 'Isabella Duldalao',
+    position: 'Active',
+    class: 'alphabeta',
+    className: 'Alpha Beta Class',
+    major: 'be',
+    majorName: 'Bioengineering',
+    year: 'Class of 2024',
+    linkedin: 'https://www.linkedin.com/in/iduldulao/',
+    messenger: 'https://www.facebook.com/isabella.duldulao', 
+    image: require('./images/brothers/portraits/276_iduldalao.webp'),
+    safari: require('./images/brothers/portraits/277_iduldalao.jpg')
+  },
+  {
+    name: 'Daphne Fabella',
+    position: 'Active',
+    class: 'alphabeta',
+    className: 'Alpha Beta Class',
+    major: 'ds',
+    majorName: 'Data Science',
+    year: 'Class of 2024',
+    linkedin: 'https://www.linkedin.com/in/daphne-fabella/',
+    messenger: 'https://www.facebook.com/daphne.fabella', 
+    image: require('./images/brothers/portraits/277_dfabella.webp'),
+    safari: require('./images/brothers/portraits/277_dfabella.jpg')
+  },
+  {
+    name: 'Karl Hernandez',
+    position: 'Active',
+    class: 'alphabeta',
+    className: 'Alpha Beta Class',
+    major: 'ce',
+    majorName: 'Computer Engineering',
+    year: 'Class of 2024',
+    linkedin: 'https://www.linkedin.com/in/karlp-hernandez/',
+    messenger: 'https://www.facebook.com/karlph.z', 
+    image: require('./images/brothers/portraits/278_khernandez.webp'),
+    safari: require('./images/brothers/portraits/278_khernandez.jpg')
+  },
+  {
+    name: 'Leo Hu',
+    position: 'Active',
+    class: 'alphabeta',
+    className: 'Alpha Beta Class',
+    major: 'mcs',
+    majorName: 'Math - Computer Science',
+    year: 'Class of 2023',
+    linkedin: 'https://www.linkedin.com/in/leohu7766/',
+    messenger: 'https://www.facebook.com/leo.hu.12', 
+    image: require('./images/brothers/portraits/279_lhu.webp'),
+    safari: require('./images/brothers/portraits/279_lhu.jpg')
+  },
+  {
+    name: 'Anna Liu',
+    position: 'Active',
+    class: 'alphabeta',
+    className: 'Alpha Beta Class',
+    major: 'ds',
+    majorName: 'Data Science',
+    year: 'Class of 2024',
+    linkedin: 'https://www.linkedin.com/in/annaliu2/',
+    messenger: 'https://www.facebook.com/anna.liu.94009841', 
+    image: require('./images/brothers/portraits/280_aliu.webp'),
+    safari: require('./images/brothers/portraits/280_aliu.jpg')
+  },
+  {
+    name: 'Alan Lunardhi',
+    position: 'Active',
+    class: 'alphabeta',
+    className: 'Alpha Beta Class',
+    major: 'be',
+    majorName: 'Biongineering',
+    year: 'Class of 2023',
+    linkedin: 'https://www.linkedin.com/in/alan-lunardhi/',
+    messenger: 'https://www.facebook.com/profile.php?id=100009967653691', 
+    image: require('./images/brothers/portraits/281_alunardhi.webp'),
+    safari: require('./images/brothers/portraits/281_alunardhi.jpg')
+  },
+  {
+    name: 'Amogh Manjunath',
+    position: 'Active',
+    class: 'alphabeta',
+    className: 'Alpha Beta Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2023',
+    linkedin: 'https://www.linkedin.com/in/amoghmanjunath/',
+    messenger: 'https://www.facebook.com/amoghm01', 
+    image: require('./images/brothers/portraits/282_amanjunath.webp'),
+    safari: require('./images/brothers/portraits/282_amanjunath.jpg')
+  },
+  {
+    name: 'Natalie Nguyen',
+    position: 'Active',
+    class: 'alphabeta',
+    className: 'Alpha Beta Class',
+    major: 'mech',
+    majorName: 'Mechanical Engineering',
+    year: 'Class of 2025',
+    linkedin: 'https://www.linkedin.com/in/nataliethaonguyen/',
+    messenger: 'https://www.facebook.com/natalie.nguyen.1272', 
+    image: require('./images/brothers/portraits/283_nnguyen.webp'),
+    safari: require('./images/brothers/portraits/283_nnguyen.jpg')
+  },
+  {
+    name: 'Jordan Peranginangin',
+    position: 'Active',
+    class: 'alphabeta',
+    className: 'Alpha Beta Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2025',
+    linkedin: 'https://www.linkedin.com/in/jordan-peranginangin-55b225194/',
+    messenger: 'https://www.facebook.com/jordan.peranginangin.1', 
+    image: require('./images/brothers/portraits/284_jperanginangin.webp'),
+    safari: require('./images/brothers/portraits/284_jperanginangin.jpg')
+  },
+  {
+    name: 'Anne Pham',
+    position: 'Active',
+    class: 'alphabeta',
+    className: 'Alpha Beta Class',
+    major: 'mcs',
+    majorName: 'Math - Computer Science',
+    year: 'Class of 2025',
+    linkedin: 'https://www.linkedin.com/in/anne-p/',
+    messenger: 'https://www.facebook.com/anne.pham.798', 
+    image: require('./images/brothers/portraits/285_apham.webp'),
+    safari: require('./images/brothers/portraits/285_apham.jpg')
+  },
+  {
+    name: 'Emma Wilby',
+    position: 'Active',
+    class: 'alphabeta',
+    className: 'Alpha Beta Class',
+    major: 'mech',
+    majorName: 'Mechanical Engineering',
+    year: 'Class of 2024',
+    linkedin: 'https://www.linkedin.com/in/emmawilby/',
+    messenger: 'https://www.facebook.com/profile.php?id=100009245029043', 
+    image: require('./images/brothers/portraits/285_ewilby.webp'),
+    safari: require('./images/brothers/portraits/285_ewilby.jpg')
+  },
+  {
+    name: 'Ryan Wong',
+    position: 'Active',
+    class: 'alphabeta',
+    className: 'Alpha Beta Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2024',
+    linkedin: 'https://www.linkedin.com/in/ryanwong20/',
+    messenger: 'https://www.facebook.com/ryan.wong.12764', 
+    image: require('./images/brothers/portraits/286_rwong.webp'),
+    safari: require('./images/brothers/portraits/286_rwong.jpg')
+  }*/
+  
 ];
 
 /* Deprecated */
@@ -2263,6 +2420,11 @@ const options = {
       value: 'psi',
       label: 'Psi',
       image: require('./images/classes/letters/psi.png')
+    },
+    {
+      value: 'alphabeta',
+      label: 'Alpha Beta',
+      image: require('./images/classes/letters/alphabeta.png')
     }
   ]
 };
