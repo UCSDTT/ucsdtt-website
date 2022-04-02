@@ -1511,7 +1511,6 @@ const brothers = [
   {
     name: 'Vicki Chen',
     position: 'Active',
-    cabinet: true, 
     class: 'phi',
     className: 'Phi Class',
     major: 'cs',
@@ -1576,7 +1575,6 @@ const brothers = [
   {
     name: 'Carleen Li',
     position: 'Active',
-    cabinet: true, 
     class: 'phi',
     className: 'Phi Class',
     major: 'bio',
