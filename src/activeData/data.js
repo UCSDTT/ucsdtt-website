@@ -1974,7 +1974,7 @@ const brothers = [
     messenger: 'https://www.facebook.com/profile.php?id=100050071440469', 
     image: require('./images/brothers/portraits/276_ayu.webp'),
     safari: require('./images/brothers/portraits/276_ayu.jpg')
-  }/*,
+  },
   {
     name: 'Isabella Duldalao',
     position: 'Active',
@@ -1986,7 +1986,7 @@ const brothers = [
     linkedin: 'https://www.linkedin.com/in/iduldulao/',
     messenger: 'https://www.facebook.com/isabella.duldulao', 
     image: require('./images/brothers/portraits/276_iduldalao.webp'),
-    safari: require('./images/brothers/portraits/277_iduldalao.jpg')
+    safari: require('./images/brothers/portraits/276_iduldalao.jpg')
   },
   {
     name: 'Daphne Fabella',
@@ -2130,7 +2130,7 @@ const brothers = [
     messenger: 'https://www.facebook.com/ryan.wong.12764', 
     image: require('./images/brothers/portraits/286_rwong.webp'),
     safari: require('./images/brothers/portraits/286_rwong.jpg')
-  }*/
+  }
   
 ];
 
@@ -2517,7 +2517,7 @@ const images = [
     name: 'nano',
     webp: require('./images/majors/images/chem.webp'),
     jpg: require('./images/majors/images/chem.jpg')
-  },*/
+  },
   {
     name: 'charter',
     webp: require('./images/classes/images/charter.webp'),
@@ -2607,7 +2607,7 @@ const images = [
     name: 'rho',
     webp: require('./images/classes/images/rho.webp'),
     jpg: require('./images/classes/images/rho.jpg')
-  }
+  }*/
 ];
 
 export { brothers, alumni, options, images };
