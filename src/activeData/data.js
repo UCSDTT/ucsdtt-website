@@ -1725,7 +1725,6 @@ const brothers = [
   {
     name: 'Angelina Law',
     position: 'Active',
-    cabinet: true, 
     class: 'chi',
     className: 'Chi Class',
     major: 'mech',
@@ -1976,7 +1975,7 @@ const brothers = [
     safari: require('./images/brothers/portraits/276_ayu.jpg')
   },
   {
-    name: 'Isabella Duldalao',
+    name: 'Isabella Duldulao',
     position: 'Active',
     class: 'alphabeta',
     className: 'Alpha Beta Class',
@@ -1985,8 +1984,8 @@ const brothers = [
     year: 'Class of 2024',
     linkedin: 'https://www.linkedin.com/in/iduldulao/',
     messenger: 'https://www.facebook.com/isabella.duldulao', 
-    image: require('./images/brothers/portraits/276_iduldalao.webp'),
-    safari: require('./images/brothers/portraits/276_iduldalao.jpg')
+    image: require('./images/brothers/portraits/276_iduldulao.webp'),
+    safari: require('./images/brothers/portraits/276_iduldulao.jpg')
   },
   {
     name: 'Daphne Fabella',
