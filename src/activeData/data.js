@@ -1483,7 +1483,6 @@ const brothers = [
   {
     name: 'Lulu Zhu',
     position: 'Active',
-    cabinet: true, 
     class: 'upsilon',
     className: 'Upsilon Class',
     major: 'cs',
@@ -1860,6 +1859,7 @@ const brothers = [
   {
     name: 'Tharun Elenchezhean',
     position: 'Rush Chair',
+    cabinet: true, 
     class: 'psi',
     className: 'Psi Class',
     major: 'struct',
@@ -1886,6 +1886,7 @@ const brothers = [
   {
     name: 'Vincent Liang',
     position: 'Academics Chair',
+    cabinet: true, 
     class: 'psi',
     className: 'Psi Class',
     major: 'mcs',
@@ -1899,6 +1900,7 @@ const brothers = [
   {
     name: 'Rohan Sreedhar',
     position: 'Special Events Chair',
+    cabinet: true, 
     class: 'psi',
     className: 'Psi Class',
     major: 'ce',
@@ -1925,6 +1927,7 @@ const brothers = [
   {
     name: 'Gwendolyn Wong',
     position: 'Special Events Chair',
+    cabinet: true, 
     class: 'psi',
     className: 'Psi Class',
     major: 'ee',
