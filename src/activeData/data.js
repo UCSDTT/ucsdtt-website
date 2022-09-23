@@ -1838,6 +1838,7 @@ const brothers = [
   {
     name: 'Dhanvi Desu',
     position: 'Professional Chair \n Webmaster',
+    cabinet: true,
     class: 'psi',
     className: 'Psi Class',
     major: 'cs',
