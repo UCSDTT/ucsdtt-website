@@ -2066,7 +2066,8 @@ const brothers = [
   },
   {
     name: 'Natalie Nguyen',
-    position: 'Active',
+    position: 'Corresponding Secretary',
+    eboard: true,
     class: 'alphabeta',
     className: 'Alpha Beta Class',
     major: 'mech',
