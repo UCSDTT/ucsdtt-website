@@ -1214,8 +1214,7 @@ const brothers = [
   //Tau
   {
     name: 'Heather Gan',
-    position: 'Professional Chair',
-    cabinet: true,
+    position: 'Alumni',
     class: 'tau',
     className: 'Tau Class',
     major: 'mcs',
