@@ -1944,7 +1944,7 @@ const brothers = [
   //   safari: require('./images/brothers/portraits/274_ayesin.jpg')
   // },
   {
-    name: 'Elizabeth Young',
+    name: 'Elisabeth Young',
     position: 'Treasurer',
     eboard: true, 
     class: 'psi',
