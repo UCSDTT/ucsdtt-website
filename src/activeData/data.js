@@ -1930,19 +1930,19 @@ const brothers = [
     image: require('./images/brothers/portraits/273_gwong.webp'),
     safari: require('./images/brothers/portraits/273_gwong.jpg')
   },
-  // {
-  //   name: 'Allen Yesin',
-  //   position: 'Active',
-  //   class: 'psi',
-  //   className: 'Psi Class',
-  //   major: 'bio',
-  //   majorName: 'Bioengineering',
-  //   year: 'Cla ss of 2023',
-  //   linkedin: 'https://www.linkedin.com/in/allenyesin/',
-  //   messenger: 'https://www.facebook.com/allen.yesin.5', 
-  //   image: require('./images/brothers/portraits/274_ayesin.webp'),
-  //   safari: require('./images/brothers/portraits/274_ayesin.jpg')
-  // },
+  {
+    name: 'Allen Yesin',
+    position: 'Active',
+    class: 'psi',
+    className: 'Psi Class',
+    major: 'bio',
+    majorName: 'Bioengineering',
+    year: 'Cla ss of 2023',
+    linkedin: 'https://www.linkedin.com/in/allenyesin/',
+    messenger: 'https://www.facebook.com/allen.yesin.5', 
+    image: require('./images/brothers/portraits/274_ayesin.webp'),
+    safari: require('./images/brothers/portraits/274_ayesin.jpg')
+  },
   {
     name: 'Elisabeth Young',
     position: 'Treasurer',
@@ -1997,19 +1997,19 @@ const brothers = [
     image: require('./images/brothers/portraits/277_dfabella.webp'),
     safari: require('./images/brothers/portraits/277_dfabella.jpg')
   },
-  {
-    name: 'Karl Hernandez',
-    position: 'Active',
-    class: 'alphabeta',
-    className: 'Alpha Beta Class',
-    major: 'ce',
-    majorName: 'Computer Engineering',
-    year: 'Class of 2024',
-    linkedin: 'https://www.linkedin.com/in/karlp-hernandez/',
-    messenger: 'https://www.facebook.com/karlph.z', 
-    image: require('./images/brothers/portraits/278_khernandez.webp'),
-    safari: require('./images/brothers/portraits/278_khernandez.jpg')
-  },
+  // {
+  //   name: 'Karl Hernandez',
+  //   position: 'Active',
+  //   class: 'alphabeta',
+  //   className: 'Alpha Beta Class',
+  //   major: 'ce',
+  //   majorName: 'Computer Engineering',
+  //   year: 'Class of 2024',
+  //   linkedin: 'https://www.linkedin.com/in/karlp-hernandez/',
+  //   messenger: 'https://www.facebook.com/karlph.z', 
+  //   image: require('./images/brothers/portraits/278_khernandez.webp'),
+  //   safari: require('./images/brothers/portraits/278_khernandez.jpg')
+  // },
   {
     name: 'Leo Hu',
     position: 'Active',
