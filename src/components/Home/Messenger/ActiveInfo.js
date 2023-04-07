@@ -5,12 +5,12 @@ import styled from 'styled-components';
 
 /* All the active information inside the messenger card */
 function ActiveInfo({ active }) {
-  const { image, safari, name, year, majorName, className, messenger } = active
+  const { image, name, year, majorName, className, messenger } = active
   return (
     <Fragment>
       <Info>
         <Image
-          src={isChrome ? image : safari}
+          src={isChrome ? image : image}
           role="presentation"
           alt="Messenger"
         />

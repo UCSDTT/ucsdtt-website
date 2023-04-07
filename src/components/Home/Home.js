@@ -43,16 +43,16 @@ export default class Home extends Component {
       const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
       /* If browser is safari, hide scroll and display text instead */
-      if (isSafari) {
-        if (window.innerWidth >= 992) {
-          document.getElementById('container').style.display = 'none';
-          document.querySelector('.mobile-origins').style.display = 'block';
-          document.querySelector('.about-description').style.height = '1050px';
-        }
-        if (window.innerWidth <= 1200 && window.innerWidth > 992) {
-          document.querySelector('.about-description').style.height = '1200px';
-        }
-      }
+      // if (isSafari) {
+      //   if (window.innerWidth >= 992) {
+      //     document.getElementById('container').style.display = 'none';
+      //     document.querySelector('.mobile-origins').style.display = 'block';
+      //     document.querySelector('.about-description').style.height = '1050px';
+      //   }
+      //   if (window.innerWidth <= 1200 && window.innerWidth > 992) {
+      //     document.querySelector('.about-description').style.height = '1200px';
+      //   }
+      // }
 
       /* Changes the navbar color when you scroll past the navbar height */
       if (wScroll >= navbarHeight) {

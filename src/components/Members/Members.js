@@ -232,7 +232,7 @@ export default class Members extends Component {
         </BrothersHeader>
         <HeroImageContainer>
           {images.map((image, i) => (
-            <HeroImage src={isChrome ? image.webp : image.jpg} alt="Brothers" selected={imageIndex === i} key={i} />
+            <HeroImage src={isChrome ? image.webp : image.webp} alt="Brothers" selected={imageIndex === i} key={i} />
           ))}
         </HeroImageContainer>
         <ScrollDown />
