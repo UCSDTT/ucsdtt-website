@@ -2709,6 +2709,16 @@ const options = {
       value: 'alphabeta',
       label: 'Alpha Beta',
       image: require('./images/classes/letters/alphabeta.png')
+    },
+    {
+      value: 'alphagamma',
+      label: 'Alpha Gamma',
+      image: require('./images/classes/letters/alphagamma.png')
+    },
+    {
+      value: 'alphadelta',
+      label: 'Alpha Delta',
+      image: require('./images/classes/letters/alphadelta.png')
     }
   ]
 };
