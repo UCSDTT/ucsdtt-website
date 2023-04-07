@@ -2131,8 +2131,100 @@ const brothers = [
     messenger: 'https://www.facebook.com/ryan.wong.12764', 
     image: require('./images/brothers/portraits/286_rwong.webp'),
     safari: require('./images/brothers/portraits/286_rwong.jpg')
-  }
-  
+  },
+  {
+    name: 'Arnav Khanna',
+    position: 'Active',
+    class: 'alphagamma',
+    className: 'Alpha Gamma Class',
+    major: 'ds',
+    majorName: 'Data Science',
+    year: 'Class of 2025',
+    linkedin: 'https://www.linkedin.com/in/arnav-khanna/',
+    messenger: 'https://www.facebook.com/arnav.khanna.3954', 
+    image: require('./images/brothers/portraits/287_akhanna.webp'),
+    safari: require('./images/brothers/portraits/287_akhanna.jpg')
+  },
+  {
+    name: 'Brian Chen',
+    position: 'Active',
+    class: 'alphagamma',
+    className: 'Alpha Gamma Class',
+    major: 'ds',
+    majorName: 'Data Science',
+    year: 'Class of 2024',
+    linkedin: 'https://www.linkedin.com/in/brian-chen-0a9b09238/',
+    messenger: 'https://www.facebook.com/profile.php?id=100014895825703', 
+    image: require('./images/brothers/portraits/288_bchen.webp'),
+    safari: require('./images/brothers/portraits/288_bchen.jpg')
+  },
+  {
+    name: 'Gina Roberg',
+    position: 'Active',
+    class: 'alphagamma',
+    className: 'Alpha Gamma Class',
+    major: 'ds',
+    majorName: 'Data Science',
+    year: 'Class of 2025',
+    linkedin: 'https://www.linkedin.com/in/gina-roberg/',
+    messenger: 'https://www.facebook.com/ginaaroberg', 
+    image: require('./images/brothers/portraits/289_groberg.webp'),
+    safari: require('./images/brothers/portraits/289_groberg.jpg')
+  },
+  {
+    name: 'Hieu Pham',
+    position: 'Active',
+    class: 'alphagamma',
+    className: 'Alpha Gamma Class',
+    major: 'cs',
+    majorName: 'Computer Science',
+    year: 'Class of 2025',
+    linkedin: 'https://www.linkedin.com/in/hieuducpham/',
+    messenger: 'https://www.facebook.com/profile.php?id=100011227716667', 
+    image: require('./images/brothers/portraits/290_hpham.webp'),
+    safari: require('./images/brothers/portraits/290_hpham.jpg')
+  },
+  {
+    name: 'Jisol Park',
+    position: 'Active',
+    class: 'alphagamma',
+    className: 'Alpha Gamma Class',
+    major: 'mcs',
+    majorName: 'Math – Computer Science',
+    year: 'Class of 2024',
+    linkedin: 'https://www.linkedin.com/in/jisol-park/',
+    messenger: 'https://www.facebook.com/jisol.park.1', 
+    image: require('./images/brothers/portraits/291_jpark.webp'),
+    safari: require('./images/brothers/portraits/291_jpark.jpg'),
+  },
+  {
+    name: 'Kyra Power',
+    position: 'Active',
+    class: 'alphagamma',
+    className: 'Alpha Gamma Class',
+    major: 'chem',
+    majorName: 'Chemical Engineering',
+    year: 'Class of 2024',
+    linkedin: 'https://www.linkedin.com/in/kyra-power-55b195238/',
+    messenger: 'https://www.facebook.com/kyra.power.12', 
+    image: require('./images/brothers/portraits/292_kpower.webp'),
+    safari: require('./images/brothers/portraits/292_kpower.jpg'),
+  },
+  {
+    name: 'Sruthi Papanasa',
+    position: 'Active',
+    class: 'alphagamma',
+    className: 'Alpha Gamma Class',
+    major: 'ds',
+    majorName: 'Data Science',
+    year: 'Class of 2024',
+    linkedin: 'https://www.linkedin.com/in/sruthi-papanasa/',
+    messenger: 'https://www.facebook.com/sruthi.papanasa', 
+    image: require('./images/brothers/portraits/293_spapanasa.webp'),
+    safari: require('./images/brothers/portraits/293_spapanasa.jpg'),
+  },
+
+
 ];
 
 /* Deprecated */
