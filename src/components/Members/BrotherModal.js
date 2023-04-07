@@ -11,10 +11,10 @@ function BrotherModal({ show, close, brother }) {
     <Modal show={show} onHide={close}>
       <Modal.Header>
         <Modal.Title>{brother.name}</Modal.Title>
-        <img className="lozad modal-image-mobile" src={isChrome ? brother.image : brother.safari} alt="Active" />
+        <img className="lozad modal-image-mobile" src={isChrome ? brother.image : brother.image} alt="Active" />
       </Modal.Header>
       <Modal.Body>
-        <img className="lozad modal-image" src={isChrome ? brother.image : brother.safari} alt="Active" />
+        <img className="lozad modal-image" src={isChrome ? brother.image : brother.image} alt="Active" />
         <BrotherInfo>
           <Info>
             <Title>Position</Title>
