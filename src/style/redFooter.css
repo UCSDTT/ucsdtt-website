@@ -1,0 +1,49 @@
+.redFooter {
+  bottom: 0;
+  width: 100vw;
+  background-color: #891a1f;
+  height: 80px;
+}
+
+.redFooter .footerContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.redFooter .footerContainer a {
+  text-decoration: none;
+}
+
+.redFooter .topFooter {
+  font-family: "Abhaya Libre", serif;
+  color: #faf9f6;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.redFooter .bottomFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.redFooter .bottomFooter a {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #faf9f6;
+}
+
+@media screen and (max-width: 850px) {
+  .redFooter .topFooter {
+    font-size: 1.3rem;
+  }
+  .redFooter .bottomFooter a {
+    font-size: 100%;
+  }
+}

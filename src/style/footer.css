@@ -1,0 +1,34 @@
+.footer {
+  margin-bottom: 0vw;
+  /* margin-top:50vw; */
+  width: 100%;
+  background-color: #faf9f6;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 10;
+  width: 100%;
+  padding: 0 50px;
+  align-items: center;
+}
+
+.footerContainer a {
+  text-decoration: none;
+  color: black;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.leftFooter {
+  display: flex;
+  align-items: center;
+}
+
+.rightFooter {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}

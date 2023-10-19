@@ -1,50 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107328054-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
 
-      gtag('config', 'UA-107328054-1');
-    </script>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Encode+Sans+Expanded:wght@400;700&family=Noto+Sans+Multani&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
-    />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/garnett.svg" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <title>UCSD Theta Tau</title>
+  <style>
+    body {
+      background-color: #faf9f6;
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+</head>
 
-    <style>
-      body {
-        background-color: #2e2f33;
-      }
-    </style>
+<body>
+  <div id="root"></div>
 
-    <title>Theta Tau @ UCSD</title>
-  </head>
-  <body>
-    <div id="loading">
-      <div id="loading-image"></div>
-    </div>
+</body>
 
-    <div id="root"></div>
-
-    <script>
-      window.onload = function() {
-        document.body.style.backgroundColor = '#fff';
-        document.getElementById('loading').style.display = 'none';
-      };
-    </script>
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
-  </body>
 </html>

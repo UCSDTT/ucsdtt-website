@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Jack Lin",
+        "role":"Software Development Engineer at Amazon",
+        "response": "“Theta Tau has helped me grow immensely as an individual and professional.”",
+        "companies": ["coinbase", "amazon"],
+        "image": "234_jlin"
+    },
+    {
+        "name": "Eric Khoi Huynh",
+        "role": "Software Engineer at Intuit",
+        "response": "“My first favorite memory was as a prospective new member: the first time getting invited to play Overwatch with the actives. 6 stack OW1 in 2018 is an experience that we literally cannot replicate. I am a gamer and a performer. Showing off my hard-earned skills to my soon-to-be brothers and sharing our love for the same game confirmed what I already knew: I found a new home at UCSD.”",
+        "companies": ["intuit"],
+        "image": "206_ehuynh"
+    },
+    {
+        "name": "AJ Tan",
+        "role": "Satellite Engineer at Viasat",
+        "response": "“I was born and raised in SoCal (> Norcal, btw). I grew up riding dirtbikes and now ride a Yamaha R3! Some of my other hobbies include snowboarding, crying on Valorant, and cooking.\n\nPlease give my dog a follow on ig @_chewiemomo <3 thnx”",
+        "companies": ["viasat"],
+        "image": "226_atan"
+    },
+    {
+        "name": "Huy Tran",
+        "role": "Project Manager at Northrop Grumman",
+        "response": "“Theta Tau has provided me the social environment necessary to develop my soft skills. Coming in as an engineer, it was a skillset that I lacked and needed guidance. In additional to the professional development, Theta Tau has supported my ambitions to grow in my field of expertise and become more confident in working with stakeholders. Theta Tau was both a professional organization but also a second family where I can be myself around.”",
+        "companies": ["northrop"],
+        "image": "202_htran"
+    },
+    {
+        "name": "Tiffany Joa",
+        "role":"Technical Program Manager at Microsoft",
+        "response": "“There are too many memories that come to mind, but one of my favorites will always be when some of my pbros and I received a noise complaint while doing karaoke in our apartment. We were summer interns living in Seattle with nothing better to do than blast throwback songs from our speaker and sing. It wasn’t a crazy night, but it goes to show that even the smallest moments were special.”",
+        "companies": ["microsoft", "northrop"],
+        "image": "257_tjoa"
+    },
+    {
+        "name": "BaoBao Laosirihongthong",
+        "role":"Chemical Engineer at Tesla",
+        "response": "“Theta Tau has surrounded me with smart, friendly and competent people who were always willing to lend a hand when I was lost in the job searching process. Being with like-minded individuals enabled us to encourage each other to reach our fullest potential. Not only did my brothers help me polish my resume, but I also did multiple mock interviews and got tips/guides from other Alumni.”",
+        "companies": ["tesla"],
+        "image": "231_blaosirihongthong"
+    }
+]

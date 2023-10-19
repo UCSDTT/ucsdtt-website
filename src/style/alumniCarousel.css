@@ -1,0 +1,62 @@
+.alumniCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Center vertically within viewport height */
+    margin: auto 0;
+    padding-bottom: 10rem;
+    overflow-x: hidden;
+}
+
+.right-arrow {
+    position: relative;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 80px;
+}
+
+.left-arrow {
+    position: relative;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 80px;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 500px) {
+    .alumniCarousel {
+        padding-bottom: 10rem; /* Further reduced padding for smaller screens */
+    }
+
+    .right-arrow, .left-arrow {
+        font-size: 2rem; /* Reduce arrow size for smaller screens */
+        margin-left: 3rem; /* Adjust margin for smaller screens */
+        margin-right: 3rem; /* Adjust margin for smaller screens */
+    }
+}

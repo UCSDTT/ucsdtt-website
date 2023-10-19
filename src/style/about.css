@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  .about {
+    margin-top: -80px;
+    height: 100%;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+  }
+
+  .abhaya {
+    font-family: "Abhaya Libre", serif;
+  }
+  
+  .about .banner {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/22grad.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .about .bannerText {
+    margin-top: -10%;
+    text-align: center;
+    color: #faf9f6;
+  }
+  
+  .about .bannerText h1 {
+    font-size: 12vw;
+    font-family: "Abhaya Libre", serif;
+    margin-bottom: -3vw;
+  }
+
+  p {
+    font-family: "Inter", sans-serif;
+  }
+  
+  .about .bannerText h3 {
+    font-size: 2vw;
+    font-style: italic;
+  }
+
+  .about .body {
+    max-width: 2000px;
+  }
+
+  .about .height {
+    min-height: calc(100vh - 80px);
+  }
+  
+  @media screen and (max-width: 950px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+
+    .about .banner {
+      background-attachment: scroll;
+    }
+
+    .about .bannerText h1 {
+      font-size: 20vw;
+    }
+    .about .bannerText h3 {
+      font-size: 4vw;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    .bg-rectangle4, .bg-biglitto, .bg-biggrass {
+      border-radius: 20px;
+    }
+  }

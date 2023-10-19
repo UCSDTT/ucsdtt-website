@@ -1,0 +1,95 @@
+.section {
+    max-width: 2000px;
+    width: 80vw;
+}
+
+.header {
+    gap: 10px;
+}
+
+.title {
+    font-size: 1.5vw;
+    font-family: "Abhaya Libre", serif;
+    color: #891A1F;
+}
+
+.bar {
+    background-color: black;
+    height: 2px;
+    flex-grow: 1;
+}
+
+.imagegrid {
+    max-width: 2000px;
+    width: 75vw;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.brother {
+    flex: 0 0 20%;
+}
+
+.brother img {
+    object-fit: cover;
+    width: 10vw;
+    height: 15vw;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.brother img:hover {
+    filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.brother h1 {
+    width: 10vw;
+    font-family: "Abhaya Libre", serif;
+    font-size: 1vw;
+}
+
+.name {
+    line-height: 1vw;
+}
+
+.positions {
+    line-height: 1vw;
+    color: #891A1F;
+}
+
+@media screen and (max-width: 950px) {
+    .title {
+        font-size: 5vw;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding-bottom: 4vw;
+    }
+    .brother img {
+        min-width: 32vw;
+        min-height: 48vw;
+    }
+    .brother h1 {
+        min-width: 32vw;
+        font-size: 4vw;
+    }
+    .name {
+        padding-top: 1vw;
+        line-height: 4vw;
+    }
+    .positions {
+        padding-top: 1vw;
+        line-height: 4vw;
+    }
+}

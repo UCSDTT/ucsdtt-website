@@ -1,0 +1,105 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #faf9f6;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  height: 80px;
+  width: 100vw;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  width: 100%;
+}
+
+.navbarContainer a {
+  text-decoration: none;
+}
+
+.leftNavbar {
+  display: flex;
+  align-items: center;
+  font-family: "Abhaya Libre", serif;
+  color: #891a1f;
+}
+
+.leftNavbar .imgContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.leftNavbar img {
+  width: 3rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.leftNavbar .textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.leftNavbar .textContainer h3 {
+  font-size: 1.6rem;
+  margin-bottom: -10px;
+}
+
+.leftNavbar .textContainer h5 {
+  font-size: 0.9rem;
+}
+
+.rightNavbar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.rightNavbar a {
+  color: #212427;
+  font-size: 1.2rem;
+}
+
+#hamburger {
+  fill: #212427;
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger:hover {
+  fill: #891a1f;
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 850px) {
+  #hamburger {
+    display: block;
+  }
+
+  .rightNavbar a {
+    display: none;
+  }
+
+  .leftNavbar .imgContainer {
+    display: none;
+  }
+
+  .leftNavbar h5 {
+    display: none;
+  }
+  .leftNavbar .textContainer h3 {
+    margin-bottom: 0px;
+  }
+  .navbarContainer {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,105 @@
+.alumni {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    max-width: 2000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.flower-1,
+.flower-2,
+.flower-3 {
+    position: absolute; /* Position the garnet divs absolutely */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.flower-1 {
+    bottom: -7%;
+    left: 5%;
+    width: 700px;
+    height: 700px;
+    background-image: url('../images/flower3.png');
+    transform: rotate(0deg);
+    z-index: -1; /* Set a lower z-index to keep it in the background */
+
+}
+
+.flower-2 {
+    left: 74%;
+    top: 79%;
+    width: 250px;
+    height: 250px;
+    background-image: url('../images/flower3.png');
+    background-position: 90% 95%;
+    z-index: -1;
+
+}
+
+.flower-3 {
+    left: 80%;
+    top: 20%;
+    width: 400px;
+    height: 400px;
+    background-image: url('../images/flower3.png');
+    z-index: -1;
+}
+
+.alumniTitle {
+    display: flex;
+    padding-top: 2vh;
+}
+
+.alumniTitle h1 {
+    color: #891A1F;
+    font-family: Abhaya Libre ExtraBold;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0;
+    white-space: nowrap;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.titleLine {
+    width: 100vw;
+    height: 4px;
+    background-color: #891A1F;
+    margin-left: 20px;
+    
+}
+
+@media (max-width: 1150px) {
+    .alumniTitle h1 {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .alumniTitle {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+
+    .flower-1 {
+        width: 250px;
+        height: 200px;
+    }
+
+    .flower-2 {
+        width: 125px;
+        height: 100px;
+    }
+
+    .flower-3 {
+        width: 125px;
+        height: 100px;
+    }
+
+    
+}

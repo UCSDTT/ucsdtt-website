@@ -1,0 +1,9 @@
+.bigLittle {
+    background-image: url(../images/alphaBeta.webp);
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background-size: cover;
+    background-position: center bottom 40%; /* Center horizontally, bottom vertically */
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}

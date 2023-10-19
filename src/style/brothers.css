@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.brothers .banner {
+  background-image: url("../images/membershipBanner.webp");
+  background-repeat: none;
+}
+
+.brothers .bannerText {
+  margin-top: -10%;
+  color: #faf9f6;
+}
+
+.brothers .bannerText h1 {
+  font-size: 12vw;
+  font-family: "Abhaya Libre", serif;
+  margin-bottom: -3vw;
+}
+
+.brothers .bannerText h3 {
+  font-size: 2vw;
+  font-style: italic;
+}
+
+.content {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.categories {
+  max-width: 2000px;
+  height: 10vh;
+}
+
+.category {
+  width: 15vw;
+  font-size: 2vw;
+  font-family: "Abhaya Libre", serif;
+  color: #b8b8b8;
+  border-bottom: 3px solid #b8b8b8;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+.brothers .active {
+  color: #891a1f;
+  border-bottom: 3px solid #891a1f;
+}
+
+@media screen and (max-width: 950px) {
+  .brothers .banner {
+    background-attachment: scroll;
+  }
+  .brothers .bannerText h1 {
+    font-size: 13vw;
+  }
+  .brothers .bannerText h3 {
+    font-size: 4vw;
+  }
+
+  .category {
+    width: 25vw;
+    font-size: 4vw;
+  }
+
+  .category {
+    width: 25vw;
+    font-size: 4vw;
+  }
+}

@@ -1,0 +1,43 @@
+
+
+.rush .text-lg{
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 80%;
+}
+
+
+.rush #rushanswers{
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 1.5rem;
+  line-height: 2.5rem;
+  /* color: #891A1F; */
+}
+
+#subline{
+
+  border-width: 1px;
+  width: 7rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 750px){
+
+  .rush #rushanswers{
+
+    font-size: 1rem;
+    line-height: 1.75rem;
+
+  }
+
+  .rush .text-lg{
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+}

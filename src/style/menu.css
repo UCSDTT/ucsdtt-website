@@ -1,0 +1,51 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #faf9f6;
+  z-index: 200;
+  padding: 0 50px;
+  overflow: auto;
+  overflow: auto;
+}
+
+.linkContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.linkContainer a {
+  text-decoration: none;
+  color: #891a1f;
+  font-size: 3rem;
+  font-family: "Abhaya Libre", serif;
+  cursor: pointer;
+}
+
+#closeMenu {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  z-index: 1001;
+  fill: #212427;
+}
+
+#closeMenu:hover {
+  fill: #891a1f;
+  transition: 0.2s ease-in-out;
+}
+
+.line {
+  width: 80%;
+  border: 1px solid #891a1f;
+  border-radius: 15px;
+}

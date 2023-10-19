@@ -1,0 +1,91 @@
+.gallery {
+  margin-top: -80px;
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.gallery .banner {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/galleryBanner.webp");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.gallery .bannerText {
+  position: absolute;
+  margin-top: -10%;
+  text-align: center;
+  color: #faf9f6;
+}
+
+.gallery .bannerText h1 {
+  font-size: 12vw;
+  font-family: "Abhaya Libre", serif;
+  margin-bottom: -3vw;
+}
+
+.gallery .bannerText h3 {
+  font-size: 2vw;
+  font-style: italic;
+}
+
+.gallery .photos {
+  background-image: url("../images/galleryGraphic.webp");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery .grid {
+  max-width: 2000px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2.5rem;
+}
+
+.gallery .grid img {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 950px) {
+  .gallery .banner {
+    background-attachment: scroll;
+  }
+
+  .gallery .photos {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .gallery .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+
+  .gallery .bannerText h1 {
+    font-size: 22vw;
+    margin-bottom: -7vw;
+  }
+  .gallery .bannerText h3 {
+    font-size: 4vw;
+  }
+
+  .gallery .grid img {
+    width: 100%;
+    height: auto;
+  }
+}

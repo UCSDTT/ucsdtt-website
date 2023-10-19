@@ -1,0 +1,82 @@
+.landing {
+    background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), 
+        linear-gradient(180deg, rgba(137, 26, 31, 0.25) 18.37%, rgba(137, 26, 31, 0.50) 59.93%, rgba(137, 26, 31, 0.08) 69.09%), 
+        url(../images/thetataubiglittle.webp);    
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-attachment: fixed;
+    margin-top: -80px;
+    overflow: hidden;
+}
+
+.text-container {
+    text-align: center; 
+    color: white; 
+    padding-bottom: 2rem;
+}
+  
+.text-container h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 12vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-family: Abhaya Libre ExtraBold;
+}
+
+.text-container h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-family: Abhaya Libre ExtraBold;
+}
+
+.text-container h3 {
+    color: #FFF;
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    width: 650px;
+    height: 84px;
+    text-align: center;
+    margin: 0 auto; /* Center horizontally using auto margins */
+    display: flex;
+    justify-content: center; /* Center horizontally within the h3 itself */
+    margin-top: 10px;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .landing {
+        background-attachment: scroll;
+    }
+
+    .text-container {
+        margin-bottom: 4rem; /* Reduce margin for smaller screens */
+        padding-bottom: 6rem; /* Reduce padding for smaller screens */
+    }
+
+    .text-container h1 {
+        font-size: 15vw; /* Reduce font size for h1 on smaller screens */
+    }
+
+    .text-container h2 {
+        font-size: 5vw; /* Reduce font size for h2 on smaller screens */
+    }
+
+    .text-container h3 {
+        font-size: 4vw; /* Reduce font size for h3 on smaller screens */
+    }
+}
