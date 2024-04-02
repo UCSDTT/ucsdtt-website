@@ -55,9 +55,9 @@
   margin-bottom: 2vw;
 }
 
-.rush .text-4xl{
+/* .rush .text-4xl{
   font-size: 6rem;
-}
+} */
 
 .rush .rushTimelineHeader img{
   position: absolute;
@@ -150,7 +150,7 @@
 .rush .splitHalf .rightImage{
   position: relative;
   background-image: url("../images/rushimg1.jpg");
-  /* border-radius: 3vw; */
+  /* border-radius: 10px; */
   height: 99%;
   width: 50vw;
   background-size: cover;
@@ -164,7 +164,7 @@
   padding-top: 8.5rem;
   padding-right: 7rem;
   font-family: 'Abhaya Libre', sans-serif;
-  font-size: 5rem;
+  /* font-size: 5rem; */
   font-weight: 800;
   color: white;
   line-height: 5rem;
@@ -189,7 +189,7 @@
 .rush .splitHalf .rightImage .info .discordButton{
   margin-top: 3.5rem;
   border-color:  white;
-  border-width: 0.3rem;
+  border-width: 0.15rem;
   justify-content: center;
   margin-left: 7rem;
   border-radius: 1.2rem;
@@ -238,7 +238,7 @@
   
   font-family: 'Abhaya Libre', sans-serif;
   margin-left: 4vw;
-  font-size: 8vw;
+  /* font-size: 8vw; */
   font-weight: 800;
   color: white;
 }
@@ -464,9 +464,9 @@
   /* padding-top: 1vh; */
 }
 
-.rush .accordionHeader .text-4xl{
+/* .rush .accordionHeader .text-4xl{
   font-size: 4rem;
-}
+} */
 
 
 
@@ -474,7 +474,7 @@
   padding-left: 10%;
   padding-right: 10%;
   font-family: 'Inter', sans-serif;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .rush .faqAnswers .body .flex{
@@ -579,9 +579,9 @@
     
   }
 
-  .rush .text-4xl{
+  /* .rush .text-4xl{
     font-size: 8vw;
-  }
+  } */
 
   .rush .date{
     height: fit-content;
@@ -750,7 +750,7 @@
     
     font-family: 'Abhaya Libre', sans-serif;
     /* margin-left: 5rem; */
-    font-size: 8vw;
+    /* font-size: 8vw; */
     font-weight: 800;
     /* margin-left: 1.2rem; */
     padding-left: 2.5rem;
@@ -762,12 +762,12 @@
     text-align: left;
   }
 
-  .rush .accordionHeader .text-4xl{
+  /* .rush .accordionHeader .text-4xl{
     font-size: 2.5rem;
     text-align: left;
     padding-left: 1rem;
     padding-right: 1.5rem;
-  }
+  } */
   
   #discordMobile{
     display: inline-block;
@@ -963,7 +963,7 @@
     
     font-family: 'Abhaya Libre', sans-serif;
     /* margin-left: 5rem; */
-    font-size: 8vwrem;
+    /* font-size: 8vwrem; */
     font-weight: 800;
     /* margin-left: 2.5rem; */
     padding-bottom: 1.25rem;
@@ -976,7 +976,7 @@
 
 @media screen and (max-width: 600px) {
 
-  .rush .rushTimelineHeader .text-4xl{
+  /* .rush .rushTimelineHeader .text-4xl{
     font-size: 3rem;
     padding-left: 1.5rem;
   }
@@ -991,7 +991,7 @@
     text-align: left;
     padding-left: 1rem;
     padding-right: 1.5rem;
-  }
+  } */
 
   .rush .vertLine{
     
@@ -1064,7 +1064,7 @@
   .rush .rushProcessMobile .rushProcessText{
     /* margin-left: 1.5rem; */
     padding-left: 1.5rem;
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   .rush .faqAnswers{
@@ -1159,14 +1159,14 @@
     
     font-family: 'Abhaya Libre', sans-serif;
     /* margin-left: 5rem; */
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: 800;
     padding-left: 1.5rem;
     padding-bottom: 1.25rem;
 
   }
 
-  .rushTimelineHeader .text-4xl{
+  /* .rushTimelineHeader .text-4xl{
 
     padding-left: 0;
     padding-right: 1.5rem;
@@ -1176,7 +1176,7 @@
     padding-left: 0;
     padding-right: 1.5rem;
     
-  }
+  } */
 
 
 }
@@ -1248,9 +1248,9 @@
     padding-bottom: 6.2rem;
   }
 
-  .rush .text-4xl{
+  /* .rush .text-4xl{
     font-size: 6rem;
-  }
+  } */
 
   .rush .rushTimelineHeader img{
     position: absolute;
@@ -1327,7 +1327,7 @@
     padding-left: 9rem;
     padding-top: 9rem;
     font-family: 'Abhaya Libre', sans-serif;
-    font-size: 5rem;
+    /* font-size: 5rem; */
     font-weight: 800;
     color: white;
   }
@@ -1406,7 +1406,7 @@
     
     font-family: 'Abhaya Libre', sans-serif;
     margin-left: 5rem;
-    font-size: 7.5rem;
+    /* font-size: 7.5rem; */
     font-weight: 800;
     color: white;
   }
