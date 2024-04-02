@@ -25,7 +25,7 @@ export default function SingleQuestion({ question, answer }) {
         </div>
         <div className="px-5">{showAnswer && 
           <div>
-          <div className="grow border-black" id="subline"></div>
+          <div className="grow border-2 border-red-800" id="subline"></div>
           <p id="rushanswers" >{answer}</p>
           </div>}
         </div>

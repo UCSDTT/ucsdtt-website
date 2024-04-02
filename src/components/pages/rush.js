@@ -42,7 +42,7 @@ const Rush = () => {
       <div className="body">
         <div className="rushTimeline">
           <div className="rushTimelineHeader">
-            <div className="text-4xl sm:text-8xl px-10 text-red-800 abhaya">Fall Rush 2023</div>
+            <div className="text-4xl sm:text-5xl px-10 text-red-800 abhaya">Spring Rush 2024</div>
             <img src={gem} alt="gem"></img>
             <div className="grow border-2 border-red-800"></div>
           </div>
@@ -56,7 +56,7 @@ const Rush = () => {
                 <div className="date">
 
                   <div className="dateBlock">
-                    <h1>10/9/23</h1>
+                    <h1>4/1/24</h1>
                   </div>
                   <div className="vertLine"> 
                     <h1>INFO NIGHT</h1>
@@ -70,7 +70,7 @@ const Rush = () => {
 
                   
                   <div className="dateBlock">
-                    <h1>10/10/23</h1>
+                    <h1>4/2/24</h1>
                   </div>
                   <div className="vertLine">
                     <h1>PROFESSIONAL NIGHT</h1>
@@ -86,7 +86,7 @@ const Rush = () => {
                 <div className="date">
 
                   <div className="dateBlock">
-                    <h1>10/11/23</h1>
+                    <h1>4/3/24</h1>
                   </div>
                   <div className="vertLine">
                     <h1>ENGINEERING NIGHT</h1>
@@ -98,7 +98,7 @@ const Rush = () => {
                 <div className="date">
 
                   <div className="dateBlock">
-                    <h1>10/12/23</h1>
+                    <h1>4/4/24</h1>
                   </div>
                   <div className="vertLine">
                     <h1>THETA TAU NIGHT</h1>
@@ -110,7 +110,7 @@ const Rush = () => {
                 <div className="date">
 
                   <div className="dateBlock">
-                    <h1>10/13/23</h1>
+                    <h1>4/5/24</h1>
                   </div>
                   <div className="vertLine" id="endVertLine">
                     <h1>INTERVIEWS</h1>
@@ -132,12 +132,12 @@ const Rush = () => {
               <div className="rightImage">
 
                 <div className="info">
-                  <h1>
-                    Dare to Dream!
+                  <h1 className="text-4xl sm:text-5xl">
+                    Set in Motion!
                   </h1>
 
                   <p>
-                  We will be holding rush Week 2 of Fall Quarter 2023. Come out to Library Walk to meet our Brothers and learn more about Rush! 
+                  We will be holding rush Week 1 of Spring Quarter 2024. Come out to Library Walk to meet our Brothers and learn more about Rush! 
                   </p>
 
                   <p>
@@ -177,7 +177,7 @@ const Rush = () => {
         <div className="grow border-2 border-red-800"  id="line2-2"></div>
 
         <div className="rushProcessMobile">
-          <h1 className="rushProcessText">Rush Process</h1>
+          <h1 className="text-4xl sm:text-5xl px-10 text-red-800 abhaya rushProcessText">Rush Process</h1>
           <div className="timeline">
 
             <div className="date">
@@ -233,7 +233,7 @@ const Rush = () => {
         <div className="rushProcess">
 
 
-          <h1 className="rushProcessText">Rush Process</h1>
+          <h1 className="text-4xl sm:text-5xl px-10 text-red-800 abhaya rushProcessText">Rush Process</h1>
           <div className="whiteLine">
 
             <span className="dot" id="dot1">
@@ -293,7 +293,7 @@ const Rush = () => {
 
         <div className="faq_section">
           <div className="faq_header">
-            <div className="text-4xl sm:text-8xl px-10 text-red-800 abhaya">FAQ</div>
+            <div className="text-4xl sm:text-5xl px-10 text-red-800 abhaya">FAQ</div>
             <img src={gem} alt="gem"></img>
             <div className="grow border-2 border-red-800" id="faq_line"></div>
           </div>
@@ -303,7 +303,7 @@ const Rush = () => {
             <div className="faq_block" id="faqTT">
 
               <div className="accordionHeader" id="faq_tt_header">
-                <div className="text-4xl sm:text-5xl px-10 text-red-800 abhaya">Theta Tau</div>
+                <div className="text-4xl sm:text-4xl px-10 text-red-800 abhaya">Theta Tau</div>
                 <div className="grow border-2 border-red-800" id="faq_line"></div>
               </div>
               
@@ -321,7 +321,7 @@ const Rush = () => {
               
             
               <div className="accordionHeader" id="faq_rush_header">
-                <div className="text-4xl sm:text-5xl px-10 text-red-800 abhaya">Rush</div>
+                <div className="text-4xl sm:text-4xl px-10 text-red-800 abhaya">Rush</div>
                 <div className="grow border-2 border-red-800" id="faq_line"></div>
               </div>
 
@@ -336,7 +336,7 @@ const Rush = () => {
             <div className="faq_block" id="faqBid">
 
               <div className="accordionHeader" id="faq_rush_header">
-                <div className="text-4xl sm:text-5xl px-10 text-red-800 abhaya">Bid</div>
+                <div className="text-4xl sm:text-4xl px-10 text-red-800 abhaya">Bid</div>
                 <div className="grow border-2 border-red-800" id="faq_line"></div>
               </div>
 
@@ -368,7 +368,7 @@ const Rush = () => {
       <div className="footerImage">
 
         <h1>Questions about Rush?</h1>
-        <a href = "mailto:nolam@ucsd.edu, aag006@ucsd.edu">Shoot our rush chairs an email</a>
+        <a href = "mailto:kqtran@ucsd.edu, isdelgado@ucsd.edu">Shoot our rush chairs an email</a>
 
 
       </div>

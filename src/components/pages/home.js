@@ -18,7 +18,7 @@ const Home = () => {
       <PlacesWorked/>
       <BigLittle/>
       <Alumni/>
-      <RedFooter/>
+      <RedFooter/> 
     </div>
   )
 }

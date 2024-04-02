@@ -2,17 +2,16 @@
 
 .alumniCard {
     display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    /* align-items: center; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 8px; */
     margin: 10px auto; /* Center horizontally */
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 40vw;
     overflow-x: hidden;
     height: 50vh;
-    overflow-y: hidden;
-
+    /* overflow-y: hidden; */
 }
 
 .alumniCardLeft {
@@ -36,6 +35,7 @@
     flex-direction: column;
     padding-left: 1rem;
     padding-right: 1rem;
+    overflow-y: auto;
 }
 
 .alumniName {
