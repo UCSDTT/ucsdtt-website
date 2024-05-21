@@ -1400,9 +1400,9 @@
     "Image": "267_ddesu.webp"
   },
   "Tharun Elenchezhean": {
-    "Major": "Math-CS, Finance Minor",
+    "Major": "Math - Computer Science, Finance Minor",
     "Graduation": "2024",
-    "Career": "I always knew I wanted to be a STEM major since I grew up in a household with software engineer parents. Originally, I was interested in being a structural engineer due to my passion for buildings and bridges. However, once I started taking more courses I felt limited in what I could do with a structural engineering degree and did not know how I would combine the degree with my finance minor. I decided to switch to Math-CS since it is a more versatile major and allows me to better incorporate my interest in finance. I plan on going to grad school to study finance after finishing my undergrad. ",
+    "Career": "I always knew I wanted to be a STEM major since I grew up in a household with software engineer parents. Originally, I was interested in being a structural engineer due to my passion for buildings and bridges. However, once I started taking more courses I felt limited in what I could do with a structural engineering degree and did not know how I would combine the degree with my finance minor. I decided to switch to Math - Computer Science since it is a more versatile major and allows me to better incorporate my interest in finance. I plan on going to grad school to study finance after finishing my undergrad. ",
     "TT": "Theta Tau has been especially helpful to me in terms of discovering what I really want to study in college and what I want my future career to be. After talking with various Brothers it led me to switching my major. Additionally, Theta Tau has been wonderful in terms of academic support since I have plenty of friends to form study groups with to really engage with the material I am learning. Personally, Theta Tau has helped me become a better leader and decision maker through the various positions I have held within the organization. ",
     "Favorite Memory": "There have been countless moments in Theta Tau that have been quite memorable ranging from various ski trips to traveling across the country during  breaks. However, my favorite moment was when a few of my Brothers and I went to a Pitbull concert the day before fall quarter started. It was a very eventful night filled with singing, laughing, and dancing. It is definitely the highlight of my college experience so far. ",
     "Interests": "I grew up in an East Bay suburb and have one younger brother. Some of my hobbies include working out and playing sports, especially soccer and basketball. I also have a big passion for cars and enjoy following Formula 1. One interesting fact is that I have a small YouTube channel where I post timelapse builds of my larger lego sets since I have an obsession with legos. ",
@@ -1440,12 +1440,12 @@
     "Image": "271_rsreedhar.webp"
   },
   "Andrew Tan": {
-    "Major": "Math-CS, Data Science Minor",
+    "Major": "Math - Computer Science, Data Science Minor",
     "Graduation": "2024",
     "Career": "I want to become a SWE at a company whose work I'm really passionate and invested in. ",
     "TT": "TT has helped me a lot professionally through all the advice that people older than me have given me when they were going through the same processes as me. ",
     "Favorite Memory": "My favorite memory in TT is either Mr. Lin's yearly snowboarding trips or surfing with TT people.",
-    "Interests": "I am a 4th year Math-CS major.",
+    "Interests": "I am a 4th year Math - Computer Science major.",
     "Pronouns": "He/Him/His",
     "Image": "272_atan.webp"
   },
@@ -1550,7 +1550,7 @@
     "Image": "282_amanjunath.webp"
   },
   "Natalie Nguyen": {
-    "Major": "Mechanical Engineering ",
+    "Major": "Mechanical Engineering",
     "Graduation": "2025",
     "Career": "In the future I aspire to be a leading innovator in the industry. My goals are to land a full-time position after I graduate and work my way up to a higher level status. I also am looking to explore more of my passions by gaining more experience and going to graduate school eventually.",
     "TT": "Being in Theta Tau means surrounding yourself with like-minded driven individuals that will also help motivate you to achieve those goals. I also have received many opportunities to connect with industry leaders, gain individualized resume critiques, and collaborate on projects I can showcase. Beyond that, I have gained a family within Theta Tau that have supported me through all my endeavors.",
@@ -1570,7 +1570,7 @@
     "Image": "284_jperanginangin.webp"
   },
   "Anne Pham": {
-    "Major": "Cognitive Science: Machine Learning and Neural Computation ",
+    "Major": "Cognitive Science: Machine Learning and Neural Computation",
     "Graduation": "2025",
     "Career": "I've always enjoyed mathematics-- especially problems that required detailed problem-solving methods. In addition, I've enjoyed natural sciences and different technological advances that we have seen throughout the past decade. All of these new inventions have inspired me to strive towards the field of biotechnology and AI; two of the fastest growing fields in technology today. I'd love to end up working with prostheses and surgical machinery to help the future of medicine and engineering!",
     "TT": "Theta Tau has given me more than I could ever ask for in a college experience. From a community of like-minded individuals to advice from our esteemed alumni network, I've been able to indulge in all sides of the spectrum. More specifically, our alumni have inspired me to go above and beyond not only my professional goals, but my personal goals. Through Theta Tau, I know that wherever I turn, someone will be there to uplift and check me if necessary. ",
@@ -1640,7 +1640,7 @@
     "Image": "290_hpham.webp"
   },
   "Jisol Park": {
-    "Major": "Math-CS",
+    "Major": "Math - Computer Science",
     "Graduation": "2024",
     "Career": "My professional goal is to become a skilled software engineer. I am passionate about designing and developing innovative software solutions that can solve real-world problems. Additionally, I would like to attend grad school to deepen my knowledge and expertise in specific areas of software engineering. ",
     "TT": "I am always motivated to put forth my best effort when I am surrounded by the Brothers in Theta Tau. Whenever I need assistance with my resume, mock interviews, or thoughtful constructive criticism, I know I can always count on my brothers. Moreover, they have been instrumental in helping me navigate challenging situations and fostering my personal growth.",
@@ -1710,7 +1710,7 @@
     "Image": "297_apham.webp"
   },
   "Alvin Xiao": {
-    "Major": "Math-CS",
+    "Major": "Math - Computer Science",
     "Graduation": "2025",
     "Career": "I think my career path is still a little undefined. My goal is to really explore different fields and figure out which one I enjoy most. While it would be really exciting to be involved with data analysis and visualizations, I think it would also be cool to do more design as a form of creative expression. We'll see!",
     "TT": "Theta Tau has led me to some of the most inspiring and interesting people I've ever met. Everyone around me is driven to develop themselves both professionally and personally, which in turn pushes me to work harder and set more goals.",
@@ -1809,14 +1809,94 @@
     "Pronouns": "He/Him/His",
     "Image": "307_rsyed.webp"
   },
-  "Ryan D. Wong": {
-    "Major": "Cognitive Science: Machine Learning, Finance Minor",
+  "Alex Yoza": {
+    "Major": "Computer Science",
     "Graduation": "2025",
-    "Career": "After graduation, I aspire to work in a big city as a data analyst or business intelligence analyst. I find that the process of combing through raw datasets and making sense of them is very rewarding - especially if it you are exploring a topic of interest. I've changed my mind numerous times regarding my career choice but I think that becoming a data analyst would be a step in the right direction. Goals can always change though, so it's important to be adaptable. ",
-    "TT": "Personally, most of my friends have come from Theta Tau. I think that when people hear the term \"professional\" attached to any organization, they imagine that the members treat each other like coworkers. However, some of my closest friends have come from Theta Tau.  \n\nFrom a professional standpoint, I can always ask people about which classes I should take, what professors they recommend, or if they could help me prepare for an interview/polish my resume. Theta Tau is a great resource to have and the advice comes from people who are interning/working at great companies.",
-    "Favorite Memory": "Honestly my favorite memories are when I go into Geisel and there is always someone I can talk to, study, or get food with. I know it's not exactly the most exciting thing in the world, but I feel like those are the moments I will look back on fondly when I am done with college. It's the little things in life. ",
-    "Interests": "My favorite hobby is easily weight lifting. I used to love playing basketball, but I got really into weightlifting the summer between freshman and sophomore year. I think the process of bodybuilding is very rewarding and obviously it's great for your health. This year I might try getting into powerlifting more. \n\nOutside of the gym, I love following sports, particularly basketball and American football. I am a lifelong Patriots fan even though I was born in Los Angeles. The reason is because my childhood best friend got me into football and his family is from New England. Once we went to a Patriots game and met Tom Brady's dad - he let us wear one of Tom's rings and it was definitely a memorable moment in my life. ",
-    "Pronouns": "He/Him/His",
-    "Image": "308_rdwong.webp"
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "310_ayoza.webp"
+  },
+  "Allison Kwan": {
+    "Major": "Chemical Engineering",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "309_akwan.webp"
+  },
+  "Caleb Li": {
+    "Major": "Math - Computer Science",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "311_cli.webp"
+  },
+  "Daphne Wu": {
+    "Major": "Cognitive Science: Machine Learning and Neural Computation",
+    "Graduation": "2025",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "312_dwu.webp"
+  },
+  "Edna Ho": {
+    "Major": "Computer Science",
+    "Graduation": "2025",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "314_eho.webp"
+  },
+  "Elijah Hosaka": {
+    "Major": "Computer Science",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "315_ehosaka.webp"
+  },
+  "Ethan Cho": {
+    "Major": "Nanoengineering",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "313_echo.webp"
+  },
+  "Kayanne Tran": {
+    "Major": "Data Science",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "317_ktran.webp"
+  },
+  "Kenneth Duong": {
+    "Major": "Aerospace Engineering",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "316_kduong.webp"
   }
 }

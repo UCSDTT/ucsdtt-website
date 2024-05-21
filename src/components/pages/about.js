@@ -49,7 +49,7 @@ const About = () => {
             <div className="bg-flower2 md:bg-flower bg-center bg-no-repeat bg-contain italic w-full md:w-1/2 px-12 md:mr-8">
               <p className="text-lg md:text-2xl py-12 md:h-96 md:py-96 leading-8 md:leading-10 text-center flex flex-row items-center font-extralight italic">In the Spring of 2009, several students of UCSD’s Jacobs School of Engineering felt that there was a lack of engineering representation in the Greek community on campus. So, thirteen founding fathers took the first step towards establishing a chapter of the nation’s oldest and largest professional engineering fraternity on the UCSD campus. On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.</p>
             </div>
-            <div className="bg-biggrass bg-cover bg-left w-full h-96 md:py-96 md:w-1/2 rounded-none md:rounded-l-xl 3xl:rounded-xl"></div>
+            <div className="bg-biggrass bg-cover bg-center w-full h-96 md:py-96 md:w-1/2 rounded-none md:rounded-l-xl 3xl:rounded-xl"></div>
           </div>
           <div className="">
             <div className="grow border-2 border-red-800"></div>
