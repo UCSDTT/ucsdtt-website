@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .brothers .banner {
-  background-image: url("../images/membershipBanner.webp");
+  background-image: url("../images/membershipBanner.jpg");
   background-repeat: none;
 }
 
