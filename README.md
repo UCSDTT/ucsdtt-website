@@ -39,7 +39,7 @@ We appreciate your interest in the UCSD Theta Tau Chapter Website Redesign proje
 ### Designers:
 - [Hieu Phan](https://www.linkedin.com/in/hieuphanv/)
 - [Jonathan Ly](https://www.linkedin.com/in/jondnly/)
-- [Nolle Lam](https://www.linkedin.com/in/noellelam/)
+- [Noelle Lam](https://www.linkedin.com/in/noellelam/)
 - [Zander Vilaysane](https://www.linkedin.com/in/zandervilaysane/)
 ### Developers:
 - [Amogh Manjunath](https://www.linkedin.com/in/amoghmanjunath/)
