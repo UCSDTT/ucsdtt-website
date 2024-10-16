@@ -1898,5 +1898,236 @@
     "Interests": "",
     "Pronouns": "",
     "Image": "316_kduong.webp"
+  },
+  "Aden Tan": {
+    "Major": "Electrical Engineering",
+    "Graduation": "2027",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "318_atan.webp"
+  },
+  "Allison Nguyen": {
+    "Major": "Computer Engineering",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "319_anguyen.webp"
+  },
+  "Anna Ho": {
+    "Major": "Chemical Engineering",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "320_aho.webp"
+  },
+  "Andy Truong": {
+    "Major": "Data Science",
+    "Graduation": "2025",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "321_atruong.webp"
+  },
+  "Calvin Anderson": {
+    "Major": "Electrical Engineering",
+    "Graduation": "2025",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "322_canderson.webp"
+  },
+  "Clarkson Phan": {
+    "Major": "Math-Computer Science",
+    "Graduation": "2025",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "323_cphan.webp"
+  },
+  "Dylan Mirhan": {
+    "Major": "Chemical Engineering",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "324_dmirhan.webp"
+  },
+  "Hana Tjendrawasi": {
+    "Major": "Data Science",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "325_htjendrawasi.webp"
+  },
+  "Matthew Chiang": {
+    "Major": "Math-Computer Science",
+    "Graduation": "2027",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "326_mchiang.webp"
+  },
+  "Megan Liem": {
+    "Major": "Bioengineering",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "327_mliem.webp"
+  },
+  "Michael Dimapillis": {
+    "Major": "Computer Engineering",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "328_mdimapillis.webp"
+  },
+  "Norah Zhou": {
+    "Major": "Electrical Engineering",
+    "Graduation": "2027",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "329_nzhou.webp"
+  },
+  "Sam Lau": {
+    "Major": "Computer Science",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "330_slau.webp"
+  },
+  "Benedict Pham": {
+    "Major": "Mechanical Engineering",
+    "Graduation": "2027",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "331_bpham.webp"
+  },
+  "Cheryl Xiang": {
+    "Major": "Data Science",
+    "Graduation": "2027",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "332_cxiang.webp"
+  },
+  "Christine Nguyen": {
+    "Major": "Computer Science",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "333_cnguyen.webp"
+  },
+  "Ethan Lam": {
+    "Major": "Data Science",
+    "Graduation": "2027",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "334_elam.webp"
+  },
+  "Juliane Go": {
+    "Major": "Chemical Engineering",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "335_jgo.webp"
+  },
+  "Judy Jeong": {
+    "Major": "Aerospace Engineering",
+    "Graduation": "2027",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "336_jjeong.webp"
+  },
+  "Kyra Deng": {
+    "Major": "Data Science",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "337_kdeng.webp"
+  },
+  "Leo Weng": {
+    "Major": "Computer Science",
+    "Graduation": "2027",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "338_lweng.webp"
+  },
+  "Simon Quach": {
+    "Major": "Math-Computer Science",
+    "Minor": "Data Science",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "he/him",
+    "Image": "339_squach.webp"
+  },
+  "Tanay Shah": {
+    "Major": "Chemical Engineering",
+    "Graduation": "2027",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "340_tshah.webp"
   }
 }

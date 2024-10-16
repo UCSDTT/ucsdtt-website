@@ -1,257 +1,273 @@
 {
-    "Leadership": {
-        "Executive Board": [
-            "Regent:Anne Pham",
-            "Vice Regent:Noah Jaurigue",
-            "Scribe:Alvin Xiao",
-            "Treasurer:Gina Roberg",
-            "Corresponding Secretary:Hieu Pham"
-        ],
-        "Cabinet": [
-            "Rush Chair:Kayanne Tran",
-            "Rush Chair:DEI Chair:Iso Delgado",
-            "Professional Development Chair:Alex Burns",
-            "Brotherhood Chair:Arnav Khanna",
-            "Philanthropy Chair:Alina Pham",
-            "Fundraising Chair:Sruthi Papanasa",
-            "Special Events Chair:Alex Yoza",
-            "Special Events Chair:My Nguyen",
-            "External Chair:Hieu Pham",
-            "Academics Chair:Historian:Kenneth Duong",
-            "Webmaster:Justin Chiang"
-        ]
-    },
-    "Actives": {
-        "Alpha Epsilon": [
-            "Alex Yoza",
-            "Allison Kwan",
-            "Caleb Li",
-            "Daphne Wu",
-            "Edna Ho",
-            "Elijah Hosaka",
-            "Ethan Cho",
-            "Kayanne Tran",
-            "Kenneth Duong"
-        ],
-        "Alpha Delta": [
-            "Aarya Gupta",
-            "Alejandro Olmedo",
-            "Alex Burns",
-            "Alina Pham",
-            "Alvin Xiao",
-            "Bryan Lee",
-            "Iso Delgado",
-            "Justin Chiang",
-            "Mary Vu",
-            "My Nguyen",
-            "Nick Cronin",
-            "Noah Jaurigue",
-            "Noelle Lam",
-            "Rizwan Syed"
-        ],
-        "Alpha Gamma": [
-            "Arnav Khanna",
-            "Brian Chen",
-            "Gina Roberg",
-            "Hieu Pham",
-            "Jisol Park",
-            "Sruthi Papanasa"
-        ],
-        "Alpha Beta": [
-            "Amogh Manjunath",
-            "Anna Liu",
-            "Anne Pham",
-            "Emma Wilby",
-            "Isabella Duldulao",
-            "Jordan Peranginangin",
-            "Natalie Nguyen"
-        ],
-        "Psi": [
-            "Andrew Tan",
-            "Alexis Yu",
-            "Elisabeth Young",
-            "Tharun Elenchezhean"
-        ],
-        "Chi": [
-            "Henry Liu",
-            "Megan Ma"
-        ]
-    },
-    "Alumni": {
-        "Alpha Beta": [
-            "Alan Lunardhi",
-            "Leo Hu"
-        ],
-        "Psi": [
-            "Allen Yesin",
-            "Dhanvi Desu",
-            "Gwendolyn Wong",
-            "Rohan Sreedhar",
-            "Si Thu Kuang Set",
-            "Vincent Liang"
-        ],
-        "Chi": [
-            "Angelina Law",
-            "Arnav Taneja",
-            "Dorothy Chou",
-            "Jason Lee",
-            "Julian Yan",
-            "Laurent Lee",
-            "Marie Shimizu",
-            "Philip Emmanuele",
-            "Roy Li",
-            "Steven Gov",
-            "Tiffany Joa",
-            "Tung Doan",
-            "Vivi Doan"
-        ],
-        "Phi": [
-            "Adrian Amora",
-            "Angela Liu",
-            "Carleen Li",
-            "Jenny Hofilena",
-            "Jonathan Ly",
-            "Justin Phan",
-            "Lyhour Lay",
-            "Matias Lee",
-            "Timothy Tran",
-            "Valerie Hon",
-            "Vicki Chen"
-        ],
-        "Upsilon": [
-            "Amy Li",
-            "Austin Le",
-            "BaoBao Laosirihongthong",
-            "Barry Cheung",
-            "Brent Neldner",
-            "Claire Zhang",
-            "Jack Lin",
-            "Jade Tran",
-            "Jordan Luk",
-            "Lulu Zhu",
-            "Ryan Murase"
-        ],
-        "Tau": [
-            "Angelica Jane Tan",
-            "Britney Tran",
-            "Darren Jian",
-            "Esther Zhao",
-            "Everett Lin",
-            "Heather Gan",
-            "Jonathan Song",
-            "Kamran Jahadi",
-            "Kyle Gillaspy",
-            "Neha Pusarla",
-            "Raeek Rahman",
-            "Rick Huynh",
-            "Will Xu"
-        ],
-        "Sigma": [
-            "Christopher Diep",
-            "Clark Phan",
-            "Eric Huynh",
-            "Erin Songwang",
-            "Jocelyn Wei",
-            "Joshua Chao",
-            "Justin Shieh",
-            "Olivia Thai",
-            "Peggy Tran",
-            "Scott Tran",
-            "Sho Kondo",
-            "Simon Kim",
-            "William Tzou"
-        ],
-        "Rho": [
-            "Angie Joung",
-            "Dat Nguyen",
-            "Erick Wilson",
-            "Huy Tran",
-            "Jerry Qing",
-            "Jun Yin",
-            "Justin Lee",
-            "Kakeru Imanaka",
-            "Soyoun Park",
-            "Stacy Kim",
-            "Sydney Huynh"
-        ],
-        "Pi": [
-            "Adam Lin",
-            "Allen Gao",
-            "Ana Dasgupta",
-            "Aston Khor",
-            "Geoffrey Ngo",
-            "Hillary Fan",
-            "Jason Li",
-            "Jeffrey Lee",
-            "John Tayag",
-            "Kevin Huo",
-            "Meghna Satish",
-            "Shangway Hsu",
-            "Stephanie Zhu",
-            "Victoria Tam"
-        ],
-        "Omicron": [
-            "Aamir Rasheed",
-            "Brian Chan",
-            "David Lin",
-            "Fumika Takazawa",
-            "Goutham Marimuthu",
-            "Justin Dulay",
-            "Leng Kouv",
-            "Manwinder Uppal",
-            "Mayuki Sasagawa",
-            "Michelle Lu Galgana",
-            "Rachael Wong",
-            "Wonjae Lee"
-        ],
-        "Xi": [
-            "Brian Lyu",
-            "Esther Park",
-            "Jennie Nguyen",
-            "Marilyn Sun",
-            "Momina Mahmood",
-            "Rishi Dhanaraj",
-            "Shawn Macasieb",
-            "Sherman Yip",
-            "Tyler Ly"
-        ],
-        "Nu": [
-            "Adrian Gutierrez",
-            "Audrey Olson",
-            "Brendon Lim",
-            "Brian Wuerstle",
-            "Chetu Khandavilli",
-            "Daniel Zhang",
-            "Judy Ho"
-        ],
-        "Mu": [
-            "Chelsea Jan",
-            "Crystal Munive",
-            "Daviid Perez",
-            "Jessica Tran",
-            "Michael Wang",
-            "Ming Ming Liu",
-            "Terri Tsai",
-            "Vinesh Nathan"
-        ],
-        "Lambda": [
-            "Alex Tunchez",
-            "Blake Huynh",
-            "Claire Li",
-            "David Deng",
-            "Kaiser Kim",
-            "Wendy Lin"
-        ],
-        "Kappa": [
-            "Amanda Bang",
-            "Claude-Henry Djongoue",
-            "Conway Hsieh",
-            "Jaehee Jung",
-            "Kevin Ngo",
-            "Kyle Zhu",
-            "Olivia Tran",
-            "Peter Neal Barrina",
-            "Richard Yuan"
-        ]
-    }
+  "Leadership": {
+    "Executive Board": [
+      "Regent:Noelle Lam",
+      "Vice Regent:Dylan Mirhan",
+      "Scribe:Michael Dimapillis",
+      "Treasurer:Clarkson Phan",
+      "Corresponding Secretary:Hieu Pham"
+    ],
+    "Cabinet": [
+      "Rush Chair:Norah Zhou",
+      "Rush Chair:Anna Ho",
+      "Professional Development Chair:Alex Burns",
+      "Brotherhood Chair:Andy Truong",
+      "Philanthropy Chair:Aden Tan",
+      "Fundraising Chair:Alina Pham",
+      "Special Events:Anna Ho",
+      "Special Events:Megan Liem",
+      "External Chair:Allison Nguyen",
+      "Academics Chair:Hieu Pham",
+      "Historian:Kenneth Duong",
+      "Improvements:Anne Pham",
+      "Webmaster:Simon Quach"
+    ]
+  },
+
+  "Actives": {
+    "Alpha Eta": [
+      "Benedict Pham",
+      "Cheryl Xiang",
+      "Christine Nguyen",
+      "Ethan Lam",
+      "Juliane Go",
+      "Judy Jeong",
+      "Kyra Deng",
+      "Leo Weng",
+      "Simon Quach",
+      "Tanay Shah"
+    ],
+    "Alpha Zeta": [
+      "Aden Tan",
+      "Allison Nguyen",
+      "Anna Ho",
+      "Andy Truong",
+      "Calvin Anderson",
+      "Clarkson Phan",
+      "Dylan Mirhan",
+      "Hana Tjendrawasi",
+      "Matthew Chiang",
+      "Megan Liem",
+      "Michael Dimapillis",
+      "Norah Zhou",
+      "Sam Lau"
+    ],
+    "Alpha Epsilon": [
+      "Alex Yoza",
+      "Allison Kwan",
+      "Caleb Li",
+      "Daphne Wu",
+      "Edna Ho",
+      "Elijah Hosaka",
+      "Ethan Cho",
+      "Kayanne Tran",
+      "Kenneth Duong"
+    ],
+    "Alpha Delta": [
+      "Aarya Gupta",
+      "Alejandro Olmedo",
+      "Alex Burns",
+      "Alina Pham",
+      "Alvin Xiao",
+      "Iso Delgado",
+      "Justin Chiang",
+      "Mary Vu",
+      "My Nguyen",
+      "Noah Jaurigue",
+      "Noelle Lam",
+      "Rizwan Syed"
+    ],
+    "Alpha Gamma": ["Arnav Khanna", "Gina Roberg", "Hieu Pham"],
+    "Alpha Beta": ["Anne Pham", "Natalie Nguyen"]
+  },
+  "Alumni": {
+    "Alpha Delta": ["Bryan Lee", "Nick Cronin"],
+    "Alpha Gamma": ["Brian Chen", "Jisol Park", "Sruthi Papanasa"],
+    "Alpha Beta": [
+      "Alan Lunardhi",
+      "Leo Hu",
+      "Amogh Manjunath",
+      "Anna Liu",
+      "Emma Wilby",
+      "Isabella Duldulao",
+      "Jordan Peranginangin"
+    ],
+    "Psi": [
+      "Allen Yesin",
+      "Dhanvi Desu",
+      "Gwendolyn Wong",
+      "Rohan Sreedhar",
+      "Si Thu Kuang Set",
+      "Vincent Liang",
+      "Andrew Tan",
+      "Alexis Yu",
+      "Elisabeth Young",
+      "Tharun Elenchezhean"
+    ],
+    "Chi": [
+      "Angelina Law",
+      "Arnav Taneja",
+      "Dorothy Chou",
+      "Jason Lee",
+      "Julian Yan",
+      "Laurent Lee",
+      "Marie Shimizu",
+      "Philip Emmanuele",
+      "Roy Li",
+      "Steven Gov",
+      "Tiffany Joa",
+      "Tung Doan",
+      "Vivi Doan",
+      "Henry Liu",
+      "Megan Ma"
+    ],
+    "Phi": [
+      "Adrian Amora",
+      "Angela Liu",
+      "Carleen Li",
+      "Jenny Hofilena",
+      "Jonathan Ly",
+      "Justin Phan",
+      "Lyhour Lay",
+      "Matias Lee",
+      "Timothy Tran",
+      "Valerie Hon",
+      "Vicki Chen"
+    ],
+    "Upsilon": [
+      "Amy Li",
+      "Austin Le",
+      "BaoBao Laosirihongthong",
+      "Barry Cheung",
+      "Brent Neldner",
+      "Claire Zhang",
+      "Jack Lin",
+      "Jade Tran",
+      "Jordan Luk",
+      "Lulu Zhu",
+      "Ryan Murase"
+    ],
+    "Tau": [
+      "Angelica Jane Tan",
+      "Britney Tran",
+      "Darren Jian",
+      "Esther Zhao",
+      "Everett Lin",
+      "Heather Gan",
+      "Jonathan Song",
+      "Kamran Jahadi",
+      "Kyle Gillaspy",
+      "Neha Pusarla",
+      "Raeek Rahman",
+      "Rick Huynh",
+      "Will Xu"
+    ],
+    "Sigma": [
+      "Christopher Diep",
+      "Clark Phan",
+      "Eric Huynh",
+      "Erin Songwang",
+      "Jocelyn Wei",
+      "Joshua Chao",
+      "Justin Shieh",
+      "Olivia Thai",
+      "Peggy Tran",
+      "Scott Tran",
+      "Sho Kondo",
+      "Simon Kim",
+      "William Tzou"
+    ],
+    "Rho": [
+      "Angie Joung",
+      "Dat Nguyen",
+      "Erick Wilson",
+      "Huy Tran",
+      "Jerry Qing",
+      "Jun Yin",
+      "Justin Lee",
+      "Kakeru Imanaka",
+      "Soyoun Park",
+      "Stacy Kim",
+      "Sydney Huynh"
+    ],
+    "Pi": [
+      "Adam Lin",
+      "Allen Gao",
+      "Ana Dasgupta",
+      "Aston Khor",
+      "Geoffrey Ngo",
+      "Hillary Fan",
+      "Jason Li",
+      "Jeffrey Lee",
+      "John Tayag",
+      "Kevin Huo",
+      "Meghna Satish",
+      "Shangway Hsu",
+      "Stephanie Zhu",
+      "Victoria Tam"
+    ],
+    "Omicron": [
+      "Aamir Rasheed",
+      "Brian Chan",
+      "David Lin",
+      "Fumika Takazawa",
+      "Goutham Marimuthu",
+      "Justin Dulay",
+      "Leng Kouv",
+      "Manwinder Uppal",
+      "Mayuki Sasagawa",
+      "Michelle Lu Galgana",
+      "Rachael Wong",
+      "Wonjae Lee"
+    ],
+    "Xi": [
+      "Brian Lyu",
+      "Esther Park",
+      "Jennie Nguyen",
+      "Marilyn Sun",
+      "Momina Mahmood",
+      "Rishi Dhanaraj",
+      "Shawn Macasieb",
+      "Sherman Yip",
+      "Tyler Ly"
+    ],
+    "Nu": [
+      "Adrian Gutierrez",
+      "Audrey Olson",
+      "Brendon Lim",
+      "Brian Wuerstle",
+      "Chetu Khandavilli",
+      "Daniel Zhang",
+      "Judy Ho"
+    ],
+    "Mu": [
+      "Chelsea Jan",
+      "Crystal Munive",
+      "Daviid Perez",
+      "Jessica Tran",
+      "Michael Wang",
+      "Ming Ming Liu",
+      "Terri Tsai",
+      "Vinesh Nathan"
+    ],
+    "Lambda": [
+      "Alex Tunchez",
+      "Blake Huynh",
+      "Claire Li",
+      "David Deng",
+      "Kaiser Kim",
+      "Wendy Lin"
+    ],
+    "Kappa": [
+      "Amanda Bang",
+      "Claude-Henry Djongoue",
+      "Conway Hsieh",
+      "Jaehee Jung",
+      "Kevin Ngo",
+      "Kyle Zhu",
+      "Olivia Tran",
+      "Peter Neal Barrina",
+      "Richard Yuan"
+    ]
+  }
 }
