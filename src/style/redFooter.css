@@ -2,7 +2,8 @@
   bottom: 0;
   width: 100vw;
   background-color: #891a1f;
-  height: 80px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .redFooter .footerContainer {

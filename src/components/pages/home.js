@@ -7,20 +7,20 @@ import GraduationPic from "./homeComponents/graduationPic";
 import PlacesWorked from "./homeComponents/placesWorked";
 import BigLittle from "./homeComponents/bigLittle";
 import Alumni from "./homeComponents/alumni";
-import RedFooter from './../footers/redFooter';
+import RedFooter from "./../footers/redFooter";
 
 const Home = () => {
   return (
     <div className="wrapper">
-      <Landing/>
-      <Community/>
-      <GraduationPic/>
-      <PlacesWorked/>
-      <BigLittle/>
-      <Alumni/>
-      <RedFooter/> 
+      <Landing />
+      <Community />
+      <GraduationPic />
+      <PlacesWorked />
+      <BigLittle />
+      <Alumni />
+      <RedFooter />
     </div>
-  )
-}
+  );
+};
 
 export default Home;

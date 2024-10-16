@@ -114,15 +114,15 @@ const Rush = () => {
             <div className="splitHalf" id="splitHalf2">
               <div className="rightImage">
                 <div className="info">
-                  <h1 className="text-4xl sm:text-5xl">Set in Motion!</h1>
+                  <h1 className="text-4xl sm:text-5xl">Adventure Awaits!</h1>
 
                   <p>
-                    We will be holding rush Week 1 of Spring Quarter 2024. Come
+                    We will be holding rush Week 1 of Fall Quarter 2024. Come
                     out to Library Walk to meet our Brothers and learn more
                     about Rush!
                   </p>
 
-                  <p>
+                  {/* <p>
                     Don't forget to join the Rush discord for any other
                     announcements!
                   </p>
@@ -137,7 +137,7 @@ const Rush = () => {
                       <FontAwesomeIcon icon={faDiscord} id="discordIcon" />
                       <h2>Join the Server</h2>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
