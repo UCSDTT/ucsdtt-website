@@ -332,7 +332,7 @@ const Rush = () => {
       </div>
       <div className="footerImage">
         <h1>Questions about Rush?</h1>
-        <a href="mailto:nozhou@ucsd.edu, ash006@ucsd.edu">
+        <a href="mailto:bep002@ucsd.edu, c3xiang@ucsd.edu">
           Shoot our rush chairs an email
         </a>
       </div>
