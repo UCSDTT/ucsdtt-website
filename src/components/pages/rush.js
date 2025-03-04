@@ -39,7 +39,7 @@ const Rush = () => {
         <div className="rushTimeline">
           <div className="rushTimelineHeader">
             <div className="text-4xl sm:text-5xl px-10 text-red-800 abhaya">
-              Fall Rush 2024
+              Spring Rush 2025
             </div>
             <img src={gem} alt="gem"></img>
             <div className="grow border-2 border-red-800"></div>
@@ -50,7 +50,7 @@ const Rush = () => {
               <div className="timeline">
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>10/7/24</h1>
+                    <h1>03/31/25</h1>
                   </div>
                   <div className="vertLine">
                     <h1>INFO NIGHT</h1>
@@ -63,7 +63,7 @@ const Rush = () => {
 
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>10/8/24</h1>
+                    <h1>04/01/25</h1>
                   </div>
                   <div className="vertLine">
                     <h1>PROFESSIONAL NIGHT</h1>
@@ -78,7 +78,7 @@ const Rush = () => {
 
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>10/9/24</h1>
+                    <h1>04/02/25</h1>
                   </div>
                   <div className="vertLine">
                     <h1>ENGINEERING NIGHT</h1>
@@ -89,7 +89,7 @@ const Rush = () => {
 
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>10/10/24</h1>
+                    <h1>04/03/25</h1>
                   </div>
                   <div className="vertLine">
                     <h1>THETA TAU NIGHT</h1>
@@ -100,7 +100,7 @@ const Rush = () => {
 
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>10/11/24</h1>
+                    <h1>04/04/25</h1>
                   </div>
                   <div className="vertLine" id="endVertLine">
                     <h1>INTERVIEWS</h1>
@@ -114,10 +114,10 @@ const Rush = () => {
             <div className="splitHalf" id="splitHalf2">
               <div className="rightImage">
                 <div className="info">
-                  <h1 className="text-4xl sm:text-5xl">Adventure Awaits!</h1>
+                  <h1 className="text-4xl sm:text-5xl">Leap of Faith!</h1>
 
                   <p>
-                    We will be holding rush Week 1 of Fall Quarter 2024. Come
+                    We will be holding rush Week 1 of Spring Quarter 2025. Come
                     out to Library Walk to meet our Brothers and learn more
                     about Rush!
                   </p>
