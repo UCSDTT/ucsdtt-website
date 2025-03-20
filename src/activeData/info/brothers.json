@@ -1999,7 +1999,7 @@
     "Pronouns": "",
     "Image": "327_mliem.webp"
   },
-  "Michael Dimapillis": {
+  "Michael Dimapilis": {
     "Major": "Computer Engineering",
     "Graduation": "2026",
     "Career": "",
@@ -2007,7 +2007,7 @@
     "Favorite Memory": "",
     "Interests": "",
     "Pronouns": "",
-    "Image": "328_mdimapillis.webp"
+    "Image": "328_mdimapilis.webp"
   },
   "Norah Zhou": {
     "Major": "Electrical Engineering",
@@ -2101,6 +2101,7 @@
   },
   "Leo Weng": {
     "Major": "Computer Science",
+    "Minor": "Cognitive Science",
     "Graduation": "2027",
     "Career": "",
     "TT": "",
@@ -2111,7 +2112,7 @@
   },
   "Simon Quach": {
     "Major": "Math-Computer Science",
-    "Minor": "Data Science",
+    "Minor": "Music",
     "Graduation": "2026",
     "Career": "",
     "TT": "",
