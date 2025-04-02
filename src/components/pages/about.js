@@ -93,7 +93,7 @@ const About = () => {
             </div>
             <div className="flex flex-col items-center pt-8 w-full lg:w-1/3">
               <h1 className="text-3xl sm:text-4xl px-10 text-red-800 abhaya">
-                Philanthrophy
+                Philanthropy
               </h1>
               <div className="border w-36 border-red-800 my-5"></div>
               <p className="text-lg leading-9 text-center px-12 italic font-extralight">
