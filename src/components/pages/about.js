@@ -41,7 +41,7 @@ const About = () => {
         </div>
 
         {/* huge photo */}
-        <div className="bg-biglittlenopi bg-cover bg-bottom rounded-none w-screen height"></div>
+        <div className="bg-biglittle bg-cover bg-bottom rounded-none w-screen height"></div>
 
         {/* our history */}
         <div className="flex flex-col py-10 height">
