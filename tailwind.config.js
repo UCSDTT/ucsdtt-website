@@ -9,7 +9,7 @@ module.exports = {
         flower: "url('/src/images/flower.jpg')",
         flower2: "url('/src/images/flower2.jpg')",
         biglitto: "url('/src/images/biglitto.jpg')",
-        biglittle: "url('/src/images/biglittle.jpeg')",
+        biglittle: "url('/src/images/biglittle.webp')",
         biglittlenopi: "url('/src/images/biglittlenopi.jpg')",
         biggrass: "url('/src/images/biggrass.jpg')",
         handshake: "url('/src/images/handshake.jpg')",

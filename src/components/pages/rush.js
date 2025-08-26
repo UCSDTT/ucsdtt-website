@@ -5,7 +5,6 @@ import WhiteFooter from "../footers/whiteFooter.js";
 import SingleQuestion from "./SingleQuestion";
 import { ttfaq, rushfaq, bidfaq } from "./rushData";
 import gem from "../../images/gem.png";
-import footerImage from "../../images/rushfooterimage.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
@@ -39,7 +38,7 @@ const Rush = () => {
         <div className="rushTimeline">
           <div className="rushTimelineHeader">
             <div className="text-4xl sm:text-5xl px-10 text-red-800 abhaya">
-              Spring Rush 2025
+              Fall Rush 2025
             </div>
             <img src={gem} alt="gem"></img>
             <div className="grow border-2 border-red-800"></div>
@@ -50,7 +49,7 @@ const Rush = () => {
               <div className="timeline">
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>03/31/25</h1>
+                    <h1>10/06/25</h1>
                   </div>
                   <div className="vertLine">
                     <h1>INFO NIGHT</h1>
@@ -63,7 +62,7 @@ const Rush = () => {
 
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>04/01/25</h1>
+                    <h1>10/07/25</h1>
                   </div>
                   <div className="vertLine">
                     <h1>PROFESSIONAL NIGHT</h1>
@@ -78,7 +77,7 @@ const Rush = () => {
 
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>04/02/25</h1>
+                    <h1>10/08/25</h1>
                   </div>
                   <div className="vertLine">
                     <h1>ENGINEERING NIGHT</h1>
@@ -89,7 +88,7 @@ const Rush = () => {
 
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>04/03/25</h1>
+                    <h1>10/09/25</h1>
                   </div>
                   <div className="vertLine">
                     <h1>THETA TAU NIGHT</h1>
@@ -100,7 +99,7 @@ const Rush = () => {
 
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>04/04/25</h1>
+                    <h1>10/10/25</h1>
                   </div>
                   <div className="vertLine" id="endVertLine">
                     <h1>INTERVIEWS</h1>
@@ -114,10 +113,10 @@ const Rush = () => {
             <div className="splitHalf" id="splitHalf2">
               <div className="rightImage">
                 <div className="info">
-                  <h1 className="text-4xl sm:text-5xl">Leap of Faith!</h1>
+                  <h1 className="text-4xl sm:text-5xl">Ocean of Possibilities!</h1>
 
                   <p>
-                    We will be holding rush Week 1 of Spring Quarter 2025. Come
+                    We will be holding rush Week 1 of Fall Quarter 2025. Come
                     out to Library Walk to meet our Brothers and learn more
                     about Rush!
                   </p>
@@ -325,14 +324,10 @@ const Rush = () => {
 
         <div className="p-5"></div>
 
-        {/* <div className="footerImage"></div> */}
-        {/* <img className="footerImage" src={footerImage}>
-
-        </img> */}
       </div>
       <div className="footerImage">
         <h1>Questions about Rush?</h1>
-        <a href="mailto:bep002@ucsd.edu, c3xiang@ucsd.edu">
+        <a href="mailto:m7vo@ucsd.edu, sej012@ucsd.edu">
           Shoot our rush chairs an email
         </a>
       </div>

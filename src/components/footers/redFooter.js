@@ -27,7 +27,7 @@ const RedFooter = () => {
             <FontAwesomeIcon icon={faFacebook} />
           </a>
           <a
-            href="https://www.instagram.com/ucsdthetatau/?hl=en"
+            href="https://www.instagram.com/thetatauatucsd/?hl=en"
             target="_blank"
             rel="noopener noreferrer"
           >
