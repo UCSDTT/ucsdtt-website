@@ -4247,7 +4247,7 @@ const brothers = [
     oldData.forEach((entry) => {
        const brotherName = entry["name"];
        let obj = newData[brotherName];
-       if (obj["Major"] == "") {
+       if (obj["Major"] === "") {
         obj.Major = entry["majorName"];
         obj.Graduation = entry["year"].split(" ")[2];
        }

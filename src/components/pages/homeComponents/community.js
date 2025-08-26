@@ -17,7 +17,7 @@ const Community = () => {
                     <p>COMPANIES</p>
                 </div>
                 <div className="community-item community-item-large middle"> 
-                    <h1 className="middleNum">310</h1>
+                    <h1 className="middleNum">360</h1>
                     <p>PAST AND PRESENT<br></br>BROTHERS</p>
                 </div>
                 <div className="community-item right">
