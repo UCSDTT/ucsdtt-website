@@ -70,10 +70,8 @@
     ],
     "Alpha Epsilon": [
       "Allison Kwan",
-      "Daphne Wu",
       "Elijah Hosaka",
-      "Ethan Cho",
-      "Kenneth Duong"
+      "Ethan Cho"
     ],
     "Alpha Delta": [
       "Alejandro Olmedo",
@@ -84,9 +82,33 @@
   },
   "Alumni": {
     "Alpha Zeta": ["Andy Truong", "Clarkson Phan"],
-    "Alpha Epsilon": ["Alex Yoza", "Caleb Li", "Edna Ho", "Kayanne Tran"],
-    "Alpha Delta": ["Aarya Gupta", "Alvin Xiao", "Bryan Lee", "Iso Delgado", "Justin Chiang", "Mary Vu", "My Nguyen", "Nick Cronin", "Noah Jaurigue", "Rizwan Syed"],
-    "Alpha Gamma": ["Arnav Khanna", "Brian Chen", "Gina Roberg", "Hieu Pham", "Jisol Park", "Kyra Power", "Sruthi Papanasa"],
+    "Alpha Epsilon": [
+        "Alex Yoza", 
+        "Caleb Li", 
+        "Daphne Wu",
+        "Edna Ho", 
+        "Kayanne Tran",  
+        "Kenneth Duong"
+    ],
+    "Alpha Delta": [
+        "Aarya Gupta", 
+        "Alvin Xiao", 
+        "Bryan Lee", 
+        "Iso Delgado", 
+        "Justin Chiang", 
+        "Mary Vu", 
+        "My Nguyen", 
+        "Nick Cronin", 
+        "Noah Jaurigue", 
+        "Rizwan Syed"],
+    "Alpha Gamma": [
+        "Arnav Khanna", 
+        "Brian Chen", 
+        "Gina Roberg", 
+        "Hieu Pham", 
+        "Jisol Park", 
+        "Kyra Power", 
+        "Sruthi Papanasa"],
     "Alpha Beta": [
       "Alan Lunardhi",
       "Anne Pham",
