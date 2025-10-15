@@ -2203,16 +2203,6 @@
     "Pronouns": "She/Her/Hers",
     "Image": "347_ksingh.webp"
     },
-  "James Ng": {
-    "Major": "Chemical Engineering",
-    "Graduation": "2027",
-    "Career": "",
-    "TT": "",
-    "Favorite Memory": "",
-    "Interests": "",
-    "Pronouns": "",
-    "Image": "348_jng.webp"
-  },
   "Jeremy Su": {
     "Major": "Computer Science, Cognitive Science + Philosophy Minor",
     "Graduation": "2027",
@@ -2272,5 +2262,127 @@
     "Interests": "",
     "Pronouns": "",
     "Image": "354_tnguyen.webp"
+  },
+  "Ariya Abhilashkumar": {
+    "Major": "Nanoengineering",
+    "Minor": "Entrepreneurship and Innovation",
+    "Graduation": "2028",
+    "Career": "I hope to be the CEO of my own company one day that innovates new technologies for the sole purpose of helping others. As this is my final stepping stone, I hope to work in various fields of the engineering scope to find out what I am most passionate about and have unique learning experiences along the way. ",
+    "TT": "Theta Tau has helped me gain priceless knowledge about the engineering world through alumni advice and how to act in professional settings. The discipline and motivation my brothers have allow me to be inspired by them and follow in their footsteps. I have gained a genuine family within my friendships in Theta Tau and I feel I can truly be myself. ",
+    "Favorite Memory": "The late night adventures my brothers and I go on during our sleepovers are the best!",
+    "Interests": "I love playing video games, hiking/running/working out, as well as listening to music and going to concerts!",
+    "Pronouns": "She/Her/Hers",
+    "Image": "355_aabhilashkumar.webp"
+  },
+  "Celine Nguyen": {
+    "Major": "Math-Computer Science",
+    "Graduation": "2028",
+    "Career": "My professional goals for the future are to find a career where I can learn from others and work with a team.",
+    "TT": "Theta Tau has given me strong friendships that I know will last for life. The people in Theta Tau have also inspired me to be ambitious in my career and never give up!",
+    "Favorite Memory": "When we go to the beach at night and have good conversations. I like to have deep conversations with my brothers because it helps me bond with them!",
+    "Interests": "I love to go cafe hopping, take photobooth pics, or play pool!",
+    "Pronouns": "She/Her/Hers",
+    "Image": "356_cnguyen.webp"
+  },
+  "Emanuel Nader": {
+    "Major": "Math-Computer Science",
+    "Graduation": "2028",
+    "Career": "I aspire to become a software engineer where I hopefully have a nice work/life balance!",
+    "TT": "Being surrounded by so many talented individuals with vast professional experience has allowed me access to amazing advice thats helped me in my current and future career. The people in Theta Tau have always been there for me, whenever I'm down I know they are always there to cheer me up.",
+    "Favorite Memory": "I love the tradition of suprising brothers on their birthday! Making everyone feel special on their birthday night is so heartwarming and its so fun seeing their reactions.",
+    "Interests": "I'm a massive gym rat. But I also love cooking yummy food and eating.",
+    "Pronouns": "He/Him/His",
+    "Image": "357_enader.webp"
+  },
+  "Ganesh Kumarappan": {
+    "Major": "Data Science",
+    "Graduation": "2027",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "358_gkumarappan.webp"
+  },
+  "Jared Locquiao": {
+    "Major": "Electrical Engineering",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "359_jlocquiao.webp"
+  },
+  "Joey Sandoval": {
+    "Major": "Data Science",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "360_jsandoval.webp"
+  },
+  "Kalyssa Choy": {
+    "Major": "Computer Science",
+    "Graduation": "2028",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "361_kchoy.webp"
+  },
+  "Marcus Mendoza": {
+    "Major": "Math-Computer Science",
+    "Graduation": "2026",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "362_mmendoza.webp"
+  },
+  "Michelle Hong": {
+    "Major": "Data Science",
+    "Minor": "Business Economics",
+    "Graduation": "2027",
+    "Career": "I hope to make a positive impact within my field and help others. I hope to find a sense of fulfillment through my work and be a valuable member of my team.",
+    "TT": "Theta Tau has taught me valuable teamwork and time management skills.",
+    "Favorite Memory": "I love when all my pledge brothers are together and having our own little debriefs.",
+    "Interests": "I love to thrift, play bass guitar, and go to concerts!",
+    "Pronouns": "She/Her/Hers",
+    "Image": "363_mhong.webp"
+  },
+  "Sophia Kim": {
+    "Major": "Electrical Engineering",
+    "Graduation": "2027",
+    "Career": "I hope to work within system design/development, and to continuously learn and improve from others.",
+    "TT": "Theta Tau has made my experience in college much more valuable. Through countless conversations amongst the brothers, they have helped shaped my professional career and technical skills. However, I’ve also developed a sense of belonging through this supportive yet driven community.",
+    "Favorite Memory": "Some of my favorite memories would have to be the spontaneous trips throughout the day, there’s always a huge smile plastered across my face.",
+    "Interests": "Coming from a mixed-race family, I love cooking both cuisines whenever I have the time! ",
+    "Pronouns": "She/Her/Hers",
+    "Image": "364_skim.webp"
+  },
+  "Tony Chen": {
+    "Major": "Electrical Engineering",
+    "Graduation": "2027",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "365_tchen.webp"
+  },
+  "Ved Patel": {
+    "Major": "Bioengineering",
+    "Graduation": "2027",
+    "Career": "I want to pursue a career that allows me to help others through research and product development. I hope to help make strides and help bring advancements in the biomedical device industry.",
+    "TT": "Theta Tau has pushed me to grow both professionally and personally. Professionally, it’s connected me with a network of driven, like-minded individuals who’ve helped me navigate the industry and portray myself as a professional. Personally, it gave me a community that genuinely supports me. Through Theta Tau, I've built lasting friendships and grown into someone more confident and capable.",
+    "Favorite Memory": "My favorite memories in Theta Tau aren’t tied to any one event. They're in the conversations I’ve had with the brothers. The late night grub and yap runs or long rants about school, those moments really stuck with me. It’s rare to find a group where you can truly be yourself and still feel supported no matter what. ",
+    "Interests": "I love to cook.",
+    "Pronouns": "He/Him/His",
+    "Image": "366_vpatel.webp"
   }
 }
