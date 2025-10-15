@@ -27,6 +27,20 @@
   },
 
   "Actives": {
+    "Alpha Iota": [
+      "Ariya Abhilashkumar",
+      "Celine Nguyen",
+      "Emanuel Nader",
+      "Ganesh Kumarappan",
+      "Jared Locquiao",
+      "Joey Sandoval",
+      "Kalyssa Choy",
+      "Marcus Mendoza",
+      "Michelle Hong",
+      "Sophia Kim",
+      "Tony Chen",
+      "Ved Patel"
+    ],
     "Alpha Theta": [
       "Brandon Tran",
       "Bryce Johnson",
@@ -34,7 +48,6 @@
       "Eric Nguyen",
       "Evan Quach",
       "Hanna Min",
-      "James Ng",
       "Jeremy Su",
       "Kiara Singh",
       "Maylani Vo",
@@ -52,7 +65,6 @@
       "Judy Jeong",
       "Kyra Deng",
       "Leo Weng",
-      "Simon Quach",
       "Tanay Shah"
     ],
     "Alpha Zeta": [
@@ -62,11 +74,9 @@
       "Andy Truong",
       "Calvin Anderson",
       "Clarkson Phan",
-      "Dylan Mirhan",
       "Hana Tjendrawasi",
       "Matthew Chiang",
       "Megan Liem",
-      "Michael Dimapilis",
       "Norah Zhou",
       "Sam Lau"
     ],
@@ -85,21 +95,21 @@
       "Aarya Gupta",
       "Alejandro Olmedo",
       "Alex Burns",
-      "Alina Pham",
       "Alvin Xiao",
       "Iso Delgado",
       "Justin Chiang",
       "Mary Vu",
       "My Nguyen",
       "Noah Jaurigue",
-      "Noelle Lam",
       "Rizwan Syed"
     ],
     "Alpha Gamma": ["Arnav Khanna", "Gina Roberg", "Hieu Pham"],
     "Alpha Beta": ["Anne Pham", "Natalie Nguyen"]
   },
   "Alumni": {
-    "Alpha Delta": ["Bryan Lee", "Nick Cronin"],
+    "Alpha Eta": ["Simon Quach"],
+    "Alpha Zeta": ["Andy Truong", "Clarkson Phan", "Dylan Mirhan", "Michael Dimapilis"],
+    "Alpha Delta": ["Bryan Lee", "Nick Cronin", "Alina Pham", "Noelle Lam"],
     "Alpha Gamma": ["Brian Chen", "Jisol Park", "Sruthi Papanasa"],
     "Alpha Beta": [
       "Alan Lunardhi",
