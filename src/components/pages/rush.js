@@ -49,7 +49,7 @@ const Rush = () => {
               <div className="timeline">
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>10/06/25</h1>
+                    <h1>3/30/26</h1>
                   </div>
                   <div className="vertLine">
                     <h1>INFO NIGHT</h1>
@@ -62,7 +62,7 @@ const Rush = () => {
 
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>10/07/25</h1>
+                    <h1>3/31/26</h1>
                   </div>
                   <div className="vertLine">
                     <h1>PROFESSIONAL NIGHT</h1>
@@ -77,7 +77,7 @@ const Rush = () => {
 
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>10/08/25</h1>
+                    <h1>4/1/26</h1>
                   </div>
                   <div className="vertLine">
                     <h1>ENGINEERING NIGHT</h1>
@@ -88,7 +88,7 @@ const Rush = () => {
 
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>10/09/25</h1>
+                    <h1>4/2/26</h1>
                   </div>
                   <div className="vertLine">
                     <h1>THETA TAU NIGHT</h1>
@@ -99,7 +99,7 @@ const Rush = () => {
 
                 <div className="date">
                   <div className="dateBlock">
-                    <h1>10/10/25</h1>
+                    <h1>4/3/26</h1>
                   </div>
                   <div className="vertLine" id="endVertLine">
                     <h1>INTERVIEWS</h1>
@@ -113,10 +113,10 @@ const Rush = () => {
             <div className="splitHalf" id="splitHalf2">
               <div className="rightImage">
                 <div className="info">
-                  <h1 className="text-4xl sm:text-5xl">Ocean of Possibilities!</h1>
+                  <h1 className="text-4xl sm:text-5xl">Through the Looking Glass!</h1>
 
                   <p>
-                    We will be holding rush Week 1 of Fall Quarter 2025. Come
+                    We will be holding rush Week 1 of Spring Quarter 2026. Come
                     out to Library Walk to meet our Brothers and learn more
                     about Rush!
                   </p>
@@ -327,7 +327,7 @@ const Rush = () => {
       </div>
       <div className="footerImage">
         <h1>Questions about Rush?</h1>
-        <a href="mailto:m7vo@ucsd.edu, sej012@ucsd.edu">
+        <a href="mailto:dmn011@ucsd.edu, k6singh@ucsd.edu">
           Shoot our rush chairs an email
         </a>
       </div>
