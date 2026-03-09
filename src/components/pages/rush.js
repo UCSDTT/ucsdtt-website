@@ -38,7 +38,7 @@ const Rush = () => {
         <div className="rushTimeline">
           <div className="rushTimelineHeader">
             <div className="text-4xl sm:text-5xl px-10 text-red-800 abhaya">
-              Fall Rush 2025
+              Spring Rush 2026
             </div>
             <img src={gem} alt="gem"></img>
             <div className="grow border-2 border-red-800"></div>
