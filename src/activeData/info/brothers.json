@@ -2070,6 +2070,16 @@
     "Pronouns": "She/Her/Hers",
     "Image": "335_jgo.webp"
 },
+  "Ethan Lam": {
+    "Major": "Data Science",
+    "Graduation": "2027",
+    "Career": "",
+    "TT": "",
+    "Favorite Memory": "",
+    "Interests": "",
+    "Pronouns": "",
+    "Image": "334_elam.webp"
+  },
   "Judy Jeong": {
     "Major": "Aerospace Engineering",
     "Graduation": "2027",
@@ -2364,16 +2374,6 @@
     "Interests": "I love to cook.",
     "Pronouns": "He/Him/His",
     "Image": "366_vpatel.webp"
-  },
-  "Akshitaa Balasai": {
-    "Major": "Data Science",
-    "Graduation": "2027",
-    "Career": "",
-    "TT": "",
-    "Favorite Memory": "",
-    "Interests": "",
-    "Pronouns": "",
-    "Image": "367_abalasai.webp"
   },
   "Spandan Kottakota": {
     "Major": "Electrical Engineering",

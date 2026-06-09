@@ -40,7 +40,6 @@
       "Shivam Sharma"
     ],
     "Tau Alpha": [
-      "Akshitaa Balasai",
       "Spandan Kottakota",
       "Toby Jacob"
     ],
@@ -49,10 +48,8 @@
       "Celine Nguyen",
       "Emanuel Nader",
       "Ganesh Kumarappan",
-      "Jared Locquiao",
       "Joey Sandoval",
       "Kalyssa Choy",
-      "Marcus Mendoza",
       "Michelle Hong",
       "Sophia Kim",
       "Tony Chen",
@@ -60,63 +57,64 @@
     ],
     "Alpha Theta": [
       "Brandon Tran",
-      "Bryce Johnson",
       "Dylan Ngo",
       "Eric Nguyen",
       "Evan Quach",
-      "Hanna Min",
       "Jeremy Su",
       "Kiara Singh",
-      "Maylani Vo",
-      "Olivia Woo",
-      "Raymond Tran",
-      "Tony Nguyen"
+      "Olivia Woo"
     ],
 
+    "Alpha Eta": [
+      "Judy Jeong"
+    ],
+    "Alpha Zeta": [
+      "Aden Tan",
+      "Matthew Chiang",
+      "Norah Zhou"
+    ]
+  },
+  "Alumni": {
+    "Alpha Iota":["Jared Locquiao", "Marcus Mendoza"],
+    "Alpha Theta":["Bryce Johnson", "Hanna Min", "Maylani Vo", "Raymond Tran", "Tony Nguyen"],
     "Alpha Eta": [
       "Benedict Pham",
       "Cheryl Xiang",
       "Christine Nguyen",
-      "Juliane Go",
-      "Judy Jeong",
-      "Kyra Deng",
+      "Ethan Lam",
+      "Juliane Go", 
+      "Kyra Deng", 
       "Leo Weng",
+      "Simon Quach",
       "Tanay Shah"
     ],
     "Alpha Zeta": [
-      "Aden Tan",
-      "Allison Nguyen",
-      "Anna Ho",
-      "Calvin Anderson",
-      "Hana Tjendrawasi",
-      "Matthew Chiang",
-      "Megan Liem",
-      "Norah Zhou",
-      "Sam Lau"
+        "Andy Truong",
+        "Allison Nguyen",
+        "Anna Ho",
+        "Calvin Anderson",
+        "Clarkson Phan", 
+        "Dylan Mirhan", 
+        "Hana Tjendrawasi",
+        "Megan Liem",
+        "Michael Dimapilis",
+        "Sam Lau"
     ],
-    "Alpha Epsilon": [
-      "Allison Kwan",
-      "Elijah Hosaka",
-      "Ethan Cho",
-      "Kayanne Tran"
-    ],
-    "Alpha Delta": [
-      "Alejandro Olmedo",
-      "Alex Burns"
-    ]
-  },
-  "Alumni": {
-    "Alpha Eta": ["Simon Quach"],
-    "Alpha Zeta": ["Andy Truong", "Clarkson Phan", "Dylan Mirhan", "Michael Dimapilis"],
     "Alpha Epsilon": [
         "Alex Yoza", 
+        "Allison Kwan",
         "Caleb Li", 
         "Daphne Wu",
         "Edna Ho", 
+        "Elijah Hosaka",
+        "Ethan Cho",
+        "Kayanne Tran",
         "Kenneth Duong"
     ],
     "Alpha Delta": [
         "Aarya Gupta", 
+        "Alejandro Olmedo",
+        "Alex Burns",
         "Alina Pham",
         "Alvin Xiao", 
         "Bryan Lee", 
