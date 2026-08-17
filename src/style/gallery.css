@@ -54,12 +54,111 @@
   grid-gap: 2.5rem;
 }
 
-.gallery .grid img {
+.gallery .gridPhoto {
   aspect-ratio: 1;
   border-radius: 10px;
   width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.2s ease;
+}
+
+.gallery .gridPhoto:hover {
+  transform: scale(1.03);
+}
+
+.gallery .grid img {
+  display: block;
+  width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.photoCard {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  backdrop-filter: blur(1px);
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Repeated clicks on the arrows would otherwise drag-select the icons. */
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.photoCardContainer {
+  max-height: 90%;
+  max-width: 90%;
+  padding: 10px;
+  background-color: #faf9f6;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.photoCardContainer img {
+  max-height: calc(90vh - 20px);
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  -webkit-user-drag: none;
+}
+
+#closePhoto {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  z-index: 1001;
+  fill: #212427;
+}
+
+#closePhoto:hover {
+  fill: #891a1f;
+  transition: 0.2s ease-in-out;
+}
+
+#prevPhoto,
+#nextPhoto {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  z-index: 1001;
+  fill: #212427;
+}
+
+#prevPhoto:hover,
+#nextPhoto:hover {
+  fill: #891a1f;
+  transition: 0.2s ease-in-out;
+}
+
+#prevPhoto {
+  left: 20px;
+}
+
+#nextPhoto {
+  right: 20px;
 }
 
 @media screen and (max-width: 950px) {
@@ -84,8 +183,25 @@
     font-size: 4vw;
   }
 
-  .gallery .grid img {
-    width: 100%;
-    height: auto;
+  .gallery .gridPhoto:hover {
+    transform: none;
+  }
+
+  .photoCardContainer {
+    max-width: 80%;
+  }
+
+  #prevPhoto,
+  #nextPhoto {
+    width: 22px;
+    height: 22px;
+  }
+
+  #prevPhoto {
+    left: 8px;
+  }
+
+  #nextPhoto {
+    right: 8px;
   }
 }

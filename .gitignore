@@ -18,3 +18,13 @@ npm-debug.log
 
 # webp converter files
 tools/img
+
+# raw photo drop folder - the originals that ship are in src/images/gallery/full
+src/Gallery/
+
+# browser automation artifacts
+.playwright-mcp/
+
+# stray screenshots at the repo root
+/hero-new.png
+/localhost-refresh.png
