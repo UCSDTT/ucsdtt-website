@@ -10,6 +10,7 @@ module.exports = {
         flower2: "url('/src/images/flower2.jpg')",
         biglitto: "url('/src/images/biglitto.jpg')",
         biglittle: "url('/src/images/biglittle.webp')",
+        akbiglittle: "url('/src/images/akbiglittle.jpg')",
         biglittlenopi: "url('/src/images/biglittlenopi.jpg')",
         girlsmu: "url('/src/images/Girls&Mu.jpg')",
         handshake: "url('/src/images/handshake.jpg')",
