@@ -16,7 +16,12 @@ const baseName = (key) => key.replace(/^\.\//, "").replace(/\.[^.]+$/, "");
 
 // Photos kept in the gallery folder but hidden from the page. Add a filename
 // (without extension) here to hide it, or remove it to show it again.
-const hidden = new Set(["DSC09682", "DSCF1341", "DSCF8840_Original"]);
+const hidden = new Set([
+  "9a335094bb8cd214b2b5456e65ef0c74",
+  "DSC09682",
+  "DSCF1341",
+  "DSCF8840_Original",
+]);
 
 // gallery/full holds the untouched originals, which keep their own extensions,
 // so pair them to their thumbnails by filename rather than by full key.
