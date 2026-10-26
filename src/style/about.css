@@ -74,7 +74,7 @@
   }
 
   @media screen and (min-width: 2000px) {
-    .bg-professional, .bg-biglitto, .bg-girlsmu {
+    .bg-rectangle4, .bg-biglitto, .bg-girlsmu {
       border-radius: 20px;
     }
   }

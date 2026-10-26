@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "22grad": "url('/src/images/22grad.jpg')",
-        professional: "url('/src/images/Professional.webp')",
+        rectangle4: "url('/src/images/rectangle4.jpg')",
         flower: "url('/src/images/flower.jpg')",
         flower2: "url('/src/images/flower2.jpg')",
         biglitto: "url('/src/images/biglitto.jpg')",

@@ -33,7 +33,7 @@ const About = () => {
                 inclusivity within the engineering community and beyond.
               </p>
             </div>
-            <div className="bg-professional bg-cover bg-center w-full h-96 md:py-96 md:w-1/2 rounded-none md:rounded-l-xl 3xl:rounded-xl"></div>
+            <div className="bg-rectangle4 bg-cover bg-left w-full h-96 md:py-96 md:w-1/2 rounded-none md:rounded-l-xl 3xl:rounded-xl"></div>
           </div>
           <div className="">
             <div className="grow border-2 border-red-800"></div>
@@ -41,7 +41,7 @@ const About = () => {
         </div>
 
         {/* huge photo */}
-        <div className="bg-akbiglittle bg-cover bg-bottom rounded-none w-screen height"></div>
+        <div className="bg-biglittle bg-cover bg-bottom rounded-none w-screen height"></div>
 
         {/* our history */}
         <div className="flex flex-col py-10 height">
