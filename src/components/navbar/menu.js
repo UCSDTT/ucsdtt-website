@@ -38,11 +38,6 @@ const Menu = ({ show, onClose }) => {
           BROTHERS
         </Link>
         <div className="line"></div>
-
-        <Link to="/gallery" onClick={onClose}>
-          GALLERY
-        </Link>
-        <div className="line"></div>
       </div>
     </div>
   );

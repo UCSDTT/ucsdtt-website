@@ -11,7 +11,6 @@ import Home from "./components/pages/home";
 import About from "./components/pages/about";
 import Brothers from "./components/pages/brothers";
 import Rush from "./components/pages/rush";
-import Gallery from "./components/pages/gallery";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -34,7 +33,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/brothers" element={<Brothers />} />
         <Route path="/rush" element={<Rush />} />
-        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </Router>
   );

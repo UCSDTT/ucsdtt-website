@@ -25,7 +25,6 @@ const Navbar = () => {
           <Link to="/about">About Us</Link>
           <Link to="/rush">Rush</Link>
           <Link to="/brothers">Brothers</Link>
-          <Link to="/gallery">Gallery</Link>
           <LiaBarsSolid
             id="hamburger"
             onClick={() => setShowMenu(true)}
